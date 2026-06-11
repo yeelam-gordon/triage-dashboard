@@ -1,0 +1,38 @@
+name: Agent Review
+
+on:
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: Issue number to review
+        required: true
+      skill:
+        description: Skill name (must exist in .github/skills/<skill>/SKILL.md or equivalent)
+        required: true
+        default: copilot-pr-prereview
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install GitHub Copilot CLI
+        run: |
+          npm install -g @github/copilot-cli || npm install -g @github/copilot
+          copilot --version
+
+      - name: Run review skill on issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_NUMBER: ${{ inputs.issue_number }}
+          SKILL: ${{ inputs.skill }}
+        run: |
+          set -euo pipefail
+          ISSUE_JSON=$(gh issue view "$ISSUE_NUMBER" --json number,title,body,labels,author)
+          echo "$ISSUE_JSON" > issue.json
+          PROMPT="Use the '$SKILL' skill from this repo to review issue #$ISSUE_NUMBER. Issue data is in issue.json. Post your review as a comment via 'gh issue comment $ISSUE_NUMBER --body-file review.md'."
+          copilot -p "$PROMPT" --allow-tool 'shell(gh)' --allow-tool 'write'

@@ -1,0 +1,73 @@
+{
+  "generated_at": "2026-06-11T07:00:00Z",
+  "config": {
+    "review_workflow": "agent-review.yml",
+    "default_ref": "main"
+  },
+  "skills": [
+    "copilot-pr-prereview",
+    "copilot-pr-autopilot",
+    "upstream-sync"
+  ],
+  "totals": {
+    "open_issues": 142,
+    "open_prs": 18
+  },
+  "category_counts": {
+    "autofix": 24,
+    "agent-pane": 31,
+    "settings-ui": 12,
+    "rendering": 9,
+    "shell-integration": 17,
+    "docs": 8,
+    "other": 41
+  },
+  "trends": [
+    { "topic": "autofix triggers on stashed pane", "count": 7, "delta": 4 },
+    { "topic": "OSC 133 PowerShell integration", "count": 5, "delta": 2 },
+    { "topic": "settings UI agent dropdown", "count": 4, "delta": -1 },
+    { "topic": "cross-window drag-in", "count": 3, "delta": 1 }
+  ],
+  "issues": [
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 1234,
+      "title": "Autofix pill not appearing on stashed agent pane after PS failure",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/1234",
+      "category": "autofix",
+      "days_no_reply": 12,
+      "suggested_labels": ["area-autofix", "needs-repro"],
+      "suggested_reply": "Thanks for the report! To help us narrow this down, could you share:\n\n1. The contents of `%LocalAppData%\\Packages\\<pfn>\\LocalCache\\Local\\IntelligentTerminal\\logs\\<pkgver>\\wta-main_helper-*.log` around the time of the failure.\n2. The exit code captured by your `OSC 133;D` mark (you can check with `$LASTEXITCODE` immediately after the failing command).\n3. Whether the helper session had reached `Connected` state when the failure occurred — autofix early-returns if the session is still cold-starting.\n\nMore detail on the helper lifecycle here: https://github.com/microsoft/intelligent-terminal/blob/main/doc/specs/Multi-window-agent-pane.md"
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 1212,
+      "title": "Custom agent dropdown in Settings shows blank label",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/1212",
+      "category": "settings-ui",
+      "days_no_reply": 9,
+      "suggested_labels": ["area-settings", "ux"],
+      "suggested_reply": "Looks like the `custom:` prefix is being trimmed during render. We resolve the friendly label via the `Effective*` policy gate (see `GlobalAppSettings.cpp:560-570`). Could you share your `settings.json` (redact paths) so we can check the value being stored?"
+    },
+    {
+      "repo": "yeelam-gordon/awesome-copilot",
+      "number": 89,
+      "title": "copilot-pr-autopilot script throws on PS 5.1 due to ConvertFrom-Json pipeline form",
+      "url": "https://github.com/yeelam-gordon/awesome-copilot/issues/89",
+      "category": "other",
+      "days_no_reply": 4,
+      "suggested_labels": ["bug", "powershell-5.1"],
+      "suggested_reply": "Confirmed — PS 5.1 wraps `return $stdout | ConvertFrom-Json` as a single-element array. Fix is to use `return (ConvertFrom-Json -InputObject $stdout)` so the array unrolls. Will land in the next release."
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 1180,
+      "title": "Agent pane fails to restore after Ctrl+Shift+/",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/1180",
+      "category": "agent-pane",
+      "days_no_reply": 15,
+      "suggested_labels": ["area-agent-pane", "regression"],
+      "suggested_reply": "Could you check `terminal-agent-pane.log` for any `RestoreStashedAgentPane` errors? The toggle is built on `Pane::HidePane`/`RestorePane` (see `Tab.cpp`), so a restore failure usually indicates the helper conpty child exited."
+    }
+  ]
+}
