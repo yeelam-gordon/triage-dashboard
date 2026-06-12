@@ -22,6 +22,29 @@
     "docs": 8,
     "other": 41
   },
+  "per_repo": {
+    "microsoft/intelligent-terminal": {
+      "totals": { "open_issues": 128, "open_prs": 15 },
+      "category_counts": {
+        "autofix": 24, "agent-pane": 31, "settings-ui": 12,
+        "rendering": 9, "shell-integration": 17, "docs": 5, "other": 30
+      },
+      "trends": [
+        { "topic": "autofix triggers on stashed pane", "count": 7, "delta": 4 },
+        { "topic": "OSC 133 PowerShell integration", "count": 5, "delta": 2 },
+        { "topic": "settings UI agent dropdown", "count": 4, "delta": -1 },
+        { "topic": "cross-window drag-in", "count": 3, "delta": 1 }
+      ]
+    },
+    "yeelam-gordon/awesome-copilot": {
+      "totals": { "open_issues": 14, "open_prs": 3 },
+      "category_counts": { "docs": 3, "other": 11 },
+      "trends": [
+        { "topic": "copilot-pr-autopilot loop convergence", "count": 4, "delta": 2 },
+        { "topic": "PowerShell 5.1 ConvertFrom-Json", "count": 2, "delta": 2 }
+      ]
+    }
+  },
   "trends": [
     { "topic": "autofix triggers on stashed pane", "count": 7, "delta": 4 },
     { "topic": "OSC 133 PowerShell integration", "count": 5, "delta": 2 },

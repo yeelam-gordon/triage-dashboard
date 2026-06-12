@@ -50,7 +50,8 @@ For each open issue (cap at 60 per repo, prioritizing oldest no-reply first):
 
 Also compute:
   - totals.open_issues, totals.open_prs (sums across repos)
-  - category_counts: map of category -> count
+  - category_counts: map of category -> count (all repos combined)
+  - per_repo: map of "<owner>/<repo>" -> { totals:{open_issues,open_prs}, category_counts, trends } so the dashboard's per-repo tabs have authoritative numbers (not derived from the capped issues list)
   - trends: top 5 topics from the last 7 days of new issues, each with { topic, count, delta vs prior 7d }
   - generated_at: ISO 8601 timestamp now
 

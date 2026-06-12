@@ -26,7 +26,7 @@
       <input type="text" x-model="filter" placeholder="Filter issues…" class="px-3 py-1.5 border border-slate-300 rounded text-sm w-56" />
       <select x-model="categoryFilter" class="px-2 py-1.5 border border-slate-300 rounded text-sm">
         <option value="">All categories</option>
-        <template x-for="c in Object.keys(data.category_counts || {})" :key="c">
+        <template x-for="c in Object.keys(activeCategoryCounts)" :key="c">
           <option :value="c" x-text="c"></option>
         </template>
       </select>
@@ -39,6 +39,25 @@
 </header>
 
 <main class="max-w-7xl mx-auto px-6 py-6 space-y-6">
+
+  <!-- ============ Repo tabs ============ -->
+  <nav class="flex items-center gap-1 border-b border-slate-200 overflow-x-auto">
+    <button @click="selectRepo('')"
+      class="px-3 py-2 text-sm font-medium border-b-2 -mb-px whitespace-nowrap"
+      :class="activeRepo === '' ? 'border-blue-600 text-blue-700' : 'border-transparent text-slate-500 hover:text-slate-800'">
+      All repos
+      <span class="ml-1 text-xs text-slate-400" x-text="'(' + (data.issues || []).length + ')'"></span>
+    </button>
+    <template x-for="r in repos" :key="r.name">
+      <button @click="selectRepo(r.name)"
+        class="px-3 py-2 text-sm font-medium border-b-2 -mb-px whitespace-nowrap"
+        :class="activeRepo === r.name ? 'border-blue-600 text-blue-700' : 'border-transparent text-slate-500 hover:text-slate-800'">
+        <span x-text="r.short"></span>
+        <span class="ml-1 text-xs text-slate-400" x-text="'(' + r.count + ')'"></span>
+        <span class="ml-1 text-xs text-amber-600" x-show="r.noReply > 0" x-text="'⏰' + r.noReply"></span>
+      </button>
+    </template>
+  </nav>
 
   <!-- ============ Summary cards ============ -->
   <section class="grid grid-cols-4 gap-4">
@@ -60,7 +79,7 @@
     <div class="bg-white rounded-lg shadow-sm border border-slate-200 p-4">
       <h2 class="text-sm font-semibold mb-3">Trending topics (7d)</h2>
       <ul class="space-y-1.5 text-sm">
-        <template x-for="t in (data.trends || [])" :key="t.topic">
+        <template x-for="t in activeTrends" :key="t.topic">
           <li class="flex items-center justify-between">
             <span x-text="t.topic"></span>
             <span class="text-slate-500">
@@ -196,6 +215,8 @@ function dashboard() {
     skills: ['copilot-pr-prereview', 'copilot-pr-autopilot', 'upstream-sync'],
     filter: '',
     categoryFilter: '',
+    activeRepo: '',
+    _chart: null,
     token: localStorage.getItem('gh_token') || '',
     tokenInput: '',
     showTokenModal: false,
@@ -210,20 +231,87 @@ function dashboard() {
         this.data = await r.json();
         if (this.data.config) Object.assign(this.config, this.data.config);
         if (this.data.skills) this.skills = this.data.skills;
-        this.$nextTick(() => this.renderCharts());
       } catch (e) {
         this.toast('err', 'Failed to load data/latest.json: ' + e.message);
       }
+      // Restore repo selection from URL hash (e.g. #repo=microsoft/intelligent-terminal)
+      const hashRepo = this.readHashRepo();
+      if (hashRepo && (this.data.issues || []).some(i => i.repo === hashRepo)) {
+        this.activeRepo = hashRepo;
+      }
+      window.addEventListener('hashchange', () => {
+        const r = this.readHashRepo();
+        if (r !== this.activeRepo) { this.activeRepo = r; this.$nextTick(() => this.renderCharts()); }
+      });
+      this.$nextTick(() => this.renderCharts());
+    },
+
+    readHashRepo() {
+      const m = (location.hash || '').match(/repo=([^&]+)/);
+      return m ? decodeURIComponent(m[1]) : '';
+    },
+
+    selectRepo(name) {
+      this.activeRepo = name;
+      this.categoryFilter = '';
+      location.hash = name ? 'repo=' + encodeURIComponent(name) : '';
+      this.$nextTick(() => this.renderCharts());
+    },
+
+    get scopedIssues() {
+      const all = this.data.issues || [];
+      return this.activeRepo ? all.filter(i => i.repo === this.activeRepo) : all;
+    },
+
+    get repos() {
+      const map = new Map();
+      for (const i of (this.data.issues || [])) {
+        if (!map.has(i.repo)) map.set(i.repo, { name: i.repo, short: i.repo.split('/')[1] || i.repo, count: 0, noReply: 0 });
+        const r = map.get(i.repo);
+        r.count++;
+        if ((i.days_no_reply || 0) >= 7) r.noReply++;
+      }
+      return [...map.values()].sort((a, b) => b.noReply - a.noReply || b.count - a.count);
+    },
+
+    get activeCategoryCounts() {
+      // Per-repo counts come from per_repo block if present; otherwise derive from issues.
+      if (this.activeRepo && this.data.per_repo && this.data.per_repo[this.activeRepo]) {
+        return this.data.per_repo[this.activeRepo].category_counts || this._deriveCategoryCounts(this.scopedIssues);
+      }
+      if (!this.activeRepo) return this.data.category_counts || this._deriveCategoryCounts(this.scopedIssues);
+      return this._deriveCategoryCounts(this.scopedIssues);
+    },
+
+    _deriveCategoryCounts(issues) {
+      const c = {};
+      for (const i of issues) c[i.category] = (c[i.category] || 0) + 1;
+      return c;
+    },
+
+    get activeTrends() {
+      if (this.activeRepo && this.data.per_repo && this.data.per_repo[this.activeRepo]) {
+        return this.data.per_repo[this.activeRepo].trends || [];
+      }
+      return this.data.trends || [];
+    },
+
+    get activeTotals() {
+      if (this.activeRepo && this.data.per_repo && this.data.per_repo[this.activeRepo]) {
+        return this.data.per_repo[this.activeRepo].totals || {};
+      }
+      return this.data.totals || {};
     },
 
     get summaryCards() {
-      const d = this.data;
-      const issues = d.issues || [];
-      const noReply = issues.filter(i => (i.days_no_reply || 0) >= 7).length;
-      const cats = Object.keys(d.category_counts || {}).length;
+      const scoped = this.scopedIssues;
+      const totals = this.activeTotals;
+      const noReply = scoped.filter(i => (i.days_no_reply || 0) >= 7).length;
+      const cats = Object.keys(this.activeCategoryCounts).length;
+      const scopeLabel = this.activeRepo ? this.activeRepo : 'across tracked repos';
       return [
-        { label: 'Open issues', value: (d.totals && d.totals.open_issues) ?? issues.length, sub: 'across tracked repos' },
-        { label: 'Open PRs', value: (d.totals && d.totals.open_prs) ?? '—', sub: '' },
+        { label: 'Open issues', value: totals.open_issues ?? scoped.length, sub: scopeLabel },
+        { label: 'Open PRs', value: totals.open_prs ?? '—', sub: scopeLabel },
         { label: 'No-reply ≥7d', value: noReply, sub: 'need triage attention' },
         { label: 'Categories', value: cats, sub: 'auto-detected' },
       ];
@@ -231,17 +319,18 @@ function dashboard() {
 
     get filteredIssues() {
       const f = this.filter.toLowerCase();
-      return (this.data.issues || [])
+      return this.scopedIssues
         .filter(i => !this.categoryFilter || i.category === this.categoryFilter)
         .filter(i => !f || (i.title || '').toLowerCase().includes(f) || ('' + i.number).includes(f))
         .sort((a, b) => (b.days_no_reply || 0) - (a.days_no_reply || 0));
     },
 
     renderCharts() {
-      const counts = this.data.category_counts || {};
+      const counts = this.activeCategoryCounts;
       const ctx = document.getElementById('categoryChart');
       if (!ctx) return;
-      new Chart(ctx, {
+      if (this._chart) { this._chart.destroy(); this._chart = null; }
+      this._chart = new Chart(ctx, {
         type: 'bar',
         data: {
           labels: Object.keys(counts),

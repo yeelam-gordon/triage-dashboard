@@ -55,6 +55,26 @@ $trigger = New-ScheduledTaskTrigger -Daily -At 7am
 Register-ScheduledTask -TaskName 'TriageDashboard-Collect' -Action $action -Trigger $trigger
 ```
 
+## Per-repo views
+
+The top of the dashboard has tabs: **All repos** + one tab per tracked repo,
+showing each repo's issue count and a ⏰ badge for its no-reply backlog.
+Clicking a tab filters every section (cards, chart, trends, queue) to that
+repo and persists the choice in the URL hash:
+
+```
+https://<owner>.github.io/triage-dashboard/                              # All repos
+https://<owner>.github.io/triage-dashboard/#repo=microsoft/intelligent-terminal   # one repo
+```
+
+Hash URLs are bookmarkable and shareable — handy for "the leadership view of
+repo X" or for pinning a per-repo tab in your browser.
+
+The JSON has an optional `per_repo` block so each tab shows *authoritative*
+totals/trends rather than ones derived from the (capped) issue list. If
+`per_repo[<name>]` is missing, the dashboard falls back to deriving counts
+from the visible issues.
+
 ## Customize
 
 - **Tracked repos** — edit the `-Repos` default in `scripts/triage-collect.ps1`.
