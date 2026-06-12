@@ -82,6 +82,13 @@ from the visible issues.
 - **Review workflow filename** — `data/latest.json` → `config.review_workflow`.
 - **Categories** — edit the categorization hint in the collector prompt.
 
+## For agents pushing data from other machines
+
+See [**AGENTS.md**](AGENTS.md) — the definitive contract for any agent
+(Copilot CLI, GitHub Actions, custom scripts) writing data to this dashboard.
+It covers the JSON schema, three delivery methods (git push / Contents API /
+Actions cron), atomic-write rules, concurrency, and conventions.
+
 ## Why static + REST-from-browser?
 
 - Zero hosting cost (GitHub Pages is free).
