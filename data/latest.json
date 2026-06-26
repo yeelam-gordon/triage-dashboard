@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T03:15:33Z",
+  "generated_at": "2026-06-26T09:35:08Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -11,19 +11,21 @@
   ],
   "totals": {
     "open_issues": 4,
-    "open_prs": 3
+    "open_prs": 9
   },
   "category_counts": {
-    "agent-pane": 4
+    "agent-pane": 3,
+    "session-management": 1
   },
   "per_repo": {
     "microsoft/intelligent-terminal": {
       "totals": {
         "open_issues": 4,
-        "open_prs": 3
+        "open_prs": 9
       },
       "category_counts": {
-        "agent-pane": 4
+        "agent-pane": 3,
+        "session-management": 1
       },
       "trends": [
         {
@@ -79,7 +81,7 @@
       "url": "https://github.com/microsoft/intelligent-terminal/issues/248",
       "kind": "issue",
       "category": "agent-pane",
-      "days_no_reply": 10,
+      "days_no_reply": 0,
       "is_community": true,
       "score": 2,
       "severity": "none",
@@ -91,11 +93,7 @@
         "Area-AgentPane",
         "Area-CLI",
         "Agent-Copilot",
-        "Agent-Custom",
-        {
-          "name": "Agent-LocalModels",
-          "reason": "No existing label captures BYOK/local OpenAI-compatible providers such as LM Studio, Ollama, and vLLM."
-        }
+        "Agent-Custom"
       ],
       "suggested_reply": ""
     },
@@ -105,7 +103,7 @@
       "title": "ACP transport failed when trying to restore multiple tabs on startup",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/275",
       "kind": "issue",
-      "category": "agent-pane",
+      "category": "session-management",
       "days_no_reply": 0,
       "is_community": false,
       "score": 5,
@@ -115,11 +113,32 @@
       "next_action": "no_action",
       "suggested_labels": [
         "Issue-Bug",
-        "Area-AgentPane",
         "Area-SessionManagement",
+        "Area-AgentPane",
         "Resolution-Fix-Committed"
       ],
       "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 298,
+      "title": "fix(wta): log process teardown + agent-pane disconnect; trim log spam",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/298",
+      "kind": "pr",
+      "category": "session-management",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 2,
+      "severity": "bug",
+      "sentiment": "",
+      "next_action_glyph": "🛠",
+      "next_action": "nudge_rebase",
+      "suggested_labels": [
+        "Area-SessionManagement",
+        "Area-AutoFix",
+        "Needs-Review"
+      ],
+      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` (the latest check-spelling annotation reports unrecognized `spams`). Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/83598960953? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -140,6 +159,27 @@
     },
     {
       "repo": "microsoft/intelligent-terminal",
+      "number": 321,
+      "title": "Add /switch-agent for per-tab AI agent selection",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/321",
+      "kind": "pr",
+      "category": "auto-fix",
+      "days_no_reply": 0,
+      "is_community": true,
+      "score": 1,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "💤",
+      "next_action": "stash",
+      "suggested_labels": [
+        "Issue-Feature",
+        "Area-AutoFix",
+        "Area-CLI"
+      ],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
       "number": 349,
       "title": "Support ACP agents running inside WSL as an agent-pane backend (Copilot/OpenCode/CodeX)",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/349",
@@ -147,7 +187,7 @@
       "category": "agent-pane",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 2,
+      "score": 2.0,
       "severity": "none",
       "sentiment": "confused",
       "next_action_glyph": "🏷️",
@@ -157,10 +197,10 @@
         "Area-AgentPane",
         "Agent-Copilot",
         "Agent-Codex",
-        "Agent-Custom",
+        "Needs-Triage",
         {
           "name": "Agent-OpenCode",
-          "reason": "OpenCode is explicitly in scope, but the live label set has no OpenCode-specific agent label."
+          "reason": "The request explicitly includes OpenCode, but the live label set has no Agent-OpenCode label."
         }
       ],
       "suggested_reply": ""
@@ -189,19 +229,80 @@
     },
     {
       "repo": "microsoft/intelligent-terminal",
+      "number": 357,
+      "title": "build: rename main exe to IntelligentTerminal.exe",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/357",
+      "kind": "pr",
+      "category": "installer",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 0,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "💤",
+      "next_action": "stash",
+      "suggested_labels": [
+        "Area-Installer",
+        "Area-CLI"
+      ],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 358,
+      "title": "ci(spelling): remove stale secpoll workaround killing every run",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/358",
+      "kind": "pr",
+      "category": "build",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 3,
+      "severity": "risk",
+      "sentiment": "",
+      "next_action_glyph": "🟥",
+      "next_action": "investigate_ci",
+      "suggested_labels": [
+        "Resolution-Fix-Committed"
+      ],
+      "suggested_reply": "Hi @vanzue, CI is failing on Check Spelling — quick scan suggests it is the spelling workflow failure this PR is addressing, but please take a look at https://github.com/microsoft/intelligent-terminal/actions/runs/28178345112/job/83460780581. Since this PR is already merged, a follow-up is only needed if the workflow remains red on main."
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 359,
+      "title": "test(ci): verify spelling check passes after secpoll fix [dummy]",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/359",
+      "kind": "pr",
+      "category": "build",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 0,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "💤",
+      "next_action": "stash",
+      "suggested_labels": [],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
       "number": 360,
       "title": "fix(agent-pane): don't persist agent panes into window layout (#275)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/360",
       "kind": "pr",
-      "category": "bug-fix",
+      "category": "session-management",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 2,
-      "severity": "papercut",
+      "score": 3,
+      "severity": "bug",
       "sentiment": "",
-      "next_action_glyph": "📦",
+      "next_action_glyph": "💤",
       "next_action": "stash",
-      "suggested_labels": [],
+      "suggested_labels": [
+        "Issue-Bug",
+        "Area-SessionManagement",
+        "Area-AgentPane",
+        "Resolution-Fix-Committed"
+      ],
       "suggested_reply": ""
     },
     {
@@ -216,10 +317,27 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "✅",
-      "next_action": "ready_to_merge",
+      "next_action_glyph": "💤",
+      "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 362,
+      "title": "Support GitHub Enterprise Copilot sign-in",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/362",
+      "kind": "pr",
+      "category": "feature",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 0,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "🟥",
+      "next_action": "investigate_ci",
+      "suggested_labels": [],
+      "suggested_reply": "Hi @haonanttt, CI is failing on `Check Spelling` — quick scan suggests it might be unrelated to your changes, but could you take a look at https://github.com/microsoft/intelligent-terminal/actions/runs/28225572240/job/83616567905? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     }
   ]
 }
