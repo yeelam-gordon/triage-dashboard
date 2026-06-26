@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-26T17:31:23Z",
+  "generated_at": "2026-06-26T18:05:13Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -81,9 +81,9 @@
       "url": "https://github.com/microsoft/intelligent-terminal/issues/248",
       "kind": "issue",
       "category": "agent-pane",
-      "days_no_reply": 0,
+      "days_no_reply": 1,
       "is_community": true,
-      "score": 2,
+      "score": 3,
       "severity": "none",
       "sentiment": "positive",
       "next_action_glyph": "🏷️",
@@ -91,9 +91,9 @@
       "suggested_labels": [
         "Issue-Feature",
         "Area-AgentPane",
-        "Area-CLI",
         "Agent-Copilot",
-        "Agent-Custom"
+        "Agent-Custom",
+        "Needs-Triage"
       ],
       "suggested_reply": ""
     },
@@ -106,7 +106,7 @@
       "category": "session-management",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 5,
+      "score": 4,
       "severity": "bug",
       "sentiment": "frustrated",
       "next_action_glyph": "✅",
@@ -117,7 +117,7 @@
         "Area-AgentPane",
         "Resolution-Fix-Committed"
       ],
-      "suggested_reply": ""
+      "suggested_reply": "No reply drafted: issue is closed as completed by PR #360, and the maintainer already posted the root cause, fix, and existing-state workaround."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -125,20 +125,16 @@
       "title": "fix(wta): log process teardown + agent-pane disconnect; trim log spam",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/298",
       "kind": "pr",
-      "category": "session-management",
+      "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 2,
-      "severity": "bug",
+      "score": 0,
+      "severity": "none",
       "sentiment": "",
       "next_action_glyph": "🛠",
       "next_action": "nudge_rebase",
-      "suggested_labels": [
-        "Area-SessionManagement",
-        "Area-AutoFix",
-        "Needs-Review"
-      ],
-      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` (the latest check-spelling annotation reports unrecognized `spams`). Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/83598960953? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_labels": [],
+      "suggested_reply": "Hi @vanzue, thanks for the PR! It currently has merge conflicts with `main`. Could you rebase (`git fetch origin && git rebase origin/main`) and push? Happy to take a closer look once it's clean.\n\nPS: CI is also red on check-spelling for `spams`; after resolving conflicts, please handle the spelling allow-list or rerun if it was transient."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -163,7 +159,7 @@
       "title": "Add /switch-agent for per-tab AI agent selection",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/321",
       "kind": "pr",
-      "category": "auto-fix",
+      "category": "feature",
       "days_no_reply": 0,
       "is_community": true,
       "score": 1,
@@ -171,11 +167,7 @@
       "sentiment": "",
       "next_action_glyph": "💤",
       "next_action": "stash",
-      "suggested_labels": [
-        "Issue-Feature",
-        "Area-AutoFix",
-        "Area-CLI"
-      ],
+      "suggested_labels": [],
       "suggested_reply": ""
     },
     {
@@ -184,7 +176,7 @@
       "title": "fix(auth): recover from post-login auth loop on a stale shared agent CLI",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/342",
       "kind": "pr",
-      "category": "auto-fix",
+      "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
       "score": 2,
@@ -192,14 +184,8 @@
       "sentiment": "",
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
-      "suggested_labels": [
-        "Issue-Bug",
-        "Area-AutoFix",
-        "Area-CLI",
-        "Agent-Copilot",
-        "Resolution-Fix-Committed"
-      ],
-      "suggested_reply": "Hi @haonanttt, CI is failing on `Check Spelling` — quick scan suggests it might be unrelated to your changes, but could you take a look at https://github.com/microsoft/intelligent-terminal/actions/runs/28143894398/job/83346761171? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_labels": [],
+      "suggested_reply": "Hi @haonanttt, CI is failing on `Check Spelling` — quick scan suggests the latest post-merge rollup is red on the spelling job rather than on the auth-loop fix itself. Could you take a look at https://github.com/microsoft/intelligent-terminal/actions/runs/28143894398/job/83346761171? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -210,7 +196,7 @@
       "category": "agent-pane",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 2.0,
+      "score": 2,
       "severity": "none",
       "sentiment": "confused",
       "next_action_glyph": "🏷️",
@@ -220,10 +206,11 @@
         "Area-AgentPane",
         "Agent-Copilot",
         "Agent-Codex",
+        "Agent-Custom",
         "Needs-Triage",
         {
           "name": "Agent-OpenCode",
-          "reason": "The request explicitly includes OpenCode, but the live label set has no Agent-OpenCode label."
+          "reason": "OpenCode is explicitly named in the title/body/comment, but the live label set has no OpenCode-specific Agent-* label."
         }
       ],
       "suggested_reply": ""
@@ -237,13 +224,13 @@
       "category": "agent-pane",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 2,
-      "severity": "bug",
+      "score": 0,
+      "severity": "none",
       "sentiment": "neutral",
-      "next_action_glyph": "🏷️",
-      "next_action": "label_only",
+      "next_action_glyph": "✅",
+      "next_action": "no_action",
       "suggested_labels": [
-        "Issue-Bug",
+        "Issue-Feature",
         "Area-AgentPane",
         "Area-AutoFix",
         "Resolution-Fix-Committed"
@@ -256,30 +243,7 @@
       "title": "test(e2e): expand agent-pane coverage, add release report, fix harness flakiness",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/356",
       "kind": "pr",
-      "category": "agent-pane",
-      "days_no_reply": 0,
-      "is_community": false,
-      "score": 0,
-      "severity": "none",
-      "sentiment": "",
-      "next_action_glyph": "🟥",
-      "next_action": "investigate_ci",
-      "suggested_labels": [
-        "Area-AgentPane",
-        "Area-AutoFix",
-        "Area-SessionManagement",
-        "Area-CLI",
-        "Resolution-Fix-Committed"
-      ],
-      "suggested_reply": "Hi @vanzue, CI is failing on `Check Spelling` — quick scan suggests it might be unrelated to your changes, but could you take a look at https://github.com/microsoft/intelligent-terminal/actions/runs/28157876076/job/83390774862? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
-      "number": 357,
-      "title": "build: rename main exe to IntelligentTerminal.exe",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/357",
-      "kind": "pr",
-      "category": "installer",
+      "category": "build",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
@@ -287,10 +251,24 @@
       "sentiment": "",
       "next_action_glyph": "💤",
       "next_action": "stash",
-      "suggested_labels": [
-        "Area-Installer",
-        "Area-CLI"
-      ],
+      "suggested_labels": [],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 357,
+      "title": "build: rename main exe to IntelligentTerminal.exe",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/357",
+      "kind": "pr",
+      "category": "build",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 0,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "💤",
+      "next_action": "stash",
+      "suggested_labels": [],
       "suggested_reply": ""
     },
     {
@@ -302,15 +280,13 @@
       "category": "build",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 3,
-      "severity": "risk",
+      "score": 0,
+      "severity": "none",
       "sentiment": "",
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
-      "suggested_labels": [
-        "Resolution-Fix-Committed"
-      ],
-      "suggested_reply": "Hi @vanzue, CI is failing on Check Spelling — quick scan suggests it is the spelling workflow failure this PR is addressing, but please take a look at https://github.com/microsoft/intelligent-terminal/actions/runs/28178345112/job/83460780581. Since this PR is already merged, a follow-up is only needed if the workflow remains red on main."
+      "suggested_labels": [],
+      "suggested_reply": "Hi @vanzue, CI is failing on `Check Spelling` — quick scan shows this is the spelling workflow failure this PR is intended to fix. Could you confirm whether the remaining failed rollup is just the pre-fix run? Log: https://github.com/microsoft/intelligent-terminal/actions/runs/28178345112/job/83460780581. If needed, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -335,7 +311,7 @@
       "title": "fix(agent-pane): don't persist agent panes into window layout (#275)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/360",
       "kind": "pr",
-      "category": "session-management",
+      "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
       "score": 3,
@@ -343,12 +319,7 @@
       "sentiment": "",
       "next_action_glyph": "💤",
       "next_action": "stash",
-      "suggested_labels": [
-        "Issue-Bug",
-        "Area-SessionManagement",
-        "Area-AgentPane",
-        "Resolution-Fix-Committed"
-      ],
+      "suggested_labels": [],
       "suggested_reply": ""
     },
     {
@@ -363,8 +334,8 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "💤",
-      "next_action": "stash",
+      "next_action_glyph": "✅",
+      "next_action": "ready_to_merge",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -380,10 +351,10 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "🟥",
-      "next_action": "investigate_ci",
+      "next_action_glyph": "💤",
+      "next_action": "stash",
       "suggested_labels": [],
-      "suggested_reply": "Hi @haonanttt, CI is failing on `Check Spelling` — quick scan suggests it might be unrelated to your changes, but could you take a look at https://github.com/microsoft/intelligent-terminal/actions/runs/28225572240/job/83616567905? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -391,7 +362,7 @@
       "title": "wta: own telemetry provider + read real values from terminal-internals header",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/363",
       "kind": "pr",
-      "category": "installer",
+      "category": "build",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
@@ -399,12 +370,7 @@
       "sentiment": "",
       "next_action_glyph": "⏸",
       "next_action": "wait_on_author",
-      "suggested_labels": [
-        "Issue-Feature",
-        "Area-Installer",
-        "Area-CLI",
-        "Needs-Review"
-      ],
+      "suggested_labels": [],
       "suggested_reply": ""
     }
   ]
