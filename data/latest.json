@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T08:54:23Z",
+  "generated_at": "2026-06-27T10:37:52Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -81,15 +81,14 @@
       "category": "session-management",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 3,
+      "score": 5,
       "severity": "bug",
-      "sentiment": "neutral",
+      "sentiment": "frustrated",
       "next_action_glyph": "✅",
       "next_action": "no_action",
       "suggested_labels": [
         "Issue-Bug",
         "Area-SessionManagement",
-        "Area-AgentPane",
         "Resolution-Fix-Committed"
       ],
       "suggested_reply": ""
@@ -100,7 +99,7 @@
       "title": "Per-tab AI agents via a multi-agent wta-master (id-based, GPO-aware)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/296",
       "kind": "pr",
-      "category": "session-management",
+      "category": "feature",
       "days_no_reply": 0,
       "is_community": true,
       "score": 4,
@@ -108,18 +107,8 @@
       "sentiment": "",
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
-      "suggested_labels": [
-        "Issue-Feature",
-        "Area-SessionManagement",
-        "Area-AgentPane",
-        "Area-CLI",
-        "Agent-Copilot",
-        "Agent-Claude",
-        "Agent-Gemini",
-        "Agent-Codex",
-        "Needs-Review"
-      ],
-      "suggested_reply": "@kaitao — community PR #296 touches `tools/wta/src/master/mod.rs` and `src/cascadia/TerminalApp/AgentPaneContent.cpp` (Area-SessionManagement backup / Area-AgentPane primary; low confidence — team table empty). 7-day SLA clock starts today. Worth a first pass?"
+      "suggested_labels": [],
+      "suggested_reply": "@kaitao - community PR #296 touches src/cascadia/TerminalApp/AgentPaneContent.* (Area-AgentPane; low confidence - team table empty). 7-day SLA clock starts today. Worth a first pass?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -148,20 +137,16 @@
       "title": "Investigate commands on PATH before answering / autofixing (#287)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/306",
       "kind": "pr",
-      "category": "auto-fix",
+      "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 3,
+      "score": 2,
       "severity": "bug",
       "sentiment": "",
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
-      "suggested_labels": [
-        "Issue-Bug",
-        "Area-AutoFix",
-        "Agent-Copilot"
-      ],
-      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — quick scan suggests it is tied to the spelling report. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/83802174187? If it is flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_labels": [],
+      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — quick scan points at the spelling check rather than the implementation, but could you take a look at https://github.com/microsoft/intelligent-terminal/runs/83810934816? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -169,7 +154,7 @@
       "title": "Add /switch-agent for per-tab AI agent selection",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/321",
       "kind": "pr",
-      "category": "agent-pane",
+      "category": "feature",
       "days_no_reply": 0,
       "is_community": true,
       "score": 1,
@@ -177,12 +162,7 @@
       "sentiment": "",
       "next_action_glyph": "💤",
       "next_action": "stash",
-      "suggested_labels": [
-        "Issue-Feature",
-        "Area-AgentPane",
-        "Area-SessionManagement",
-        "Resolution-Duplicate"
-      ],
+      "suggested_labels": [],
       "suggested_reply": ""
     },
     {
@@ -191,20 +171,15 @@
       "title": "fix(agent-pane): don't persist agent panes into window layout (#275)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/360",
       "kind": "pr",
-      "category": "session-management",
+      "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
       "score": 3,
       "severity": "bug",
       "sentiment": "",
       "next_action_glyph": "✅",
-      "next_action": "ready_to_merge",
-      "suggested_labels": [
-        "Issue-Bug",
-        "Area-SessionManagement",
-        "Area-AgentPane",
-        "Resolution-Fix-Committed"
-      ],
+      "next_action": "completed",
+      "suggested_labels": [],
       "suggested_reply": ""
     },
     {
@@ -220,7 +195,7 @@
       "severity": "none",
       "sentiment": "",
       "next_action_glyph": "✅",
-      "next_action": "stash",
+      "next_action": "completed",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -230,19 +205,16 @@
       "title": "Support GitHub Enterprise Copilot sign-in",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/362",
       "kind": "pr",
-      "category": "cli",
+      "category": "feature",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "🟥",
-      "next_action": "investigate_ci",
-      "suggested_labels": [
-        "Area-CLI",
-        "Agent-Copilot"
-      ],
-      "suggested_reply": "Hi @haonanttt, PR #362 is already merged, but the GitHub status-check rollup still reports FAILURE (the visible PR comments are check-spelling bot dictionary retrieval warnings). Could you confirm whether this was expected/stale, or whether any follow-up is needed? Checks: https://github.com/microsoft/intelligent-terminal/pull/362/checks"
+      "next_action_glyph": "✅",
+      "next_action": "completed",
+      "suggested_labels": [],
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -250,20 +222,15 @@
       "title": "wta: own telemetry provider + read real values from terminal-internals header",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/363",
       "kind": "pr",
-      "category": "cli",
+      "category": "build",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "⏸",
-      "next_action": "wait_on_author",
-      "suggested_labels": [
-        "Issue-Feature",
-        "Area-CLI",
-        "Area-Installer",
-        "Status-In-Progress"
-      ],
+      "next_action_glyph": "💤",
+      "next_action": "stash",
+      "suggested_labels": [],
       "suggested_reply": ""
     }
   ]
