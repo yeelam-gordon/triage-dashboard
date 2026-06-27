@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T12:31:19Z",
+  "generated_at": "2026-06-27T12:59:25Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -10,21 +10,17 @@
     "upstream-sync"
   ],
   "totals": {
-    "open_issues": 1,
-    "open_prs": 8
+    "open_issues": 0,
+    "open_prs": 3
   },
-  "category_counts": {
-    "session-management": 1
-  },
+  "category_counts": {},
   "per_repo": {
     "microsoft/intelligent-terminal": {
       "totals": {
-        "open_issues": 1,
-        "open_prs": 8
+        "open_issues": 0,
+        "open_prs": 3
       },
-      "category_counts": {
-        "session-management": 1
-      },
+      "category_counts": {},
       "trends": [
         {
           "topic": "autofix triggers on stashed pane",
@@ -74,27 +70,6 @@
   "issues": [
     {
       "repo": "microsoft/intelligent-terminal",
-      "number": 275,
-      "title": "ACP transport failed when trying to restore multiple tabs on startup",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/275",
-      "kind": "issue",
-      "category": "session-management",
-      "days_no_reply": 0,
-      "is_community": false,
-      "score": 5,
-      "severity": "bug",
-      "sentiment": "frustrated",
-      "next_action_glyph": "✅",
-      "next_action": "no_action",
-      "suggested_labels": [
-        "Issue-Bug",
-        "Area-SessionManagement",
-        "Resolution-Fix-Committed"
-      ],
-      "suggested_reply": ""
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
       "number": 296,
       "title": "Per-tab AI agents via a multi-agent wta-master (id-based, GPO-aware)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/296",
@@ -108,28 +83,7 @@
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "@lhecker — community PR #296 touches `tools/wta/src/master/mod.rs` and `src/cascadia/TerminalApp/AgentPaneContent.cpp` (SessionManagement/AgentPane areas; @Kaitao is the second reviewer candidate). 7-day SLA clock starts today. Worth a first pass?"
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
-      "number": 298,
-      "title": "fix(wta): log process teardown + agent-pane disconnect; trim log spam",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/298",
-      "kind": "pr",
-      "category": "session-management",
-      "days_no_reply": 0,
-      "is_community": false,
-      "score": 2,
-      "severity": "bug",
-      "sentiment": "",
-      "next_action_glyph": "🛠",
-      "next_action": "nudge_rebase",
-      "suggested_labels": [
-        "Area-SessionManagement",
-        "Needs-Review",
-        "Needs-Author-Feedback"
-      ],
-      "suggested_reply": "Hi @vanzue, thanks for the PR! It currently has merge conflicts with `main`. Could you rebase (`git fetch origin && git rebase origin/main`) and push? Happy to take a closer look once it's clean."
+      "suggested_reply": "@kaitao (low confidence — team table empty) — community PR #296 touches `tools/wta/src/master/mod.rs`, `tools/wta/src/session_registry.rs`, and `src/cascadia/TerminalApp/TerminalPage.cpp` (Area-SessionManagement / agent pane routing). 7-day SLA clock starts today. Worth a first pass?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -138,81 +92,13 @@
       "url": "https://github.com/microsoft/intelligent-terminal/pull/306",
       "kind": "pr",
       "category": "bug-fix",
-      "days_no_reply": 10,
+      "days_no_reply": 0,
       "is_community": false,
-      "score": 4,
+      "score": 2,
       "severity": "bug",
       "sentiment": "",
-      "next_action_glyph": "🔥",
-      "next_action": "reply",
-      "suggested_labels": [],
-      "suggested_reply": "Hi @vanzue, CI is failing on check-spelling — quick scan suggests it might be related to spelling/dictionary output in the proposed changes. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/83815830960? If it's flaky, push an empty commit (git commit --allow-empty -m \"ci: rerun\") to re-run."
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
-      "number": 321,
-      "title": "Add /switch-agent for per-tab AI agent selection",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/321",
-      "kind": "pr",
-      "category": "feature",
-      "days_no_reply": 0,
-      "is_community": true,
-      "score": 1,
-      "severity": "none",
-      "sentiment": "",
-      "next_action_glyph": "💤",
-      "next_action": "stash",
-      "suggested_labels": [],
-      "suggested_reply": ""
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
-      "number": 360,
-      "title": "fix(agent-pane): don't persist agent panes into window layout (#275)",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/360",
-      "kind": "pr",
-      "category": "bug-fix",
-      "days_no_reply": 0,
-      "is_community": false,
-      "score": 3,
-      "severity": "bug",
-      "sentiment": "",
-      "next_action_glyph": "✅",
-      "next_action": "completed",
-      "suggested_labels": [],
-      "suggested_reply": ""
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
-      "number": 361,
-      "title": "fix(spelling): clear check-spelling unrecognized words and forbidden pattern",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/361",
-      "kind": "pr",
-      "category": "build",
-      "days_no_reply": 0,
-      "is_community": false,
-      "score": 0,
-      "severity": "none",
-      "sentiment": "",
-      "next_action_glyph": "✅",
-      "next_action": "completed",
-      "suggested_labels": [],
-      "suggested_reply": ""
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
-      "number": 362,
-      "title": "Support GitHub Enterprise Copilot sign-in",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/362",
-      "kind": "pr",
-      "category": "feature",
-      "days_no_reply": 0,
-      "is_community": false,
-      "score": 0,
-      "severity": "none",
-      "sentiment": "",
-      "next_action_glyph": "✅",
-      "next_action": "completed",
+      "next_action_glyph": "⏸",
+      "next_action": "wait_on_author",
       "suggested_labels": [],
       "suggested_reply": ""
     },
