@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T11:00:21Z",
+  "generated_at": "2026-06-27T11:58:09Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -108,7 +108,7 @@
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "@lhecker — community PR #296 touches `tools/wta/src/master/mod.rs` / SessionManagement and closes #295 (your area in the ownership table). 7-day SLA clock starts today. Worth a first pass? @Kaitao may be useful for the AgentPane/UI parts (`AgentPaneContent.*`, `TerminalPage.cpp`)."
+      "suggested_reply": "@lhecker — community PR #296 touches `tools/wta/src/master/mod.rs`, `src/cascadia/TerminalApp/TerminalPage.cpp`, and `src/cascadia/TerminalApp/AgentPaneContent.cpp` (SessionManagement / AgentPane areas). 7-day SLA clock starts today. Worth a first pass?`n`ncc @kaitao — this also has heavy TerminalApp/AgentPane UI and WTA ACP surface area, and the local git log shows strong recent activity on those paths."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -146,7 +146,7 @@
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — quick scan suggests it is in the spelling job. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/83812239876? If it is flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — quick scan suggests it is the current merge blocker. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/83813524738? If it is flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
