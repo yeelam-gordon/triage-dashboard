@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T12:59:25Z",
+  "generated_at": "2026-06-27T13:28:43Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -83,7 +83,7 @@
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "@kaitao (low confidence — team table empty) — community PR #296 touches `tools/wta/src/master/mod.rs`, `tools/wta/src/session_registry.rs`, and `src/cascadia/TerminalApp/TerminalPage.cpp` (Area-SessionManagement / agent pane routing). 7-day SLA clock starts today. Worth a first pass?"
+      "suggested_reply": "@DDKinger — community PR #296 touches `tools/wta/src/master/mod.rs` and `tools/wta/src/session_registry.rs` (high-churn WTA master/session routing area). 7-day SLA clock starts today. Worth a first pass?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -94,7 +94,7 @@
       "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 2,
+      "score": 3,
       "severity": "bug",
       "sentiment": "",
       "next_action_glyph": "⏸",
@@ -108,14 +108,14 @@
       "title": "wta: own telemetry provider + read real values from terminal-internals header",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/363",
       "kind": "pr",
-      "category": "build",
+      "category": "feature",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "⏸",
-      "next_action": "wait_on_author",
+      "next_action_glyph": "💤",
+      "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
     }
