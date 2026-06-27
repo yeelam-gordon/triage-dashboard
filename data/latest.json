@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T08:00:49Z",
+  "generated_at": "2026-06-27T08:54:23Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -14,7 +14,7 @@
     "open_prs": 8
   },
   "category_counts": {
-    "agent-pane": 1
+    "session-management": 1
   },
   "per_repo": {
     "microsoft/intelligent-terminal": {
@@ -23,7 +23,7 @@
         "open_prs": 8
       },
       "category_counts": {
-        "agent-pane": 1
+        "session-management": 1
       },
       "trends": [
         {
@@ -78,18 +78,18 @@
       "title": "ACP transport failed when trying to restore multiple tabs on startup",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/275",
       "kind": "issue",
-      "category": "agent-pane",
+      "category": "session-management",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 5,
+      "score": 3,
       "severity": "bug",
-      "sentiment": "frustrated",
+      "sentiment": "neutral",
       "next_action_glyph": "✅",
       "next_action": "no_action",
       "suggested_labels": [
         "Issue-Bug",
-        "Area-AgentPane",
         "Area-SessionManagement",
+        "Area-AgentPane",
         "Resolution-Fix-Committed"
       ],
       "suggested_reply": ""
@@ -103,19 +103,23 @@
       "category": "session-management",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 3,
+      "score": 4,
       "severity": "none",
       "sentiment": "",
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [
+        "Issue-Feature",
         "Area-SessionManagement",
         "Area-AgentPane",
         "Area-CLI",
-        "Area-AutoFix",
+        "Agent-Copilot",
+        "Agent-Claude",
+        "Agent-Gemini",
+        "Agent-Codex",
         "Needs-Review"
       ],
-      "suggested_reply": "@lhecker / @kaitao — community PR #296 touches `tools/wta/src/master/mod.rs` and `src/cascadia/TerminalApp/AgentPaneContent.*` (SessionManagement + AgentPane areas). 7-day SLA clock starts today. Worth a first pass?"
+      "suggested_reply": "@kaitao — community PR #296 touches `tools/wta/src/master/mod.rs` and `src/cascadia/TerminalApp/AgentPaneContent.cpp` (Area-SessionManagement backup / Area-AgentPane primary; low confidence — team table empty). 7-day SLA clock starts today. Worth a first pass?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -132,11 +136,9 @@
       "next_action_glyph": "🛠",
       "next_action": "nudge_rebase",
       "suggested_labels": [
-        "Issue-Bug",
         "Area-SessionManagement",
-        "Area-AutoFix",
-        "Area-AgentPane",
-        "Needs-Review"
+        "Needs-Review",
+        "Needs-Author-Feedback"
       ],
       "suggested_reply": "Hi @vanzue, thanks for the PR! It currently has merge conflicts with `main`. Could you rebase (`git fetch origin && git rebase origin/main`) and push? Happy to take a closer look once it's clean."
     },
@@ -146,7 +148,7 @@
       "title": "Investigate commands on PATH before answering / autofixing (#287)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/306",
       "kind": "pr",
-      "category": "agent-pane",
+      "category": "auto-fix",
       "days_no_reply": 0,
       "is_community": false,
       "score": 3,
@@ -156,12 +158,10 @@
       "next_action": "investigate_ci",
       "suggested_labels": [
         "Issue-Bug",
-        "Area-AgentPane",
         "Area-AutoFix",
-        "Area-CLI",
-        "Needs-Review"
+        "Agent-Copilot"
       ],
-      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — quick scan points at spelling metadata / dictionary issues in this PR (for example `damerau`, `strsim`, `deploit`, plus the forbidden-pattern `Otherwise`). Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/83802174187? If it is flaky after the spelling findings are addressed, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — quick scan suggests it is tied to the spelling report. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/83802174187? If it is flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -169,7 +169,7 @@
       "title": "Add /switch-agent for per-tab AI agent selection",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/321",
       "kind": "pr",
-      "category": "auto-fix",
+      "category": "agent-pane",
       "days_no_reply": 0,
       "is_community": true,
       "score": 1,
@@ -179,13 +179,9 @@
       "next_action": "stash",
       "suggested_labels": [
         "Issue-Feature",
-        "Area-AutoFix",
-        "Area-CLI",
         "Area-AgentPane",
-        "Agent-Claude",
-        "Agent-Gemini",
-        "Agent-Custom",
-        "Needs-Tag-Fix"
+        "Area-SessionManagement",
+        "Resolution-Duplicate"
       ],
       "suggested_reply": ""
     },
@@ -195,15 +191,20 @@
       "title": "fix(agent-pane): don't persist agent panes into window layout (#275)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/360",
       "kind": "pr",
-      "category": "bug-fix",
+      "category": "session-management",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 2,
+      "score": 3,
       "severity": "bug",
       "sentiment": "",
-      "next_action_glyph": "📦",
-      "next_action": "stash",
-      "suggested_labels": [],
+      "next_action_glyph": "✅",
+      "next_action": "ready_to_merge",
+      "suggested_labels": [
+        "Issue-Bug",
+        "Area-SessionManagement",
+        "Area-AgentPane",
+        "Resolution-Fix-Committed"
+      ],
       "suggested_reply": ""
     },
     {
@@ -255,12 +256,13 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "💤",
-      "next_action": "wait-for-ready/draft",
+      "next_action_glyph": "⏸",
+      "next_action": "wait_on_author",
       "suggested_labels": [
+        "Issue-Feature",
         "Area-CLI",
         "Area-Installer",
-        "Needs-Review"
+        "Status-In-Progress"
       ],
       "suggested_reply": ""
     }
