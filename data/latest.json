@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T13:28:43Z",
+  "generated_at": "2026-06-27T14:28:11Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -10,17 +10,21 @@
     "upstream-sync"
   ],
   "totals": {
-    "open_issues": 0,
-    "open_prs": 3
+    "open_issues": 1,
+    "open_prs": 5
   },
-  "category_counts": {},
+  "category_counts": {
+    "session-management": 1
+  },
   "per_repo": {
     "microsoft/intelligent-terminal": {
       "totals": {
-        "open_issues": 0,
-        "open_prs": 3
+        "open_issues": 1,
+        "open_prs": 5
       },
-      "category_counts": {},
+      "category_counts": {
+        "session-management": 1
+      },
       "trends": [
         {
           "topic": "autofix triggers on stashed pane",
@@ -70,6 +74,27 @@
   "issues": [
     {
       "repo": "microsoft/intelligent-terminal",
+      "number": 275,
+      "title": "ACP transport failed when trying to restore multiple tabs on startup",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/275",
+      "kind": "issue",
+      "category": "session-management",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 5,
+      "severity": "bug",
+      "sentiment": "frustrated",
+      "next_action_glyph": "🏷️",
+      "next_action": "label_only",
+      "suggested_labels": [
+        "Issue-Bug",
+        "Area-SessionManagement",
+        "Resolution-Fix-Committed"
+      ],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
       "number": 296,
       "title": "Per-tab AI agents via a multi-agent wta-master (id-based, GPO-aware)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/296",
@@ -84,6 +109,23 @@
       "next_action": "request_reviewer",
       "suggested_labels": [],
       "suggested_reply": "@DDKinger — community PR #296 touches `tools/wta/src/master/mod.rs` and `tools/wta/src/session_registry.rs` (high-churn WTA master/session routing area). 7-day SLA clock starts today. Worth a first pass?"
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 298,
+      "title": "fix(wta): log process teardown + agent-pane disconnect; trim log spam",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/298",
+      "kind": "pr",
+      "category": "bug-fix",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 0,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "🛠",
+      "next_action": "nudge_rebase",
+      "suggested_labels": [],
+      "suggested_reply": "Hi @vanzue, thanks for the PR! It currently has merge conflicts with `main`. Could you rebase (`git fetch origin && git rebase origin/main`) and push? Happy to take a closer look once it's clean."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -118,6 +160,23 @@
       "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 364,
+      "title": "Add initial devcontainer configuration",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/364",
+      "kind": "pr",
+      "category": "build",
+      "days_no_reply": 0,
+      "is_community": true,
+      "score": 3,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "👀",
+      "next_action": "request_reviewer",
+      "suggested_labels": [],
+      "suggested_reply": "Hi @johnnyh3611-bit, thanks for the PR! CI is failing on `check-spelling` for the unrecognized word `mcr`. Could you take a look at https://github.com/microsoft/intelligent-terminal/actions/runs/28291258531/job/83823526442#step:4:1? If it is just a dictionary false positive, please add the appropriate spelling expectation/allow entry and push an update."
     }
   ]
 }
