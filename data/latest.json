@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T10:37:52Z",
+  "generated_at": "2026-06-27T11:00:21Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -108,7 +108,7 @@
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "@kaitao - community PR #296 touches src/cascadia/TerminalApp/AgentPaneContent.* (Area-AgentPane; low confidence - team table empty). 7-day SLA clock starts today. Worth a first pass?"
+      "suggested_reply": "@lhecker — community PR #296 touches `tools/wta/src/master/mod.rs` / SessionManagement and closes #295 (your area in the ownership table). 7-day SLA clock starts today. Worth a first pass? @Kaitao may be useful for the AgentPane/UI parts (`AgentPaneContent.*`, `TerminalPage.cpp`)."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -146,7 +146,7 @@
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — quick scan points at the spelling check rather than the implementation, but could you take a look at https://github.com/microsoft/intelligent-terminal/runs/83810934816? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — quick scan suggests it is in the spelling job. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/83812239876? If it is flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -228,8 +228,8 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "💤",
-      "next_action": "stash",
+      "next_action_glyph": "⏸",
+      "next_action": "wait_on_author",
       "suggested_labels": [],
       "suggested_reply": ""
     }
