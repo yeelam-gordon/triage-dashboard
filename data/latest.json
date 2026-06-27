@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T14:28:11Z",
+  "generated_at": "2026-06-27T23:15:36Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -11,7 +11,7 @@
   ],
   "totals": {
     "open_issues": 1,
-    "open_prs": 5
+    "open_prs": 9
   },
   "category_counts": {
     "session-management": 1
@@ -20,7 +20,7 @@
     "microsoft/intelligent-terminal": {
       "totals": {
         "open_issues": 1,
-        "open_prs": 5
+        "open_prs": 9
       },
       "category_counts": {
         "session-management": 1
@@ -142,6 +142,101 @@
       "next_action_glyph": "⏸",
       "next_action": "wait_on_author",
       "suggested_labels": [],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 321,
+      "title": "Add /switch-agent for per-tab AI agent selection",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/321",
+      "kind": "pr",
+      "category": "auto-fix",
+      "days_no_reply": 0,
+      "is_community": true,
+      "score": 1,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "✅",
+      "next_action": "none",
+      "suggested_labels": [
+        "Issue-Feature",
+        "Area-AutoFix",
+        "Area-CLI",
+        {
+          "name": "Area-WTA",
+          "reason": "The PR primarily changes WTA slash-command/runtime files, but the live taxonomy has no generic WTA/agent-runtime area label; Area-CLI and Area-AutoFix are only approximations."
+        }
+      ],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 360,
+      "title": "fix(agent-pane): don't persist agent panes into window layout (#275)",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/360",
+      "kind": "pr",
+      "category": "session-management",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 3,
+      "severity": "bug",
+      "sentiment": "",
+      "next_action_glyph": "✅",
+      "next_action": "stash",
+      "suggested_labels": [
+        "Area-SessionManagement",
+        "Area-AgentPane",
+        "Issue-Bug",
+        "Resolution-Fix-Committed"
+      ],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 361,
+      "title": "fix(spelling): clear check-spelling unrecognized words and forbidden pattern",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/361",
+      "kind": "pr",
+      "category": "build",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 0,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "✅",
+      "next_action": "done",
+      "suggested_labels": [
+        "Issue-Docs",
+        {
+          "name": "Area-Build",
+          "reason": "Live label taxonomy has no Area-Build/Area-CI label for check-spelling workflow and spelling allow-list housekeeping."
+        }
+      ],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 362,
+      "title": "Support GitHub Enterprise Copilot sign-in",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/362",
+      "kind": "pr",
+      "category": "auto-fix",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 0,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "✅",
+      "next_action": "done",
+      "suggested_labels": [
+        "Issue-Feature",
+        "Area-AutoFix",
+        "Agent-Copilot",
+        {
+          "name": "Area-AgentAuth",
+          "reason": "PR primarily changes WTA agent authentication/sign-in UI (`tools/wta/src/ui/auth.rs`, `agent_check.rs`, and locale auth strings), but no dedicated auth/sign-in Area label exists."
+        }
+      ],
       "suggested_reply": ""
     },
     {
