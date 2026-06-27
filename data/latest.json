@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-27T11:58:09Z",
+  "generated_at": "2026-06-27T12:31:19Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -108,7 +108,7 @@
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "@lhecker — community PR #296 touches `tools/wta/src/master/mod.rs`, `src/cascadia/TerminalApp/TerminalPage.cpp`, and `src/cascadia/TerminalApp/AgentPaneContent.cpp` (SessionManagement / AgentPane areas). 7-day SLA clock starts today. Worth a first pass?`n`ncc @kaitao — this also has heavy TerminalApp/AgentPane UI and WTA ACP surface area, and the local git log shows strong recent activity on those paths."
+      "suggested_reply": "@lhecker — community PR #296 touches `tools/wta/src/master/mod.rs` and `src/cascadia/TerminalApp/AgentPaneContent.cpp` (SessionManagement/AgentPane areas; @Kaitao is the second reviewer candidate). 7-day SLA clock starts today. Worth a first pass?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -138,15 +138,15 @@
       "url": "https://github.com/microsoft/intelligent-terminal/pull/306",
       "kind": "pr",
       "category": "bug-fix",
-      "days_no_reply": 0,
+      "days_no_reply": 10,
       "is_community": false,
-      "score": 2,
+      "score": 4,
       "severity": "bug",
       "sentiment": "",
-      "next_action_glyph": "🟥",
-      "next_action": "investigate_ci",
+      "next_action_glyph": "🔥",
+      "next_action": "reply",
       "suggested_labels": [],
-      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — quick scan suggests it is the current merge blocker. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/83813524738? If it is flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": "Hi @vanzue, CI is failing on check-spelling — quick scan suggests it might be related to spelling/dictionary output in the proposed changes. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/83815830960? If it's flaky, push an empty commit (git commit --allow-empty -m \"ci: rerun\") to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
