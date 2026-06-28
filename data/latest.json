@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-28T11:58:47Z",
+  "generated_at": "2026-06-28T12:58:48Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -84,18 +84,17 @@
       "score": 3,
       "severity": "none",
       "sentiment": "confused",
-      "next_action_glyph": "🏷️",
-      "next_action": "label_only",
+      "next_action_glyph": "💬",
+      "next_action": "reply",
       "suggested_labels": [
         "Issue-Feature",
-        "Needs-Triage",
-        "Needs-Tag-Fix",
         "Area-FirstRun",
-        "Area-Settings",
         "Area-AgentPane",
-        "Agent-Copilot"
+        "Area-Settings",
+        "Agent-Copilot",
+        "Needs-Triage"
       ],
-      "suggested_reply": ""
+      "suggested_reply": "Thanks @tauheedul — this is detailed and useful feedback. The latest community update suggests there is still a first-run edge case even after #262: <!-- from comment -->I faced the same first run issues, even after this MR(#262) has been merged. I'm not exactly sure why.<!-- /from comment -->\n\nI’d keep this open as a first-run/agent UX follow-up rather than asking for basic repro info again. The screenshots show the remaining confusing states, including <!-- from image -->\"PowerShell execution policy is blocking scripts.\"<!-- /from image --> and <!-- from image -->\"Access to the path 'C:\\Users\\rushil\\Documents\\PowerShell\\powershell.config.json' is denied.\"<!-- /from image -->.\n\nSuggested next step for the team: re-check the post-#262 FRE flow around Copilot install/auth retry, shell-integration policy detection, and whether the UI should route users to `copilot login` or an in-app sign-in button when the pane is disconnected."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -146,7 +145,7 @@
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "Hi @johnnyh3611-bit, thanks for the PR! CI is failing on `check-spelling` — quick scan shows the spelling check flagged `mcr` in `.devcontainer/devcontainer.json`. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/83823794702? If this is just a dictionary false positive, please add the appropriate spelling expectation/allow entry and push an update."
+      "suggested_reply": "Hi @johnnyh3611-bit, CI is failing on `check-spelling`: the new `.devcontainer/devcontainer.json` references `mcr.microsoft.com/devcontainers/universal:2`, and `mcr` is currently flagged as an unrecognized word. Could you take a look at https://github.com/microsoft/intelligent-terminal/actions/runs/28291258531/job/83823794702? If it is a false positive, adding the term to the repo's spelling allow/expect metadata should unblock the PR."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -157,13 +156,13 @@
       "category": "refactor",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 3,
-      "severity": "risk",
+      "score": 0,
+      "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "🟥",
-      "next_action": "investigate_ci",
+      "next_action_glyph": "⏸",
+      "next_action": "wait_on_author",
       "suggested_labels": [],
-      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan points at the spelling/check-spelling report. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/83902418441? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": ""
     }
   ]
 }
