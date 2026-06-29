@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T03:50:37Z",
+  "generated_at": "2026-06-29T05:10:57Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -11,30 +11,34 @@
   ],
   "totals": {
     "open_issues": 17,
-    "open_prs": 31
+    "open_prs": 32
   },
   "category_counts": {
-    "agent-pane": 3,
-    "app-shell": 1,
-    "bug": 4,
-    "enhancement": 5,
+    "agent-pane": 4,
+    "auto-fix": 1,
+    "bug": 2,
+    "enhancement": 4,
     "first-run": 1,
+    "invalid": 1,
     "session-management": 2,
+    "settings": 1,
     "transport": 1
   },
   "per_repo": {
     "microsoft/intelligent-terminal": {
       "totals": {
         "open_issues": 17,
-        "open_prs": 31
+        "open_prs": 32
       },
       "category_counts": {
-        "agent-pane": 3,
-        "app-shell": 1,
-        "bug": 4,
-        "enhancement": 5,
+        "agent-pane": 4,
+        "auto-fix": 1,
+        "bug": 2,
+        "enhancement": 4,
         "first-run": 1,
+        "invalid": 1,
         "session-management": 2,
+        "settings": 1,
         "transport": 1
       },
       "trends": [
@@ -304,7 +308,7 @@
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "@frarteaga — community PR #296 touches multiple areas. Looking for a reviewer to help. 7-day SLA clock starts today. Thanks!"
+      "suggested_reply": "@lhecker — community PR #296 touches `tools/wta/src/master/mod.rs`, `tools/wta/src/session_registry.rs`, and `src/cascadia/TerminalApp/TerminalPage.cpp` (SessionManagement/WTA core/AgentPane; low confidence because the team table is empty). 7-day SLA clock starts today. Worth a first pass?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -315,7 +319,7 @@
       "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 1,
+      "score": 2,
       "severity": "bug",
       "sentiment": "",
       "next_action_glyph": "🛠",
@@ -333,7 +337,7 @@
       "days_no_reply": 0,
       "is_community": false,
       "score": 3,
-      "severity": "none",
+      "severity": "bug",
       "sentiment": "",
       "next_action_glyph": "⏸",
       "next_action": "wait_on_author",
@@ -349,13 +353,13 @@
       "category": "feature",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 6,
+      "score": 4,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "👀",
-      "next_action": "request_reviewer",
+      "next_action_glyph": "💤",
+      "next_action": "stash",
       "suggested_labels": [],
-      "suggested_reply": "@ashishpatel26 — thanks for the PR! This touches several areas of the agent pane logic. To make sure we prioritize this properly, we need a team reviewer to evaluate the approach."
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -430,19 +434,19 @@
     {
       "repo": "microsoft/intelligent-terminal",
       "number": 337,
-      "title": "Fix Group Policy Object (GPO) schema path issues",
+      "title": "Move GPOs out of category \"Windows Components\"",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/337",
       "kind": "pr",
-      "category": "refactor",
+      "category": "other",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 4,
+      "score": 3,
       "severity": "none",
       "sentiment": "",
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "@duhowett or @yeelam — community PR #337 touches `policies/` (installer/configuration area). 7-day SLA clock starts today. Worth a first pass?"
+      "suggested_reply": "Needs-Triage — community PR #337 touches `policies/IntelligentTerminal.admx` and `policies/en-US/IntelligentTerminal.adml`, but `policies/**` is not mapped in the ownership table. 7-day SLA clock starts today. Could someone route a first reviewer?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -467,19 +471,21 @@
       "title": "Codex agent sessions show AGENTS.md instructions instead of actual session titles",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/339",
       "kind": "issue",
-      "category": "bug",
-      "days_no_reply": 4,
+      "category": "session-management",
+      "days_no_reply": 0,
       "is_community": true,
-      "score": 2,
+      "score": 3,
       "severity": "bug",
-      "sentiment": "neutral",
-      "next_action_glyph": "💬",
-      "next_action": "reply",
+      "sentiment": "confused",
+      "next_action_glyph": "🏷️",
+      "next_action": "label_only",
       "suggested_labels": [
         "Issue-Bug",
-        "Needs-Triage"
+        "Area-SessionManagement",
+        "Agent-Codex",
+        "Resolution-Fix-Committed"
       ],
-      "suggested_reply": "Thanks for reporting this issue @solankydev. This appears to be a display issue where session titles are not being shown correctly.\n\nTo help us investigate further, could you provide:\n1. Steps to reproduce the issue consistently\n2. Screenshots showing the incorrect display\n3. Your version of the Intelligent Terminal\n\nThis will help us better understand the scope and priority of the fix."
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -589,20 +595,21 @@
       "title": "Autofix card not dismissed by Esc (intermittent; E2E-discovered)",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/346",
       "kind": "issue",
-      "category": "app-shell",
+      "category": "auto-fix",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 4,
-      "severity": "bug",
-      "sentiment": "frustrated",
-      "next_action_glyph": "💬",
-      "next_action": "reply",
+      "score": 3,
+      "severity": "risk",
+      "sentiment": "neutral",
+      "next_action_glyph": "👤",
+      "next_action": "assign",
       "suggested_labels": [
         "Issue-Bug",
-        "Area-AppShell",
+        "Area-AutoFix",
+        "Area-AgentPane",
         "Needs-Triage"
       ],
-      "suggested_reply": "Thanks for reporting. The autofix card intermittent dismiss issue is noted. To help prioritize:\n\n1. How consistently can you reproduce?\n2. Steps to trigger the autofix card?\n3. Windows version and app build?\n\nThis helps us triage and fix."
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -610,20 +617,21 @@
       "title": "Settings migration for Windows Terminal",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/347",
       "kind": "issue",
-      "category": "enhancement",
+      "category": "settings",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 2.0,
+      "score": 0,
       "severity": "none",
-      "sentiment": "blocked",
-      "next_action_glyph": "✅",
-      "next_action": "reply",
+      "sentiment": "positive",
+      "next_action_glyph": "🏷️",
+      "next_action": "label_only",
       "suggested_labels": [
         "Issue-Feature",
-        "Needs-Triage",
-        "Needs-Tag-Fix"
+        "Area-Settings",
+        "Area-FirstRun",
+        "Needs-Triage"
       ],
-      "suggested_reply": "Thanks for the feature request! We appreciate you suggesting this. The team will review and prioritize accordingly."
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -631,20 +639,20 @@
       "title": "Theme not respected by the Agent bar (bottom of terminal)",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/348",
       "kind": "issue",
-      "category": "bug",
+      "category": "agent-pane",
       "days_no_reply": 0,
-      "is_community": false,
-      "score": 4,
-      "severity": "bug",
+      "is_community": true,
+      "score": 2,
+      "severity": "papercut",
       "sentiment": "neutral",
-      "next_action_glyph": "💬",
-      "next_action": "reply",
+      "next_action_glyph": "🏷️",
+      "next_action": "label_only",
       "suggested_labels": [
         "Issue-Bug",
         "Area-AgentPane",
-        "Area-Theming"
+        "Needs-Triage"
       ],
-      "suggested_reply": "Thanks for the detailed report and screenshots. We can see the Agent bar theming doesn't respect your current color scheme. This is on our radar for the next update cycle."
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -653,38 +661,40 @@
       "url": "https://github.com/microsoft/intelligent-terminal/issues/349",
       "kind": "issue",
       "category": "agent-pane",
-      "days_no_reply": 0,
-      "is_community": false,
-      "score": 1.0,
+      "days_no_reply": 3,
+      "is_community": true,
+      "score": 3,
       "severity": "none",
-      "sentiment": "neutral",
-      "next_action_glyph": "🏷️",
-      "next_action": "label_only",
+      "sentiment": "confused",
+      "next_action_glyph": "👤",
+      "next_action": "assign",
       "suggested_labels": [
         "Issue-Feature",
-        "Area-AgentPane"
+        "Area-AgentPane",
+        "Needs-Triage",
+        {
+          "name": "Agent-OpenCode",
+          "reason": "The live label set has Agent-Copilot, Agent-Claude, Agent-Gemini, Agent-Codex, and Agent-Custom, but no OpenCode-specific label for this ACP backend ask."
+        }
       ],
-      "suggested_reply": "Thanks for filing — WSL ACP backend support is a reasonable enhancement; tracking on the agent-pane backlog."
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
       "number": 350,
-      "title": "Tracking: first-class WSL session support for the agent",
+      "title": "restricted by content exclusion policy",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/350",
       "kind": "issue",
-      "category": "session-management",
+      "category": "invalid",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 1,
+      "score": 0,
       "severity": "none",
       "sentiment": "neutral",
       "next_action_glyph": "✅",
       "next_action": "no_action",
       "suggested_labels": [
-        "Issue-Feature",
-        "Needs-Triage",
-        "Area-SessionManagement",
-        "Needs-Tag-Fix"
+        "Needs-Triage"
       ],
       "suggested_reply": ""
     },
@@ -717,22 +727,17 @@
       "kind": "issue",
       "category": "agent-pane",
       "days_no_reply": 0,
-      "is_community": true,
-      "score": 1,
+      "is_community": false,
+      "score": 0,
       "severity": "none",
-      "sentiment": "positive",
+      "sentiment": "neutral",
       "next_action_glyph": "🏷️",
       "next_action": "label_only",
       "suggested_labels": [
+        "Issue-Feature",
         "Area-AgentPane",
         "Area-AutoFix",
-        "Issue-Bug",
-        "Needs-Tag-Fix",
-        "Needs-Triage",
-        {
-          "name": "Sentiment-Positive",
-          "reason": "Constructive feature suggestion"
-        }
+        "Resolution-Fix-Committed"
       ],
       "suggested_reply": ""
     },
@@ -912,10 +917,10 @@
       "title": "wta: own telemetry provider + read real values from terminal-internals header",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/363",
       "kind": "pr",
-      "category": "other",
+      "category": "build",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 1,
+      "score": 0,
       "severity": "none",
       "sentiment": "",
       "next_action_glyph": "⏸",
@@ -929,16 +934,16 @@
       "title": "Add initial devcontainer configuration",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/364",
       "kind": "pr",
-      "category": "feature",
+      "category": "build",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 4,
+      "score": 3,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "🟥",
-      "next_action": "investigate_ci",
+      "next_action_glyph": "👀",
+      "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "@johnnyh3611-bit — CI check failed on this PR. Please review the failures above and update your branch. See build log for details."
+      "suggested_reply": "Hi @johnnyh3611-bit, thanks for the PR! CI is failing on `check-spelling` for `mcr` in `.devcontainer/devcontainer.json`. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/83823794702? If it is a false positive, please add it to the appropriate spelling expect/allow list or adjust the config, then push an update so CI can rerun."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -946,7 +951,7 @@
       "title": "Source all session history from ACP session/list; delete the on-disk history_loader subsystem",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/365",
       "kind": "pr",
-      "category": "other",
+      "category": "refactor",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
@@ -966,13 +971,30 @@
       "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 6,
+      "score": 5,
       "severity": "bug",
       "sentiment": "",
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "Community PR #366 needs reviewer assignment. Author: @adityabagchi24 (first-time contributor). Changes touch agent shell modules."
+      "suggested_reply": "@DDKinger — community PR #366 touches `tools/wta/src/shell/shell_manager.rs`, `tools/wta/src/shell/wt_channel/cli_channel.rs`, `src/tools/wtcli/main.cpp` (WTCLI/WTA terminal creation flow; low confidence because the TerminalCore team table is empty). 7-day SLA clock starts today. Worth a first pass?"
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 367,
+      "title": "WTA ACP 0.10→1.0 migration (Phase 0: behavior-preserving model rewrite)",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/367",
+      "kind": "pr",
+      "category": "refactor",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 0,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "🟥",
+      "next_action": "investigate_ci",
+      "suggested_labels": [],
+      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan suggests it might be related to the spelling dictionary/report setup rather than the ACP rewrite itself, but could you take a look at https://github.com/microsoft/intelligent-terminal/runs/83978553333? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     }
   ]
 }
