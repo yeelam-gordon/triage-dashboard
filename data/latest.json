@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T13:59:37Z",
+  "generated_at": "2026-06-29T14:38:25Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -14,10 +14,9 @@
     "open_prs": 33
   },
   "category_counts": {
-    "agent-pane": 7,
+    "agent-pane": 9,
     "auto-fix": 2,
-    "cli": 1,
-    "enhancement": 2,
+    "enhancement": 1,
     "first-run": 2,
     "session-management": 2,
     "settings": 1
@@ -29,10 +28,9 @@
         "open_prs": 33
       },
       "category_counts": {
-        "agent-pane": 7,
+        "agent-pane": 9,
         "auto-fix": 2,
-        "cli": 1,
-        "enhancement": 2,
+        "enhancement": 1,
         "first-run": 2,
         "session-management": 2,
         "settings": 1
@@ -107,24 +105,21 @@
       "title": "Support WSL terminals",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/200",
       "kind": "issue",
-      "category": "enhancement",
-      "days_no_reply": 5,
+      "category": "agent-pane",
+      "days_no_reply": 0,
       "is_community": true,
-      "score": 3,
+      "score": 5,
       "severity": "none",
-      "sentiment": "neutral",
+      "sentiment": "blocked",
       "next_action_glyph": "💬",
       "next_action": "reply",
       "suggested_labels": [
-        "Issue-Bug",
-        "Needs-Repro",
-        "Needs-Tag-Fix",
-        {
-          "reason": "This is a feature/enhancement request, not a bug report",
-          "name": "Issue-Feature"
-        }
+        "Issue-Feature",
+        "Area-AgentPane",
+        "Area-CLI",
+        "Status-In-Progress"
       ],
-      "suggested_reply": "Thanks for the feature request @zivni! Supporting WSL Ubuntu terminals is an interesting capability gap. This would involve:\n\n1. Terminal type detection when launching from WSL\n2. Environment-aware agent initialization  \n3. Shell context handling for Ubuntu/WSL\n\nWe appreciate the 11 community comments showing strong interest. This helps with roadmap prioritization. We'll assess feasibility alongside other planned enhancements. If you're interested in contributing a PR for this, we'd be happy to collaborate on the design."
+      "suggested_reply": "Hi @zivni, this now looks covered by the WSL tracking split: #350 (\"Tracking: first-class WSL session support for the agent\"). The team also split out #349 for ACP agents inside WSL and #351 for agent-launched terminals matching the active WSL session.\n\n<!-- from comment -->Umbrella tracking for WSL session support: #350.<!-- /from comment -->\n\nIf your current failure is still the insert/run path with `0x80010105 The server threw an exception`, please add any new repro details or logs on #350 so the WSL thread stays centralized."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -242,20 +237,19 @@
       "title": "Support GitHub Copilot CLI (BYOK / local models) as ACP agent without requiring cloud authentication",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/248",
       "kind": "issue",
-      "category": "cli",
-      "days_no_reply": 3,
+      "category": "agent-pane",
+      "days_no_reply": 0,
       "is_community": true,
-      "score": 2,
+      "score": 1,
       "severity": "none",
       "sentiment": "positive",
       "next_action_glyph": "🏷️",
       "next_action": "label_only",
       "suggested_labels": [
         "Issue-Feature",
-        "Area-CLI",
+        "Area-AgentPane",
         "Agent-Copilot",
-        "Agent-Custom",
-        "Needs-Triage"
+        "Agent-Custom"
       ],
       "suggested_reply": ""
     },
@@ -330,7 +324,7 @@
       "next_action_glyph": "🛠",
       "next_action": "nudge_rebase",
       "suggested_labels": [],
-      "suggested_reply": "Hi @vanzue, thanks for the PR! It currently has merge conflicts with `main`. Could you rebase (`git fetch origin && git rebase origin/main`) and push? Happy to take a closer look once it's clean."
+      "suggested_reply": "@vanzue — PR #298 is currently conflicting. Could you rebase/merge the latest main and resolve the conflicts so review can continue? After that, the remaining check-spelling failure can be rerun or addressed."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -446,16 +440,16 @@
       "title": "Move GPOs out of category \"Windows Components\"",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/337",
       "kind": "pr",
-      "category": "feature",
+      "category": "refactor",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 3,
+      "score": 4,
       "severity": "none",
       "sentiment": "",
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "Needs-Triage — community PR #337 touches `policies/IntelligentTerminal.admx` and `policies/en-US/IntelligentTerminal.adml`, but `policies/**` has no mapped owner in the triage ownership table. Worth routing for a first pass?"
+      "suggested_reply": "Needs-Triage — owner unknown: community PR #337 touches `policies/IntelligentTerminal.admx` and `policies/en-US/IntelligentTerminal.adml`. Area lookup has no `policies/**` owner; recent git history points to Gordon Lam, but the team table is empty, so please route to the right policy/GPO owner for first review."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -616,7 +610,8 @@
         "Issue-Bug",
         "Area-AutoFix",
         "Area-AgentPane",
-        "Severity-Regression"
+        "Severity-High",
+        "Needs-Triage"
       ],
       "suggested_reply": ""
     },
@@ -680,9 +675,11 @@
         "Area-AgentPane",
         "Agent-Copilot",
         "Agent-Codex",
-        "Agent-Custom",
         "Needs-Triage",
-        "Needs-Tag-Fix"
+        {
+          "name": "Agent-OpenCode",
+          "reason": "Issue explicitly asks for OpenCode as an ACP agent, but the live label set has no Agent-OpenCode label."
+        }
       ],
       "suggested_reply": ""
     },
@@ -695,7 +692,7 @@
       "category": "session-management",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 0,
+      "score": 1,
       "severity": "none",
       "sentiment": "neutral",
       "next_action_glyph": "✅",
@@ -925,7 +922,7 @@
       "title": "wta: own telemetry provider + read real values from terminal-internals header",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/363",
       "kind": "pr",
-      "category": "other",
+      "category": "build",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
@@ -951,7 +948,7 @@
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "Hi @johnnyh3611-bit, CI is failing on `check-spelling` — quick scan shows the spelling check flagged `mcr` in `.devcontainer/devcontainer.json`. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/83823794702? If it is a false positive, adding the token to the repo's spelling allow/expect metadata should clear it."
+      "suggested_reply": "Hi @johnnyh3611-bit, CI is failing on `check-spelling` — quick scan points at the new `mcr.microsoft.com/devcontainers/universal:2` image string. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/83823794702? If this is a false positive, please add the accepted spelling/update the spelling metadata and push the change (or rerun once fixed)."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -962,8 +959,8 @@
       "category": "refactor",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 3,
-      "severity": "risk",
+      "score": 0,
+      "severity": "none",
       "sentiment": "",
       "next_action_glyph": "⏸",
       "next_action": "wait_on_author",
