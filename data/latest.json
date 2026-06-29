@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T05:10:57Z",
+  "generated_at": "2026-06-29T05:49:09Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -19,8 +19,7 @@
     "bug": 2,
     "enhancement": 4,
     "first-run": 1,
-    "invalid": 1,
-    "session-management": 2,
+    "session-management": 3,
     "settings": 1,
     "transport": 1
   },
@@ -36,8 +35,7 @@
         "bug": 2,
         "enhancement": 4,
         "first-run": 1,
-        "invalid": 1,
-        "session-management": 2,
+        "session-management": 3,
         "settings": 1,
         "transport": 1
       },
@@ -308,7 +306,7 @@
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "@lhecker — community PR #296 touches `tools/wta/src/master/mod.rs`, `tools/wta/src/session_registry.rs`, and `src/cascadia/TerminalApp/TerminalPage.cpp` (SessionManagement/WTA core/AgentPane; low confidence because the team table is empty). 7-day SLA clock starts today. Worth a first pass?"
+      "suggested_reply": "@lhecker / @kaitao — community PR #296 touches `tools/wta/src/master/mod.rs`, `src/cascadia/TerminalApp/TerminalPage.cpp`, and `src/cascadia/TerminalApp/AgentPaneContent.cpp` (SessionManagement/AgentPane areas). 7-day SLA clock starts today. Worth a first pass?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -474,15 +472,15 @@
       "category": "session-management",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 3,
+      "score": 4,
       "severity": "bug",
       "sentiment": "confused",
-      "next_action_glyph": "🏷️",
-      "next_action": "label_only",
+      "next_action_glyph": "✅",
+      "next_action": "no_action",
       "suggested_labels": [
         "Issue-Bug",
-        "Area-SessionManagement",
         "Agent-Codex",
+        "Area-SessionManagement",
         "Resolution-Fix-Committed"
       ],
       "suggested_reply": ""
@@ -620,7 +618,7 @@
       "category": "settings",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 0,
+      "score": 1,
       "severity": "none",
       "sentiment": "positive",
       "next_action_glyph": "🏷️",
@@ -628,7 +626,6 @@
       "suggested_labels": [
         "Issue-Feature",
         "Area-Settings",
-        "Area-FirstRun",
         "Needs-Triage"
       ],
       "suggested_reply": ""
@@ -642,8 +639,8 @@
       "category": "agent-pane",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 2,
-      "severity": "papercut",
+      "score": 3,
+      "severity": "bug",
       "sentiment": "neutral",
       "next_action_glyph": "🏷️",
       "next_action": "label_only",
@@ -661,31 +658,30 @@
       "url": "https://github.com/microsoft/intelligent-terminal/issues/349",
       "kind": "issue",
       "category": "agent-pane",
-      "days_no_reply": 3,
-      "is_community": true,
-      "score": 3,
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 2,
       "severity": "none",
       "sentiment": "confused",
-      "next_action_glyph": "👤",
-      "next_action": "assign",
+      "next_action_glyph": "🏷️",
+      "next_action": "label_only",
       "suggested_labels": [
         "Issue-Feature",
         "Area-AgentPane",
-        "Needs-Triage",
-        {
-          "name": "Agent-OpenCode",
-          "reason": "The live label set has Agent-Copilot, Agent-Claude, Agent-Gemini, Agent-Codex, and Agent-Custom, but no OpenCode-specific label for this ACP backend ask."
-        }
+        "Agent-Copilot",
+        "Agent-Codex",
+        "Agent-Custom",
+        "Needs-Triage"
       ],
       "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
       "number": 350,
-      "title": "restricted by content exclusion policy",
+      "title": "Tracking: first-class WSL session support for the agent",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/350",
       "kind": "issue",
-      "category": "invalid",
+      "category": "session-management",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
@@ -694,6 +690,8 @@
       "next_action_glyph": "✅",
       "next_action": "no_action",
       "suggested_labels": [
+        "Issue-Feature",
+        "Area-SessionManagement",
         "Needs-Triage"
       ],
       "suggested_reply": ""
@@ -943,7 +941,7 @@
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "Hi @johnnyh3611-bit, thanks for the PR! CI is failing on `check-spelling` for `mcr` in `.devcontainer/devcontainer.json`. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/83823794702? If it is a false positive, please add it to the appropriate spelling expect/allow list or adjust the config, then push an update so CI can rerun."
+      "suggested_reply": "Hi @johnnyh3611-bit, CI is failing on `check-spelling` for `mcr` in `.devcontainer/devcontainer.json`. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/83823794702? If it is flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
