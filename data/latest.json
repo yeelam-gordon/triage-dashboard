@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T09:00:07Z",
+  "generated_at": "2026-06-29T10:43:48Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -16,11 +16,11 @@
   "category_counts": {
     "agent-pane": 8,
     "auto-fix": 1,
-    "cli": 2,
-    "enhancement": 2,
+    "bug": 1,
+    "cli": 1,
+    "enhancement": 3,
     "first-run": 2,
-    "session-management": 1,
-    "settings": 1
+    "session-management": 1
   },
   "per_repo": {
     "microsoft/intelligent-terminal": {
@@ -31,11 +31,11 @@
       "category_counts": {
         "agent-pane": 8,
         "auto-fix": 1,
-        "cli": 2,
-        "enhancement": 2,
+        "bug": 1,
+        "cli": 1,
+        "enhancement": 3,
         "first-run": 2,
-        "session-management": 1,
-        "settings": 1
+        "session-management": 1
       },
       "trends": [
         {
@@ -412,14 +412,14 @@
       "title": "Add ItE2E end-to-end UI test framework",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/335",
       "kind": "pr",
-      "category": "build",
-      "days_no_reply": 6,
-      "is_community": false,
-      "score": 1,
+      "category": "feature",
+      "days_no_reply": 0,
+      "is_community": true,
+      "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "🔥",
-      "next_action": "reply",
+      "next_action_glyph": "✅",
+      "next_action": "ready_to_merge",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -429,16 +429,16 @@
       "title": "fix(fre): stop FRE false-blocking on a load-induced execution-policy probe timeout",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/336",
       "kind": "pr",
-      "category": "bug-fix",
-      "days_no_reply": 6,
+      "category": "other",
+      "days_no_reply": 0,
       "is_community": false,
-      "score": 4,
-      "severity": "bug",
+      "score": 1,
+      "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "🔥",
-      "next_action": "reply",
+      "next_action_glyph": "✅",
+      "next_action": "ready_to_merge",
       "suggested_labels": [],
-      "suggested_reply": ""
+      "suggested_reply": "Review needed for community PR."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -446,7 +446,7 @@
       "title": "Move GPOs out of category \"Windows Components\"",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/337",
       "kind": "pr",
-      "category": "feature",
+      "category": "other",
       "days_no_reply": 0,
       "is_community": true,
       "score": 3,
@@ -455,7 +455,7 @@
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "Needs-Triage — community PR #337 touches policies/GPO files without an ownership-table reviewer. Please route to the right policy/GPO owner."
+      "suggested_reply": "@team — PR #337 from htcfreek (first-time contributor) touches Group Policy organization. 7-day SLA. Could use team review?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -463,16 +463,16 @@
       "title": "test(e2e): deterministic FRE execution-policy coverage via registry",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/338",
       "kind": "pr",
-      "category": "build",
+      "category": "other",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "⏸",
-      "next_action": "wait_on_author",
+      "next_action_glyph": "✅",
+      "next_action": "ready_to_merge",
       "suggested_labels": [],
-      "suggested_reply": "Draft reply placeholder"
+      "suggested_reply": "Review needed for community PR."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -480,19 +480,16 @@
       "title": "Codex agent sessions show AGENTS.md instructions instead of actual session titles",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/339",
       "kind": "issue",
-      "category": "cli",
+      "category": "bug",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 4,
+      "score": 2,
       "severity": "bug",
-      "sentiment": "confused",
+      "sentiment": "neutral",
       "next_action_glyph": "✅",
       "next_action": "no_action",
       "suggested_labels": [
-        "Issue-Bug",
-        "Agent-Codex",
-        "Area-CLI",
-        "Resolution-Fix-Committed"
+        "Issue-Bug"
       ],
       "suggested_reply": ""
     },
@@ -502,16 +499,16 @@
       "title": "fix(shell-integration): bash PROMPT_COMMAND set -u safety + Agent Pane profile-count UTs",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/340",
       "kind": "pr",
-      "category": "bug-fix",
-      "days_no_reply": 6,
+      "category": "other",
+      "days_no_reply": 0,
       "is_community": false,
-      "score": 3,
-      "severity": "bug",
+      "score": 0,
+      "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "🔥",
-      "next_action": "reply",
+      "next_action_glyph": "✅",
+      "next_action": "ready_to_merge",
       "suggested_labels": [],
-      "suggested_reply": ""
+      "suggested_reply": "Review needed for community PR."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -519,16 +516,16 @@
       "title": "docs(wta): update architecture docs to helper+master model",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/341",
       "kind": "pr",
-      "category": "docs",
-      "days_no_reply": 6,
+      "category": "other",
+      "days_no_reply": 0,
       "is_community": false,
-      "score": 1,
+      "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "🔥",
-      "next_action": "reply",
+      "next_action_glyph": "✅",
+      "next_action": "ready_to_merge",
       "suggested_labels": [],
-      "suggested_reply": ""
+      "suggested_reply": "Review needed for community PR."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -536,16 +533,16 @@
       "title": "fix(auth): recover from post-login auth loop on a stale shared agent CLI",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/342",
       "kind": "pr",
-      "category": "bug-fix",
+      "category": "other",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 2,
-      "severity": "bug",
+      "score": 0,
+      "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "✅",
-      "next_action": "stash",
+      "next_action_glyph": "🟥",
+      "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": ""
+      "suggested_reply": "Review needed for community PR."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -553,16 +550,16 @@
       "title": "Restore pre-entry agent pane state on Esc out of session management",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/343",
       "kind": "pr",
-      "category": "bug-fix",
+      "category": "other",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 2,
-      "severity": "bug",
+      "score": 0,
+      "severity": "none",
       "sentiment": "",
       "next_action_glyph": "✅",
-      "next_action": "stash",
+      "next_action": "ready_to_merge",
       "suggested_labels": [],
-      "suggested_reply": ""
+      "suggested_reply": "Review needed for community PR."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -570,16 +567,16 @@
       "title": "Add refresh to re-scan on-disk history (host CLIs + currently-running WSL distros)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/344",
       "kind": "pr",
-      "category": "feature",
+      "category": "other",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "✅",
-      "next_action": "stash",
+      "next_action_glyph": "🟥",
+      "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": ""
+      "suggested_reply": "Review needed for community PR."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -587,39 +584,37 @@
       "title": "feat(shell): self-report shell identity via OSC 9001;ShellType",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/345",
       "kind": "pr",
-      "category": "feature",
+      "category": "other",
       "days_no_reply": 0,
       "is_community": false,
       "score": 1,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "✅",
-      "next_action": "stash",
+      "next_action_glyph": "🟥",
+      "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": ""
+      "suggested_reply": "Review needed for community PR."
     },
     {
       "repo": "microsoft/intelligent-terminal",
       "number": 346,
-      "title": "Autofix card not dismissed by Esc (intermittent; E2E-discovered)",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/346",
+      "title": "",
+      "url": "",
       "kind": "issue",
       "category": "agent-pane",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 5,
+      "score": 4,
       "severity": "regression",
-      "sentiment": "blocked",
-      "next_action_glyph": "🏷️",
-      "next_action": "label_only",
+      "sentiment": "confused",
+      "next_action_glyph": "💬",
+      "next_action": "reply",
       "suggested_labels": [
         "Issue-Bug",
         "Area-AgentPane",
-        "Area-AutoFix",
-        "Severity-Regression",
-        "Needs-Triage"
+        "Area-AutoFix"
       ],
-      "suggested_reply": ""
+      "suggested_reply": "Thanks for the detailed E2E report @vanzue! The issue is clearly scoped:\n\n**Hypothesis A — product bug** would be: the notification banner being re-armed blocks Esc from reaching the card-dismiss arm in the match statement.\n\n**Hypothesis B — E2E false positive** would be: the card text persists in scrollback even after dismissed, causing the regex to still match.\n\nEither way, this is release-gating E2E flakiness worth fixing.\n\n**Suggested next step:** capture the pane buffer after each Esc press (especially 2nd–3rd) to determine whether the card border itself clears. That will disambiguate."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -627,20 +622,18 @@
       "title": "Settings migration for Windows Terminal",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/347",
       "kind": "issue",
-      "category": "settings",
+      "category": "enhancement",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
       "severity": "none",
-      "sentiment": "positive",
+      "sentiment": "neutral",
       "next_action_glyph": "🏷️",
       "next_action": "label_only",
       "suggested_labels": [
-        "Issue-Feature",
-        "Area-Settings",
-        "Needs-Triage"
+        "Issue-Feature"
       ],
-      "suggested_reply": ""
+      "suggested_reply": "Thanks for the feature suggestion! Settings migration is an important capability. Please see our [contribution guidelines](https://github.com/microsoft/terminal/wiki/Contributing) and feel free to open a PR with a proposed implementation."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -649,19 +642,18 @@
       "url": "https://github.com/microsoft/intelligent-terminal/issues/348",
       "kind": "issue",
       "category": "agent-pane",
-      "days_no_reply": 0,
+      "days_no_reply": 5,
       "is_community": true,
-      "score": 2,
-      "severity": "papercut",
+      "score": 4,
+      "severity": "bug",
       "sentiment": "neutral",
-      "next_action_glyph": "🏷️",
-      "next_action": "label_only",
+      "next_action_glyph": "💬",
+      "next_action": "reply",
       "suggested_labels": [
         "Issue-Bug",
-        "Area-AgentPane",
-        "Severity-Papercut"
+        "Area-AgentPane"
       ],
-      "suggested_reply": ""
+      "suggested_reply": "Thanks for the detailed report! This looks like the agent bar isn't picking up the active theme correctly. We'll investigate."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -680,10 +672,10 @@
       "suggested_labels": [
         "Issue-Feature",
         "Area-AgentPane",
+        "Needs-Triage",
         "Agent-Copilot",
-        "Agent-Codex",
         "Agent-Custom",
-        "Agent-OpenCode"
+        "Agent-Codex"
       ],
       "suggested_reply": ""
     },
@@ -696,16 +688,14 @@
       "category": "session-management",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 0,
+      "score": 1,
       "severity": "none",
       "sentiment": "neutral",
       "next_action_glyph": "🏷️",
       "next_action": "label_only",
       "suggested_labels": [
         "Issue-Feature",
-        "Area-SessionManagement",
-        "Area-AgentPane",
-        "Area-AutoFix"
+        "Area-SessionManagement"
       ],
       "suggested_reply": ""
     },
@@ -721,16 +711,15 @@
       "score": 0,
       "severity": "none",
       "sentiment": "neutral",
-      "next_action_glyph": "🏷️",
-      "next_action": "label_only",
+      "next_action_glyph": "💬",
+      "next_action": "reply",
       "suggested_labels": [
         "Issue-Feature",
+        "Needs-Triage",
         "Area-AgentPane",
-        "Area-SessionManagement",
-        "Area-CLI",
-        "Status-In-Progress"
+        "Needs-Tag-Fix"
       ],
-      "suggested_reply": ""
+      "suggested_reply": "Thanks for the feature request! This is a great suggestion for improving agent behavior when working with WSL terminals. We'll add this to our backlog for future consideration."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -741,16 +730,15 @@
       "category": "agent-pane",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 2,
-      "severity": "bug",
-      "sentiment": "neutral",
+      "score": 1,
+      "severity": "none",
+      "sentiment": "positive",
       "next_action_glyph": "✅",
       "next_action": "no_action",
       "suggested_labels": [
         "Issue-Bug",
         "Area-AgentPane",
-        "Area-AutoFix",
-        "Resolution-Fix-Committed"
+        "Area-AutoFix"
       ],
       "suggested_reply": ""
     },
@@ -766,10 +754,10 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "✅",
-      "next_action": "stash",
+      "next_action_glyph": "🟥",
+      "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": ""
+      "suggested_reply": "Review needed for community PR."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -780,11 +768,11 @@
       "category": "feature",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 1,
+      "score": 2.0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "💤",
-      "next_action": "stash",
+      "next_action_glyph": "🟥",
+      "next_action": "investigate_ci",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -794,16 +782,16 @@
       "title": "Skip bare \"# AGENTS.md instructions\" codex heading in session titles (#339)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/355",
       "kind": "pr",
-      "category": "bug-fix",
+      "category": "other",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 2,
-      "severity": "bug",
+      "score": 1,
+      "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "💤",
-      "next_action": "stash",
+      "next_action_glyph": "🟥",
+      "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": ""
+      "suggested_reply": "Review needed for community PR."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -811,13 +799,13 @@
       "title": "test(e2e): expand agent-pane coverage, add release report, fix harness flakiness",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/356",
       "kind": "pr",
-      "category": "build",
+      "category": "other",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "💤",
+      "next_action_glyph": "✅",
       "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
@@ -828,16 +816,16 @@
       "title": "build: rename main exe to IntelligentTerminal.exe",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/357",
       "kind": "pr",
-      "category": "build",
+      "category": "other",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "💤",
-      "next_action": "stash",
+      "next_action_glyph": "🟥",
+      "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": ""
+      "suggested_reply": "Review needed for community PR."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -847,12 +835,12 @@
       "kind": "pr",
       "category": "build",
       "days_no_reply": 0,
-      "is_community": true,
-      "score": 0,
-      "severity": "none",
+      "is_community": false,
+      "score": 2,
+      "severity": "bug",
       "sentiment": "",
-      "next_action_glyph": "✅",
-      "next_action": "ready_to_merge",
+      "next_action_glyph": "🟥",
+      "next_action": "investigate_ci",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -862,16 +850,16 @@
       "title": "test(ci): verify spelling check passes after secpoll fix [dummy]",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/359",
       "kind": "pr",
-      "category": "build",
+      "category": "other",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "💤",
-      "next_action": "stash",
+      "next_action_glyph": "⏸",
+      "next_action": "wait_on_author",
       "suggested_labels": [],
-      "suggested_reply": ""
+      "suggested_reply": "Review needed for community PR."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -885,8 +873,8 @@
       "score": 2,
       "severity": "bug",
       "sentiment": "",
-      "next_action_glyph": "💤",
-      "next_action": "stash",
+      "next_action_glyph": "✅",
+      "next_action": "ready_to_merge",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -896,14 +884,14 @@
       "title": "fix(spelling): clear check-spelling unrecognized words and forbidden pattern",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/361",
       "kind": "pr",
-      "category": "bug-fix",
+      "category": "docs",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 1,
+      "score": 1.0,
       "severity": "none",
       "sentiment": "",
       "next_action_glyph": "✅",
-      "next_action": "none",
+      "next_action": "ready_to_merge",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -915,12 +903,12 @@
       "kind": "pr",
       "category": "feature",
       "days_no_reply": 0,
-      "is_community": false,
+      "is_community": true,
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "💤",
-      "next_action": "stash",
+      "next_action_glyph": "✅",
+      "next_action": "investigate_ci",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -930,14 +918,14 @@
       "title": "wta: own telemetry provider + read real values from terminal-internals header",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/363",
       "kind": "pr",
-      "category": "build",
+      "category": "other",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "💤",
-      "next_action": "stash",
+      "next_action_glyph": "⏸",
+      "next_action": "wait_on_author",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -955,8 +943,10 @@
       "sentiment": "",
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
-      "suggested_labels": [],
-      "suggested_reply": "Hi @johnnyh3611-bit, CI is failing on `check-spelling` — quick scan suggests it might be related to the current PR state. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/83823794702? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_labels": [
+        "Needs-Review"
+      ],
+      "suggested_reply": "Hi @johnnyh3611-bit, CI is failing on `check-spelling`. The failing run points at `.devcontainer/devcontainer.json` and flags `mcr` in the base image reference. Could you take a look at <https://github.com/microsoft/intelligent-terminal/runs/83823794702> and push a fix or rerun once addressed?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -966,19 +956,19 @@
       "kind": "pr",
       "category": "refactor",
       "days_no_reply": 0,
-      "is_community": false,
+      "is_community": true,
       "score": 3,
-      "severity": "risk",
+      "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "⏸",
-      "next_action": "wait_on_author",
+      "next_action_glyph": "👀",
+      "next_action": "request_reviewer",
       "suggested_labels": [],
       "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
       "number": 366,
-      "title": "fix: inherit active pane profile in agent-created terminals to match …",
+      "title": "fix: inherit active pane profile in agent-created terminals to match active pane",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/366",
       "kind": "pr",
       "category": "bug-fix",
@@ -990,7 +980,7 @@
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "@DDKinger — community PR #366 touches `tools/wta/src/shell/shell_manager.rs`, `tools/wta/src/shell/wt_channel/cli_channel.rs`, `src/tools/wtcli/main.cpp` (your area / recent touched-path history). 7-day SLA clock starts today. Worth a first pass?"
+      "suggested_reply": "@maintainers — community first-timer PR #366 touches WTA shell infrastructure (shell_manager.rs, cli_channel.rs, wtcli) to fix profile inheritance in agent-created terminals. Closes #351. 7-day SLA clock starts today. Worth a first pass?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -1001,11 +991,11 @@
       "category": "refactor",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 3,
-      "severity": "risk",
+      "score": 5,
+      "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "⏸",
-      "next_action": "wait_on_author",
+      "next_action_glyph": "👀",
+      "next_action": "request_reviewer",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -1015,14 +1005,14 @@
       "title": "Replace auth shell-outs with native Windows APIs",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/368",
       "kind": "pr",
-      "category": "bug-fix",
+      "category": "feature",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 3,
-      "severity": "risk",
+      "score": 0,
+      "severity": "none",
       "sentiment": "",
       "next_action_glyph": "✅",
-      "next_action": "stash",
+      "next_action": "ready_to_merge",
       "suggested_labels": [],
       "suggested_reply": ""
     }
