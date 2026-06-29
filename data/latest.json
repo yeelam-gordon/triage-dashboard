@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T01:57:58Z",
+  "generated_at": "2026-06-29T02:53:33Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -10,11 +10,11 @@
     "upstream-sync"
   ],
   "totals": {
-    "open_issues": 16,
+    "open_issues": 17,
     "open_prs": 31
   },
   "category_counts": {
-    "agent-pane": 2,
+    "agent-pane": 3,
     "app-shell": 1,
     "bug": 4,
     "enhancement": 5,
@@ -25,11 +25,11 @@
   "per_repo": {
     "microsoft/intelligent-terminal": {
       "totals": {
-        "open_issues": 16,
+        "open_issues": 17,
         "open_prs": 31
       },
       "category_counts": {
-        "agent-pane": 2,
+        "agent-pane": 3,
         "app-shell": 1,
         "bug": 4,
         "enhancement": 5,
@@ -145,6 +145,28 @@
         "Needs-Triage"
       ],
       "suggested_reply": "Thanks for the feature request! Adding support for Goose is an interesting idea. We appreciate you following our contribution guide and linking to the tool's documentation.\n\nCurrently, we're focused on our primary supported agents. To help us prioritize, could you share:\n- Which AI agents/frameworks your team is currently using?\n- How Goose would integrate with your intelligent terminal workflow?\n- Whether you'd be interested in contributing support for Goose?\n\nFor now, you can integrate Goose by following our dependency installation guide at https://github.com/microsoft/intelligent-terminal/blob/main/doc/installing-dependencies.md."
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 209,
+      "title": "Support GitHub Enterprise Copilot",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/209",
+      "kind": "issue",
+      "category": "agent-pane",
+      "days_no_reply": 0,
+      "is_community": true,
+      "score": 1,
+      "severity": "none",
+      "sentiment": "positive",
+      "next_action_glyph": "✅",
+      "next_action": "no_action",
+      "suggested_labels": [
+        "Issue-Feature",
+        "Area-AgentPane",
+        "Agent-Copilot",
+        "Resolution-Fix-Committed"
+      ],
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
