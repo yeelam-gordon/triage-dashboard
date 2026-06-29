@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-29T08:19:04Z",
+  "generated_at": "2026-06-29T09:00:07Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -14,14 +14,13 @@
     "open_prs": 33
   },
   "category_counts": {
-    "agent-pane": 4,
+    "agent-pane": 8,
     "auto-fix": 1,
-    "bug": 2,
-    "enhancement": 4,
-    "first-run": 1,
-    "session-management": 3,
-    "settings": 1,
-    "transport": 1
+    "cli": 2,
+    "enhancement": 2,
+    "first-run": 2,
+    "session-management": 1,
+    "settings": 1
   },
   "per_repo": {
     "microsoft/intelligent-terminal": {
@@ -30,14 +29,13 @@
         "open_prs": 33
       },
       "category_counts": {
-        "agent-pane": 4,
+        "agent-pane": 8,
         "auto-fix": 1,
-        "bug": 2,
-        "enhancement": 4,
-        "first-run": 1,
-        "session-management": 3,
-        "settings": 1,
-        "transport": 1
+        "cli": 2,
+        "enhancement": 2,
+        "first-run": 2,
+        "session-management": 1,
+        "settings": 1
       },
       "trends": [
         {
@@ -176,17 +174,19 @@
       "title": "Alt-V doesn't paste image into Copilot window",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/211",
       "kind": "issue",
-      "category": "enhancement",
+      "category": "agent-pane",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 3,
+      "score": 0,
       "severity": "none",
       "sentiment": "neutral",
       "next_action_glyph": "✅",
       "next_action": "no_action",
       "suggested_labels": [
         "Issue-Feature",
-        "Needs-Tag-Fix"
+        "Area-AgentPane",
+        "Agent-Copilot",
+        "Resolution-Fix-Committed"
       ],
       "suggested_reply": ""
     },
@@ -196,7 +196,7 @@
       "title": "Intelligent Terminal opens multiple Edge tabs requesting login and fails with tenant error",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/215",
       "kind": "issue",
-      "category": "bug",
+      "category": "first-run",
       "days_no_reply": 0,
       "is_community": true,
       "score": 5,
@@ -205,11 +205,11 @@
       "next_action_glyph": "✅",
       "next_action": "no_action",
       "suggested_labels": [
-        "Needs-Triage",
-        {
-          "reason": "Auth/login flow problem",
-          "label": "Issue-Authentication"
-        }
+        "Issue-Bug",
+        "Area-FirstRun",
+        "Area-SessionManagement",
+        "Agent-Copilot",
+        "Resolution-Fix-Committed"
       ],
       "suggested_reply": ""
     },
@@ -222,16 +222,19 @@
       "category": "first-run",
       "days_no_reply": 1,
       "is_community": true,
-      "score": 2.0,
+      "score": 4,
       "severity": "none",
-      "sentiment": "neutral",
-      "next_action_glyph": "💬",
-      "next_action": "reply",
+      "sentiment": "confused",
+      "next_action_glyph": "👤",
+      "next_action": "assign",
       "suggested_labels": [
         "Issue-Feature",
-        "Area-FirstRun"
+        "Area-FirstRun",
+        "Agent-Copilot",
+        "Needs-Triage",
+        "Needs-Author-Feedback"
       ],
-      "suggested_reply": "Thanks for the thoughtful FRE feedback! We're tracking first-run improvements — this is helpful input."
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -239,19 +242,22 @@
       "title": "Support GitHub Copilot CLI (BYOK / local models) as ACP agent without requiring cloud authentication",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/248",
       "kind": "issue",
-      "category": "enhancement",
-      "days_no_reply": 0,
+      "category": "cli",
+      "days_no_reply": 3,
       "is_community": true,
-      "score": 1,
+      "score": 2,
       "severity": "none",
       "sentiment": "positive",
       "next_action_glyph": "🏷️",
       "next_action": "label_only",
       "suggested_labels": [
         "Issue-Feature",
+        "Area-CLI",
+        "Agent-Copilot",
+        "Agent-Custom",
         "Needs-Triage"
       ],
-      "suggested_reply": "Thanks for the feature request! We've seen interest in local model support. This would require significant architectural changes to the agent dispatcher and authentication flow. We're currently investigating the feasibility. Would you be interested in contributing, or would you prefer we tackle this on our roadmap?"
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -276,18 +282,19 @@
       "title": "ACP transport failed when trying to restore multiple tabs on startup",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/275",
       "kind": "issue",
-      "category": "transport",
+      "category": "agent-pane",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 6,
-      "severity": "crash",
-      "sentiment": "frustrated",
+      "score": 5,
+      "severity": "bug",
+      "sentiment": "blocked",
       "next_action_glyph": "✅",
       "next_action": "no_action",
       "suggested_labels": [
         "Issue-Bug",
-        "Needs-Tag-Fix",
-        "Area-Transport"
+        "Area-AgentPane",
+        "Area-SessionManagement",
+        "Resolution-Fix-Committed"
       ],
       "suggested_reply": ""
     },
@@ -297,7 +304,7 @@
       "title": "Per-tab AI agents via a multi-agent wta-master (id-based, GPO-aware)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/296",
       "kind": "pr",
-      "category": "feature",
+      "category": "build",
       "days_no_reply": 0,
       "is_community": true,
       "score": 4,
@@ -306,7 +313,7 @@
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "@lhecker / @kaitao — community PR #296 touches `tools/wta/src/master/mod.rs`, `src/cascadia/TerminalApp/TerminalPage.cpp`, and `src/cascadia/TerminalApp/AgentPaneContent.cpp` (SessionManagement/AgentPane areas). 7-day SLA clock starts today. Worth a first pass?"
+      "suggested_reply": "@lhecker — community PR #296 touches `tools/wta/src/master/mod.rs, src/cascadia/TerminalApp/TerminalPage.cpp, tools/wta/src/session_registry.rs` (your area). 7-day SLA clock starts today. Worth a first pass?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -331,11 +338,11 @@
       "title": "Investigate commands on PATH before answering / autofixing (#287)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/306",
       "kind": "pr",
-      "category": "bug-fix",
+      "category": "build",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 3,
-      "severity": "bug",
+      "score": 1,
+      "severity": "none",
       "sentiment": "",
       "next_action_glyph": "⏸",
       "next_action": "wait_on_author",
@@ -348,16 +355,16 @@
       "title": "Add /switch-agent for per-tab AI agent selection",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/321",
       "kind": "pr",
-      "category": "feature",
-      "days_no_reply": 0,
+      "category": "build",
+      "days_no_reply": 11,
       "is_community": true,
-      "score": 4,
+      "score": 5,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "💤",
-      "next_action": "stash",
+      "next_action_glyph": "🔥",
+      "next_action": "reply",
       "suggested_labels": [],
-      "suggested_reply": ""
+      "suggested_reply": "Hi @ashishpatel26, thanks for the PR! It currently has merge conflicts with `main`. Could you rebase (`git fetch origin && git rebase origin/main`) and push? Happy to take a closer look once it's clean."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -365,16 +372,16 @@
       "title": "Add WSL agent session management (historical visibility and resume)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/323",
       "kind": "pr",
-      "category": "feature",
-      "days_no_reply": 0,
+      "category": "build",
+      "days_no_reply": 6,
       "is_community": false,
       "score": 1,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "⏸",
-      "next_action": "wait_on_author",
+      "next_action_glyph": "🔥",
+      "next_action": "reply",
       "suggested_labels": [],
-      "suggested_reply": "Draft reply placeholder"
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -382,18 +389,22 @@
       "title": "Can't install with ExecutionPolicy Unrestricted",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/328",
       "kind": "issue",
-      "category": "bug",
+      "category": "auto-fix",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 2.0,
-      "severity": "bug",
-      "sentiment": "neutral",
-      "next_action_glyph": "💬",
-      "next_action": "reply",
+      "score": 6,
+      "severity": "risk",
+      "sentiment": "frustrated",
+      "next_action_glyph": "✅",
+      "next_action": "no_action",
       "suggested_labels": [
-        "Issue-Bug"
+        "Issue-Bug",
+        "Area-AutoFix",
+        "Area-FirstRun",
+        "Severity-High",
+        "Resolution-Fix-Committed"
       ],
-      "suggested_reply": "Thank you for reporting. Please provide: 1) Steps to reproduce, 2) Version info, 3) Expected vs actual behavior"
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -401,16 +412,16 @@
       "title": "Add ItE2E end-to-end UI test framework",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/335",
       "kind": "pr",
-      "category": "feature",
-      "days_no_reply": 0,
+      "category": "build",
+      "days_no_reply": 6,
       "is_community": false,
       "score": 1,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "⏸",
-      "next_action": "wait_on_author",
+      "next_action_glyph": "🔥",
+      "next_action": "reply",
       "suggested_labels": [],
-      "suggested_reply": "Draft reply placeholder"
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -419,15 +430,15 @@
       "url": "https://github.com/microsoft/intelligent-terminal/pull/336",
       "kind": "pr",
       "category": "bug-fix",
-      "days_no_reply": 0,
+      "days_no_reply": 6,
       "is_community": false,
       "score": 4,
       "severity": "bug",
       "sentiment": "",
-      "next_action_glyph": "⏸",
-      "next_action": "wait_on_author",
+      "next_action_glyph": "🔥",
+      "next_action": "reply",
       "suggested_labels": [],
-      "suggested_reply": "Draft reply placeholder"
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -435,7 +446,7 @@
       "title": "Move GPOs out of category \"Windows Components\"",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/337",
       "kind": "pr",
-      "category": "other",
+      "category": "feature",
       "days_no_reply": 0,
       "is_community": true,
       "score": 3,
@@ -444,7 +455,7 @@
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "Needs-Triage — community PR #337 touches `policies/IntelligentTerminal.admx` and `policies/en-US/IntelligentTerminal.adml`, but `policies/**` is not mapped in the ownership table. 7-day SLA clock starts today. Could someone route a first reviewer?"
+      "suggested_reply": "Needs-Triage — community PR #337 touches policies/GPO files without an ownership-table reviewer. Please route to the right policy/GPO owner."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -469,7 +480,7 @@
       "title": "Codex agent sessions show AGENTS.md instructions instead of actual session titles",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/339",
       "kind": "issue",
-      "category": "session-management",
+      "category": "cli",
       "days_no_reply": 0,
       "is_community": true,
       "score": 4,
@@ -480,7 +491,7 @@
       "suggested_labels": [
         "Issue-Bug",
         "Agent-Codex",
-        "Area-SessionManagement",
+        "Area-CLI",
         "Resolution-Fix-Committed"
       ],
       "suggested_reply": ""
@@ -492,15 +503,15 @@
       "url": "https://github.com/microsoft/intelligent-terminal/pull/340",
       "kind": "pr",
       "category": "bug-fix",
-      "days_no_reply": 0,
+      "days_no_reply": 6,
       "is_community": false,
-      "score": 2,
+      "score": 3,
       "severity": "bug",
       "sentiment": "",
-      "next_action_glyph": "⏸",
-      "next_action": "wait_on_author",
+      "next_action_glyph": "🔥",
+      "next_action": "reply",
       "suggested_labels": [],
-      "suggested_reply": "Draft reply placeholder"
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -509,15 +520,15 @@
       "url": "https://github.com/microsoft/intelligent-terminal/pull/341",
       "kind": "pr",
       "category": "docs",
-      "days_no_reply": 0,
+      "days_no_reply": 6,
       "is_community": false,
-      "score": 0,
+      "score": 1,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "⏸",
-      "next_action": "wait_on_author",
+      "next_action_glyph": "🔥",
+      "next_action": "reply",
       "suggested_labels": [],
-      "suggested_reply": "Draft reply placeholder"
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -531,10 +542,10 @@
       "score": 2,
       "severity": "bug",
       "sentiment": "",
-      "next_action_glyph": "⏸",
-      "next_action": "wait_on_author",
+      "next_action_glyph": "✅",
+      "next_action": "stash",
       "suggested_labels": [],
-      "suggested_reply": "Draft reply placeholder"
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -542,39 +553,22 @@
       "title": "Restore pre-entry agent pane state on Esc out of session management",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/343",
       "kind": "pr",
-      "category": "other",
+      "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 0,
-      "severity": "none",
+      "score": 2,
+      "severity": "bug",
       "sentiment": "",
-      "next_action_glyph": "⏸",
-      "next_action": "wait_on_author",
+      "next_action_glyph": "✅",
+      "next_action": "stash",
       "suggested_labels": [],
-      "suggested_reply": "Draft reply placeholder"
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
       "number": 344,
       "title": "Add refresh to re-scan on-disk history (host CLIs + currently-running WSL distros)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/344",
-      "kind": "pr",
-      "category": "feature",
-      "days_no_reply": 0,
-      "is_community": false,
-      "score": 0,
-      "severity": "none",
-      "sentiment": "",
-      "next_action_glyph": "⏸",
-      "next_action": "wait_on_author",
-      "suggested_labels": [],
-      "suggested_reply": "Draft reply placeholder"
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
-      "number": 345,
-      "title": "feat(shell): self-report shell identity via OSC 9001;ShellType",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/345",
       "kind": "pr",
       "category": "feature",
       "days_no_reply": 0,
@@ -589,22 +583,40 @@
     },
     {
       "repo": "microsoft/intelligent-terminal",
+      "number": 345,
+      "title": "feat(shell): self-report shell identity via OSC 9001;ShellType",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/345",
+      "kind": "pr",
+      "category": "feature",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 1,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "✅",
+      "next_action": "stash",
+      "suggested_labels": [],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
       "number": 346,
       "title": "Autofix card not dismissed by Esc (intermittent; E2E-discovered)",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/346",
       "kind": "issue",
-      "category": "auto-fix",
+      "category": "agent-pane",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 3,
-      "severity": "risk",
-      "sentiment": "neutral",
-      "next_action_glyph": "👤",
-      "next_action": "assign",
+      "score": 5,
+      "severity": "regression",
+      "sentiment": "blocked",
+      "next_action_glyph": "🏷️",
+      "next_action": "label_only",
       "suggested_labels": [
         "Issue-Bug",
-        "Area-AutoFix",
         "Area-AgentPane",
+        "Area-AutoFix",
+        "Severity-Regression",
         "Needs-Triage"
       ],
       "suggested_reply": ""
@@ -618,7 +630,7 @@
       "category": "settings",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 1,
+      "score": 0,
       "severity": "none",
       "sentiment": "positive",
       "next_action_glyph": "🏷️",
@@ -639,15 +651,15 @@
       "category": "agent-pane",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 3,
-      "severity": "bug",
+      "score": 2,
+      "severity": "papercut",
       "sentiment": "neutral",
       "next_action_glyph": "🏷️",
       "next_action": "label_only",
       "suggested_labels": [
         "Issue-Bug",
         "Area-AgentPane",
-        "Needs-Triage"
+        "Severity-Papercut"
       ],
       "suggested_reply": ""
     },
@@ -671,7 +683,7 @@
         "Agent-Copilot",
         "Agent-Codex",
         "Agent-Custom",
-        "Needs-Triage"
+        "Agent-OpenCode"
       ],
       "suggested_reply": ""
     },
@@ -687,12 +699,13 @@
       "score": 0,
       "severity": "none",
       "sentiment": "neutral",
-      "next_action_glyph": "✅",
-      "next_action": "no_action",
+      "next_action_glyph": "🏷️",
+      "next_action": "label_only",
       "suggested_labels": [
         "Issue-Feature",
         "Area-SessionManagement",
-        "Needs-Triage"
+        "Area-AgentPane",
+        "Area-AutoFix"
       ],
       "suggested_reply": ""
     },
@@ -701,27 +714,6 @@
       "number": 351,
       "title": "Agent-launched new terminal should match the active WSL/Ubuntu session, not the default profile",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/351",
-      "kind": "issue",
-      "category": "session-management",
-      "days_no_reply": 0,
-      "is_community": false,
-      "score": 0,
-      "severity": "none",
-      "sentiment": "neutral",
-      "next_action_glyph": "🏷️",
-      "next_action": "label_only",
-      "suggested_labels": [
-        "Issue-Feature",
-        "Area-SessionManagement",
-        "Needs-Triage"
-      ],
-      "suggested_reply": ""
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
-      "number": 352,
-      "title": "Context awareness: agent pane & autofix recognize the active WSL/bash shell (OSC 9001;ShellType)",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/352",
       "kind": "issue",
       "category": "agent-pane",
       "days_no_reply": 0,
@@ -734,6 +726,29 @@
       "suggested_labels": [
         "Issue-Feature",
         "Area-AgentPane",
+        "Area-SessionManagement",
+        "Area-CLI",
+        "Status-In-Progress"
+      ],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 352,
+      "title": "Context awareness: agent pane & autofix recognize the active WSL/bash shell (OSC 9001;ShellType)",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/352",
+      "kind": "issue",
+      "category": "agent-pane",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 2,
+      "severity": "bug",
+      "sentiment": "neutral",
+      "next_action_glyph": "✅",
+      "next_action": "no_action",
+      "suggested_labels": [
+        "Issue-Bug",
+        "Area-AgentPane",
         "Area-AutoFix",
         "Resolution-Fix-Committed"
       ],
@@ -745,14 +760,14 @@
       "title": "TerminalApp: foreground target window in FocusProtocolPane",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/353",
       "kind": "pr",
-      "category": "refactor",
+      "category": "other",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
       "severity": "none",
       "sentiment": "",
       "next_action_glyph": "✅",
-      "next_action": "ready_to_merge",
+      "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -768,8 +783,8 @@
       "score": 1,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "✅",
-      "next_action": "ready_to_merge",
+      "next_action_glyph": "💤",
+      "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -779,11 +794,11 @@
       "title": "Skip bare \"# AGENTS.md instructions\" codex heading in session titles (#339)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/355",
       "kind": "pr",
-      "category": "feature",
+      "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 0,
-      "severity": "none",
+      "score": 2,
+      "severity": "bug",
       "sentiment": "",
       "next_action_glyph": "💤",
       "next_action": "stash",
@@ -802,8 +817,8 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "",
-      "next_action": "",
+      "next_action_glyph": "💤",
+      "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -866,12 +881,12 @@
       "kind": "pr",
       "category": "bug-fix",
       "days_no_reply": 0,
-      "is_community": true,
-      "score": 3,
+      "is_community": false,
+      "score": 2,
       "severity": "bug",
       "sentiment": "",
-      "next_action_glyph": "✅",
-      "next_action": "ready_to_merge",
+      "next_action_glyph": "💤",
+      "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -904,10 +919,10 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "🟥",
-      "next_action": "investigate_ci",
+      "next_action_glyph": "💤",
+      "next_action": "stash",
       "suggested_labels": [],
-      "suggested_reply": "⚠️ This PR merged with CI failures. Review logs at: {log_path_logs}"
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -921,8 +936,8 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "⏸",
-      "next_action": "wait_on_author",
+      "next_action_glyph": "💤",
+      "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -941,7 +956,7 @@
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "Hi @johnnyh3611-bit, CI is failing on `check-spelling` for `mcr` in `.devcontainer/devcontainer.json`. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/83823794702? If it is flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": "Hi @johnnyh3611-bit, CI is failing on `check-spelling` — quick scan suggests it might be related to the current PR state. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/83823794702? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -952,8 +967,8 @@
       "category": "refactor",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 0,
-      "severity": "none",
+      "score": 3,
+      "severity": "risk",
       "sentiment": "",
       "next_action_glyph": "⏸",
       "next_action": "wait_on_author",
@@ -969,13 +984,13 @@
       "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 5,
+      "score": 6,
       "severity": "bug",
       "sentiment": "",
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "@DDKinger — community PR #366 touches `tools/wta/src/shell/shell_manager.rs`, `tools/wta/src/shell/wt_channel/cli_channel.rs`, `src/tools/wtcli/main.cpp` (WTCLI/WTA terminal creation flow; low confidence because the TerminalCore team table is empty). 7-day SLA clock starts today. Worth a first pass?"
+      "suggested_reply": "@DDKinger — community PR #366 touches `tools/wta/src/shell/shell_manager.rs`, `tools/wta/src/shell/wt_channel/cli_channel.rs`, `src/tools/wtcli/main.cpp` (your area / recent touched-path history). 7-day SLA clock starts today. Worth a first pass?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -986,13 +1001,13 @@
       "category": "refactor",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 0,
-      "severity": "none",
+      "score": 3,
+      "severity": "risk",
       "sentiment": "",
-      "next_action_glyph": "🟥",
-      "next_action": "investigate_ci",
+      "next_action_glyph": "⏸",
+      "next_action": "wait_on_author",
       "suggested_labels": [],
-      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan suggests it might be related to the spelling dictionary/report setup rather than the ACP rewrite itself, but could you take a look at https://github.com/microsoft/intelligent-terminal/runs/83978553333? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -1000,16 +1015,16 @@
       "title": "Replace auth shell-outs with native Windows APIs",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/368",
       "kind": "pr",
-      "category": "refactor",
+      "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
       "score": 3,
       "severity": "risk",
       "sentiment": "",
-      "next_action_glyph": "🟥",
-      "next_action": "investigate_ci",
+      "next_action_glyph": "✅",
+      "next_action": "stash",
       "suggested_labels": [],
-      "suggested_reply": "Hi @haonanttt, CI is failing on `check-spelling` — quick scan points at the spelling check (unrecognized words in the new Win32 helper). Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/83982854262? If it is flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": ""
     }
   ]
 }
