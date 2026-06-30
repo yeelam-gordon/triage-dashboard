@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T05:59:11Z",
+  "generated_at": "2026-06-30T07:05:28Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -11,20 +11,22 @@
   ],
   "totals": {
     "open_issues": 3,
-    "open_prs": 5
+    "open_prs": 6
   },
   "category_counts": {
-    "agent-pane": 2,
+    "agent-pane": 1,
+    "cli": 1,
     "settings": 1
   },
   "per_repo": {
     "microsoft/intelligent-terminal": {
       "totals": {
         "open_issues": 3,
-        "open_prs": 5
+        "open_prs": 6
       },
       "category_counts": {
-        "agent-pane": 2,
+        "agent-pane": 1,
+        "cli": 1,
         "settings": 1
       },
       "trends": [
@@ -91,7 +93,11 @@
       "suggested_labels": [
         "Issue-Feature",
         "Area-Settings",
-        "Agent-Custom"
+        "Agent-Custom",
+        {
+          "name": "Agent-OpenAI-Compatible",
+          "reason": "No live Agent-* label specifically covers BYOK/OpenAI-compatible endpoint provider support; Agent-Custom is the closest existing cross-cut."
+        }
       ],
       "suggested_reply": ""
     },
@@ -101,7 +107,7 @@
       "title": "Doesn't know about scripts on path.",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/287",
       "kind": "issue",
-      "category": "agent-pane",
+      "category": "cli",
       "days_no_reply": 0,
       "is_community": true,
       "score": 3,
@@ -111,8 +117,7 @@
       "next_action": "no_action",
       "suggested_labels": [
         "Issue-Bug",
-        "Area-AgentPane",
-        "Area-AutoFix",
+        "Area-CLI",
         "Resolution-Fix-Committed"
       ],
       "suggested_reply": ""
@@ -129,8 +134,8 @@
       "score": 3,
       "severity": "bug",
       "sentiment": "",
-      "next_action_glyph": "✅",
-      "next_action": "ready_to_merge",
+      "next_action_glyph": "💤",
+      "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -151,6 +156,7 @@
       "suggested_labels": [
         "Issue-Feature",
         "Area-AgentPane",
+        "Area-SessionManagement",
         "Status-In-Progress"
       ],
       "suggested_reply": ""
@@ -167,10 +173,27 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "⏸",
-      "next_action": "wait_on_author",
+      "next_action_glyph": "👀",
+      "next_action": "request_reviewer",
       "suggested_labels": [],
       "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 366,
+      "title": "fix: inherit active pane profile in agent-created terminals to match …",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/366",
+      "kind": "pr",
+      "category": "bug-fix",
+      "days_no_reply": 0,
+      "is_community": true,
+      "score": 6,
+      "severity": "bug",
+      "sentiment": "",
+      "next_action_glyph": "👀",
+      "next_action": "request_reviewer",
+      "suggested_labels": [],
+      "suggested_reply": "@DDKinger — community PR #366 touches `src/tools/wtcli/main.cpp`, `tools/wta/src/shell/shell_manager.rs`, and `tools/wta/src/shell/wt_channel/cli_channel.rs` (Area-CLI/WTA create-tab profile plumbing; low confidence — team table empty). 7-day SLA clock starts today. Worth a first pass?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -178,7 +201,7 @@
       "title": "WTA ACP 0.10→1.0 migration (Phase 0: behavior-preserving model rewrite)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/367",
       "kind": "pr",
-      "category": "session-management",
+      "category": "refactor",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
@@ -186,16 +209,7 @@
       "sentiment": "",
       "next_action_glyph": "⏸",
       "next_action": "wait_on_author",
-      "suggested_labels": [
-        "Area-SessionManagement",
-        "Area-CLI",
-        "Area-AutoFix",
-        "Needs-Review",
-        {
-          "name": "Area-WTAProtocol",
-          "reason": "Major churn under tools/wta/src/protocol/acp/** has no live Area-* label or ownership-table row."
-        }
-      ],
+      "suggested_labels": [],
       "suggested_reply": ""
     },
     {
@@ -208,9 +222,9 @@
       "days_no_reply": 0,
       "is_community": false,
       "score": 3,
-      "severity": "security",
+      "severity": "risk",
       "sentiment": "",
-      "next_action_glyph": "📦",
+      "next_action_glyph": "💤",
       "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
