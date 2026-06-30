@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T07:05:28Z",
+  "generated_at": "2026-06-30T07:28:38Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -10,22 +10,22 @@
     "upstream-sync"
   ],
   "totals": {
-    "open_issues": 3,
+    "open_issues": 4,
     "open_prs": 6
   },
   "category_counts": {
-    "agent-pane": 1,
+    "agent-pane": 2,
     "cli": 1,
     "settings": 1
   },
   "per_repo": {
     "microsoft/intelligent-terminal": {
       "totals": {
-        "open_issues": 3,
+        "open_issues": 4,
         "open_prs": 6
       },
       "category_counts": {
-        "agent-pane": 1,
+        "agent-pane": 2,
         "cli": 1,
         "settings": 1
       },
@@ -98,6 +98,28 @@
           "name": "Agent-OpenAI-Compatible",
           "reason": "No live Agent-* label specifically covers BYOK/OpenAI-compatible endpoint provider support; Agent-Custom is the closest existing cross-cut."
         }
+      ],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 209,
+      "title": "Support GitHub Enterprise Copilot",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/209",
+      "kind": "issue",
+      "category": "agent-pane",
+      "days_no_reply": 0,
+      "is_community": true,
+      "score": 1,
+      "severity": "none",
+      "sentiment": "positive",
+      "next_action_glyph": "✅",
+      "next_action": "no_action",
+      "suggested_labels": [
+        "Issue-Feature",
+        "Agent-Copilot",
+        "Area-AgentPane",
+        "Resolution-Fix-Committed"
       ],
       "suggested_reply": ""
     },
