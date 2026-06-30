@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T12:03:21Z",
+  "generated_at": "2026-06-30T12:33:28Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -15,7 +15,8 @@
   },
   "category_counts": {
     "agent-pane": 2,
-    "cli": 2
+    "cli": 1,
+    "settings": 1
   },
   "per_repo": {
     "microsoft/intelligent-terminal": {
@@ -25,7 +26,8 @@
       },
       "category_counts": {
         "agent-pane": 2,
-        "cli": 2
+        "cli": 1,
+        "settings": 1
       },
       "trends": [
         {
@@ -80,7 +82,7 @@
       "title": "[Feature] Support BYOK and OpenAI Compatible model endpoints",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/192",
       "kind": "issue",
-      "category": "agent-pane",
+      "category": "settings",
       "days_no_reply": 0,
       "is_community": true,
       "score": 2,
@@ -90,12 +92,9 @@
       "next_action": "label_only",
       "suggested_labels": [
         "Issue-Feature",
-        "Area-AgentPane",
+        "Area-Settings",
         "Agent-Custom",
-        {
-          "name": "Agent-OpenAI-Compatible",
-          "reason": "No live Agent-* label specifically covers BYOK/OpenAI-compatible endpoint providers."
-        }
+        "Needs-Triage"
       ],
       "suggested_reply": ""
     },
@@ -127,17 +126,17 @@
       "title": "Doesn't know about scripts on path.",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/287",
       "kind": "issue",
-      "category": "cli",
+      "category": "agent-pane",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 3,
+      "score": 4,
       "severity": "bug",
-      "sentiment": "neutral",
+      "sentiment": "confused",
       "next_action_glyph": "✅",
       "next_action": "no_action",
       "suggested_labels": [
         "Issue-Bug",
-        "Area-CLI",
+        "Area-AgentPane",
         "Area-AutoFix",
         "Resolution-Fix-Committed"
       ],
@@ -156,7 +155,7 @@
       "severity": "none",
       "sentiment": "",
       "next_action_glyph": "✅",
-      "next_action": "ready_to_merge",
+      "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -169,8 +168,8 @@
       "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 2,
-      "severity": "papercut",
+      "score": 3,
+      "severity": "bug",
       "sentiment": "",
       "next_action_glyph": "📦",
       "next_action": "stash",
@@ -226,8 +225,8 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "✅",
-      "next_action": "ready_to_merge",
+      "next_action_glyph": "📦",
+      "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -240,13 +239,13 @@
       "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 6,
+      "score": 5,
       "severity": "bug",
       "sentiment": "",
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "@vanzue — community PR #366 touches `tools/wta/src/coordinator.rs`, `tools/wta/src/shell/shell_manager.rs`, and `tools/wta/src/shell/wt_channel/cli_channel.rs` (agent tab/profile plumbing; your live review already identified the coordinator path gap). 7-day SLA clock starts today. Worth a first pass / formal reviewer assignment once the author updates?"
+      "suggested_reply": "@vanzue — community PR #366 touches `tools/wta/src/coordinator.rs`, `tools/wta/src/shell/shell_manager.rs`, and `tools/wta/src/shell/wt_channel/cli_channel.rs` (you already reviewed the gap and have the strongest recent git-log ownership on these paths). 7-day SLA clock starts today. Worth a first pass?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
