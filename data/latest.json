@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T15:35:59Z",
+  "generated_at": "2026-06-30T23:17:10Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -14,8 +14,7 @@
     "open_prs": 9
   },
   "category_counts": {
-    "agent-pane": 3,
-    "settings": 1
+    "agent-pane": 4
   },
   "per_repo": {
     "microsoft/intelligent-terminal": {
@@ -24,8 +23,7 @@
         "open_prs": 9
       },
       "category_counts": {
-        "agent-pane": 3,
-        "settings": 1
+        "agent-pane": 4
       },
       "trends": [
         {
@@ -80,7 +78,7 @@
       "title": "[Feature] Support BYOK and OpenAI Compatible model endpoints",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/192",
       "kind": "issue",
-      "category": "settings",
+      "category": "agent-pane",
       "days_no_reply": 1,
       "is_community": true,
       "score": 3,
@@ -90,8 +88,7 @@
       "next_action": "label_only",
       "suggested_labels": [
         "Issue-Feature",
-        "Area-Settings",
-        "Area-CLI"
+        "Area-AgentPane"
       ],
       "suggested_reply": ""
     },
@@ -126,11 +123,11 @@
       "category": "agent-pane",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 3,
+      "score": 4,
       "severity": "bug",
-      "sentiment": "neutral",
-      "next_action_glyph": "✅",
-      "next_action": "no_action",
+      "sentiment": "confused",
+      "next_action_glyph": "🏷️",
+      "next_action": "label_only",
       "suggested_labels": [
         "Issue-Bug",
         "Area-AgentPane",
@@ -148,11 +145,11 @@
       "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 2,
-      "severity": "bug",
+      "score": 0,
+      "severity": "none",
       "sentiment": "",
       "next_action_glyph": "✅",
-      "next_action": "ready_to_merge",
+      "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -234,16 +231,16 @@
       "title": "fix: inherit active pane profile in agent-created terminals to match …",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/366",
       "kind": "pr",
-      "category": "feature",
+      "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 4,
-      "severity": "none",
+      "score": 5,
+      "severity": "papercut",
       "sentiment": "",
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "@vanzue — community PR #366 touches `tools/wta/src/coordinator.rs`, `tools/wta/src/shell/**`, and `src/tools/wtcli/main.cpp` (agent terminal-creation/profile plumbing; your recent review + git-log area). 7-day SLA clock starts today. Worth a first pass?"
+      "suggested_reply": "@DDKinger — community PR #366 touches `tools/wta/src/app.rs`, `tools/wta/src/main.rs`, and WTA shell/coordinator profile plumbing (your Area-AutoFix/Area-CLI ownership; low confidence — team table empty). 7-day SLA clock starts today. Worth a first pass?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -275,7 +272,7 @@
       "severity": "risk",
       "sentiment": "",
       "next_action_glyph": "✅",
-      "next_action": "ready_to_merge",
+      "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
     },
