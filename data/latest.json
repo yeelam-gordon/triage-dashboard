@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T13:05:58Z",
+  "generated_at": "2026-06-30T13:34:57Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -14,8 +14,9 @@
     "open_prs": 8
   },
   "category_counts": {
-    "agent-pane": 3,
-    "cli": 1
+    "agent-pane": 2,
+    "auto-fix": 1,
+    "settings": 1
   },
   "per_repo": {
     "microsoft/intelligent-terminal": {
@@ -24,8 +25,9 @@
         "open_prs": 8
       },
       "category_counts": {
-        "agent-pane": 3,
-        "cli": 1
+        "agent-pane": 2,
+        "auto-fix": 1,
+        "settings": 1
       },
       "trends": [
         {
@@ -80,7 +82,7 @@
       "title": "[Feature] Support BYOK and OpenAI Compatible model endpoints",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/192",
       "kind": "issue",
-      "category": "agent-pane",
+      "category": "settings",
       "days_no_reply": 0,
       "is_community": true,
       "score": 2,
@@ -90,8 +92,9 @@
       "next_action": "label_only",
       "suggested_labels": [
         "Issue-Feature",
+        "Area-Settings",
         "Area-AgentPane",
-        "Area-Settings"
+        "Needs-Triage"
       ],
       "suggested_reply": ""
     },
@@ -107,12 +110,12 @@
       "score": 1,
       "severity": "none",
       "sentiment": "neutral",
-      "next_action_glyph": "✅",
-      "next_action": "no_action",
+      "next_action_glyph": "🏷️",
+      "next_action": "label_only",
       "suggested_labels": [
         "Issue-Feature",
-        "Agent-Copilot",
         "Area-AgentPane",
+        "Agent-Copilot",
         "Resolution-Fix-Committed"
       ],
       "suggested_reply": ""
@@ -123,16 +126,17 @@
       "title": "Doesn't know about scripts on path.",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/287",
       "kind": "issue",
-      "category": "cli",
+      "category": "auto-fix",
       "days_no_reply": 0,
       "is_community": true,
       "score": 3,
       "severity": "bug",
       "sentiment": "neutral",
-      "next_action_glyph": "✅",
-      "next_action": "no_action",
+      "next_action_glyph": "🏷️",
+      "next_action": "label_only",
       "suggested_labels": [
         "Issue-Bug",
+        "Area-AutoFix",
         "Area-CLI",
         "Resolution-Fix-Committed"
       ],
@@ -144,14 +148,14 @@
       "title": "fix(wta): log process teardown + master lifecycle; trim log spam",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/298",
       "kind": "pr",
-      "category": "bug-fix",
+      "category": "refactor",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "✅",
-      "next_action": "ready_to_merge",
+      "next_action_glyph": "📦",
+      "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -161,11 +165,11 @@
       "title": "Investigate commands on PATH before answering / autofixing (#287)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/306",
       "kind": "pr",
-      "category": "bug-fix",
+      "category": "feature",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 2,
-      "severity": "bug",
+      "score": 1,
+      "severity": "none",
       "sentiment": "",
       "next_action_glyph": "✅",
       "next_action": "ready_to_merge",
@@ -181,15 +185,15 @@
       "category": "agent-pane",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 0,
+      "score": 1,
       "severity": "none",
       "sentiment": "neutral",
-      "next_action_glyph": "✅",
-      "next_action": "no_action",
+      "next_action_glyph": "🏷️",
+      "next_action": "label_only",
       "suggested_labels": [
         "Issue-Feature",
         "Area-AgentPane",
-        "Area-CLI"
+        "Status-In-Progress"
       ],
       "suggested_reply": ""
     },
@@ -199,7 +203,7 @@
       "title": "wta: own telemetry provider + read real values from terminal-internals header",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/363",
       "kind": "pr",
-      "category": "build",
+      "category": "feature",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
@@ -222,8 +226,8 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "💤",
-      "next_action": "stash",
+      "next_action_glyph": "✅",
+      "next_action": "ready_to_merge",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -242,7 +246,7 @@
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "@DDKinger — community PR #366 touches `tools/wta/src/app.rs`, `tools/wta/src/main.rs`, and the agent terminal-launch/profile path (Area-AutoFix/Area-CLI, advisory because the team table is empty). 7-day SLA clock starts today. Worth a first pass?"
+      "suggested_reply": "@DDKinger — community PR #366 touches `tools/wta/src/coordinator.rs`, `tools/wta/src/shell/shell_manager.rs`, and `tools/wta/src/shell/wt_channel/cli_channel.rs` (WTA terminal-creation/profile plumbing; nearest Area-CLI/AutoFix owner in the map, low confidence because the team table is empty). 7-day SLA clock starts today. Worth a first pass?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -273,7 +277,7 @@
       "score": 3,
       "severity": "risk",
       "sentiment": "",
-      "next_action_glyph": "💤",
+      "next_action_glyph": "✅",
       "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
