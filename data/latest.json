@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T03:34:07Z",
+  "generated_at": "2026-06-30T05:59:11Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -10,22 +10,22 @@
     "upstream-sync"
   ],
   "totals": {
-    "open_issues": 4,
+    "open_issues": 3,
     "open_prs": 5
   },
   "category_counts": {
-    "agent-pane": 3,
-    "auto-fix": 1
+    "agent-pane": 2,
+    "settings": 1
   },
   "per_repo": {
     "microsoft/intelligent-terminal": {
       "totals": {
-        "open_issues": 4,
+        "open_issues": 3,
         "open_prs": 5
       },
       "category_counts": {
-        "agent-pane": 3,
-        "auto-fix": 1
+        "agent-pane": 2,
+        "settings": 1
       },
       "trends": [
         {
@@ -80,7 +80,7 @@
       "title": "[Feature] Support BYOK and OpenAI Compatible model endpoints",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/192",
       "kind": "issue",
-      "category": "agent-pane",
+      "category": "settings",
       "days_no_reply": 0,
       "is_community": true,
       "score": 2,
@@ -90,31 +90,8 @@
       "next_action": "label_only",
       "suggested_labels": [
         "Issue-Feature",
-        "Area-AgentPane",
         "Area-Settings",
         "Agent-Custom"
-      ],
-      "suggested_reply": ""
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
-      "number": 209,
-      "title": "Support GitHub Enterprise Copilot",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/209",
-      "kind": "issue",
-      "category": "agent-pane",
-      "days_no_reply": 0,
-      "is_community": true,
-      "score": 1,
-      "severity": "none",
-      "sentiment": "neutral",
-      "next_action_glyph": "✅",
-      "next_action": "no_action",
-      "suggested_labels": [
-        "Issue-Feature",
-        "Agent-Copilot",
-        "Area-AgentPane",
-        "Resolution-Fix-Committed"
       ],
       "suggested_reply": ""
     },
@@ -124,7 +101,7 @@
       "title": "Doesn't know about scripts on path.",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/287",
       "kind": "issue",
-      "category": "auto-fix",
+      "category": "agent-pane",
       "days_no_reply": 0,
       "is_community": true,
       "score": 3,
@@ -134,6 +111,7 @@
       "next_action": "no_action",
       "suggested_labels": [
         "Issue-Bug",
+        "Area-AgentPane",
         "Area-AutoFix",
         "Resolution-Fix-Committed"
       ],
@@ -145,21 +123,15 @@
       "title": "Investigate commands on PATH before answering / autofixing (#287)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/306",
       "kind": "pr",
-      "category": "auto-fix",
+      "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 2,
+      "score": 3,
       "severity": "bug",
       "sentiment": "",
       "next_action_glyph": "✅",
-      "next_action": "stash",
-      "suggested_labels": [
-        "Issue-Bug",
-        "Area-AutoFix",
-        "Area-AgentPane",
-        "Area-SessionManagement",
-        "Resolution-Fix-Committed"
-      ],
+      "next_action": "ready_to_merge",
+      "suggested_labels": [],
       "suggested_reply": ""
     },
     {
@@ -189,21 +161,15 @@
       "title": "Source all session history from ACP session/list; delete the on-disk history_loader subsystem",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/365",
       "kind": "pr",
-      "category": "session-management",
+      "category": "refactor",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 3,
-      "severity": "risk",
+      "score": 0,
+      "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "🛠",
-      "next_action": "nudge_rebase",
-      "suggested_labels": [
-        "Area-SessionManagement",
-        "Area-AutoFix",
-        "Issue-Docs",
-        "Area-CLI",
-        "Needs-Review"
-      ],
+      "next_action_glyph": "⏸",
+      "next_action": "wait_on_author",
+      "suggested_labels": [],
       "suggested_reply": ""
     },
     {
@@ -242,16 +208,11 @@
       "days_no_reply": 0,
       "is_community": false,
       "score": 3,
-      "severity": "risk",
+      "severity": "security",
       "sentiment": "",
-      "next_action_glyph": "✅",
+      "next_action_glyph": "📦",
       "next_action": "stash",
-      "suggested_labels": [
-        {
-          "name": "Area-CLI",
-          "reason": "Changed tools/wta/src/main.rs and auth/login helper code in the WTA CLI path."
-        }
-      ],
+      "suggested_labels": [],
       "suggested_reply": ""
     },
     {
@@ -266,16 +227,9 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "pause",
+      "next_action_glyph": "⏸",
       "next_action": "wait_on_author",
-      "suggested_labels": [
-        "Needs-Review",
-        "Agent-Copilot",
-        {
-          "name": "Area-Testing",
-          "reason": "Changed files are under test/e2e/ItE2E/**, which has no matching live Area-* label or ownership row."
-        }
-      ],
+      "suggested_labels": [],
       "suggested_reply": ""
     }
   ]
