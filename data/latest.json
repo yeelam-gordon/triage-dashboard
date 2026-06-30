@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T14:34:07Z",
+  "generated_at": "2026-06-30T15:35:59Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -14,8 +14,7 @@
     "open_prs": 9
   },
   "category_counts": {
-    "agent-pane": 2,
-    "cli": 1,
+    "agent-pane": 3,
     "settings": 1
   },
   "per_repo": {
@@ -25,8 +24,7 @@
         "open_prs": 9
       },
       "category_counts": {
-        "agent-pane": 2,
-        "cli": 1,
+        "agent-pane": 3,
         "settings": 1
       },
       "trends": [
@@ -83,9 +81,9 @@
       "url": "https://github.com/microsoft/intelligent-terminal/issues/192",
       "kind": "issue",
       "category": "settings",
-      "days_no_reply": 0,
+      "days_no_reply": 1,
       "is_community": true,
-      "score": 2,
+      "score": 3,
       "severity": "none",
       "sentiment": "positive",
       "next_action_glyph": "🏷️",
@@ -109,8 +107,8 @@
       "score": 1,
       "severity": "none",
       "sentiment": "positive",
-      "next_action_glyph": "🏷️",
-      "next_action": "label_only",
+      "next_action_glyph": "✅",
+      "next_action": "no_action",
       "suggested_labels": [
         "Issue-Feature",
         "Area-AgentPane",
@@ -125,7 +123,7 @@
       "title": "Doesn't know about scripts on path.",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/287",
       "kind": "issue",
-      "category": "cli",
+      "category": "agent-pane",
       "days_no_reply": 0,
       "is_community": true,
       "score": 3,
@@ -135,7 +133,7 @@
       "next_action": "no_action",
       "suggested_labels": [
         "Issue-Bug",
-        "Area-CLI",
+        "Area-AgentPane",
         "Area-AutoFix",
         "Resolution-Fix-Committed"
       ],
@@ -154,7 +152,7 @@
       "severity": "bug",
       "sentiment": "",
       "next_action_glyph": "✅",
-      "next_action": "stash",
+      "next_action": "ready_to_merge",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -164,11 +162,11 @@
       "title": "Investigate commands on PATH before answering / autofixing (#287)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/306",
       "kind": "pr",
-      "category": "bug-fix",
+      "category": "feature",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 3,
-      "severity": "bug",
+      "score": 1,
+      "severity": "none",
       "sentiment": "",
       "next_action_glyph": "✅",
       "next_action": "ready_to_merge",
@@ -187,13 +185,12 @@
       "score": 1,
       "severity": "none",
       "sentiment": "neutral",
-      "next_action_glyph": "✅",
-      "next_action": "no_action",
+      "next_action_glyph": "🏷️",
+      "next_action": "label_only",
       "suggested_labels": [
         "Issue-Feature",
         "Area-AgentPane",
-        "Needs-Triage",
-        "Needs-Tag-Fix"
+        "Status-In-Progress"
       ],
       "suggested_reply": ""
     },
@@ -203,7 +200,7 @@
       "title": "wta: own telemetry provider + read real values from terminal-internals header",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/363",
       "kind": "pr",
-      "category": "feature",
+      "category": "build",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
@@ -237,16 +234,16 @@
       "title": "fix: inherit active pane profile in agent-created terminals to match …",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/366",
       "kind": "pr",
-      "category": "bug-fix",
+      "category": "feature",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 6,
-      "severity": "bug",
+      "score": 4,
+      "severity": "none",
       "sentiment": "",
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "@vanzue — community PR #366 touches `tools/wta/src/coordinator.rs`, `tools/wta/src/shell/**`, and `src/tools/wtcli/main.cpp` (your recent git-log area; DDKinger is the ownership-table match for adjacent WTA CLI/AutoFix paths). 7-day SLA clock starts today. Author has responded to your coordinator-path gap; worth a formal first pass?"
+      "suggested_reply": "@vanzue — community PR #366 touches `tools/wta/src/coordinator.rs`, `tools/wta/src/shell/**`, and `src/tools/wtcli/main.cpp` (agent terminal-creation/profile plumbing; your recent review + git-log area). 7-day SLA clock starts today. Worth a first pass?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -274,11 +271,11 @@
       "category": "refactor",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 0,
-      "severity": "none",
+      "score": 3,
+      "severity": "risk",
       "sentiment": "",
       "next_action_glyph": "✅",
-      "next_action": "stash",
+      "next_action": "ready_to_merge",
       "suggested_labels": [],
       "suggested_reply": ""
     },
