@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T11:02:19Z",
+  "generated_at": "2026-07-01T11:31:42Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -105,13 +105,13 @@
       "category": "feature",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 7,
-      "severity": "risk",
+      "score": 3,
+      "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "👀",
-      "next_action": "request_reviewer",
+      "next_action_glyph": "🛠",
+      "next_action": "nudge_rebase",
       "suggested_labels": [],
-      "suggested_reply": "Hi @frarteaga, thanks for the PR! It currently has merge conflicts with `main`. Could you rebase (`git fetch origin && git rebase origin/main`) and push? Happy to take a closer look once it's clean."
+      "suggested_reply": "Hi @frarteaga, thanks for the PR! It currently has merge conflicts with `main`. Could you rebase (`git fetch origin && git rebase origin/main`) and push? Also please remove the agent-switching dropdown per @vanzue's design note so we can use a slash command for now. Happy to take a closer look once it's clean."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -119,14 +119,14 @@
       "title": "fix(wta): log process teardown + master lifecycle; trim log spam",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/298",
       "kind": "pr",
-      "category": "other",
+      "category": "refactor",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "✅",
-      "next_action": "ready_to_merge",
+      "next_action_glyph": "📦",
+      "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -211,10 +211,10 @@
       "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 2,
+      "score": 3,
       "severity": "bug",
       "sentiment": "",
-      "next_action_glyph": "💤",
+      "next_action_glyph": "✅",
       "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
@@ -231,10 +231,10 @@
       "score": 3,
       "severity": "risk",
       "sentiment": "",
-      "next_action_glyph": "🛠",
-      "next_action": "nudge_rebase",
+      "next_action_glyph": "🟥",
+      "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": ""
+      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan points at spelling findings in `doc/specs/acp-1.0-conductor-migration.md` rather than a test failure, but could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84518409716? If it is flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -266,7 +266,7 @@
       "severity": "none",
       "sentiment": "",
       "next_action_glyph": "✅",
-      "next_action": "ready_to_merge",
+      "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -285,7 +285,7 @@
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — quick scan points to the spelling check. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84441079291? If it is flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — quick scan points at the spelling check, but could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84441079291? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     }
   ]
 }
