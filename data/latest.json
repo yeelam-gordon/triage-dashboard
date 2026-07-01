@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T06:04:32Z",
+  "generated_at": "2026-07-01T06:28:21Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -10,20 +10,20 @@
     "upstream-sync"
   ],
   "totals": {
-    "open_issues": 1,
+    "open_issues": 2,
     "open_prs": 10
   },
   "category_counts": {
-    "agent-pane": 1
+    "agent-pane": 2
   },
   "per_repo": {
     "microsoft/intelligent-terminal": {
       "totals": {
-        "open_issues": 1,
+        "open_issues": 2,
         "open_prs": 10
       },
       "category_counts": {
-        "agent-pane": 1
+        "agent-pane": 2
       },
       "trends": [
         {
@@ -144,6 +144,27 @@
       "next_action_glyph": "✅",
       "next_action": "ready_to_merge",
       "suggested_labels": [],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 351,
+      "title": "Agent-launched new terminal should match the active WSL/Ubuntu session, not the default profile",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/351",
+      "kind": "issue",
+      "category": "agent-pane",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 1,
+      "severity": "none",
+      "sentiment": "neutral",
+      "next_action_glyph": "✅",
+      "next_action": "no_action",
+      "suggested_labels": [
+        "Issue-Feature",
+        "Area-AgentPane",
+        "Resolution-Fix-Committed"
+      ],
       "suggested_reply": ""
     },
     {
