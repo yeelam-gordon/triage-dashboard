@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T02:33:01Z",
+  "generated_at": "2026-07-01T03:10:15Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -90,6 +90,7 @@
         "Issue-Bug",
         "Area-AgentPane",
         "Area-AutoFix",
+        "Area-CLI",
         "Resolution-Fix-Committed"
       ],
       "suggested_reply": ""
@@ -194,7 +195,7 @@
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "@kaitao — community PR #366 touches `tools/wta/src/coordinator.rs, tools/wta/src/shell/shell_manager.rs, tools/wta/src/shell/wt_channel/cli_channel.rs` (WTA/session-management and CLI profile plumbing; local git log shows recent Kai Tao/vanzue ownership). 7-day SLA clock starts today. Worth a first pass?\n\ncc @DDKinger for the wtcli / `CliChannel` side."
+      "suggested_reply": "@vanzue — community PR #366 touches `tools/wta/src/coordinator.rs`, `tools/wta/src/shell/shell_manager.rs`, and `tools/wta/src/shell/wt_channel/cli_channel.rs` (WTA coordinator/shell path; git log points to you as the most active recent reviewer). 7-day SLA clock starts today. Worth a first pass?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -262,7 +263,7 @@
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling`. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84441079291? If it looks flaky, please rerun the check."
+      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — quick scan suggests it might be unrelated to your changes, but could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84441079291? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     }
   ]
 }
