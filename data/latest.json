@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T03:31:49Z",
+  "generated_at": "2026-07-01T04:07:59Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -104,13 +104,13 @@
       "category": "feature",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 7,
-      "severity": "risk",
+      "score": 4,
+      "severity": "none",
       "sentiment": "",
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "Hi @frarteaga, thanks for the PR! It currently has merge conflicts with `main`. Could you rebase (`git fetch origin && git rebase origin/main`) and push? Happy to take a closer look once it's clean."
+      "suggested_reply": "@lhecker / @kaitao — community PR #296 touches `tools/wta/src/master/mod.rs`, `src/cascadia/TerminalApp/Tab.h`, and `src/cascadia/TerminalApp/AgentPaneContent.cpp` (SessionManagement + AgentPane ownership areas; low confidence — team table empty). 7-day SLA clock starts today. Worth a first pass after the requested rebase / dropdown-removal follow-up?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -195,7 +195,7 @@
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "@vanzue — community PR #366 touches `tools/wta/src/coordinator.rs`, `tools/wta/src/shell/shell_manager.rs`, and `src/tools/wtcli/main.cpp` (your recent WTA/coordinator area). 7-day SLA clock starts today. Worth a first pass? PS: @DDKinger may be a good second look for the WTA CLI/channel plumbing."
+      "suggested_reply": "@vanzue — community PR #366 touches `tools/wta/src/coordinator.rs`, `tools/wta/src/shell/shell_manager.rs`, and `src/tools/wtcli/main.cpp` (your recent WTA/coordinator area). 7-day SLA clock starts today. Worth a first pass?\n\nPS: @DDKinger may be a good second look for the WTA CLI/channel plumbing. Reviewer suggestion is low confidence — team table empty."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -263,7 +263,7 @@
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — quick scan points at spelling/dictionary findings from the new custom-agent docs/strings. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84441079291? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": "Hi @vanzue, CI is failing on check-spelling — the report flags dotdir, nwhy, and unparsable. Could you take a look at https://github.com/microsoft/intelligent-terminal/actions/runs/28488774318/job/84440815132#step:4:1? If it turns out to be flaky after the spelling items are handled, push an empty commit (git commit --allow-empty -m \"ci: rerun\") to re-run."
     }
   ]
 }
