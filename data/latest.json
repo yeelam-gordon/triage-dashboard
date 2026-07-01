@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T06:28:21Z",
+  "generated_at": "2026-07-01T07:33:33Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -110,7 +110,7 @@
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "@kaitao — community PR #296 touches `tools/wta/src/master/mod.rs`, `src/cascadia/TerminalApp/AgentPaneContent.cpp`, and `src/cascadia/TerminalApp/TerminalPage.cpp` (SessionManagement / AgentPane areas; you are the strongest ownership+git-log match). 7-day SLA clock starts today. Worth a first pass?"
+      "suggested_reply": "Hi @frarteaga, thanks for the PR! It currently has merge conflicts with `main`. Could you rebase (`git fetch origin && git rebase origin/main`) and push? Happy to take a closer look once it's clean."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -118,14 +118,14 @@
       "title": "fix(wta): log process teardown + master lifecycle; trim log spam",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/298",
       "kind": "pr",
-      "category": "refactor",
+      "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 0,
-      "severity": "none",
+      "score": 1,
+      "severity": "bug",
       "sentiment": "",
-      "next_action_glyph": "💤",
-      "next_action": "stash",
+      "next_action_glyph": "✅",
+      "next_action": "no_op_ack",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -158,8 +158,8 @@
       "score": 1,
       "severity": "none",
       "sentiment": "neutral",
-      "next_action_glyph": "✅",
-      "next_action": "no_action",
+      "next_action_glyph": "🏷️",
+      "next_action": "label_only",
       "suggested_labels": [
         "Issue-Feature",
         "Area-AgentPane",
@@ -197,7 +197,7 @@
       "severity": "none",
       "sentiment": "",
       "next_action_glyph": "✅",
-      "next_action": "ready_to_merge",
+      "next_action": "no-op/ack",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -210,11 +210,11 @@
       "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 3,
+      "score": 2,
       "severity": "bug",
       "sentiment": "",
-      "next_action_glyph": "💤",
-      "next_action": "stash",
+      "next_action_glyph": "✅",
+      "next_action": "no_op_already_merged",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -230,10 +230,10 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "⏸",
-      "next_action": "wait_on_author",
+      "next_action_glyph": "🛠",
+      "next_action": "nudge_rebase",
       "suggested_labels": [],
-      "suggested_reply": ""
+      "suggested_reply": "Hi @DDKinger, thanks for the PR! It currently has merge conflicts with `main`. Could you rebase (`git fetch origin && git rebase origin/main`) and push? Happy to take a closer look once it's clean."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -258,14 +258,14 @@
       "title": "Clean up obsolete WTA login setup flows",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/370",
       "kind": "pr",
-      "category": "refactor",
+      "category": "refactor/cleanup",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
       "severity": "none",
       "sentiment": "",
       "next_action_glyph": "✅",
-      "next_action": "ready_to_merge",
+      "next_action": "no-op/ack",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -284,7 +284,7 @@
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling`; the current annotations point at spelling findings in the custom-agent changes. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84441079291? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling`.\n\nQuick scan points at spelling/check metadata fallout from the new custom-agent wording. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84441079291?\n\nIf it is flaky, push an empty commit (`git commit --allow-empty -m 'ci: rerun'`) to re-run."
     }
   ]
 }
