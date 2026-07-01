@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T05:34:55Z",
+  "generated_at": "2026-07-01T06:04:32Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -101,7 +101,7 @@
       "title": "Per-tab AI agents via a multi-agent wta-master (id-based, GPO-aware)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/296",
       "kind": "pr",
-      "category": "session-management",
+      "category": "feature",
       "days_no_reply": 0,
       "is_community": true,
       "score": 4,
@@ -109,14 +109,8 @@
       "sentiment": "",
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
-      "suggested_labels": [
-        "Area-SessionManagement",
-        "Area-AgentPane",
-        "Area-AutoFix",
-        "Area-CLI",
-        "Area-Installer"
-      ],
-      "suggested_reply": "Hi @frarteaga, thanks again for this PR! It currently has merge conflicts with `main`. Could you rebase (`git fetch origin && git rebase origin/main`) and push? While rebasing, please also address the latest design note: remove the agent-switching dropdown for now; the team prefers using a slash command to switch agents until the longer-term design is settled. Happy to take a closer look once it's clean."
+      "suggested_labels": [],
+      "suggested_reply": "@kaitao — community PR #296 touches `tools/wta/src/master/mod.rs`, `src/cascadia/TerminalApp/AgentPaneContent.cpp`, and `src/cascadia/TerminalApp/TerminalPage.cpp` (SessionManagement / AgentPane areas; you are the strongest ownership+git-log match). 7-day SLA clock starts today. Worth a first pass?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -158,7 +152,7 @@
       "title": "wta: own telemetry provider + read real values from terminal-internals header",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/363",
       "kind": "pr",
-      "category": "installer",
+      "category": "feature",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
@@ -166,10 +160,7 @@
       "sentiment": "",
       "next_action_glyph": "⏸",
       "next_action": "wait_on_author",
-      "suggested_labels": [
-        "Area-Installer",
-        "Area-CLI"
-      ],
+      "suggested_labels": [],
       "suggested_reply": ""
     },
     {
@@ -195,20 +186,16 @@
       "title": "fix: inherit active pane profile in agent-created terminals to match …",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/366",
       "kind": "pr",
-      "category": "agent-pane",
+      "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 6,
+      "score": 3,
       "severity": "bug",
       "sentiment": "",
-      "next_action_glyph": "👀",
-      "next_action": "request_reviewer",
-      "suggested_labels": [
-        "Area-AgentPane",
-        "Area-CLI",
-        "Needs-Review"
-      ],
-      "suggested_reply": "Hi @adityabagchi24, thanks for the quick iteration here — this is a helpful fix for #351. CI is currently failing on `check-spelling` because of a forbidden pattern in `tools/wta/src/coordinator.rs` (`[, otherwise]` should be `; otherwise` or `. Otherwise`): https://github.com/microsoft/intelligent-terminal/runs/84460415379. Could you update that wording and push again? Once it is green, we can get a maintainer review assigned."
+      "next_action_glyph": "💤",
+      "next_action": "stash",
+      "suggested_labels": [],
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -216,28 +203,7 @@
       "title": "WTA ACP 0.10→1.0 migration (Phase 0: behavior-preserving model rewrite)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/367",
       "kind": "pr",
-      "category": "auto-fix",
-      "days_no_reply": 0,
-      "is_community": false,
-      "score": 0,
-      "severity": "none",
-      "sentiment": "",
-      "next_action_glyph": "🛠",
-      "next_action": "nudge_rebase",
-      "suggested_labels": [
-        "Area-AutoFix",
-        "Area-CLI",
-        "Area-SessionManagement"
-      ],
-      "suggested_reply": "Hi @DDKinger, thanks for the PR! It currently has merge conflicts with\n`main`. Could you rebase (`git fetch origin && git rebase origin/main`)\nand push? Happy to take a closer look once it's clean."
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
-      "number": 369,
-      "title": "test(e2e): agent-clean settings baseline + release checklist tooling + GPO/FRE/multi-pane/custom-agent coverage",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/369",
-      "kind": "pr",
-      "category": "agent-pane",
+      "category": "refactor",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
@@ -245,15 +211,24 @@
       "sentiment": "",
       "next_action_glyph": "⏸",
       "next_action": "wait_on_author",
-      "suggested_labels": [
-        "Area-AgentPane",
-        "Area-FirstRun",
-        "Area-SessionManagement",
-        "Area-Settings",
-        "Agent-Copilot",
-        "Agent-Custom",
-        "Issue-Feature"
-      ],
+      "suggested_labels": [],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 369,
+      "title": "test(e2e): agent-clean settings baseline + release checklist tooling + GPO/FRE/multi-pane/custom-agent coverage",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/369",
+      "kind": "pr",
+      "category": "build",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 0,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "⏸",
+      "next_action": "wait_on_author",
+      "suggested_labels": [],
       "suggested_reply": ""
     },
     {
@@ -279,7 +254,7 @@
       "title": "Custom agents: /agent slash command to override the terminal agent per tab",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/371",
       "kind": "pr",
-      "category": "agent-pane",
+      "category": "feature",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
@@ -287,14 +262,8 @@
       "sentiment": "",
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
-      "suggested_labels": [
-        "Area-AgentPane",
-        "Area-CLI",
-        "Agent-Custom",
-        "Issue-Feature",
-        "Needs-Review"
-      ],
-      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — quick scan suggests it is the spelling check from automated review comments. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84441079291? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_labels": [],
+      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling`; the current annotations point at spelling findings in the custom-agent changes. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84441079291? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     }
   ]
 }
