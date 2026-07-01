@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T03:10:15Z",
+  "generated_at": "2026-07-01T03:31:49Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -110,7 +110,7 @@
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "@kaitao — community PR #296 touches `tools/wta/src/master/mod.rs`, `src/cascadia/TerminalApp/TerminalPage.cpp`, and `src/cascadia/TerminalApp/AgentPaneContent.cpp` (SessionManagement/AgentPane routing area; local git log shows recent Kai Tao churn). 7-day SLA clock starts today. Worth a first pass?"
+      "suggested_reply": "Hi @frarteaga, thanks for the PR! It currently has merge conflicts with `main`. Could you rebase (`git fetch origin && git rebase origin/main`) and push? Happy to take a closer look once it's clean."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -118,13 +118,13 @@
       "title": "fix(wta): log process teardown + master lifecycle; trim log spam",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/298",
       "kind": "pr",
-      "category": "bug-fix",
+      "category": "refactor",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "✅",
+      "next_action_glyph": "💤",
       "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
@@ -152,7 +152,7 @@
       "title": "wta: own telemetry provider + read real values from terminal-internals header",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/363",
       "kind": "pr",
-      "category": "feature",
+      "category": "build",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
@@ -195,7 +195,7 @@
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "@vanzue — community PR #366 touches `tools/wta/src/coordinator.rs`, `tools/wta/src/shell/shell_manager.rs`, and `tools/wta/src/shell/wt_channel/cli_channel.rs` (WTA coordinator/shell path; git log points to you as the most active recent reviewer). 7-day SLA clock starts today. Worth a first pass?"
+      "suggested_reply": "@vanzue — community PR #366 touches `tools/wta/src/coordinator.rs`, `tools/wta/src/shell/shell_manager.rs`, and `src/tools/wtcli/main.cpp` (your recent WTA/coordinator area). 7-day SLA clock starts today. Worth a first pass? PS: @DDKinger may be a good second look for the WTA CLI/channel plumbing."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -244,7 +244,7 @@
       "severity": "none",
       "sentiment": "",
       "next_action_glyph": "✅",
-      "next_action": "no_action",
+      "next_action": "ready_to_merge",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -263,7 +263,7 @@
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — quick scan suggests it might be unrelated to your changes, but could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84441079291? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — quick scan points at spelling/dictionary findings from the new custom-agent docs/strings. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84441079291? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     }
   ]
 }
