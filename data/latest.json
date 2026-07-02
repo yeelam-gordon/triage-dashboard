@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T15:06:42Z",
+  "generated_at": "2026-07-02T15:37:54Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -80,7 +80,7 @@
       "title": "Per-tab AI agents via a multi-agent wta-master (id-based, GPO-aware)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/296",
       "kind": "pr",
-      "category": "session-management",
+      "category": "feature",
       "days_no_reply": 0,
       "is_community": true,
       "score": 4,
@@ -88,13 +88,8 @@
       "sentiment": "",
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
-      "suggested_labels": [
-        "Area-SessionManagement",
-        "Area-AgentPane",
-        "Issue-Feature",
-        "Needs-Review"
-      ],
-      "suggested_reply": "Hi @frarteaga, thanks for the PR! It currently has merge conflicts with `main`. Could you rebase (`git fetch origin && git rebase origin/main`) and push? Happy to take a closer look once it's clean."
+      "suggested_labels": [],
+      "suggested_reply": "@kaitao — community PR #296 touches `tools/wta/src/master/mod.rs`, `src/cascadia/TerminalApp/AgentPaneContent.cpp`, and WTA session/protocol code (SessionManagement/AgentPane areas). 7-day SLA clock starts today. Worth a first pass?\n\nPS: @vanzue has already asked the author to merge latest `main` and remove the dropdown; a formal reviewer assignment is the remaining team-side gap."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -128,9 +123,9 @@
       "is_community": false,
       "score": 1,
       "severity": "none",
-      "sentiment": "neutral",
-      "next_action_glyph": "✅",
-      "next_action": "no_action",
+      "sentiment": "positive",
+      "next_action_glyph": "🏷️",
+      "next_action": "label_only",
       "suggested_labels": [
         "Issue-Feature",
         "Area-AgentPane",
@@ -144,14 +139,14 @@
       "title": "wta: own telemetry provider + read real values from terminal-internals header",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/363",
       "kind": "pr",
-      "category": "feature",
+      "category": "build",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "✅",
-      "next_action": "no_further_action",
+      "next_action_glyph": "💤",
+      "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -201,10 +196,10 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "⏸",
-      "next_action": "wait_on_author",
+      "next_action_glyph": "🟥",
+      "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": ""
+      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — quick scan points to https://github.com/microsoft/intelligent-terminal/runs/84806895948. Could you take a look? If it is flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -221,7 +216,7 @@
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — quick scan points at the spelling/check-spelling report. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84441079291? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — quick scan points to spelling findings from the automated check (for example `dotdir`, `unparsable`, and `nwhy`). Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84441079291? If it turns out to be flaky, pushing an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) should re-run it."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -241,6 +236,7 @@
         "Issue-Feature",
         "Area-AgentPane",
         "Agent-Copilot",
+        "Status-In-Progress",
         "Needs-Triage"
       ],
       "suggested_reply": ""
@@ -260,7 +256,7 @@
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan suggests it may be the spelling report/dictionary check, but could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84761489413? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan suggests it might be unrelated to your changes, but could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84761489413? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -268,11 +264,11 @@
       "title": "Fix wta x86 unit tests: PEB probes are x64-only",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/374",
       "kind": "pr",
-      "category": "bug-fix",
+      "category": "build",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 2,
-      "severity": "bug",
+      "score": 0,
+      "severity": "none",
       "sentiment": "",
       "next_action_glyph": "⏸",
       "next_action": "wait_on_author",
@@ -294,7 +290,7 @@
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "@DDKinger — community PR #375 touches `tools/wta/src/main.rs` and `tools/wta/src/coordinator.rs` (Area-CLI / WTA delegate path; low confidence because the team table is empty). 7-day SLA clock starts today. Worth a first pass?"
+      "suggested_reply": "@DDKinger — community PR #375 touches `tools/wta/src/main.rs`, `tools/wta/src/coordinator.rs` (Area-CLI / WTA delegate path; low confidence because team table is empty). 7-day SLA clock starts today. Worth a first pass?"
     }
   ]
 }
