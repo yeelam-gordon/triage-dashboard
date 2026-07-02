@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T10:57:55Z",
+  "generated_at": "2026-07-02T11:59:10Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -10,20 +10,22 @@
     "upstream-sync"
   ],
   "totals": {
-    "open_issues": 1,
-    "open_prs": 6
+    "open_issues": 2,
+    "open_prs": 7
   },
   "category_counts": {
-    "agent-pane": 1
+    "agent-pane": 1,
+    "session-management": 1
   },
   "per_repo": {
     "microsoft/intelligent-terminal": {
       "totals": {
-        "open_issues": 1,
-        "open_prs": 6
+        "open_issues": 2,
+        "open_prs": 7
       },
       "category_counts": {
-        "agent-pane": 1
+        "agent-pane": 1,
+        "session-management": 1
       },
       "trends": [
         {
@@ -205,6 +207,57 @@
       "next_action": "investigate_ci",
       "suggested_labels": [],
       "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — quick scan points at spelling/dictionary annotations in the new custom-agent code/docs. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84441079291? Once addressed, a push to the PR branch should re-run CI."
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 372,
+      "title": "New agent session opened from a WSL profile pane fails: \"Could not access starting directory /home/<user>\"",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/372",
+      "kind": "issue",
+      "category": "session-management",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 5,
+      "severity": "bug",
+      "sentiment": "blocked",
+      "next_action_glyph": "🏷️",
+      "next_action": "label_only",
+      "suggested_labels": [
+        "Issue-Bug",
+        "Area-SessionManagement",
+        "Area-AgentPane",
+        "Agent-Copilot",
+        "Needs-Triage"
+      ],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 373,
+      "title": "Eternal Terminal (step 1): per-tab /save-tab + /restore-tab (layout + content)",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/373",
+      "kind": "pr",
+      "category": "auto-fix",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 0,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "🟥",
+      "next_action": "investigate_ci",
+      "suggested_labels": [
+        "Issue-Feature",
+        "Area-AutoFix",
+        "Area-AgentPane",
+        "Area-Settings",
+        "Area-CLI",
+        "Needs-Review",
+        {
+          "name": "Area-EternalTerminal",
+          "reason": "PR introduces the Eternal Terminal save/restore feature, but no dedicated live Area-* label exists."
+        }
+      ],
+      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan points at the spelling report / dictionary annotations for the new Eternal Terminal docs and strings. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84761489413? Once addressed, a push to the PR branch should re-run CI."
     }
   ]
 }
