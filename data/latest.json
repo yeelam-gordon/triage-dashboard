@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T11:59:10Z",
+  "generated_at": "2026-07-02T12:32:41Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -14,8 +14,7 @@
     "open_prs": 7
   },
   "category_counts": {
-    "agent-pane": 1,
-    "session-management": 1
+    "agent-pane": 2
   },
   "per_repo": {
     "microsoft/intelligent-terminal": {
@@ -24,8 +23,7 @@
         "open_prs": 7
       },
       "category_counts": {
-        "agent-pane": 1,
-        "session-management": 1
+        "agent-pane": 2
       },
       "trends": [
         {
@@ -80,22 +78,16 @@
       "title": "Per-tab AI agents via a multi-agent wta-master (id-based, GPO-aware)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/296",
       "kind": "pr",
-      "category": "session-management",
+      "category": "feature",
       "days_no_reply": 0,
       "is_community": true,
       "score": 4,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "👀",
-      "next_action": "request_reviewer",
-      "suggested_labels": [
-        "Issue-Feature",
-        "Area-SessionManagement",
-        "Area-AgentPane",
-        "Area-CLI",
-        "Needs-Review"
-      ],
-      "suggested_reply": "@lhecker — community PR #296 touches `tools/wta/src/master/mod.rs`, `tools/wta/src/session_registry.rs`, and `src/cascadia/TerminalApp/AgentPaneContent.cpp` (SessionManagement / AgentPane areas). 7-day SLA clock starts today. Worth a first pass?"
+      "next_action_glyph": "🛠",
+      "next_action": "nudge_rebase",
+      "suggested_labels": [],
+      "suggested_reply": "Hi @frarteaga, thanks for the PR! It currently has merge conflicts with `main`. Could you rebase (`git fetch origin && git rebase origin/main`) and push? Please also remove the agent-switching dropdown as requested in the latest design feedback. Happy to take a closer look once it's clean."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -109,8 +101,8 @@
       "score": 1,
       "severity": "none",
       "sentiment": "neutral",
-      "next_action_glyph": "🏷️",
-      "next_action": "label_only",
+      "next_action_glyph": "✅",
+      "next_action": "no_action",
       "suggested_labels": [
         "Issue-Feature",
         "Area-AgentPane",
@@ -124,14 +116,14 @@
       "title": "wta: own telemetry provider + read real values from terminal-internals header",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/363",
       "kind": "pr",
-      "category": "feature",
+      "category": "build",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "✅",
-      "next_action": "no_action",
+      "next_action_glyph": "💤",
+      "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -141,20 +133,15 @@
       "title": "fix: inherit active pane profile in agent-created terminals to match …",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/366",
       "kind": "pr",
-      "category": "cli",
+      "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": true,
       "score": 2,
       "severity": "bug",
       "sentiment": "",
-      "next_action_glyph": "✅",
+      "next_action_glyph": "💤",
       "next_action": "stash",
-      "suggested_labels": [
-        "Issue-Bug",
-        "Area-CLI",
-        "Area-AutoFix",
-        "Resolution-Fix-Committed"
-      ],
+      "suggested_labels": [],
       "suggested_reply": ""
     },
     {
@@ -186,10 +173,10 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "⏸",
-      "next_action": "wait_on_author",
+      "next_action_glyph": "🟥",
+      "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": ""
+      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — quick scan suggests it might be unrelated to your changes, but could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84768519073? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -206,26 +193,26 @@
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — quick scan points at spelling/dictionary annotations in the new custom-agent code/docs. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84441079291? Once addressed, a push to the PR branch should re-run CI."
+      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — quick scan points at the spell-check run. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84441079291? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
       "number": 372,
-      "title": "New agent session opened from a WSL profile pane fails: \"Could not access starting directory /home/<user>\"",
+      "title": "Run Copilot inside WSL for delegate (?<prompt>) / agent-pane sessions started from a WSL pane",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/372",
       "kind": "issue",
-      "category": "session-management",
+      "category": "agent-pane",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 5,
-      "severity": "bug",
-      "sentiment": "blocked",
+      "score": 0,
+      "severity": "none",
+      "sentiment": "neutral",
       "next_action_glyph": "🏷️",
       "next_action": "label_only",
       "suggested_labels": [
-        "Issue-Bug",
-        "Area-SessionManagement",
+        "Issue-Feature",
         "Area-AgentPane",
+        "Area-SessionManagement",
         "Agent-Copilot",
         "Needs-Triage"
       ],
@@ -237,7 +224,7 @@
       "title": "Eternal Terminal (step 1): per-tab /save-tab + /restore-tab (layout + content)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/373",
       "kind": "pr",
-      "category": "auto-fix",
+      "category": "feature",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
@@ -245,19 +232,8 @@
       "sentiment": "",
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
-      "suggested_labels": [
-        "Issue-Feature",
-        "Area-AutoFix",
-        "Area-AgentPane",
-        "Area-Settings",
-        "Area-CLI",
-        "Needs-Review",
-        {
-          "name": "Area-EternalTerminal",
-          "reason": "PR introduces the Eternal Terminal save/restore feature, but no dedicated live Area-* label exists."
-        }
-      ],
-      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan points at the spelling report / dictionary annotations for the new Eternal Terminal docs and strings. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84761489413? Once addressed, a push to the PR branch should re-run CI."
+      "suggested_labels": [],
+      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan points at the spelling check report. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84761489413? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     }
   ]
 }
