@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T12:32:41Z",
+  "generated_at": "2026-07-02T13:02:55Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -156,8 +156,8 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "⏸",
-      "next_action": "wait_on_author",
+      "next_action_glyph": "💤",
+      "next_action": "wait — draft",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -176,7 +176,7 @@
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — quick scan suggests it might be unrelated to your changes, but could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84768519073? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -198,13 +198,13 @@
     {
       "repo": "microsoft/intelligent-terminal",
       "number": 372,
-      "title": "Run Copilot inside WSL for delegate (?<prompt>) / agent-pane sessions started from a WSL pane",
+      "title": "Delegate (?<prompt>) from a WSL pane should launch Copilot inside WSL, not the Windows host",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/372",
       "kind": "issue",
       "category": "agent-pane",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 0,
+      "score": 1,
       "severity": "none",
       "sentiment": "neutral",
       "next_action_glyph": "🏷️",
@@ -212,7 +212,6 @@
       "suggested_labels": [
         "Issue-Feature",
         "Area-AgentPane",
-        "Area-SessionManagement",
         "Agent-Copilot",
         "Needs-Triage"
       ],
@@ -233,7 +232,7 @@
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan points at the spelling check report. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84761489413? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — the bot report says it found more than 20 potential spelling problems and hit dictionary lookup problems. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84761489413? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     }
   ]
 }
