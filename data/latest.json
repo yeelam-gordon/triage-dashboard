@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T14:03:20Z",
+  "generated_at": "2026-07-02T14:33:43Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -105,7 +105,7 @@
       "category": "session-management",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 0,
+      "score": 1,
       "severity": "none",
       "sentiment": "neutral",
       "next_action_glyph": "🏷️",
@@ -113,7 +113,7 @@
       "suggested_labels": [
         "Issue-Feature",
         "Area-SessionManagement",
-        "Status-In-Progress"
+        "Resolution-Fix-Committed"
       ],
       "suggested_reply": ""
     },
@@ -144,14 +144,14 @@
       "title": "wta: own telemetry provider + read real values from terminal-internals header",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/363",
       "kind": "pr",
-      "category": "build",
+      "category": "feature",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "💤",
-      "next_action": "stash",
+      "next_action_glyph": "✅",
+      "next_action": "post_merge_follow_up",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -198,13 +198,13 @@
       "category": "build",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 0,
-      "severity": "none",
+      "score": 3,
+      "severity": "risk",
       "sentiment": "",
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — quick scan shows the failing status is the spell-check reporting/check-spelling context. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84787888394? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` (dictionary-not-found / unrecognized-spelling report) at https://github.com/microsoft/intelligent-terminal/runs/84792184411. It looks likely related to the spelling job rather than the E2E coverage itself, but could you take a look? If it is flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -232,7 +232,7 @@
       "category": "agent-pane",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 0,
+      "score": 1,
       "severity": "none",
       "sentiment": "neutral",
       "next_action_glyph": "🏷️",
@@ -240,7 +240,8 @@
       "suggested_labels": [
         "Issue-Feature",
         "Area-AgentPane",
-        "Agent-Copilot"
+        "Agent-Copilot",
+        "Needs-Triage"
       ],
       "suggested_reply": ""
     },
@@ -259,7 +260,7 @@
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan points at check-spelling output, including dictionary retrieval/spelling findings. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84761489413? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — the report points to missing dictionaries plus one forbidden-pattern match. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84761489413? If it is flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     }
   ]
 }
