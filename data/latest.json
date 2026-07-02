@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T05:59:58Z",
+  "generated_at": "2026-07-02T06:32:43Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -10,21 +10,17 @@
     "upstream-sync"
   ],
   "totals": {
-    "open_issues": 1,
+    "open_issues": 0,
     "open_prs": 4
   },
-  "category_counts": {
-    "agent-pane": 1
-  },
+  "category_counts": {},
   "per_repo": {
     "microsoft/intelligent-terminal": {
       "totals": {
-        "open_issues": 1,
+        "open_issues": 0,
         "open_prs": 4
       },
-      "category_counts": {
-        "agent-pane": 1
-      },
+      "category_counts": {},
       "trends": [
         {
           "topic": "autofix triggers on stashed pane",
@@ -74,32 +70,11 @@
   "issues": [
     {
       "repo": "microsoft/intelligent-terminal",
-      "number": 351,
-      "title": "Agent-launched new terminal should match the active WSL/Ubuntu session, not the default profile",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/351",
-      "kind": "issue",
-      "category": "agent-pane",
-      "days_no_reply": 0,
-      "is_community": false,
-      "score": 1,
-      "severity": "none",
-      "sentiment": "neutral",
-      "next_action_glyph": "🏷️",
-      "next_action": "label_only",
-      "suggested_labels": [
-        "Issue-Feature",
-        "Area-AgentPane",
-        "Resolution-Fix-Committed"
-      ],
-      "suggested_reply": ""
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
       "number": 363,
       "title": "wta: own telemetry provider + read real values from terminal-internals header",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/363",
       "kind": "pr",
-      "category": "build",
+      "category": "feature",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
@@ -120,7 +95,7 @@
       "days_no_reply": 0,
       "is_community": true,
       "score": 2,
-      "severity": "papercut",
+      "severity": "bug",
       "sentiment": "",
       "next_action_glyph": "✅",
       "next_action": "stash",
@@ -139,8 +114,8 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "💤",
-      "next_action": "stash",
+      "next_action_glyph": "⏸",
+      "next_action": "wait_on_author",
       "suggested_labels": [],
       "suggested_reply": ""
     },
