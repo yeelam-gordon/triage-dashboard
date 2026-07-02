@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T09:04:34Z",
+  "generated_at": "2026-07-02T09:31:29Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -128,15 +128,12 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "✅",
-      "next_action": "none",
+      "next_action_glyph": "📦",
+      "next_action": "stash",
       "suggested_labels": [
         "Area-CLI",
         "Area-Installer",
-        {
-          "name": "Area-Telemetry",
-          "reason": "No existing telemetry-specific Area label; PR primarily changes WTA telemetry code generation and provider constants."
-        }
+        "Area-Telemetry"
       ],
       "suggested_reply": ""
     },
@@ -178,12 +175,7 @@
       "next_action": "wait_on_author",
       "suggested_labels": [
         "Area-SessionManagement",
-        "Area-CLI",
-        "Status-In-Progress",
-        {
-          "name": "Area-WTA-ACP",
-          "reason": "Broad tools/wta/src/protocol/acp changes have no dedicated live Area-WTA/ACP label; use existing Area-SessionManagement/Area-CLI instead."
-        }
+        "Area-WTA-ACP"
       ],
       "suggested_reply": ""
     },
@@ -202,9 +194,12 @@
       "next_action_glyph": "⏸",
       "next_action": "wait_on_author",
       "suggested_labels": [
+        "Needs-Review",
+        "Agent-Custom",
+        "Agent-Copilot",
         {
-          "name": "Area-E2E/Testing",
-          "reason": "No live label or ownership-table row covers the dominant `test/e2e/**` changes; live taxonomy fetched from gh label list."
+          "name": "Area-E2E-Tests",
+          "reason": "PR primarily changes test/e2e/**, but the live label taxonomy has no Area-* label for E2E/test harness ownership."
         }
       ],
       "suggested_reply": ""
