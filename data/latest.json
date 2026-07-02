@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T03:02:54Z",
+  "generated_at": "2026-07-02T05:02:26Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -11,19 +11,19 @@
   ],
   "totals": {
     "open_issues": 1,
-    "open_prs": 6
+    "open_prs": 4
   },
   "category_counts": {
-    "agent-pane": 1
+    "auto-fix": 1
   },
   "per_repo": {
     "microsoft/intelligent-terminal": {
       "totals": {
         "open_issues": 1,
-        "open_prs": 6
+        "open_prs": 4
       },
       "category_counts": {
-        "agent-pane": 1
+        "auto-fix": 1
       },
       "trends": [
         {
@@ -74,46 +74,21 @@
   "issues": [
     {
       "repo": "microsoft/intelligent-terminal",
-      "number": 296,
-      "title": "Per-tab AI agents via a multi-agent wta-master (id-based, GPO-aware)",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/296",
-      "kind": "pr",
-      "category": "session-management",
-      "days_no_reply": 0,
-      "is_community": true,
-      "score": 4,
-      "severity": "none",
-      "sentiment": "",
-      "next_action_glyph": "👀",
-      "next_action": "request_reviewer",
-      "suggested_labels": [
-        "Area-SessionManagement",
-        "Area-AgentPane",
-        "Area-CLI",
-        "Issue-Feature",
-        "Needs-Review",
-        "Needs-Author-Feedback",
-        "Status-Blocked"
-      ],
-      "suggested_reply": "Hi @frarteaga, thanks for the PR! It currently has merge conflicts with `main`. Could you rebase (`git fetch origin && git rebase origin/main`) and push? Happy to take a closer look once it's clean."
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
       "number": 351,
       "title": "Agent-launched new terminal should match the active WSL/Ubuntu session, not the default profile",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/351",
       "kind": "issue",
-      "category": "agent-pane",
+      "category": "auto-fix",
       "days_no_reply": 0,
       "is_community": false,
       "score": 1,
       "severity": "none",
       "sentiment": "neutral",
-      "next_action_glyph": "✅",
-      "next_action": "no_action",
+      "next_action_glyph": "🏷️",
+      "next_action": "label_only",
       "suggested_labels": [
         "Issue-Feature",
-        "Area-AgentPane",
+        "Area-AutoFix",
         "Resolution-Fix-Committed"
       ],
       "suggested_reply": ""
@@ -124,13 +99,13 @@
       "title": "wta: own telemetry provider + read real values from terminal-internals header",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/363",
       "kind": "pr",
-      "category": "build",
+      "category": "feature",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "📦",
+      "next_action_glyph": "✅",
       "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
@@ -144,10 +119,10 @@
       "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 3,
-      "severity": "bug",
+      "score": 2,
+      "severity": "papercut",
       "sentiment": "",
-      "next_action_glyph": "💤",
+      "next_action_glyph": "✅",
       "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
@@ -178,35 +153,13 @@
       "category": "build",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 3,
-      "severity": "risk",
+      "score": 0,
+      "severity": "none",
       "sentiment": "",
       "next_action_glyph": "⏸",
       "next_action": "wait_on_author",
       "suggested_labels": [],
       "suggested_reply": ""
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
-      "number": 371,
-      "title": "Custom agents: /agent slash command to override the terminal agent per tab",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/371",
-      "kind": "pr",
-      "category": "auto-fix",
-      "days_no_reply": 0,
-      "is_community": false,
-      "score": 0,
-      "severity": "none",
-      "sentiment": "",
-      "next_action_glyph": "🟥",
-      "next_action": "investigate_ci",
-      "suggested_labels": [
-        "Area-AutoFix",
-        "Area-CLI",
-        "Agent-Custom",
-        "Needs-Review"
-      ],
-      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — quick scan points at the spelling report for `dotdir`, `nwhy`, and `unparsable`. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84441079291? If it is flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     }
   ]
 }
