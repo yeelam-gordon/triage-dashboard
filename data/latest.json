@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T07:56:49Z",
+  "generated_at": "2026-07-02T09:04:34Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -78,7 +78,7 @@
       "title": "Per-tab AI agents via a multi-agent wta-master (id-based, GPO-aware)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/296",
       "kind": "pr",
-      "category": "feature",
+      "category": "session-management",
       "days_no_reply": 0,
       "is_community": true,
       "score": 4,
@@ -86,8 +86,14 @@
       "sentiment": "",
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
-      "suggested_labels": [],
-      "suggested_reply": "Hi @frarteaga, thanks for the PR! It currently has merge conflicts with `main`. Could you rebase (`git fetch origin` then `git rebase origin/main`) and push? Happy to take a closer look once it's clean.\n\nPS: this is also waiting on an internal reviewer for the SessionManagement/AgentPane changes; suggested routing is @lhecker / @kaitao based on the ownership table and recent git history."
+      "suggested_labels": [
+        "Issue-Feature",
+        "Area-SessionManagement",
+        "Area-AgentPane",
+        "Area-CLI",
+        "Needs-Review"
+      ],
+      "suggested_reply": "@lhecker — community PR #296 touches `tools/wta/src/master/mod.rs`, `tools/wta/src/session_registry.rs`, and `src/cascadia/TerminalApp/AgentPaneContent.cpp` (SessionManagement / AgentPane areas). 7-day SLA clock starts today. Worth a first pass?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -116,15 +122,22 @@
       "title": "wta: own telemetry provider + read real values from terminal-internals header",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/363",
       "kind": "pr",
-      "category": "build",
+      "category": "cli",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "💤",
-      "next_action": "stash",
-      "suggested_labels": [],
+      "next_action_glyph": "✅",
+      "next_action": "none",
+      "suggested_labels": [
+        "Area-CLI",
+        "Area-Installer",
+        {
+          "name": "Area-Telemetry",
+          "reason": "No existing telemetry-specific Area label; PR primarily changes WTA telemetry code generation and provider constants."
+        }
+      ],
       "suggested_reply": ""
     },
     {
@@ -133,15 +146,20 @@
       "title": "fix: inherit active pane profile in agent-created terminals to match …",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/366",
       "kind": "pr",
-      "category": "bug-fix",
+      "category": "cli",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 3,
+      "score": 2,
       "severity": "bug",
       "sentiment": "",
-      "next_action_glyph": "💤",
+      "next_action_glyph": "✅",
       "next_action": "stash",
-      "suggested_labels": [],
+      "suggested_labels": [
+        "Issue-Bug",
+        "Area-CLI",
+        "Area-AutoFix",
+        "Resolution-Fix-Committed"
+      ],
       "suggested_reply": ""
     },
     {
@@ -150,7 +168,7 @@
       "title": "WTA ACP 0.10→1.0 migration (Phase 0: behavior-preserving model rewrite)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/367",
       "kind": "pr",
-      "category": "refactor",
+      "category": "session-management",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
@@ -158,7 +176,15 @@
       "sentiment": "",
       "next_action_glyph": "⏸",
       "next_action": "wait_on_author",
-      "suggested_labels": [],
+      "suggested_labels": [
+        "Area-SessionManagement",
+        "Area-CLI",
+        "Status-In-Progress",
+        {
+          "name": "Area-WTA-ACP",
+          "reason": "Broad tools/wta/src/protocol/acp changes have no dedicated live Area-WTA/ACP label; use existing Area-SessionManagement/Area-CLI instead."
+        }
+      ],
       "suggested_reply": ""
     },
     {
@@ -175,7 +201,12 @@
       "sentiment": "",
       "next_action_glyph": "⏸",
       "next_action": "wait_on_author",
-      "suggested_labels": [],
+      "suggested_labels": [
+        {
+          "name": "Area-E2E/Testing",
+          "reason": "No live label or ownership-table row covers the dominant `test/e2e/**` changes; live taxonomy fetched from gh label list."
+        }
+      ],
       "suggested_reply": ""
     },
     {
@@ -193,7 +224,7 @@
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — quick scan points at spelling/check-spelling feedback on this PR. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84441079291? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — quick scan points at spelling/dictionary annotations in the new custom-agent code/docs. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84441079291? Once addressed, a push to the PR branch should re-run CI."
     }
   ]
 }
