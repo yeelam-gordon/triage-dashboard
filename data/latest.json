@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T06:57:11Z",
+  "generated_at": "2026-07-02T07:35:09Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -10,17 +10,21 @@
     "upstream-sync"
   ],
   "totals": {
-    "open_issues": 0,
-    "open_prs": 4
+    "open_issues": 1,
+    "open_prs": 6
   },
-  "category_counts": {},
+  "category_counts": {
+    "agent-pane": 1
+  },
   "per_repo": {
     "microsoft/intelligent-terminal": {
       "totals": {
-        "open_issues": 0,
-        "open_prs": 4
+        "open_issues": 1,
+        "open_prs": 6
       },
-      "category_counts": {},
+      "category_counts": {
+        "agent-pane": 1
+      },
       "trends": [
         {
           "topic": "autofix triggers on stashed pane",
@@ -70,17 +74,55 @@
   "issues": [
     {
       "repo": "microsoft/intelligent-terminal",
+      "number": 296,
+      "title": "Per-tab AI agents via a multi-agent wta-master (id-based, GPO-aware)",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/296",
+      "kind": "pr",
+      "category": "feature",
+      "days_no_reply": 0,
+      "is_community": true,
+      "score": 4,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "👀",
+      "next_action": "request_reviewer",
+      "suggested_labels": [],
+      "suggested_reply": "Hi @frarteaga, thanks for the PR! It currently has merge conflicts with `main`. Could you rebase (`git fetch origin` then `git rebase origin/main`) and push? Happy to take a closer look once it's clean.\n\nPS: this is also waiting on an internal reviewer for the SessionManagement/AgentPane changes; suggested routing is @lhecker / @kaitao based on the ownership table and recent git history."
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 351,
+      "title": "Agent-launched new terminal should match the active WSL/Ubuntu session, not the default profile",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/351",
+      "kind": "issue",
+      "category": "agent-pane",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 1,
+      "severity": "none",
+      "sentiment": "neutral",
+      "next_action_glyph": "🏷️",
+      "next_action": "label_only",
+      "suggested_labels": [
+        "Issue-Feature",
+        "Area-AgentPane",
+        "Resolution-Fix-Committed"
+      ],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
       "number": 363,
       "title": "wta: own telemetry provider + read real values from terminal-internals header",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/363",
       "kind": "pr",
-      "category": "feature",
+      "category": "build",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "✅",
+      "next_action_glyph": "📦",
       "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
@@ -94,7 +136,7 @@
       "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 2,
+      "score": 3,
       "severity": "bug",
       "sentiment": "",
       "next_action_glyph": "💤",
@@ -135,6 +177,23 @@
       "next_action": "wait_on_author",
       "suggested_labels": [],
       "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 371,
+      "title": "Custom agents: /agent slash command to override the terminal agent per tab",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/371",
+      "kind": "pr",
+      "category": "feature",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 0,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "🟥",
+      "next_action": "investigate_ci",
+      "suggested_labels": [],
+      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — quick scan points at spelling/check-spelling feedback on this PR. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84441079291? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     }
   ]
 }
