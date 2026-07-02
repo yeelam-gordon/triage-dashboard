@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T13:34:47Z",
+  "generated_at": "2026-07-02T14:03:20Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -10,20 +10,22 @@
     "upstream-sync"
   ],
   "totals": {
-    "open_issues": 2,
+    "open_issues": 3,
     "open_prs": 7
   },
   "category_counts": {
-    "agent-pane": 2
+    "agent-pane": 2,
+    "session-management": 1
   },
   "per_repo": {
     "microsoft/intelligent-terminal": {
       "totals": {
-        "open_issues": 2,
+        "open_issues": 3,
         "open_prs": 7
       },
       "category_counts": {
-        "agent-pane": 2
+        "agent-pane": 2,
+        "session-management": 1
       },
       "trends": [
         {
@@ -93,6 +95,27 @@
         "Needs-Review"
       ],
       "suggested_reply": "Hi @frarteaga, thanks for the PR! It currently has merge conflicts with `main`. Could you rebase (`git fetch origin && git rebase origin/main`) and push? Happy to take a closer look once it's clean."
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 350,
+      "title": "Tracking: first-class WSL terminal/shell-pane support for the agent",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/350",
+      "kind": "issue",
+      "category": "session-management",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 0,
+      "severity": "none",
+      "sentiment": "neutral",
+      "next_action_glyph": "🏷️",
+      "next_action": "label_only",
+      "suggested_labels": [
+        "Issue-Feature",
+        "Area-SessionManagement",
+        "Status-In-Progress"
+      ],
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -178,10 +201,10 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "⏸",
-      "next_action": "wait_on_author",
+      "next_action_glyph": "🟥",
+      "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": ""
+      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — quick scan shows the failing status is the spell-check reporting/check-spelling context. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84787888394? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
