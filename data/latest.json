@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T09:11:52Z",
+  "generated_at": "2026-07-03T23:20:33Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -85,7 +85,7 @@
       "category": "settings",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 1,
+      "score": 0,
       "severity": "none",
       "sentiment": "neutral",
       "next_action_glyph": "🏷️",
@@ -109,7 +109,7 @@
       "is_community": false,
       "score": 1,
       "severity": "none",
-      "sentiment": "neutral",
+      "sentiment": "positive",
       "next_action_glyph": "✅",
       "next_action": "no_action",
       "suggested_labels": [
@@ -131,10 +131,10 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "💤",
-      "next_action": "stash",
+      "next_action_glyph": "🛠",
+      "next_action": "nudge_rebase",
       "suggested_labels": [],
-      "suggested_reply": ""
+      "suggested_reply": "Hi @DDKinger, thanks for the PR! It currently has merge conflicts with `main`. Could you rebase (`git fetch origin && git rebase origin/main`) and push? Happy to take a closer look once it's clean."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -148,7 +148,7 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "✅",
+      "next_action_glyph": "📦",
       "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
@@ -190,7 +190,7 @@
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan suggests it might be unrelated to your changes, but could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84761489413? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan suggests it may be from the spelling/check-spelling validation rather than runtime code. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84761489413? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -205,7 +205,7 @@
       "severity": "none",
       "sentiment": "",
       "next_action_glyph": "✅",
-      "next_action": "ready_to_merge",
+      "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -218,13 +218,13 @@
       "category": "feature",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 7,
-      "severity": "risk",
+      "score": 4,
+      "severity": "none",
       "sentiment": "",
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "@DDKinger — community PR #375 touches `tools/wta/src/main.rs` and `tools/wta/src/coordinator.rs` (WSL delegate routing / Area-CLI). 7-day SLA clock starts today. Worth a first pass?"
+      "suggested_reply": "@DDKinger — community PR #375 touches `tools/wta/src/main.rs` and `tools/wta/src/coordinator.rs` for WSL ?<prompt> delegate routing (Area-CLI / WTA delegate path). 7-day SLA clock starts today. Worth a first pass?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -241,7 +241,7 @@
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — quick scan points at the spelling/forbidden-pattern annotations on the release-notes doc. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84923931291? If it is flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling`: https://github.com/microsoft/intelligent-terminal/runs/84923931291. The latest spelling report flags `non-existent` (should be `nonexistent`) and `secpoll`; could you take a look? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -249,13 +249,13 @@
       "title": "integration tests: sync with latest feature",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/377",
       "kind": "pr",
-      "category": "build",
+      "category": "docs",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "💤",
+      "next_action_glyph": "✅",
       "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
@@ -272,7 +272,7 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "✅",
+      "next_action_glyph": "💤",
       "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
@@ -289,7 +289,7 @@
       "score": 3,
       "severity": "risk",
       "sentiment": "",
-      "next_action_glyph": "💤",
+      "next_action_glyph": "✅",
       "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
@@ -309,7 +309,7 @@
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @microsoft-github-policy-service, CI is failing on `check-spelling` — quick scan points at the generated spelling baseline/config (`Autobaselining`, `baselining`, `psscriptanalyzer`, `spotbugs`). Please take a look at https://github.com/microsoft/intelligent-terminal/runs/84935750696. If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -321,7 +321,7 @@
       "days_no_reply": 0,
       "is_community": false,
       "score": 2,
-      "severity": "bug",
+      "severity": "papercut",
       "sentiment": "",
       "next_action_glyph": "⏸",
       "next_action": "wait_on_author",
