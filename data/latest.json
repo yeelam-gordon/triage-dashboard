@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T08:27:11Z",
+  "generated_at": "2026-07-03T09:11:52Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -14,8 +14,9 @@
     "open_prs": 11
   },
   "category_counts": {
-    "agent-pane": 2,
-    "session-management": 1
+    "agent-pane": 1,
+    "session-management": 1,
+    "settings": 1
   },
   "per_repo": {
     "microsoft/intelligent-terminal": {
@@ -24,8 +25,9 @@
         "open_prs": 11
       },
       "category_counts": {
-        "agent-pane": 2,
-        "session-management": 1
+        "agent-pane": 1,
+        "session-management": 1,
+        "settings": 1
       },
       "trends": [
         {
@@ -80,7 +82,7 @@
       "title": "Able to save the Agent Customized Name instead of command line default name.",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/282",
       "kind": "issue",
-      "category": "agent-pane",
+      "category": "settings",
       "days_no_reply": 0,
       "is_community": true,
       "score": 1,
@@ -90,9 +92,9 @@
       "next_action": "label_only",
       "suggested_labels": [
         "Issue-Feature",
-        "Area-AgentPane",
         "Area-Settings",
-        "Agent-Custom"
+        "Agent-Custom",
+        "Needs-Triage"
       ],
       "suggested_reply": ""
     },
@@ -160,17 +162,16 @@
       "category": "agent-pane",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 3,
+      "score": 1,
       "severity": "none",
-      "sentiment": "blocked",
+      "sentiment": "neutral",
       "next_action_glyph": "🏷️",
       "next_action": "label_only",
       "suggested_labels": [
         "Issue-Feature",
         "Area-AgentPane",
-        "Area-CLI",
         "Agent-Copilot",
-        "Status-In-Progress"
+        "Needs-Triage"
       ],
       "suggested_reply": ""
     },
@@ -189,7 +190,7 @@
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan suggests it may be the check-spelling dictionary retrieval failure rather than the save/restore code path, but could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84761489413? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan suggests it might be unrelated to your changes, but could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84761489413? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -204,7 +205,7 @@
       "severity": "none",
       "sentiment": "",
       "next_action_glyph": "✅",
-      "next_action": "stash",
+      "next_action": "ready_to_merge",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -217,13 +218,13 @@
       "category": "feature",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 4,
-      "severity": "none",
+      "score": 7,
+      "severity": "risk",
       "sentiment": "",
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "@DDKinger — community PR #375 touches `tools/wta/src/main.rs`, `tools/wta/src/coordinator.rs` (your Area-CLI / WTA delegate routing area). 7-day SLA clock starts today. Worth a first pass?"
+      "suggested_reply": "@DDKinger — community PR #375 touches `tools/wta/src/main.rs` and `tools/wta/src/coordinator.rs` (WSL delegate routing / Area-CLI). 7-day SLA clock starts today. Worth a first pass?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -240,7 +241,7 @@
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @vanzue, CI is failing on check-spelling — quick scan points at the spelling check annotations in doc\\release-notes\\v0.1.2.md. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84923931291? Once it is green and the draft is marked ready for review, this should be straightforward to review."
+      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — quick scan points at the spelling/forbidden-pattern annotations on the release-notes doc. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84923931291? If it is flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -248,14 +249,14 @@
       "title": "integration tests: sync with latest feature",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/377",
       "kind": "pr",
-      "category": "docs",
+      "category": "build",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "✅",
-      "next_action": "ready_to_merge",
+      "next_action_glyph": "💤",
+      "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -272,7 +273,7 @@
       "severity": "none",
       "sentiment": "",
       "next_action_glyph": "✅",
-      "next_action": "ready_to_merge",
+      "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -288,7 +289,7 @@
       "score": 3,
       "severity": "risk",
       "sentiment": "",
-      "next_action_glyph": "✅",
+      "next_action_glyph": "💤",
       "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
@@ -301,14 +302,14 @@
       "kind": "pr",
       "category": "build",
       "days_no_reply": 0,
-      "is_community": true,
-      "score": 3,
+      "is_community": false,
+      "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "👀",
-      "next_action": "request_reviewer",
+      "next_action_glyph": "🟥",
+      "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @microsoft-github-policy-service, CI is failing on `check-spelling` — quick scan shows spelling/baseline terms in the generated config, but could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84935750696? If it is flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": "Hi @microsoft-github-policy-service, CI is failing on `check-spelling` — quick scan points at the generated spelling baseline/config (`Autobaselining`, `baselining`, `psscriptanalyzer`, `spotbugs`). Please take a look at https://github.com/microsoft/intelligent-terminal/runs/84935750696. If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -319,7 +320,7 @@
       "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 3,
+      "score": 2,
       "severity": "bug",
       "sentiment": "",
       "next_action_glyph": "⏸",
