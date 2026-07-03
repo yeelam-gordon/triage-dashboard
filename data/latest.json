@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-02T23:11:23Z",
+  "generated_at": "2026-07-03T00:06:34Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -89,7 +89,7 @@
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "@kaitao — community PR #296 touches `tools/wta/src/master/mod.rs`, `src/cascadia/TerminalApp/AgentPaneContent.cpp`, and WTA session/protocol code (SessionManagement/AgentPane areas). 7-day SLA clock starts today. Worth a first pass?\n\nPS: @vanzue has already asked the author to merge latest `main` and remove the dropdown; a formal reviewer assignment is the remaining team-side gap."
+      "suggested_reply": "@kaitao — community PR #296 touches `tools/wta/src/master/mod.rs`, `src/cascadia/TerminalApp/AgentPaneContent.cpp`, and WTA session/protocol code (SessionManagement/AgentPane areas). 7-day SLA clock starts today. Worth a first pass?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -123,9 +123,9 @@
       "is_community": false,
       "score": 1,
       "severity": "none",
-      "sentiment": "positive",
-      "next_action_glyph": "🏷️",
-      "next_action": "label_only",
+      "sentiment": "neutral",
+      "next_action_glyph": "✅",
+      "next_action": "no_action",
       "suggested_labels": [
         "Issue-Feature",
         "Area-AgentPane",
@@ -162,7 +162,7 @@
       "score": 2,
       "severity": "bug",
       "sentiment": "",
-      "next_action_glyph": "💤",
+      "next_action_glyph": "✅",
       "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
@@ -216,7 +216,7 @@
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — quick scan points to spelling findings from the automated check (for example `dotdir`, `unparsable`, and `nwhy`). Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84441079291? If it turns out to be flaky, pushing an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) should re-run it."
+      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — the log shows dictionary retrieval failures plus unrecognized words `dotdir`, `nwhy`, and `unparsable`. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84441079291? If it is flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -256,7 +256,7 @@
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan suggests it might be unrelated to your changes, but could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84761489413? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84761489413? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
