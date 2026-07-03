@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T07:04:50Z",
+  "generated_at": "2026-07-03T07:36:31Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -14,7 +14,7 @@
     "open_prs": 10
   },
   "category_counts": {
-    "agent-pane": 1,
+    "cli": 1,
     "session-management": 1
   },
   "per_repo": {
@@ -24,7 +24,7 @@
         "open_prs": 10
       },
       "category_counts": {
-        "agent-pane": 1,
+        "cli": 1,
         "session-management": 1
       },
       "trends": [
@@ -83,7 +83,7 @@
       "category": "session-management",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 1,
+      "score": 0,
       "severity": "none",
       "sentiment": "neutral",
       "next_action_glyph": "🏷️",
@@ -121,10 +121,10 @@
       "category": "build",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 3,
-      "severity": "risk",
+      "score": 0,
+      "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "📦",
+      "next_action_glyph": "✅",
       "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
@@ -135,7 +135,7 @@
       "title": "Delegate (?<prompt>) from a WSL pane should launch Copilot inside WSL, not the Windows host",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/372",
       "kind": "issue",
-      "category": "agent-pane",
+      "category": "cli",
       "days_no_reply": 0,
       "is_community": false,
       "score": 1,
@@ -145,6 +145,7 @@
       "next_action": "label_only",
       "suggested_labels": [
         "Issue-Feature",
+        "Area-CLI",
         "Area-AgentPane",
         "Agent-Copilot",
         "Status-In-Progress"
@@ -166,7 +167,7 @@
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84761489413? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan points at spelling/forbidden-pattern findings in the PR metadata/docs/locales. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84761489413? If it is flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -174,11 +175,11 @@
       "title": "Fix wta x86 unit tests: PEB probes are x64-only",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/374",
       "kind": "pr",
-      "category": "build",
+      "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 3,
-      "severity": "risk",
+      "score": 1,
+      "severity": "papercut",
       "sentiment": "",
       "next_action_glyph": "📦",
       "next_action": "stash",
@@ -200,7 +201,7 @@
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "@DDKinger — community PR #375 touches `tools/wta/src/main.rs` and `tools/wta/src/coordinator.rs` (Area-CLI / WTA delegate routing; you opened the linked WSL delegate issue and are the ownership-table primary for `tools/wta/src/main.rs`). 7-day SLA clock starts today. Worth a first pass?"
+      "suggested_reply": "@DDKinger — community PR #375 touches `tools/wta/src/main.rs` and `tools/wta/src/coordinator.rs` (Area-CLI / WTA delegate routing; you opened the linked WSL delegate issue). 7-day SLA clock starts today. Worth a first pass?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -217,7 +218,7 @@
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — the current check-spelling annotations mention `non-existent` and `secpoll`. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84923931291? Since this PR is still draft, fixing that before marking it ready should make the review pass smoother."
+      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling`. This looks related to the release-notes docs checks; could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84923931291? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -231,7 +232,7 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "💤",
+      "next_action_glyph": "📦",
       "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
@@ -265,8 +266,8 @@
       "score": 3,
       "severity": "risk",
       "sentiment": "",
-      "next_action_glyph": "⏸",
-      "next_action": "wait_on_author",
+      "next_action_glyph": "📦",
+      "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -276,16 +277,16 @@
       "title": "Auto-generated baselines by 1ES Pipeline Templates",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/380",
       "kind": "pr",
-      "category": "build",
+      "category": "automation/chore",
       "days_no_reply": 0,
-      "is_community": true,
-      "score": 3,
+      "is_community": false,
+      "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "👀",
-      "next_action": "request_reviewer",
+      "next_action_glyph": "🟥",
+      "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @microsoft-github-policy-service, CI is failing on `check-spelling` — quick scan points at check-spelling autobaseline terms (`Autobaselining`, `baselining`, `psscriptanalyzer`, `spotbugs`) and dictionary retrieval warnings. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84935750696? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": "Hi @microsoft-github-policy-service, CI is failing on check-spelling for generated baseline terms (Autobaselining, baselining, psscriptanalyzer, spotbugs): https://github.com/microsoft/intelligent-terminal/actions/runs/28640429651/job/84935246704#step:4:1. Since this is an automation PR, a human should decide whether to update spelling metadata/baseline config or rerun the generator."
     }
   ]
 }
