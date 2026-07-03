@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T05:33:40Z",
+  "generated_at": "2026-07-03T06:03:05Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -11,7 +11,7 @@
   ],
   "totals": {
     "open_issues": 2,
-    "open_prs": 9
+    "open_prs": 10
   },
   "category_counts": {
     "agent-pane": 1,
@@ -21,7 +21,7 @@
     "microsoft/intelligent-terminal": {
       "totals": {
         "open_issues": 2,
-        "open_prs": 9
+        "open_prs": 10
       },
       "category_counts": {
         "agent-pane": 1,
@@ -83,7 +83,7 @@
       "category": "session-management",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 1,
+      "score": 0.0,
       "severity": "none",
       "sentiment": "neutral",
       "next_action_glyph": "✅",
@@ -101,7 +101,7 @@
       "title": "WTA ACP 0.10→1.0 migration (Phase 0: behavior-preserving model rewrite)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/367",
       "kind": "pr",
-      "category": "session-management",
+      "category": "refactor",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
@@ -109,16 +109,7 @@
       "sentiment": "",
       "next_action_glyph": "⏸",
       "next_action": "wait_on_author",
-      "suggested_labels": [
-        "Area-SessionManagement",
-        "Area-CLI",
-        "Area-AutoFix",
-        "Status-In-Progress",
-        {
-          "name": "Issue-Refactor",
-          "reason": "PR is a behavior-preserving ACP model rewrite, but live taxonomy has no refactor-specific Issue-* label."
-        }
-      ],
+      "suggested_labels": [],
       "suggested_reply": ""
     },
     {
@@ -133,14 +124,9 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "💤",
+      "next_action_glyph": "✅",
       "next_action": "stash",
-      "suggested_labels": [
-        {
-          "name": "Area-AgentPane",
-          "reason": "PR adds/updates agent-pane and agent hotkey E2E coverage."
-        }
-      ],
+      "suggested_labels": [],
       "suggested_reply": ""
     },
     {
@@ -152,16 +138,17 @@
       "category": "agent-pane",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 1,
+      "score": 3,
       "severity": "none",
-      "sentiment": "neutral",
+      "sentiment": "blocked",
       "next_action_glyph": "🏷️",
       "next_action": "label_only",
       "suggested_labels": [
         "Issue-Feature",
         "Area-AgentPane",
+        "Area-CLI",
         "Agent-Copilot",
-        "Needs-Triage"
+        "Status-In-Progress"
       ],
       "suggested_reply": ""
     },
@@ -171,7 +158,7 @@
       "title": "Eternal Terminal (step 1): per-tab /save-tab + /restore-tab (layout + content)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/373",
       "kind": "pr",
-      "category": "session-management",
+      "category": "feature",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
@@ -179,15 +166,8 @@
       "sentiment": "",
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
-      "suggested_labels": [
-        "Issue-Feature",
-        "Area-SessionManagement",
-        "Area-AgentPane",
-        "Area-Settings",
-        "Area-CLI",
-        "Needs-Review"
-      ],
-      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan suggests it might be unrelated to your changes, but could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84761489413? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_labels": [],
+      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84761489413? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -202,14 +182,8 @@
       "severity": "none",
       "sentiment": "",
       "next_action_glyph": "✅",
-      "next_action": "none",
-      "suggested_labels": [
-        "Resolution-Fix-Committed",
-        {
-          "name": "Area-WTA",
-          "reason": "PR changes tools/wta/src/proc_bind.rs, but the live Area-* taxonomy has no broad WTA/runtime label covering this path."
-        }
-      ],
+      "next_action": "ready_to_merge",
+      "suggested_labels": [],
       "suggested_reply": ""
     },
     {
@@ -218,7 +192,7 @@
       "title": "?<prompt>: route WSL delegates through wsl -d <distro>",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/375",
       "kind": "pr",
-      "category": "agent-pane",
+      "category": "feature",
       "days_no_reply": 0,
       "is_community": true,
       "score": 4,
@@ -226,12 +200,8 @@
       "sentiment": "",
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
-      "suggested_labels": [
-        "Area-AgentPane",
-        "Issue-Feature",
-        "Needs-Review"
-      ],
-      "suggested_reply": "@DDKinger — community PR #375 touches `tools/wta/src/main.rs` (Area-CLI owner in the routing table; `tools/wta/src/coordinator.rs` has no explicit owner row). 7-day SLA clock starts today. Worth a first pass?"
+      "suggested_labels": [],
+      "suggested_reply": "@DDKinger — community PR #375 touches `tools/wta/src/main.rs` / `tools/wta/src/coordinator.rs` (Area-CLI / WTA delegate path; git log shows DDKinger has 8 recent commits on `tools/wta/src/main.rs`; low confidence — team table empty). 7-day SLA clock starts today. Worth a first pass?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -259,21 +229,18 @@
     {
       "repo": "microsoft/intelligent-terminal",
       "number": 377,
-      "title": "docs(release-check-list): sync with v0.1.2 features",
+      "title": "integration tests: sync with latest feature",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/377",
       "kind": "pr",
-      "category": "docs",
+      "category": "build",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "⏸",
-      "next_action": "wait_on_author",
-      "suggested_labels": [
-        "Issue-Docs",
-        "Needs-Review"
-      ],
+      "next_action_glyph": "💤",
+      "next_action": "stash",
+      "suggested_labels": [],
       "suggested_reply": ""
     },
     {
@@ -282,18 +249,15 @@
       "title": "wta: hide WSL sessions from the session view by default",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/378",
       "kind": "pr",
-      "category": "session-management",
+      "category": "feature",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "⏸",
-      "next_action": "wait_on_author",
-      "suggested_labels": [
-        "Area-SessionManagement",
-        "Needs-Review"
-      ],
+      "next_action_glyph": "✅",
+      "next_action": "ready_to_merge",
+      "suggested_labels": [],
       "suggested_reply": ""
     },
     {
@@ -302,7 +266,7 @@
       "title": "Remove PEB offset-pointer session-watcher pane binding",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/379",
       "kind": "pr",
-      "category": "session-management",
+      "category": "refactor",
       "days_no_reply": 0,
       "is_community": false,
       "score": 3,
@@ -310,15 +274,25 @@
       "sentiment": "",
       "next_action_glyph": "🛠",
       "next_action": "nudge_rebase",
-      "suggested_labels": [
-        "Area-SessionManagement",
-        "Needs-Review",
-        {
-          "name": "Issue-Refactor",
-          "reason": "PR is primarily a risk-reducing refactor/removal, but the live label taxonomy has no refactor PR kind label."
-        }
-      ],
-      "suggested_reply": ""
+      "suggested_labels": [],
+      "suggested_reply": "Hi @DDKinger, thanks for the PR! It currently has merge conflicts with `main`. Could you rebase (`git fetch origin && git rebase origin/main`) and push? Happy to take a closer look once it's clean."
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 380,
+      "title": "Auto-generated baselines by 1ES Pipeline Templates",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/380",
+      "kind": "pr",
+      "category": "build",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 0,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "🟥",
+      "next_action": "investigate_ci",
+      "suggested_labels": [],
+      "suggested_reply": "Hi @microsoft-github-policy-service, CI is failing on check-spelling — quick scan points at spelling/dictionary findings on .config/1espt/PipelineAutobaseliningConfig.yml; see https://github.com/microsoft/intelligent-terminal/actions/runs/28640429651/job/84935246704#step:4:1. Since this PR is auto-generated by the 1ES pipeline, a maintainer should inspect or let the pipeline regenerate baselines rather than treating it as community traffic."
     }
   ]
 }
