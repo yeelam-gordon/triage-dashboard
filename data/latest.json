@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-03T03:33:20Z",
+  "generated_at": "2026-07-03T04:02:25Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -124,7 +124,7 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "✅",
+      "next_action_glyph": "💤",
       "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
@@ -166,7 +166,7 @@
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan suggests it may be tied to the new Eternal Terminal docs/localization strings. Could you take a look at https://github.com/microsoft/intelligent-terminal/actions/runs/28586932022/job/84760759243#step:4:1? If it is flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": "Hi @DDKinger, CI is failing on check-spelling / validation for this PR. Quick scan suggests it may be related to the new Eternal Terminal docs or locale strings; could you take a look at https://github.com/microsoft/intelligent-terminal/pull/373/checks? If it is flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -191,16 +191,16 @@
       "title": "?<prompt>: route WSL delegates through wsl -d <distro>",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/375",
       "kind": "pr",
-      "category": "feature",
+      "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 4,
-      "severity": "none",
+      "score": 5,
+      "severity": "bug",
       "sentiment": "",
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "@DDKinger — community PR #375 touches `tools/wta/src/main.rs` and `tools/wta/src/coordinator.rs` (Area-CLI / WTA delegate surface). 7-day SLA clock starts today. Worth a first pass?"
+      "suggested_reply": "@DDKinger -- community PR #375 touches `tools/wta/src/main.rs` and `tools/wta/src/coordinator.rs` (Area-CLI / WTA delegate path; low confidence because the team table is empty). 7-day SLA clock starts today. Worth a first pass?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -217,7 +217,7 @@
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` for this draft release-notes PR. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84918800580? The bot output points at the spelling/forbidden-pattern findings (`non-existent` → `nonexistent`, plus `secpoll`) before marking the PR ready for review."
+      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — quick scan points at spelling/check annotations in the release notes. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84923931291? If it's flaky, push an empty commit to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -234,7 +234,7 @@
       "next_action_glyph": "🛠",
       "next_action": "nudge_rebase",
       "suggested_labels": [],
-      "suggested_reply": "Hi @vanzue, thanks for the PR! It currently has merge conflicts with `main`. Could you rebase (`git fetch origin && git rebase origin/main`) and push? Happy to take a closer look once it's clean."
+      "suggested_reply": ""
     }
   ]
 }
