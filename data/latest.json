@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-05T14:58:50Z",
+  "generated_at": "2026-07-05T15:28:40Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -14,7 +14,7 @@
     "open_prs": 2
   },
   "category_counts": {
-    "cli": 1
+    "invalid": 1
   },
   "per_repo": {
     "microsoft/intelligent-terminal": {
@@ -23,7 +23,7 @@
         "open_prs": 2
       },
       "category_counts": {
-        "cli": 1
+        "invalid": 1
       },
       "trends": [
         {
@@ -78,7 +78,7 @@
       "title": "WTA ACP 0.10→1.0 migration (Phase 0: behavior-preserving model rewrite)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/367",
       "kind": "pr",
-      "category": "refactor",
+      "category": "session-management",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
@@ -86,7 +86,15 @@
       "sentiment": "",
       "next_action_glyph": "⏸",
       "next_action": "wait_on_author",
-      "suggested_labels": [],
+      "suggested_labels": [
+        "Area-SessionManagement",
+        "Area-CLI",
+        "Status-In-Progress",
+        {
+          "name": "Area-WTA-ACP",
+          "reason": "Majority of churn is under tools/wta/src/protocol/acp/**, which has no exact live Area-* label."
+        }
+      ],
       "suggested_reply": ""
     },
     {
@@ -95,7 +103,7 @@
       "title": "Eternal Terminal (step 1): per-tab /save-tab + /restore-tab (layout + content)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/373",
       "kind": "pr",
-      "category": "feature",
+      "category": "agent-pane",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
@@ -103,26 +111,30 @@
       "sentiment": "",
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
-      "suggested_labels": [],
-      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan suggests it may need attention before review can proceed. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/85230992589? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_labels": [
+        "Issue-Feature",
+        "Area-AgentPane",
+        "Needs-Review"
+      ],
+      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan suggests it might be unrelated to your changes, but could you take a look at https://github.com/microsoft/intelligent-terminal/runs/85230992589? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
       "number": 382,
-      "title": "Docs mention `wta`, but the exposed command alias is `wtai`",
+      "title": "Closed",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/382",
       "kind": "issue",
-      "category": "cli",
+      "category": "invalid",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 1,
-      "severity": "papercut",
+      "score": 0,
+      "severity": "none",
       "sentiment": "neutral",
-      "next_action_glyph": "🏷️",
-      "next_action": "label_only",
+      "next_action_glyph": "✅",
+      "next_action": "no_action",
       "suggested_labels": [
-        "Issue-Docs",
-        "Area-CLI"
+        "Issue-Bug",
+        "Needs-Triage"
       ],
       "suggested_reply": ""
     }
