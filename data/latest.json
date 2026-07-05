@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-05T07:57:18Z",
+  "generated_at": "2026-07-05T14:58:50Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -10,17 +10,21 @@
     "upstream-sync"
   ],
   "totals": {
-    "open_issues": 0,
-    "open_prs": 1
+    "open_issues": 1,
+    "open_prs": 2
   },
-  "category_counts": {},
+  "category_counts": {
+    "cli": 1
+  },
   "per_repo": {
     "microsoft/intelligent-terminal": {
       "totals": {
-        "open_issues": 0,
-        "open_prs": 1
+        "open_issues": 1,
+        "open_prs": 2
       },
-      "category_counts": {},
+      "category_counts": {
+        "cli": 1
+      },
       "trends": [
         {
           "topic": "autofix triggers on stashed pane",
@@ -67,22 +71,61 @@
       "delta": 1
     }
   ],
-  "issues": {
-    "repo": "microsoft/intelligent-terminal",
-    "number": 367,
-    "title": "WTA ACP 0.10→1.0 migration (Phase 0: behavior-preserving model rewrite)",
-    "url": "https://github.com/microsoft/intelligent-terminal/pull/367",
-    "kind": "pr",
-    "category": "refactor",
-    "days_no_reply": 0,
-    "is_community": false,
-    "score": 0,
-    "severity": "none",
-    "sentiment": "",
-    "next_action_glyph": "⏸",
-    "next_action": "wait_on_author",
-    "suggested_labels": [],
-    "suggested_reply": ""
-  }
+  "issues": [
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 367,
+      "title": "WTA ACP 0.10→1.0 migration (Phase 0: behavior-preserving model rewrite)",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/367",
+      "kind": "pr",
+      "category": "refactor",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 0,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "⏸",
+      "next_action": "wait_on_author",
+      "suggested_labels": [],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 373,
+      "title": "Eternal Terminal (step 1): per-tab /save-tab + /restore-tab (layout + content)",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/373",
+      "kind": "pr",
+      "category": "feature",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 0,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "🟥",
+      "next_action": "investigate_ci",
+      "suggested_labels": [],
+      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan suggests it may need attention before review can proceed. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/85230992589? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 382,
+      "title": "Docs mention `wta`, but the exposed command alias is `wtai`",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/382",
+      "kind": "issue",
+      "category": "cli",
+      "days_no_reply": 0,
+      "is_community": true,
+      "score": 1,
+      "severity": "papercut",
+      "sentiment": "neutral",
+      "next_action_glyph": "🏷️",
+      "next_action": "label_only",
+      "suggested_labels": [
+        "Issue-Docs",
+        "Area-CLI"
+      ],
+      "suggested_reply": ""
+    }
+  ]
 }
 
