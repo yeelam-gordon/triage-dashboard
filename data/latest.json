@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T03:50:26Z",
+  "generated_at": "2026-07-06T05:51:56Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -14,9 +14,8 @@
     "open_prs": 21
   },
   "category_counts": {
-    "agent-pane": 2,
-    "bug": 1,
-    "cli": 2,
+    "agent-pane": 4,
+    "cli": 1,
     "session-management": 1,
     "settings": 2
   },
@@ -27,9 +26,8 @@
         "open_prs": 21
       },
       "category_counts": {
-        "agent-pane": 2,
-        "bug": 1,
-        "cli": 2,
+        "agent-pane": 4,
+        "cli": 1,
         "session-management": 1,
         "settings": 2
       },
@@ -107,18 +105,18 @@
       "title": "Support GitHub Enterprise Copilot",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/209",
       "kind": "issue",
-      "category": "cli",
+      "category": "agent-pane",
       "days_no_reply": 0,
       "is_community": true,
       "score": 1,
       "severity": "none",
-      "sentiment": "neutral",
+      "sentiment": "positive",
       "next_action_glyph": "✅",
       "next_action": "no_action",
       "suggested_labels": [
         "Issue-Feature",
         "Agent-Copilot",
-        "Area-CLI",
+        "Area-AgentPane",
         "Resolution-Fix-Committed"
       ],
       "suggested_reply": ""
@@ -132,7 +130,7 @@
       "category": "settings",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 1,
+      "score": 0,
       "severity": "none",
       "sentiment": "neutral",
       "next_action_glyph": "🏷️",
@@ -150,17 +148,17 @@
       "title": "Doesn't know about scripts on path.",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/287",
       "kind": "issue",
-      "category": "cli",
+      "category": "agent-pane",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 5,
+      "score": 3,
       "severity": "bug",
-      "sentiment": "frustrated",
+      "sentiment": "neutral",
       "next_action_glyph": "🏷️",
       "next_action": "label_only",
       "suggested_labels": [
         "Issue-Bug",
-        "Area-CLI",
+        "Area-AgentPane",
         "Area-AutoFix",
         "Resolution-Fix-Committed"
       ],
@@ -172,7 +170,7 @@
       "title": "Per-tab AI agents via a multi-agent wta-master (id-based, GPO-aware)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/296",
       "kind": "pr",
-      "category": "session-management",
+      "category": "feature",
       "days_no_reply": 0,
       "is_community": true,
       "score": 4,
@@ -180,15 +178,8 @@
       "sentiment": "",
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
-      "suggested_labels": [
-        "Issue-Feature",
-        "Area-SessionManagement",
-        "Area-AgentPane",
-        "Agent-Copilot",
-        "Agent-Claude",
-        "Agent-Gemini"
-      ],
-      "suggested_reply": "Hi @frarteaga, thanks for the PR! It currently has merge conflicts with `main`. Could you rebase (`git fetch origin && git rebase origin/main`) and push? Happy to take a closer look once it's clean."
+      "suggested_labels": [],
+      "suggested_reply": "@lhecker / @Kaitao — community PR #296 touches `tools/wta/src/master/mod.rs`, `src/cascadia/TerminalApp/TerminalPage.cpp`, and `tools/wta/src/session_registry.rs` (SessionManagement + AgentPane areas). 7-day SLA clock starts today. Worth a first pass?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -196,19 +187,15 @@
       "title": "fix(wta): log process teardown + master lifecycle; trim log spam",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/298",
       "kind": "pr",
-      "category": "auto-fix",
+      "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
       "score": 1,
       "severity": "papercut",
       "sentiment": "",
       "next_action_glyph": "✅",
-      "next_action": "ready_to_merge",
-      "suggested_labels": [
-        "Area-AutoFix",
-        "Area-CLI",
-        "Area-SessionManagement"
-      ],
+      "next_action": "stash",
+      "suggested_labels": [],
       "suggested_reply": ""
     },
     {
@@ -217,19 +204,15 @@
       "title": "Investigate commands on PATH before answering / autofixing (#287)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/306",
       "kind": "pr",
-      "category": "auto-fix",
+      "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
       "score": 3,
       "severity": "bug",
       "sentiment": "",
       "next_action_glyph": "✅",
-      "next_action": "ready_to_merge",
-      "suggested_labels": [
-        "Issue-Bug",
-        "Area-AutoFix",
-        "Agent-Copilot"
-      ],
+      "next_action": "stash",
+      "suggested_labels": [],
       "suggested_reply": ""
     },
     {
@@ -241,11 +224,11 @@
       "category": "session-management",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 0,
+      "score": 1,
       "severity": "none",
       "sentiment": "neutral",
-      "next_action_glyph": "🏷️",
-      "next_action": "label_only",
+      "next_action_glyph": "✅",
+      "next_action": "no_action",
       "suggested_labels": [
         "Issue-Feature",
         "Area-SessionManagement",
@@ -264,13 +247,12 @@
       "is_community": false,
       "score": 1,
       "severity": "none",
-      "sentiment": "neutral",
+      "sentiment": "positive",
       "next_action_glyph": "🏷️",
       "next_action": "label_only",
       "suggested_labels": [
         "Issue-Feature",
         "Area-AgentPane",
-        "Area-CLI",
         "Resolution-Fix-Committed"
       ],
       "suggested_reply": ""
@@ -281,18 +263,15 @@
       "title": "wta: own telemetry provider + read real values from terminal-internals header",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/363",
       "kind": "pr",
-      "category": "cli",
+      "category": "feature",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "💤",
+      "next_action_glyph": "✅",
       "next_action": "stash",
-      "suggested_labels": [
-        "Area-CLI",
-        "Area-Installer"
-      ],
+      "suggested_labels": [],
       "suggested_reply": ""
     },
     {
@@ -307,7 +286,7 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "📦",
+      "next_action_glyph": "✅",
       "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
@@ -318,19 +297,15 @@
       "title": "fix: inherit active pane profile in agent-created terminals to match …",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/366",
       "kind": "pr",
-      "category": "cli",
+      "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": true,
       "score": 3,
       "severity": "bug",
       "sentiment": "",
-      "next_action_glyph": "✅",
+      "next_action_glyph": "💤",
       "next_action": "stash",
-      "suggested_labels": [
-        "Issue-Bug",
-        "Area-CLI",
-        "Area-AgentPane"
-      ],
+      "suggested_labels": [],
       "suggested_reply": ""
     },
     {
@@ -339,7 +314,7 @@
       "title": "WTA ACP 0.10→1.0 migration (Phase 0: behavior-preserving model rewrite)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/367",
       "kind": "pr",
-      "category": "session-management",
+      "category": "refactor",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
@@ -347,11 +322,7 @@
       "sentiment": "",
       "next_action_glyph": "⏸",
       "next_action": "wait_on_author",
-      "suggested_labels": [
-        "Area-SessionManagement",
-        "Area-CLI",
-        "Status-In-Progress"
-      ],
+      "suggested_labels": [],
       "suggested_reply": ""
     },
     {
@@ -360,19 +331,15 @@
       "title": "Replace auth shell-outs with native Windows APIs",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/368",
       "kind": "pr",
-      "category": "cli",
+      "category": "refactor",
       "days_no_reply": 0,
       "is_community": false,
       "score": 3,
       "severity": "risk",
       "sentiment": "",
-      "next_action_glyph": "💤",
+      "next_action_glyph": "📦",
       "next_action": "stash",
-      "suggested_labels": [
-        "Area-CLI",
-        "Agent-Copilot",
-        "Severity-High"
-      ],
+      "suggested_labels": [],
       "suggested_reply": ""
     },
     {
@@ -387,8 +354,8 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "💤",
-      "next_action": "stash",
+      "next_action_glyph": "✅",
+      "next_action": "ready_to_merge",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -398,7 +365,7 @@
       "title": "Clean up obsolete WTA login setup flows",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/370",
       "kind": "pr",
-      "category": "auto-fix",
+      "category": "refactor",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
@@ -406,10 +373,7 @@
       "sentiment": "",
       "next_action_glyph": "💤",
       "next_action": "stash",
-      "suggested_labels": [
-        "Area-AutoFix",
-        "Area-FirstRun"
-      ],
+      "suggested_labels": [],
       "suggested_reply": ""
     },
     {
@@ -418,20 +382,16 @@
       "title": "Custom agents: /agent slash command to override the terminal agent per tab",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/371",
       "kind": "pr",
-      "category": "agent-pane",
+      "category": "feature",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 1.0,
+      "score": 1,
       "severity": "none",
       "sentiment": "",
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
-      "suggested_labels": [
-        "Area-AgentPane",
-        "Agent-Custom",
-        "Needs-Review"
-      ],
-      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — quick scan suggests it might be unrelated to your changes, but could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84441079291? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_labels": [],
+      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling`: <https://github.com/microsoft/intelligent-terminal/runs/84441079291>. The annotations point at spelling terms in this PR (for example `dotdir`, `unparsable`, and `nwhy`). Could you take a look and either fix the wording or add the intended terms to the dictionary?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -440,21 +400,25 @@
       "url": "https://github.com/microsoft/intelligent-terminal/issues/372",
       "kind": "issue",
       "category": "agent-pane",
-      "days_no_reply": 0,
-      "is_community": false,
-      "score": 1,
+      "days_no_reply": 3,
+      "is_community": true,
+      "score": 2,
       "severity": "none",
       "sentiment": "neutral",
-      "next_action_glyph": "🏷️",
-      "next_action": "label_only",
+      "next_action_glyph": "💬",
+      "next_action": "reply",
       "suggested_labels": [
         "Issue-Feature",
         "Area-AgentPane",
         "Area-CLI",
         "Agent-Copilot",
-        "Status-In-Progress"
+        "Needs-Triage",
+        {
+          "name": "Area-WSL",
+          "reason": "The issue is specifically about preserving WSL distro/context for delegated agent launches; no WSL-specific live label exists."
+        }
       ],
-      "suggested_reply": ""
+      "suggested_reply": "@DDKinger — community PR #375 touches `tools/wta/src/main.rs`, `tools/wta/src/coordinator.rs` (your area). 7-day SLA clock starts today. Worth a first pass?\n\nContext from the issue thread: <!-- from comment -->Can you please have a look at my PR #375 as it fixes this issue.<!-- /from comment -->"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -471,7 +435,7 @@
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan suggests it might be unrelated to your changes, but could you take a look at https://github.com/microsoft/intelligent-terminal/runs/85269578796? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan suggests it may be the current spelling/dictionary failure from the PR comments, but could you take a look at https://github.com/microsoft/intelligent-terminal/runs/85269578796? If it is flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -485,7 +449,7 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "✅",
+      "next_action_glyph": "💤",
       "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
@@ -496,16 +460,16 @@
       "title": "?<prompt>: route WSL delegates through wsl -d <distro>",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/375",
       "kind": "pr",
-      "category": "feature",
+      "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 4,
-      "severity": "none",
+      "score": 6,
+      "severity": "bug",
       "sentiment": "",
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "@DDKinger — community PR #375 touches `tools/wta/src/main.rs` plus adjacent WTA delegate code in `tools/wta/src/coordinator.rs` (Area-CLI ownership hint; team table empty, so low confidence). 7-day SLA clock starts today. Worth a first pass?"
+      "suggested_reply": "@DDKinger — community PR #375 touches `tools/wta/src/main.rs`, `tools/wta/src/coordinator.rs` (Area-CLI / WTA delegate path). 7-day SLA clock starts today. Worth a first pass?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -521,11 +485,8 @@
       "sentiment": "",
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
-      "suggested_labels": [
-        "Issue-Docs",
-        "Needs-Author-Feedback"
-      ],
-      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling-bot` for `doc/release-notes/v0.1.2.md` (current annotations mention `non-existent` and `secpoll`). Could you take a look at https://github.com/microsoft/intelligent-terminal/pull/376/checks? If it is flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_labels": [],
+      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — it points at spellcheck findings (`non-existent` should be `nonexistent`, and `secpoll` is unrecognized). Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84923931291? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -533,7 +494,7 @@
       "title": "integration tests: sync with latest feature",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/377",
       "kind": "pr",
-      "category": "build",
+      "category": "docs",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
@@ -550,19 +511,15 @@
       "title": "wta: hide WSL sessions from the session view by default",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/378",
       "kind": "pr",
-      "category": "session-management",
+      "category": "feature",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "✅",
-      "next_action": "ready_to_merge",
-      "suggested_labels": [
-        "Area-SessionManagement",
-        "Issue-Feature",
-        "Resolution-Fix-Committed"
-      ],
+      "next_action_glyph": "💤",
+      "next_action": "stash",
+      "suggested_labels": [],
       "suggested_reply": ""
     },
     {
@@ -571,19 +528,15 @@
       "title": "Remove PEB offset-pointer session-watcher pane binding",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/379",
       "kind": "pr",
-      "category": "session-management",
+      "category": "refactor",
       "days_no_reply": 0,
       "is_community": false,
       "score": 3,
       "severity": "risk",
       "sentiment": "",
-      "next_action_glyph": "💤",
+      "next_action_glyph": "📦",
       "next_action": "stash",
-      "suggested_labels": [
-        "Area-SessionManagement",
-        "Severity-High",
-        "Resolution-Fix-Committed"
-      ],
+      "suggested_labels": [],
       "suggested_reply": ""
     },
     {
@@ -593,17 +546,15 @@
       "url": "https://github.com/microsoft/intelligent-terminal/pull/380",
       "kind": "pr",
       "category": "build",
-      "days_no_reply": 3,
-      "is_community": true,
-      "score": 4,
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "🔥",
-      "next_action": "reply",
-      "suggested_labels": [
-        "Needs-Review"
-      ],
-      "suggested_reply": "Hi @microsoft-github-policy-service, CI is failing on check-spelling — quick scan points at the generated 1ES baseline/spelling changes; could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84935750696? If it is flaky, push an empty commit (git commit --allow-empty -m 'ci: rerun') to re-run."
+      "next_action_glyph": "🟥",
+      "next_action": "investigate_ci",
+      "suggested_labels": [],
+      "suggested_reply": "Hi @microsoft-github-policy-service, CI is failing on check-spelling — quick scan shows unrecognized words in the generated 1ES baseline update: Autobaselining, baselining, psscriptanalyzer, and spotbugs. A maintainer should inspect https://github.com/microsoft/intelligent-terminal/runs/84935750696 and either accept the generated spelling metadata or adjust the baseline PR before merge."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -611,7 +562,7 @@
       "title": "Make agent bars follow the tab theme color (#348)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/381",
       "kind": "pr",
-      "category": "agent-pane",
+      "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
       "score": 3,
@@ -619,12 +570,7 @@
       "sentiment": "",
       "next_action_glyph": "⏸",
       "next_action": "wait_on_author",
-      "suggested_labels": [
-        "Issue-Bug",
-        "Area-AgentPane",
-        "Area-SessionManagement",
-        "Needs-Review"
-      ],
+      "suggested_labels": [],
       "suggested_reply": ""
     },
     {
@@ -633,18 +579,17 @@
       "title": "Closed",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/382",
       "kind": "issue",
-      "category": "bug",
+      "category": "cli",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 2,
-      "severity": "bug",
+      "score": 1,
+      "severity": "papercut",
       "sentiment": "neutral",
       "next_action_glyph": "✅",
       "next_action": "no_action",
       "suggested_labels": [
-        "Issue-Bug",
-        "Needs-Repro",
-        "Needs-Author-Feedback"
+        "Issue-Docs",
+        "Area-CLI"
       ],
       "suggested_reply": ""
     },
@@ -654,19 +599,15 @@
       "title": "fix(wt): keep dragged tab's sessions Live across cross-window move",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/383",
       "kind": "pr",
-      "category": "session-management",
+      "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
       "score": 2,
       "severity": "bug",
       "sentiment": "",
-      "next_action_glyph": "⏸",
-      "next_action": "wait_on_author",
-      "suggested_labels": [
-        "Issue-Bug",
-        "Area-SessionManagement",
-        "Needs-Review"
-      ],
+      "next_action_glyph": "✅",
+      "next_action": "stash",
+      "suggested_labels": [],
       "suggested_reply": ""
     }
   ]
