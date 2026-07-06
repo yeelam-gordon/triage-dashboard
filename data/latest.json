@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T08:47:09Z",
+  "generated_at": "2026-07-06T10:51:27Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -15,8 +15,8 @@
   },
   "category_counts": {
     "agent-pane": 3,
+    "bug": 1,
     "cli": 1,
-    "invalid": 1,
     "session-management": 1,
     "settings": 2
   },
@@ -28,8 +28,8 @@
       },
       "category_counts": {
         "agent-pane": 3,
+        "bug": 1,
         "cli": 1,
-        "invalid": 1,
         "session-management": 1,
         "settings": 2
       },
@@ -89,14 +89,15 @@
       "category": "settings",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 1,
+      "score": 2,
       "severity": "none",
       "sentiment": "positive",
       "next_action_glyph": "🏷️",
       "next_action": "label_only",
       "suggested_labels": [
         "Issue-Feature",
-        "Area-Settings"
+        "Area-Settings",
+        "Agent-Custom"
       ],
       "suggested_reply": ""
     },
@@ -111,9 +112,9 @@
       "is_community": true,
       "score": 1,
       "severity": "none",
-      "sentiment": "positive",
-      "next_action_glyph": "✅",
-      "next_action": "no_action",
+      "sentiment": "neutral",
+      "next_action_glyph": "🏷️",
+      "next_action": "label_only",
       "suggested_labels": [
         "Issue-Feature",
         "Agent-Copilot",
@@ -131,7 +132,7 @@
       "category": "settings",
       "days_no_reply": 3,
       "is_community": true,
-      "score": 2,
+      "score": 1,
       "severity": "none",
       "sentiment": "neutral",
       "next_action_glyph": "🏷️",
@@ -139,7 +140,8 @@
       "suggested_labels": [
         "Issue-Feature",
         "Area-Settings",
-        "Agent-Custom"
+        "Agent-Custom",
+        "Needs-Triage"
       ],
       "suggested_reply": ""
     },
@@ -179,7 +181,7 @@
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "@lhecker / @Kaitao — community PR #296 touches `tools/wta/src/master/mod.rs`, `src/cascadia/TerminalApp/TerminalPage.cpp`, and `tools/wta/src/session_registry.rs` (SessionManagement + AgentPane areas). 7-day SLA clock starts today. Worth a first pass?"
+      "suggested_reply": "Hi @frarteaga, thanks for the PR! It currently has merge conflicts with `main`. Could you rebase (`git fetch origin && git rebase origin/main`) and push? Happy to take a closer look once it's clean."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -249,7 +251,7 @@
       "category": "agent-pane",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 1,
+      "score": 1.0,
       "severity": "none",
       "sentiment": "neutral",
       "next_action_glyph": "✅",
@@ -327,7 +329,7 @@
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling`. The current failing check is here: https://github.com/microsoft/intelligent-terminal/runs/85324843420. Could you take a look before this draft is marked ready? If it turns out to be flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan points at spelling/check-spelling annotations. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/85347142390? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -395,7 +397,7 @@
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — quick scan suggests it might be unrelated to your changes, but could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84441079291? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — quick scan points at spelling/dictionary findings in the new custom-agent docs/tests. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84441079291? If it is flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -406,20 +408,17 @@
       "category": "agent-pane",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 0,
+      "score": 2,
       "severity": "none",
-      "sentiment": "neutral",
+      "sentiment": "blocked",
       "next_action_glyph": "🏷️",
       "next_action": "label_only",
       "suggested_labels": [
         "Issue-Feature",
         "Area-AgentPane",
+        "Area-CLI",
         "Agent-Copilot",
-        "Needs-Triage",
-        {
-          "name": "Area-WSL",
-          "reason": "The requested behavior is specifically about WSL pane environment routing, but live label list has no Area-WSL label."
-        }
+        "Needs-Triage"
       ],
       "suggested_reply": ""
     },
@@ -432,13 +431,13 @@
       "category": "feature",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 3,
-      "severity": "risk",
+      "score": 0,
+      "severity": "none",
       "sentiment": "",
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan suggests it may be the spelling report/dictionary check rather than the core save/restore changes, but could you take a look at https://github.com/microsoft/intelligent-terminal/runs/85310984938? If it is flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan points at the spell-check status/report path rather than the Eternal Terminal implementation itself. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/85310984938? If it is flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -463,7 +462,7 @@
       "title": "?<prompt>: route WSL delegates through wsl -d <distro>",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/375",
       "kind": "pr",
-      "category": "cli",
+      "category": "feature",
       "days_no_reply": 0,
       "is_community": true,
       "score": 4,
@@ -471,12 +470,8 @@
       "sentiment": "",
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
-      "suggested_labels": [
-        "Area-CLI",
-        "Needs-Review",
-        "Issue-Feature"
-      ],
-      "suggested_reply": "@DDKinger — community PR #375 touches `tools/wta/src/main.rs` and `tools/wta/src/coordinator.rs` (Area-CLI/delegate; low confidence because the team table is empty). 7-day SLA clock starts today. Worth a first pass?"
+      "suggested_labels": [],
+      "suggested_reply": "@DDKinger — community PR #375 touches `tools/wta/src/main.rs`, `tools/wta/src/coordinator.rs` (Area-CLI / WTA delegate routing). 7-day SLA clock starts today. Worth a first pass?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -493,7 +488,7 @@
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling`: https://github.com/microsoft/intelligent-terminal/runs/84923931291. Quick scan points to release-note spelling/forbidden-pattern annotations (`non-existent` anchor and `secpoll`). Could you take a look? If it was flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — quick scan points at spelling/forbidden-pattern findings (`non-existent` → `nonexistent`, and `secpoll`). Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84923931291? If it is flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -563,7 +558,7 @@
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @microsoft-github-policy-service, CI is failing on `check-spelling` — quick scan points at generated autobaseline spelling/security annotations. Please take a look at https://github.com/microsoft/intelligent-terminal/runs/84935750696. If it is flaky, rerun the workflow or push a regenerated baseline update."
+      "suggested_reply": "Hi @microsoft-github-policy-service, CI is failing on `check-spelling` — quick scan shows the generated baseline introduced/kept terms (`Autobaselining`, `baselining`, `psscriptanalyzer`, `spotbugs`) that the spelling check flags. Could you take a look at https://github.com/microsoft/intelligent-terminal/actions/runs/28640429651/job/84935246704#step:4:1? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -592,20 +587,18 @@
       "title": "Closed",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/382",
       "kind": "issue",
-      "category": "invalid",
+      "category": "bug",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 0,
-      "severity": "none",
+      "score": 2,
+      "severity": "bug",
       "sentiment": "neutral",
       "next_action_glyph": "✅",
       "next_action": "no_action",
       "suggested_labels": [
-        "Resolution-Cant-Repro",
-        {
-          "name": "Resolution-Invalid",
-          "reason": "No live invalid/spam/accidental issue label exists; use only if the repo adds one later."
-        }
+        "Issue-Bug",
+        "Needs-Repro",
+        "Needs-Author-Feedback"
       ],
       "suggested_reply": ""
     },
