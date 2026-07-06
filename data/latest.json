@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T12:46:21Z",
+  "generated_at": "2026-07-06T14:36:51Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -11,27 +11,27 @@
   ],
   "totals": {
     "open_issues": 8,
-    "open_prs": 21
+    "open_prs": 22
   },
   "category_counts": {
     "agent-pane": 3,
-    "cli": 1,
+    "cli": 2,
     "invalid": 1,
     "session-management": 1,
-    "settings": 2
+    "settings": 1
   },
   "per_repo": {
     "microsoft/intelligent-terminal": {
       "totals": {
         "open_issues": 8,
-        "open_prs": 21
+        "open_prs": 22
       },
       "category_counts": {
         "agent-pane": 3,
-        "cli": 1,
+        "cli": 2,
         "invalid": 1,
         "session-management": 1,
-        "settings": 2
+        "settings": 1
       },
       "trends": [
         {
@@ -86,17 +86,18 @@
       "title": "[Feature] Support BYOK and OpenAI Compatible model endpoints",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/192",
       "kind": "issue",
-      "category": "settings",
+      "category": "agent-pane",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 2,
+      "score": 1,
       "severity": "none",
       "sentiment": "positive",
       "next_action_glyph": "🏷️",
       "next_action": "label_only",
       "suggested_labels": [
         "Issue-Feature",
-        "Area-Settings"
+        "Area-AgentPane",
+        "Agent-Custom"
       ],
       "suggested_reply": ""
     },
@@ -106,7 +107,7 @@
       "title": "Support GitHub Enterprise Copilot",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/209",
       "kind": "issue",
-      "category": "agent-pane",
+      "category": "cli",
       "days_no_reply": 0,
       "is_community": true,
       "score": 1,
@@ -116,8 +117,8 @@
       "next_action": "no_action",
       "suggested_labels": [
         "Issue-Feature",
-        "Area-AgentPane",
         "Agent-Copilot",
+        "Area-CLI",
         "Resolution-Fix-Committed"
       ],
       "suggested_reply": ""
@@ -222,6 +223,23 @@
     },
     {
       "repo": "microsoft/intelligent-terminal",
+      "number": 337,
+      "title": "Move GPOs out of category \"Windows Components\"",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/337",
+      "kind": "pr",
+      "category": "other",
+      "days_no_reply": 0,
+      "is_community": true,
+      "score": 5,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "👀",
+      "next_action": "request_reviewer",
+      "suggested_labels": [],
+      "suggested_reply": "Needs-Triage — community PR #337 touches `policies/IntelligentTerminal.admx` and `policies/en-US/IntelligentTerminal.adml`, but `policies/**` has no owner in the current ownership table. Please route an internal GPO/policy reviewer; 7-day SLA clock starts today."
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
       "number": 350,
       "title": "Tracking: first-class WSL terminal/shell-pane support for the agent",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/350",
@@ -258,6 +276,7 @@
       "suggested_labels": [
         "Issue-Feature",
         "Area-AgentPane",
+        "Area-CLI",
         "Resolution-Fix-Committed"
       ],
       "suggested_reply": ""
@@ -308,7 +327,7 @@
       "score": 3,
       "severity": "bug",
       "sentiment": "",
-      "next_action_glyph": "💤",
+      "next_action_glyph": "✅",
       "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
@@ -407,17 +426,16 @@
       "category": "agent-pane",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 3,
+      "score": 1,
       "severity": "none",
-      "sentiment": "blocked",
+      "sentiment": "neutral",
       "next_action_glyph": "🏷️",
       "next_action": "label_only",
       "suggested_labels": [
         "Issue-Feature",
         "Area-AgentPane",
         "Agent-Copilot",
-        "Status-In-Progress",
-        "Needs-Triage"
+        "Status-In-Progress"
       ],
       "suggested_reply": ""
     },
@@ -461,16 +479,16 @@
       "title": "?<prompt>: route WSL delegates through wsl -d <distro>",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/375",
       "kind": "pr",
-      "category": "feature",
+      "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 4,
-      "severity": "none",
+      "score": 5,
+      "severity": "bug",
       "sentiment": "",
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "Needs-Triage — owner unknown: community PR #375 touches `tools/wta/src/main.rs` and `tools/wta/src/coordinator.rs` (WSL `?<prompt>` delegate path). Team table is empty, so please pick a confirmed WTA/CLI owner for first pass."
+      "suggested_reply": "@DDKinger — community PR #375 touches `tools/wta/src/main.rs` and `tools/wta/src/coordinator.rs` (WTA delegate/CLI path; `tools/wta/src/main.rs` maps to Area-CLI in the ownership table). 7-day SLA clock starts today. Worth a first pass?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -484,10 +502,10 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "💤",
-      "next_action": "stash",
+      "next_action_glyph": "🟥",
+      "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": ""
+      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — quick scan suggests it might be unrelated to your changes, but could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84923931291? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -550,14 +568,14 @@
       "kind": "pr",
       "category": "build",
       "days_no_reply": 0,
-      "is_community": true,
+      "is_community": false,
       "score": 0,
       "severity": "none",
       "sentiment": "",
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @microsoft-github-policy-service, CI is failing on check-spelling: https://github.com/microsoft/intelligent-terminal/actions/runs/28640429651/job/84935246704#step:4:1. The failures appear to be generated baseline vocabulary/path findings (Autobaselining, baselining, psscriptanalyzer, spotbugs). A maintainer should decide whether to accept the generated baseline changes or rerun/update the automated job."
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -568,8 +586,8 @@
       "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 3,
-      "severity": "bug",
+      "score": 2,
+      "severity": "papercut",
       "sentiment": "",
       "next_action_glyph": "⏸",
       "next_action": "wait_on_author",
@@ -591,9 +609,10 @@
       "next_action_glyph": "✅",
       "next_action": "no_action",
       "suggested_labels": [
-        "Needs-Repro",
-        "Resolution-Cant-Repro",
-        "Issue-Invalid (reason: no live invalid/not-planned label exists; use close reason Not planned if changing the closure)"
+        {
+          "name": "Issue-Invalid",
+          "reason": "No live invalid/spam label exists; title/body are non-actionable and every bug-template field is _No response_."
+        }
       ],
       "suggested_reply": ""
     },
