@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T14:36:51Z",
+  "generated_at": "2026-07-06T23:02:12Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -10,28 +10,20 @@
     "upstream-sync"
   ],
   "totals": {
-    "open_issues": 8,
+    "open_issues": 1,
     "open_prs": 22
   },
   "category_counts": {
-    "agent-pane": 3,
-    "cli": 2,
-    "invalid": 1,
-    "session-management": 1,
-    "settings": 1
+    "session-management": 1
   },
   "per_repo": {
     "microsoft/intelligent-terminal": {
       "totals": {
-        "open_issues": 8,
+        "open_issues": 1,
         "open_prs": 22
       },
       "category_counts": {
-        "agent-pane": 3,
-        "cli": 2,
-        "invalid": 1,
-        "session-management": 1,
-        "settings": 1
+        "session-management": 1
       },
       "trends": [
         {
@@ -80,92 +72,6 @@
     }
   ],
   "issues": [
-    {
-      "repo": "microsoft/intelligent-terminal",
-      "number": 192,
-      "title": "[Feature] Support BYOK and OpenAI Compatible model endpoints",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/192",
-      "kind": "issue",
-      "category": "agent-pane",
-      "days_no_reply": 0,
-      "is_community": true,
-      "score": 1,
-      "severity": "none",
-      "sentiment": "positive",
-      "next_action_glyph": "🏷️",
-      "next_action": "label_only",
-      "suggested_labels": [
-        "Issue-Feature",
-        "Area-AgentPane",
-        "Agent-Custom"
-      ],
-      "suggested_reply": ""
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
-      "number": 209,
-      "title": "Support GitHub Enterprise Copilot",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/209",
-      "kind": "issue",
-      "category": "cli",
-      "days_no_reply": 0,
-      "is_community": true,
-      "score": 1,
-      "severity": "none",
-      "sentiment": "neutral",
-      "next_action_glyph": "✅",
-      "next_action": "no_action",
-      "suggested_labels": [
-        "Issue-Feature",
-        "Agent-Copilot",
-        "Area-CLI",
-        "Resolution-Fix-Committed"
-      ],
-      "suggested_reply": ""
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
-      "number": 282,
-      "title": "Able to save the Agent Customized Name instead of command line default name.",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/282",
-      "kind": "issue",
-      "category": "settings",
-      "days_no_reply": 3,
-      "is_community": true,
-      "score": 2,
-      "severity": "none",
-      "sentiment": "neutral",
-      "next_action_glyph": "🏷️",
-      "next_action": "label_only",
-      "suggested_labels": [
-        "Issue-Feature",
-        "Area-Settings",
-        "Agent-Custom",
-        "Needs-Triage"
-      ],
-      "suggested_reply": ""
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
-      "number": 287,
-      "title": "Doesn't know about scripts on path.",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/287",
-      "kind": "issue",
-      "category": "cli",
-      "days_no_reply": 0,
-      "is_community": true,
-      "score": 3,
-      "severity": "bug",
-      "sentiment": "neutral",
-      "next_action_glyph": "✅",
-      "next_action": "no_action",
-      "suggested_labels": [
-        "Issue-Bug",
-        "Area-CLI",
-        "Resolution-Fix-Committed"
-      ],
-      "suggested_reply": ""
-    },
     {
       "repo": "microsoft/intelligent-terminal",
       "number": 296,
@@ -227,7 +133,7 @@
       "title": "Move GPOs out of category \"Windows Components\"",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/337",
       "kind": "pr",
-      "category": "other",
+      "category": "refactor",
       "days_no_reply": 0,
       "is_community": true,
       "score": 5,
@@ -236,50 +142,7 @@
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "Needs-Triage — community PR #337 touches `policies/IntelligentTerminal.admx` and `policies/en-US/IntelligentTerminal.adml`, but `policies/**` has no owner in the current ownership table. Please route an internal GPO/policy reviewer; 7-day SLA clock starts today."
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
-      "number": 350,
-      "title": "Tracking: first-class WSL terminal/shell-pane support for the agent",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/350",
-      "kind": "issue",
-      "category": "session-management",
-      "days_no_reply": 0,
-      "is_community": false,
-      "score": 0,
-      "severity": "none",
-      "sentiment": "neutral",
-      "next_action_glyph": "🏷️",
-      "next_action": "label_only",
-      "suggested_labels": [
-        "Issue-Feature",
-        "Area-SessionManagement",
-        "Resolution-Fix-Committed"
-      ],
-      "suggested_reply": ""
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
-      "number": 351,
-      "title": "Agent-launched new terminal should match the active WSL/Ubuntu session, not the default profile",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/351",
-      "kind": "issue",
-      "category": "agent-pane",
-      "days_no_reply": 0,
-      "is_community": false,
-      "score": 1,
-      "severity": "none",
-      "sentiment": "neutral",
-      "next_action_glyph": "🏷️",
-      "next_action": "label_only",
-      "suggested_labels": [
-        "Issue-Feature",
-        "Area-AgentPane",
-        "Area-CLI",
-        "Resolution-Fix-Committed"
-      ],
-      "suggested_reply": ""
+      "suggested_reply": "Needs-Triage — community PR #337 touches `policies/en-US/IntelligentTerminal.adml`, `policies/IntelligentTerminal.admx` (policies/GPO area; owner unknown because the ownership and team tables do not map these files). 7-day SLA clock starts today. Worth a first pass?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -419,28 +282,6 @@
     },
     {
       "repo": "microsoft/intelligent-terminal",
-      "number": 372,
-      "title": "Delegate (?<prompt>) from a WSL pane should launch Copilot inside WSL, not the Windows host",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/372",
-      "kind": "issue",
-      "category": "agent-pane",
-      "days_no_reply": 0,
-      "is_community": false,
-      "score": 1,
-      "severity": "none",
-      "sentiment": "neutral",
-      "next_action_glyph": "🏷️",
-      "next_action": "label_only",
-      "suggested_labels": [
-        "Issue-Feature",
-        "Area-AgentPane",
-        "Agent-Copilot",
-        "Status-In-Progress"
-      ],
-      "suggested_reply": ""
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
       "number": 373,
       "title": "Eternal Terminal (step 1): per-tab /save-tab + /restore-tab (layout + content)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/373",
@@ -454,7 +295,7 @@
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan points at the spell-check status rather than merge conflicts, but could you take a look at https://github.com/microsoft/intelligent-terminal/runs/85310984938? If it is flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan points at the failing status check. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/85310984938? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -596,45 +437,46 @@
     },
     {
       "repo": "microsoft/intelligent-terminal",
-      "number": 382,
-      "title": "Closed",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/382",
-      "kind": "issue",
-      "category": "invalid",
-      "days_no_reply": 0,
-      "is_community": true,
-      "score": 0,
-      "severity": "none",
-      "sentiment": "neutral",
-      "next_action_glyph": "✅",
-      "next_action": "no_action",
-      "suggested_labels": [
-        {
-          "name": "Issue-Invalid",
-          "reason": "No live invalid/spam label exists; title/body are non-actionable and every bug-template field is _No response_."
-        }
-      ],
-      "suggested_reply": ""
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
       "number": 383,
       "title": "fix(wt): keep dragged tab's sessions Live across cross-window move",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/383",
       "kind": "pr",
-      "category": "session-management",
+      "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 2,
+      "score": 1,
       "severity": "bug",
       "sentiment": "",
       "next_action_glyph": "✅",
       "next_action": "stash",
-      "suggested_labels": [
-        "Area-SessionManagement",
-        "Issue-Bug"
-      ],
+      "suggested_labels": [],
       "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 384,
+      "title": "Setting delegateAgent to a different agent than acpAgent crashes master process (wta-master pipe connect failure)",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/384",
+      "kind": "issue",
+      "category": "session-management",
+      "days_no_reply": 0,
+      "is_community": true,
+      "score": 6,
+      "severity": "crash",
+      "sentiment": "blocked",
+      "next_action_glyph": "💬",
+      "next_action": "reply",
+      "suggested_labels": [
+        "Issue-Bug",
+        "Area-SessionManagement",
+        "Area-AutoFix",
+        "Area-AgentPane",
+        "Agent-Copilot",
+        "Agent-Claude",
+        "Severity-High",
+        "Needs-Author-Feedback"
+      ],
+      "suggested_reply": "Sorry you hit a crash @Aust-aa-36. For crashes specifically we need the backend diagnostic data, which you can capture via Feedback Hub: https://aka.ms/intelligent-terminal-feedback. Pick the matching category, hit \"Share My Feedback\" after submitting, and paste the link here.\n\nWithout that we can't correlate the master-process failure to a specific stack trace.\n\nPS: If you can, please also attach a zip of `%LOCALAPPDATA%\\Packages\\*IntelligentTerminal*\\LocalCache\\Local\\IntelligentTerminal\\logs\\` (or `%LOCALAPPDATA%\\IntelligentTerminal\\logs\\` for unpackaged dev builds) after reproducing; setting `WTA_LOG=debug` first will capture noisier traces."
     }
   ]
 }
