@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T11:51:46Z",
+  "generated_at": "2026-07-06T12:46:21Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -14,7 +14,8 @@
     "open_prs": 21
   },
   "category_counts": {
-    "agent-pane": 4,
+    "agent-pane": 3,
+    "cli": 1,
     "invalid": 1,
     "session-management": 1,
     "settings": 2
@@ -26,7 +27,8 @@
         "open_prs": 21
       },
       "category_counts": {
-        "agent-pane": 4,
+        "agent-pane": 3,
+        "cli": 1,
         "invalid": 1,
         "session-management": 1,
         "settings": 2
@@ -94,10 +96,7 @@
       "next_action": "label_only",
       "suggested_labels": [
         "Issue-Feature",
-        "Area-Settings",
-        "Agent-Custom",
-        "Agent-Copilot",
-        "Needs-Triage"
+        "Area-Settings"
       ],
       "suggested_reply": ""
     },
@@ -112,7 +111,7 @@
       "is_community": true,
       "score": 1,
       "severity": "none",
-      "sentiment": "positive",
+      "sentiment": "neutral",
       "next_action_glyph": "✅",
       "next_action": "no_action",
       "suggested_labels": [
@@ -151,18 +150,17 @@
       "title": "Doesn't know about scripts on path.",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/287",
       "kind": "issue",
-      "category": "agent-pane",
+      "category": "cli",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 5,
+      "score": 3,
       "severity": "bug",
-      "sentiment": "frustrated",
-      "next_action_glyph": "🏷️",
-      "next_action": "label_only",
+      "sentiment": "neutral",
+      "next_action_glyph": "✅",
+      "next_action": "no_action",
       "suggested_labels": [
         "Issue-Bug",
-        "Area-AgentPane",
-        "Area-AutoFix",
+        "Area-CLI",
         "Resolution-Fix-Committed"
       ],
       "suggested_reply": ""
@@ -389,22 +387,16 @@
       "title": "Custom agents: /agent slash command to override the terminal agent per tab",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/371",
       "kind": "pr",
-      "category": "cli",
+      "category": "feature",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 1,
+      "score": 0,
       "severity": "none",
       "sentiment": "",
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
-      "suggested_labels": [
-        "Issue-Feature",
-        "Area-CLI",
-        "Area-AgentPane",
-        "Agent-Custom",
-        "Needs-Review"
-      ],
-      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — the current failure is the spelling check (https://github.com/microsoft/intelligent-terminal/runs/84441079291). Could you take a look? If it turns out to be flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_labels": [],
+      "suggested_reply": "Hi @vanzue, CI is failing on `check-spelling` — quick scan points at the spelling/dictionary report (`dotdir`, `nwhy`, `unparsable`, plus dictionary warnings). Could you take a look at https://github.com/microsoft/intelligent-terminal/actions/runs/28488774318/job/84440815132#step:4:1? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -415,17 +407,17 @@
       "category": "agent-pane",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 1,
+      "score": 3,
       "severity": "none",
-      "sentiment": "neutral",
+      "sentiment": "blocked",
       "next_action_glyph": "🏷️",
       "next_action": "label_only",
       "suggested_labels": [
         "Issue-Feature",
         "Area-AgentPane",
-        "Area-CLI",
         "Agent-Copilot",
-        "Status-In-Progress"
+        "Status-In-Progress",
+        "Needs-Triage"
       ],
       "suggested_reply": ""
     },
@@ -444,7 +436,7 @@
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan points to the spelling check. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/85310984938? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan points at the spell-check status rather than merge conflicts, but could you take a look at https://github.com/microsoft/intelligent-terminal/runs/85310984938? If it is flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -469,16 +461,16 @@
       "title": "?<prompt>: route WSL delegates through wsl -d <distro>",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/375",
       "kind": "pr",
-      "category": "bug-fix",
+      "category": "feature",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 6,
-      "severity": "bug",
+      "score": 4,
+      "severity": "none",
       "sentiment": "",
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "@DDKinger — community PR #375 touches `tools/wta/src/main.rs`, `tools/wta/src/coordinator.rs` (your area). 7-day SLA clock starts today. Worth a first pass?"
+      "suggested_reply": "Needs-Triage — owner unknown: community PR #375 touches `tools/wta/src/main.rs` and `tools/wta/src/coordinator.rs` (WSL `?<prompt>` delegate path). Team table is empty, so please pick a confirmed WTA/CLI owner for first pass."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -492,13 +484,10 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "🟥",
-      "next_action": "investigate_ci",
-      "suggested_labels": [
-        "Issue-Docs",
-        "Needs-Review"
-      ],
-      "suggested_reply": "Hi @vanzue, CI is failing on check-spelling — quick scan points at spelling/forbidden-pattern findings (secpoll and non-existent) in doc\\release-notes\\v0.1.2.md; could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84923931291? If it is flaky, push an empty commit (git commit --allow-empty -m \"ci: rerun\") to re-run."
+      "next_action_glyph": "💤",
+      "next_action": "stash",
+      "suggested_labels": [],
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -561,7 +550,7 @@
       "kind": "pr",
       "category": "build",
       "days_no_reply": 0,
-      "is_community": false,
+      "is_community": true,
       "score": 0,
       "severity": "none",
       "sentiment": "",
@@ -579,7 +568,7 @@
       "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 4,
+      "score": 3,
       "severity": "bug",
       "sentiment": "",
       "next_action_glyph": "⏸",
@@ -602,7 +591,9 @@
       "next_action_glyph": "✅",
       "next_action": "no_action",
       "suggested_labels": [
-        "Resolution-Cant-Repro"
+        "Needs-Repro",
+        "Resolution-Cant-Repro",
+        "Issue-Invalid (reason: no live invalid/not-planned label exists; use close reason Not planned if changing the closure)"
       ],
       "suggested_reply": ""
     },
