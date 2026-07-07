@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T01:38:33Z",
+  "generated_at": "2026-07-07T02:04:34Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -11,7 +11,7 @@
   ],
   "totals": {
     "open_issues": 1,
-    "open_prs": 12
+    "open_prs": 13
   },
   "category_counts": {
     "session-management": 1
@@ -20,7 +20,7 @@
     "microsoft/intelligent-terminal": {
       "totals": {
         "open_issues": 1,
-        "open_prs": 12
+        "open_prs": 13
       },
       "category_counts": {
         "session-management": 1
@@ -146,16 +146,16 @@
       "title": "Move GPOs out of category \"Windows Components\"",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/337",
       "kind": "pr",
-      "category": "other",
+      "category": "feature",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 5,
+      "score": 4,
       "severity": "none",
       "sentiment": "",
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "Community PR #337 touches `policies/IntelligentTerminal.admx` and `policies/en-US/IntelligentTerminal.adml`, but `policies/**` has no ownership row and the team table is empty. Could a maintainer route this to the right policy/GPO reviewer for a first pass?"
+      "suggested_reply": "@yeelam-gordon — community PR #337 touches `policies/IntelligentTerminal.admx` and `policies/en-US/IntelligentTerminal.adml` (no ownership-table area; git log shows you as the only recent committer on these policy files). 7-day SLA clock starts today. Worth a first pass?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -200,11 +200,11 @@
       "category": "refactor",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 3,
-      "severity": "risk",
+      "score": 0,
+      "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "⏸",
-      "next_action": "wait_on_author",
+      "next_action_glyph": "👀",
+      "next_action": "request_reviewer",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -257,7 +257,24 @@
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan suggests it might be unrelated to your changes, but could you take a look at https://github.com/microsoft/intelligent-terminal/runs/85310984938? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": "Hi @DDKinger, CI is failing on check-spelling — quick scan points at the check-spelling job. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/85310984938? If it is flaky, push an empty commit (git commit --allow-empty -m \"ci: rerun\") to re-run."
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 376,
+      "title": "docs: add v0.1.2 release notes",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/376",
+      "kind": "pr",
+      "category": "docs",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 0,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "💤",
+      "next_action": "stash",
+      "suggested_labels": [],
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -268,10 +285,10 @@
       "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 2,
+      "score": 1,
       "severity": "bug",
       "sentiment": "",
-      "next_action_glyph": "💤",
+      "next_action_glyph": "✅",
       "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
