@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T06:33:57Z",
+  "generated_at": "2026-07-07T07:04:12Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -10,20 +10,22 @@
     "upstream-sync"
   ],
   "totals": {
-    "open_issues": 1,
+    "open_issues": 2,
     "open_prs": 5
   },
   "category_counts": {
-    "agent-pane": 1
+    "agent-pane": 1,
+    "session-management": 1
   },
   "per_repo": {
     "microsoft/intelligent-terminal": {
       "totals": {
-        "open_issues": 1,
+        "open_issues": 2,
         "open_prs": 5
       },
       "category_counts": {
-        "agent-pane": 1
+        "agent-pane": 1,
+        "session-management": 1
       },
       "trends": [
         {
@@ -78,16 +80,16 @@
       "title": "Move GPOs out of category \"Windows Components\"",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/337",
       "kind": "pr",
-      "category": "refactor",
-      "days_no_reply": 1,
+      "category": "other",
+      "days_no_reply": 0,
       "is_community": true,
-      "score": 6,
+      "score": 5,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "🔥",
-      "next_action": "reply",
+      "next_action_glyph": "👀",
+      "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "@yeelam-gordon — community PR #337 touches `policies/IntelligentTerminal.admx` and `policies/en-US/IntelligentTerminal.adml` (GPO policy files; no ownership-table area, but git log shows Gordon Lam / yeelam-gordon last touched these files). 7-day SLA clock starts today. Worth a first pass?"
+      "suggested_reply": "@yeelam-gordon — community PR #337 touches `policies/IntelligentTerminal.admx`, `policies/en-US/IntelligentTerminal.adml` (policy/GPO files; area owner not mapped, but your account is the only recent git-log owner). 7-day SLA clock starts today. Worth a first pass?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -98,8 +100,8 @@
       "category": "refactor",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 0,
-      "severity": "none",
+      "score": 3,
+      "severity": "risk",
       "sentiment": "",
       "next_action_glyph": "⏸",
       "next_action": "wait_on_author",
@@ -115,13 +117,13 @@
       "category": "feature",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 0,
-      "severity": "none",
+      "score": 3,
+      "severity": "risk",
       "sentiment": "",
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan suggests it might be unrelated to your changes, but could you take a look at https://github.com/microsoft/intelligent-terminal/runs/85550128776? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan points at the spelling job/report for this PR. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/85550128776? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -146,7 +148,7 @@
       "title": "Setting delegateAgent to a different agent than acpAgent crashes master process (wta-master pipe connect failure)",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/384",
       "kind": "issue",
-      "category": "agent-pane",
+      "category": "session-management",
       "days_no_reply": 0,
       "is_community": true,
       "score": 6,
@@ -156,14 +158,14 @@
       "next_action": "reply",
       "suggested_labels": [
         "Issue-Bug",
-        "Area-AgentPane",
         "Area-SessionManagement",
+        "Area-AgentPane",
         "Agent-Claude",
         "Agent-Copilot",
         "Severity-High",
-        "Needs-Triage"
+        "Needs-Author-Feedback"
       ],
-      "suggested_reply": "Sorry you hit this crash @Aust-aa-36. The repro and version are clear, and I can see the transport failure:\n\n<!-- from body -->helper ACP transport failed: connect to master pipe '\\\\.\\pipe\\wta-master-<GUID>' after 21 attempt(s): The system cannot find the file specified. (os error 2)<!-- /from body -->\n\nFor crashes specifically we need the backend diagnostic data, which you can capture via Feedback Hub: https://aka.ms/intelligent-terminal-feedback. Pick the matching category, hit \"Share My Feedback\" after submitting, and paste the link here.\n\nPS: If you can also zip and attach the WTA logs from `%LOCALAPPDATA%\\Packages\\*IntelligentTerminal*\\LocalCache\\Local\\IntelligentTerminal\\logs\\` (or `%LOCALAPPDATA%\\IntelligentTerminal\\logs\\` for unpackaged dev builds), that should help us verify why the master pipe never appeared."
+      "suggested_reply": "Sorry you hit a crash @Aust-aa-36. For crashes specifically we need the backend diagnostic data, which you can capture via Feedback Hub: https://aka.ms/intelligent-terminal-feedback. Pick the matching category, hit \"Share My Feedback\" after submitting, and paste the link here.\n\nI noticed the concrete transport error you included: <!-- from body -->`helper ACP transport failed: connect to master pipe '\\\\.\\pipe\\wta-master-<GUID>' after 21 attempt(s): The system cannot find the file specified. (os error 2)`<!-- /from body -->. That should help us distinguish a master crash from a startup/config failure once we have the diagnostic data.\n\nPS: If you can still reproduce it, please also zip `%LOCALAPPDATA%\\Packages\\*IntelligentTerminal*\\LocalCache\\Local\\IntelligentTerminal\\logs\\` (or `%LOCALAPPDATA%\\IntelligentTerminal\\logs\\` for unpackaged dev builds) after setting `WTA_LOG=debug` and attach it here."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -171,16 +173,38 @@
       "title": "Improve Copilot auth flow after install",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/385",
       "kind": "pr",
-      "category": "feature",
+      "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 0,
-      "severity": "none",
+      "score": 2,
+      "severity": "bug",
       "sentiment": "",
       "next_action_glyph": "⏸",
       "next_action": "wait_on_author",
       "suggested_labels": [],
       "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 386,
+      "title": "Stucked on loading",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/386",
+      "kind": "issue",
+      "category": "agent-pane",
+      "days_no_reply": 0,
+      "is_community": true,
+      "score": 2,
+      "severity": "bug",
+      "sentiment": "neutral",
+      "next_action_glyph": "💬",
+      "next_action": "reply",
+      "suggested_labels": [
+        "Issue-Bug",
+        "Area-AgentPane",
+        "Agent-Claude",
+        "Needs-Author-Feedback"
+      ],
+      "suggested_reply": "Hi @MartinSusky, could you grab a WTA log next time you hit this?\n\nI can see from the screenshot that the Agent sessions picker is stuck at <!-- from image -->`Loading...`<!-- /from image --> after selecting Claude.\n\n1. Reproduce the issue.\n2. Zip\n   `%LOCALAPPDATA%\\Packages\\*IntelligentTerminal*\\LocalCache\\Local\\IntelligentTerminal\\logs\\`\n   (or `%LOCALAPPDATA%\\IntelligentTerminal\\logs\\` for unpackaged dev builds).\n3. Attach the zip here.\n\nIf the issue is hard to reproduce, set `WTA_LOG=debug` first to get the noisier traces."
     }
   ]
 }
