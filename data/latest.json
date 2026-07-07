@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T06:04:25Z",
+  "generated_at": "2026-07-07T06:33:57Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -10,17 +10,21 @@
     "upstream-sync"
   ],
   "totals": {
-    "open_issues": 0,
-    "open_prs": 1
+    "open_issues": 1,
+    "open_prs": 5
   },
-  "category_counts": {},
+  "category_counts": {
+    "agent-pane": 1
+  },
   "per_repo": {
     "microsoft/intelligent-terminal": {
       "totals": {
-        "open_issues": 0,
-        "open_prs": 1
+        "open_issues": 1,
+        "open_prs": 5
       },
-      "category_counts": {},
+      "category_counts": {
+        "agent-pane": 1
+      },
       "trends": [
         {
           "topic": "autofix triggers on stashed pane",
@@ -67,22 +71,117 @@
       "delta": 1
     }
   ],
-  "issues": {
-    "repo": "microsoft/intelligent-terminal",
-    "number": 367,
-    "title": "WTA ACP 0.10→1.0 migration",
-    "url": "https://github.com/microsoft/intelligent-terminal/pull/367",
-    "kind": "pr",
-    "category": "refactor",
-    "days_no_reply": 0,
-    "is_community": false,
-    "score": 2,
-    "severity": "none",
-    "sentiment": "",
-    "next_action_glyph": "🚀",
-    "next_action": "reply",
-    "suggested_labels": [],
-    "suggested_reply": "Large internal refactor (WTA ACP 0.10→1.0 migration, +4314/-1341 across 26 files). CI ✅, merge BLOCKED on review decision. Ready for team review?"
-  }
+  "issues": [
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 337,
+      "title": "Move GPOs out of category \"Windows Components\"",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/337",
+      "kind": "pr",
+      "category": "refactor",
+      "days_no_reply": 1,
+      "is_community": true,
+      "score": 6,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "🔥",
+      "next_action": "reply",
+      "suggested_labels": [],
+      "suggested_reply": "@yeelam-gordon — community PR #337 touches `policies/IntelligentTerminal.admx` and `policies/en-US/IntelligentTerminal.adml` (GPO policy files; no ownership-table area, but git log shows Gordon Lam / yeelam-gordon last touched these files). 7-day SLA clock starts today. Worth a first pass?"
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 367,
+      "title": "WTA ACP 0.10→1.0 migration",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/367",
+      "kind": "pr",
+      "category": "refactor",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 0,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "⏸",
+      "next_action": "wait_on_author",
+      "suggested_labels": [],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 373,
+      "title": "Eternal Terminal (step 1): per-tab /save-tab + /restore-tab (layout + content)",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/373",
+      "kind": "pr",
+      "category": "feature",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 0,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "🟥",
+      "next_action": "investigate_ci",
+      "suggested_labels": [],
+      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan suggests it might be unrelated to your changes, but could you take a look at https://github.com/microsoft/intelligent-terminal/runs/85550128776? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 376,
+      "title": "docs: add v0.1.2 release notes",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/376",
+      "kind": "pr",
+      "category": "docs",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 0,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "💤",
+      "next_action": "stash",
+      "suggested_labels": [],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 384,
+      "title": "Setting delegateAgent to a different agent than acpAgent crashes master process (wta-master pipe connect failure)",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/384",
+      "kind": "issue",
+      "category": "agent-pane",
+      "days_no_reply": 0,
+      "is_community": true,
+      "score": 6,
+      "severity": "crash",
+      "sentiment": "blocked",
+      "next_action_glyph": "💬",
+      "next_action": "reply",
+      "suggested_labels": [
+        "Issue-Bug",
+        "Area-AgentPane",
+        "Area-SessionManagement",
+        "Agent-Claude",
+        "Agent-Copilot",
+        "Severity-High",
+        "Needs-Triage"
+      ],
+      "suggested_reply": "Sorry you hit this crash @Aust-aa-36. The repro and version are clear, and I can see the transport failure:\n\n<!-- from body -->helper ACP transport failed: connect to master pipe '\\\\.\\pipe\\wta-master-<GUID>' after 21 attempt(s): The system cannot find the file specified. (os error 2)<!-- /from body -->\n\nFor crashes specifically we need the backend diagnostic data, which you can capture via Feedback Hub: https://aka.ms/intelligent-terminal-feedback. Pick the matching category, hit \"Share My Feedback\" after submitting, and paste the link here.\n\nPS: If you can also zip and attach the WTA logs from `%LOCALAPPDATA%\\Packages\\*IntelligentTerminal*\\LocalCache\\Local\\IntelligentTerminal\\logs\\` (or `%LOCALAPPDATA%\\IntelligentTerminal\\logs\\` for unpackaged dev builds), that should help us verify why the master pipe never appeared."
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 385,
+      "title": "Improve Copilot auth flow after install",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/385",
+      "kind": "pr",
+      "category": "feature",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 0,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "⏸",
+      "next_action": "wait_on_author",
+      "suggested_labels": [],
+      "suggested_reply": ""
+    }
+  ]
 }
 
