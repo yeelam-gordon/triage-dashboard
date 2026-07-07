@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T04:02:06Z",
+  "generated_at": "2026-07-07T04:31:25Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -87,7 +87,7 @@
       "next_action_glyph": "🔥",
       "next_action": "reply",
       "suggested_labels": [],
-      "suggested_reply": "Needs-Triage — community PR #337 touches policies/IntelligentTerminal.admx and policies/en-US/IntelligentTerminal.adml (policy/GPO metadata; owner unknown because policies/** is unmapped and the team table is empty). 7-day SLA clock started 2026-06-22; contributor asked for status on 2026-07-06. Worth a first pass?"
+      "suggested_reply": "@yeelam-gordon — community PR #337 touches `policies/IntelligentTerminal.admx`, `policies/en-US/IntelligentTerminal.adml` (git-log fallback; low confidence — team table empty). 7-day SLA clock starts today. Worth a first pass?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -98,13 +98,13 @@
       "category": "refactor",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 3,
-      "severity": "risk",
+      "score": 0,
+      "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "🟥",
-      "next_action": "investigate_ci",
+      "next_action_glyph": "⏸",
+      "next_action": "wait_on_author",
       "suggested_labels": [],
-      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan suggests it may be the active spelling/check annotation rather than merge conflicts. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/85529229441? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -121,7 +121,7 @@
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @DDKinger, CI is failing on check-spelling — quick scan suggests the current blocker is the spelling check report, but could you take a look at https://github.com/microsoft/intelligent-terminal/runs/85310984938? If it's flaky, push an empty commit to re-run."
+      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan suggests it might be unrelated to your changes, but could you take a look at https://github.com/microsoft/intelligent-terminal/runs/85310984938? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -138,7 +138,7 @@
       "next_action_glyph": "💤",
       "next_action": "stash",
       "suggested_labels": [],
-      "suggested_reply": ""
+      "suggested_reply": "Hi @vanzue, CI is failing on check-spelling — quick scan points at the spelling/forbidden-pattern annotations in the release notes. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/84923931291 if this PR is revived?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -158,12 +158,12 @@
         "Issue-Bug",
         "Area-SessionManagement",
         "Area-AgentPane",
-        "Agent-Claude",
         "Agent-Copilot",
+        "Agent-Claude",
         "Severity-High",
-        "Needs-Author-Feedback"
+        "Needs-Triage"
       ],
-      "suggested_reply": "Sorry you hit a crash @Aust-aa-36. For crashes specifically we need the backend diagnostic data, which you can capture via Feedback Hub: <https://aka.ms/intelligent-terminal-feedback>. Pick the matching category, hit \"Share My Feedback\" after submitting, and paste the link here.\n\nWithout that we can't correlate the crash to a specific stack trace.\n\nPS: Because this looks like the WTA master failing during startup, a zipped copy of `%LOCALAPPDATA%\\Packages\\*IntelligentTerminal*\\LocalCache\\Local\\IntelligentTerminal\\logs\\` (or `%LOCALAPPDATA%\\IntelligentTerminal\\logs\\` for unpackaged dev builds) would also help."
+      "suggested_reply": "Sorry you hit a crash @Aust-aa-36. For crashes specifically we need the\nbackend diagnostic data, which you can capture via Feedback Hub:\n<https://aka.ms/intelligent-terminal-feedback>. Pick the matching\ncategory, hit \"Share My Feedback\" after submitting, and paste the link\nhere.\n\nThe pipe failure you included — <!-- from body -->helper ACP transport failed: connect to master pipe '\\\\.\\pipe\\wta-master-<GUID>' after 21 attempt(s): The system cannot find the file specified. (os error 2)<!-- /from body --> — is helpful; the Feedback Hub data will let us correlate the master-process failure to a stack trace.\n\nWithout that we can't correlate the crash to a specific stack trace."
     }
   ]
 }
