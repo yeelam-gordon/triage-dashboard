@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T07:37:22Z",
+  "generated_at": "2026-07-07T08:07:08Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -10,21 +10,21 @@
     "upstream-sync"
   ],
   "totals": {
-    "open_issues": 2,
+    "open_issues": 3,
     "open_prs": 5
   },
   "category_counts": {
-    "agent-pane": 1,
+    "agent-pane": 2,
     "session-management": 1
   },
   "per_repo": {
     "microsoft/intelligent-terminal": {
       "totals": {
-        "open_issues": 2,
+        "open_issues": 3,
         "open_prs": 5
       },
       "category_counts": {
-        "agent-pane": 1,
+        "agent-pane": 2,
         "session-management": 1
       },
       "trends": [
@@ -80,22 +80,16 @@
       "title": "Move GPOs out of category \"Windows Components\"",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/337",
       "kind": "pr",
-      "category": "feature",
-      "days_no_reply": 1,
+      "category": "refactor",
+      "days_no_reply": 0,
       "is_community": true,
-      "score": 6,
+      "score": 5,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "🔥",
-      "next_action": "reply",
-      "suggested_labels": [
-        "Needs-Review",
-        {
-          "name": "Area-Policies",
-          "reason": "PR touches policies/**/*.admx/adml, but no live Area-Policies label or ownership-table row exists."
-        }
-      ],
-      "suggested_reply": "Needs-Triage — community PR #337 touches `policies/en-US/IntelligentTerminal.adml`, `policies/IntelligentTerminal.admx` (owner unknown: `policies/**` is not in the ownership table). 7-day SLA clock started when it was opened. Worth a first pass?"
+      "next_action_glyph": "👀",
+      "next_action": "request_reviewer",
+      "suggested_labels": [],
+      "suggested_reply": "@yeelam-gordon — community PR #337 touches `policies/IntelligentTerminal.admx` and `policies/en-US/IntelligentTerminal.adml` (policy/GPO area; recent git log points to Gordon Lam/yeelam-gordon, but the team table is empty, so this is low confidence — team table empty). 7-day SLA clock starts today. Worth a first pass?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -103,19 +97,15 @@
       "title": "WTA ACP 0.10→1.0 migration",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/367",
       "kind": "pr",
-      "category": "cli",
+      "category": "refactor",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 0,
-      "severity": "none",
+      "score": 3,
+      "severity": "risk",
       "sentiment": "",
-      "next_action_glyph": "⏸",
-      "next_action": "wait_on_author",
-      "suggested_labels": [
-        "Area-CLI",
-        "Area-SessionManagement",
-        "Needs-Review"
-      ],
+      "next_action_glyph": "🛠",
+      "next_action": "nudge_rebase",
+      "suggested_labels": [],
       "suggested_reply": ""
     },
     {
@@ -124,7 +114,7 @@
       "title": "Eternal Terminal (step 1): per-tab /save-tab + /restore-tab (layout + content)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/373",
       "kind": "pr",
-      "category": "session-management",
+      "category": "feature",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
@@ -132,15 +122,8 @@
       "sentiment": "",
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
-      "suggested_labels": [
-        "Issue-Feature",
-        "Area-SessionManagement",
-        "Area-AgentPane",
-        "Area-Settings",
-        "Area-CLI",
-        "Needs-Review"
-      ],
-      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan shows the check-spelling job/report path is red, but could you take a look at https://github.com/microsoft/intelligent-terminal/runs/85550128776? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_labels": [],
+      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan points at the status check/report rather than a merge conflict, but could you take a look at https://github.com/microsoft/intelligent-terminal/runs/85550128776? If it is flaky, push an empty commit to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -154,12 +137,10 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "✅",
-      "next_action": "no-op",
-      "suggested_labels": [
-        "Issue-Docs"
-      ],
-      "suggested_reply": "No draft: PR #376 is already closed unmerged by the author; no reply needed."
+      "next_action_glyph": "💤",
+      "next_action": "stash",
+      "suggested_labels": [],
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -192,19 +173,15 @@
       "title": "Improve Copilot auth flow after install",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/385",
       "kind": "pr",
-      "category": "agent-pane",
+      "category": "feature",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "⏸",
-      "next_action": "wait_on_author",
-      "suggested_labels": [
-        "Area-AgentPane",
-        "Area-FirstRun",
-        "Agent-Copilot"
-      ],
+      "next_action_glyph": "✅",
+      "next_action": "ready_to_merge",
+      "suggested_labels": [],
       "suggested_reply": ""
     },
     {
@@ -216,19 +193,40 @@
       "category": "agent-pane",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 3,
+      "score": 4,
       "severity": "bug",
-      "sentiment": "confused",
+      "sentiment": "blocked",
       "next_action_glyph": "💬",
       "next_action": "reply",
       "suggested_labels": [
         "Issue-Bug",
         "Area-AgentPane",
         "Agent-Claude",
-        "Needs-Author-Feedback",
-        "Needs-Repro"
+        "Needs-Author-Feedback"
       ],
-      "suggested_reply": "Hi @MartinSusky, thanks for the screenshot. I can see <!-- from image -->\"launch session • Esc to exit\"<!-- /from image --> while the agent pane is showing garbled output. To debug why the Claude session never leaves loading, could you add:\n\n1. Your Windows build number.\n2. Whether `claude` runs successfully from a normal shell outside Terminal.\n3. A zipped WTA log from `%LOCALAPPDATA%\\Packages\\*IntelligentTerminal*\\LocalCache\\Local\\IntelligentTerminal\\logs\\` after reproducing it.\n\nOnce that's in, we'll re-triage this within 2 business days."
+      "suggested_reply": "Hi @MartinSusky, could you grab a WTA log next time you hit this?\n\nThe screenshot shows <!-- from image -->Agent sessions<!-- /from image --> stuck at <!-- from image -->Loading...<!-- /from image -->, so the log should tell us whether Claude session creation or the ACP handshake is timing out.\n\n1. Reproduce the issue.\n2. Zip\n   `%LOCALAPPDATA%\\Packages\\*IntelligentTerminal*\\LocalCache\\Local\\IntelligentTerminal\\logs\\`\n   (or `%LOCALAPPDATA%\\IntelligentTerminal\\logs\\` for unpackaged dev builds).\n3. Attach the zip here.\n\nIf the issue is hard to reproduce, set `WTA_LOG=debug` first to get the noisier traces."
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 387,
+      "title": "Agent Pane do not render markdown correctly",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/387",
+      "kind": "issue",
+      "category": "agent-pane",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 2,
+      "severity": "bug",
+      "sentiment": "neutral",
+      "next_action_glyph": "💬",
+      "next_action": "reply",
+      "suggested_labels": [
+        "Issue-Bug",
+        "Area-AgentPane",
+        "Agent-Copilot",
+        "Needs-Triage"
+      ],
+      "suggested_reply": "Hi @haonanttt, could you share which **Intelligent Terminal version**\nyou're on? You can find it in the **About** dialog (menu \"V\" button →\nAbout at the bottom). The **Windows build number** is also helpful —\nrun `ver` or `[Environment]::OSVersion` in a shell.\n\nThis helps us tell whether it's already fixed in a newer build."
     }
   ]
 }
