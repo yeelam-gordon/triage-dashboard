@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T14:28:33Z",
+  "generated_at": "2026-07-07T15:37:53Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -11,7 +11,7 @@
   ],
   "totals": {
     "open_issues": 5,
-    "open_prs": 6
+    "open_prs": 5
   },
   "category_counts": {
     "agent-pane": 3,
@@ -22,7 +22,7 @@
     "microsoft/intelligent-terminal": {
       "totals": {
         "open_issues": 5,
-        "open_prs": 6
+        "open_prs": 5
       },
       "category_counts": {
         "agent-pane": 3,
@@ -100,28 +100,11 @@
     },
     {
       "repo": "microsoft/intelligent-terminal",
-      "number": 337,
-      "title": "Move GPOs out of category \"Windows Components\"",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/337",
-      "kind": "pr",
-      "category": "other",
-      "days_no_reply": 0,
-      "is_community": true,
-      "score": 5,
-      "severity": "none",
-      "sentiment": "",
-      "next_action_glyph": "👀",
-      "next_action": "request_reviewer",
-      "suggested_labels": [],
-      "suggested_reply": "@yeelam-gordon — community PR #337 touches `policies/IntelligentTerminal.admx`, `policies/en-US/IntelligentTerminal.adml` (GPO policy metadata; you have recent commits in this area). 7-day SLA clock starts today. Worth a first pass?"
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
       "number": 367,
       "title": "WTA ACP 0.10→1.0 migration",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/367",
       "kind": "pr",
-      "category": "refactor",
+      "category": "session-management",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
@@ -129,7 +112,14 @@
       "sentiment": "",
       "next_action_glyph": "✅",
       "next_action": "ready_to_merge",
-      "suggested_labels": [],
+      "suggested_labels": [
+        "Area-SessionManagement",
+        "Area-CLI",
+        {
+          "name": "Area-WTA",
+          "reason": "Large WTA ACP/protocol migration has no dedicated live Area-* label; using closest existing labels instead."
+        }
+      ],
       "suggested_reply": ""
     },
     {
@@ -138,7 +128,7 @@
       "title": "Eternal Terminal (step 1): per-tab /save-tab + /restore-tab (layout + content)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/373",
       "kind": "pr",
-      "category": "feature",
+      "category": "session-management",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
@@ -146,8 +136,12 @@
       "sentiment": "",
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
-      "suggested_labels": [],
-      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan suggests it might be unrelated to your changes, but could you take a look at https://github.com/microsoft/intelligent-terminal/runs/85550128776? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_labels": [
+        "Issue-Feature",
+        "Area-SessionManagement",
+        "Needs-Review"
+      ],
+      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan points at the failing status check / spelling report. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/85550128776? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -163,7 +157,9 @@
       "sentiment": "",
       "next_action_glyph": "💤",
       "next_action": "stash",
-      "suggested_labels": [],
+      "suggested_labels": [
+        "Issue-Docs"
+      ],
       "suggested_reply": ""
     },
     {
@@ -172,7 +168,7 @@
       "title": "Make agent bars follow the tab theme color (#348)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/381",
       "kind": "pr",
-      "category": "bug-fix",
+      "category": "agent-pane",
       "days_no_reply": 0,
       "is_community": false,
       "score": 2,
@@ -180,7 +176,11 @@
       "sentiment": "",
       "next_action_glyph": "⏸",
       "next_action": "wait_on_author",
-      "suggested_labels": [],
+      "suggested_labels": [
+        "Area-AgentPane",
+        "Issue-Bug",
+        "Needs-Review"
+      ],
       "suggested_reply": ""
     },
     {
@@ -190,9 +190,9 @@
       "url": "https://github.com/microsoft/intelligent-terminal/issues/384",
       "kind": "issue",
       "category": "session-management",
-      "days_no_reply": 0,
+      "days_no_reply": 1,
       "is_community": true,
-      "score": 6,
+      "score": 7,
       "severity": "crash",
       "sentiment": "blocked",
       "next_action_glyph": "💬",
@@ -200,12 +200,12 @@
       "suggested_labels": [
         "Issue-Bug",
         "Area-SessionManagement",
-        "Agent-Copilot",
         "Agent-Claude",
+        "Agent-Copilot",
         "Severity-High",
         "Needs-Author-Feedback"
       ],
-      "suggested_reply": "Sorry you hit a crash @Aust-aa-36. For crashes specifically we need the backend diagnostic data, which you can capture via Feedback Hub: https://aka.ms/intelligent-terminal-feedback. Pick the matching category, hit \"Share My Feedback\" after submitting, and paste the link here.\n\nI can see the launch failure is the master pipe connection path: <!-- from body -->The system cannot find the file specified. (os error 2)<!-- /from body -->. That plus the Feedback Hub stack should help us pinpoint where wta-master fails during startup.\n\nPS: If you can also attach a zip of `%LOCALAPPDATA%\\Packages\\*IntelligentTerminal*\\LocalCache\\Local\\IntelligentTerminal\\logs\\` after reproducing, that would help correlate the WTA startup failure."
+      "suggested_reply": "Sorry you hit a crash @Aust-aa-36. For crashes specifically we need the backend diagnostic data, which you can capture via Feedback Hub: https://aka.ms/intelligent-terminal-feedback. Pick the matching category, hit \"Share My Feedback\" after submitting, and paste the link here.\n\nWithout that we can't correlate the master-process failure to a specific stack trace.\n\nPS: If you can, please also attach a zip of `%LOCALAPPDATA%\\Packages\\*IntelligentTerminal*\\LocalCache\\Local\\IntelligentTerminal\\logs\\` (or `%LOCALAPPDATA%\\IntelligentTerminal\\logs\\` for unpackaged dev builds) after reproducing; setting `WTA_LOG=debug` first will capture noisier traces."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -213,15 +213,21 @@
       "title": "Improve Copilot auth flow after install",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/385",
       "kind": "pr",
-      "category": "feature",
+      "category": "auto-fix",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 0,
-      "severity": "none",
+      "score": 1,
+      "severity": "bug",
       "sentiment": "",
-      "next_action_glyph": "💤",
+      "next_action_glyph": "✅",
       "next_action": "stash",
-      "suggested_labels": [],
+      "suggested_labels": [
+        "Issue-Bug",
+        "Area-AutoFix",
+        "Area-FirstRun",
+        "Area-CLI",
+        "Agent-Copilot"
+      ],
       "suggested_reply": ""
     },
     {
@@ -244,7 +250,7 @@
         "Agent-Claude",
         "Needs-Author-Feedback"
       ],
-      "suggested_reply": "Hi @MartinSusky, could you grab a WTA log next time you hit this?\n\n1. Reproduce the issue (select Claude and wait until the agent sessions pane stays on Loading).\n2. Zip `%LOCALAPPDATA%\\Packages\\*IntelligentTerminal*\\LocalCache\\Local\\IntelligentTerminal\\logs\\` (or `%LOCALAPPDATA%\\IntelligentTerminal\\logs\\` for unpackaged dev builds).\n3. Attach the zip here.\n\nIf the issue is hard to reproduce, set `WTA_LOG=debug` first to get the noisier traces."
+      "suggested_reply": "Hi @MartinSusky, could you grab a WTA log next time you hit this?\n\n1. Reproduce the issue — I can see the Agent sessions pane stuck at <!-- from image -->\"Loading...\"<!-- /from image --> after selecting Claude.\n2. Zip\n   `%LOCALAPPDATA%\\Packages\\*IntelligentTerminal*\\LocalCache\\Local\\IntelligentTerminal\\logs\\`\n   (or `%LOCALAPPDATA%\\IntelligentTerminal\\logs\\` for unpackaged dev\n   builds).\n3. Attach the zip here.\n\nIf the issue is hard to reproduce, set `WTA_LOG=debug` first to get the\nnoisier traces."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -266,7 +272,7 @@
         "Agent-Copilot",
         "Needs-Author-Feedback"
       ],
-      "suggested_reply": "Hi @haonanttt, could you share which **Intelligent Terminal version** you're on? You can find it in the **About** dialog (menu \"V\" button → About at the bottom). The **Windows build number** is also helpful — run `ver` or `[Environment]::OSVersion` in a shell.\n\nThis helps us tell whether it's already fixed in a newer build.\n\nPS: The screenshot shows the Copilot pane rendering literal Markdown markers like <!-- from image -->`**GitHub Copilot CLI**`<!-- /from image -->, so I’d keep this in Area-AgentPane/Agent-Copilot while we wait for the build info."
+      "suggested_reply": "Hi @haonanttt, could you share which **Intelligent Terminal version** you're on? You can find it in the **About** dialog (menu \"V\" button → About at the bottom). The **Windows build number** is also helpful — run `ver` or `[Environment]::OSVersion` in a shell.\n\nThis helps us tell whether it's already fixed in a newer build."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -277,18 +283,18 @@
       "category": "auto-fix",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 4,
+      "score": 2,
       "severity": "bug",
-      "sentiment": "frustrated",
-      "next_action_glyph": "💬",
-      "next_action": "reply",
+      "sentiment": "neutral",
+      "next_action_glyph": "🏷️",
+      "next_action": "label_only",
       "suggested_labels": [
         "Issue-Bug",
         "Area-AutoFix",
         "Agent-Copilot",
-        "Needs-Author-Feedback"
+        "Needs-Triage"
       ],
-      "suggested_reply": "Hi @indcoder, could you grab a WTA log next time you hit this?\n\n1. Reproduce the issue.\n2. Zip `%LOCALAPPDATA%\\Packages\\*IntelligentTerminal*\\LocalCache\\Local\\IntelligentTerminal\\logs\\` (or `%LOCALAPPDATA%\\IntelligentTerminal\\logs\\` for unpackaged dev builds).\n3. Attach the zip here.\n\nIf the issue is hard to reproduce, set `WTA_LOG=debug` first to get the noisier traces. <!-- from image -->The screenshot shows Copilot suggesting `rg -n \"TargetPort|planner-hosted|Foundry\" AppHost`.<!-- /from image --> That concrete command is helpful; the log should show the shell/context we sent into the Copilot turn so we can fix the prompt path rather than guessing."
+      "suggested_reply": ""
     }
   ]
 }
