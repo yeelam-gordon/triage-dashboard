@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T15:37:53Z",
+  "generated_at": "2026-07-07T23:22:48Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -104,22 +104,15 @@
       "title": "WTA ACP 0.10→1.0 migration",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/367",
       "kind": "pr",
-      "category": "session-management",
+      "category": "refactor",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 0,
-      "severity": "none",
+      "score": 3,
+      "severity": "risk",
       "sentiment": "",
       "next_action_glyph": "✅",
       "next_action": "ready_to_merge",
-      "suggested_labels": [
-        "Area-SessionManagement",
-        "Area-CLI",
-        {
-          "name": "Area-WTA",
-          "reason": "Large WTA ACP/protocol migration has no dedicated live Area-* label; using closest existing labels instead."
-        }
-      ],
+      "suggested_labels": [],
       "suggested_reply": ""
     },
     {
@@ -128,7 +121,7 @@
       "title": "Eternal Terminal (step 1): per-tab /save-tab + /restore-tab (layout + content)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/373",
       "kind": "pr",
-      "category": "session-management",
+      "category": "feature",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
@@ -136,12 +129,8 @@
       "sentiment": "",
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
-      "suggested_labels": [
-        "Issue-Feature",
-        "Area-SessionManagement",
-        "Needs-Review"
-      ],
-      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan points at the failing status check / spelling report. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/85550128776? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_labels": [],
+      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling`: https://github.com/microsoft/intelligent-terminal/runs/85550128776. Could you take a look before review? If this is just spell-check dictionary noise, updating the allow-list or pushing a rerun should unblock the PR."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -157,9 +146,7 @@
       "sentiment": "",
       "next_action_glyph": "💤",
       "next_action": "stash",
-      "suggested_labels": [
-        "Issue-Docs"
-      ],
+      "suggested_labels": [],
       "suggested_reply": ""
     },
     {
@@ -213,21 +200,15 @@
       "title": "Improve Copilot auth flow after install",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/385",
       "kind": "pr",
-      "category": "auto-fix",
+      "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 1,
+      "score": 2,
       "severity": "bug",
       "sentiment": "",
       "next_action_glyph": "✅",
-      "next_action": "stash",
-      "suggested_labels": [
-        "Issue-Bug",
-        "Area-AutoFix",
-        "Area-FirstRun",
-        "Area-CLI",
-        "Agent-Copilot"
-      ],
+      "next_action": "no_action",
+      "suggested_labels": [],
       "suggested_reply": ""
     },
     {
