@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T00:32:44Z",
+  "generated_at": "2026-07-07T01:08:36Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -11,7 +11,7 @@
   ],
   "totals": {
     "open_issues": 1,
-    "open_prs": 11
+    "open_prs": 12
   },
   "category_counts": {
     "session-management": 1
@@ -20,7 +20,7 @@
     "microsoft/intelligent-terminal": {
       "totals": {
         "open_issues": 1,
-        "open_prs": 11
+        "open_prs": 12
       },
       "category_counts": {
         "session-management": 1
@@ -84,7 +84,7 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "✅",
+      "next_action_glyph": "💤",
       "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
@@ -115,13 +115,13 @@
       "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 1,
-      "severity": "papercut",
+      "score": 4,
+      "severity": "bug",
       "sentiment": "",
-      "next_action_glyph": "✅",
-      "next_action": "stash",
+      "next_action_glyph": "🟥",
+      "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": ""
+      "suggested_reply": "Hi @haonanttt, CI is failing on `Check Spelling` — quick scan suggests it might be unrelated to your changes, but could you take a look at https://github.com/microsoft/intelligent-terminal/actions/runs/27669135388/job/81829374879? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -132,7 +132,7 @@
       "category": "feature",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 0,
+      "score": 2,
       "severity": "none",
       "sentiment": "",
       "next_action_glyph": "💤",
@@ -146,16 +146,16 @@
       "title": "Move GPOs out of category \"Windows Components\"",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/337",
       "kind": "pr",
-      "category": "feature",
-      "days_no_reply": 0,
+      "category": "other",
+      "days_no_reply": 1,
       "is_community": true,
-      "score": 5.0,
+      "score": 6,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "👀",
-      "next_action": "request_reviewer",
+      "next_action_glyph": "🔥",
+      "next_action": "reply",
       "suggested_labels": [],
-      "suggested_reply": "@yeelam-gordon — community PR #337 touches `policies/IntelligentTerminal.admx` and `policies/en-US/IntelligentTerminal.adml` (recent GPO/ADMX ownership by git log: 1/1 last-90-day commits on both files; related PRs #14 and #225). 7-day SLA clock starts today. Worth a first pass?"
+      "suggested_reply": "Team — community PR #337 touches `policies/IntelligentTerminal.admx` and `policies/en-US/IntelligentTerminal.adml`. Ownership is unknown (`policies/**` is not in the routing table; the team table is empty), and @htcfreek asked for status after waiting. Could someone route or take a first review pass?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -194,7 +194,7 @@
     {
       "repo": "microsoft/intelligent-terminal",
       "number": 367,
-      "title": "WTA ACP 0.10→1.0 migration (Phase 0: behavior-preserving model rewrite)",
+      "title": "WTA ACP 0.10→1.0 migration",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/367",
       "kind": "pr",
       "category": "refactor",
@@ -217,10 +217,10 @@
       "category": "refactor",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 3,
-      "severity": "risk",
+      "score": 0,
+      "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "💤",
+      "next_action_glyph": "📦",
       "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
@@ -237,10 +237,27 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "📦",
+      "next_action_glyph": "💤",
       "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 373,
+      "title": "Eternal Terminal (step 1): per-tab /save-tab + /restore-tab (layout + content)",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/373",
+      "kind": "pr",
+      "category": "feature",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 0,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "🟥",
+      "next_action": "investigate_ci",
+      "suggested_labels": [],
+      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan points at the spell-check report rather than merge conflicts. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/85310984938? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -251,10 +268,10 @@
       "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 1,
-      "severity": "papercut",
+      "score": 2,
+      "severity": "bug",
       "sentiment": "",
-      "next_action_glyph": "✅",
+      "next_action_glyph": "💤",
       "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
@@ -279,9 +296,9 @@
         "Agent-Claude",
         "Agent-Copilot",
         "Severity-High",
-        "Needs-Author-Feedback"
+        "Needs-Triage"
       ],
-      "suggested_reply": "Sorry you hit a crash @Aust-aa-36. For crashes specifically we need the backend diagnostic data, which you can capture via Feedback Hub: <https://aka.ms/intelligent-terminal-feedback>. Pick the matching category, hit \"Share My Feedback\" after submitting, and paste the link here.\n\nI can see the concrete startup failure in the report: <!-- from body -->helper ACP transport failed: connect to master pipe '\\\\.\\pipe\\wta-master-<GUID>' after 21 attempt(s): The system cannot find the file specified. (os error 2)<!-- /from body -->. Without the Feedback Hub data we can't correlate the master-process failure to a specific stack trace."
+      "suggested_reply": "Thanks for the detailed repro @Aust-aa-36. Sorry you hit this crash. The report already has repro steps and version info, and the part that looks most important is <!-- from body -->This affects the whole app, not just the delegate tab — the main agent pane (using `acpAgent`) also fails to connect<!-- /from body -->.\n\nFor crashes specifically we need the backend diagnostic data, which you can capture via Feedback Hub:\n<https://aka.ms/intelligent-terminal-feedback>. Pick the matching category, hit \"Share My Feedback\" after submitting, and paste the link here.\n\nWithout that we can't correlate the crash to a specific stack trace.\n"
     }
   ]
 }
