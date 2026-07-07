@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T08:07:08Z",
+  "generated_at": "2026-07-07T08:41:42Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -14,7 +14,8 @@
     "open_prs": 5
   },
   "category_counts": {
-    "agent-pane": 2,
+    "agent-pane": 1,
+    "first-run": 1,
     "session-management": 1
   },
   "per_repo": {
@@ -24,7 +25,8 @@
         "open_prs": 5
       },
       "category_counts": {
-        "agent-pane": 2,
+        "agent-pane": 1,
+        "first-run": 1,
         "session-management": 1
       },
       "trends": [
@@ -80,7 +82,7 @@
       "title": "Move GPOs out of category \"Windows Components\"",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/337",
       "kind": "pr",
-      "category": "refactor",
+      "category": "feature",
       "days_no_reply": 0,
       "is_community": true,
       "score": 5,
@@ -89,7 +91,7 @@
       "next_action_glyph": "👀",
       "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "@yeelam-gordon — community PR #337 touches `policies/IntelligentTerminal.admx` and `policies/en-US/IntelligentTerminal.adml` (policy/GPO area; recent git log points to Gordon Lam/yeelam-gordon, but the team table is empty, so this is low confidence — team table empty). 7-day SLA clock starts today. Worth a first pass?"
+      "suggested_reply": "Needs-Triage — community PR #337 touches `policies/IntelligentTerminal.admx` and `policies/en-US/IntelligentTerminal.adml`; `policies/**` is not in the ownership table, and the team table is empty so reviewer confidence is low. Could a maintainer route it for first review?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -100,11 +102,11 @@
       "category": "refactor",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 3,
-      "severity": "risk",
+      "score": 0,
+      "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "🛠",
-      "next_action": "nudge_rebase",
+      "next_action_glyph": "✅",
+      "next_action": "ready_to_merge",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -123,7 +125,7 @@
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan points at the status check/report rather than a merge conflict, but could you take a look at https://github.com/microsoft/intelligent-terminal/runs/85550128776? If it is flaky, push an empty commit to re-run."
+      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan points at the spell-check job/dictionary report. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/85550128776? If it is flaky or infrastructure-related, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -159,13 +161,12 @@
       "suggested_labels": [
         "Issue-Bug",
         "Area-SessionManagement",
-        "Area-AgentPane",
         "Agent-Copilot",
         "Agent-Claude",
         "Severity-High",
-        "Needs-Triage"
+        "Needs-Author-Feedback"
       ],
-      "suggested_reply": "Sorry you hit a crash @Aust-aa-36. For crashes specifically we need the\nbackend diagnostic data, which you can capture via Feedback Hub:\n<https://aka.ms/intelligent-terminal-feedback>. Pick the matching\ncategory, hit \"Share My Feedback\" after submitting, and paste the link\nhere.\n\nI can also see the startup failure text you included: <!-- from body -->helper ACP transport failed: connect to master pipe '\\\\.\\pipe\\wta-master-<GUID>' after 21 attempt(s): The system cannot find the file specified. (os error 2)<!-- /from body -->.\n\nWithout the Feedback Hub data we can't correlate the crash to a specific stack trace.\n\nPS: If you can also zip and attach `%LOCALAPPDATA%\\Packages\\*IntelligentTerminal*\\LocalCache\\Local\\IntelligentTerminal\\logs\\` (or `%LOCALAPPDATA%\\IntelligentTerminal\\logs\\` for unpackaged dev builds) after reproducing, that may help confirm why `wta-master` exits before the helper connects."
+      "suggested_reply": "Sorry you hit a crash @Aust-aa-36. For crashes specifically we need the backend diagnostic data, which you can capture via Feedback Hub: <https://aka.ms/intelligent-terminal-feedback>. Pick the matching category, hit \"Share My Feedback\" after submitting, and paste the link here.\n\nWithout that we can't correlate the crash to a specific stack trace.\n\nPS: The report already includes a useful symptom: <!-- from body -->helper ACP transport failed: connect to master pipe '\\\\.\\pipe\\wta-master-<GUID>' after 21 attempt(s): The system cannot find the file specified. (os error 2)<!-- /from body -->. If you can also attach the WTA logs from `%LOCALAPPDATA%\\Packages\\*IntelligentTerminal*\\LocalCache\\Local\\IntelligentTerminal\\logs\\` (or `%LOCALAPPDATA%\\IntelligentTerminal\\logs\\` for unpackaged dev builds), that will help us pinpoint why the master exits during startup."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -190,7 +191,7 @@
       "title": "Stucked on loading",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/386",
       "kind": "issue",
-      "category": "agent-pane",
+      "category": "first-run",
       "days_no_reply": 0,
       "is_community": true,
       "score": 4,
@@ -200,11 +201,11 @@
       "next_action": "reply",
       "suggested_labels": [
         "Issue-Bug",
-        "Area-AgentPane",
+        "Area-FirstRun",
         "Agent-Claude",
         "Needs-Author-Feedback"
       ],
-      "suggested_reply": "Hi @MartinSusky, could you grab a WTA log next time you hit this?\n\nThe screenshot shows <!-- from image -->Agent sessions<!-- /from image --> stuck at <!-- from image -->Loading...<!-- /from image -->, so the log should tell us whether Claude session creation or the ACP handshake is timing out.\n\n1. Reproduce the issue.\n2. Zip\n   `%LOCALAPPDATA%\\Packages\\*IntelligentTerminal*\\LocalCache\\Local\\IntelligentTerminal\\logs\\`\n   (or `%LOCALAPPDATA%\\IntelligentTerminal\\logs\\` for unpackaged dev builds).\n3. Attach the zip here.\n\nIf the issue is hard to reproduce, set `WTA_LOG=debug` first to get the noisier traces."
+      "suggested_reply": "Hi @MartinSusky, could you grab a WTA log next time you hit this?\n\n1. Reproduce the issue.\n2. Zip\n   `%LOCALAPPDATA%\\Packages\\*IntelligentTerminal*\\LocalCache\\Local\\IntelligentTerminal\\logs\\`\n   (or `%LOCALAPPDATA%\\IntelligentTerminal\\logs\\` for unpackaged dev\n   builds).\n3. Attach the zip here.\n\nIf the issue is hard to reproduce, set `WTA_LOG=debug` first to get the\nnoisier traces."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -224,9 +225,9 @@
         "Issue-Bug",
         "Area-AgentPane",
         "Agent-Copilot",
-        "Needs-Triage"
+        "Needs-Author-Feedback"
       ],
-      "suggested_reply": "Hi @haonanttt, could you share which **Intelligent Terminal version**\nyou're on? You can find it in the **About** dialog (menu \"V\" button →\nAbout at the bottom). The **Windows build number** is also helpful —\nrun `ver` or `[Environment]::OSVersion` in a shell.\n\nThis helps us tell whether it's already fixed in a newer build."
+      "suggested_reply": "Hi @haonanttt, could you share which **Intelligent Terminal version** you're on? You can find it in the **About** dialog (menu \"V\" button → About at the bottom). The **Windows build number** is also helpful — run `ver` or `[Environment]::OSVersion` in a shell.\n\nThis helps us tell whether it's already fixed in a newer build."
     }
   ]
 }
