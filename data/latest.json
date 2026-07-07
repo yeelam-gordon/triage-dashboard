@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T02:04:34Z",
+  "generated_at": "2026-07-07T04:02:06Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -11,7 +11,7 @@
   ],
   "totals": {
     "open_issues": 1,
-    "open_prs": 13
+    "open_prs": 4
   },
   "category_counts": {
     "session-management": 1
@@ -20,7 +20,7 @@
     "microsoft/intelligent-terminal": {
       "totals": {
         "open_issues": 1,
-        "open_prs": 13
+        "open_prs": 4
       },
       "category_counts": {
         "session-management": 1
@@ -74,122 +74,20 @@
   "issues": [
     {
       "repo": "microsoft/intelligent-terminal",
-      "number": 262,
-      "title": "Improve FRE Github Copilot install flow",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/262",
-      "kind": "pr",
-      "category": "feature",
-      "days_no_reply": 0,
-      "is_community": false,
-      "score": 0,
-      "severity": "none",
-      "sentiment": "",
-      "next_action_glyph": "📦",
-      "next_action": "stash",
-      "suggested_labels": [],
-      "suggested_reply": ""
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
-      "number": 281,
-      "title": "Optimize FRE hooks installation flow",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/281",
-      "kind": "pr",
-      "category": "refactor",
-      "days_no_reply": 0,
-      "is_community": false,
-      "score": 0,
-      "severity": "none",
-      "sentiment": "",
-      "next_action_glyph": "💤",
-      "next_action": "stash",
-      "suggested_labels": [],
-      "suggested_reply": ""
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
-      "number": 309,
-      "title": "fix(shell-integration): treat unknown execution policy as blocking",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/309",
-      "kind": "pr",
-      "category": "bug-fix",
-      "days_no_reply": 0,
-      "is_community": false,
-      "score": 1,
-      "severity": "bug",
-      "sentiment": "",
-      "next_action_glyph": "💤",
-      "next_action": "stash",
-      "suggested_labels": [],
-      "suggested_reply": ""
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
-      "number": 316,
-      "title": "Update  FRE asset",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/316",
-      "kind": "pr",
-      "category": "other",
-      "days_no_reply": 0,
-      "is_community": false,
-      "score": 0,
-      "severity": "none",
-      "sentiment": "",
-      "next_action_glyph": "📦",
-      "next_action": "stash",
-      "suggested_labels": [],
-      "suggested_reply": ""
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
       "number": 337,
       "title": "Move GPOs out of category \"Windows Components\"",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/337",
       "kind": "pr",
-      "category": "feature",
-      "days_no_reply": 0,
+      "category": "other",
+      "days_no_reply": 1,
       "is_community": true,
-      "score": 4,
+      "score": 6,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "👀",
-      "next_action": "request_reviewer",
+      "next_action_glyph": "🔥",
+      "next_action": "reply",
       "suggested_labels": [],
-      "suggested_reply": "@yeelam-gordon — community PR #337 touches `policies/IntelligentTerminal.admx` and `policies/en-US/IntelligentTerminal.adml` (no ownership-table area; git log shows you as the only recent committer on these policy files). 7-day SLA clock starts today. Worth a first pass?"
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
-      "number": 342,
-      "title": "fix(auth): recover from post-login auth loop on a stale shared agent CLI",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/342",
-      "kind": "pr",
-      "category": "bug-fix",
-      "days_no_reply": 0,
-      "is_community": false,
-      "score": 1,
-      "severity": "bug",
-      "sentiment": "",
-      "next_action_glyph": "💤",
-      "next_action": "stash",
-      "suggested_labels": [],
-      "suggested_reply": ""
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
-      "number": 362,
-      "title": "Support GitHub Enterprise Copilot sign-in",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/362",
-      "kind": "pr",
-      "category": "feature",
-      "days_no_reply": 0,
-      "is_community": false,
-      "score": 0,
-      "severity": "none",
-      "sentiment": "",
-      "next_action_glyph": "✅",
-      "next_action": "stash",
-      "suggested_labels": [],
-      "suggested_reply": ""
+      "suggested_reply": "Needs-Triage — community PR #337 touches policies/IntelligentTerminal.admx and policies/en-US/IntelligentTerminal.adml (policy/GPO metadata; owner unknown because policies/** is unmapped and the team table is empty). 7-day SLA clock started 2026-06-22; contributor asked for status on 2026-07-06. Worth a first pass?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -200,47 +98,13 @@
       "category": "refactor",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 0,
-      "severity": "none",
+      "score": 3,
+      "severity": "risk",
       "sentiment": "",
-      "next_action_glyph": "👀",
-      "next_action": "request_reviewer",
+      "next_action_glyph": "🟥",
+      "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": ""
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
-      "number": 368,
-      "title": "Replace auth shell-outs with native Windows APIs",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/368",
-      "kind": "pr",
-      "category": "refactor",
-      "days_no_reply": 0,
-      "is_community": false,
-      "score": 4,
-      "severity": "security",
-      "sentiment": "",
-      "next_action_glyph": "✅",
-      "next_action": "stash",
-      "suggested_labels": [],
-      "suggested_reply": ""
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
-      "number": 370,
-      "title": "Clean up obsolete WTA login setup flows",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/370",
-      "kind": "pr",
-      "category": "refactor",
-      "days_no_reply": 0,
-      "is_community": false,
-      "score": 0,
-      "severity": "none",
-      "sentiment": "",
-      "next_action_glyph": "📦",
-      "next_action": "stash",
-      "suggested_labels": [],
-      "suggested_reply": ""
+      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan suggests it may be the active spelling/check annotation rather than merge conflicts. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/85529229441? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -257,7 +121,7 @@
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @DDKinger, CI is failing on check-spelling — quick scan points at the check-spelling job. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/85310984938? If it is flaky, push an empty commit (git commit --allow-empty -m \"ci: rerun\") to re-run."
+      "suggested_reply": "Hi @DDKinger, CI is failing on check-spelling — quick scan suggests the current blocker is the spelling check report, but could you take a look at https://github.com/microsoft/intelligent-terminal/runs/85310984938? If it's flaky, push an empty commit to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -272,23 +136,6 @@
       "severity": "none",
       "sentiment": "",
       "next_action_glyph": "💤",
-      "next_action": "stash",
-      "suggested_labels": [],
-      "suggested_reply": ""
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
-      "number": 383,
-      "title": "fix(wt): keep dragged tab's sessions Live across cross-window move",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/383",
-      "kind": "pr",
-      "category": "bug-fix",
-      "days_no_reply": 0,
-      "is_community": false,
-      "score": 1,
-      "severity": "bug",
-      "sentiment": "",
-      "next_action_glyph": "✅",
       "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
@@ -310,12 +157,13 @@
       "suggested_labels": [
         "Issue-Bug",
         "Area-SessionManagement",
+        "Area-AgentPane",
         "Agent-Claude",
         "Agent-Copilot",
         "Severity-High",
         "Needs-Author-Feedback"
       ],
-      "suggested_reply": "Sorry you hit a crash @Aust-aa-36. For crashes specifically we need the\nbackend diagnostic data, which you can capture via Feedback Hub:\n<https://aka.ms/intelligent-terminal-feedback>. Pick the matching\ncategory, hit \"Share My Feedback\" after submitting, and paste the link\nhere.\n\nWithout that we can't correlate the master-process failure to a specific stack trace.\n\nPS: The repro and version are clear; if you can also attach the WTA logs from\n`%LOCALAPPDATA%\\Packages\\*IntelligentTerminal*\\LocalCache\\Local\\IntelligentTerminal\\logs\\`\n(or `%LOCALAPPDATA%\\IntelligentTerminal\\logs\\` for unpackaged dev builds),\nthat will help confirm why the master pipe disappears. Set `WTA_LOG=debug` first\nif the issue is hard to reproduce."
+      "suggested_reply": "Sorry you hit a crash @Aust-aa-36. For crashes specifically we need the backend diagnostic data, which you can capture via Feedback Hub: <https://aka.ms/intelligent-terminal-feedback>. Pick the matching category, hit \"Share My Feedback\" after submitting, and paste the link here.\n\nWithout that we can't correlate the crash to a specific stack trace.\n\nPS: Because this looks like the WTA master failing during startup, a zipped copy of `%LOCALAPPDATA%\\Packages\\*IntelligentTerminal*\\LocalCache\\Local\\IntelligentTerminal\\logs\\` (or `%LOCALAPPDATA%\\IntelligentTerminal\\logs\\` for unpackaged dev builds) would also help."
     }
   ]
 }
