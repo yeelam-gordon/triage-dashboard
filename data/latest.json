@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T14:08:49Z",
+  "generated_at": "2026-07-07T14:28:33Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -11,7 +11,7 @@
   ],
   "totals": {
     "open_issues": 5,
-    "open_prs": 5
+    "open_prs": 6
   },
   "category_counts": {
     "agent-pane": 3,
@@ -22,7 +22,7 @@
     "microsoft/intelligent-terminal": {
       "totals": {
         "open_issues": 5,
-        "open_prs": 5
+        "open_prs": 6
       },
       "category_counts": {
         "agent-pane": 3,
@@ -163,6 +163,23 @@
       "sentiment": "",
       "next_action_glyph": "💤",
       "next_action": "stash",
+      "suggested_labels": [],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 381,
+      "title": "Make agent bars follow the tab theme color (#348)",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/381",
+      "kind": "pr",
+      "category": "bug-fix",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 2,
+      "severity": "papercut",
+      "sentiment": "",
+      "next_action_glyph": "⏸",
+      "next_action": "wait_on_author",
       "suggested_labels": [],
       "suggested_reply": ""
     },
