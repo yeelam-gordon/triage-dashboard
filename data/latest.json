@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T01:08:36Z",
+  "generated_at": "2026-07-07T01:38:33Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -84,7 +84,7 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "💤",
+      "next_action_glyph": "📦",
       "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
@@ -115,13 +115,13 @@
       "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 4,
+      "score": 1,
       "severity": "bug",
       "sentiment": "",
-      "next_action_glyph": "🟥",
-      "next_action": "investigate_ci",
+      "next_action_glyph": "💤",
+      "next_action": "stash",
       "suggested_labels": [],
-      "suggested_reply": "Hi @haonanttt, CI is failing on `Check Spelling` — quick scan suggests it might be unrelated to your changes, but could you take a look at https://github.com/microsoft/intelligent-terminal/actions/runs/27669135388/job/81829374879? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -129,13 +129,13 @@
       "title": "Update  FRE asset",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/316",
       "kind": "pr",
-      "category": "feature",
+      "category": "other",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 2,
+      "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "💤",
+      "next_action_glyph": "📦",
       "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
@@ -147,15 +147,15 @@
       "url": "https://github.com/microsoft/intelligent-terminal/pull/337",
       "kind": "pr",
       "category": "other",
-      "days_no_reply": 1,
+      "days_no_reply": 0,
       "is_community": true,
-      "score": 6,
+      "score": 5,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "🔥",
-      "next_action": "reply",
+      "next_action_glyph": "👀",
+      "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "Team — community PR #337 touches `policies/IntelligentTerminal.admx` and `policies/en-US/IntelligentTerminal.adml`. Ownership is unknown (`policies/**` is not in the routing table; the team table is empty), and @htcfreek asked for status after waiting. Could someone route or take a first review pass?"
+      "suggested_reply": "Community PR #337 touches `policies/IntelligentTerminal.admx` and `policies/en-US/IntelligentTerminal.adml`, but `policies/**` has no ownership row and the team table is empty. Could a maintainer route this to the right policy/GPO reviewer for a first pass?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -166,7 +166,7 @@
       "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 2,
+      "score": 1,
       "severity": "bug",
       "sentiment": "",
       "next_action_glyph": "💤",
@@ -186,7 +186,7 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "💤",
+      "next_action_glyph": "✅",
       "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
@@ -200,8 +200,8 @@
       "category": "refactor",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 0,
-      "severity": "none",
+      "score": 3,
+      "severity": "risk",
       "sentiment": "",
       "next_action_glyph": "⏸",
       "next_action": "wait_on_author",
@@ -217,10 +217,10 @@
       "category": "refactor",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 0,
-      "severity": "none",
+      "score": 4,
+      "severity": "security",
       "sentiment": "",
-      "next_action_glyph": "📦",
+      "next_action_glyph": "✅",
       "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
@@ -237,7 +237,7 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "💤",
+      "next_action_glyph": "📦",
       "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
@@ -257,7 +257,7 @@
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan points at the spell-check report rather than merge conflicts. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/85310984938? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan suggests it might be unrelated to your changes, but could you take a look at https://github.com/microsoft/intelligent-terminal/runs/85310984938? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -296,9 +296,9 @@
         "Agent-Claude",
         "Agent-Copilot",
         "Severity-High",
-        "Needs-Triage"
+        "Needs-Author-Feedback"
       ],
-      "suggested_reply": "Thanks for the detailed repro @Aust-aa-36. Sorry you hit this crash. The report already has repro steps and version info, and the part that looks most important is <!-- from body -->This affects the whole app, not just the delegate tab — the main agent pane (using `acpAgent`) also fails to connect<!-- /from body -->.\n\nFor crashes specifically we need the backend diagnostic data, which you can capture via Feedback Hub:\n<https://aka.ms/intelligent-terminal-feedback>. Pick the matching category, hit \"Share My Feedback\" after submitting, and paste the link here.\n\nWithout that we can't correlate the crash to a specific stack trace.\n"
+      "suggested_reply": "Sorry you hit a crash @Aust-aa-36. For crashes specifically we need the\nbackend diagnostic data, which you can capture via Feedback Hub:\n<https://aka.ms/intelligent-terminal-feedback>. Pick the matching\ncategory, hit \"Share My Feedback\" after submitting, and paste the link\nhere.\n\nWithout that we can't correlate the master-process failure to a specific stack trace.\n\nPS: The repro and version are clear; if you can also attach the WTA logs from\n`%LOCALAPPDATA%\\Packages\\*IntelligentTerminal*\\LocalCache\\Local\\IntelligentTerminal\\logs\\`\n(or `%LOCALAPPDATA%\\IntelligentTerminal\\logs\\` for unpackaged dev builds),\nthat will help confirm why the master pipe disappears. Set `WTA_LOG=debug` first\nif the issue is hard to reproduce."
     }
   ]
 }
