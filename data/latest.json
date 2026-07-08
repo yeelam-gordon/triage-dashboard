@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T08:40:34Z",
+  "generated_at": "2026-07-08T09:15:53Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -15,8 +15,8 @@
   },
   "category_counts": {
     "agent-pane": 2,
-    "bug": 1,
-    "enhancement": 1
+    "auto-fix": 1,
+    "bug": 1
   },
   "per_repo": {
     "microsoft/intelligent-terminal": {
@@ -26,8 +26,8 @@
       },
       "category_counts": {
         "agent-pane": 2,
-        "bug": 1,
-        "enhancement": 1
+        "auto-fix": 1,
+        "bug": 1
       },
       "trends": [
         {
@@ -82,22 +82,19 @@
       "title": "Token consumption",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/269",
       "kind": "issue",
-      "category": "enhancement",
-      "days_no_reply": 1,
+      "category": "agent-pane",
+      "days_no_reply": 0,
       "is_community": false,
-      "score": 2,
+      "score": 1,
       "severity": "none",
       "sentiment": "positive",
-      "next_action_glyph": "🏷️",
-      "next_action": "label_only",
+      "next_action_glyph": "👤",
+      "next_action": "assign",
       "suggested_labels": [
         "Issue-Feature",
-        "Needs-Triage",
-        "Needs-Tag-Fix",
-        {
-          "name": "Area-AgentPane",
-          "reason": "Issue requests token consumption display in Agent Pane (mentioned 'Agent Pane' explicitly)"
-        }
+        "Area-AgentPane",
+        "Agent-Copilot",
+        "Needs-Triage"
       ],
       "suggested_reply": ""
     },
@@ -113,7 +110,7 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "📦",
+      "next_action_glyph": "✅",
       "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
@@ -133,7 +130,7 @@
       "next_action_glyph": "🛠",
       "next_action": "nudge_rebase",
       "suggested_labels": [],
-      "suggested_reply": "@DDKinger — thanks for the PR! It currently has merge conflicts with `main`. Could you rebase (`git fetch origin && git rebase origin/main`) and push? Happy to take a closer look once it's clean."
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -237,19 +234,21 @@
       "title": "Copilot commands lack OS/Shell environment context (suggests non-existent/non-coreutils commands in Windows Terminal + PowerShell)",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/388",
       "kind": "issue",
-      "category": "agent-pane",
+      "category": "auto-fix",
       "days_no_reply": 0,
       "is_community": true,
       "score": 4,
       "severity": "bug",
       "sentiment": "frustrated",
-      "next_action_glyph": "👤",
-      "next_action": "assign",
+      "next_action_glyph": "💬",
+      "next_action": "reply",
       "suggested_labels": [
         "Issue-Bug",
-        "Area-AgentPane"
+        "Area-AutoFix",
+        "Agent-Copilot",
+        "Needs-Author-Feedback"
       ],
-      "suggested_reply": ""
+      "suggested_reply": "Hi @indcoder, thanks for the clear repro and screenshot. <!-- from image -->The screenshot shows the Copilot pane suggesting `rg -n \"TargetPort|planner-hosted|Foundry\" AppHost` as a next step in a PowerShell tab.<!-- /from image -->\n\nCould you grab a WTA log next time you hit this?\n\n1. Reproduce the issue.\n2. Zip `%LOCALAPPDATA%\\Packages\\*IntelligentTerminal*\\LocalCache\\Local\\IntelligentTerminal\\logs\\` (or `%LOCALAPPDATA%\\IntelligentTerminal\\logs\\` for unpackaged dev builds).\n3. Attach the zip here.\n\nIf it is easy to reproduce, setting `WTA_LOG=debug` first will capture the noisier prompt/context traces so we can verify whether OS/shell metadata made it to Copilot. Once that is attached, we will re-triage within 2 business days."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -266,7 +265,7 @@
       "next_action_glyph": "🛠",
       "next_action": "nudge_rebase",
       "suggested_labels": [],
-      "suggested_reply": "Hi @haonanttt, thanks for the PR! It currently has merge conflicts with main. Could you rebase (git fetch origin && git rebase origin/main) and push? Happy to take a closer look once it's clean."
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
