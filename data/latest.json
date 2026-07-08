@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T06:36:03Z",
+  "generated_at": "2026-07-08T07:36:32Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -85,7 +85,7 @@
       "is_community": false,
       "score": 1,
       "severity": "none",
-      "sentiment": "positive",
+      "sentiment": "neutral",
       "next_action_glyph": "🏷️",
       "next_action": "label_only",
       "suggested_labels": [
@@ -170,11 +170,11 @@
       "title": "Improve Copilot auth flow after install",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/385",
       "kind": "pr",
-      "category": "feature",
+      "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 0,
-      "severity": "none",
+      "score": 1,
+      "severity": "papercut",
       "sentiment": "",
       "next_action_glyph": "💤",
       "next_action": "stash",
@@ -223,7 +223,7 @@
         "Agent-Copilot",
         "Needs-Author-Feedback"
       ],
-      "suggested_reply": "Hi @haonanttt, could you share which **Intelligent Terminal version** you're on? You can find it in the **About** dialog (menu \"V\" button → About at the bottom). The **Windows build number** is also helpful — run `ver` or `[Environment]::OSVersion` in a shell.\n\nThis helps us tell whether it's already fixed in a newer build."
+      "suggested_reply": "Hi @haonanttt, could you share which **Intelligent Terminal version** you're on? You can find it in the **About** dialog (menu \"V\" button → About at the bottom). The **Windows build number** is also helpful — run `ver` or `[Environment]::OSVersion` in a shell.\n\n<!-- from image -->The screenshot shows Copilot output with literal markdown syntax such as `**GitHub Copilot CLI**` instead of rendered bold.<!-- /from image -->\n\nThis helps us tell whether it's already fixed in a newer build."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -234,18 +234,18 @@
       "category": "auto-fix",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 4,
+      "score": 2,
       "severity": "bug",
-      "sentiment": "frustrated",
-      "next_action_glyph": "💬",
-      "next_action": "reply",
+      "sentiment": "neutral",
+      "next_action_glyph": "🏷️",
+      "next_action": "label_only",
       "suggested_labels": [
         "Issue-Bug",
+        "Needs-Triage",
         "Area-AutoFix",
-        "Agent-Copilot",
-        "Needs-Triage"
+        "Agent-Copilot"
       ],
-      "suggested_reply": "Hi @indcoder, could you grab a WTA log next time you hit this? The screenshot is useful: <!-- from image -->`rg -n \"TargetPort|planner-hosted|Foundry\" AppHost`<!-- /from image --> is exactly the kind of suggested command we need to trace back to the active shell/context prompt.\n\n1. Reproduce the issue.\n2. Zip `%LOCALAPPDATA%\\Packages\\*IntelligentTerminal*\\LocalCache\\Local\\IntelligentTerminal\\logs\\` (or `%LOCALAPPDATA%\\IntelligentTerminal\\logs\\` for unpackaged dev builds).\n3. Attach the zip here.\n\nIf the issue is hard to reproduce, set `WTA_LOG=debug` first to get the noisier traces."
+      "suggested_reply": ""
     }
   ]
 }
