@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T08:01:00Z",
+  "generated_at": "2026-07-08T08:40:34Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -14,8 +14,9 @@
     "open_prs": 7
   },
   "category_counts": {
-    "agent-pane": 3,
-    "auto-fix": 1
+    "agent-pane": 2,
+    "bug": 1,
+    "enhancement": 1
   },
   "per_repo": {
     "microsoft/intelligent-terminal": {
@@ -24,8 +25,9 @@
         "open_prs": 7
       },
       "category_counts": {
-        "agent-pane": 3,
-        "auto-fix": 1
+        "agent-pane": 2,
+        "bug": 1,
+        "enhancement": 1
       },
       "trends": [
         {
@@ -80,18 +82,22 @@
       "title": "Token consumption",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/269",
       "kind": "issue",
-      "category": "agent-pane",
-      "days_no_reply": 0,
+      "category": "enhancement",
+      "days_no_reply": 1,
       "is_community": false,
-      "score": 1,
+      "score": 2,
       "severity": "none",
       "sentiment": "positive",
       "next_action_glyph": "🏷️",
       "next_action": "label_only",
       "suggested_labels": [
         "Issue-Feature",
-        "Area-AgentPane",
-        "Agent-Copilot"
+        "Needs-Triage",
+        "Needs-Tag-Fix",
+        {
+          "name": "Area-AgentPane",
+          "reason": "Issue requests token consumption display in Agent Pane (mentioned 'Agent Pane' explicitly)"
+        }
       ],
       "suggested_reply": ""
     },
@@ -127,7 +133,7 @@
       "next_action_glyph": "🛠",
       "next_action": "nudge_rebase",
       "suggested_labels": [],
-      "suggested_reply": "Hi @DDKinger, thanks for the PR! It currently has merge conflicts with main. Could you rebase (git fetch origin && git rebase origin/main) and push? Happy to take a closer look once it's clean."
+      "suggested_reply": "@DDKinger — thanks for the PR! It currently has merge conflicts with `main`. Could you rebase (`git fetch origin && git rebase origin/main`) and push? Happy to take a closer look once it's clean."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -155,8 +161,8 @@
       "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 2,
-      "severity": "papercut",
+      "score": 3,
+      "severity": "bug",
       "sentiment": "",
       "next_action_glyph": "⏸",
       "next_action": "wait_on_author",
@@ -191,16 +197,15 @@
       "is_community": true,
       "score": 3,
       "severity": "bug",
-      "sentiment": "confused",
+      "sentiment": "blocked",
       "next_action_glyph": "💬",
       "next_action": "reply",
       "suggested_labels": [
         "Issue-Bug",
-        "Area-AgentPane",
-        "Agent-Claude",
-        "Needs-Author-Feedback"
+        "Needs-Triage",
+        "Area-AgentPane"
       ],
-      "suggested_reply": "Hi @MartinSusky, could you grab a WTA log next time you hit this?\n\n1. Reproduce the issue by opening the Agent pane with Claude selected.\n2. Zip `%LOCALAPPDATA%\\Packages\\*IntelligentTerminal*\\LocalCache\\Local\\IntelligentTerminal\\logs\\` (or `%LOCALAPPDATA%\\IntelligentTerminal\\logs\\` for unpackaged dev builds).\n3. Attach the zip here.\n\nIf the issue is hard to reproduce, set `WTA_LOG=debug` first to get the noisier traces. <!-- from image -->The screenshot shows the Agent sessions list stuck at `Loading...`.<!-- /from image -->"
+      "suggested_reply": "Hi @MartinSusky, to narrow this down could you share: (1) Which shell you are running (PowerShell / cmd / WSL distro)? (2) Whether the same flow works if you select a different agent (Copilot, Gemini, etc.)? (3) Whether the loading stuck happens every time or just sometimes? (4) Any errors or messages in the logs (if available)?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -208,21 +213,23 @@
       "title": "Agent Pane do not render markdown correctly",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/387",
       "kind": "issue",
-      "category": "agent-pane",
+      "category": "bug",
       "days_no_reply": 0,
       "is_community": false,
       "score": 2,
       "severity": "bug",
       "sentiment": "neutral",
-      "next_action_glyph": "💬",
-      "next_action": "reply",
+      "next_action_glyph": "👤",
+      "next_action": "assign",
       "suggested_labels": [
         "Issue-Bug",
-        "Area-AgentPane",
-        "Agent-Copilot",
-        "Needs-Author-Feedback"
+        "Needs-Triage",
+        {
+          "name": "Area-AgentPane",
+          "reason": "Issue explicitly mentions 'Agent Pane do not render markdown correctly'"
+        }
       ],
-      "suggested_reply": "Hi @haonanttt, could you share which **Intelligent Terminal version** you're on? You can find it in the **About** dialog (menu \"V\" button → About at the bottom). The **Windows build number** is also helpful — run `ver` or `[Environment]::OSVersion` in a shell.\n\n<!-- from image -->The screenshot shows Copilot output with literal markdown syntax such as `**GitHub Copilot CLI**` instead of rendered bold.<!-- /from image -->\n\nThis helps us tell whether it's already fixed in a newer build."
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -230,24 +237,17 @@
       "title": "Copilot commands lack OS/Shell environment context (suggests non-existent/non-coreutils commands in Windows Terminal + PowerShell)",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/388",
       "kind": "issue",
-      "category": "auto-fix",
+      "category": "agent-pane",
       "days_no_reply": 0,
       "is_community": true,
       "score": 4,
       "severity": "bug",
       "sentiment": "frustrated",
-      "next_action_glyph": "🏷️",
-      "next_action": "label_only",
+      "next_action_glyph": "👤",
+      "next_action": "assign",
       "suggested_labels": [
         "Issue-Bug",
-        "Area-AutoFix",
-        "Area-AgentPane",
-        "Agent-Copilot",
-        "Needs-Triage",
-        {
-          "name": "Sentiment-Frustrated",
-          "reason": "Reporter notes token wastage and commands that fail immediately, but no sentiment label exists in the live label set."
-        }
+        "Area-AgentPane"
       ],
       "suggested_reply": ""
     },
@@ -263,10 +263,10 @@
       "score": 1,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "🟥",
-      "next_action": "investigate_ci",
+      "next_action_glyph": "🛠",
+      "next_action": "nudge_rebase",
       "suggested_labels": [],
-      "suggested_reply": "Hi @haonanttt, CI is failing on `check-spelling` — quick scan points at spelling/notice metadata rather than the Markdown-rendering logic. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/85810195477? If it is flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": "Hi @haonanttt, thanks for the PR! It currently has merge conflicts with main. Could you rebase (git fetch origin && git rebase origin/main) and push? Happy to take a closer look once it's clean."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -277,13 +277,13 @@
       "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 1,
+      "score": 2,
       "severity": "bug",
       "sentiment": "",
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — the bot flagged the forbidden pattern `non-existent` in `tools/wta/src/main.rs` and suggests `nonexistent`. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/85811533780? Once that is green, this should be ready for normal review."
+      "suggested_reply": "Hi @DDKinger, CI is failing on check-spelling — quick scan suggests the forbidden-pattern error on 'non-existent' vs 'nonexistent' might be addressable. Could you take a look at the [action log](https://github.com/microsoft/intelligent-terminal/actions/runs/28925151069/job/85810936077)? If it's a false positive or a legacy pattern, you may want to check the .github/actions/spelling/ config. If the CI failure is unrelated to your changes, you can push an empty commit (git commit --allow-empty -m \"ci: rerun\") to re-run."
     }
   ]
 }
