@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T15:07:31Z",
+  "generated_at": "2026-07-08T22:10:06Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -10,17 +10,23 @@
     "upstream-sync"
   ],
   "totals": {
-    "open_issues": 0,
-    "open_prs": 7
+    "open_issues": 4,
+    "open_prs": 10
   },
-  "category_counts": {},
+  "category_counts": {
+    "agent-pane": 3,
+    "auto-fix": 1
+  },
   "per_repo": {
     "microsoft/intelligent-terminal": {
       "totals": {
-        "open_issues": 0,
-        "open_prs": 7
+        "open_issues": 4,
+        "open_prs": 10
       },
-      "category_counts": {},
+      "category_counts": {
+        "agent-pane": 3,
+        "auto-fix": 1
+      },
       "trends": [
         {
           "topic": "autofix triggers on stashed pane",
@@ -70,6 +76,27 @@
   "issues": [
     {
       "repo": "microsoft/intelligent-terminal",
+      "number": 269,
+      "title": "Token consumption",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/269",
+      "kind": "issue",
+      "category": "agent-pane",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 1,
+      "severity": "none",
+      "sentiment": "positive",
+      "next_action_glyph": "🏷️",
+      "next_action": "label_only",
+      "suggested_labels": [
+        "Issue-Feature",
+        "Area-AgentPane",
+        "Agent-Copilot"
+      ],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
       "number": 367,
       "title": "WTA ACP 0.10→1.0 migration",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/367",
@@ -107,6 +134,23 @@
     },
     {
       "repo": "microsoft/intelligent-terminal",
+      "number": 376,
+      "title": "docs: add v0.1.2 release notes",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/376",
+      "kind": "pr",
+      "category": "docs",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 0,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "💤",
+      "next_action": "stash",
+      "suggested_labels": [],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
       "number": 381,
       "title": "Make agent bars follow the tab theme color (#348)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/381",
@@ -121,6 +165,89 @@
       "next_action": "wait_on_author",
       "suggested_labels": [],
       "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 385,
+      "title": "Improve Copilot auth flow after install",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/385",
+      "kind": "pr",
+      "category": "feature",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 0,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "✅",
+      "next_action": "no_action",
+      "suggested_labels": [],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 386,
+      "title": "Stucked on loading",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/386",
+      "kind": "issue",
+      "category": "agent-pane",
+      "days_no_reply": 0,
+      "is_community": true,
+      "score": 2,
+      "severity": "bug",
+      "sentiment": "neutral",
+      "next_action_glyph": "💬",
+      "next_action": "reply",
+      "suggested_labels": [
+        "Issue-Bug",
+        "Area-AgentPane",
+        "Agent-Claude",
+        "Needs-Author-Feedback"
+      ],
+      "suggested_reply": "Hi @MartinSusky, could you grab a WTA log next time you hit this?\n\n<!-- from image -->The screenshot shows the Agent sessions panel stuck at `Loading...`.<!-- /from image -->\n\n1. Reproduce the issue.\n2. Zip `%LOCALAPPDATA%\\Packages\\*IntelligentTerminal*\\LocalCache\\Local\\IntelligentTerminal\\logs\\` (or `%LOCALAPPDATA%\\IntelligentTerminal\\logs\\` for unpackaged dev builds).\n3. Attach the zip here.\n\nIf the issue is hard to reproduce, set `WTA_LOG=debug` first to get the noisier traces. Also, the team asked how long it stayed stuck; please include whether it remains stuck after ~30 seconds.\n"
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 387,
+      "title": "Agent Pane do not render markdown correctly",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/387",
+      "kind": "issue",
+      "category": "agent-pane",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 3,
+      "severity": "bug",
+      "sentiment": "neutral",
+      "next_action_glyph": "💬",
+      "next_action": "reply",
+      "suggested_labels": [
+        "Issue-Bug",
+        "Area-AgentPane",
+        "Agent-Copilot",
+        "Status-In-Progress"
+      ],
+      "suggested_reply": "Hi @haonanttt, could you share which **Intelligent Terminal version** you're on? You can find it in the **About** dialog (menu \"V\" button → About at the bottom). The **Windows build number** is also helpful — run `ver` or `[Environment]::OSVersion` in a shell.\n\nThis helps us tell whether it's already fixed in a newer build."
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 388,
+      "title": "Copilot commands lack OS/Shell environment context (suggests non-existent/non-coreutils commands in Windows Terminal + PowerShell)",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/388",
+      "kind": "issue",
+      "category": "auto-fix",
+      "days_no_reply": 0,
+      "is_community": true,
+      "score": 1,
+      "severity": "none",
+      "sentiment": "neutral",
+      "next_action_glyph": "💬",
+      "next_action": "reply",
+      "suggested_labels": [
+        "Issue-Bug",
+        "Resolution-Duplicate",
+        "Area-AutoFix",
+        "Agent-Copilot"
+      ],
+      "suggested_reply": "Hi @indcoder, this looks covered by #345 (\"feat(shell): self-report shell identity via OSC 9001;ShellType\") and the related command-resolution work in #306. <!-- from comment -->Related issues we've resolved in our upcoming fix: #306 , #345<!-- /from comment -->. <!-- from image -->The screenshot shows Copilot suggesting `rg -n \"TargetPort|planner-hosted|Foundry\" AppHost` from a PowerShell pane<!-- /from image -->, which matches the shell/context-awareness gap those fixes address. Please follow the servicing release with those fixes; if it still reproduces there, comment with the exact shell/profile and command transcript and we can reopen."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -180,6 +307,23 @@
       "url": "https://github.com/microsoft/intelligent-terminal/pull/392",
       "kind": "pr",
       "category": "feature",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 0,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "⏸",
+      "next_action": "wait_on_author",
+      "suggested_labels": [],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 393,
+      "title": "docs: document agent pane slash commands and Bash/WSL support",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/393",
+      "kind": "pr",
+      "category": "docs",
       "days_no_reply": 0,
       "is_community": false,
       "score": 0,
