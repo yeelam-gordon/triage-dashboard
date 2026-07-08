@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T22:10:06Z",
+  "generated_at": "2026-07-08T23:06:26Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -10,22 +10,22 @@
     "upstream-sync"
   ],
   "totals": {
-    "open_issues": 4,
+    "open_issues": 5,
     "open_prs": 10
   },
   "category_counts": {
     "agent-pane": 3,
-    "auto-fix": 1
+    "auto-fix": 2
   },
   "per_repo": {
     "microsoft/intelligent-terminal": {
       "totals": {
-        "open_issues": 4,
+        "open_issues": 5,
         "open_prs": 10
       },
       "category_counts": {
         "agent-pane": 3,
-        "auto-fix": 1
+        "auto-fix": 2
       },
       "trends": [
         {
@@ -333,6 +333,27 @@
       "next_action": "wait_on_author",
       "suggested_labels": [],
       "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 394,
+      "title": "Command detection handling on PowerShell 7 not working with regex",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/394",
+      "kind": "issue",
+      "category": "auto-fix",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 2,
+      "severity": "bug",
+      "sentiment": "neutral",
+      "next_action_glyph": "💬",
+      "next_action": "reply",
+      "suggested_labels": [
+        "Issue-Bug",
+        "Area-AutoFix",
+        "Needs-Author-Feedback"
+      ],
+      "suggested_reply": "Hi @hamza-usmani, could you grab a WTA log next time you hit this?\n\n1. Reproduce the issue.\n2. Zip `%LOCALAPPDATA%\\Packages\\*IntelligentTerminal*\\LocalCache\\Local\\IntelligentTerminal\\logs\\` (or `%LOCALAPPDATA%\\IntelligentTerminal\\logs\\` for unpackaged dev builds).\n3. Attach the zip here.\n\nIf the issue is hard to reproduce, set `WTA_LOG=debug` first to get the noisier traces.\n\nThe PS5 vs PS7 difference you called out is the useful repro signal: <!-- from body -->Works in PS5 but not PS7 due to how regex is handled in the shells differently.<!-- /from body -->"
     }
   ]
 }
