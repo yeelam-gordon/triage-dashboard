@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T09:15:53Z",
+  "generated_at": "2026-07-08T13:31:42Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -11,7 +11,7 @@
   ],
   "totals": {
     "open_issues": 4,
-    "open_prs": 7
+    "open_prs": 8
   },
   "category_counts": {
     "agent-pane": 2,
@@ -22,7 +22,7 @@
     "microsoft/intelligent-terminal": {
       "totals": {
         "open_issues": 4,
-        "open_prs": 7
+        "open_prs": 8
       },
       "category_counts": {
         "agent-pane": 2,
@@ -283,6 +283,23 @@
       "next_action": "investigate_ci",
       "suggested_labels": [],
       "suggested_reply": "Hi @DDKinger, CI is failing on check-spelling — quick scan suggests the forbidden-pattern error on 'non-existent' vs 'nonexistent' might be addressable. Could you take a look at the [action log](https://github.com/microsoft/intelligent-terminal/actions/runs/28925151069/job/85810936077)? If it's a false positive or a legacy pattern, you may want to check the .github/actions/spelling/ config. If the CI failure is unrelated to your changes, you can push an empty commit (git commit --allow-empty -m \"ci: rerun\") to re-run."
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 391,
+      "title": "Save workspaces at window scope",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/391",
+      "kind": "pr",
+      "category": "feature",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 0,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "✅",
+      "next_action": "stash",
+      "suggested_labels": [],
+      "suggested_reply": ""
     }
   ]
 }
