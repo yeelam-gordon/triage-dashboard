@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T10:07:22Z",
+  "generated_at": "2026-07-09T15:05:39Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -10,22 +10,20 @@
     "upstream-sync"
   ],
   "totals": {
-    "open_issues": 4,
-    "open_prs": 11
+    "open_issues": 1,
+    "open_prs": 8
   },
   "category_counts": {
-    "agent-pane": 2,
-    "auto-fix": 2
+    "auto-fix": 1
   },
   "per_repo": {
     "microsoft/intelligent-terminal": {
       "totals": {
-        "open_issues": 4,
-        "open_prs": 11
+        "open_issues": 1,
+        "open_prs": 8
       },
       "category_counts": {
-        "agent-pane": 2,
-        "auto-fix": 2
+        "auto-fix": 1
       },
       "trends": [
         {
@@ -76,120 +74,20 @@
   "issues": [
     {
       "repo": "microsoft/intelligent-terminal",
-      "number": 367,
-      "title": "WTA ACP 0.10→1.0 migration",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/367",
-      "kind": "pr",
-      "category": "refactor",
-      "days_no_reply": 0,
-      "is_community": false,
-      "score": 0,
-      "severity": "none",
-      "sentiment": "",
-      "next_action_glyph": "💤",
-      "next_action": "stash",
-      "suggested_labels": [],
-      "suggested_reply": ""
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
-      "number": 373,
-      "title": "Eternal Terminal (step 1): per-tab /save-tab + /restore-tab (layout + content)",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/373",
-      "kind": "pr",
-      "category": "feature",
-      "days_no_reply": 0,
-      "is_community": false,
-      "score": 0,
-      "severity": "none",
-      "sentiment": "",
-      "next_action_glyph": "🟥",
-      "next_action": "investigate_ci",
-      "suggested_labels": [],
-      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan shows the spelling job is failing its dictionary retrieval/report step. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/86054855473? If it's flaky, push an empty commit to re-run."
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
       "number": 375,
       "title": "?<prompt>: route WSL delegates through wsl -d <distro>",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/375",
       "kind": "pr",
-      "category": "feature",
+      "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 4,
-      "severity": "none",
+      "score": 6,
+      "severity": "bug",
       "sentiment": "",
-      "next_action_glyph": "🛠",
-      "next_action": "nudge_rebase",
+      "next_action_glyph": "👀",
+      "next_action": "request_reviewer",
       "suggested_labels": [],
-      "suggested_reply": "Hi @adityabagchi24, thanks for the PR! It currently has merge conflicts with main. Could you rebase (git fetch origin && git rebase origin/main) and push? Happy to take a closer look once it's clean."
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
-      "number": 386,
-      "title": "Stucked on loading",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/386",
-      "kind": "issue",
-      "category": "agent-pane",
-      "days_no_reply": 0,
-      "is_community": true,
-      "score": 3,
-      "severity": "bug",
-      "sentiment": "confused",
-      "next_action_glyph": "💬",
-      "next_action": "reply",
-      "suggested_labels": [
-        "Issue-Bug",
-        "Area-AgentPane",
-        "Agent-Claude",
-        "Needs-Author-Feedback"
-      ],
-      "suggested_reply": "Hi @MartinSusky, could you grab a WTA log next time you hit this?\n\n1. Reproduce the issue.\n2. Zip\n   `%LOCALAPPDATA%\\Packages\\*IntelligentTerminal*\\LocalCache\\Local\\IntelligentTerminal\\logs\\`\n   (or `%LOCALAPPDATA%\\IntelligentTerminal\\logs\\` for unpackaged dev builds).\n3. Attach the zip here.\n\nIf the issue is hard to reproduce, set `WTA_LOG=debug` first to get the noisier traces."
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
-      "number": 387,
-      "title": "Agent Pane do not render markdown correctly",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/387",
-      "kind": "issue",
-      "category": "agent-pane",
-      "days_no_reply": 0,
-      "is_community": false,
-      "score": 3,
-      "severity": "bug",
-      "sentiment": "neutral",
-      "next_action_glyph": "💬",
-      "next_action": "reply",
-      "suggested_labels": [
-        "Issue-Bug",
-        "Area-AgentPane",
-        "Agent-Copilot",
-        "Resolution-Fix-Committed"
-      ],
-      "suggested_reply": "Thanks @haonanttt — this was fixed by #389 (`Render markdown in agent pane replies`), which merged on 2026-07-09 and closed this issue. The screenshot showed <!-- from image -->visible Markdown delimiters such as `**GitHub Copilot CLI**` in the Copilot agent pane<!-- /from image -->; the merged change now renders Markdown in agent replies instead of showing the raw markers."
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
-      "number": 388,
-      "title": "Copilot commands lack OS/Shell environment context (suggests non-existent/non-coreutils commands in Windows Terminal + PowerShell)",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/388",
-      "kind": "issue",
-      "category": "auto-fix",
-      "days_no_reply": 0,
-      "is_community": true,
-      "score": 0,
-      "severity": "none",
-      "sentiment": "neutral",
-      "next_action_glyph": "🔁",
-      "next_action": "close_dup",
-      "suggested_labels": [
-        "Issue-Bug",
-        "Resolution-Duplicate",
-        "Agent-Copilot",
-        "Area-AutoFix"
-      ],
-      "suggested_reply": "Hi @indcoder, this looks like a duplicate of #306 (\"Investigate commands on PATH before answering / autofixing\"). We have a fix in place that addresses the agent suggesting the correct commands based on the shell you are actually working in — it will be included in our upcoming servicing release. I am closing this in favor of the tracked fix; please add a reaction on #306 to help gauge impact. If you believe your scenario is different from what is covered there, comment here and we will reopen."
+      "suggested_reply": "Needs-Triage — community PR #375 touches `tools/wta/src/main.rs`, `tools/wta/src/coordinator.rs` (Area-CLI candidate from ownership table, but the team table is empty so the owner is unconfirmed). 7-day SLA clock starts today. Could a maintainer route this to the right reviewer?"
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -204,7 +102,7 @@
       "severity": "bug",
       "sentiment": "",
       "next_action_glyph": "✅",
-      "next_action": "stash",
+      "next_action": "ready_to_merge",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -221,24 +119,7 @@
       "severity": "papercut",
       "sentiment": "",
       "next_action_glyph": "✅",
-      "next_action": "stash",
-      "suggested_labels": [],
-      "suggested_reply": ""
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
-      "number": 391,
-      "title": "Save workspaces at window scope",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/391",
-      "kind": "pr",
-      "category": "feature",
-      "days_no_reply": 0,
-      "is_community": false,
-      "score": 0,
-      "severity": "none",
-      "sentiment": "",
-      "next_action_glyph": "💤",
-      "next_action": "stash",
+      "next_action": "ready_to_merge",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -254,7 +135,7 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "✅",
+      "next_action_glyph": "💤",
       "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
@@ -285,18 +166,16 @@
       "category": "auto-fix",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 3,
+      "score": 2,
       "severity": "bug",
       "sentiment": "neutral",
-      "next_action_glyph": "💬",
-      "next_action": "reply",
+      "next_action_glyph": "🏷️",
+      "next_action": "label_only",
       "suggested_labels": [
         "Issue-Bug",
-        "Area-AutoFix",
-        "Needs-Repro",
-        "Needs-Author-Feedback"
+        "Area-AutoFix"
       ],
-      "suggested_reply": "Hi @hamza-usmani, could you grab a WTA log next time you hit this?\n\n1. Reproduce the issue in the PowerShell 7 profile.\n2. Zip `%LOCALAPPDATA%\\Packages\\*IntelligentTerminal*\\LocalCache\\Local\\IntelligentTerminal\\logs\\` (or `%LOCALAPPDATA%\\IntelligentTerminal\\logs\\` for unpackaged dev builds).\n3. Attach the zip here.\n\nIf the issue is hard to reproduce, set `WTA_LOG=debug` first to get the noisier traces.\n\nPS: Please also include the exact regex command that fails; the current repro says <!-- from body -->Run a regex command that fails/incorrect.<!-- /from body -->, and having that literal input will help us add the right PS7-specific case."
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -304,13 +183,13 @@
       "title": "Rebuild restored agent history from replay",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/395",
       "kind": "pr",
-      "category": "bug-fix",
-      "days_no_reply": 1,
+      "category": "refactor",
+      "days_no_reply": 0,
       "is_community": false,
-      "score": 1,
-      "severity": "papercut",
+      "score": 0,
+      "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "✅",
+      "next_action_glyph": "📦",
       "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
@@ -327,7 +206,7 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "📦",
+      "next_action_glyph": "✅",
       "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
