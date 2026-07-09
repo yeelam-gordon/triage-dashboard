@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T07:02:45Z",
+  "generated_at": "2026-07-09T07:59:44Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -10,21 +10,21 @@
     "upstream-sync"
   ],
   "totals": {
-    "open_issues": 3,
+    "open_issues": 4,
     "open_prs": 9
   },
   "category_counts": {
-    "agent-pane": 1,
+    "agent-pane": 2,
     "auto-fix": 2
   },
   "per_repo": {
     "microsoft/intelligent-terminal": {
       "totals": {
-        "open_issues": 3,
+        "open_issues": 4,
         "open_prs": 9
       },
       "category_counts": {
-        "agent-pane": 1,
+        "agent-pane": 2,
         "auto-fix": 2
       },
       "trends": [
@@ -129,6 +129,28 @@
         "Needs-Author-Feedback"
       ],
       "suggested_reply": "Hi @MartinSusky, could you grab a WTA log next time you hit this?\n\n1. Reproduce the issue.\n2. Zip\n   `%LOCALAPPDATA%\\Packages\\*IntelligentTerminal*\\LocalCache\\Local\\IntelligentTerminal\\logs\\`\n   (or `%LOCALAPPDATA%\\IntelligentTerminal\\logs\\` for unpackaged dev builds).\n3. Attach the zip here.\n\nIf the issue is hard to reproduce, set `WTA_LOG=debug` first to get the noisier traces."
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 387,
+      "title": "Agent Pane do not render markdown correctly",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/387",
+      "kind": "issue",
+      "category": "agent-pane",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 3,
+      "severity": "bug",
+      "sentiment": "neutral",
+      "next_action_glyph": "💬",
+      "next_action": "reply",
+      "suggested_labels": [
+        "Issue-Bug",
+        "Area-AgentPane",
+        "Agent-Copilot",
+        "Resolution-Fix-Committed"
+      ],
+      "suggested_reply": "Thanks @haonanttt — this was fixed by #389 (`Render markdown in agent pane replies`), which merged on 2026-07-09 and closed this issue. The screenshot showed <!-- from image -->visible Markdown delimiters such as `**GitHub Copilot CLI**` in the Copilot agent pane<!-- /from image -->; the merged change now renders Markdown in agent replies instead of showing the raw markers."
     },
     {
       "repo": "microsoft/intelligent-terminal",
