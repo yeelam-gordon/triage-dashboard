@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T00:54:29Z",
+  "generated_at": "2026-07-09T01:37:46Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -106,7 +106,7 @@
       "next_action_glyph": "🛠",
       "next_action": "nudge_rebase",
       "suggested_labels": [],
-      "suggested_reply": "Hi @DDKinger, thanks for the PR! It currently has merge conflicts with `main`. Could you rebase (`git fetch origin && git rebase origin/main`) and push? Happy to take a closer look once it is clean."
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -117,19 +117,18 @@
       "category": "agent-pane",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 3,
+      "score": 2,
       "severity": "bug",
-      "sentiment": "confused",
+      "sentiment": "neutral",
       "next_action_glyph": "💬",
       "next_action": "reply",
       "suggested_labels": [
         "Issue-Bug",
         "Area-AgentPane",
         "Agent-Claude",
-        "Needs-Author-Feedback",
-        "Needs-Triage"
+        "Needs-Author-Feedback"
       ],
-      "suggested_reply": "Hi @MartinSusky, could you grab a WTA log next time you hit this?\n\n1. Reproduce the issue.\n2. Zip\n   `%LOCALAPPDATA%\\Packages\\*IntelligentTerminal*\\LocalCache\\Local\\IntelligentTerminal\\logs\\`\n   (or `%LOCALAPPDATA%\\IntelligentTerminal\\logs\\` for unpackaged dev builds).\n3. Attach the zip here.\n\nIf the issue is hard to reproduce, set `WTA_LOG=debug` first to get the noisier traces."
+      "suggested_reply": "Hi @MartinSusky, could you grab a WTA log next time you hit this?\n\n1. Reproduce the issue (select Claude and wait until the pane is stuck on loading).\n2. Zip\n   `%LOCALAPPDATA%\\Packages\\*IntelligentTerminal*\\LocalCache\\Local\\IntelligentTerminal\\logs\\`\n   (or `%LOCALAPPDATA%\\IntelligentTerminal\\logs\\` for unpackaged dev builds).\n3. Attach the zip here.\n\nIf the issue is hard to reproduce, set `WTA_LOG=debug` first to get the noisier traces.\n\nThe report says <!-- from body -->Stucked on loading<!-- /from body -->, and the screenshot shows <!-- from image -->a mostly blank dark terminal/agent pane area with no visible error text<!-- /from image -->. If you can also answer Hamza's question about how long it stayed stuck, that will help separate a slow first-run initialization from a real hang."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -140,16 +139,20 @@
       "category": "auto-fix",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 5,
+      "score": 4,
       "severity": "bug",
       "sentiment": "frustrated",
       "next_action_glyph": "✅",
       "next_action": "no_action",
       "suggested_labels": [
         "Issue-Bug",
-        "Area-AutoFix",
         "Agent-Copilot",
-        "Resolution-Fix-Committed"
+        "Area-AutoFix",
+        "Resolution-Duplicate",
+        {
+          "name": "Severity-Bug",
+          "reason": "Bug-level impact without crash/security/regression; no matching live severity label exists."
+        }
       ],
       "suggested_reply": ""
     },
@@ -168,7 +171,7 @@
       "next_action_glyph": "🛠",
       "next_action": "nudge_rebase",
       "suggested_labels": [],
-      "suggested_reply": "Hi @haonanttt, thanks for the PR! It currently has merge conflicts with `main`. Could you rebase (`git fetch origin && git rebase origin/main`) and push? Happy to take a closer look once it's clean."
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -179,13 +182,13 @@
       "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 2,
+      "score": 1,
       "severity": "bug",
       "sentiment": "",
-      "next_action_glyph": "🟥",
-      "next_action": "investigate_ci",
+      "next_action_glyph": "⏸",
+      "next_action": "wait_on_author",
       "suggested_labels": [],
-      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` for the forbidden-pattern match (`non-existent` should be `nonexistent`): https://github.com/microsoft/intelligent-terminal/runs/86011887825. Could you take a look or push a quick spelling fix? Once it reruns green, this should be ready for maintainer review."
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -199,7 +202,7 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "✅",
+      "next_action_glyph": "📦",
       "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
@@ -217,7 +220,7 @@
       "severity": "none",
       "sentiment": "",
       "next_action_glyph": "✅",
-      "next_action": "ready_to_merge",
+      "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -247,17 +250,17 @@
       "category": "auto-fix",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 3,
+      "score": 2,
       "severity": "bug",
       "sentiment": "neutral",
-      "next_action_glyph": "💬",
-      "next_action": "reply",
+      "next_action_glyph": "🏷️",
+      "next_action": "label_only",
       "suggested_labels": [
         "Issue-Bug",
-        "Area-AutoFix",
-        "Needs-Triage"
+        "Needs-Triage",
+        "Area-AutoFix"
       ],
-      "suggested_reply": "Hi @hamza-usmani, to narrow this down could you share:\n\n- The exact regex command that fails in PowerShell 7, plus the corresponding output/error.\n- What PowerShell 5 reports for the same command.\n- Whether the command emits an OSC 133 exit-code marker differently in PowerShell 7, if known.\n\n<!-- from body -->Works in PS5 but not PS7 due to how regex is handled in the shells differently.<!-- /from body --> is the key clue; with one concrete command we can add a focused command-detection test.\n\nHappy to dig in once we can reproduce locally.\n"
+      "suggested_reply": ""
     }
   ]
 }
