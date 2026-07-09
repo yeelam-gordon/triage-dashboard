@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T05:33:20Z",
+  "generated_at": "2026-07-09T06:18:05Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -100,13 +100,13 @@
       "category": "feature",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 0,
+      "score": 2,
       "severity": "none",
       "sentiment": "",
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan suggests it may be the spelling workflow/dictionary fetch rather than the feature code, but could you take a look at https://github.com/microsoft/intelligent-terminal/runs/86034954790? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan suggests it might be unrelated to your changes (the cspell dictionary infrastructure is reporting missing dicts on every push, e.g. `cspell:ruby/dict/ruby.txt`, `cspell:gaming-terms`). Could you take a look at https://github.com/microsoft/intelligent-terminal/pull/373/checks? If it's a flaky infra issue, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -128,7 +128,7 @@
         "Agent-Claude",
         "Needs-Author-Feedback"
       ],
-      "suggested_reply": "Hi @MartinSusky, could you grab a WTA log next time you hit this?\n\n1. Reproduce the issue.\n2. Zip\n   `%LOCALAPPDATA%\\Packages\\*IntelligentTerminal*\\LocalCache\\Local\\IntelligentTerminal\\logs\\`\n   (or `%LOCALAPPDATA%\\IntelligentTerminal\\logs\\` for unpackaged dev\n   builds).\n3. Attach the zip here.\n\nIf the issue is hard to reproduce, set `WTA_LOG=debug` first to get the\nnoisier traces."
+      "suggested_reply": "Hi @MartinSusky, could you grab a WTA log next time you hit this?\n\n1. Reproduce the issue.\n2. Zip\n   `%LOCALAPPDATA%\\Packages\\*IntelligentTerminal*\\LocalCache\\Local\\IntelligentTerminal\\logs\\`\n   (or `%LOCALAPPDATA%\\IntelligentTerminal\\logs\\` for unpackaged dev builds).\n3. Attach the zip here.\n\nIf the issue is hard to reproduce, set `WTA_LOG=debug` first to get the noisier traces."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -139,22 +139,18 @@
       "category": "auto-fix",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 3,
+      "score": 0,
       "severity": "none",
-      "sentiment": "frustrated",
-      "next_action_glyph": "✅",
-      "next_action": "no_action",
+      "sentiment": "neutral",
+      "next_action_glyph": "🔁",
+      "next_action": "close_dup",
       "suggested_labels": [
         "Issue-Bug",
         "Resolution-Duplicate",
-        "Area-AutoFix",
         "Agent-Copilot",
-        {
-          "name": "Sentiment-Frustrated",
-          "reason": "No live Sentiment-* label exists; reporter notes immediate PowerShell failures and token wastage."
-        }
+        "Area-AutoFix"
       ],
-      "suggested_reply": ""
+      "suggested_reply": "Hi @indcoder, this looks like a duplicate of #306 (\"Investigate commands on PATH before answering / autofixing\"). We have a fix in place that addresses the agent suggesting the correct commands based on the shell you are actually working in — it will be included in our upcoming servicing release. I am closing this in favor of the tracked fix; please add a reaction on #306 to help gauge impact. If you believe your scenario is different from what is covered there, comment here and we will reopen."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -165,11 +161,11 @@
       "category": "feature",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 1,
+      "score": 2,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "👀",
-      "next_action": "request_reviewer",
+      "next_action_glyph": "⏸",
+      "next_action": "wait_on_author",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -186,7 +182,7 @@
       "severity": "bug",
       "sentiment": "",
       "next_action_glyph": "✅",
-      "next_action": "stash",
+      "next_action": "ready_to_merge",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -202,8 +198,8 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "✅",
-      "next_action": "stash",
+      "next_action_glyph": "⏸",
+      "next_action": "wait_on_author",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -219,8 +215,8 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "💤",
-      "next_action": "stash",
+      "next_action_glyph": "⏸",
+      "next_action": "wait_on_author",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -233,7 +229,7 @@
       "category": "docs",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 0,
+      "score": 1,
       "severity": "none",
       "sentiment": "",
       "next_action_glyph": "⏸",
@@ -257,10 +253,9 @@
       "next_action": "reply",
       "suggested_labels": [
         "Issue-Bug",
-        "Area-AutoFix",
-        "Needs-Triage"
+        "Area-AutoFix"
       ],
-      "suggested_reply": "Hi @hamza-usmani, could you grab a WTA log next time you hit this?\n\nThe key symptom I am tracking is <!-- from body -->Error not caught by auto-detection. Works in PS5 but not PS7 due to how regex is handled in the shells differently.<!-- /from body -->\n\n1. Reproduce the issue.\n2. Zip\n   `%LOCALAPPDATA%\\Packages\\*IntelligentTerminal*\\LocalCache\\Local\\IntelligentTerminal\\logs\\`\n   (or `%LOCALAPPDATA%\\IntelligentTerminal\\logs\\` for unpackaged dev builds).\n3. Attach the zip here.\n\nIf the issue is hard to reproduce, set `WTA_LOG=debug` first to get the noisier traces."
+      "suggested_reply": "Hi @hamza-usmani, could you grab a WTA log next time you hit this?\n\n1. Reproduce the issue.\n2. Zip\n   `%LOCALAPPDATA%\\Packages\\*IntelligentTerminal*\\LocalCache\\Local\\IntelligentTerminal\\logs\\`\n   (or `%LOCALAPPDATA%\\IntelligentTerminal\\logs\\` for unpackaged dev builds).\n3. Attach the zip here.\n\nIf the issue is hard to reproduce, set `WTA_LOG=debug` first to get the noisier traces."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -274,7 +269,7 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "✅",
+      "next_action_glyph": "💤",
       "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
@@ -291,8 +286,8 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "📦",
-      "next_action": "stash",
+      "next_action_glyph": "⏸",
+      "next_action": "wait_on_author",
       "suggested_labels": [],
       "suggested_reply": ""
     }
