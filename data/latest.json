@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T07:59:44Z",
+  "generated_at": "2026-07-09T08:57:37Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -11,7 +11,7 @@
   ],
   "totals": {
     "open_issues": 4,
-    "open_prs": 9
+    "open_prs": 10
   },
   "category_counts": {
     "agent-pane": 2,
@@ -21,7 +21,7 @@
     "microsoft/intelligent-terminal": {
       "totals": {
         "open_issues": 4,
-        "open_prs": 9
+        "open_prs": 10
       },
       "category_counts": {
         "agent-pane": 2,
@@ -312,6 +312,23 @@
       "sentiment": "",
       "next_action_glyph": "✅",
       "next_action": "stash",
+      "suggested_labels": [],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 397,
+      "title": "WTA ACP 1.0 Phase 1: master N:1 routing -> SessionRouter + window_id in _meta.wta",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/397",
+      "kind": "pr",
+      "category": "refactor",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 0,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "⏸",
+      "next_action": "wait_on_author",
       "suggested_labels": [],
       "suggested_reply": ""
     }
