@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T08:57:37Z",
+  "generated_at": "2026-07-09T10:07:22Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -11,7 +11,7 @@
   ],
   "totals": {
     "open_issues": 4,
-    "open_prs": 10
+    "open_prs": 11
   },
   "category_counts": {
     "agent-pane": 2,
@@ -21,7 +21,7 @@
     "microsoft/intelligent-terminal": {
       "totals": {
         "open_issues": 4,
-        "open_prs": 10
+        "open_prs": 11
       },
       "category_counts": {
         "agent-pane": 2,
@@ -106,7 +106,24 @@
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan points to the spelling check for this PR. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/86054855473? If it is flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan shows the spelling job is failing its dictionary retrieval/report step. Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/86054855473? If it's flaky, push an empty commit to re-run."
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 375,
+      "title": "?<prompt>: route WSL delegates through wsl -d <distro>",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/375",
+      "kind": "pr",
+      "category": "feature",
+      "days_no_reply": 0,
+      "is_community": true,
+      "score": 4,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "🛠",
+      "next_action": "nudge_rebase",
+      "suggested_labels": [],
+      "suggested_reply": "Hi @adityabagchi24, thanks for the PR! It currently has merge conflicts with main. Could you rebase (git fetch origin && git rebase origin/main) and push? Happy to take a closer look once it's clean."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -180,14 +197,14 @@
       "title": "Render markdown in agent pane replies",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/389",
       "kind": "pr",
-      "category": "feature",
+      "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 1,
-      "severity": "none",
+      "score": 3,
+      "severity": "bug",
       "sentiment": "",
-      "next_action_glyph": "⏸",
-      "next_action": "wait_on_author",
+      "next_action_glyph": "✅",
+      "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -201,10 +218,10 @@
       "days_no_reply": 0,
       "is_community": false,
       "score": 1,
-      "severity": "bug",
+      "severity": "papercut",
       "sentiment": "",
       "next_action_glyph": "✅",
-      "next_action": "ready_to_merge",
+      "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -288,7 +305,7 @@
       "url": "https://github.com/microsoft/intelligent-terminal/pull/395",
       "kind": "pr",
       "category": "bug-fix",
-      "days_no_reply": 0,
+      "days_no_reply": 1,
       "is_community": false,
       "score": 1,
       "severity": "papercut",
@@ -310,7 +327,7 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "✅",
+      "next_action_glyph": "📦",
       "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
