@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-09T15:31:27Z",
+  "generated_at": "2026-07-09T16:59:28Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -11,7 +11,7 @@
   ],
   "totals": {
     "open_issues": 4,
-    "open_prs": 9
+    "open_prs": 11
   },
   "category_counts": {
     "agent-pane": 2,
@@ -21,7 +21,7 @@
     "microsoft/intelligent-terminal": {
       "totals": {
         "open_issues": 4,
-        "open_prs": 9
+        "open_prs": 11
       },
       "category_counts": {
         "agent-pane": 2,
@@ -74,6 +74,23 @@
     }
   ],
   "issues": [
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 367,
+      "title": "WTA ACP 0.10→1.0 migration",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/367",
+      "kind": "pr",
+      "category": "refactor",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 0,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "✅",
+      "next_action": "ready_to_merge",
+      "suggested_labels": [],
+      "suggested_reply": ""
+    },
     {
       "repo": "microsoft/intelligent-terminal",
       "number": 373,
@@ -204,6 +221,23 @@
       "sentiment": "",
       "next_action_glyph": "✅",
       "next_action": "ready_to_merge",
+      "suggested_labels": [],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 391,
+      "title": "Save workspaces at window scope",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/391",
+      "kind": "pr",
+      "category": "feature",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 0,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "💤",
+      "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
     },
