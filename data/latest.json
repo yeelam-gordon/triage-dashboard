@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T10:45:30Z",
+  "generated_at": "2026-07-10T23:31:05Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -14,8 +14,7 @@
     "open_prs": 13
   },
   "category_counts": {
-    "agent-pane": 3,
-    "settings": 1
+    "agent-pane": 4
   },
   "per_repo": {
     "microsoft/intelligent-terminal": {
@@ -24,8 +23,7 @@
         "open_prs": 13
       },
       "category_counts": {
-        "agent-pane": 3,
-        "settings": 1
+        "agent-pane": 4
       },
       "trends": [
         {
@@ -80,18 +78,17 @@
       "title": "[Feature] Support BYOK and OpenAI Compatible model endpoints",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/192",
       "kind": "issue",
-      "category": "settings",
+      "category": "agent-pane",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 2,
+      "score": 1,
       "severity": "none",
       "sentiment": "positive",
       "next_action_glyph": "🏷️",
       "next_action": "label_only",
       "suggested_labels": [
         "Issue-Feature",
-        "Area-Settings",
-        "Agent-Custom",
+        "Area-AgentPane",
         "Needs-Triage"
       ],
       "suggested_reply": ""
@@ -127,13 +124,13 @@
       "category": "feature",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 0,
+      "score": 1,
       "severity": "none",
       "sentiment": "",
       "next_action_glyph": "🛠",
       "next_action": "nudge_rebase",
       "suggested_labels": [],
-      "suggested_reply": "Hi @DDKinger, thanks for the PR! It currently has merge conflicts with `main`. Could you rebase (`git fetch origin && git rebase origin/main`) and push? Happy to take a closer look once it's clean."
+      "suggested_reply": "Hi @DDKinger, thanks for the PR! It currently has merge conflicts with main. Could you rebase (git fetch origin && git rebase origin/main) and push? Happy to take a closer look once it's clean."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -188,12 +185,11 @@
       "score": 3,
       "severity": "bug",
       "sentiment": "neutral",
-      "next_action_glyph": "✅",
-      "next_action": "no_action",
+      "next_action_glyph": "🏷️",
+      "next_action": "label_only",
       "suggested_labels": [
         "Issue-Bug",
         "Area-AgentPane",
-        "Agent-Copilot",
         "Resolution-Fix-Committed"
       ],
       "suggested_reply": ""
@@ -224,11 +220,11 @@
       "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 1,
-      "severity": "bug",
+      "score": 3,
+      "severity": "regression",
       "sentiment": "",
-      "next_action_glyph": "💤",
-      "next_action": "stash",
+      "next_action_glyph": "✅",
+      "next_action": "ready_to_merge",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -309,8 +305,8 @@
       "category": "refactor",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 0,
-      "severity": "none",
+      "score": 4,
+      "severity": "risk",
       "sentiment": "",
       "next_action_glyph": "⏸",
       "next_action": "wait_on_author",
@@ -343,7 +339,7 @@
       "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 1,
+      "score": 2,
       "severity": "bug",
       "sentiment": "",
       "next_action_glyph": "✅",
@@ -360,10 +356,10 @@
       "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 1,
+      "score": 2,
       "severity": "bug",
       "sentiment": "",
-      "next_action_glyph": "✅",
+      "next_action_glyph": "💤",
       "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
@@ -377,13 +373,13 @@
       "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 1,
+      "score": 2,
       "severity": "bug",
       "sentiment": "",
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` (reported items include `launchability` and an `Otherwise ` wording pattern). Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/86329146489? If it is flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — the report flags the new word `launchability` and an `Otherwise ` forbidden pattern. Could you take a look at https://github.com/microsoft/intelligent-terminal/actions/runs/29082522664/job/86328452771#step:4:1? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     }
   ]
 }
