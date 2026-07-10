@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T07:03:29Z",
+  "generated_at": "2026-07-10T07:38:23Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -10,22 +10,22 @@
     "upstream-sync"
   ],
   "totals": {
-    "open_issues": 3,
-    "open_prs": 9
+    "open_issues": 4,
+    "open_prs": 5
   },
   "category_counts": {
-    "agent-pane": 2,
-    "settings": 1
+    "agent-pane": 3,
+    "cli": 1
   },
   "per_repo": {
     "microsoft/intelligent-terminal": {
       "totals": {
-        "open_issues": 3,
-        "open_prs": 9
+        "open_issues": 4,
+        "open_prs": 5
       },
       "category_counts": {
-        "agent-pane": 2,
-        "settings": 1
+        "agent-pane": 3,
+        "cli": 1
       },
       "trends": [
         {
@@ -80,7 +80,7 @@
       "title": "[Feature] Support BYOK and OpenAI Compatible model endpoints",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/192",
       "kind": "issue",
-      "category": "settings",
+      "category": "agent-pane",
       "days_no_reply": 0,
       "is_community": true,
       "score": 2,
@@ -90,32 +90,37 @@
       "next_action": "label_only",
       "suggested_labels": [
         "Issue-Feature",
-        "Area-Settings",
         "Area-AgentPane",
-        "Needs-Triage",
+        "Area-Settings",
+        "Agent-Custom",
         {
           "name": "Agent-OpenAI-Compatible",
-          "reason": "No live Agent-* label covers generic BYOK/OpenAI-compatible model endpoints across providers."
+          "reason": "No existing label captures OpenAI-compatible/BYOK endpoint provider support as distinct from current agent-specific labels."
         }
       ],
       "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
-      "number": 373,
-      "title": "Eternal Terminal (step 1): per-tab /save-tab + /restore-tab (layout + content)",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/373",
-      "kind": "pr",
-      "category": "feature",
+      "number": 372,
+      "title": "Delegate (?<prompt>) from a WSL pane should launch Copilot inside WSL, not the Windows host",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/372",
+      "kind": "issue",
+      "category": "cli",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 2,
+      "score": 3,
       "severity": "none",
-      "sentiment": "",
-      "next_action_glyph": "🟥",
-      "next_action": "investigate_ci",
-      "suggested_labels": [],
-      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan suggests it may be unrelated to your changes, but could you take a look at https://github.com/microsoft/intelligent-terminal/runs/86054855473? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "sentiment": "blocked",
+      "next_action_glyph": "✅",
+      "next_action": "no_action",
+      "suggested_labels": [
+        "Issue-Feature",
+        "Area-CLI",
+        "Agent-Copilot",
+        "Resolution-Fix-Committed"
+      ],
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -130,9 +135,9 @@
       "severity": "bug",
       "sentiment": "",
       "next_action_glyph": "✅",
-      "next_action": "stash",
+      "next_action": "thank_contributor",
       "suggested_labels": [],
-      "suggested_reply": ""
+      "suggested_reply": "Thanks @adityabagchi24 for the fix — PR #375 has been merged and closes #372."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -141,7 +146,7 @@
       "url": "https://github.com/microsoft/intelligent-terminal/issues/386",
       "kind": "issue",
       "category": "agent-pane",
-      "days_no_reply": 1,
+      "days_no_reply": 0,
       "is_community": true,
       "score": 7,
       "severity": "crash",
@@ -150,13 +155,12 @@
       "next_action": "reply",
       "suggested_labels": [
         "Issue-Bug",
-        "Needs-Triage",
         "Area-AgentPane",
         "Agent-Claude",
         "Severity-High",
         "Needs-Author-Feedback"
       ],
-      "suggested_reply": "Sorry you hit a hang @MartinSusky. Since the agent pane stayed on loading for an hour, we need backend diagnostic data to correlate the hang to a stack trace. Please capture it via Feedback Hub: <https://aka.ms/intelligent-terminal-feedback>. Pick the matching category, hit \"Share My Feedback\" after submitting, and paste the link here.\n\nPS: If you can also zip `%LOCALAPPDATA%\\Packages\\*IntelligentTerminal*\\LocalCache\\Local\\IntelligentTerminal\\logs\\` (or `%LOCALAPPDATA%\\IntelligentTerminal\\logs\\` for unpackaged dev builds) after reproducing, that will help us see where Claude initialization stalled."
+      "suggested_reply": "Sorry you hit this loading hang @MartinSusky. For hangs that persist beyond the expected startup window, the most useful diagnostic is a Feedback Hub submission so we can correlate backend traces: https://aka.ms/intelligent-terminal-feedback. Pick the matching category, hit \"Share My Feedback\" after submitting, and paste the link here.\n\nI can see from the screenshot that the Agent pane is stuck at <!-- from image -->Agent sessions / Loading...<!-- /from image -->, and your follow-up says <!-- from comment -->It looks like it's frozen, it's been an hour and it's still loading<!-- /from comment -->, so this is well past the normal 10–30 second first-run delay.\n\nPS: If you can also attach WTA logs from `%LOCALAPPDATA%\\Packages\\*IntelligentTerminal*\\LocalCache\\Local\\IntelligentTerminal\\logs\\` (or `%LOCALAPPDATA%\\IntelligentTerminal\\logs\\` for unpackaged builds), that will help us diagnose the Claude agent startup path."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -175,6 +179,7 @@
       "suggested_labels": [
         "Issue-Bug",
         "Area-AgentPane",
+        "Agent-Copilot",
         "Resolution-Fix-Committed"
       ],
       "suggested_reply": ""
@@ -191,76 +196,8 @@
       "score": 3,
       "severity": "bug",
       "sentiment": "",
-      "next_action_glyph": "💤",
-      "next_action": "stash",
-      "suggested_labels": [],
-      "suggested_reply": ""
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
-      "number": 390,
-      "title": "fix: keep a misconfigured delegate agent's tab open instead of flashing shut",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/390",
-      "kind": "pr",
-      "category": "bug-fix",
-      "days_no_reply": 0,
-      "is_community": false,
-      "score": 2,
-      "severity": "bug",
-      "sentiment": "",
       "next_action_glyph": "✅",
-      "next_action": "ready_to_merge",
-      "suggested_labels": [],
-      "suggested_reply": ""
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
-      "number": 392,
-      "title": "Make workspace restore window-aware",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/392",
-      "kind": "pr",
-      "category": "feature",
-      "days_no_reply": 0,
-      "is_community": false,
-      "score": 0,
-      "severity": "none",
-      "sentiment": "",
-      "next_action_glyph": "✅",
-      "next_action": "stash",
-      "suggested_labels": [],
-      "suggested_reply": ""
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
-      "number": 395,
-      "title": "Rebuild restored agent history from replay",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/395",
-      "kind": "pr",
-      "category": "refactor",
-      "days_no_reply": 0,
-      "is_community": false,
-      "score": 0,
-      "severity": "none",
-      "sentiment": "",
-      "next_action_glyph": "💤",
-      "next_action": "stash",
-      "suggested_labels": [],
-      "suggested_reply": ""
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
-      "number": 396,
-      "title": "Drop agent pane chat history file",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/396",
-      "kind": "pr",
-      "category": "refactor",
-      "days_no_reply": 0,
-      "is_community": false,
-      "score": 0,
-      "severity": "none",
-      "sentiment": "",
-      "next_action_glyph": "💤",
-      "next_action": "stash",
+      "next_action": "none",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -290,11 +227,28 @@
       "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 3,
+      "score": 2,
       "severity": "bug",
       "sentiment": "",
-      "next_action_glyph": "🛠",
-      "next_action": "nudge_rebase",
+      "next_action_glyph": "👀",
+      "next_action": "request_reviewer",
+      "suggested_labels": [],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 399,
+      "title": "Ignore Copilot sidekick hook sessions",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/399",
+      "kind": "pr",
+      "category": "bug-fix",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 1,
+      "severity": "bug",
+      "sentiment": "",
+      "next_action_glyph": "⏸",
+      "next_action": "wait_on_author",
       "suggested_labels": [],
       "suggested_reply": ""
     }
