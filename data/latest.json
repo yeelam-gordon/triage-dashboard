@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T09:58:51Z",
+  "generated_at": "2026-07-10T10:45:30Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -10,21 +10,21 @@
     "upstream-sync"
   ],
   "totals": {
-    "open_issues": 3,
-    "open_prs": 10
+    "open_issues": 4,
+    "open_prs": 13
   },
   "category_counts": {
-    "agent-pane": 2,
+    "agent-pane": 3,
     "settings": 1
   },
   "per_repo": {
     "microsoft/intelligent-terminal": {
       "totals": {
-        "open_issues": 3,
-        "open_prs": 10
+        "open_issues": 4,
+        "open_prs": 13
       },
       "category_counts": {
-        "agent-pane": 2,
+        "agent-pane": 3,
         "settings": 1
       },
       "trends": [
@@ -86,16 +86,13 @@
       "score": 2,
       "severity": "none",
       "sentiment": "positive",
-      "next_action_glyph": "label",
+      "next_action_glyph": "🏷️",
       "next_action": "label_only",
       "suggested_labels": [
         "Issue-Feature",
         "Area-Settings",
         "Agent-Custom",
-        {
-          "name": "Agent-OpenAI-Compatible",
-          "reason": "No live Agent-* label specifically captures BYOK/OpenAI-compatible endpoint provider support."
-        }
+        "Needs-Triage"
       ],
       "suggested_reply": ""
     },
@@ -108,19 +105,35 @@
       "category": "agent-pane",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 1,
+      "score": 3,
       "severity": "none",
-      "sentiment": "neutral",
-      "next_action_glyph": "🏷️",
-      "next_action": "label_only",
+      "sentiment": "blocked",
+      "next_action_glyph": "✅",
+      "next_action": "no_action",
       "suggested_labels": [
         "Issue-Feature",
         "Area-AgentPane",
-        "Area-CLI",
         "Agent-Copilot",
         "Resolution-Fix-Committed"
       ],
       "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 373,
+      "title": "Eternal Terminal (step 1): per-tab /save-tab + /restore-tab (layout + content)",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/373",
+      "kind": "pr",
+      "category": "feature",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 0,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "🛠",
+      "next_action": "nudge_rebase",
+      "suggested_labels": [],
+      "suggested_reply": "Hi @DDKinger, thanks for the PR! It currently has merge conflicts with `main`. Could you rebase (`git fetch origin && git rebase origin/main`) and push? Happy to take a closer look once it's clean."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -134,7 +147,7 @@
       "score": 1,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "✅",
+      "next_action_glyph": "📦",
       "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
@@ -155,12 +168,52 @@
       "next_action": "reply",
       "suggested_labels": [
         "Issue-Bug",
+        "Needs-Triage",
         "Area-AgentPane",
         "Agent-Claude",
         "Severity-High",
         "Needs-Author-Feedback"
       ],
-      "suggested_reply": "Sorry you hit a hang @MartinSusky. For stuck/frozen app states like this, we need backend diagnostic data, which you can capture via Feedback Hub: https://aka.ms/intelligent-terminal-feedback. Pick the matching category, hit \"Share My Feedback\" after submitting, and paste the link here.\n\n<!-- from comment -->It looks like it's frozen, it's been an hour and it's still loading<!-- /from comment --> is much longer than the expected first-run initialization time, so the diagnostic trace should help us correlate where startup is blocked."
+      "suggested_reply": "Sorry you hit a hang @MartinSusky. For hangs/freezes we need backend diagnostic data, which you can capture via Feedback Hub: <https://aka.ms/intelligent-terminal-feedback>. Pick the matching category, hit \"Share My Feedback\" after submitting, and paste the link here.\n\nI can see in the screenshot that the agent session picker is stuck at <!-- from image -->\"Agent sessions\" / \"Loading...\"<!-- /from image --> after selecting Claude, but without diagnostics we cannot tell whether the helper, master, or Claude CLI startup is blocked.\n\nPS: A WTA log would also help: reproduce the issue, zip `%LOCALAPPDATA%\\Packages\\*IntelligentTerminal*\\LocalCache\\Local\\IntelligentTerminal\\logs\\` (or `%LOCALAPPDATA%\\IntelligentTerminal\\logs\\` for unpackaged dev builds), and attach it here. If it is intermittent, set `WTA_LOG=debug` before reproducing."
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 387,
+      "title": "Agent Pane do not render markdown correctly",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/387",
+      "kind": "issue",
+      "category": "agent-pane",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 3,
+      "severity": "bug",
+      "sentiment": "neutral",
+      "next_action_glyph": "✅",
+      "next_action": "no_action",
+      "suggested_labels": [
+        "Issue-Bug",
+        "Area-AgentPane",
+        "Agent-Copilot",
+        "Resolution-Fix-Committed"
+      ],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 389,
+      "title": "Render markdown in agent pane replies",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/389",
+      "kind": "pr",
+      "category": "feature",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 1,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "📦",
+      "next_action": "stash",
+      "suggested_labels": [],
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -186,7 +239,7 @@
       "url": "https://github.com/microsoft/intelligent-terminal/pull/391",
       "kind": "pr",
       "category": "feature",
-      "days_no_reply": 2,
+      "days_no_reply": 0,
       "is_community": false,
       "score": 0,
       "severity": "none",
@@ -242,8 +295,25 @@
       "score": 0,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "💤",
+      "next_action_glyph": "📦",
       "next_action": "stash",
+      "suggested_labels": [],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 397,
+      "title": "WTA ACP 1.0 Phase 1: master N:1 routing -> SessionRouter + window_id in _meta.wta",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/397",
+      "kind": "pr",
+      "category": "refactor",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 0,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "⏸",
+      "next_action": "wait_on_author",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -273,8 +343,8 @@
       "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 0,
-      "severity": "none",
+      "score": 1,
+      "severity": "bug",
       "sentiment": "",
       "next_action_glyph": "✅",
       "next_action": "ready_to_merge",
@@ -291,10 +361,10 @@
       "days_no_reply": 0,
       "is_community": false,
       "score": 1,
-      "severity": "papercut",
+      "severity": "bug",
       "sentiment": "",
-      "next_action_glyph": "⏸",
-      "next_action": "wait_on_author",
+      "next_action_glyph": "✅",
+      "next_action": "stash",
       "suggested_labels": [],
       "suggested_reply": ""
     },
@@ -308,12 +378,12 @@
       "days_no_reply": 0,
       "is_community": false,
       "score": 1,
-      "severity": "papercut",
+      "severity": "bug",
       "sentiment": "",
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
       "suggested_labels": [],
-      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan points at spelling metadata/annotations (`launchability` plus an `Otherwise ` forbidden-pattern hit). Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/86329146489? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` (reported items include `launchability` and an `Otherwise ` wording pattern). Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/86329146489? If it is flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     }
   ]
 }
