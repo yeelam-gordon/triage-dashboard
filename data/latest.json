@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T07:38:23Z",
+  "generated_at": "2026-07-10T08:04:41Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -11,21 +11,21 @@
   ],
   "totals": {
     "open_issues": 4,
-    "open_prs": 5
+    "open_prs": 6
   },
   "category_counts": {
     "agent-pane": 3,
-    "cli": 1
+    "settings": 1
   },
   "per_repo": {
     "microsoft/intelligent-terminal": {
       "totals": {
         "open_issues": 4,
-        "open_prs": 5
+        "open_prs": 6
       },
       "category_counts": {
         "agent-pane": 3,
-        "cli": 1
+        "settings": 1
       },
       "trends": [
         {
@@ -80,7 +80,7 @@
       "title": "[Feature] Support BYOK and OpenAI Compatible model endpoints",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/192",
       "kind": "issue",
-      "category": "agent-pane",
+      "category": "settings",
       "days_no_reply": 0,
       "is_community": true,
       "score": 2,
@@ -90,12 +90,10 @@
       "next_action": "label_only",
       "suggested_labels": [
         "Issue-Feature",
-        "Area-AgentPane",
         "Area-Settings",
-        "Agent-Custom",
         {
           "name": "Agent-OpenAI-Compatible",
-          "reason": "No existing label captures OpenAI-compatible/BYOK endpoint provider support as distinct from current agent-specific labels."
+          "reason": "No live Agent-* label represents BYOK/OpenAI-compatible model endpoint provider work across agents."
         }
       ],
       "suggested_reply": ""
@@ -106,16 +104,17 @@
       "title": "Delegate (?<prompt>) from a WSL pane should launch Copilot inside WSL, not the Windows host",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/372",
       "kind": "issue",
-      "category": "cli",
+      "category": "agent-pane",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 3,
+      "score": 1,
       "severity": "none",
-      "sentiment": "blocked",
+      "sentiment": "neutral",
       "next_action_glyph": "✅",
       "next_action": "no_action",
       "suggested_labels": [
         "Issue-Feature",
+        "Area-AgentPane",
         "Area-CLI",
         "Agent-Copilot",
         "Resolution-Fix-Committed"
@@ -135,9 +134,9 @@
       "severity": "bug",
       "sentiment": "",
       "next_action_glyph": "✅",
-      "next_action": "thank_contributor",
+      "next_action": "stash",
       "suggested_labels": [],
-      "suggested_reply": "Thanks @adityabagchi24 for the fix — PR #375 has been merged and closes #372."
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -160,7 +159,7 @@
         "Severity-High",
         "Needs-Author-Feedback"
       ],
-      "suggested_reply": "Sorry you hit this loading hang @MartinSusky. For hangs that persist beyond the expected startup window, the most useful diagnostic is a Feedback Hub submission so we can correlate backend traces: https://aka.ms/intelligent-terminal-feedback. Pick the matching category, hit \"Share My Feedback\" after submitting, and paste the link here.\n\nI can see from the screenshot that the Agent pane is stuck at <!-- from image -->Agent sessions / Loading...<!-- /from image -->, and your follow-up says <!-- from comment -->It looks like it's frozen, it's been an hour and it's still loading<!-- /from comment -->, so this is well past the normal 10–30 second first-run delay.\n\nPS: If you can also attach WTA logs from `%LOCALAPPDATA%\\Packages\\*IntelligentTerminal*\\LocalCache\\Local\\IntelligentTerminal\\logs\\` (or `%LOCALAPPDATA%\\IntelligentTerminal\\logs\\` for unpackaged builds), that will help us diagnose the Claude agent startup path."
+      "suggested_reply": "Sorry you hit this hang @MartinSusky. I can see the agent pane is stuck on `Loading...` under Agent sessions, and your follow-up says <!-- from comment -->it's been an hour and it's still loading<!-- /from comment -->. For hangs/crashes we need backend diagnostic data, which you can capture via Feedback Hub: <https://aka.ms/intelligent-terminal-feedback>. Pick the matching category, hit \"Share My Feedback\" after submitting, and paste the link here.\n\nWithout that we can't correlate the hang to a specific stack trace.\n\nPS: If you can, please also zip `%LOCALAPPDATA%\\Packages\\*IntelligentTerminal*\\LocalCache\\Local\\IntelligentTerminal\\logs\\` (or `%LOCALAPPDATA%\\IntelligentTerminal\\logs\\` for unpackaged dev builds) after reproducing and attach it here; set `WTA_LOG=debug` first for noisier traces."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -249,6 +248,23 @@
       "sentiment": "",
       "next_action_glyph": "⏸",
       "next_action": "wait_on_author",
+      "suggested_labels": [],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 400,
+      "title": "Fix delegate session title leaking injected terminal-context echo",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/400",
+      "kind": "pr",
+      "category": "bug-fix",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 1,
+      "severity": "papercut",
+      "sentiment": "",
+      "next_action_glyph": "🛠",
+      "next_action": "nudge_rebase",
       "suggested_labels": [],
       "suggested_reply": ""
     }
