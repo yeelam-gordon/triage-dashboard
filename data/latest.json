@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T07:29:18Z",
+  "generated_at": "2026-07-12T08:03:15Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -109,9 +109,9 @@
         "Area-AgentPane",
         "Agent-Claude",
         "Agent-Codex",
-        "Agent-Gemini",
         "Needs-Triage",
-        "Needs-Tag-Fix"
+        "Needs-Tag-Fix",
+        "Needs-Author-Feedback"
       ],
       "suggested_reply": "Hi @DDKinger, could you share which **Intelligent Terminal version** you're on? You can find it in the **About** dialog (menu \"V\" button → About at the bottom). The **Windows build number** is also helpful — run `ver` or `[Environment]::OSVersion` in a shell.\n\nThis helps us tell whether it's already fixed in a newer build."
     }
