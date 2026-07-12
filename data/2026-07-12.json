@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T11:14:00Z",
+  "generated_at": "2026-07-12T12:22:19Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -57,10 +57,29 @@
     "needs-author-feedback": 1
   },
   "aging_buckets": {
-    "0-1d": 35,
-    "2-7d": 3,
+    "0-1d": 34,
+    "2-7d": 4,
     "8-30d": 0,
     ">30d": 0
+  },
+  "situation": {
+    "mode": "at_risk",
+    "is_internal": false,
+    "signals": {
+      "total": 38,
+      "issues": 20,
+      "prs": 18,
+      "community": 24,
+      "frustrated": 6,
+      "missed_reply": 0,
+      "missed_reply_basis": "source missed_reply.qualifies; days_no_reply>=7 proxy",
+      "hi_score": 6,
+      "bugs": 16,
+      "actionable": 34,
+      "stale7d": 0
+    },
+    "headline": "⚠ Respond now — 6 frustrated/blocked; 6 high-priority (may overlap).",
+    "recommendation": "Do these first."
   },
   "per_repo": {
     "microsoft/intelligent-terminal": {
@@ -81,6 +100,25 @@
         "2-7d": 0,
         "8-30d": 0,
         ">30d": 0
+      },
+      "situation": {
+        "mode": "spotlight",
+        "is_internal": true,
+        "signals": {
+          "total": 3,
+          "issues": 2,
+          "prs": 1,
+          "community": 0,
+          "frustrated": 0,
+          "missed_reply": 0,
+          "missed_reply_basis": "source missed_reply.qualifies; days_no_reply>=7 proxy",
+          "hi_score": 0,
+          "bugs": 1,
+          "actionable": 3,
+          "stale7d": 0
+        },
+        "headline": "3 internal item(s) waiting — review every one.",
+        "recommendation": "Review the highlighted items."
       },
       "trends": [
         {
@@ -131,6 +169,25 @@
         "8-30d": 0,
         ">30d": 0
       },
+      "situation": {
+        "mode": "firehose",
+        "is_internal": false,
+        "signals": {
+          "total": 20,
+          "issues": 10,
+          "prs": 10,
+          "community": 14,
+          "frustrated": 1,
+          "missed_reply": 0,
+          "missed_reply_basis": "source missed_reply.qualifies; days_no_reply>=7 proxy",
+          "hi_score": 1,
+          "bugs": 8,
+          "actionable": 16,
+          "stale7d": 0
+        },
+        "headline": "20 open items — triage & prioritise; 8 bugs to burn down.",
+        "recommendation": "Start at the top of the priority queue."
+      },
       "trends": [
         {
           "topic": "Product-Command Palette",
@@ -175,10 +232,29 @@
         "needs-author-feedback": 1
       },
       "aging_buckets": {
-        "0-1d": 12,
-        "2-7d": 2,
+        "0-1d": 11,
+        "2-7d": 3,
         "8-30d": 0,
         ">30d": 0
+      },
+      "situation": {
+        "mode": "at_risk",
+        "is_internal": false,
+        "signals": {
+          "total": 14,
+          "issues": 7,
+          "prs": 7,
+          "community": 9,
+          "frustrated": 4,
+          "missed_reply": 0,
+          "missed_reply_basis": "source missed_reply.qualifies; days_no_reply>=7 proxy",
+          "hi_score": 4,
+          "bugs": 6,
+          "actionable": 14,
+          "stale7d": 0
+        },
+        "headline": "⚠ Respond now — 4 frustrated/blocked; 4 high-priority (may overlap).",
+        "recommendation": "Do these first."
       },
       "trends": [
         {
@@ -220,6 +296,25 @@
         "8-30d": 0,
         ">30d": 0
       },
+      "situation": {
+        "mode": "spotlight",
+        "is_internal": false,
+        "signals": {
+          "total": 1,
+          "issues": 1,
+          "prs": 0,
+          "community": 1,
+          "frustrated": 1,
+          "missed_reply": 0,
+          "missed_reply_basis": "source missed_reply.qualifies; days_no_reply>=7 proxy",
+          "hi_score": 1,
+          "bugs": 1,
+          "actionable": 1,
+          "stale7d": 0
+        },
+        "headline": "1 community ask(s) waiting — don't miss it.",
+        "recommendation": "Reply to the highlighted ask."
+      },
       "trends": [
         {
           "topic": "bug",
@@ -239,6 +334,25 @@
         "2-7d": 0,
         "8-30d": 0,
         ">30d": 0
+      },
+      "situation": {
+        "mode": "all_clear",
+        "is_internal": true,
+        "signals": {
+          "total": 0,
+          "issues": 0,
+          "prs": 0,
+          "community": 0,
+          "frustrated": 0,
+          "missed_reply": 0,
+          "missed_reply_basis": "source missed_reply.qualifies; days_no_reply>=7 proxy",
+          "hi_score": 0,
+          "bugs": 0,
+          "actionable": 0,
+          "stale7d": 0
+        },
+        "headline": "✓ Checked — no new issues or PRs in this window.",
+        "recommendation": "Nothing to do — revisit next cycle."
       }
     },
     "microsoft/win-dev-skills": {
@@ -253,6 +367,25 @@
         "2-7d": 0,
         "8-30d": 0,
         ">30d": 0
+      },
+      "situation": {
+        "mode": "all_clear",
+        "is_internal": true,
+        "signals": {
+          "total": 0,
+          "issues": 0,
+          "prs": 0,
+          "community": 0,
+          "frustrated": 0,
+          "missed_reply": 0,
+          "missed_reply_basis": "source missed_reply.qualifies; days_no_reply>=7 proxy",
+          "hi_score": 0,
+          "bugs": 0,
+          "actionable": 0,
+          "stale7d": 0
+        },
+        "headline": "✓ Checked — no new issues or PRs in this window.",
+        "recommendation": "Nothing to do — revisit next cycle."
       }
     }
   },
@@ -287,6 +420,7 @@
       "kind": "pr",
       "category": "bug-fix",
       "days_no_reply": 0,
+      "missed_reply": false,
       "is_community": false,
       "score": 1,
       "severity": "bug",
@@ -323,6 +457,7 @@
       "kind": "issue",
       "category": "cli",
       "days_no_reply": 0,
+      "missed_reply": false,
       "is_community": false,
       "score": 2,
       "severity": "bug",
@@ -363,6 +498,7 @@
       "kind": "issue",
       "category": "cli",
       "days_no_reply": 0,
+      "missed_reply": false,
       "is_community": false,
       "score": 2,
       "severity": "papercut",
@@ -401,6 +537,7 @@
       "kind": "issue",
       "category": "informational",
       "days_no_reply": 0,
+      "missed_reply": false,
       "is_community": false,
       "score": 0,
       "severity": "none",
@@ -435,6 +572,7 @@
       "kind": "pr",
       "category": "feature",
       "days_no_reply": 0,
+      "missed_reply": false,
       "is_community": true,
       "score": 3,
       "severity": "none",
@@ -469,6 +607,7 @@
       "kind": "issue",
       "category": "bug",
       "days_no_reply": 0,
+      "missed_reply": false,
       "is_community": true,
       "score": 3,
       "severity": "bug",
@@ -508,6 +647,7 @@
       "kind": "issue",
       "category": "bug",
       "days_no_reply": 0,
+      "missed_reply": false,
       "is_community": true,
       "score": 3,
       "severity": "bug",
@@ -544,6 +684,7 @@
       "kind": "pr",
       "category": "bug-fix",
       "days_no_reply": 0,
+      "missed_reply": false,
       "is_community": true,
       "score": 5,
       "severity": "bug",
@@ -580,6 +721,7 @@
       "kind": "issue",
       "category": "bug",
       "days_no_reply": 0,
+      "missed_reply": false,
       "is_community": true,
       "score": 6,
       "severity": "regression",
@@ -620,6 +762,7 @@
       "kind": "pr",
       "category": "feature",
       "days_no_reply": 0,
+      "missed_reply": false,
       "is_community": true,
       "score": 3,
       "severity": "none",
@@ -656,6 +799,7 @@
       "kind": "issue",
       "category": "bug",
       "days_no_reply": 0,
+      "missed_reply": false,
       "is_community": false,
       "score": 3,
       "severity": "bug",
@@ -692,6 +836,7 @@
       "kind": "pr",
       "category": "feature",
       "days_no_reply": 0,
+      "missed_reply": false,
       "is_community": true,
       "score": 1,
       "severity": "none",
@@ -727,6 +872,7 @@
       "kind": "pr",
       "category": "refactor",
       "days_no_reply": 0,
+      "missed_reply": false,
       "is_community": false,
       "score": 2,
       "severity": "none",
@@ -762,6 +908,7 @@
       "kind": "pr",
       "category": "feature",
       "days_no_reply": 0,
+      "missed_reply": false,
       "is_community": true,
       "score": 2,
       "severity": "none",
@@ -797,6 +944,7 @@
       "kind": "issue",
       "category": "feature",
       "days_no_reply": 0,
+      "missed_reply": false,
       "is_community": false,
       "score": 1,
       "severity": "none",
@@ -834,6 +982,7 @@
       "kind": "issue",
       "category": "bug",
       "days_no_reply": 0,
+      "missed_reply": false,
       "is_community": true,
       "score": 2,
       "severity": "bug",
@@ -873,6 +1022,7 @@
       "kind": "issue",
       "category": "bug",
       "days_no_reply": 0,
+      "missed_reply": false,
       "is_community": false,
       "score": 4,
       "severity": "crash",
@@ -911,6 +1061,7 @@
       "kind": "pr",
       "category": "bug-fix",
       "days_no_reply": 0,
+      "missed_reply": false,
       "is_community": true,
       "score": 4,
       "severity": "bug",
@@ -945,6 +1096,7 @@
       "kind": "pr",
       "category": "feature",
       "days_no_reply": 0,
+      "missed_reply": false,
       "is_community": true,
       "score": 3,
       "severity": "none",
@@ -979,6 +1131,7 @@
       "kind": "pr",
       "category": "feature",
       "days_no_reply": 0,
+      "missed_reply": false,
       "is_community": false,
       "score": 1,
       "severity": "none",
@@ -1013,6 +1166,7 @@
       "kind": "pr",
       "category": "feature",
       "days_no_reply": 0,
+      "missed_reply": false,
       "is_community": true,
       "score": 5,
       "severity": "none",
@@ -1047,6 +1201,7 @@
       "kind": "issue",
       "category": "bug",
       "days_no_reply": 0,
+      "missed_reply": false,
       "is_community": true,
       "score": 3,
       "severity": "bug",
@@ -1085,6 +1240,7 @@
       "kind": "issue",
       "category": "bug",
       "days_no_reply": 0,
+      "missed_reply": false,
       "is_community": true,
       "score": 5,
       "severity": "crash",
@@ -1125,6 +1281,7 @@
       "kind": "issue",
       "category": "feature",
       "days_no_reply": 0,
+      "missed_reply": false,
       "is_community": true,
       "score": 5,
       "severity": "papercut",
@@ -1161,6 +1318,7 @@
       "kind": "issue",
       "category": "bug",
       "days_no_reply": 0,
+      "missed_reply": false,
       "is_community": true,
       "score": 7,
       "severity": "bug",
@@ -1199,6 +1357,7 @@
       "kind": "pr",
       "category": "bug-fix",
       "days_no_reply": 0,
+      "missed_reply": false,
       "is_community": true,
       "score": 4,
       "severity": "bug",
@@ -1233,6 +1392,7 @@
       "kind": "issue",
       "category": "bug",
       "days_no_reply": 0,
+      "missed_reply": false,
       "is_community": true,
       "score": 5,
       "severity": "bug",
@@ -1270,6 +1430,7 @@
       "kind": "pr",
       "category": "bug-fix",
       "days_no_reply": 0,
+      "missed_reply": false,
       "is_community": false,
       "score": 3,
       "severity": "risk",
@@ -1304,6 +1465,7 @@
       "kind": "pr",
       "category": "feature",
       "days_no_reply": 0,
+      "missed_reply": false,
       "is_community": false,
       "score": 2,
       "severity": "none",
@@ -1338,6 +1500,7 @@
       "kind": "issue",
       "category": "bug",
       "days_no_reply": 0,
+      "missed_reply": false,
       "is_community": true,
       "score": 6,
       "severity": "regression",
@@ -1376,6 +1539,7 @@
       "kind": "pr",
       "category": "build",
       "days_no_reply": 0,
+      "missed_reply": false,
       "is_community": false,
       "score": 2,
       "severity": "none",
@@ -1412,6 +1576,7 @@
       "kind": "pr",
       "category": "other",
       "days_no_reply": 0,
+      "missed_reply": false,
       "is_community": false,
       "score": 1,
       "severity": "none",
@@ -1430,7 +1595,7 @@
       "owner_kind": "reviewer",
       "current_labels": [],
       "updated_at": "2026-07-11T08:05:48Z",
-      "priority_age_days": 1.0,
+      "priority_age_days": 2.0,
       "aging_basis": "PR days_since_update",
       "pr_merge_state": "BLOCKED",
       "pr_review_decision": "REVIEW_REQUIRED",
@@ -1449,6 +1614,7 @@
       "kind": "issue",
       "category": "bug",
       "days_no_reply": 0,
+      "missed_reply": false,
       "is_community": true,
       "score": 4,
       "severity": "bug",
@@ -1485,6 +1651,7 @@
       "kind": "pr",
       "category": "bug-fix",
       "days_no_reply": 0,
+      "missed_reply": false,
       "is_community": true,
       "score": 7,
       "severity": "bug",
@@ -1520,6 +1687,7 @@
       "kind": "issue",
       "category": "bug",
       "days_no_reply": 0,
+      "missed_reply": false,
       "is_community": true,
       "score": 4,
       "severity": "risk",
@@ -1558,6 +1726,7 @@
       "kind": "issue",
       "category": "bug",
       "days_no_reply": 0,
+      "missed_reply": false,
       "is_community": true,
       "score": 6,
       "severity": "risk",
@@ -1594,6 +1763,7 @@
       "kind": "pr",
       "category": "other",
       "days_no_reply": 0,
+      "missed_reply": false,
       "is_community": false,
       "score": 1,
       "severity": "none",
@@ -1612,7 +1782,7 @@
       "owner_kind": "reviewer",
       "current_labels": [],
       "updated_at": "2026-07-12T08:08:29Z",
-      "priority_age_days": 0.0,
+      "priority_age_days": 1.0,
       "aging_basis": "PR days_since_update",
       "pr_merge_state": "BLOCKED",
       "pr_review_decision": "REVIEW_REQUIRED",
@@ -1631,6 +1801,7 @@
       "kind": "issue",
       "category": "bug",
       "days_no_reply": 0,
+      "missed_reply": false,
       "is_community": true,
       "score": 6,
       "severity": "crash",

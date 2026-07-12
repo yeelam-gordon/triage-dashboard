@@ -59,8 +59,95 @@
     </template>
   </nav>
 
+  <!-- ============ Situation hero ============ -->
+  <section class="rounded-lg border p-4" :class="modeHeroClass(activeSituation.mode)">
+    <div class="flex flex-wrap items-start justify-between gap-3">
+      <div>
+        <div class="flex items-center gap-2">
+          <span class="px-2 py-0.5 rounded-full text-xs font-semibold" :class="modeBadgeClass(activeSituation.mode)" x-text="modeLabel(activeSituation.mode)"></span>
+          <span class="text-xs text-slate-500" x-text="activeRepo || 'All repos'"></span>
+        </div>
+        <h2 class="mt-2 text-lg font-semibold text-slate-900" x-text="activeSituation.headline"></h2>
+        <p class="mt-1 text-sm text-slate-600" x-text="activeSituation.recommendation"></p>
+      </div>
+      <div class="grid grid-cols-3 gap-2 text-center text-xs">
+        <div><div class="text-lg font-semibold" x-text="activeSignals.total || 0"></div><div class="text-slate-500">items</div></div>
+        <div><div class="text-lg font-semibold" x-text="activeSignals.community || 0"></div><div class="text-slate-500">community</div></div>
+        <div><div class="text-lg font-semibold" x-text="activeSignals.bugs || 0"></div><div class="text-slate-500">bugs</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Portfolio overview ============ -->
+  <section class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-6 gap-3" x-show="!activeRepo">
+    <template x-for="card in repoSituationCards" :key="card.repo">
+      <button @click="selectRepo(card.repo)" class="text-left bg-white rounded-lg shadow-sm border border-slate-200 p-3 hover:border-blue-300 hover:shadow">
+        <div class="flex items-center justify-between gap-2">
+          <div class="font-medium text-sm truncate" x-text="card.short"></div>
+          <span class="px-1.5 py-0.5 rounded-full text-[10px] font-semibold whitespace-nowrap" :class="modeBadgeClass(card.situation.mode)" x-text="modeLabelForSituation(card.situation)"></span>
+        </div>
+        <p class="mt-2 text-xs text-slate-600 line-clamp-2" x-text="card.situation.headline"></p>
+        <div class="mt-2 text-xs text-slate-400" x-text="`${card.signals.total} items · ${card.signals.issues} issues · ${card.signals.prs} PRs`"></div>
+      </button>
+    </template>
+  </section>
+
+  <!-- ============ All clear ============ -->
+  <section class="bg-white rounded-lg shadow-sm border border-emerald-200 p-8 text-center" x-show="activeSituation.mode === 'all_clear'">
+    <div class="text-3xl">✓</div>
+    <h2 class="mt-2 text-lg font-semibold text-slate-900" x-text="activeSituation.headline"></h2>
+    <p class="mt-1 text-sm text-slate-500" x-text="'Last checked ' + generatedAtText"></p>
+    <p class="mt-2 text-sm text-emerald-700" x-text="activeSituation.recommendation"></p>
+  </section>
+
+  <!-- ============ Needs attention ============ -->
+  <section class="bg-amber-50 rounded-lg shadow-sm border border-amber-200" x-show="activeSituation.mode === 'at_risk' && needsAttentionItems.length">
+    <div class="px-4 py-3 border-b border-amber-200">
+      <h2 class="text-sm font-semibold text-amber-900">⚠ Do these first</h2>
+      <p class="text-xs text-amber-700">Frustrated/blocked, missed-reply, and high-score items first.</p>
+    </div>
+    <div class="divide-y divide-amber-100">
+      <template x-for="iss in needsAttentionItems" :key="'attention-' + iss.repo + '#' + iss.number">
+        <div class="px-4 py-3">
+          <div class="flex items-start justify-between gap-3">
+            <div class="min-w-0">
+              <div class="text-xs text-amber-700" x-text="attentionReason(iss)"></div>
+              <a :href="iss.url" target="_blank" class="block mt-0.5 text-sm font-semibold text-slate-900 hover:text-blue-600 truncate" x-text="iss.title"></a>
+              <div class="mt-1 text-xs text-slate-600" x-text="displayAction(iss).label + ' — ' + displayAction(iss).reason"></div>
+            </div>
+            <button @click="openReplyModal(iss)" :disabled="!hasSuggestedReply(iss)" class="px-2.5 py-1 text-xs font-medium rounded shrink-0" :class="hasSuggestedReply(iss) ? 'bg-blue-600 text-white hover:bg-blue-700' : 'bg-slate-100 text-slate-400 cursor-not-allowed'">Draft</button>
+          </div>
+        </div>
+      </template>
+    </div>
+  </section>
+
+  <!-- ============ Spotlight cards ============ -->
+  <section class="bg-white rounded-lg shadow-sm border border-indigo-200" x-show="activeSituation.mode === 'spotlight'">
+    <div class="px-4 py-3 border-b border-indigo-100">
+      <h2 class="text-sm font-semibold text-indigo-900">Don’t miss</h2>
+      <p class="text-xs text-indigo-700">Few enough to review every item in full.</p>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-3 p-4">
+      <template x-for="iss in spotlightItems" :key="'spotlight-' + iss.repo + '#' + iss.number">
+        <article class="rounded-lg border border-slate-200 p-4">
+          <div class="flex items-center gap-2 text-xs text-slate-500">
+            <span class="px-1.5 py-0.5 rounded font-medium" :class="iss.kind === 'pr' ? 'bg-purple-100 text-purple-700' : 'bg-blue-100 text-blue-700'" x-text="iss.kind === 'pr' ? 'PR' : 'Issue'"></span>
+            <span x-text="'#' + iss.number"></span>
+            <span x-text="'Score ' + (iss.score ?? '—')"></span>
+          </div>
+          <a :href="iss.url" target="_blank" class="block mt-2 text-sm font-semibold text-slate-900 hover:text-blue-600" x-text="iss.title"></a>
+          <div class="mt-2 text-sm text-slate-700"><span x-text="displayAction(iss).glyph"></span> <span x-text="displayAction(iss).label"></span></div>
+          <p class="mt-1 text-xs text-slate-500" x-text="displayAction(iss).reason"></p>
+          <p class="mt-2 text-xs text-slate-500"><span class="font-medium" x-text="ownerText(iss).label"></span><span x-text="ownerText(iss).value"></span></p>
+          <button @click="openReplyModal(iss)" :disabled="!hasSuggestedReply(iss)" class="mt-3 px-2.5 py-1 text-xs font-medium rounded" :class="hasSuggestedReply(iss) ? 'bg-blue-600 text-white hover:bg-blue-700' : 'bg-slate-100 text-slate-400 cursor-not-allowed'">Draft reply</button>
+        </article>
+      </template>
+    </div>
+  </section>
+
   <!-- ============ Summary cards ============ -->
-  <section class="grid grid-cols-4 gap-4">
+  <section class="grid grid-cols-4 gap-4" x-show="activeSituation.mode !== 'all_clear'">
     <template x-for="card in summaryCards" :key="card.label">
       <div class="bg-white rounded-lg shadow-sm border border-slate-200 p-4">
         <div class="text-xs uppercase tracking-wide text-slate-500" x-text="card.label"></div>
@@ -71,7 +158,7 @@
   </section>
 
   <!-- ============ Charts ============ -->
-  <section class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+  <section class="grid grid-cols-2 lg:grid-cols-4 gap-4" x-show="!['all_clear','spotlight'].includes(activeSituation.mode)">
     <div class="bg-white rounded-lg shadow-sm border border-slate-200 p-4">
       <h2 class="text-sm font-semibold mb-1">Issues by category <span class="text-xs font-normal text-slate-400">(issues only)</span></h2>
       <p class="text-xs text-slate-400 mb-2">PR categories are excluded.</p>
@@ -130,7 +217,7 @@
   </section>
 
   <!-- ============ Priority queue ============ -->
-  <section class="bg-white rounded-lg shadow-sm border border-slate-200">
+  <section class="bg-white rounded-lg shadow-sm border border-slate-200" x-show="activeSituation.mode !== 'all_clear'">
     <div class="px-4 py-3 border-b border-slate-200 flex flex-wrap items-center justify-between gap-3">
       <div>
         <h2 class="text-sm font-semibold">Priority queue</h2>
@@ -458,6 +545,29 @@ function dashboard() {
       return this.data.totals || {};
     },
 
+    get activeSituation() {
+      const repo = this.resolveRepoName(this.activeRepo);
+      if (repo && this.data.per_repo && this.data.per_repo[repo] && this.data.per_repo[repo].situation) {
+        return this.data.per_repo[repo].situation;
+      }
+      return this.data.situation || this._deriveSituation(this.scopedIssues);
+    },
+
+    get activeSignals() {
+      return this.activeSituation.signals || {};
+    },
+
+    get repoSituationCards() {
+      return this.repos.map(r => {
+        const situation = (this.data.per_repo && this.data.per_repo[r.name] && this.data.per_repo[r.name].situation) || this._deriveSituation(this.scopedIssues.filter(i => i.repo === r.name));
+        return { repo: r.name, short: r.short, situation, signals: situation.signals || {} };
+      }).sort((a, b) =>
+        this.urgencyRank(a.situation) - this.urgencyRank(b.situation) ||
+        (b.signals.total || 0) - (a.signals.total || 0) ||
+        (b.signals.frustrated || 0) - (a.signals.frustrated || 0) ||
+        a.repo.localeCompare(b.repo));
+    },
+
     get activeLabelCounts() {
       const repo = this.resolveRepoName(this.activeRepo);
       if (repo && this.data.per_repo && this.data.per_repo[repo]) return this.data.per_repo[repo].label_counts || {};
@@ -525,6 +635,100 @@ function dashboard() {
         { title: 'Actionable work', muted: false, items: this.priorityItems },
         { title: 'Informational / no action', muted: true, items: this.informationalItems },
       ];
+    },
+
+    get needsAttentionItems() {
+      return this.filteredIssues.filter(i => this.isNeedsAttention(i)).slice(0, 8);
+    },
+
+    get spotlightItems() {
+      return [...this.filteredIssues];
+    },
+
+    _deriveSituation(items) {
+      const total = items.length;
+      const signals = {
+        total,
+        issues: items.filter(i => i.kind === 'issue').length,
+        prs: items.filter(i => i.kind === 'pr').length,
+        community: items.filter(i => i.is_community).length,
+        frustrated: items.filter(i => ['frustrated', 'blocked'].includes(i.sentiment)).length,
+        missed_reply: items.filter(i => i.missed_reply || (i.days_no_reply || 0) >= 7).length,
+        hi_score: items.filter(i => (i.score || 0) >= 6).length,
+        bugs: items.filter(i => i.kind === 'issue' && ['crash', 'security', 'risk', 'regression', 'bug'].includes(i.severity)).length,
+        actionable: items.filter(i => i.next_action !== 'no_action').length,
+        stale7d: items.filter(i => this.itemAge(i) >= 7).length,
+      };
+      let mode = 'steady';
+      if (total === 0) mode = 'all_clear';
+      else if (total <= 3) mode = 'spotlight';
+      else if (signals.frustrated >= 3 || signals.missed_reply >= 3 || signals.hi_score >= 3) mode = 'at_risk';
+      else if (total >= 12) mode = 'firehose';
+      const isInternal = signals.community === 0;
+      const headline = mode === 'all_clear' ? '✓ Checked — no new issues or PRs in this window.'
+        : mode === 'spotlight' ? (isInternal ? `${total} internal item(s) waiting — review every one.` : `${signals.community} community ask(s) waiting — don't miss ${signals.community === 1 ? 'it' : 'them'}.`)
+        : mode === 'at_risk' ? `⚠ Respond now — ${signals.frustrated} frustrated/blocked; ${signals.hi_score} high-priority (may overlap).`
+        : mode === 'firehose' ? `${total} open items — triage & prioritise; ${signals.bugs} bugs to burn down.`
+        : `${total} open items — routine triage.`;
+      const recommendation = mode === 'all_clear' ? 'Nothing to do — revisit next cycle.'
+        : mode === 'spotlight' ? (isInternal ? 'Review the highlighted items.' : 'Reply to the highlighted ask.')
+        : mode === 'at_risk' ? 'Do these first.'
+        : mode === 'firehose' ? 'Start at the top of the priority queue.'
+        : 'Work down the priority queue.';
+      return { mode, is_internal: isInternal, signals, headline, recommendation };
+    },
+
+    modeLabel(mode) {
+      if (mode === 'spotlight') {
+        const signals = this.activeSignals || {};
+        const isInternal = this.activeSituation && this.activeSituation.is_internal;
+        if (isInternal) return 'Small internal queue';
+        const count = signals.community || 1;
+        return count === 1 ? 'One community ask' : `${count} community asks`;
+      }
+      return ({ all_clear: 'All clear', at_risk: 'Respond now', firehose: 'Big triage queue', steady: 'Routine' })[mode] || 'Routine';
+    },
+
+    modeLabelForSituation(situation) {
+      const mode = situation && situation.mode;
+      if (mode === 'spotlight') {
+        const signals = situation.signals || {};
+        if (situation.is_internal) return 'Small internal queue';
+        const count = signals.community || 1;
+        return count === 1 ? 'One community ask' : `${count} community asks`;
+      }
+      return ({ all_clear: 'All clear', at_risk: 'Respond now', firehose: 'Big triage queue', steady: 'Routine' })[mode] || 'Routine';
+    },
+
+    urgencyRank(situation) {
+      if (!situation) return 99;
+      if (situation.mode === 'at_risk') return 0;
+      if (situation.mode === 'spotlight' && !situation.is_internal) return 1;
+      if (situation.mode === 'firehose') return 2;
+      if (situation.mode === 'steady') return 3;
+      if (situation.mode === 'spotlight' && situation.is_internal) return 4;
+      if (situation.mode === 'all_clear') return 5;
+      return 99;
+    },
+
+    modeBadgeClass(mode) {
+      return {
+        all_clear: 'bg-emerald-100 text-emerald-700',
+        spotlight: 'bg-indigo-100 text-indigo-700',
+        at_risk: 'bg-amber-100 text-amber-800',
+        firehose: 'bg-blue-100 text-blue-700',
+        steady: 'bg-slate-100 text-slate-700',
+      }[mode] || 'bg-slate-100 text-slate-700';
+    },
+
+    modeHeroClass(mode) {
+      return {
+        all_clear: 'bg-emerald-50 border-emerald-200',
+        spotlight: 'bg-indigo-50 border-indigo-200',
+        at_risk: 'bg-amber-50 border-amber-200',
+        firehose: 'bg-blue-50 border-blue-200',
+        steady: 'bg-white border-slate-200',
+      }[mode] || 'bg-white border-slate-200';
     },
 
     _deriveLabelCounts(issues) {
@@ -630,6 +834,18 @@ function dashboard() {
       const action = String(iss.next_action || '').toLowerCase();
       const values = [iss.category, iss.severity, iss.classification_type].map(v => String(v || '').toLowerCase());
       return action === 'no_action' || values.some(v => v === 'meta' || v === 'informational' || v === 'info');
+    },
+
+    isNeedsAttention(iss) {
+      return ['frustrated', 'blocked'].includes(iss.sentiment) || !!iss.missed_reply || (iss.days_no_reply || 0) >= 7 || (iss.score || 0) >= 6;
+    },
+
+    attentionReason(iss) {
+      const reasons = [];
+      if (['frustrated', 'blocked'].includes(iss.sentiment)) reasons.push(iss.sentiment);
+      if (iss.missed_reply || (iss.days_no_reply || 0) >= 7) reasons.push('missed reply');
+      if ((iss.score || 0) >= 6) reasons.push('high score ' + iss.score);
+      return reasons.join(' · ') || 'needs attention';
     },
 
     isActionable(iss) {
