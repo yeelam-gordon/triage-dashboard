@@ -71,64 +71,157 @@
   </section>
 
   <!-- ============ Charts ============ -->
-  <section class="grid grid-cols-2 gap-4">
+  <section class="grid grid-cols-2 lg:grid-cols-4 gap-4">
     <div class="bg-white rounded-lg shadow-sm border border-slate-200 p-4">
-      <h2 class="text-sm font-semibold mb-3">Issues by category</h2>
+      <h2 class="text-sm font-semibold mb-1">Issues by category <span class="text-xs font-normal text-slate-400">(issues only)</span></h2>
+      <p class="text-xs text-slate-400 mb-2">PR categories are excluded.</p>
       <canvas id="categoryChart" height="180"></canvas>
     </div>
-    <div class="bg-white rounded-lg shadow-sm border border-slate-200 p-4">
-      <h2 class="text-sm font-semibold mb-3">Trending topics (7d)</h2>
-      <ul class="space-y-1.5 text-sm">
+    <div class="bg-white rounded-lg shadow-sm border border-slate-200 p-4" x-show="!activeRepo">
+      <h2 class="text-sm font-semibold mb-1">Top label topics <span class="text-xs font-normal text-slate-400">(issues + PRs)</span></h2>
+      <p class="text-xs text-slate-400 mb-2">All-repo current labels, else suggested labels; no time-series delta.</p>
+      <ul class="space-y-1.5 text-sm" x-show="activeTrends.length">
         <template x-for="t in activeTrends" :key="t.topic">
           <li class="flex items-center justify-between">
             <span x-text="t.topic"></span>
             <span class="text-slate-500">
               <span x-text="t.count"></span>
-              <span class="text-emerald-600 ml-2" x-show="t.delta > 0">▲ <span x-text="t.delta"></span></span>
-              <span class="text-rose-600 ml-2" x-show="t.delta < 0">▼ <span x-text="Math.abs(t.delta)"></span></span>
             </span>
           </li>
         </template>
       </ul>
+      <p class="text-sm text-slate-400" x-show="!activeTrends.length">No trend signal in this window.</p>
+    </div>
+    <div class="bg-white rounded-lg shadow-sm border border-slate-200 p-4">
+      <h2 class="text-sm font-semibold mb-1">Top labels <span class="text-xs font-normal text-slate-400">(issues + PRs)</span></h2>
+      <p class="text-xs text-slate-400 mb-2">Current labels, falling back to suggested labels.</p>
+      <div class="space-y-2" x-show="topActiveLabels.length">
+        <template x-for="l in topActiveLabels" :key="l.name">
+          <div>
+            <div class="flex justify-between text-xs">
+              <span class="truncate pr-2" x-text="l.name"></span>
+              <span class="text-slate-500" x-text="l.count"></span>
+            </div>
+            <div class="mt-1 h-1.5 bg-slate-100 rounded">
+              <div class="h-1.5 bg-indigo-500 rounded" :style="'width:' + l.percent + '%'"></div>
+            </div>
+          </div>
+        </template>
+      </div>
+      <p class="text-sm text-slate-400" x-show="!topActiveLabels.length">No labels detected.</p>
+    </div>
+    <div class="bg-white rounded-lg shadow-sm border border-slate-200 p-4">
+      <h2 class="text-sm font-semibold mb-1">Aging / timing <span class="text-xs font-normal text-slate-400">(issues + PRs)</span></h2>
+      <p class="text-xs text-slate-400 mb-2">Issues: no-reply age. PRs: days since update/waiting age.</p>
+      <div class="space-y-2">
+        <template x-for="b in activeAgingBucketsList" :key="b.name">
+          <div>
+            <div class="flex justify-between text-xs">
+              <span x-text="b.name"></span>
+              <span class="text-slate-500" x-text="b.count"></span>
+            </div>
+            <div class="mt-1 h-1.5 bg-slate-100 rounded">
+              <div class="h-1.5 bg-amber-500 rounded" :style="'width:' + b.percent + '%'"></div>
+            </div>
+          </div>
+        </template>
+      </div>
     </div>
   </section>
 
-  <!-- ============ No-reply queue ============ -->
+  <!-- ============ Priority queue ============ -->
   <section class="bg-white rounded-lg shadow-sm border border-slate-200">
-    <div class="px-4 py-3 border-b border-slate-200 flex items-center justify-between">
-      <h2 class="text-sm font-semibold">No-reply queue (oldest first)</h2>
-      <span class="text-xs text-slate-500" x-text="(filteredIssues.length) + ' issues'"></span>
+    <div class="px-4 py-3 border-b border-slate-200 flex flex-wrap items-center justify-between gap-3">
+      <div>
+        <h2 class="text-sm font-semibold">Priority queue</h2>
+        <p class="text-xs text-slate-500">Default: score ↓, age ↓, actionable first.</p>
+      </div>
+      <div class="flex flex-wrap items-center gap-2 text-xs">
+        <label class="inline-flex items-center gap-1 px-2 py-1 rounded border border-slate-200">
+          <input type="checkbox" x-model="quickFilters.communityOnly" /> Community only
+        </label>
+        <label class="inline-flex items-center gap-1 px-2 py-1 rounded border border-slate-200">
+          <input type="checkbox" x-model="quickFilters.needsReply7d" /> Needs reply ≥7d
+        </label>
+        <label class="inline-flex items-center gap-1 px-2 py-1 rounded border border-slate-200">
+          <input type="checkbox" x-model="quickFilters.actionableOnly" /> Actionable only
+        </label>
+        <select x-model="sortMode" class="px-2 py-1 rounded border border-slate-200">
+          <option value="priority">Priority</option>
+          <option value="age">Age</option>
+          <option value="score">Score</option>
+        </select>
+        <span class="text-slate-500" x-text="(filteredIssues.length) + ' items'"></span>
+      </div>
     </div>
-    <div class="divide-y divide-slate-100">
-      <template x-for="iss in filteredIssues" :key="iss.repo + '#' + iss.number">
-        <div class="px-4 py-3">
+    <div class="px-4 py-10 text-center text-sm text-slate-500" x-show="filteredIssues.length === 0">
+      <div class="font-medium text-slate-700" x-text="activeRepo ? 'No new issues or PRs in this window' : 'No matching items'"></div>
+      <div class="mt-1" x-show="activeRepo" x-text="'Last checked ' + generatedAtText"></div>
+    </div>
+    <div>
+      <template x-for="group in itemGroups" :key="group.title">
+        <div x-show="group.items.length">
+          <div class="px-4 py-2 text-xs font-semibold uppercase tracking-wide border-t border-slate-100"
+            :class="group.muted ? 'bg-slate-50 text-slate-500' : 'bg-blue-50 text-blue-700'"
+            x-text="group.title + ' (' + group.items.length + ')'"></div>
+          <div class="divide-y divide-slate-100">
+            <template x-for="iss in group.items" :key="iss.repo + '#' + iss.number">
+              <div class="px-4 py-3" :class="group.muted ? 'bg-slate-50/70' : 'bg-white'">
           <div class="flex items-start justify-between gap-4">
             <div class="flex-1 min-w-0">
-              <div class="flex items-center gap-2 text-xs text-slate-500">
+              <div class="flex flex-wrap items-center gap-2 text-xs text-slate-500">
+                <span class="px-1.5 py-0.5 rounded font-medium"
+                  :class="iss.kind === 'pr' ? 'bg-purple-100 text-purple-700' : 'bg-blue-100 text-blue-700'"
+                  x-text="iss.kind === 'pr' ? 'PR' : 'Issue'"></span>
                 <span x-text="iss.repo"></span>
                 <span>·</span>
                 <span x-text="'#' + iss.number"></span>
                 <span>·</span>
                 <span class="px-1.5 py-0.5 bg-slate-100 rounded" x-text="iss.category"></span>
+                <span class="px-1.5 py-0.5 bg-amber-50 text-amber-700 rounded" x-text="'Score ' + (iss.score ?? '—')"></span>
+                <span class="px-1.5 py-0.5 bg-rose-50 text-rose-700 rounded" x-text="'Severity ' + (iss.severity || '—')"></span>
+                <span class="px-1.5 py-0.5 bg-slate-100 text-slate-600 rounded" x-text="'Sentiment ' + (iss.sentiment || '—')"></span>
                 <span class="text-amber-600" x-show="iss.days_no_reply >= 7">
                   ⏰ <span x-text="iss.days_no_reply"></span>d no reply
                 </span>
               </div>
               <a :href="iss.url" target="_blank" class="block mt-0.5 text-sm font-medium text-slate-900 hover:text-blue-600 truncate" x-text="iss.title"></a>
+              <div class="mt-2 text-sm text-slate-700 flex items-start gap-1.5">
+                <span x-text="displayAction(iss).glyph"></span>
+                <div class="min-w-0">
+                  <div class="font-medium" x-text="displayAction(iss).label"></div>
+                  <div class="text-xs text-slate-500 truncate" :title="displayAction(iss).reason" x-text="displayAction(iss).reason"></div>
+                </div>
+              </div>
+              <div class="mt-1 text-xs text-slate-500">
+                <span class="font-medium text-slate-600" x-text="ownerText(iss).label"></span>
+                <span x-text="ownerText(iss).value"></span>
+                <div class="text-slate-400 truncate" :title="ownerText(iss).evidence" x-text="ownerText(iss).evidence"></div>
+              </div>
+              <div class="mt-1 text-xs text-slate-500" x-show="iss.kind === 'pr'">
+                <span class="font-medium text-slate-600">PR evidence:</span>
+                <span x-text="prTrustSummary(iss)"></span>
+              </div>
               <div class="mt-1 flex flex-wrap gap-1">
-                <template x-for="lbl in (iss.suggested_labels || [])" :key="lbl">
-                  <button @click="addLabel(iss, lbl)"
+                <template x-for="chip in suggestedLabelChips(iss)" :key="chip.name">
+                  <span>
+                    <button x-show="!chip.exists" @click="addLabel(iss, chip.name)"
                     class="px-2 py-0.5 text-xs rounded border border-dashed border-slate-300 text-slate-600 hover:bg-blue-50 hover:border-blue-300"
-                    :title="'Apply label: ' + lbl">
-                    + <span x-text="lbl"></span>
-                  </button>
+                    :title="'Apply label: ' + chip.name">
+                    + <span x-text="chip.name"></span>
+                    </button>
+                    <span x-show="chip.exists" class="px-2 py-0.5 text-xs rounded bg-slate-100 text-slate-400"
+                      :title="'Already has label: ' + chip.name" x-text="chip.name"></span>
+                  </span>
                 </template>
               </div>
             </div>
             <div class="flex flex-col gap-1.5 shrink-0">
               <button @click="openReplyModal(iss)"
-                class="px-2.5 py-1 text-xs font-medium bg-blue-600 text-white rounded hover:bg-blue-700">
-                💬 Preview reply
+                :disabled="!hasSuggestedReply(iss)"
+                class="px-2.5 py-1 text-xs font-medium rounded"
+                :class="hasSuggestedReply(iss) ? 'bg-blue-600 text-white hover:bg-blue-700' : 'bg-slate-100 text-slate-400 cursor-not-allowed'">
+                <span x-text="hasSuggestedReply(iss) ? '💬 Draft reply' : 'No draft reply'"></span>
               </button>
               <button @click="assignCopilot(iss)"
                 class="px-2.5 py-1 text-xs font-medium bg-violet-600 text-white rounded hover:bg-violet-700">
@@ -139,6 +232,9 @@
                 🛠 Run review skill
               </button>
             </div>
+          </div>
+              </div>
+            </template>
           </div>
         </div>
       </template>
@@ -216,6 +312,40 @@ function dashboard() {
     filter: '',
     categoryFilter: '',
     activeRepo: '',
+    sortMode: 'priority',
+    quickFilters: { communityOnly: false, needsReply7d: false, actionableOnly: false },
+    actionLabels: {
+      label_only: 'Add labels only',
+      reply: 'Reply to author',
+      needs_review: 'Ask a reviewer to review',
+      request_changes: 'Ask author to fix requested changes',
+      request_info: 'Ask author for more info',
+      assign: 'Assign to area owner',
+      close_dup: 'Close as duplicate',
+      close_wontfix: "Close — won't fix",
+      ready_to_merge: 'Ready to merge',
+      blocked: 'Blocked — needs maintainer',
+      blocked_cla: 'Blocked — CLA not signed',
+      needs_rebase: 'Needs rebase / update branch',
+      fix_ci: 'Fix failing CI',
+      no_action: 'No action (informational)',
+    },
+    actionGlyphs: {
+      request_info: '❓',
+      reply: '💬',
+      label_only: '🏷️',
+      assign: '👤',
+      close_dup: '🔁',
+      close_wontfix: '✋',
+      no_action: '✅',
+      request_changes: '🛠️',
+      blocked_cla: '✍️',
+      needs_rebase: '🔄',
+      fix_ci: '🔴',
+      needs_review: '👀',
+      ready_to_merge: '✅',
+      blocked: '⚠️',
+    },
     _chart: null,
     token: localStorage.getItem('gh_token') || '',
     tokenInput: '',
@@ -236,12 +366,11 @@ function dashboard() {
       }
       // Restore repo selection from URL hash (e.g. #repo=microsoft/intelligent-terminal)
       const hashRepo = this.readHashRepo();
-      if (hashRepo && (this.data.issues || []).some(i => i.repo === hashRepo)) {
-        this.activeRepo = hashRepo;
-      }
+      if (hashRepo) this.activeRepo = this.resolveRepoName(hashRepo);
       window.addEventListener('hashchange', () => {
         const r = this.readHashRepo();
-        if (r !== this.activeRepo) { this.activeRepo = r; this.$nextTick(() => this.renderCharts()); }
+        const resolved = this.resolveRepoName(r);
+        if (resolved !== this.activeRepo) { this.activeRepo = resolved; this.$nextTick(() => this.renderCharts()); }
       });
       this.$nextTick(() => this.renderCharts());
     },
@@ -252,34 +381,57 @@ function dashboard() {
     },
 
     selectRepo(name) {
-      this.activeRepo = name;
+      this.activeRepo = this.resolveRepoName(name);
       this.categoryFilter = '';
-      location.hash = name ? 'repo=' + encodeURIComponent(name) : '';
+      location.hash = this.activeRepo ? 'repo=' + encodeURIComponent(this.activeRepo) : '';
       this.$nextTick(() => this.renderCharts());
+    },
+
+    resolveRepoName(name) {
+      if (!name) return '';
+      const repoNames = new Set([
+        ...((this.data.checked_repos || [])),
+        ...Object.keys(this.data.per_repo || {}),
+        ...((this.data.issues || []).map(i => i.repo).filter(Boolean)),
+      ]);
+      if (repoNames.has(name)) return name;
+      const lower = String(name).toLowerCase();
+      for (const repo of repoNames) {
+        if ((repo.split('/')[1] || repo).toLowerCase() === lower) return repo;
+      }
+      return name;
     },
 
     get scopedIssues() {
       const all = this.data.issues || [];
-      return this.activeRepo ? all.filter(i => i.repo === this.activeRepo) : all;
+      const repo = this.resolveRepoName(this.activeRepo);
+      return repo ? all.filter(i => i.repo === repo) : all;
     },
 
     get repos() {
       const map = new Map();
+      for (const repo of (this.data.checked_repos || [])) {
+        if (repo) map.set(repo, { name: repo, short: repo.split('/')[1] || repo, count: 0, noReply: 0, checked: true });
+      }
+      for (const repo of Object.keys(this.data.per_repo || {})) {
+        if (!map.has(repo)) map.set(repo, { name: repo, short: repo.split('/')[1] || repo, count: 0, noReply: 0, checked: true });
+      }
       for (const i of (this.data.issues || [])) {
         if (!map.has(i.repo)) map.set(i.repo, { name: i.repo, short: i.repo.split('/')[1] || i.repo, count: 0, noReply: 0 });
         const r = map.get(i.repo);
         r.count++;
         if ((i.days_no_reply || 0) >= 7) r.noReply++;
       }
-      return [...map.values()].sort((a, b) => b.noReply - a.noReply || b.count - a.count);
+      return [...map.values()].sort((a, b) => b.noReply - a.noReply || b.count - a.count || a.name.localeCompare(b.name));
     },
 
     get activeCategoryCounts() {
       // Per-repo counts come from per_repo block if present; otherwise derive from issues.
-      if (this.activeRepo && this.data.per_repo && this.data.per_repo[this.activeRepo]) {
-        return this.data.per_repo[this.activeRepo].category_counts || this._deriveCategoryCounts(this.scopedIssues);
+      const repo = this.resolveRepoName(this.activeRepo);
+      if (repo && this.data.per_repo && this.data.per_repo[repo]) {
+        return this.data.per_repo[repo].category_counts || this._deriveCategoryCounts(this.scopedIssues);
       }
-      if (!this.activeRepo) return this.data.category_counts || this._deriveCategoryCounts(this.scopedIssues);
+      if (!repo) return this.data.category_counts || this._deriveCategoryCounts(this.scopedIssues);
       return this._deriveCategoryCounts(this.scopedIssues);
     },
 
@@ -290,17 +442,49 @@ function dashboard() {
     },
 
     get activeTrends() {
-      if (this.activeRepo && this.data.per_repo && this.data.per_repo[this.activeRepo]) {
-        return this.data.per_repo[this.activeRepo].trends || [];
+      const repo = this.resolveRepoName(this.activeRepo);
+      if (repo && this.data.per_repo && this.data.per_repo[repo]) {
+        const trends = this.data.per_repo[repo].trends || [];
+        return trends.length ? trends : this._labelCountsToTrends(this.activeLabelCounts);
       }
-      return this.data.trends || [];
+      return (this.data.trends && this.data.trends.length) ? this.data.trends : this._labelCountsToTrends(this.activeLabelCounts);
     },
 
     get activeTotals() {
-      if (this.activeRepo && this.data.per_repo && this.data.per_repo[this.activeRepo]) {
-        return this.data.per_repo[this.activeRepo].totals || {};
+      const repo = this.resolveRepoName(this.activeRepo);
+      if (repo && this.data.per_repo && this.data.per_repo[repo]) {
+        return this.data.per_repo[repo].totals || {};
       }
       return this.data.totals || {};
+    },
+
+    get activeLabelCounts() {
+      const repo = this.resolveRepoName(this.activeRepo);
+      if (repo && this.data.per_repo && this.data.per_repo[repo]) return this.data.per_repo[repo].label_counts || {};
+      return this.data.label_counts || this._deriveLabelCounts(this.scopedIssues);
+    },
+
+    get topActiveLabels() {
+      const entries = Object.entries(this.activeLabelCounts).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).slice(0, 8);
+      const max = Math.max(1, ...entries.map(e => e[1]));
+      return entries.map(([name, count]) => ({ name, count, percent: Math.max(4, Math.round((count / max) * 100)) }));
+    },
+
+    get activeAgingBuckets() {
+      const repo = this.resolveRepoName(this.activeRepo);
+      const empty = { '0-1d': 0, '2-7d': 0, '8-30d': 0, '>30d': 0 };
+      if (repo && this.data.per_repo && this.data.per_repo[repo]) return Object.assign(empty, this.data.per_repo[repo].aging_buckets || {});
+      return Object.assign(empty, this.data.aging_buckets || {});
+    },
+
+    get activeAgingBucketsList() {
+      const entries = Object.entries(this.activeAgingBuckets);
+      const max = Math.max(1, ...entries.map(e => e[1]));
+      return entries.map(([name, count]) => ({ name, count, percent: count ? Math.max(4, Math.round((count / max) * 100)) : 0 }));
+    },
+
+    get generatedAtText() {
+      return this.data.generated_at ? new Date(this.data.generated_at).toLocaleString() : 'unknown';
     },
 
     get summaryCards() {
@@ -322,7 +506,141 @@ function dashboard() {
       return this.scopedIssues
         .filter(i => !this.categoryFilter || i.category === this.categoryFilter)
         .filter(i => !f || (i.title || '').toLowerCase().includes(f) || ('' + i.number).includes(f))
-        .sort((a, b) => (b.days_no_reply || 0) - (a.days_no_reply || 0));
+        .filter(i => !this.quickFilters.communityOnly || !!i.is_community)
+        .filter(i => !this.quickFilters.needsReply7d || (i.kind === 'issue' && (i.days_no_reply || 0) >= 7))
+        .filter(i => !this.quickFilters.actionableOnly || this.isActionable(i))
+        .sort((a, b) => this.comparePriority(a, b));
+    },
+
+    get priorityItems() {
+      return this.filteredIssues.filter(i => !this.isInformational(i));
+    },
+
+    get informationalItems() {
+      return this.filteredIssues.filter(i => this.isInformational(i));
+    },
+
+    get itemGroups() {
+      return [
+        { title: 'Actionable work', muted: false, items: this.priorityItems },
+        { title: 'Informational / no action', muted: true, items: this.informationalItems },
+      ];
+    },
+
+    _deriveLabelCounts(issues) {
+      const counts = {};
+      for (const i of issues) {
+        const labels = (i.current_labels && i.current_labels.length) ? i.current_labels : (i.suggested_labels || []);
+        for (const label of labels || []) {
+          if (label) counts[label] = (counts[label] || 0) + 1;
+        }
+      }
+      return counts;
+    },
+
+    _labelCountsToTrends(counts) {
+      return Object.entries(counts || {})
+        .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+        .slice(0, 5)
+        .map(([topic, count]) => ({ topic, count }));
+    },
+
+    hasSuggestedReply(iss) {
+      return !!(iss && iss.suggested_reply && String(iss.suggested_reply).trim());
+    },
+
+    ownerLabel(iss) {
+      return (iss.owner_kind || 'owner') === 'reviewer' ? 'Reviewer' : 'Assignee';
+    },
+
+    ownerText(iss) {
+      const evidence = iss.owner_evidence || iss.owner_fallback_reason || 'No routing evidence available.';
+      if (iss.suggested_owner) return { label: this.ownerLabel(iss) + ':', value: ' ' + iss.suggested_owner, evidence };
+      return { label: 'No owner found', value: ' — ' + evidence, evidence };
+    },
+
+    formatAction(action) {
+      if (!action) return 'Next action not specified';
+      if (this.actionLabels[action]) return this.actionLabels[action];
+      return String(action).replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+    },
+
+    displayAction(iss) {
+      const raw = iss.next_action || '';
+      if (raw === 'ready_to_merge' && !this.isActuallyReadyToMerge(iss)) {
+        return {
+          glyph: '⚠️',
+          label: 'Blocked — merge/review not ready',
+          reason: this.readyBlockerReason(iss),
+        };
+      }
+      return {
+        glyph: this.actionGlyphs[raw] || iss.next_action_glyph || '➡️',
+        label: this.formatAction(raw),
+        reason: iss.next_action_reason || 'No reason supplied.',
+      };
+    },
+
+    isActuallyReadyToMerge(iss) {
+      if (iss.kind !== 'pr') return true;
+      const merge = String(iss.pr_merge_state || '').toUpperCase();
+      const review = String(iss.pr_review_decision || '').toUpperCase();
+      return ['MERGEABLE', 'CLEAN', 'HAS_HOOKS'].includes(merge) && review === 'APPROVED';
+    },
+
+    readyBlockerReason(iss) {
+      return `Merge: ${iss.pr_merge_state || 'unknown'}; review: ${iss.pr_review_decision || 'unknown'}; CI: ${iss.pr_ci_rollup || 'unknown'}.`;
+    },
+
+    prTrustSummary(iss) {
+      const review = iss.pr_latest_human_review || 'No human review yet';
+      const bits = [
+        `merge ${iss.pr_merge_state || 'unknown'}`,
+        `review ${iss.pr_review_decision || 'unknown'}`,
+        this.ciStatusText(iss),
+        `latest review ${review}`,
+      ];
+      return bits.join(' · ');
+    },
+
+    ciStatusText(iss) {
+      const rollup = String(iss.pr_ci_rollup || 'unknown');
+      const failing = (iss.pr_failing_jobs || []).filter(Boolean);
+      if (rollup.toUpperCase() === 'FAILURE') {
+        return failing.length ? `CI failing: ${failing.join(', ')}` : 'CI FAILURE (no failing job names in data)';
+      }
+      return `CI ${rollup}`;
+    },
+
+    netNewSuggestedLabels(iss) {
+      const current = new Set((iss.current_labels || []).map(l => String(l).toLowerCase()));
+      return (iss.suggested_labels || []).filter(l => l && !current.has(String(l).toLowerCase()));
+    },
+
+    suggestedLabelChips(iss) {
+      const current = new Set((iss.current_labels || []).map(l => String(l).toLowerCase()));
+      return (iss.suggested_labels || []).filter(Boolean).map(name => ({ name, exists: current.has(String(name).toLowerCase()) }));
+    },
+
+    itemAge(iss) {
+      return Number(iss.priority_age_days ?? iss.days_no_reply ?? 0) || 0;
+    },
+
+    isInformational(iss) {
+      const action = String(iss.next_action || '').toLowerCase();
+      const values = [iss.category, iss.severity, iss.classification_type].map(v => String(v || '').toLowerCase());
+      return action === 'no_action' || values.some(v => v === 'meta' || v === 'informational' || v === 'info');
+    },
+
+    isActionable(iss) {
+      return !this.isInformational(iss);
+    },
+
+    comparePriority(a, b) {
+      const actionDelta = Number(this.isActionable(b)) - Number(this.isActionable(a));
+      if (this.sortMode === 'age') return (this.itemAge(b) - this.itemAge(a)) || ((b.score || 0) - (a.score || 0)) || actionDelta;
+      if (this.sortMode === 'score') return ((b.score || 0) - (a.score || 0)) || (this.itemAge(b) - this.itemAge(a)) || actionDelta;
+      return ((b.score || 0) - (a.score || 0)) || (this.itemAge(b) - this.itemAge(a)) || actionDelta;
     },
 
     renderCharts() {

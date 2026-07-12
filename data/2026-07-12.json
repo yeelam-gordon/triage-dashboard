@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T09:24:28Z",
+  "generated_at": "2026-07-12T11:14:00Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -9,14 +9,58 @@
     "copilot-pr-autopilot",
     "upstream-sync"
   ],
+  "checked_repos": [
+    "microsoft/intelligent-terminal",
+    "microsoft/PowerToys",
+    "microsoft/WSL",
+    "microsoft/wslg",
+    "microsoft/dynwinrt",
+    "microsoft/win-dev-skills"
+  ],
   "totals": {
     "open_issues": 20,
     "open_prs": 18
   },
   "category_counts": {
-    "bug": 17,
+    "bug": 15,
     "cli": 2,
-    "feature": 1
+    "feature": 2,
+    "informational": 1
+  },
+  "label_counts": {
+    "Needs-Review": 1,
+    "Needs-Triage": 12,
+    "Needs-Tag-Fix": 2,
+    "Product-General": 1,
+    "Product-Peek": 1,
+    "Issue-Bug": 7,
+    "Product-Keyboard Shortcut Manager": 1,
+    "Product-Keyboard Manager": 2,
+    "Needs-Author-Feedback": 1,
+    "Product-Quick Accent": 1,
+    "Needs-Team-Response": 2,
+    "Product-Command Palette": 11,
+    "duplicate": 2,
+    "Area-Localization": 3,
+    "Product-Color Picker": 1,
+    "Product-Advanced Paste": 1,
+    "Product-Mouse Utilities": 1,
+    "Product-Awake": 1,
+    "feature": 1,
+    "network": 2,
+    "bug": 6,
+    "GPU": 2,
+    "localization": 3,
+    "wsl2": 2,
+    "needs-investigation": 2,
+    "file system": 2,
+    "needs-author-feedback": 1
+  },
+  "aging_buckets": {
+    "0-1d": 35,
+    "2-7d": 3,
+    "8-30d": 0,
+    ">30d": 0
   },
   "per_repo": {
     "microsoft/intelligent-terminal": {
@@ -27,26 +71,29 @@
       "category_counts": {
         "cli": 2
       },
+      "label_counts": {
+        "Needs-Review": 1,
+        "Needs-Triage": 2,
+        "Needs-Tag-Fix": 2
+      },
+      "aging_buckets": {
+        "0-1d": 3,
+        "2-7d": 0,
+        "8-30d": 0,
+        ">30d": 0
+      },
       "trends": [
         {
-          "topic": "autofix triggers on stashed pane",
-          "count": 7,
-          "delta": 4
+          "topic": "Needs-Tag-Fix",
+          "count": 2
         },
         {
-          "topic": "OSC 133 PowerShell integration",
-          "count": 5,
-          "delta": 2
+          "topic": "Needs-Triage",
+          "count": 2
         },
         {
-          "topic": "settings UI agent dropdown",
-          "count": 4,
-          "delta": -1
-        },
-        {
-          "topic": "cross-window drag-in",
-          "count": 3,
-          "delta": 1
+          "topic": "Needs-Review",
+          "count": 1
         }
       ]
     },
@@ -56,8 +103,56 @@
         "open_prs": 10
       },
       "category_counts": {
-        "bug": 10
-      }
+        "bug": 8,
+        "feature": 1,
+        "informational": 1
+      },
+      "label_counts": {
+        "Product-General": 1,
+        "Product-Peek": 1,
+        "Issue-Bug": 7,
+        "Product-Keyboard Shortcut Manager": 1,
+        "Needs-Triage": 10,
+        "Product-Keyboard Manager": 2,
+        "Needs-Author-Feedback": 1,
+        "Product-Quick Accent": 1,
+        "Needs-Team-Response": 2,
+        "Product-Command Palette": 11,
+        "duplicate": 2,
+        "Area-Localization": 3,
+        "Product-Color Picker": 1,
+        "Product-Advanced Paste": 1,
+        "Product-Mouse Utilities": 1,
+        "Product-Awake": 1
+      },
+      "aging_buckets": {
+        "0-1d": 19,
+        "2-7d": 1,
+        "8-30d": 0,
+        ">30d": 0
+      },
+      "trends": [
+        {
+          "topic": "Product-Command Palette",
+          "count": 11
+        },
+        {
+          "topic": "Needs-Triage",
+          "count": 10
+        },
+        {
+          "topic": "Issue-Bug",
+          "count": 7
+        },
+        {
+          "topic": "Area-Localization",
+          "count": 3
+        },
+        {
+          "topic": "duplicate",
+          "count": 2
+        }
+      ]
     },
     "microsoft/WSL": {
       "totals": {
@@ -67,7 +162,46 @@
       "category_counts": {
         "bug": 6,
         "feature": 1
-      }
+      },
+      "label_counts": {
+        "feature": 1,
+        "network": 2,
+        "bug": 5,
+        "GPU": 2,
+        "localization": 3,
+        "wsl2": 2,
+        "needs-investigation": 2,
+        "file system": 2,
+        "needs-author-feedback": 1
+      },
+      "aging_buckets": {
+        "0-1d": 12,
+        "2-7d": 2,
+        "8-30d": 0,
+        ">30d": 0
+      },
+      "trends": [
+        {
+          "topic": "bug",
+          "count": 5
+        },
+        {
+          "topic": "localization",
+          "count": 3
+        },
+        {
+          "topic": "file system",
+          "count": 2
+        },
+        {
+          "topic": "GPU",
+          "count": 2
+        },
+        {
+          "topic": "needs-investigation",
+          "count": 2
+        }
+      ]
     },
     "microsoft/wslg": {
       "totals": {
@@ -76,29 +210,72 @@
       },
       "category_counts": {
         "bug": 1
+      },
+      "label_counts": {
+        "bug": 1
+      },
+      "aging_buckets": {
+        "0-1d": 1,
+        "2-7d": 0,
+        "8-30d": 0,
+        ">30d": 0
+      },
+      "trends": [
+        {
+          "topic": "bug",
+          "count": 1
+        }
+      ]
+    },
+    "microsoft/dynwinrt": {
+      "totals": {
+        "open_issues": 0,
+        "open_prs": 0
+      },
+      "category_counts": {},
+      "label_counts": {},
+      "aging_buckets": {
+        "0-1d": 0,
+        "2-7d": 0,
+        "8-30d": 0,
+        ">30d": 0
+      }
+    },
+    "microsoft/win-dev-skills": {
+      "totals": {
+        "open_issues": 0,
+        "open_prs": 0
+      },
+      "category_counts": {},
+      "label_counts": {},
+      "aging_buckets": {
+        "0-1d": 0,
+        "2-7d": 0,
+        "8-30d": 0,
+        ">30d": 0
       }
     }
   },
   "trends": [
     {
-      "topic": "autofix triggers on stashed pane",
-      "count": 7,
-      "delta": 4
+      "topic": "Needs-Triage",
+      "count": 12
     },
     {
-      "topic": "OSC 133 PowerShell integration",
-      "count": 5,
-      "delta": 2
+      "topic": "Product-Command Palette",
+      "count": 11
     },
     {
-      "topic": "settings UI agent dropdown",
-      "count": 4,
-      "delta": -1
+      "topic": "Issue-Bug",
+      "count": 7
     },
     {
-      "topic": "cross-window drag-in",
-      "count": 3,
-      "delta": 1
+      "topic": "bug",
+      "count": 6
+    },
+    {
+      "topic": "Area-Localization",
+      "count": 3
     }
   ],
   "issues": [
@@ -114,10 +291,29 @@
       "score": 1,
       "severity": "bug",
       "sentiment": "",
-      "next_action_glyph": "💬",
-      "next_action": "reply",
-      "suggested_labels": [],
-      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` (unrecognized words / forbidden-pattern findings in tools/wta). Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/86611513100? Once that is green, this is ready for a human review pass."
+      "classification_type": "bug-fix",
+      "next_action_glyph": "🔴",
+      "next_action": "fix_ci",
+      "next_action_reason": "Live blocker is failing CI: `check-spelling`.",
+      "suggested_labels": [
+        "Needs-Review"
+      ],
+      "suggested_reply": "Hi @DDKinger, the live blocker is CI, not a requested code review change: `check-spelling` is failing. Please fix the spelling/check-dictionary findings and rerun CI; after it is green, this still needs the required human review.",
+      "suggested_owner": "adityabagchi24",
+      "owner_evidence": "Live gh commit history for tools/wta/src/main.rs and tools/wta/src/coordinator.rs includes adityabagchi24; PR author DDKinger is also a recent author, so use a non-author reviewer.",
+      "owner_fallback_reason": "Live gh commit history for tools/wta/src/main.rs and tools/wta/src/coordinator.rs includes adityabagchi24; PR author DDKinger is also a recent author, so use a non-author reviewer.",
+      "owner_kind": "reviewer",
+      "current_labels": [],
+      "updated_at": "2026-07-12T03:30:52Z",
+      "priority_age_days": 1.0,
+      "aging_basis": "PR days_since_update",
+      "pr_merge_state": "BLOCKED",
+      "pr_review_decision": "REVIEW_REQUIRED",
+      "pr_ci_rollup": "FAILURE",
+      "pr_failing_jobs": [
+        "check-spelling"
+      ],
+      "pr_latest_human_review": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -131,15 +327,33 @@
       "score": 2,
       "severity": "bug",
       "sentiment": "neutral",
+      "classification_type": "bug",
       "next_action_glyph": "🏷️",
       "next_action": "label_only",
+      "next_action_reason": "Internal, fully actionable CLI bug; apply CLI/agent labels and route to an owner with live git-history evidence rather than asking the reporter for more data.",
       "suggested_labels": [
         "Issue-Bug",
         "Area-CLI",
         "Agent-Claude",
         "Agent-Codex"
       ],
-      "suggested_reply": ""
+      "suggested_reply": "",
+      "suggested_owner": "adityabagchi24",
+      "owner_evidence": "Live gh commit history on tools/wta/src/main.rs and tools/wta/src/coordinator.rs includes adityabagchi24; reporter DDKinger is also a recent author, so use a non-author backup.",
+      "owner_fallback_reason": "Live gh commit history on tools/wta/src/main.rs and tools/wta/src/coordinator.rs includes adityabagchi24; reporter DDKinger is also a recent author, so use a non-author backup.",
+      "owner_kind": "assignee",
+      "current_labels": [
+        "Needs-Triage",
+        "Needs-Tag-Fix"
+      ],
+      "updated_at": "2026-07-12T08:13:10Z",
+      "priority_age_days": 0.0,
+      "aging_basis": "issue days_no_reply",
+      "pr_merge_state": "",
+      "pr_review_decision": "",
+      "pr_ci_rollup": "",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -153,14 +367,31 @@
       "score": 2,
       "severity": "papercut",
       "sentiment": "confused",
+      "classification_type": "bug",
       "next_action_glyph": "🏷️",
       "next_action": "label_only",
+      "next_action_reason": "Internal WSL delegate launch bug with screenshot and repro; label Area-CLI and route to a live git-history owner if assignment is needed.",
       "suggested_labels": [
         "Issue-Bug",
-        "Area-CLI",
-        "Agent-WSL or Area-WSL label would help classify WSL delegate bugs if the repo adds such a label."
+        "Area-CLI"
       ],
-      "suggested_reply": ""
+      "suggested_reply": "",
+      "suggested_owner": "adityabagchi24",
+      "owner_evidence": "Live gh commit history on tools/wta/src/main.rs and tools/wta/src/coordinator.rs includes adityabagchi24; issue points at the WTA delegate/CLI launch path.",
+      "owner_fallback_reason": "Live gh commit history on tools/wta/src/main.rs and tools/wta/src/coordinator.rs includes adityabagchi24; issue points at the WTA delegate/CLI launch path.",
+      "owner_kind": "assignee",
+      "current_labels": [
+        "Needs-Triage",
+        "Needs-Tag-Fix"
+      ],
+      "updated_at": "2026-07-12T08:18:28Z",
+      "priority_age_days": 0.0,
+      "aging_basis": "issue days_no_reply",
+      "pr_merge_state": "",
+      "pr_review_decision": "",
+      "pr_ci_rollup": "",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": ""
     },
     {
       "repo": "microsoft/PowerToys",
@@ -168,18 +399,33 @@
       "title": "🚧 Would you like to contribute to PowerToys? 🚧",
       "url": "https://github.com/microsoft/PowerToys/issues/28769",
       "kind": "issue",
-      "category": "bug",
+      "category": "informational",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 8,
-      "severity": "crash",
+      "score": 0,
+      "severity": "none",
       "sentiment": "confused",
+      "classification_type": "informational",
       "next_action_glyph": "✅",
       "next_action": "no_action",
-      "suggested_labels": [
-        "Issue-Bug"
+      "next_action_reason": "Standing contribution-coordination thread; no product-triage action or public reply is needed.",
+      "suggested_labels": [],
+      "suggested_reply": "",
+      "suggested_owner": "",
+      "owner_evidence": "No component-specific owner needed for the standing contribution coordination issue.",
+      "owner_fallback_reason": "No component-specific owner needed for the standing contribution coordination issue.",
+      "owner_kind": "assignee",
+      "current_labels": [
+        "Product-General"
       ],
-      "suggested_reply": ""
+      "updated_at": "2026-07-11T16:46:45Z",
+      "priority_age_days": 0.0,
+      "aging_basis": "issue days_no_reply",
+      "pr_merge_state": "",
+      "pr_review_decision": "",
+      "pr_ci_rollup": "",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": ""
     },
     {
       "repo": "microsoft/PowerToys",
@@ -190,13 +436,30 @@
       "category": "feature",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 6,
-      "severity": "crash",
+      "score": 3,
+      "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "✅",
-      "next_action": "no_action",
+      "classification_type": "feature",
+      "next_action_glyph": "🛠️",
+      "next_action": "request_changes",
+      "next_action_reason": "Address MuyuanMS changes-requested review about workflow/spell-check changes before merge.",
       "suggested_labels": [],
-      "suggested_reply": ""
+      "suggested_reply": "Hi @thomastv, this is blocked on @MuyuanMS’s requested changes. Please remove or justify the workflow YAML changes called out in review; if they were only for spell-check, update the spell-check allow/expect files instead. CI is not the blocker right now—the requested review changes are.",
+      "suggested_owner": "MuyuanMS",
+      "owner_evidence": "Live gh latest review by MuyuanMS is CHANGES_REQUESTED.; Review thread asks why workflow YAML files changed for spell-check handling.",
+      "owner_fallback_reason": "Live gh latest review by MuyuanMS is CHANGES_REQUESTED.; Review thread asks why workflow YAML files changed for spell-check handling.",
+      "owner_kind": "reviewer",
+      "current_labels": [
+        "Product-Peek"
+      ],
+      "updated_at": "2026-07-11T10:27:53Z",
+      "priority_age_days": 1.0,
+      "aging_basis": "PR days_since_update",
+      "pr_merge_state": "BLOCKED",
+      "pr_review_decision": "CHANGES_REQUESTED",
+      "pr_ci_rollup": "SUCCESS",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": "MuyuanMS"
     },
     {
       "repo": "microsoft/PowerToys",
@@ -210,12 +473,32 @@
       "score": 3,
       "severity": "bug",
       "sentiment": "neutral",
-      "next_action_glyph": "💬",
-      "next_action": "reply",
+      "classification_type": "bug",
+      "next_action_glyph": "❓",
+      "next_action": "request_info",
+      "next_action_reason": "Missing current-version repro details: latest PowerToys version, remap type, old/new editor source, and when the deleted row reappears.",
       "suggested_labels": [
-        "Needs-Team-Response"
+        "Needs-Author-Feedback"
       ],
-      "suggested_reply": "Thanks. To help reproduce the delete failure in the new Keyboard Manager editor, could you share the exact remap type (key vs shortcut), the PowerToys version, and whether the row reappears immediately or only after reopening Settings?"
+      "suggested_reply": "Hi @thefasquelle, thanks for the repro. Could you please add one current-version repro pass with: (1) latest PowerToys version tested, (2) whether the mapping is a key remap or shortcut remap, (3) whether it was created in the old editor or new editor, and (4) whether Delete fails visually immediately, reappears after Save, or reappears only after closing and reopening Settings? Those four details will tell the Keyboard Manager owner where the delete/persistence failure is.",
+      "suggested_owner": "",
+      "owner_evidence": "No individual CODEOWNERS or live path-history evidence was collected for Keyboard Manager editor ownership.",
+      "owner_fallback_reason": "No individual CODEOWNERS or live path-history evidence was collected for Keyboard Manager editor ownership.",
+      "owner_kind": "assignee",
+      "current_labels": [
+        "Issue-Bug",
+        "Product-Keyboard Shortcut Manager",
+        "Needs-Triage",
+        "Product-Keyboard Manager"
+      ],
+      "updated_at": "2026-07-12T07:47:17Z",
+      "priority_age_days": 0.0,
+      "aging_basis": "issue days_no_reply",
+      "pr_merge_state": "",
+      "pr_review_decision": "",
+      "pr_ci_rollup": "",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": ""
     },
     {
       "repo": "microsoft/PowerToys",
@@ -229,12 +512,29 @@
       "score": 3,
       "severity": "bug",
       "sentiment": "neutral",
-      "next_action_glyph": "💬",
-      "next_action": "reply",
-      "suggested_labels": [
-        "Needs-Team-Response"
+      "classification_type": "bug",
+      "next_action_glyph": "✅",
+      "next_action": "no_action",
+      "next_action_reason": "A maintainer already answered that € has long been in the Spanish/German Quick Accent sets and asked whether the reporter updated from an older version; wait for @alexpf before another reply.",
+      "suggested_labels": [],
+      "suggested_reply": "",
+      "suggested_owner": "",
+      "owner_evidence": "Maintainer reply is already in-thread; no new assignment evidence needed.",
+      "owner_fallback_reason": "Maintainer reply is already in-thread; no new assignment evidence needed.",
+      "owner_kind": "assignee",
+      "current_labels": [
+        "Issue-Bug",
+        "Needs-Author-Feedback",
+        "Product-Quick Accent"
       ],
-      "suggested_reply": "Thanks for the screenshot. It shows € (U+20AC) appearing in Quick Accent. Could you confirm your selected character set/language in Quick Accent settings and whether this started only after updating to 0.100?"
+      "updated_at": "2026-07-11T02:48:46Z",
+      "priority_age_days": 0.0,
+      "aging_basis": "issue days_no_reply",
+      "pr_merge_state": "",
+      "pr_review_decision": "",
+      "pr_ci_rollup": "",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": ""
     },
     {
       "repo": "microsoft/PowerToys",
@@ -245,13 +545,32 @@
       "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 7,
-      "severity": "crash",
+      "score": 5,
+      "severity": "bug",
       "sentiment": "",
-      "next_action_glyph": "✅",
-      "next_action": "no_action",
+      "classification_type": "bug-fix",
+      "next_action_glyph": "🛠️",
+      "next_action": "request_changes",
+      "next_action_reason": "Resolve michaeljolley changes-requested review on the Performance Monitor GPU implementation.",
       "suggested_labels": [],
-      "suggested_reply": ""
+      "suggested_reply": "Hi @pratnala, thanks for rebasing and resolving the bot comments. The live blocker is @michaeljolley’s CHANGES_REQUESTED review on the CmdPal Performance Monitor GPU path, not CI. Please respond to or update the code for those review comments, then ask for re-review.",
+      "suggested_owner": "michaeljolley",
+      "owner_evidence": "Live gh latest review by michaeljolley is CHANGES_REQUESTED.; Live gh commit history for GPUStats.cs includes michaeljolley on the touched Performance Monitor path.",
+      "owner_fallback_reason": "Live gh latest review by michaeljolley is CHANGES_REQUESTED.; Live gh commit history for GPUStats.cs includes michaeljolley on the touched Performance Monitor path.",
+      "owner_kind": "reviewer",
+      "current_labels": [
+        "Needs-Triage",
+        "Needs-Team-Response",
+        "Product-Command Palette"
+      ],
+      "updated_at": "2026-07-12T01:07:02Z",
+      "priority_age_days": 1.0,
+      "aging_basis": "PR days_since_update",
+      "pr_merge_state": "BLOCKED",
+      "pr_review_decision": "CHANGES_REQUESTED",
+      "pr_ci_rollup": "SUCCESS",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": "michaeljolley"
     },
     {
       "repo": "microsoft/PowerToys",
@@ -262,16 +581,36 @@
       "category": "bug",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 7,
-      "severity": "crash",
+      "score": 6,
+      "severity": "regression",
       "sentiment": "frustrated",
-      "next_action_glyph": "💬",
-      "next_action": "reply",
+      "classification_type": "bug",
+      "next_action_glyph": "❓",
+      "next_action": "request_info",
+      "next_action_reason": "Missing CmdPal dock diagnostics: bug report zip plus exact monitor layout, scaling/DPI, laptop dock/lid state, and sleep/unplug trigger.",
       "suggested_labels": [
-        "CmdPal - Dock",
-        "Needs-Team-Response"
+        "Needs-Team-Response",
+        "Resolution-Duplicate"
       ],
-      "suggested_reply": "Thanks for the detailed added repro. The consistent trigger around the Dock on laptops / changing displays is useful. Could you add your monitor topology (built-in/external count, scaling, and which display is primary) plus whether the dock moves after sleep/resume, unplug/replug, or only when switching project modes?"
+      "suggested_reply": "Hi @Elestriel, thanks for the original report. @pinkrababebbit20462046 added a reproducible v0.100.2 scenario with two monitors, dock enabled only on the secondary monitor, and movement after sleep/resume or monitor changes. Could you both add a PowerToys bug report zip plus the exact monitor layout (primary display, scaling/DPI per monitor, laptop lid/dock state, and whether the failure follows sleep/resume vs unplug/replug)? That will let the CmdPal dock owner compare it with the duplicate dock issues instead of guessing from topology.",
+      "suggested_owner": "",
+      "owner_evidence": "Only broad PowerToys team CODEOWNERS evidence is available; no individual owner evidence for CmdPal dock.",
+      "owner_fallback_reason": "Only broad PowerToys team CODEOWNERS evidence is available; no individual owner evidence for CmdPal dock.",
+      "owner_kind": "assignee",
+      "current_labels": [
+        "Issue-Bug",
+        "Needs-Triage",
+        "Product-Command Palette",
+        "duplicate"
+      ],
+      "updated_at": "2026-07-11T09:38:44Z",
+      "priority_age_days": 0.0,
+      "aging_basis": "issue days_no_reply",
+      "pr_merge_state": "",
+      "pr_review_decision": "",
+      "pr_ci_rollup": "",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": ""
     },
     {
       "repo": "microsoft/PowerToys",
@@ -279,16 +618,35 @@
       "title": "feat(cmdpal): list hover actions with extension SDK configuration",
       "url": "https://github.com/microsoft/PowerToys/pull/48863",
       "kind": "pr",
-      "category": "other",
+      "category": "feature",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 8,
-      "severity": "crash",
+      "score": 3,
+      "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "💬",
-      "next_action": "reply",
+      "classification_type": "feature",
+      "next_action_glyph": "🛠️",
+      "next_action": "request_changes",
+      "next_action_reason": "Draft PR is dirty and has unresolved CmdPal changes-requested reviews.",
       "suggested_labels": [],
-      "suggested_reply": "Thanks for the follow-up on tags and hover actions. CI is already green; since this touches CmdPal UI/view-model behavior across many files and has active maintainer review, the next step is maintainer re-review/author follow-up on the requested changes rather than another CI pass."
+      "suggested_reply": "Hi @tonythethompson, thanks for the tags/hover-actions follow-up. This PR is still draft, has a DIRTY merge state, and has CHANGES_REQUESTED from @michaeljolley and @zadjii-msft. Please rebase on current main and explicitly resolve the requested design/API review points before asking for another pass; CI is not the current blocker.",
+      "suggested_owner": "michaeljolley, zadjii-msft",
+      "owner_evidence": "Live gh latest reviews by michaeljolley and zadjii-msft are CHANGES_REQUESTED.; Live gh commit history for touched CmdPal ViewModels includes michaeljolley and zadjii-msft.",
+      "owner_fallback_reason": "Live gh latest reviews by michaeljolley and zadjii-msft are CHANGES_REQUESTED.; Live gh commit history for touched CmdPal ViewModels includes michaeljolley and zadjii-msft.",
+      "owner_kind": "reviewer",
+      "current_labels": [
+        "Needs-Triage",
+        "Needs-Team-Response",
+        "Product-Command Palette"
+      ],
+      "updated_at": "2026-07-12T01:25:30Z",
+      "priority_age_days": 2.9,
+      "aging_basis": "PR waiting age",
+      "pr_merge_state": "DIRTY",
+      "pr_review_decision": "CHANGES_REQUESTED",
+      "pr_ci_rollup": "SUCCESS",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": "michaeljolley"
     },
     {
       "repo": "microsoft/PowerToys",
@@ -302,10 +660,29 @@
       "score": 3,
       "severity": "bug",
       "sentiment": "neutral",
+      "classification_type": "bug",
       "next_action_glyph": "✅",
       "next_action": "no_action",
+      "next_action_reason": "The actionable root cause is already captured and PR #49274 is open to change decimal network speed units to divisor 1000; monitor that PR rather than asking for more info.",
       "suggested_labels": [],
-      "suggested_reply": ""
+      "suggested_reply": "",
+      "suggested_owner": "",
+      "owner_evidence": "No assignment needed while the linked fix PR is active.",
+      "owner_fallback_reason": "No assignment needed while the linked fix PR is active.",
+      "owner_kind": "assignee",
+      "current_labels": [
+        "Issue-Bug",
+        "Needs-Triage",
+        "Product-Command Palette"
+      ],
+      "updated_at": "2026-07-11T17:14:44Z",
+      "priority_age_days": 0.0,
+      "aging_basis": "issue days_no_reply",
+      "pr_merge_state": "",
+      "pr_review_decision": "",
+      "pr_ci_rollup": "",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": ""
     },
     {
       "repo": "microsoft/PowerToys",
@@ -319,10 +696,28 @@
       "score": 1,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "✅",
-      "next_action": "no_action",
+      "classification_type": "feature",
+      "next_action_glyph": "🛠️",
+      "next_action": "request_changes",
+      "next_action_reason": "CI is green, but daverayment requested changes on TimeDate week-number UX/settings behavior.",
       "suggested_labels": [],
-      "suggested_reply": ""
+      "suggested_reply": "Hi @MarcelSchm, CI is already green; the blocker is @daverayment’s CHANGES_REQUESTED review and the unresolved display/settings design for ISO week date vs week-number calculation. Please update the PR to match the agreed display/override behavior in the latest thread, then request Dave’s re-review.",
+      "suggested_owner": "daverayment",
+      "owner_evidence": "Live gh latest review by daverayment is CHANGES_REQUESTED.; Thread discusses the ISO week-date display/override design with daverayment and htcfreek.",
+      "owner_fallback_reason": "Live gh latest review by daverayment is CHANGES_REQUESTED.; Thread discusses the ISO week-date display/override design with daverayment and htcfreek.",
+      "owner_kind": "reviewer",
+      "current_labels": [
+        "Area-Localization",
+        "Product-Command Palette"
+      ],
+      "updated_at": "2026-07-11T17:37:22Z",
+      "priority_age_days": 0.6,
+      "aging_basis": "PR waiting age",
+      "pr_merge_state": "BLOCKED",
+      "pr_review_decision": "CHANGES_REQUESTED",
+      "pr_ci_rollup": "SUCCESS",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": "daverayment"
     },
     {
       "repo": "microsoft/PowerToys",
@@ -336,12 +731,28 @@
       "score": 2,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "✅",
-      "next_action": "no_action",
-      "suggested_labels": [
+      "classification_type": "refactor",
+      "next_action_glyph": "🔄",
+      "next_action": "needs_rebase",
+      "next_action_reason": "Branch is dirty/mergeable=CONFLICTING; update/rebase before review or CI can be trusted.",
+      "suggested_labels": [],
+      "suggested_reply": "Hi @moooyo, the live blocker is branch state: GitHub reports `mergeStateStatus=DIRTY` / mergeable=CONFLICTING, and `PowerToys CI` is still action-required. Please rebase or update the branch on current main, then rerun CI before requesting the next Color Picker review pass.",
+      "suggested_owner": "niels9001",
+      "owner_evidence": "Live gh latest review activity includes a COMMENTED review by niels9001.; PR touches Color Picker migration files and is currently draft/dirty with PowerToys CI action required.",
+      "owner_fallback_reason": "Live gh latest review activity includes a COMMENTED review by niels9001.; PR touches Color Picker migration files and is currently draft/dirty with PowerToys CI action required.",
+      "owner_kind": "reviewer",
+      "current_labels": [
+        "Area-Localization",
         "Product-Color Picker"
       ],
-      "suggested_reply": ""
+      "updated_at": "2026-07-11T16:29:10Z",
+      "priority_age_days": 1.0,
+      "aging_basis": "PR days_since_update",
+      "pr_merge_state": "DIRTY",
+      "pr_review_decision": "REVIEW_REQUIRED",
+      "pr_ci_rollup": "PENDING",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": "niels9001"
     },
     {
       "repo": "microsoft/PowerToys",
@@ -352,13 +763,31 @@
       "category": "feature",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 7,
-      "severity": "crash",
+      "score": 2,
+      "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "💬",
-      "next_action": "reply",
+      "classification_type": "feature",
+      "next_action_glyph": "👀",
+      "next_action": "needs_review",
+      "next_action_reason": "Live GitHub shows BLOCKED / REVIEW_REQUIRED, so the concrete blocker is missing required review, not CI.",
       "suggested_labels": [],
-      "suggested_reply": "Thanks for the detailed PR and screenshots. The Control Panel task results for “game controllers”, “power”, and “joystick” are clear. Next useful step is maintainer review of the enumeration/localization approach and CI results."
+      "suggested_reply": "Hi @DataVoyager-Aditya, CI is green and @htcfreek approved, but live GitHub still shows `mergeStateStatus=BLOCKED` and `reviewDecision=REVIEW_REQUIRED`. Please request the remaining CmdPal/code-owner review required by branch protection; this should not be treated as ready-to-merge until that review requirement clears.",
+      "suggested_owner": "microsoft/powertoys-code-owners",
+      "owner_evidence": "PowerToys .github/CODEOWNERS contains the broad team @microsoft/powertoys-code-owners for protected repository areas.; Live GitHub shows reviewDecision=REVIEW_REQUIRED even after htcfreek approved, so the remaining ac...",
+      "owner_fallback_reason": "PowerToys .github/CODEOWNERS contains the broad team @microsoft/powertoys-code-owners for protected repository areas.; Live GitHub shows reviewDecision=REVIEW_REQUIRED even after htcfreek approved, so the remaining ac...",
+      "owner_kind": "reviewer",
+      "current_labels": [
+        "Area-Localization",
+        "Product-Command Palette"
+      ],
+      "updated_at": "2026-07-12T00:47:27Z",
+      "priority_age_days": 0.3,
+      "aging_basis": "PR waiting age",
+      "pr_merge_state": "BLOCKED",
+      "pr_review_decision": "REVIEW_REQUIRED",
+      "pr_ci_rollup": "SUCCESS",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": "htcfreek"
     },
     {
       "repo": "microsoft/PowerToys",
@@ -366,18 +795,36 @@
       "title": "CmdPal: Add audio cues",
       "url": "https://github.com/microsoft/PowerToys/issues/49263",
       "kind": "issue",
-      "category": "bug",
+      "category": "feature",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 5,
-      "severity": "crash",
+      "score": 1,
+      "severity": "none",
       "sentiment": "neutral",
+      "classification_type": "feature",
       "next_action_glyph": "✅",
       "next_action": "no_action",
+      "next_action_reason": "The feature request now has prototype PR #49278 and tagged CmdPal maintainers; no duplicate public reply is needed unless maintainers decide scope.",
       "suggested_labels": [
-        "Issue-Bug"
+        "Idea-Enhancement"
       ],
-      "suggested_reply": ""
+      "suggested_reply": "",
+      "suggested_owner": "",
+      "owner_evidence": "No individual owner evidence beyond tagged maintainers in the thread.",
+      "owner_fallback_reason": "No individual owner evidence beyond tagged maintainers in the thread.",
+      "owner_kind": "assignee",
+      "current_labels": [
+        "Needs-Triage",
+        "Product-Command Palette"
+      ],
+      "updated_at": "2026-07-11T23:46:10Z",
+      "priority_age_days": 0.0,
+      "aging_basis": "issue days_no_reply",
+      "pr_merge_state": "",
+      "pr_review_decision": "",
+      "pr_ci_rollup": "",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": ""
     },
     {
       "repo": "microsoft/PowerToys",
@@ -391,12 +838,32 @@
       "score": 2,
       "severity": "bug",
       "sentiment": "neutral",
-      "next_action_glyph": "💬",
-      "next_action": "reply",
+      "classification_type": "bug",
+      "next_action_glyph": "❓",
+      "next_action": "request_info",
+      "next_action_reason": "Missing Advanced Paste repro details: PowerToys/Windows version, install method, action/provider/API-key configuration, expected vs actual result, and bug report zip.",
       "suggested_labels": [
-        "Needs-Team-Response"
+        "Needs-Author-Feedback",
+        "Needs-Repro"
       ],
-      "suggested_reply": "Thanks for the screenshots. The configuration appears saved, but Advanced Paste reports “An error occurred during the paste operation.” Could you attach a PowerToys bug report/log and confirm whether the Gemini API key has access to the configured model (`gemini-1.5-pro`)?"
+      "suggested_reply": "Hi @marko090591, thanks for the screenshots. To triage Advanced Paste we still need the concrete repro details from the PowerToys issue template: PowerToys version, install method, Windows version, the exact Advanced Paste action you ran, which provider/API key setting is configured, expected vs actual result, and whether the same failure happens after restarting PowerToys. If possible, please attach a PowerToys bug report zip so the logs show the provider/error path instead of only the UI screenshots.",
+      "suggested_owner": "",
+      "owner_evidence": "No individual CODEOWNERS or path-history evidence was collected for Advanced Paste ownership.",
+      "owner_fallback_reason": "No individual CODEOWNERS or path-history evidence was collected for Advanced Paste ownership.",
+      "owner_kind": "assignee",
+      "current_labels": [
+        "Issue-Bug",
+        "Needs-Triage",
+        "Product-Advanced Paste"
+      ],
+      "updated_at": "2026-07-11T06:30:07Z",
+      "priority_age_days": 0.0,
+      "aging_basis": "issue days_no_reply",
+      "pr_merge_state": "",
+      "pr_review_decision": "",
+      "pr_ci_rollup": "",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": ""
     },
     {
       "repo": "microsoft/PowerToys",
@@ -410,10 +877,31 @@
       "score": 4,
       "severity": "crash",
       "sentiment": "neutral",
-      "next_action_glyph": "✅",
-      "next_action": "no_action",
-      "suggested_labels": [],
-      "suggested_reply": ""
+      "classification_type": "bug",
+      "next_action_glyph": "🏷️",
+      "next_action": "label_only",
+      "next_action_reason": "Internal dev crash note has version and stack context but no dump/repro; label as CmdPal bug needing repro before public follow-up.",
+      "suggested_labels": [
+        "Needs-Repro"
+      ],
+      "suggested_reply": "",
+      "suggested_owner": "",
+      "owner_evidence": "Reporter is internal and no separate owner evidence was collected for this ListView crash.",
+      "owner_fallback_reason": "Reporter is internal and no separate owner evidence was collected for this ListView crash.",
+      "owner_kind": "assignee",
+      "current_labels": [
+        "Issue-Bug",
+        "Needs-Triage",
+        "Product-Command Palette"
+      ],
+      "updated_at": "2026-07-11T09:50:24Z",
+      "priority_age_days": 0.0,
+      "aging_basis": "issue days_no_reply",
+      "pr_merge_state": "",
+      "pr_review_decision": "",
+      "pr_ci_rollup": "",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": ""
     },
     {
       "repo": "microsoft/PowerToys",
@@ -424,13 +912,30 @@
       "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 7,
-      "severity": "crash",
+      "score": 4,
+      "severity": "bug",
       "sentiment": "",
-      "next_action_glyph": "✅",
-      "next_action": "no_action",
+      "classification_type": "bug-fix",
+      "next_action_glyph": "👀",
+      "next_action": "needs_review",
+      "next_action_reason": "Single-file fix has no failing CI but still needs Performance Monitor maintainer review/validation.",
       "suggested_labels": [],
-      "suggested_reply": ""
+      "suggested_reply": "Hi @HoneyTyagii, thanks for opening the fix for #49071. The next step is a CmdPal Performance Monitor review/validation pass—@michaeljolley already called out the build/verification question. Please add whether you ran the relevant unit/build checks, then request review.",
+      "suggested_owner": "michaeljolley",
+      "owner_evidence": "Live thread has michaeljolley asking for validation/build verification.; Live gh commit history for PerformanceWidgetsPage.cs includes michaeljolley, jiripolasek, and zadjii-msft.",
+      "owner_fallback_reason": "Live thread has michaeljolley asking for validation/build verification.; Live gh commit history for PerformanceWidgetsPage.cs includes michaeljolley, jiripolasek, and zadjii-msft.",
+      "owner_kind": "reviewer",
+      "current_labels": [
+        "Product-Command Palette"
+      ],
+      "updated_at": "2026-07-11T22:24:21Z",
+      "priority_age_days": 1.0,
+      "aging_basis": "PR days_since_update",
+      "pr_merge_state": "BLOCKED",
+      "pr_review_decision": "REVIEW_REQUIRED",
+      "pr_ci_rollup": "SUCCESS",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": ""
     },
     {
       "repo": "microsoft/PowerToys",
@@ -438,16 +943,33 @@
       "title": "[Keyboard Manager] Per-keyboard remap profiles (auto-switch + cycle hotkey)",
       "url": "https://github.com/microsoft/PowerToys/pull/49276",
       "kind": "pr",
-      "category": "other",
+      "category": "feature",
       "days_no_reply": 0,
       "is_community": true,
-      "score": 7,
-      "severity": "crash",
+      "score": 3,
+      "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "💬",
-      "next_action": "reply",
+      "classification_type": "feature",
+      "next_action_glyph": "✍️",
+      "next_action": "blocked_cla",
+      "next_action_reason": "CLA is not complete: live `license/cla` check is QUEUED.",
       "suggested_labels": [],
-      "suggested_reply": "Thanks for the PR. Please complete the CLA bot instructions so maintainers can review the per-keyboard remap profile implementation."
+      "suggested_reply": "Hi @MasaYan24, this PR is blocked on the Contributor License Agreement, not on a code review finding. The live `license/cla` check is still queued/pending; please follow the `microsoft-github-policy-service` instructions and sign/confirm the CLA before maintainers review the Keyboard Manager changes.",
+      "suggested_owner": "microsoft/powertoys-code-owners",
+      "owner_evidence": "PowerToys CODEOWNERS contains the broad team @microsoft/powertoys-code-owners; no individual Keyboard Manager owner evidence found in live data.; Live status shows `license/cla` is QUEUED and policy bot requested CLA ...",
+      "owner_fallback_reason": "PowerToys CODEOWNERS contains the broad team @microsoft/powertoys-code-owners; no individual Keyboard Manager owner evidence found in live data.; Live status shows `license/cla` is QUEUED and policy bot requested CLA ...",
+      "owner_kind": "reviewer",
+      "current_labels": [
+        "Product-Keyboard Manager"
+      ],
+      "updated_at": "2026-07-11T21:23:48Z",
+      "priority_age_days": 0.5,
+      "aging_basis": "PR waiting age",
+      "pr_merge_state": "BLOCKED",
+      "pr_review_decision": "REVIEW_REQUIRED",
+      "pr_ci_rollup": "PENDING",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": ""
     },
     {
       "repo": "microsoft/PowerToys",
@@ -458,13 +980,30 @@
       "category": "feature",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 4,
-      "severity": "bug",
+      "score": 1,
+      "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "✅",
-      "next_action": "no_action",
+      "classification_type": "feature",
+      "next_action_glyph": "🔄",
+      "next_action": "needs_rebase",
+      "next_action_reason": "Branch is dirty/mergeable=CONFLICTING; rebase/update before review.",
       "suggested_labels": [],
-      "suggested_reply": ""
+      "suggested_reply": "Hi @jiripolasek, the live blocker is branch state: GitHub reports `mergeStateStatus=DIRTY` / mergeable=CONFLICTING. Please rebase or update the draft branch on current main before asking CmdPal owners for the audio-cues scope/API review.",
+      "suggested_owner": "michaeljolley, zadjii-msft",
+      "owner_evidence": "Live gh commit history for touched CmdPal ViewModels includes michaeljolley and zadjii-msft.; PR is a draft and merge state is DIRTY.",
+      "owner_fallback_reason": "Live gh commit history for touched CmdPal ViewModels includes michaeljolley and zadjii-msft.; PR is a draft and merge state is DIRTY.",
+      "owner_kind": "reviewer",
+      "current_labels": [
+        "Product-Command Palette"
+      ],
+      "updated_at": "2026-07-11T23:34:56Z",
+      "priority_age_days": 1.0,
+      "aging_basis": "PR days_since_update",
+      "pr_merge_state": "DIRTY",
+      "pr_review_decision": "REVIEW_REQUIRED",
+      "pr_ci_rollup": "SUCCESS",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": ""
     },
     {
       "repo": "microsoft/PowerToys",
@@ -478,10 +1017,27 @@
       "score": 5,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "💬",
-      "next_action": "reply",
+      "classification_type": "feature",
+      "next_action_glyph": "👀",
+      "next_action": "needs_review",
+      "next_action_reason": "No public author comment is warranted: chatasweetie and PowerToys code owners are already requested; this is waiting on reviewer-side scope/UX/telemetry review.",
       "suggested_labels": [],
-      "suggested_reply": "Thanks for opening this. Because this adds a new Mouse Utilities module and touches installer/docs/privacy files, the next step is maintainer triage for scope, UX, and packaging impact before code review."
+      "suggested_reply": "",
+      "suggested_owner": "chatasweetie",
+      "owner_evidence": "Live gh reviewRequests includes chatasweetie.; Live gh reviewRequests also includes @microsoft/powertoys-code-owners for the broad PowerToys team.",
+      "owner_fallback_reason": "Live gh reviewRequests includes chatasweetie.; Live gh reviewRequests also includes @microsoft/powertoys-code-owners for the broad PowerToys team.",
+      "owner_kind": "reviewer",
+      "current_labels": [
+        "Product-Mouse Utilities"
+      ],
+      "updated_at": "2026-07-12T03:58:27Z",
+      "priority_age_days": 0.2,
+      "aging_basis": "PR waiting age",
+      "pr_merge_state": "BLOCKED",
+      "pr_review_decision": "REVIEW_REQUIRED",
+      "pr_ci_rollup": "SUCCESS",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": ""
     },
     {
       "repo": "microsoft/PowerToys",
@@ -495,13 +1051,31 @@
       "score": 3,
       "severity": "bug",
       "sentiment": "confused",
-      "next_action_glyph": "💬",
-      "next_action": "reply",
+      "classification_type": "bug",
+      "next_action_glyph": "❓",
+      "next_action": "request_info",
+      "next_action_reason": "Missing product decision input: which Awake enablement UX is expected—reset, remember with clearer indicator, or prompt for interval.",
       "suggested_labels": [
-        "Issue-Bug",
-        "Needs-Team-Response"
+        "Idea-Enhancement",
+        "Needs-Community Feedback"
       ],
-      "suggested_reply": "Thanks for the suggestion. The screenshot shows Awake preserving the previous timed interval (3h 1m). Can you clarify the preferred UX: should enabling Awake always reset to a default mode, prompt for a new interval, or remember the previous interval but make it more obvious?"
+      "suggested_reply": "Hi @sahandilshan, thanks for the suggestion. The screenshot shows Awake reopening with the previous timed interval (3h 1m). Which UX would be least surprising: reset to a default mode every time Awake is enabled, keep the previous interval but show a clearer “using previous interval” indicator, or ask for a new interval when enabling? That choice will decide whether this is a settings-persistence change or just a UI affordance change.",
+      "suggested_owner": "",
+      "owner_evidence": "No individual owner evidence was collected for Awake UI ownership.",
+      "owner_fallback_reason": "No individual owner evidence was collected for Awake UI ownership.",
+      "owner_kind": "assignee",
+      "current_labels": [
+        "Needs-Triage",
+        "Product-Awake"
+      ],
+      "updated_at": "2026-07-12T04:33:48Z",
+      "priority_age_days": 0.0,
+      "aging_basis": "issue days_no_reply",
+      "pr_merge_state": "",
+      "pr_review_decision": "",
+      "pr_ci_rollup": "",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": ""
     },
     {
       "repo": "microsoft/PowerToys",
@@ -515,13 +1089,33 @@
       "score": 5,
       "severity": "crash",
       "sentiment": "neutral",
-      "next_action_glyph": "💬",
-      "next_action": "reply",
+      "classification_type": "bug",
+      "next_action_glyph": "❓",
+      "next_action": "request_info",
+      "next_action_reason": "Missing crash diagnostics: PowerToys bug report zip, Windows Event Viewer entry for AdaptiveCards.Rendering.WinUI3.dll, and whether a specific extension/card triggers it.",
       "suggested_labels": [
-        "CmdPal - Dock",
-        "Needs-Team-Response"
+        "Needs-Author-Feedback",
+        "Resolution-Duplicate"
       ],
-      "suggested_reply": "Thanks for reporting. This looks related to #48516. Could you add your display layout (number of monitors, scaling, primary display), and whether the dock moves after sleep/resume, unplugging a display, or opening Command Palette?"
+      "suggested_reply": "Hi @azazyahmed, thanks for the crash details. @jiripolasek already narrowed the event log to an access violation in `AdaptiveCards.Rendering.WinUI3.dll` and asked to focus this issue on the crash rather than dock movement. Could you attach a PowerToys bug report zip and the Windows Event Viewer crash entry for that module, plus whether it happens with a specific extension/card? The dock movement portion can stay linked to the duplicate dock issue, but the crash needs those logs.",
+      "suggested_owner": "",
+      "owner_evidence": "No individual assignee evidence beyond in-thread maintainer participation.",
+      "owner_fallback_reason": "No individual assignee evidence beyond in-thread maintainer participation.",
+      "owner_kind": "assignee",
+      "current_labels": [
+        "Issue-Bug",
+        "Needs-Triage",
+        "Product-Command Palette",
+        "duplicate"
+      ],
+      "updated_at": "2026-07-12T06:17:37Z",
+      "priority_age_days": 0.0,
+      "aging_basis": "issue days_no_reply",
+      "pr_merge_state": "",
+      "pr_review_decision": "",
+      "pr_ci_rollup": "",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": ""
     },
     {
       "repo": "microsoft/WSL",
@@ -535,13 +1129,29 @@
       "score": 5,
       "severity": "papercut",
       "sentiment": "neutral",
+      "classification_type": "feature",
       "next_action_glyph": "💬",
       "next_action": "reply",
+      "next_action_reason": "Acknowledge the new DMI/sysfs use case and ask maintainers to make a support/by-design/feature-tracking decision; no reporter info is missing.",
       "suggested_labels": [
-        "feature",
-        "kernel"
+        "needs-investigation"
       ],
-      "suggested_reply": "Thanks for the additional use case. The new note that sysfs DMI support is required by apps such as Sober, and appears related to #13958, is useful context for prioritization. Maintainers: consider cross-linking #13958 here and clarifying whether exposing SMBIOS/DMI in WSL2 is in scope."
+      "suggested_reply": "Hi @jrgerber, the new comment adds a concrete current use case: applications such as Sober needing sysfs/DMI-style hardware identity in WSL. Maintainers: the next decision is whether exposing SMBIOS/DMI data in WSL2 is supported, by-design unavailable, or should be tracked as a feature request; if it is unsupported, please cross-link the newer dependent issue so users have a canonical answer.",
+      "suggested_owner": "",
+      "owner_evidence": "WSL CODEOWNERS only lists teams; no individual DMI/sysfs owner evidence was collected.",
+      "owner_fallback_reason": "WSL CODEOWNERS only lists teams; no individual DMI/sysfs owner evidence was collected.",
+      "owner_kind": "assignee",
+      "current_labels": [
+        "feature"
+      ],
+      "updated_at": "2026-07-11T01:23:35Z",
+      "priority_age_days": 0.0,
+      "aging_basis": "issue days_no_reply",
+      "pr_merge_state": "",
+      "pr_review_decision": "",
+      "pr_ci_rollup": "",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": ""
     },
     {
       "repo": "microsoft/WSL",
@@ -555,13 +1165,31 @@
       "score": 7,
       "severity": "bug",
       "sentiment": "frustrated",
-      "next_action_glyph": "💬",
-      "next_action": "reply",
+      "classification_type": "bug",
+      "next_action_glyph": "❓",
+      "next_action": "request_info",
+      "next_action_reason": "Missing current maintainer-grade WSL diagnostics: fresh log bundle, wsl --version, Windows build, .wslconfig, VPN/firewall status, and exact mirrored-networking error.",
       "suggested_labels": [
-        "network",
-        "bug"
+        "bug",
+        "wsl2",
+        "needs-investigation"
       ],
-      "suggested_reply": "Thanks for the updated screenshot. It confirms this still reproduces on WSL 2.7.10 with CreateVm/ConfigureNetworking/0x803b0015, plus the message that the current request is unsupported and that localhost proxy is not mirrored into WSL NAT mode. If anyone else can still reproduce, please add Windows build, WSL version, .wslconfig networking section, VPN/firewall software, and wsl --debug-shell/networking logs."
+      "suggested_reply": "Hi @ecomter, this thread has a lot of reach and the latest comments indicate mirrored networking is still failing for some users on newer WSL builds. To make the next maintainer pass actionable, could the next affected user attach a fresh WSL log bundle from the built-in WSL issue instructions plus `wsl --version`, Windows build, `.wslconfig`, VPN/firewall status, and the exact error shown when `networkingMode=mirrored` is enabled? That separates current regressions from the original 2024 build in the issue body.",
+      "suggested_owner": "",
+      "owner_evidence": "WSL CODEOWNERS only lists teams; no individual owner evidence for mirrored networking was collected.",
+      "owner_fallback_reason": "WSL CODEOWNERS only lists teams; no individual owner evidence for mirrored networking was collected.",
+      "owner_kind": "assignee",
+      "current_labels": [
+        "network"
+      ],
+      "updated_at": "2026-07-11T21:46:57Z",
+      "priority_age_days": 0.0,
+      "aging_basis": "issue days_no_reply",
+      "pr_merge_state": "",
+      "pr_review_decision": "",
+      "pr_ci_rollup": "",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": ""
     },
     {
       "repo": "microsoft/WSL",
@@ -575,10 +1203,27 @@
       "score": 4,
       "severity": "bug",
       "sentiment": "",
-      "next_action_glyph": "💬",
-      "next_action": "reply",
-      "suggested_labels": [],
-      "suggested_reply": "Thanks for sticking with this. The PR has reviewer attention and requested maintainers, but it still appears blocked. Could a maintainer summarize the remaining required change or validation needed before merge, especially around the new enum/measure update mentioned earlier?"
+      "classification_type": "bug-fix",
+      "next_action_glyph": "👀",
+      "next_action": "needs_review",
+      "next_action_reason": "Review/measure follow-up is still open despite one approval.",
+      "suggested_labels": [
+        "bug"
+      ],
+      "suggested_reply": "Hi @klabacher, the code review is mostly on track, but merge is still blocked by review requirements and the measures follow-up called out in the thread. Please wait for @craigloewen-msft’s measures update/confirmation and the requested WSL maintainer review before merge.",
+      "suggested_owner": "benhillis, Brian-Perkins, craigloewen-msft",
+      "owner_evidence": "Live gh reviewRequests includes benhillis, Brian-Perkins, craigloewen-msft and WSL teams.; Thread says Craig may need to update measures and craigloewen-msft replied that he will do so.",
+      "owner_fallback_reason": "Live gh reviewRequests includes benhillis, Brian-Perkins, craigloewen-msft and WSL teams.; Thread says Craig may need to update measures and craigloewen-msft replied that he will do so.",
+      "owner_kind": "reviewer",
+      "current_labels": [],
+      "updated_at": "2026-07-12T04:43:38Z",
+      "priority_age_days": 1.0,
+      "aging_basis": "PR days_since_update",
+      "pr_merge_state": "BLOCKED",
+      "pr_review_decision": "REVIEW_REQUIRED",
+      "pr_ci_rollup": "SUCCESS",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": "keith-horton"
     },
     {
       "repo": "microsoft/WSL",
@@ -592,13 +1237,30 @@
       "score": 5,
       "severity": "bug",
       "sentiment": "blocked",
-      "next_action_glyph": "💬",
-      "next_action": "reply",
+      "classification_type": "bug",
+      "next_action_glyph": "❓",
+      "next_action": "request_info",
+      "next_action_reason": "Missing GPU/driver routing details: GPU model, Windows display driver, nvidia-smi output from Windows and WSL, and non-PyTorch CUDA-context result.",
       "suggested_labels": [
-        "GPU",
-        "bug"
+        "bug",
+        "needs-investigation"
       ],
-      "suggested_reply": "Thanks @nakaken3013-code — the \torch.cuda.init()-only repro is a useful narrowing point because it removes vLLM/SGLang/NCCL and expandable-segments from the equation. Could you add the exact Windows build, WSL version, NVIDIA driver version, and \nvidia-smi output for that 2x RTX 5070 setup? That should help compare it with the original RTX PRO 6000 Blackwell report."
+      "suggested_reply": "Hi @noMugop, @nakaken3013-code added a useful minimal repro showing the hidden reservation appears with bare `torch.cuda.init()`, independent of expandable segments/NCCL/inference engines. For the GPU/driver owner, could you add the exact GPU model, Windows display driver version, `nvidia-smi` output from Windows and WSL, and whether the same reservation appears outside PyTorch with a minimal CUDA context init? That will show whether this belongs in WSL GPU plumbing or the CUDA user-mode driver path.",
+      "suggested_owner": "",
+      "owner_evidence": "WSL CODEOWNERS only lists teams; no individual GPU owner evidence was collected.",
+      "owner_fallback_reason": "WSL CODEOWNERS only lists teams; no individual GPU owner evidence was collected.",
+      "owner_kind": "assignee",
+      "current_labels": [
+        "GPU"
+      ],
+      "updated_at": "2026-07-11T22:39:01Z",
+      "priority_age_days": 0.0,
+      "aging_basis": "issue days_no_reply",
+      "pr_merge_state": "",
+      "pr_review_decision": "",
+      "pr_ci_rollup": "",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": ""
     },
     {
       "repo": "microsoft/WSL",
@@ -612,10 +1274,27 @@
       "score": 3,
       "severity": "risk",
       "sentiment": "",
+      "classification_type": "bug-fix",
       "next_action_glyph": "✅",
-      "next_action": "no_action",
-      "suggested_labels": [],
-      "suggested_reply": ""
+      "next_action": "ready_to_merge",
+      "next_action_reason": "Live merge state is CLEAN and review decision is APPROVED; only maintainer policy/size decision remains.",
+      "suggested_labels": [
+        "bug"
+      ],
+      "suggested_reply": "Hi @chemwolf6922, live state shows this PR is CLEAN and APPROVED. The only remaining decision appears to be maintainer comfort with the reserved-memory size discussed in the thread; otherwise it is ready for a maintainer to merge.",
+      "suggested_owner": "OneBlue, benhillis",
+      "owner_evidence": "Live gh reviewDecision is APPROVED and mergeStateStatus is CLEAN.; Live gh latest review by OneBlue is APPROVED; live git history on init/cgroup paths includes benhillis.",
+      "owner_fallback_reason": "Live gh reviewDecision is APPROVED and mergeStateStatus is CLEAN.; Live gh latest review by OneBlue is APPROVED; live git history on init/cgroup paths includes benhillis.",
+      "owner_kind": "reviewer",
+      "current_labels": [],
+      "updated_at": "2026-07-11T00:05:33Z",
+      "priority_age_days": 2.0,
+      "aging_basis": "PR days_since_update",
+      "pr_merge_state": "CLEAN",
+      "pr_review_decision": "APPROVED",
+      "pr_ci_rollup": "SUCCESS",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": "chemwolf6922"
     },
     {
       "repo": "microsoft/WSL",
@@ -629,10 +1308,27 @@
       "score": 2,
       "severity": "none",
       "sentiment": "",
+      "classification_type": "feature",
       "next_action_glyph": "✅",
-      "next_action": "no_action",
-      "suggested_labels": [],
-      "suggested_reply": ""
+      "next_action": "ready_to_merge",
+      "next_action_reason": "Live merge state is CLEAN and review decision is APPROVED.",
+      "suggested_labels": [
+        "localization"
+      ],
+      "suggested_reply": "Hi @dkbennett, this PR is CLEAN and APPROVED in live GitHub state. The next action is maintainer merge/queueing; no author-side CI or review blocker is visible.",
+      "suggested_owner": "AmelBawa-msft",
+      "owner_evidence": "Live gh reviewDecision is APPROVED and mergeStateStatus is CLEAN.; Live gh latest review by AmelBawa-msft is APPROVED.",
+      "owner_fallback_reason": "Live gh reviewDecision is APPROVED and mergeStateStatus is CLEAN.; Live gh latest review by AmelBawa-msft is APPROVED.",
+      "owner_kind": "reviewer",
+      "current_labels": [],
+      "updated_at": "2026-07-11T00:23:06Z",
+      "priority_age_days": 2.0,
+      "aging_basis": "PR days_since_update",
+      "pr_merge_state": "CLEAN",
+      "pr_review_decision": "APPROVED",
+      "pr_ci_rollup": "SUCCESS",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": "dkbennett"
     },
     {
       "repo": "microsoft/WSL",
@@ -646,15 +1342,31 @@
       "score": 6,
       "severity": "regression",
       "sentiment": "blocked",
-      "next_action_glyph": "💬",
-      "next_action": "reply",
+      "classification_type": "bug",
+      "next_action_glyph": "❓",
+      "next_action": "request_info",
+      "next_action_reason": "Missing mirrored-networking regression diagnostics: fresh log bundle, .wslconfig, Windows/WSL version, and exact failing ports/services before and after disabling mirrored mode.",
       "suggested_labels": [
-        "network",
-        "wsl2",
-        "needs-investigation",
         "bug"
       ],
-      "suggested_reply": "Thanks @Guest-Liang — PostgreSQL on 5433 and Redis on 6379 failing directly inside WSL is an important data point because it shows this is not limited to Docker port publishing. Please add the exact error text from each service and whether disabling mirrored networking or downgrading from WSL 2.9.3 immediately restores binding."
+      "suggested_reply": "Hi @gsdukbh, @Guest-Liang’s PostgreSQL/Redis repro is useful because it shows the bind conflict is not Docker-specific and started after WSL 2.9.3 with mirrored networking. Could you add a fresh log bundle plus `.wslconfig`, Windows build, `wsl --version`, and the exact ports/services that fail before and after disabling mirrored networking? That will let maintainers compare direct-WSL service binds with Docker’s port handling.",
+      "suggested_owner": "",
+      "owner_evidence": "WSL CODEOWNERS only lists teams; no individual mirrored networking owner evidence was collected.",
+      "owner_fallback_reason": "WSL CODEOWNERS only lists teams; no individual mirrored networking owner evidence was collected.",
+      "owner_kind": "assignee",
+      "current_labels": [
+        "network",
+        "wsl2",
+        "needs-investigation"
+      ],
+      "updated_at": "2026-07-11T00:13:04Z",
+      "priority_age_days": 0.0,
+      "aging_basis": "issue days_no_reply",
+      "pr_merge_state": "",
+      "pr_review_decision": "",
+      "pr_ci_rollup": "",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": ""
     },
     {
       "repo": "microsoft/WSL",
@@ -668,10 +1380,29 @@
       "score": 2,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "✅",
-      "next_action": "no_action",
+      "classification_type": "build",
+      "next_action_glyph": "🔴",
+      "next_action": "fix_ci",
+      "next_action_reason": "Failing CI jobs: wsl-github-pr; wsl-github-pr (build_arm64 Formatting & localization checks); wsl-github-pr (build_x64 Build WSL package (x64)).",
       "suggested_labels": [],
-      "suggested_reply": ""
+      "suggested_reply": "Hi @benhillis, this PR is blocked by failing CI, not review feedback: `wsl-github-pr`, `wsl-github-pr (build_arm64 Formatting & localization checks)`, and `wsl-github-pr (build_x64 Build WSL package (x64))` are failing. Please fix the pipeline/image changes and rerun those jobs before review/merge.",
+      "suggested_owner": "microsoft/wslc-team",
+      "owner_evidence": "WSL CODEOWNERS has global team entries @microsoft/wsl-maintainers and @microsoft/wslc-team.; Live gh reviewRequests includes microsoft/wslc-team; no individual non-author reviewer evidence for pipeline image files.",
+      "owner_fallback_reason": "WSL CODEOWNERS has global team entries @microsoft/wsl-maintainers and @microsoft/wslc-team.; Live gh reviewRequests includes microsoft/wslc-team; no individual non-author reviewer evidence for pipeline image files.",
+      "owner_kind": "reviewer",
+      "current_labels": [],
+      "updated_at": "2026-07-11T17:16:00Z",
+      "priority_age_days": 1.0,
+      "aging_basis": "PR days_since_update",
+      "pr_merge_state": "BLOCKED",
+      "pr_review_decision": "REVIEW_REQUIRED",
+      "pr_ci_rollup": "FAILURE",
+      "pr_failing_jobs": [
+        "wsl-github-pr",
+        "wsl-github-pr (build_arm64 Formatting & localization checks)",
+        "wsl-github-pr (build_x64 Build WSL package (x64))"
+      ],
+      "pr_latest_human_review": ""
     },
     {
       "repo": "microsoft/WSL",
@@ -685,10 +1416,30 @@
       "score": 1,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "✅",
-      "next_action": "no_action",
-      "suggested_labels": [],
-      "suggested_reply": ""
+      "classification_type": "other",
+      "next_action_glyph": "🔴",
+      "next_action": "fix_ci",
+      "next_action_reason": "Failing CI jobs: wsl-github-pr; wsl-github-pr (build_arm64 Formatting & localization checks).",
+      "suggested_labels": [
+        "localization"
+      ],
+      "suggested_reply": "Hi @OneBlue, this localization PR is blocked by failing CI: `wsl-github-pr` and `wsl-github-pr (build_arm64 Formatting & localization checks)`. Please fix or rerun those failures before the WSL localization/team review proceeds.",
+      "suggested_owner": "microsoft/wslc-team",
+      "owner_evidence": "WSL CODEOWNERS has global team entries @microsoft/wsl-maintainers and @microsoft/wslc-team.; Live gh reviewRequests includes microsoft/wslc-team for this localization PR.",
+      "owner_fallback_reason": "WSL CODEOWNERS has global team entries @microsoft/wsl-maintainers and @microsoft/wslc-team.; Live gh reviewRequests includes microsoft/wslc-team for this localization PR.",
+      "owner_kind": "reviewer",
+      "current_labels": [],
+      "updated_at": "2026-07-11T08:05:48Z",
+      "priority_age_days": 1.0,
+      "aging_basis": "PR days_since_update",
+      "pr_merge_state": "BLOCKED",
+      "pr_review_decision": "REVIEW_REQUIRED",
+      "pr_ci_rollup": "FAILURE",
+      "pr_failing_jobs": [
+        "wsl-github-pr",
+        "wsl-github-pr (build_arm64 Formatting & localization checks)"
+      ],
+      "pr_latest_human_review": ""
     },
     {
       "repo": "microsoft/WSL",
@@ -702,14 +1453,29 @@
       "score": 4,
       "severity": "bug",
       "sentiment": "neutral",
+      "classification_type": "bug",
       "next_action_glyph": "💬",
       "next_action": "reply",
+      "next_action_reason": "Acknowledge the root cause and point to PR #41057 as the active fix path; no additional reporter info is required.",
       "suggested_labels": [
         "bug",
         "file system",
-        "plan9"
+        "wsl2"
       ],
-      "suggested_reply": "Thanks for the detailed repro and source-level analysis. Since #41057 proposes the corresponding fix for src/linux/init/config.cpp, this issue can likely be tracked with that PR. Maintainers may want to add \bug/\file system labels and verify WSL1 behavior remains unchanged."
+      "suggested_reply": "Hi @Lsseeker, thanks for the detailed root-cause analysis. PR #41057 is now open for this Plan9 startup path, so the most useful next step is maintainer review of that change against the `automount.enabled=false` + `automount.mountFsTab=false` configuration. Please keep any additional repro notes on this issue and code-review discussion on #41057.",
+      "suggested_owner": "",
+      "owner_evidence": "Reviewer ownership is handled on PR #41057; no separate issue assignee evidence needed.",
+      "owner_fallback_reason": "Reviewer ownership is handled on PR #41057; no separate issue assignee evidence needed.",
+      "owner_kind": "assignee",
+      "current_labels": [],
+      "updated_at": "2026-07-11T10:24:23Z",
+      "priority_age_days": 0.0,
+      "aging_basis": "issue days_no_reply",
+      "pr_merge_state": "",
+      "pr_review_decision": "",
+      "pr_ci_rollup": "",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": ""
     },
     {
       "repo": "microsoft/WSL",
@@ -723,10 +1489,28 @@
       "score": 7,
       "severity": "bug",
       "sentiment": "",
-      "next_action_glyph": "💬",
-      "next_action": "reply",
-      "suggested_labels": [],
-      "suggested_reply": "Thanks for the focused fix and for linking it to #41056. Since this touches src/linux/init/config.cpp and changes WSL1-vs-WSL2 Plan9 startup behavior, maintainers should review the WSL1 guard carefully. @microsoft/wslc-team is already requested via CODEOWNERS; no individual reviewer evidence found."
+      "classification_type": "bug-fix",
+      "next_action_glyph": "👀",
+      "next_action": "needs_review",
+      "next_action_reason": "Reviewer action is required: live GitHub is BLOCKED / REVIEW_REQUIRED with no failing checks.",
+      "suggested_labels": [
+        "bug",
+        "file system"
+      ],
+      "suggested_reply": "Maintainers: this community PR is ready for reviewer action. Live GitHub shows `mergeStateStatus=BLOCKED` and `reviewDecision=REVIEW_REQUIRED`, with no failing checks; please review the `src/linux/init/config.cpp` Plan9 startup change for the `automount.enabled=false` + `automount.mountFsTab=false` case.",
+      "suggested_owner": "benhillis",
+      "owner_evidence": "Live gh commit history for src/linux/init/config.cpp includes benhillis.; Live gh reviewRequests includes microsoft/wslc-team; no human review submitted yet.",
+      "owner_fallback_reason": "Live gh commit history for src/linux/init/config.cpp includes benhillis.; Live gh reviewRequests includes microsoft/wslc-team; no human review submitted yet.",
+      "owner_kind": "reviewer",
+      "current_labels": [],
+      "updated_at": "2026-07-11T11:03:50Z",
+      "priority_age_days": 1.0,
+      "aging_basis": "PR days_since_update",
+      "pr_merge_state": "BLOCKED",
+      "pr_review_decision": "REVIEW_REQUIRED",
+      "pr_ci_rollup": "SUCCESS",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": ""
     },
     {
       "repo": "microsoft/WSL",
@@ -740,15 +1524,31 @@
       "score": 4,
       "severity": "risk",
       "sentiment": "neutral",
-      "next_action_glyph": "💬",
-      "next_action": "reply",
+      "classification_type": "bug",
+      "next_action_glyph": "🔁",
+      "next_action": "close_dup",
+      "next_action_reason": "Likely duplicate/superseded by #41060; ask reporter to keep the canonical dxgkrnl/WSLg investigation in one issue.",
       "suggested_labels": [
         "bug",
         "GPU",
-        "needs-author-feedback",
-        "telemetry"
+        "duplicate"
       ],
-      "suggested_reply": "Thanks for filing this. It appears to overlap heavily with #41060, which includes additional triage detail. Please attach the requested WSL logs here or confirm we should continue in #41060 so maintainers can track one canonical report."
+      "suggested_reply": "Hi @thealanphipps-del, thanks for filing this. #41060 appears to contain the same dxgkrnl/WSLg/telemetry report plus the maintainer-oriented triage summary, while this thread has the bot request for required WSL logs. To keep investigation in one place, could you confirm whether #41060 is the canonical issue and close this as a duplicate (or attach the required WSL logs here if this one is materially different)?",
+      "suggested_owner": "",
+      "owner_evidence": "WSL CODEOWNERS only lists teams; no individual GPU/telemetry owner evidence was collected.",
+      "owner_fallback_reason": "WSL CODEOWNERS only lists teams; no individual GPU/telemetry owner evidence was collected.",
+      "owner_kind": "assignee",
+      "current_labels": [
+        "needs-author-feedback"
+      ],
+      "updated_at": "2026-07-12T05:58:30Z",
+      "priority_age_days": 0.0,
+      "aging_basis": "issue days_no_reply",
+      "pr_merge_state": "",
+      "pr_review_decision": "",
+      "pr_ci_rollup": "",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": ""
     },
     {
       "repo": "microsoft/WSL",
@@ -762,14 +1562,29 @@
       "score": 6,
       "severity": "risk",
       "sentiment": "frustrated",
-      "next_action_glyph": "💬",
-      "next_action": "reply",
+      "classification_type": "bug",
+      "next_action_glyph": "❓",
+      "next_action": "request_info",
+      "next_action_reason": "Missing final routing details: confirm whether #41059 is duplicate, host GPU model/driver, and whether it reproduces outside docker-desktop.",
       "suggested_labels": [
         "bug",
         "GPU",
-        "telemetry"
+        "needs-investigation"
       ],
-      "suggested_reply": "Thanks for the detailed logs and triage summary. This looks actionable: dxgkrnl reports a FORTIFY field-spanning write in dxgvmb_send_wait_sync_object_gpu, with ENOBUFS telemetry and host Hyper-V symptoms. Could you confirm whether #41059 is the same report and close/merge one of the two to keep investigation in one place? Maintainers: this likely belongs with the WSLg/GPU path plus telemetry diagnostics."
+      "suggested_reply": "Hi @thealanphipps-del, thanks for the high-signal triage summary. The `dxgvmbus.c:3095` field-spanning write, ENOBUFS telemetry failure, invalid DxgKrnl-SysMm provider, and host Hyper-V low-memory correlation are enough to route this to the WSLg/GPU diagnostics path. Could you confirm whether #41059 is a duplicate of this report, and add the host GPU model/driver plus whether the issue reproduces outside the `docker-desktop` distro?",
+      "suggested_owner": "",
+      "owner_evidence": "WSL CODEOWNERS only lists teams; no individual dxgkrnl/WSLg owner evidence was collected.",
+      "owner_fallback_reason": "WSL CODEOWNERS only lists teams; no individual dxgkrnl/WSLg owner evidence was collected.",
+      "owner_kind": "assignee",
+      "current_labels": [],
+      "updated_at": "2026-07-12T06:29:45Z",
+      "priority_age_days": 0.0,
+      "aging_basis": "issue days_no_reply",
+      "pr_merge_state": "",
+      "pr_review_decision": "",
+      "pr_ci_rollup": "",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": ""
     },
     {
       "repo": "microsoft/WSL",
@@ -783,10 +1598,30 @@
       "score": 1,
       "severity": "none",
       "sentiment": "",
-      "next_action_glyph": "✅",
-      "next_action": "no_action",
-      "suggested_labels": [],
-      "suggested_reply": ""
+      "classification_type": "other",
+      "next_action_glyph": "🔴",
+      "next_action": "fix_ci",
+      "next_action_reason": "Failing CI jobs: wsl-github-pr; wsl-github-pr (build_arm64 Formatting & localization checks).",
+      "suggested_labels": [
+        "localization"
+      ],
+      "suggested_reply": "Hi @OneBlue, this localization PR is blocked by failing CI: `wsl-github-pr` and `wsl-github-pr (build_arm64 Formatting & localization checks)`. Please fix or rerun those failures before review/merge; this is not a green-CI wait state.",
+      "suggested_owner": "microsoft/wslc-team",
+      "owner_evidence": "WSL CODEOWNERS has global team entries @microsoft/wsl-maintainers and @microsoft/wslc-team.; Live gh reviewRequests includes microsoft/wslc-team for this localization PR.",
+      "owner_fallback_reason": "WSL CODEOWNERS has global team entries @microsoft/wsl-maintainers and @microsoft/wslc-team.; Live gh reviewRequests includes microsoft/wslc-team for this localization PR.",
+      "owner_kind": "reviewer",
+      "current_labels": [],
+      "updated_at": "2026-07-12T08:08:29Z",
+      "priority_age_days": 0.0,
+      "aging_basis": "PR days_since_update",
+      "pr_merge_state": "BLOCKED",
+      "pr_review_decision": "REVIEW_REQUIRED",
+      "pr_ci_rollup": "FAILURE",
+      "pr_failing_jobs": [
+        "wsl-github-pr",
+        "wsl-github-pr (build_arm64 Formatting & localization checks)"
+      ],
+      "pr_latest_human_review": ""
     },
     {
       "repo": "microsoft/wslg",
@@ -800,15 +1635,29 @@
       "score": 6,
       "severity": "crash",
       "sentiment": "blocked",
-      "next_action_glyph": "💬",
-      "next_action": "reply",
+      "classification_type": "bug",
+      "next_action_glyph": "❓",
+      "next_action": "request_info",
+      "next_action_reason": "Missing targeted WSLg isolation details: mirrored networking/autoMemoryReclaim toggles, smaller GUI workload repro, and whether wsl --shutdown is the only recovery.",
       "suggested_labels": [
-        "server-connection",
-        "rdp-client-connection",
-        "virtiofs",
-        "shared-memory"
+        "server-connection"
       ],
-      "suggested_reply": "Thanks for the very detailed diagnostics. The D-state stacks around \request_wait_answer on /mnt/shared_memory and \u000birtio_fs_drain_queue make this look worth investigating as a WSLg shared-memory/virtiofs hang rather than an app deadlock. If you can reproduce or catch it again, could you add whether it also occurs with the mirrored-networking/autoMemoryReclaim settings disabled, and whether any smaller GUI workload can trigger it?"
+      "suggested_reply": "Hi @Mygod, thanks for the detailed diagnostics. The D-state stacks around `request_wait_answer` under `/mnt/shared_memory` and `virtio_fs_drain_queue` make this look like a WSLg shared-memory/virtiofs hang rather than a normal app deadlock. If you can reproduce or catch it again, could you add whether it also occurs with mirrored networking and autoMemoryReclaim disabled, whether a smaller GUI workload can trigger it, and whether `wsl --shutdown` is the only recovery?",
+      "suggested_owner": "",
+      "owner_evidence": "No CODEOWNERS found for microsoft/wslg and no source path/commit-history ownership evidence was available.",
+      "owner_fallback_reason": "No CODEOWNERS found for microsoft/wslg and no source path/commit-history ownership evidence was available.",
+      "owner_kind": "assignee",
+      "current_labels": [
+        "bug"
+      ],
+      "updated_at": "2026-07-11T02:03:37Z",
+      "priority_age_days": 0.0,
+      "aging_basis": "issue days_no_reply",
+      "pr_merge_state": "",
+      "pr_review_decision": "",
+      "pr_ci_rollup": "",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": ""
     }
   ]
 }
