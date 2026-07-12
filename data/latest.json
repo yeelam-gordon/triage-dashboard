@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T08:03:15Z",
+  "generated_at": "2026-07-12T09:10:18Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -10,20 +10,20 @@
     "upstream-sync"
   ],
   "totals": {
-    "open_issues": 1,
+    "open_issues": 2,
     "open_prs": 1
   },
   "category_counts": {
-    "cli": 1
+    "cli": 2
   },
   "per_repo": {
     "microsoft/intelligent-terminal": {
       "totals": {
-        "open_issues": 1,
+        "open_issues": 2,
         "open_prs": 1
       },
       "category_counts": {
-        "cli": 1
+        "cli": 2
       },
       "trends": [
         {
@@ -78,16 +78,19 @@
       "title": "Fall back to the host CLI when the WSL distro lacks the agent",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/401",
       "kind": "pr",
-      "category": "bug-fix",
+      "category": "cli",
       "days_no_reply": 0,
       "is_community": false,
-      "score": 2,
+      "score": 1,
       "severity": "bug",
       "sentiment": "",
       "next_action_glyph": "🟥",
       "next_action": "investigate_ci",
-      "suggested_labels": [],
-      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan suggests it might be unrelated to your changes, but could you take a look at https://github.com/microsoft/intelligent-terminal/runs/86611513100? If it's flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "suggested_labels": [
+        "Area-CLI",
+        "Needs-Review"
+      ],
+      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan suggests it is reporting spelling/forbidden-pattern findings in this PR. Could you take a look at https://github.com/microsoft/intelligent-terminal/actions/runs/29178223927/job/86611191300#step:4:1? If it is flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -106,12 +109,28 @@
       "suggested_labels": [
         "Issue-Bug",
         "Area-CLI",
-        "Area-AgentPane",
         "Agent-Claude",
-        "Agent-Codex",
-        "Needs-Triage",
-        "Needs-Tag-Fix",
-        "Needs-Author-Feedback"
+        "Agent-Codex"
+      ],
+      "suggested_reply": "Hi @DDKinger, could you share which **Intelligent Terminal version**\nyou're on? You can find it in the **About** dialog (menu \"V\" button →\nAbout at the bottom). The **Windows build number** is also helpful —\nrun `ver` or `[Environment]::OSVersion` in a shell.\n\nThis helps us tell whether it's already fixed in a newer build."
+    },
+    {
+      "repo": "microsoft/intelligent-terminal",
+      "number": 404,
+      "title": "Delegate ?<prompt> from a WSL pane briefly flashes error commands in the new agent tab",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/404",
+      "kind": "issue",
+      "category": "cli",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 2,
+      "severity": "bug",
+      "sentiment": "neutral",
+      "next_action_glyph": "💬",
+      "next_action": "reply",
+      "suggested_labels": [
+        "Issue-Bug",
+        "Area-CLI"
       ],
       "suggested_reply": "Hi @DDKinger, could you share which **Intelligent Terminal version** you're on? You can find it in the **About** dialog (menu \"V\" button → About at the bottom). The **Windows build number** is also helpful — run `ver` or `[Environment]::OSVersion` in a shell.\n\nThis helps us tell whether it's already fixed in a newer build."
     }
