@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T09:10:18Z",
+  "generated_at": "2026-07-12T09:24:28Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -10,11 +10,13 @@
     "upstream-sync"
   ],
   "totals": {
-    "open_issues": 2,
-    "open_prs": 1
+    "open_issues": 20,
+    "open_prs": 18
   },
   "category_counts": {
-    "cli": 2
+    "bug": 17,
+    "cli": 2,
+    "feature": 1
   },
   "per_repo": {
     "microsoft/intelligent-terminal": {
@@ -47,6 +49,34 @@
           "delta": 1
         }
       ]
+    },
+    "microsoft/PowerToys": {
+      "totals": {
+        "open_issues": 10,
+        "open_prs": 10
+      },
+      "category_counts": {
+        "bug": 10
+      }
+    },
+    "microsoft/WSL": {
+      "totals": {
+        "open_issues": 7,
+        "open_prs": 7
+      },
+      "category_counts": {
+        "bug": 6,
+        "feature": 1
+      }
+    },
+    "microsoft/wslg": {
+      "totals": {
+        "open_issues": 1,
+        "open_prs": 0
+      },
+      "category_counts": {
+        "bug": 1
+      }
     }
   },
   "trends": [
@@ -78,19 +108,16 @@
       "title": "Fall back to the host CLI when the WSL distro lacks the agent",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/401",
       "kind": "pr",
-      "category": "cli",
+      "category": "bug-fix",
       "days_no_reply": 0,
       "is_community": false,
       "score": 1,
       "severity": "bug",
       "sentiment": "",
-      "next_action_glyph": "🟥",
-      "next_action": "investigate_ci",
-      "suggested_labels": [
-        "Area-CLI",
-        "Needs-Review"
-      ],
-      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` — quick scan suggests it is reporting spelling/forbidden-pattern findings in this PR. Could you take a look at https://github.com/microsoft/intelligent-terminal/actions/runs/29178223927/job/86611191300#step:4:1? If it is flaky, push an empty commit (`git commit --allow-empty -m \"ci: rerun\"`) to re-run."
+      "next_action_glyph": "💬",
+      "next_action": "reply",
+      "suggested_labels": [],
+      "suggested_reply": "Hi @DDKinger, CI is failing on `check-spelling` (unrecognized words / forbidden-pattern findings in tools/wta). Could you take a look at https://github.com/microsoft/intelligent-terminal/runs/86611513100? Once that is green, this is ready for a human review pass."
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -104,15 +131,15 @@
       "score": 2,
       "severity": "bug",
       "sentiment": "neutral",
-      "next_action_glyph": "💬",
-      "next_action": "reply",
+      "next_action_glyph": "🏷️",
+      "next_action": "label_only",
       "suggested_labels": [
         "Issue-Bug",
         "Area-CLI",
         "Agent-Claude",
         "Agent-Codex"
       ],
-      "suggested_reply": "Hi @DDKinger, could you share which **Intelligent Terminal version**\nyou're on? You can find it in the **About** dialog (menu \"V\" button →\nAbout at the bottom). The **Windows build number** is also helpful —\nrun `ver` or `[Environment]::OSVersion` in a shell.\n\nThis helps us tell whether it's already fixed in a newer build."
+      "suggested_reply": ""
     },
     {
       "repo": "microsoft/intelligent-terminal",
@@ -124,15 +151,664 @@
       "days_no_reply": 0,
       "is_community": false,
       "score": 2,
+      "severity": "papercut",
+      "sentiment": "confused",
+      "next_action_glyph": "🏷️",
+      "next_action": "label_only",
+      "suggested_labels": [
+        "Issue-Bug",
+        "Area-CLI",
+        "Agent-WSL or Area-WSL label would help classify WSL delegate bugs if the repo adds such a label."
+      ],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/PowerToys",
+      "number": 28769,
+      "title": "🚧 Would you like to contribute to PowerToys? 🚧",
+      "url": "https://github.com/microsoft/PowerToys/issues/28769",
+      "kind": "issue",
+      "category": "bug",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 8,
+      "severity": "crash",
+      "sentiment": "confused",
+      "next_action_glyph": "✅",
+      "next_action": "no_action",
+      "suggested_labels": [
+        "Issue-Bug"
+      ],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/PowerToys",
+      "number": 45846,
+      "title": "Add SQLite database preview support to Peek",
+      "url": "https://github.com/microsoft/PowerToys/pull/45846",
+      "kind": "pr",
+      "category": "feature",
+      "days_no_reply": 0,
+      "is_community": true,
+      "score": 6,
+      "severity": "crash",
+      "sentiment": "",
+      "next_action_glyph": "✅",
+      "next_action": "no_action",
+      "suggested_labels": [],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/PowerToys",
+      "number": 47963,
+      "title": "[Keyboard Manager] in the new editor, deleting a remapping doesn't work",
+      "url": "https://github.com/microsoft/PowerToys/issues/47963",
+      "kind": "issue",
+      "category": "bug",
+      "days_no_reply": 0,
+      "is_community": true,
+      "score": 3,
       "severity": "bug",
       "sentiment": "neutral",
       "next_action_glyph": "💬",
       "next_action": "reply",
       "suggested_labels": [
-        "Issue-Bug",
-        "Area-CLI"
+        "Needs-Team-Response"
       ],
-      "suggested_reply": "Hi @DDKinger, could you share which **Intelligent Terminal version** you're on? You can find it in the **About** dialog (menu \"V\" button → About at the bottom). The **Windows build number** is also helpful — run `ver` or `[Environment]::OSVersion` in a shell.\n\nThis helps us tell whether it's already fixed in a newer build."
+      "suggested_reply": "Thanks. To help reproduce the delete failure in the new Keyboard Manager editor, could you share the exact remap type (key vs shortcut), the PowerToys version, and whether the row reappears immediately or only after reopening Settings?"
+    },
+    {
+      "repo": "microsoft/PowerToys",
+      "number": 48488,
+      "title": "Euro symbol appears on Quick Accent after the update 100",
+      "url": "https://github.com/microsoft/PowerToys/issues/48488",
+      "kind": "issue",
+      "category": "bug",
+      "days_no_reply": 0,
+      "is_community": true,
+      "score": 3,
+      "severity": "bug",
+      "sentiment": "neutral",
+      "next_action_glyph": "💬",
+      "next_action": "reply",
+      "suggested_labels": [
+        "Needs-Team-Response"
+      ],
+      "suggested_reply": "Thanks for the screenshot. It shows € (U+20AC) appearing in Quick Accent. Could you confirm your selected character set/language in Quick Accent settings and whether this started only after updating to 0.100?"
+    },
+    {
+      "repo": "microsoft/PowerToys",
+      "number": 48503,
+      "title": "Fix GPU Stats not cycling through multiple GPUs",
+      "url": "https://github.com/microsoft/PowerToys/pull/48503",
+      "kind": "pr",
+      "category": "bug-fix",
+      "days_no_reply": 0,
+      "is_community": true,
+      "score": 7,
+      "severity": "crash",
+      "sentiment": "",
+      "next_action_glyph": "✅",
+      "next_action": "no_action",
+      "suggested_labels": [],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/PowerToys",
+      "number": 48516,
+      "title": "Command Palette Dock and Laptops / Changing Displays",
+      "url": "https://github.com/microsoft/PowerToys/issues/48516",
+      "kind": "issue",
+      "category": "bug",
+      "days_no_reply": 0,
+      "is_community": true,
+      "score": 7,
+      "severity": "crash",
+      "sentiment": "frustrated",
+      "next_action_glyph": "💬",
+      "next_action": "reply",
+      "suggested_labels": [
+        "CmdPal - Dock",
+        "Needs-Team-Response"
+      ],
+      "suggested_reply": "Thanks for the detailed added repro. The consistent trigger around the Dock on laptops / changing displays is useful. Could you add your monitor topology (built-in/external count, scaling, and which display is primary) plus whether the dock moves after sleep/resume, unplug/replug, or only when switching project modes?"
+    },
+    {
+      "repo": "microsoft/PowerToys",
+      "number": 48863,
+      "title": "feat(cmdpal): list hover actions with extension SDK configuration",
+      "url": "https://github.com/microsoft/PowerToys/pull/48863",
+      "kind": "pr",
+      "category": "other",
+      "days_no_reply": 0,
+      "is_community": true,
+      "score": 8,
+      "severity": "crash",
+      "sentiment": "",
+      "next_action_glyph": "💬",
+      "next_action": "reply",
+      "suggested_labels": [],
+      "suggested_reply": "Thanks for the follow-up on tags and hover actions. CI is already green; since this touches CmdPal UI/view-model behavior across many files and has active maintainer review, the next step is maintainer re-review/author follow-up on the requested changes rather than another CI pass."
+    },
+    {
+      "repo": "microsoft/PowerToys",
+      "number": 49071,
+      "title": "CmdPal: PerfMon units Bytes and Binary bytes have same calculation, differs just in unit text",
+      "url": "https://github.com/microsoft/PowerToys/issues/49071",
+      "kind": "issue",
+      "category": "bug",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 3,
+      "severity": "bug",
+      "sentiment": "neutral",
+      "next_action_glyph": "✅",
+      "next_action": "no_action",
+      "suggested_labels": [],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/PowerToys",
+      "number": 49093,
+      "title": "[CmdPal][TimeDate] Add optional week number to the Clock dock band",
+      "url": "https://github.com/microsoft/PowerToys/pull/49093",
+      "kind": "pr",
+      "category": "feature",
+      "days_no_reply": 0,
+      "is_community": true,
+      "score": 1,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "✅",
+      "next_action": "no_action",
+      "suggested_labels": [],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/PowerToys",
+      "number": 49174,
+      "title": "[ColorPicker] Migrate from WPF to WinUI 3",
+      "url": "https://github.com/microsoft/PowerToys/pull/49174",
+      "kind": "pr",
+      "category": "refactor",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 2,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "✅",
+      "next_action": "no_action",
+      "suggested_labels": [
+        "Product-Color Picker"
+      ],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/PowerToys",
+      "number": 49252,
+      "title": "CmdPal: Add Control Panel tasks to Windows Settings search",
+      "url": "https://github.com/microsoft/PowerToys/pull/49252",
+      "kind": "pr",
+      "category": "feature",
+      "days_no_reply": 0,
+      "is_community": true,
+      "score": 7,
+      "severity": "crash",
+      "sentiment": "",
+      "next_action_glyph": "💬",
+      "next_action": "reply",
+      "suggested_labels": [],
+      "suggested_reply": "Thanks for the detailed PR and screenshots. The Control Panel task results for “game controllers”, “power”, and “joystick” are clear. Next useful step is maintainer review of the enumeration/localization approach and CI results."
+    },
+    {
+      "repo": "microsoft/PowerToys",
+      "number": 49263,
+      "title": "CmdPal: Add audio cues",
+      "url": "https://github.com/microsoft/PowerToys/issues/49263",
+      "kind": "issue",
+      "category": "bug",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 5,
+      "severity": "crash",
+      "sentiment": "neutral",
+      "next_action_glyph": "✅",
+      "next_action": "no_action",
+      "suggested_labels": [
+        "Issue-Bug"
+      ],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/PowerToys",
+      "number": 49269,
+      "title": "Google Free API in Advanced Paste",
+      "url": "https://github.com/microsoft/PowerToys/issues/49269",
+      "kind": "issue",
+      "category": "bug",
+      "days_no_reply": 0,
+      "is_community": true,
+      "score": 2,
+      "severity": "bug",
+      "sentiment": "neutral",
+      "next_action_glyph": "💬",
+      "next_action": "reply",
+      "suggested_labels": [
+        "Needs-Team-Response"
+      ],
+      "suggested_reply": "Thanks for the screenshots. The configuration appears saved, but Advanced Paste reports “An error occurred during the paste operation.” Could you attach a PowerToys bug report/log and confirm whether the Gemini API key has access to the configured model (`gemini-1.5-pro`)?"
+    },
+    {
+      "repo": "microsoft/PowerToys",
+      "number": 49270,
+      "title": "CmdPal: Crash from ListView",
+      "url": "https://github.com/microsoft/PowerToys/issues/49270",
+      "kind": "issue",
+      "category": "bug",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 4,
+      "severity": "crash",
+      "sentiment": "neutral",
+      "next_action_glyph": "✅",
+      "next_action": "no_action",
+      "suggested_labels": [],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/PowerToys",
+      "number": 49274,
+      "title": "Fix PerfMon decimal network speed units to use 1000 divisor (#49071)",
+      "url": "https://github.com/microsoft/PowerToys/pull/49274",
+      "kind": "pr",
+      "category": "bug-fix",
+      "days_no_reply": 0,
+      "is_community": true,
+      "score": 7,
+      "severity": "crash",
+      "sentiment": "",
+      "next_action_glyph": "✅",
+      "next_action": "no_action",
+      "suggested_labels": [],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/PowerToys",
+      "number": 49276,
+      "title": "[Keyboard Manager] Per-keyboard remap profiles (auto-switch + cycle hotkey)",
+      "url": "https://github.com/microsoft/PowerToys/pull/49276",
+      "kind": "pr",
+      "category": "other",
+      "days_no_reply": 0,
+      "is_community": true,
+      "score": 7,
+      "severity": "crash",
+      "sentiment": "",
+      "next_action_glyph": "💬",
+      "next_action": "reply",
+      "suggested_labels": [],
+      "suggested_reply": "Thanks for the PR. Please complete the CLA bot instructions so maintainers can review the per-keyboard remap profile implementation."
+    },
+    {
+      "repo": "microsoft/PowerToys",
+      "number": 49278,
+      "title": "CmdPal: Add audio cues",
+      "url": "https://github.com/microsoft/PowerToys/pull/49278",
+      "kind": "pr",
+      "category": "feature",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 4,
+      "severity": "bug",
+      "sentiment": "",
+      "next_action_glyph": "✅",
+      "next_action": "no_action",
+      "suggested_labels": [],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/PowerToys",
+      "number": 49279,
+      "title": "Add Mouse Button Lock (ClickLock for left, right, and middle mouse buttons)",
+      "url": "https://github.com/microsoft/PowerToys/pull/49279",
+      "kind": "pr",
+      "category": "feature",
+      "days_no_reply": 0,
+      "is_community": true,
+      "score": 5,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "💬",
+      "next_action": "reply",
+      "suggested_labels": [],
+      "suggested_reply": "Thanks for opening this. Because this adds a new Mouse Utilities module and touches installer/docs/privacy files, the next step is maintainer triage for scope, UX, and packaging impact before code review."
+    },
+    {
+      "repo": "microsoft/PowerToys",
+      "number": 49280,
+      "title": "Improve the UI/UX of Awake function",
+      "url": "https://github.com/microsoft/PowerToys/issues/49280",
+      "kind": "issue",
+      "category": "bug",
+      "days_no_reply": 0,
+      "is_community": true,
+      "score": 3,
+      "severity": "bug",
+      "sentiment": "confused",
+      "next_action_glyph": "💬",
+      "next_action": "reply",
+      "suggested_labels": [
+        "Issue-Bug",
+        "Needs-Team-Response"
+      ],
+      "suggested_reply": "Thanks for the suggestion. The screenshot shows Awake preserving the previous timed interval (3h 1m). Can you clarify the preferred UX: should enabling Awake always reset to a default mode, prompt for a new interval, or remember the previous interval but make it more obvious?"
+    },
+    {
+      "repo": "microsoft/PowerToys",
+      "number": 49281,
+      "title": "Command palette dock is unstable with frequent Crashes. On multiple screen, the docks for different screens get moved around from one screen to the other",
+      "url": "https://github.com/microsoft/PowerToys/issues/49281",
+      "kind": "issue",
+      "category": "bug",
+      "days_no_reply": 0,
+      "is_community": true,
+      "score": 5,
+      "severity": "crash",
+      "sentiment": "neutral",
+      "next_action_glyph": "💬",
+      "next_action": "reply",
+      "suggested_labels": [
+        "CmdPal - Dock",
+        "Needs-Team-Response"
+      ],
+      "suggested_reply": "Thanks for reporting. This looks related to #48516. Could you add your display layout (number of monitors, scaling, primary display), and whether the dock moves after sleep/resume, unplugging a display, or opening Command Palette?"
+    },
+    {
+      "repo": "microsoft/WSL",
+      "number": 6874,
+      "title": "dmidecode reports No SMBIOS nor DMI entry point found (/dev/mem exists, missing 000F0000 range)",
+      "url": "https://github.com/microsoft/WSL/issues/6874",
+      "kind": "issue",
+      "category": "feature",
+      "days_no_reply": 0,
+      "is_community": true,
+      "score": 5,
+      "severity": "papercut",
+      "sentiment": "neutral",
+      "next_action_glyph": "💬",
+      "next_action": "reply",
+      "suggested_labels": [
+        "feature",
+        "kernel"
+      ],
+      "suggested_reply": "Thanks for the additional use case. The new note that sysfs DMI support is required by apps such as Sober, and appears related to #13958, is useful context for prioritization. Maintainers: consider cross-linking #13958 here and clarifying whether exposing SMBIOS/DMI in WSL2 is in scope."
+    },
+    {
+      "repo": "microsoft/WSL",
+      "number": 11154,
+      "title": "Cannot enable Mirrored network on WSL ",
+      "url": "https://github.com/microsoft/WSL/issues/11154",
+      "kind": "issue",
+      "category": "bug",
+      "days_no_reply": 0,
+      "is_community": true,
+      "score": 7,
+      "severity": "bug",
+      "sentiment": "frustrated",
+      "next_action_glyph": "💬",
+      "next_action": "reply",
+      "suggested_labels": [
+        "network",
+        "bug"
+      ],
+      "suggested_reply": "Thanks for the updated screenshot. It confirms this still reproduces on WSL 2.7.10 with CreateVm/ConfigureNetworking/0x803b0015, plus the message that the current request is unsupported and that localhost proxy is not mirrored into WSL NAT mode. If anyone else can still reproduce, please add Windows build, WSL version, .wslconfig networking section, VPN/firewall software, and wsl --debug-shell/networking logs."
+    },
+    {
+      "repo": "microsoft/WSL",
+      "number": 14456,
+      "title": "fix: suppress getaddrinfo EAI_NODATA error",
+      "url": "https://github.com/microsoft/WSL/pull/14456",
+      "kind": "pr",
+      "category": "bug-fix",
+      "days_no_reply": 0,
+      "is_community": true,
+      "score": 4,
+      "severity": "bug",
+      "sentiment": "",
+      "next_action_glyph": "💬",
+      "next_action": "reply",
+      "suggested_labels": [],
+      "suggested_reply": "Thanks for sticking with this. The PR has reviewer attention and requested maintainers, but it still appears blocked. Could a maintainer summarize the remaining required change or validation needed before merge, especially around the new enum/measure update mentioned earlier?"
+    },
+    {
+      "repo": "microsoft/WSL",
+      "number": 40401,
+      "title": "[Bug] WSL2 GPU passthrough has 16 GiB CUDA driver overhead on Blackwell sm_120 — blocks PyTorch large allocations",
+      "url": "https://github.com/microsoft/WSL/issues/40401",
+      "kind": "issue",
+      "category": "bug",
+      "days_no_reply": 0,
+      "is_community": true,
+      "score": 5,
+      "severity": "bug",
+      "sentiment": "blocked",
+      "next_action_glyph": "💬",
+      "next_action": "reply",
+      "suggested_labels": [
+        "GPU",
+        "bug"
+      ],
+      "suggested_reply": "Thanks @nakaken3013-code — the \torch.cuda.init()-only repro is a useful narrowing point because it removes vLLM/SGLang/NCCL and expandable-segments from the equation. Could you add the exact Windows build, WSL version, NVIDIA driver version, and \nvidia-smi output for that 2x RTX 5070 setup? That should help compare it with the original RTX PRO 6000 Blackwell report."
+    },
+    {
+      "repo": "microsoft/WSL",
+      "number": 40519,
+      "title": "Protect critical WSL processes under heavy load with cgroup & isolate distro cgroups",
+      "url": "https://github.com/microsoft/WSL/pull/40519",
+      "kind": "pr",
+      "category": "bug-fix",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 3,
+      "severity": "risk",
+      "sentiment": "",
+      "next_action_glyph": "✅",
+      "next_action": "no_action",
+      "suggested_labels": [],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/WSL",
+      "number": 40848,
+      "title": "CLI: Help improvements - Table output with color and routing support",
+      "url": "https://github.com/microsoft/WSL/pull/40848",
+      "kind": "pr",
+      "category": "feature",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 2,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "✅",
+      "next_action": "no_action",
+      "suggested_labels": [],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/WSL",
+      "number": 40984,
+      "title": "[WSL 2.9.3] Docker fails to bind ports with \"address already in use\" when networkingMode=mirrored is enabled",
+      "url": "https://github.com/microsoft/WSL/issues/40984",
+      "kind": "issue",
+      "category": "bug",
+      "days_no_reply": 0,
+      "is_community": true,
+      "score": 6,
+      "severity": "regression",
+      "sentiment": "blocked",
+      "next_action_glyph": "💬",
+      "next_action": "reply",
+      "suggested_labels": [
+        "network",
+        "wsl2",
+        "needs-investigation",
+        "bug"
+      ],
+      "suggested_reply": "Thanks @Guest-Liang — PostgreSQL on 5433 and Redis on 6379 failing directly inside WSL is an important data point because it shows this is not limited to Docker port publishing. Please add the exact error text from each service and whether disabling mirrored networking or downgrading from WSL 2.9.3 immediately restores binding."
+    },
+    {
+      "repo": "microsoft/WSL",
+      "number": 41053,
+      "title": "Move OneBranch pipelines to Windows Server 2025 / VSE 2026 image",
+      "url": "https://github.com/microsoft/WSL/pull/41053",
+      "kind": "pr",
+      "category": "build",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 2,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "✅",
+      "next_action": "no_action",
+      "suggested_labels": [],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/WSL",
+      "number": 41055,
+      "title": "Localization change from build: 151964774",
+      "url": "https://github.com/microsoft/WSL/pull/41055",
+      "kind": "pr",
+      "category": "other",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 1,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "✅",
+      "next_action": "no_action",
+      "suggested_labels": [],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/WSL",
+      "number": 41056,
+      "title": "Plan9 file server is never started on WSL2 when both automount.enabled and automount.mountFsTab are false, making \\\\wsl.localhost inaccessible",
+      "url": "https://github.com/microsoft/WSL/issues/41056",
+      "kind": "issue",
+      "category": "bug",
+      "days_no_reply": 0,
+      "is_community": true,
+      "score": 4,
+      "severity": "bug",
+      "sentiment": "neutral",
+      "next_action_glyph": "💬",
+      "next_action": "reply",
+      "suggested_labels": [
+        "bug",
+        "file system",
+        "plan9"
+      ],
+      "suggested_reply": "Thanks for the detailed repro and source-level analysis. Since #41057 proposes the corresponding fix for src/linux/init/config.cpp, this issue can likely be tracked with that PR. Maintainers may want to add \bug/\file system labels and verify WSL1 behavior remains unchanged."
+    },
+    {
+      "repo": "microsoft/WSL",
+      "number": 41057,
+      "title": "Start the plan9 server on WSL2 even when automount and mountFsTab are…",
+      "url": "https://github.com/microsoft/WSL/pull/41057",
+      "kind": "pr",
+      "category": "bug-fix",
+      "days_no_reply": 0,
+      "is_community": true,
+      "score": 7,
+      "severity": "bug",
+      "sentiment": "",
+      "next_action_glyph": "💬",
+      "next_action": "reply",
+      "suggested_labels": [],
+      "suggested_reply": "Thanks for the focused fix and for linking it to #41056. Since this touches src/linux/init/config.cpp and changes WSL1-vs-WSL2 Plan9 startup behavior, maintainers should review the WSL1 guard carefully. @microsoft/wslc-team is already requested via CODEOWNERS; no individual reviewer evidence found."
+    },
+    {
+      "repo": "microsoft/WSL",
+      "number": 41059,
+      "title": "WSL2/WSLg: dxgkrnl memcpy field-spanning write + ENOBUFS telemetry; DxgKrnl-SysMm provider invalid, Lxss provider missing",
+      "url": "https://github.com/microsoft/WSL/issues/41059",
+      "kind": "issue",
+      "category": "bug",
+      "days_no_reply": 0,
+      "is_community": true,
+      "score": 4,
+      "severity": "risk",
+      "sentiment": "neutral",
+      "next_action_glyph": "💬",
+      "next_action": "reply",
+      "suggested_labels": [
+        "bug",
+        "GPU",
+        "needs-author-feedback",
+        "telemetry"
+      ],
+      "suggested_reply": "Thanks for filing this. It appears to overlap heavily with #41060, which includes additional triage detail. Please attach the requested WSL logs here or confirm we should continue in #41060 so maintainers can track one canonical report."
+    },
+    {
+      "repo": "microsoft/WSL",
+      "number": 41060,
+      "title": "WSL2/WSLg: dxgkrnl memcpy field-spanning write + ENOBUFS telemetry; DxgKrnl-SysMm provider invalid, Lxss provider missing",
+      "url": "https://github.com/microsoft/WSL/issues/41060",
+      "kind": "issue",
+      "category": "bug",
+      "days_no_reply": 0,
+      "is_community": true,
+      "score": 6,
+      "severity": "risk",
+      "sentiment": "frustrated",
+      "next_action_glyph": "💬",
+      "next_action": "reply",
+      "suggested_labels": [
+        "bug",
+        "GPU",
+        "telemetry"
+      ],
+      "suggested_reply": "Thanks for the detailed logs and triage summary. This looks actionable: dxgkrnl reports a FORTIFY field-spanning write in dxgvmb_send_wait_sync_object_gpu, with ENOBUFS telemetry and host Hyper-V symptoms. Could you confirm whether #41059 is the same report and close/merge one of the two to keep investigation in one place? Maintainers: this likely belongs with the WSLg/GPU path plus telemetry diagnostics."
+    },
+    {
+      "repo": "microsoft/WSL",
+      "number": 41061,
+      "title": "Localization change from build: 151997771",
+      "url": "https://github.com/microsoft/WSL/pull/41061",
+      "kind": "pr",
+      "category": "other",
+      "days_no_reply": 0,
+      "is_community": false,
+      "score": 1,
+      "severity": "none",
+      "sentiment": "",
+      "next_action_glyph": "✅",
+      "next_action": "no_action",
+      "suggested_labels": [],
+      "suggested_reply": ""
+    },
+    {
+      "repo": "microsoft/wslg",
+      "number": 1483,
+      "title": "WSLg 1.0.71: GUI session freezes, then Weston becomes unkillable in /mnt/shared_memory virtiofs",
+      "url": "https://github.com/microsoft/wslg/issues/1483",
+      "kind": "issue",
+      "category": "bug",
+      "days_no_reply": 0,
+      "is_community": true,
+      "score": 6,
+      "severity": "crash",
+      "sentiment": "blocked",
+      "next_action_glyph": "💬",
+      "next_action": "reply",
+      "suggested_labels": [
+        "server-connection",
+        "rdp-client-connection",
+        "virtiofs",
+        "shared-memory"
+      ],
+      "suggested_reply": "Thanks for the very detailed diagnostics. The D-state stacks around \request_wait_answer on /mnt/shared_memory and \u000birtio_fs_drain_queue make this look worth investigating as a WSLg shared-memory/virtiofs hang rather than an app deadlock. If you can reproduce or catch it again, could you add whether it also occurs with the mirrored-networking/autoMemoryReclaim settings disabled, and whether any smaller GUI workload can trigger it?"
     }
   ]
 }
