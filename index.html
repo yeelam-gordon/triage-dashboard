@@ -78,8 +78,8 @@
         <p class="mt-1 text-xs text-slate-500" x-show="frustratedBlockedSignal(activeSignals) > 0" x-text="frustratedBreakdownText(activeSignals)"></p>
       </div>
       <div class="grid grid-cols-3 gap-2 text-center text-xs">
-        <div><div class="text-lg font-semibold" x-text="formatCount(totalTriaged(activeCounts))"></div><div class="text-slate-500">triaged shown</div></div>
-        <div><div class="text-lg font-semibold" x-text="formatCount(totalActive(activeCounts))"></div><div class="text-slate-500">active in window</div></div>
+        <div><div class="text-lg font-semibold" x-text="formatCount(totalAwaiting(activeCounts))"></div><div class="text-slate-500">awaiting us</div></div>
+        <div><div class="text-lg font-semibold" x-text="formatCount(totalTriaged(activeCounts))"></div><div class="text-slate-500">showing</div></div>
         <div><div class="text-lg font-semibold" x-text="formatCount(totalBacklog(activeCounts))"></div><div class="text-slate-500">open backlog</div></div>
       </div>
     </div>
@@ -122,6 +122,7 @@
                 <span class="px-1.5 py-0.5 rounded font-medium" :class="iss.kind === 'pr' ? 'bg-purple-100 text-purple-700' : 'bg-blue-100 text-blue-700'" x-text="iss.kind === 'pr' ? 'PR' : 'Issue'"></span>
                 <span x-text="iss.repo + '#' + iss.number"></span>
                 <span x-text="attentionReason(iss)"></span>
+                <span class="px-1.5 py-0.5 bg-orange-50 text-orange-700 rounded" x-show="daysAwaiting(iss) > 0" x-text="'⏳ ' + formatDays(daysAwaiting(iss)) + ' waiting'"></span>
               </div>
               <a :href="iss.url" target="_blank" class="block mt-0.5 text-sm font-semibold text-slate-900 hover:text-blue-600 truncate" x-text="iss.title"></a>
               <div class="mt-1 text-xs text-slate-600" x-text="displayAction(iss).label + ' — ' + displayAction(iss).reason"></div>
@@ -154,6 +155,7 @@
                   <span class="px-1.5 py-0.5 rounded font-medium" :class="iss.kind === 'pr' ? 'bg-purple-100 text-purple-700' : 'bg-blue-100 text-blue-700'" x-text="iss.kind === 'pr' ? 'PR' : 'Issue'"></span>
                   <span x-text="'#' + iss.number"></span>
                   <span x-text="'Score ' + (iss.score ?? '—')"></span>
+                  <span class="px-1.5 py-0.5 bg-orange-50 text-orange-700 rounded" x-show="daysAwaiting(iss) > 0" x-text="'⏳ ' + formatDays(daysAwaiting(iss)) + ' waiting'"></span>
                 </div>
                 <a :href="iss.url" target="_blank" class="block mt-2 text-sm font-semibold text-slate-900 hover:text-blue-600" x-text="iss.title"></a>
                 <div class="mt-2 text-sm text-slate-700"><span x-text="displayAction(iss).glyph"></span> <span x-text="displayAction(iss).label"></span></div>
@@ -246,8 +248,8 @@
   <section class="bg-white rounded-lg shadow-sm border border-slate-200" x-show="activeSituation.mode !== 'all_clear'">
     <div class="px-4 py-3 border-b border-slate-200 flex flex-wrap items-center justify-between gap-3">
       <div>
-        <h2 class="text-sm font-semibold">Priority queue</h2>
-        <p class="text-xs text-slate-500">Default: score ↓, age ↓, actionable first. Score scale: higher = more urgent; high-priority = score ≥ <span x-text="highScoreThreshold"></span>.</p>
+        <h2 class="text-sm font-semibold">Awaiting our reply — ranked by importance</h2>
+        <p class="text-xs text-slate-500">Default: score ↓, waiting days ↓. Score scale: higher = more urgent; high-priority = score ≥ <span x-text="highScoreThreshold"></span>.</p>
       </div>
       <div class="flex flex-wrap items-center gap-2 text-xs">
         <label class="inline-flex items-center gap-1 px-2 py-1 rounded border border-slate-200">
@@ -294,6 +296,7 @@
                 <span class="px-1.5 py-0.5 bg-amber-50 text-amber-700 rounded" x-text="'Score ' + (iss.score ?? '—')"></span>
                 <span class="px-1.5 py-0.5 bg-rose-50 text-rose-700 rounded" x-text="'Severity ' + (iss.severity || '—')"></span>
                 <span class="px-1.5 py-0.5 bg-slate-100 text-slate-600 rounded" x-text="'Sentiment ' + (iss.sentiment || '—')"></span>
+                <span class="px-1.5 py-0.5 bg-orange-50 text-orange-700 rounded" x-show="daysAwaiting(iss) > 0" x-text="'⏳ ' + formatDays(daysAwaiting(iss)) + ' waiting'"></span>
                 <span class="text-amber-600" x-show="iss.days_no_reply >= 7">
                   ⏰ <span x-text="iss.days_no_reply"></span>d no reply
                 </span>
@@ -652,11 +655,11 @@ function dashboard() {
       const scopeLabel = this.activeRepo ? this.activeRepo : 'across tracked repos';
       const highPriority = scoped.filter(i => (i.score || 0) >= this.highScoreThreshold).length;
       return [
-        { label: 'Triaged issues shown', value: this.formatCount(counts.triaged_issues), sub: scopeLabel },
-        { label: 'Triaged PRs shown', value: this.formatCount(counts.triaged_prs), sub: scopeLabel },
-        { label: `${this.windowLabel(counts)} active`, value: this.formatCount(this.totalActive(counts)), sub: 'updated in window' },
+        { label: 'Awaiting issue replies', value: this.formatCount(counts.awaiting_reply_issues), sub: counts.awaiting_label ? `label: ${counts.awaiting_label}` : scopeLabel },
+        { label: 'PRs awaiting review', value: this.formatCount(counts.awaiting_reply_prs), sub: 'review required' },
+        { label: 'Showing top triaged', value: this.formatCount(this.totalTriaged(counts)), sub: 'ranked by importance' },
         { label: 'Open backlog', value: this.formatCount(this.totalBacklog(counts)), sub: 'all open issues + PRs' },
-        { label: `High-priority score ≥ ${this.highScoreThreshold}`, value: highPriority, sub: 'triaged sample' },
+        { label: `High-priority score ≥ ${this.highScoreThreshold}`, value: highPriority, sub: 'shown slice' },
       ];
     },
 
@@ -751,7 +754,7 @@ function dashboard() {
     },
 
     get dashboardExplainer() {
-      return `This dashboard deep-triages the top items updated in the last ${this.windowLabel(this.data.counts || {})}. Counts: triaged = shown here; active = updated in window; open = full backlog. Not filtered to any user.`;
+      return `This dashboard surfaces the highest-importance items still awaiting OUR reply/review (labelled team-response/triage + community PRs needing review), across the whole open backlog — not just recent activity, and not filtered to any user. “Awaiting” = we owe a response; “showing” = the top slice triaged in detail.`;
     },
 
     nullSafeSum(a, b) {
@@ -765,6 +768,10 @@ function dashboard() {
 
     totalActive(counts) {
       return this.nullSafeSum(counts && counts.window_active_issues, counts && counts.window_active_prs);
+    },
+
+    totalAwaiting(counts) {
+      return this.nullSafeSum(counts && counts.awaiting_reply_issues, counts && counts.awaiting_reply_prs);
     },
 
     totalBacklog(counts) {
@@ -788,23 +795,21 @@ function dashboard() {
     },
 
     countTierText(counts) {
-      return `Showing top ${this.formatCount(this.totalTriaged(counts))} triaged · ${this.formatCount(this.totalActive(counts))} active in ${this.windowLabel(counts)} · ${this.formatCount(this.totalBacklog(counts))} open total`;
+      return `Awaiting our reply: ${this.formatCount(counts && counts.awaiting_reply_issues)} issues + ${this.formatCount(counts && counts.awaiting_reply_prs)} PRs — showing top ${this.formatCount(this.totalTriaged(counts))} by importance · ${this.formatCount(this.totalBacklog(counts))} open total`;
     },
 
     countTierCompact(counts) {
-      return `${this.compactCount(this.totalTriaged(counts))} triaged · ${this.compactCount(this.totalActive(counts))} active · ${this.compactCount(this.totalBacklog(counts))} open`;
+      return `${this.compactCount(this.totalAwaiting(counts))} awaiting · ${this.compactCount(this.totalTriaged(counts))} showing · ${this.compactCount(this.totalBacklog(counts))} open`;
     },
 
     repoTabTitle(repo) {
       const counts = repo && repo.name ? (repo.counts || this.repoCounts(repo.name)) : (this.data.counts || this.deriveCounts(this.data.issues || []));
-      return `${repo && repo.name ? repo.name : 'All repos'}: ${this.countTierText(counts)}. Triaged sample, not total backlog or user-filtered.`;
+      return `${repo && repo.name ? repo.name : 'All repos'}: ${this.countTierText(counts)}. Awaiting means we owe a reply/review; showing is the triaged top slice.`;
     },
 
     situationHeadline(situation, counts) {
-      if (situation && situation.mode === 'firehose') {
-        return `Big triage queue — ${this.formatCount(this.totalActive(counts))} issues/PRs active in ${this.windowLabel(counts)} (${this.formatCount(this.totalBacklog(counts))} open); top ${this.formatCount(this.totalTriaged(counts))} triaged below.`;
-      }
-      return (situation && situation.headline) || '';
+      if (situation && situation.mode === 'all_clear') return (situation && situation.headline) || '';
+      return `Awaiting our reply — ${this.formatCount(counts && counts.awaiting_reply_issues)} issues + ${this.formatCount(counts && counts.awaiting_reply_prs)} PRs; top ${this.formatCount(this.totalTriaged(counts))} by importance below.`;
     },
 
     get highScoreThreshold() {
@@ -1016,6 +1021,15 @@ function dashboard() {
       return Number(iss.priority_age_days ?? iss.days_no_reply ?? 0) || 0;
     },
 
+    daysAwaiting(iss) {
+      return Number(iss && (iss.days_awaiting ?? iss.priority_age_days ?? iss.days_no_reply ?? 0)) || 0;
+    },
+
+    formatDays(value) {
+      const n = Number(value) || 0;
+      return Number.isInteger(n) ? `${n}d` : `${n.toFixed(1).replace(/\.0$/, '')}d`;
+    },
+
     isInformational(iss) {
       const action = String(iss.next_action || '').toLowerCase();
       const values = [iss.category, iss.severity, iss.classification_type].map(v => String(v || '').toLowerCase());
@@ -1040,13 +1054,13 @@ function dashboard() {
 
     comparePriority(a, b) {
       const actionDelta = Number(this.isActionable(b)) - Number(this.isActionable(a));
-      if (this.sortMode === 'age') return (this.itemAge(b) - this.itemAge(a)) || ((b.score || 0) - (a.score || 0)) || actionDelta;
-      if (this.sortMode === 'score') return ((b.score || 0) - (a.score || 0)) || (this.itemAge(b) - this.itemAge(a)) || actionDelta;
-      return ((b.score || 0) - (a.score || 0)) || (this.itemAge(b) - this.itemAge(a)) || actionDelta;
+      if (this.sortMode === 'age') return (this.daysAwaiting(b) - this.daysAwaiting(a)) || ((b.score || 0) - (a.score || 0)) || actionDelta;
+      if (this.sortMode === 'score') return ((b.score || 0) - (a.score || 0)) || (this.daysAwaiting(b) - this.daysAwaiting(a)) || actionDelta;
+      return ((b.score || 0) - (a.score || 0)) || (this.daysAwaiting(b) - this.daysAwaiting(a)) || actionDelta;
     },
 
     compareCrossKindUrgency(a, b) {
-      return ((b.score || 0) - (a.score || 0)) || (this.itemAge(b) - this.itemAge(a)) || String(a.repo || '').localeCompare(String(b.repo || '')) || ((a.number || 0) - (b.number || 0));
+      return ((b.score || 0) - (a.score || 0)) || (this.daysAwaiting(b) - this.daysAwaiting(a)) || String(a.repo || '').localeCompare(String(b.repo || '')) || ((a.number || 0) - (b.number || 0));
     },
 
     renderCharts() {
