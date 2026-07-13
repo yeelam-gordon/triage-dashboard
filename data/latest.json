@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13T00:26:29Z",
+  "generated_at": "2026-07-13T00:43:10Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -36,6 +36,15 @@
     "microsoft/win-dev-skills": {
       "agent_review": false
     }
+  },
+  "counts": {
+    "triaged_issues": 24,
+    "triaged_prs": 18,
+    "window_active_issues": 186,
+    "window_active_prs": 118,
+    "backlog_open_issues": 8884,
+    "backlog_open_prs": 214,
+    "window_label": "Weekly (7d)"
   },
   "totals": {
     "open_issues": 24,
@@ -152,6 +161,15 @@
         "headline": "3 internal item(s) waiting — review every one.",
         "recommendation": "Review the highlighted items."
       },
+      "counts": {
+        "triaged_issues": 2,
+        "triaged_prs": 1,
+        "window_active_issues": 7,
+        "window_active_prs": 7,
+        "backlog_open_issues": 43,
+        "backlog_open_prs": 27,
+        "window_label": "Weekly (7d)"
+      },
       "trends": [
         {
           "topic": "Needs-Tag-Fix",
@@ -230,6 +248,15 @@
         "headline": "⚠ Respond now — 4 frustrated/blocked; 3 high-priority (score ≥ 6; may overlap).",
         "recommendation": "Do these first."
       },
+      "counts": {
+        "triaged_issues": 14,
+        "triaged_prs": 10,
+        "window_active_issues": 121,
+        "window_active_prs": 84,
+        "backlog_open_issues": 7250,
+        "backlog_open_prs": 109,
+        "window_label": "Weekly (7d)"
+      },
       "trends": [
         {
           "topic": "Needs-Triage",
@@ -300,6 +327,15 @@
         "headline": "⚠ Respond now — 4 frustrated/blocked; 4 high-priority (score ≥ 6; may overlap).",
         "recommendation": "Do these first."
       },
+      "counts": {
+        "triaged_issues": 7,
+        "triaged_prs": 7,
+        "window_active_issues": 52,
+        "window_active_prs": 23,
+        "backlog_open_issues": 893,
+        "backlog_open_prs": 54,
+        "window_label": "Weekly (7d)"
+      },
       "trends": [
         {
           "topic": "bug",
@@ -361,6 +397,15 @@
         "headline": "1 community ask(s) waiting — don't miss it.",
         "recommendation": "Reply to the highlighted ask."
       },
+      "counts": {
+        "triaged_issues": 1,
+        "triaged_prs": 0,
+        "window_active_issues": 5,
+        "window_active_prs": 0,
+        "backlog_open_issues": 678,
+        "backlog_open_prs": 16,
+        "window_label": "Weekly (7d)"
+      },
       "trends": [
         {
           "topic": "bug",
@@ -401,6 +446,15 @@
         },
         "headline": "✓ Checked — no new issues or PRs in this window.",
         "recommendation": "Nothing to do — revisit next cycle."
+      },
+      "counts": {
+        "triaged_issues": 0,
+        "triaged_prs": 0,
+        "window_active_issues": 0,
+        "window_active_prs": 0,
+        "backlog_open_issues": 0,
+        "backlog_open_prs": 1,
+        "window_label": "Weekly (7d)"
       }
     },
     "microsoft/win-dev-skills": {
@@ -436,6 +490,15 @@
         },
         "headline": "✓ Checked — no new issues or PRs in this window.",
         "recommendation": "Nothing to do — revisit next cycle."
+      },
+      "counts": {
+        "triaged_issues": 0,
+        "triaged_prs": 0,
+        "window_active_issues": 1,
+        "window_active_prs": 4,
+        "backlog_open_issues": 20,
+        "backlog_open_prs": 7,
+        "window_label": "Weekly (7d)"
       }
     }
   },

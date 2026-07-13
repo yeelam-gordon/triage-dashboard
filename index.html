@@ -44,20 +44,26 @@
   <nav class="flex items-center gap-1 border-b border-slate-200 overflow-x-auto">
     <button @click="selectRepo('')"
       class="px-3 py-2 text-sm font-medium border-b-2 -mb-px whitespace-nowrap"
+      :title="repoTabTitle({ name: '', count: totalTriagedCount })"
       :class="activeRepo === '' ? 'border-blue-600 text-blue-700' : 'border-transparent text-slate-500 hover:text-slate-800'">
       All repos
-      <span class="ml-1 text-xs text-slate-400" x-text="'(' + (data.issues || []).length + ')'"></span>
+      <span class="ml-1 text-xs text-slate-400" x-text="'(' + totalTriagedCount + ' triaged)'"></span>
     </button>
     <template x-for="r in repos" :key="r.name">
       <button @click="selectRepo(r.name)"
         class="px-3 py-2 text-sm font-medium border-b-2 -mb-px whitespace-nowrap"
+        :title="repoTabTitle(r)"
         :class="activeRepo === r.name ? 'border-blue-600 text-blue-700' : 'border-transparent text-slate-500 hover:text-slate-800'">
         <span x-text="r.short"></span>
-        <span class="ml-1 text-xs text-slate-400" x-text="'(' + r.count + ')'"></span>
+        <span class="ml-1 text-xs text-slate-400" x-text="'(' + r.count + ' triaged)'"></span>
         <span class="ml-1 text-xs text-amber-600" x-show="r.noReply > 0" x-text="'⏰' + r.noReply"></span>
       </button>
     </template>
   </nav>
+
+  <section class="bg-blue-50 border border-blue-100 rounded-lg px-4 py-3 text-sm text-blue-900">
+    <span x-text="dashboardExplainer"></span>
+  </section>
 
   <!-- ============ Situation hero ============ -->
   <section class="rounded-lg border p-4" :class="modeHeroClass(activeSituation.mode)">
@@ -67,14 +73,14 @@
           <span class="px-2 py-0.5 rounded-full text-xs font-semibold" :class="modeBadgeClass(activeSituation.mode)" x-text="modeLabel(activeSituation.mode)"></span>
           <span class="text-xs text-slate-500" x-text="activeRepo || 'All repos'"></span>
         </div>
-        <h2 class="mt-2 text-lg font-semibold text-slate-900" x-text="activeSituation.headline"></h2>
-        <p class="mt-1 text-sm text-slate-600" x-text="activeSituation.recommendation"></p>
+        <h2 class="mt-2 text-lg font-semibold text-slate-900" x-text="situationHeadline(activeSituation, activeCounts)"></h2>
+        <p class="mt-1 text-sm text-slate-600" x-text="countTierText(activeCounts)"></p>
         <p class="mt-1 text-xs text-slate-500" x-show="frustratedBlockedSignal(activeSignals) > 0" x-text="frustratedBreakdownText(activeSignals)"></p>
       </div>
       <div class="grid grid-cols-3 gap-2 text-center text-xs">
-        <div><div class="text-lg font-semibold" x-text="activeSignals.total || 0"></div><div class="text-slate-500">items</div></div>
-        <div><div class="text-lg font-semibold" x-text="activeSignals.community || 0"></div><div class="text-slate-500">community</div></div>
-        <div><div class="text-lg font-semibold" x-text="activeSignals.bugs || 0"></div><div class="text-slate-500">bugs</div></div>
+        <div><div class="text-lg font-semibold" x-text="formatCount(totalTriaged(activeCounts))"></div><div class="text-slate-500">triaged shown</div></div>
+        <div><div class="text-lg font-semibold" x-text="formatCount(totalActive(activeCounts))"></div><div class="text-slate-500">active in window</div></div>
+        <div><div class="text-lg font-semibold" x-text="formatCount(totalBacklog(activeCounts))"></div><div class="text-slate-500">open backlog</div></div>
       </div>
     </div>
   </section>
@@ -87,8 +93,8 @@
           <div class="font-medium text-sm truncate" x-text="card.short"></div>
           <span class="px-1.5 py-0.5 rounded-full text-[10px] font-semibold whitespace-nowrap" :class="modeBadgeClass(card.situation.mode)" x-text="modeLabelForSituation(card.situation)"></span>
         </div>
-        <p class="mt-2 text-xs text-slate-600 line-clamp-2" x-text="card.situation.headline"></p>
-        <div class="mt-2 text-xs text-slate-400" x-text="`${card.signals.total} items · ${card.signals.issues} issues · ${card.signals.prs} PRs`"></div>
+        <p class="mt-2 text-xs text-slate-600 line-clamp-2" x-text="situationHeadline(card.situation, card.counts)"></p>
+        <div class="mt-2 text-xs text-slate-400" x-text="countTierCompact(card.counts)"></div>
       </button>
     </template>
   </section>
@@ -96,7 +102,7 @@
   <!-- ============ All clear ============ -->
   <section class="bg-white rounded-lg shadow-sm border border-emerald-200 p-8 text-center" x-show="activeSituation.mode === 'all_clear'">
     <div class="text-3xl">✓</div>
-    <h2 class="mt-2 text-lg font-semibold text-slate-900" x-text="activeSituation.headline"></h2>
+    <h2 class="mt-2 text-lg font-semibold text-slate-900" x-text="situationHeadline(activeSituation, activeCounts)"></h2>
     <p class="mt-1 text-sm text-slate-500" x-text="'Last checked ' + generatedAtText"></p>
     <p class="mt-2 text-sm text-emerald-700" x-text="activeSituation.recommendation"></p>
   </section>
@@ -516,10 +522,10 @@ function dashboard() {
     get repos() {
       const map = new Map();
       for (const repo of (this.data.checked_repos || [])) {
-        if (repo) map.set(repo, { name: repo, short: repo.split('/')[1] || repo, count: 0, noReply: 0, checked: true });
+        if (repo) map.set(repo, { name: repo, short: repo.split('/')[1] || repo, count: 0, noReply: 0, checked: true, counts: this.repoCounts(repo) });
       }
       for (const repo of Object.keys(this.data.per_repo || {})) {
-        if (!map.has(repo)) map.set(repo, { name: repo, short: repo.split('/')[1] || repo, count: 0, noReply: 0, checked: true });
+        if (!map.has(repo)) map.set(repo, { name: repo, short: repo.split('/')[1] || repo, count: 0, noReply: 0, checked: true, counts: this.repoCounts(repo) });
       }
       for (const i of (this.data.issues || [])) {
         if (!map.has(i.repo)) map.set(i.repo, { name: i.repo, short: i.repo.split('/')[1] || i.repo, count: 0, noReply: 0 });
@@ -563,6 +569,30 @@ function dashboard() {
       return this.data.totals || {};
     },
 
+    get activeCounts() {
+      const repo = this.resolveRepoName(this.activeRepo);
+      if (repo) return this.repoCounts(repo);
+      return this.data.counts || this.deriveCounts(this.scopedIssues);
+    },
+
+    repoCounts(repo) {
+      const block = repo && this.data.per_repo && this.data.per_repo[repo];
+      return (block && block.counts) || this.deriveCounts((this.data.issues || []).filter(i => i.repo === repo));
+    },
+
+    deriveCounts(items) {
+      const arr = items || [];
+      return {
+        triaged_issues: arr.filter(i => i.kind === 'issue').length,
+        triaged_prs: arr.filter(i => i.kind === 'pr').length,
+        window_active_issues: null,
+        window_active_prs: null,
+        backlog_open_issues: null,
+        backlog_open_prs: null,
+        window_label: 'this window',
+      };
+    },
+
     get activeSituation() {
       const repo = this.resolveRepoName(this.activeRepo);
       if (repo && this.data.per_repo && this.data.per_repo[repo] && this.data.per_repo[repo].situation) {
@@ -578,7 +608,8 @@ function dashboard() {
     get repoSituationCards() {
       return this.repos.map(r => {
         const situation = (this.data.per_repo && this.data.per_repo[r.name] && this.data.per_repo[r.name].situation) || this._deriveSituation(this.scopedIssues.filter(i => i.repo === r.name));
-        return { repo: r.name, short: r.short, situation, signals: situation.signals || {} };
+        const counts = this.repoCounts(r.name);
+        return { repo: r.name, short: r.short, situation, signals: situation.signals || {}, counts };
       }).sort((a, b) =>
         this.urgencyRank(a.situation) - this.urgencyRank(b.situation) ||
         (b.signals.total || 0) - (a.signals.total || 0) ||
@@ -617,17 +648,15 @@ function dashboard() {
 
     get summaryCards() {
       const scoped = this.scopedIssues;
-      const totals = this.activeTotals;
-      const noReply = scoped.filter(i => (i.days_no_reply || 0) >= 7).length;
-      const cats = Object.keys(this.activeCategoryCounts).length;
+      const counts = this.activeCounts;
       const scopeLabel = this.activeRepo ? this.activeRepo : 'across tracked repos';
       const highPriority = scoped.filter(i => (i.score || 0) >= this.highScoreThreshold).length;
       return [
-        { label: 'Open issues', value: totals.open_issues ?? scoped.length, sub: scopeLabel },
-        { label: 'Open PRs', value: totals.open_prs ?? '—', sub: scopeLabel },
-        { label: 'No-reply ≥7d', value: noReply, sub: 'need triage attention' },
-        { label: `High-priority score ≥ ${this.highScoreThreshold}`, value: highPriority, sub: 'issues + PRs' },
-        { label: 'Categories', value: cats, sub: 'auto-detected' },
+        { label: 'Triaged issues shown', value: this.formatCount(counts.triaged_issues), sub: scopeLabel },
+        { label: 'Triaged PRs shown', value: this.formatCount(counts.triaged_prs), sub: scopeLabel },
+        { label: `${this.windowLabel(counts)} active`, value: this.formatCount(this.totalActive(counts)), sub: 'updated in window' },
+        { label: 'Open backlog', value: this.formatCount(this.totalBacklog(counts)), sub: 'all open issues + PRs' },
+        { label: `High-priority score ≥ ${this.highScoreThreshold}`, value: highPriority, sub: 'triaged sample' },
       ];
     },
 
@@ -707,7 +736,7 @@ function dashboard() {
       const headline = mode === 'all_clear' ? '✓ Checked — no new issues or PRs in this window.'
         : mode === 'spotlight' ? (isInternal ? `${total} internal item(s) waiting — review every one.` : `${signals.community} community ask(s) waiting — don't miss ${signals.community === 1 ? 'it' : 'them'}.`)
         : mode === 'at_risk' ? `⚠ Respond now — ${this.frustratedBlockedSignal(signals)} frustrated/blocked; ${signals.hi_score} high-priority (score ≥ ${this.highScoreThreshold}; may overlap).`
-        : mode === 'firehose' ? `${total} open items — triage & prioritise; ${signals.bugs} bugs to burn down.`
+        : mode === 'firehose' ? `Big triage queue — top ${total} triaged below; ${signals.bugs} bugs in sample.`
         : `${total} open items — routine triage.`;
       const recommendation = mode === 'all_clear' ? 'Nothing to do — revisit next cycle.'
         : mode === 'spotlight' ? (isInternal ? 'Review the highlighted items.' : 'Reply to the highlighted ask.')
@@ -715,6 +744,67 @@ function dashboard() {
         : mode === 'firehose' ? 'Start at the top of the priority queue.'
         : 'Work down the priority queue.';
       return { mode, is_internal: isInternal, signals, headline, recommendation };
+    },
+
+    get totalTriagedCount() {
+      return this.totalTriaged(this.data.counts || this.deriveCounts(this.data.issues || []));
+    },
+
+    get dashboardExplainer() {
+      return `This dashboard deep-triages the top items updated in the last ${this.windowLabel(this.data.counts || {})}. Counts: triaged = shown here; active = updated in window; open = full backlog. Not filtered to any user.`;
+    },
+
+    nullSafeSum(a, b) {
+      if (a === null || a === undefined || b === null || b === undefined) return null;
+      return (Number(a) || 0) + (Number(b) || 0);
+    },
+
+    totalTriaged(counts) {
+      return this.nullSafeSum(counts && counts.triaged_issues, counts && counts.triaged_prs);
+    },
+
+    totalActive(counts) {
+      return this.nullSafeSum(counts && counts.window_active_issues, counts && counts.window_active_prs);
+    },
+
+    totalBacklog(counts) {
+      return this.nullSafeSum(counts && counts.backlog_open_issues, counts && counts.backlog_open_prs);
+    },
+
+    formatCount(value) {
+      if (value === null || value === undefined || Number.isNaN(Number(value))) return '—';
+      return Number(value).toLocaleString();
+    },
+
+    compactCount(value) {
+      if (value === null || value === undefined || Number.isNaN(Number(value))) return '—';
+      const n = Number(value);
+      if (Math.abs(n) >= 1000) return (n / 1000).toFixed(n >= 10000 ? 0 : 1).replace(/\.0$/, '') + 'k';
+      return n.toLocaleString();
+    },
+
+    windowLabel(counts) {
+      return (counts && counts.window_label) || 'this window';
+    },
+
+    countTierText(counts) {
+      return `Showing top ${this.formatCount(this.totalTriaged(counts))} triaged · ${this.formatCount(this.totalActive(counts))} active in ${this.windowLabel(counts)} · ${this.formatCount(this.totalBacklog(counts))} open total`;
+    },
+
+    countTierCompact(counts) {
+      return `${this.compactCount(this.totalTriaged(counts))} triaged · ${this.compactCount(this.totalActive(counts))} active · ${this.compactCount(this.totalBacklog(counts))} open`;
+    },
+
+    repoTabTitle(repo) {
+      const counts = repo && repo.name ? (repo.counts || this.repoCounts(repo.name)) : (this.data.counts || this.deriveCounts(this.data.issues || []));
+      return `${repo && repo.name ? repo.name : 'All repos'}: ${this.countTierText(counts)}. Triaged sample, not total backlog or user-filtered.`;
+    },
+
+    situationHeadline(situation, counts) {
+      if (situation && situation.mode === 'firehose') {
+        return `Big triage queue — ${this.formatCount(this.totalActive(counts))} issues/PRs active in ${this.windowLabel(counts)} (${this.formatCount(this.totalBacklog(counts))} open); top ${this.formatCount(this.totalTriaged(counts))} triaged below.`;
+      }
+      return (situation && situation.headline) || '';
     },
 
     get highScoreThreshold() {
