@@ -505,8 +505,14 @@ function dashboard() {
       window.addEventListener('hashchange', () => {
         const r = this.readHashRepo();
         const resolved = this.resolveRepoName(r);
-        if (resolved !== this.activeRepo) { this.activeRepo = resolved; this.$nextTick(() => this.renderCharts()); }
+        if (resolved !== this.activeRepo) { this.activeRepo = resolved; this.resetPages(); this.$nextTick(() => this.renderCharts()); }
       });
+      this.$watch('filter', () => this.resetPages());
+      this.$watch('categoryFilter', () => this.resetPages());
+      this.$watch('sortMode', () => this.resetPages());
+      this.$watch('quickFilters.communityOnly', () => this.resetPages());
+      this.$watch('quickFilters.needsReply7d', () => this.resetPages());
+      this.$watch('quickFilters.actionableOnly', () => this.resetPages());
       this.$nextTick(() => this.renderCharts());
     },
 
@@ -518,6 +524,7 @@ function dashboard() {
     selectRepo(name) {
       this.activeRepo = this.resolveRepoName(name);
       this.categoryFilter = '';
+      this.resetPages();
       location.hash = this.activeRepo ? 'repo=' + encodeURIComponent(this.activeRepo) : '';
       this.$nextTick(() => this.renderCharts());
     },
@@ -696,18 +703,15 @@ function dashboard() {
     },
 
     get worklistItems() {
-      const repo = this.resolveRepoName(this.activeRepo);
-      const repos = repo ? [repo] : this.repos.map(r => r.name);
+      const owed = this.activeOwedList;
       const rows = [];
-      for (const name of repos) {
-        const owed = this.repoOwedList(name);
-        for (const kind of ['issues', 'prs']) {
-          (owed[kind] || []).forEach((row, index) => {
-            const rich = this.richItem(name, row.number);
-            const base = Object.assign({}, row, { repo: name, rank: index, triaged: !!(row.triaged || rich) });
-            rows.push(rich ? Object.assign(base, rich, { labels: row.labels || rich.current_labels || [], up: row.up || 0, comments: row.comments || 0, age_days: row.age_days }) : base);
-          });
-        }
+      for (const kind of ['issues', 'prs']) {
+        (owed[kind] || []).forEach((row, index) => {
+          const repo = row.repo || this.resolveRepoName(this.activeRepo);
+          const rich = this.richItem(repo, row.number);
+          const base = Object.assign({}, row, { repo, rank: index, triaged: !!(row.triaged || rich) });
+          rows.push(rich ? Object.assign(base, rich, { labels: row.labels || rich.current_labels || [], up: row.up || 0, comments: row.comments || 0, age_days: row.age_days }) : base);
+        });
       }
       if (!rows.length) {
         return this.scopedIssues.map((i, index) => Object.assign({ rank: index, triaged: true }, i));
@@ -729,8 +733,30 @@ function dashboard() {
     },
 
     get itemGroups() {
-      const issues = this.priorityItems.filter(i => i.kind !== 'pr');
-      const prs = this.priorityItems.filter(i => i.kind === 'pr');
+      const owed = this.activeOwedList;
+      const activeRepo = this.resolveRepoName(this.activeRepo);
+      const enrich = (row) => {
+        const repo = row.repo || activeRepo;
+        const base = Object.assign({ repo }, row);
+        if (row.triaged) {
+          const rich = this.richItem(repo, row.number);
+          if (rich) return Object.assign({}, rich, base, { triaged: true });
+        }
+        return base;
+      };
+      const f = this.quickFilters;
+      const applyFilters = (arr) => arr.filter(r => {
+        if (f.communityOnly && !r.is_community) return false;
+        if (f.needsReply7d && !((Number(r.age_days) || 0) >= 7)) return false;
+        if (f.actionableOnly && !r.triaged) return false;
+        return true;
+      });
+      // stable sort pins deep-triaged rows to the top; owed rank order preserved otherwise
+      const pin = (arr) => arr.map((r, i) => [r, i])
+        .sort((a, b) => ((b[0].triaged ? 1 : 0) - (a[0].triaged ? 1 : 0)) || (a[1] - b[1]))
+        .map(x => x[0]);
+      const issues = pin(applyFilters((owed.issues || []).map(enrich)));
+      const prs = pin(applyFilters((owed.prs || []).map(enrich)));
       return [
         this.makePagedGroup('Issues', 'issue', issues),
         this.makePagedGroup('Pull requests', 'pr', prs),
@@ -750,14 +776,26 @@ function dashboard() {
     get activeOwedList() {
       const repo = this.resolveRepoName(this.activeRepo);
       if (repo) return this.repoOwedList(repo);
+      const issues = [];
+      const prs = [];
+      for (const r of this.repos) {
+        const owed = this.repoOwedList(r.name);
+        (owed.issues || []).forEach(row => issues.push(Object.assign({ repo: r.name }, row)));
+        (owed.prs || []).forEach(row => prs.push(Object.assign({ repo: r.name }, row)));
+      }
       const summary = this.data.owed_list || {};
-      return { issues_total: summary.issues_total, prs_total: summary.prs_total, capped_issues: summary.capped_issues, capped_prs: summary.capped_prs };
+      return { issues, prs, issues_total: summary.issues_total, prs_total: summary.prs_total, capped_issues: summary.capped_issues, capped_prs: summary.capped_prs };
     },
 
     setGroupPage(kind, page) {
       const target = Math.max(1, page);
       if (kind === 'issue') this.issuePage = target;
       else this.prPage = target;
+    },
+
+    resetPages() {
+      this.issuePage = 1;
+      this.prPage = 1;
     },
 
     cappedText(group) {
