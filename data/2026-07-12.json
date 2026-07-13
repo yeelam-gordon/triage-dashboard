@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12T12:22:19Z",
+  "generated_at": "2026-07-13T00:26:29Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -17,27 +17,55 @@
     "microsoft/dynwinrt",
     "microsoft/win-dev-skills"
   ],
+  "repo_capabilities": {
+    "microsoft/intelligent-terminal": {
+      "agent_review": false
+    },
+    "microsoft/PowerToys": {
+      "agent_review": false
+    },
+    "microsoft/WSL": {
+      "agent_review": false
+    },
+    "microsoft/wslg": {
+      "agent_review": false
+    },
+    "microsoft/dynwinrt": {
+      "agent_review": false
+    },
+    "microsoft/win-dev-skills": {
+      "agent_review": false
+    }
+  },
   "totals": {
-    "open_issues": 20,
+    "open_issues": 24,
     "open_prs": 18
   },
   "category_counts": {
     "bug": 15,
     "cli": 2,
-    "feature": 2,
+    "crash": 1,
+    "docs": 1,
+    "feature": 4,
     "informational": 1
   },
   "label_counts": {
     "Needs-Review": 1,
-    "Needs-Triage": 12,
+    "Needs-Triage": 13,
     "Needs-Tag-Fix": 2,
+    "Idea-Enhancement": 2,
+    "Help Wanted": 1,
+    "Product-PowerToys Run": 1,
+    "Status-In progress": 1,
+    "Cost-Small": 1,
+    "Product-Quick Accent": 2,
+    "Issue-Bug": 8,
+    "Product-FancyZones": 2,
     "Product-General": 1,
     "Product-Peek": 1,
-    "Issue-Bug": 7,
     "Product-Keyboard Shortcut Manager": 1,
     "Product-Keyboard Manager": 2,
     "Needs-Author-Feedback": 1,
-    "Product-Quick Accent": 1,
     "Needs-Team-Response": 2,
     "Product-Command Palette": 11,
     "duplicate": 2,
@@ -57,28 +85,30 @@
     "needs-author-feedback": 1
   },
   "aging_buckets": {
-    "0-1d": 34,
-    "2-7d": 4,
-    "8-30d": 0,
+    "0-1d": 32,
+    "2-7d": 9,
+    "8-30d": 1,
     ">30d": 0
   },
   "situation": {
     "mode": "at_risk",
     "is_internal": false,
     "signals": {
-      "total": 38,
-      "issues": 20,
+      "total": 42,
+      "issues": 24,
       "prs": 18,
-      "community": 24,
-      "frustrated": 6,
-      "missed_reply": 0,
+      "community": 28,
+      "frustrated_blocked": 9,
+      "frustrated_only": 5,
+      "missed_reply": 2,
       "missed_reply_basis": "source missed_reply.qualifies; days_no_reply>=7 proxy",
-      "hi_score": 6,
-      "bugs": 16,
-      "actionable": 34,
-      "stale7d": 0
+      "hi_score": 8,
+      "hi_score_threshold": 6,
+      "bugs": 17,
+      "actionable": 38,
+      "stale7d": 1
     },
-    "headline": "⚠ Respond now — 6 frustrated/blocked; 6 high-priority (may overlap).",
+    "headline": "⚠ Respond now — 9 frustrated/blocked; 8 high-priority (score ≥ 6; may overlap).",
     "recommendation": "Do these first."
   },
   "per_repo": {
@@ -109,10 +139,12 @@
           "issues": 2,
           "prs": 1,
           "community": 0,
-          "frustrated": 0,
+          "frustrated_blocked": 0,
+          "frustrated_only": 0,
           "missed_reply": 0,
           "missed_reply_basis": "source missed_reply.qualifies; days_no_reply>=7 proxy",
           "hi_score": 0,
+          "hi_score_threshold": 6,
           "bugs": 1,
           "actionable": 3,
           "stale7d": 0
@@ -137,23 +169,31 @@
     },
     "microsoft/PowerToys": {
       "totals": {
-        "open_issues": 10,
+        "open_issues": 14,
         "open_prs": 10
       },
       "category_counts": {
         "bug": 8,
-        "feature": 1,
+        "crash": 1,
+        "docs": 1,
+        "feature": 3,
         "informational": 1
       },
       "label_counts": {
+        "Idea-Enhancement": 2,
+        "Help Wanted": 1,
+        "Product-PowerToys Run": 1,
+        "Status-In progress": 1,
+        "Cost-Small": 1,
+        "Product-Quick Accent": 2,
+        "Issue-Bug": 8,
+        "Product-FancyZones": 2,
         "Product-General": 1,
+        "Needs-Triage": 11,
         "Product-Peek": 1,
-        "Issue-Bug": 7,
         "Product-Keyboard Shortcut Manager": 1,
-        "Needs-Triage": 10,
         "Product-Keyboard Manager": 2,
         "Needs-Author-Feedback": 1,
-        "Product-Quick Accent": 1,
         "Needs-Team-Response": 2,
         "Product-Command Palette": 11,
         "duplicate": 2,
@@ -165,41 +205,43 @@
       },
       "aging_buckets": {
         "0-1d": 19,
-        "2-7d": 1,
-        "8-30d": 0,
+        "2-7d": 4,
+        "8-30d": 1,
         ">30d": 0
       },
       "situation": {
-        "mode": "firehose",
+        "mode": "at_risk",
         "is_internal": false,
         "signals": {
-          "total": 20,
-          "issues": 10,
+          "total": 24,
+          "issues": 14,
           "prs": 10,
-          "community": 14,
-          "frustrated": 1,
-          "missed_reply": 0,
+          "community": 18,
+          "frustrated_blocked": 4,
+          "frustrated_only": 3,
+          "missed_reply": 2,
           "missed_reply_basis": "source missed_reply.qualifies; days_no_reply>=7 proxy",
-          "hi_score": 1,
-          "bugs": 8,
-          "actionable": 16,
-          "stale7d": 0
+          "hi_score": 3,
+          "hi_score_threshold": 6,
+          "bugs": 9,
+          "actionable": 20,
+          "stale7d": 1
         },
-        "headline": "20 open items — triage & prioritise; 8 bugs to burn down.",
-        "recommendation": "Start at the top of the priority queue."
+        "headline": "⚠ Respond now — 4 frustrated/blocked; 3 high-priority (score ≥ 6; may overlap).",
+        "recommendation": "Do these first."
       },
       "trends": [
+        {
+          "topic": "Needs-Triage",
+          "count": 11
+        },
         {
           "topic": "Product-Command Palette",
           "count": 11
         },
         {
-          "topic": "Needs-Triage",
-          "count": 10
-        },
-        {
           "topic": "Issue-Bug",
-          "count": 7
+          "count": 8
         },
         {
           "topic": "Area-Localization",
@@ -232,8 +274,8 @@
         "needs-author-feedback": 1
       },
       "aging_buckets": {
-        "0-1d": 11,
-        "2-7d": 3,
+        "0-1d": 9,
+        "2-7d": 5,
         "8-30d": 0,
         ">30d": 0
       },
@@ -245,15 +287,17 @@
           "issues": 7,
           "prs": 7,
           "community": 9,
-          "frustrated": 4,
+          "frustrated_blocked": 4,
+          "frustrated_only": 2,
           "missed_reply": 0,
           "missed_reply_basis": "source missed_reply.qualifies; days_no_reply>=7 proxy",
           "hi_score": 4,
+          "hi_score_threshold": 6,
           "bugs": 6,
           "actionable": 14,
           "stale7d": 0
         },
-        "headline": "⚠ Respond now — 4 frustrated/blocked; 4 high-priority (may overlap).",
+        "headline": "⚠ Respond now — 4 frustrated/blocked; 4 high-priority (score ≥ 6; may overlap).",
         "recommendation": "Do these first."
       },
       "trends": [
@@ -304,10 +348,12 @@
           "issues": 1,
           "prs": 0,
           "community": 1,
-          "frustrated": 1,
+          "frustrated_blocked": 1,
+          "frustrated_only": 0,
           "missed_reply": 0,
           "missed_reply_basis": "source missed_reply.qualifies; days_no_reply>=7 proxy",
           "hi_score": 1,
+          "hi_score_threshold": 6,
           "bugs": 1,
           "actionable": 1,
           "stale7d": 0
@@ -343,10 +389,12 @@
           "issues": 0,
           "prs": 0,
           "community": 0,
-          "frustrated": 0,
+          "frustrated_blocked": 0,
+          "frustrated_only": 0,
           "missed_reply": 0,
           "missed_reply_basis": "source missed_reply.qualifies; days_no_reply>=7 proxy",
           "hi_score": 0,
+          "hi_score_threshold": 6,
           "bugs": 0,
           "actionable": 0,
           "stale7d": 0
@@ -376,10 +424,12 @@
           "issues": 0,
           "prs": 0,
           "community": 0,
-          "frustrated": 0,
+          "frustrated_blocked": 0,
+          "frustrated_only": 0,
           "missed_reply": 0,
           "missed_reply_basis": "source missed_reply.qualifies; days_no_reply>=7 proxy",
           "hi_score": 0,
+          "hi_score_threshold": 6,
           "bugs": 0,
           "actionable": 0,
           "stale7d": 0
@@ -392,7 +442,7 @@
   "trends": [
     {
       "topic": "Needs-Triage",
-      "count": 12
+      "count": 13
     },
     {
       "topic": "Product-Command Palette",
@@ -400,7 +450,7 @@
     },
     {
       "topic": "Issue-Bug",
-      "count": 7
+      "count": 8
     },
     {
       "topic": "bug",
@@ -531,6 +581,124 @@
     },
     {
       "repo": "microsoft/PowerToys",
+      "number": 11225,
+      "title": "Audible Feedback for PowerToys Run",
+      "url": "https://github.com/microsoft/PowerToys/issues/11225",
+      "kind": "issue",
+      "category": "feature",
+      "days_no_reply": 17,
+      "missed_reply": true,
+      "is_community": true,
+      "score": 5,
+      "severity": "papercut",
+      "sentiment": "blocked",
+      "classification_type": "feature",
+      "next_action_glyph": "❓",
+      "next_action": "request_info",
+      "next_action_reason": "Repro details are still missing in the latest thread.",
+      "suggested_labels": [
+        "Issue-Feature"
+      ],
+      "suggested_reply": "Thanks for the report. Could you share exact repro steps, expected vs. actual behavior, and a PowerToys bug report zip so the team can investigate?",
+      "suggested_owner": "",
+      "owner_evidence": "No CODEOWNERS/evidence-only owner signal available from gh-only triage.",
+      "owner_fallback_reason": "No CODEOWNERS/evidence-only owner signal available from gh-only triage.",
+      "owner_kind": "assignee",
+      "current_labels": [
+        "Idea-Enhancement",
+        "Help Wanted",
+        "Product-PowerToys Run",
+        "Status-In progress",
+        "Cost-Small"
+      ],
+      "updated_at": "2026-07-10T11:21:04Z",
+      "priority_age_days": 17.0,
+      "aging_basis": "issue days_no_reply",
+      "pr_merge_state": "",
+      "pr_review_decision": "",
+      "pr_ci_rollup": "",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": ""
+    },
+    {
+      "repo": "microsoft/PowerToys",
+      "number": 22205,
+      "title": "Quick accent - global enable/disable hotkey",
+      "url": "https://github.com/microsoft/PowerToys/issues/22205",
+      "kind": "issue",
+      "category": "docs",
+      "days_no_reply": 0,
+      "missed_reply": false,
+      "is_community": true,
+      "score": 9,
+      "severity": "papercut",
+      "sentiment": "frustrated",
+      "classification_type": "docs",
+      "next_action_glyph": "🏷️",
+      "next_action": "label_only",
+      "next_action_reason": "Live labels can route this without a new reply.",
+      "suggested_labels": [
+        "Issue-Feature"
+      ],
+      "suggested_reply": "",
+      "suggested_owner": "",
+      "owner_evidence": "No CODEOWNERS/evidence-only owner signal available from gh-only triage.",
+      "owner_fallback_reason": "No CODEOWNERS/evidence-only owner signal available from gh-only triage.",
+      "owner_kind": "assignee",
+      "current_labels": [
+        "Idea-Enhancement",
+        "Product-Quick Accent"
+      ],
+      "updated_at": "2026-07-09T23:05:55Z",
+      "priority_age_days": 0.0,
+      "aging_basis": "issue days_no_reply",
+      "pr_merge_state": "",
+      "pr_review_decision": "",
+      "pr_ci_rollup": "",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": ""
+    },
+    {
+      "repo": "microsoft/PowerToys",
+      "number": 28027,
+      "title": "Fancy Zones eating my SHIFT key",
+      "url": "https://github.com/microsoft/PowerToys/issues/28027",
+      "kind": "issue",
+      "category": "crash",
+      "days_no_reply": 0,
+      "missed_reply": false,
+      "is_community": true,
+      "score": 9,
+      "severity": "crash",
+      "sentiment": "frustrated",
+      "classification_type": "crash",
+      "next_action_glyph": "🏷️",
+      "next_action": "label_only",
+      "next_action_reason": "Live labels can route this without a new reply.",
+      "suggested_labels": [
+        "Issue-Feature",
+        "Needs-Repro"
+      ],
+      "suggested_reply": "",
+      "suggested_owner": "",
+      "owner_evidence": "No CODEOWNERS/evidence-only owner signal available from gh-only triage.",
+      "owner_fallback_reason": "No CODEOWNERS/evidence-only owner signal available from gh-only triage.",
+      "owner_kind": "assignee",
+      "current_labels": [
+        "Issue-Bug",
+        "Product-FancyZones"
+      ],
+      "updated_at": "2026-07-12T23:56:14Z",
+      "priority_age_days": 0.0,
+      "aging_basis": "issue days_no_reply",
+      "pr_merge_state": "",
+      "pr_review_decision": "",
+      "pr_ci_rollup": "",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": ""
+    },
+    {
+      "repo": "microsoft/PowerToys",
       "number": 28769,
       "title": "🚧 Would you like to contribute to PowerToys? 🚧",
       "url": "https://github.com/microsoft/PowerToys/issues/28769",
@@ -566,6 +734,44 @@
     },
     {
       "repo": "microsoft/PowerToys",
+      "number": 32345,
+      "title": "Option for FancyZones layouts to set active window",
+      "url": "https://github.com/microsoft/PowerToys/issues/32345",
+      "kind": "issue",
+      "category": "feature",
+      "days_no_reply": 4,
+      "missed_reply": true,
+      "is_community": true,
+      "score": 2,
+      "severity": "papercut",
+      "sentiment": "neutral",
+      "classification_type": "feature",
+      "next_action_glyph": "❓",
+      "next_action": "request_info",
+      "next_action_reason": "Repro details are still missing in the latest thread.",
+      "suggested_labels": [
+        "Issue-Feature"
+      ],
+      "suggested_reply": "Thanks for the report. Could you share exact repro steps, expected vs. actual behavior, and a PowerToys bug report zip so the team can investigate?",
+      "suggested_owner": "",
+      "owner_evidence": "No CODEOWNERS/evidence-only owner signal available from gh-only triage.",
+      "owner_fallback_reason": "No CODEOWNERS/evidence-only owner signal available from gh-only triage.",
+      "owner_kind": "assignee",
+      "current_labels": [
+        "Product-FancyZones",
+        "Needs-Triage"
+      ],
+      "updated_at": "2026-07-08T19:53:11Z",
+      "priority_age_days": 4.0,
+      "aging_basis": "issue days_no_reply",
+      "pr_merge_state": "",
+      "pr_review_decision": "",
+      "pr_ci_rollup": "",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": ""
+    },
+    {
+      "repo": "microsoft/PowerToys",
       "number": 45846,
       "title": "Add SQLite database preview support to Peek",
       "url": "https://github.com/microsoft/PowerToys/pull/45846",
@@ -591,7 +797,7 @@
         "Product-Peek"
       ],
       "updated_at": "2026-07-11T10:27:53Z",
-      "priority_age_days": 1.0,
+      "priority_age_days": 2.0,
       "aging_basis": "PR days_since_update",
       "pr_merge_state": "BLOCKED",
       "pr_review_decision": "CHANGES_REQUESTED",
@@ -892,7 +1098,7 @@
         "Product-Color Picker"
       ],
       "updated_at": "2026-07-11T16:29:10Z",
-      "priority_age_days": 1.0,
+      "priority_age_days": 2.0,
       "aging_basis": "PR days_since_update",
       "pr_merge_state": "DIRTY",
       "pr_review_decision": "REVIEW_REQUIRED",
@@ -1556,7 +1762,7 @@
       "owner_kind": "reviewer",
       "current_labels": [],
       "updated_at": "2026-07-11T17:16:00Z",
-      "priority_age_days": 1.0,
+      "priority_age_days": 2.0,
       "aging_basis": "PR days_since_update",
       "pr_merge_state": "BLOCKED",
       "pr_review_decision": "REVIEW_REQUIRED",
@@ -1671,7 +1877,7 @@
       "owner_kind": "reviewer",
       "current_labels": [],
       "updated_at": "2026-07-11T11:03:50Z",
-      "priority_age_days": 1.0,
+      "priority_age_days": 2.0,
       "aging_basis": "PR days_since_update",
       "pr_merge_state": "BLOCKED",
       "pr_review_decision": "REVIEW_REQUIRED",

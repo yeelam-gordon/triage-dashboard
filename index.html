@@ -69,6 +69,7 @@
         </div>
         <h2 class="mt-2 text-lg font-semibold text-slate-900" x-text="activeSituation.headline"></h2>
         <p class="mt-1 text-sm text-slate-600" x-text="activeSituation.recommendation"></p>
+        <p class="mt-1 text-xs text-slate-500" x-show="frustratedBlockedSignal(activeSignals) > 0" x-text="frustratedBreakdownText(activeSignals)"></p>
       </div>
       <div class="grid grid-cols-3 gap-2 text-center text-xs">
         <div><div class="text-lg font-semibold" x-text="activeSignals.total || 0"></div><div class="text-slate-500">items</div></div>
@@ -725,6 +726,17 @@ function dashboard() {
       if (!signals) return 0;
       if (signals.frustrated_blocked !== undefined) return Number(signals.frustrated_blocked) || 0;
       return Number(signals.frustrated) || 0;
+    },
+
+    frustratedOnlySignal(signals) {
+      return Number((signals && signals.frustrated_only) || 0);
+    },
+
+    frustratedBreakdownText(signals) {
+      const total = this.frustratedBlockedSignal(signals);
+      const frustrated = this.frustratedOnlySignal(signals);
+      const blocked = Math.max(0, total - frustrated);
+      return `frustrated/blocked: ${total} (${frustrated} frustrated, ${blocked} blocked)`;
     },
 
     canRunAgentReview(iss) {

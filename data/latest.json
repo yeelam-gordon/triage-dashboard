@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-13T00:09:23Z",
+  "generated_at": "2026-07-13T00:26:29Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -19,7 +19,7 @@
   ],
   "repo_capabilities": {
     "microsoft/intelligent-terminal": {
-      "agent_review": true
+      "agent_review": false
     },
     "microsoft/PowerToys": {
       "agent_review": false
