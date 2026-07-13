@@ -942,9 +942,61 @@ function dashboard() {
       }
       return {
         glyph: this.actionGlyphs[raw] || iss.next_action_glyph || '➡️',
-        label: this.formatAction(raw),
+        label: this.actionLabelForItem(iss, raw),
         reason: iss.next_action_reason || 'No reason supplied.',
       };
+    },
+
+    actionLabelForItem(iss, action) {
+      switch (String(action || '')) {
+        case 'label_only': {
+          const labels = this.actionLabelList(iss);
+          return labels.length ? `Add labels: ${labels.join(', ')}` : 'Add labels only';
+        }
+        case 'assign': {
+          const owner = this.ownerMention((iss.owner_kind || '') === 'assignee' ? iss.suggested_owner : '');
+          return owner ? `Assign to ${owner}` : 'Assign to an area owner';
+        }
+        case 'needs_review': {
+          const reviewer = this.ownerMention((iss.owner_kind || '') === 'reviewer' ? iss.suggested_owner : '');
+          return reviewer ? `Ask ${reviewer} to review` : 'Ask a reviewer to review (none suggested — see evidence)';
+        }
+        case 'request_changes': {
+          const author = this.ownerMention(this.authorHandle(iss));
+          return author ? `Ask ${author} to address review` : 'Ask author to address requested changes';
+        }
+        case 'request_info': return 'Ask author for more info';
+        case 'reply': return 'Reply to author';
+        case 'close_dup': return 'Close as duplicate (see reason)';
+        case 'fix_ci': {
+          const jobs = (iss.pr_failing_jobs || []).filter(Boolean);
+          return jobs.length ? `Fix failing CI: ${jobs.join(', ')}` : 'Fix failing CI';
+        }
+        case 'needs_rebase': return 'Needs rebase / update branch';
+        case 'blocked_cla': return 'Blocked — author must sign CLA';
+        case 'ready_to_merge': return 'Ready to merge';
+        case 'no_action': return 'No action (informational)';
+        default: return this.formatAction(action);
+      }
+    },
+
+    actionLabelList(iss) {
+      const labels = this.netNewSuggestedLabels(iss);
+      const source = labels.length ? labels : (iss.suggested_labels || []);
+      return source.map(l => String(l || '').trim()).filter(Boolean);
+    },
+
+    ownerMention(value) {
+      const handles = String(value || '')
+        .split(',')
+        .map(v => v.trim())
+        .filter(Boolean)
+        .map(v => v.startsWith('@') ? v : `@${v}`);
+      return handles.join(', ');
+    },
+
+    authorHandle(iss) {
+      return iss.author || iss.author_login || iss.user_login || (iss.user && iss.user.login) || '';
     },
 
     primaryButtonText(iss) {
