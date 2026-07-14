@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T23:14:55Z",
+  "generated_at": "2026-07-14T23:25:13Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -205,10 +205,10 @@
       "counts": {
         "triaged_issues": 0,
         "triaged_prs": 1,
-        "window_active_issues": null,
-        "window_active_prs": null,
-        "backlog_open_issues": null,
-        "backlog_open_prs": null,
+        "window_active_issues": 0,
+        "window_active_prs": 0,
+        "backlog_open_issues": 0,
+        "backlog_open_prs": 1,
         "awaiting_reply_issues": null,
         "awaiting_reply_prs": null,
         "awaiting_label": null,
@@ -823,13 +823,13 @@
             "comments": 1,
             "created_at": "2026-06-17T19:14:31Z",
             "updated_at": "2026-06-17T19:15:42Z",
-            "age_days": 27.0,
+            "age_days": 28.0,
             "triaged": true,
             "awaiting": true,
             "baseline_action": "label_only",
             "baseline_glyph": "🏷️",
             "baseline_text": "Fix the labels / tags",
-            "baseline_reason": "Wrong/missing tags (waited 27d) — correct them, then route."
+            "baseline_reason": "Wrong/missing tags (waited 28d) — correct them, then route."
           },
           {
             "number": 332,
@@ -2141,7 +2141,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Confirm on current build & route (Command Palette)",
-            "baseline_reason": "Bug (Command Palette) (waited 15d, 8 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+            "baseline_reason": "Bug (Command Palette) (waited 15d, 8 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner. We owe the team response — post it to the reporter."
           },
           {
             "number": 29949,
@@ -2182,13 +2182,13 @@
             "comments": 1,
             "created_at": "2023-06-26T06:42:56Z",
             "updated_at": "2026-04-16T19:15:36Z",
-            "age_days": 89.0,
+            "age_days": 90.0,
             "triaged": true,
             "awaiting": true,
             "baseline_action": "reply",
             "baseline_glyph": "📣",
             "baseline_text": "We owe a team response — route to the PowerToys Run owner (PowerToys Run)",
-            "baseline_reason": "Flagged Needs-Team-Response and routed to PowerToys Run (waited 89d, 6 👍) — the PowerToys Run owner owes the reporter a decision/response; set the type label and post it."
+            "baseline_reason": "Flagged Needs-Team-Response and routed to PowerToys Run (waited 90d, 6 👍) — the PowerToys Run owner owes the reporter a decision/response; set the type label and post it."
           },
           {
             "number": 28981,
@@ -2235,7 +2235,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Confirm on current build & route (General)",
-            "baseline_reason": "Bug (General) (waited 51d, 5 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+            "baseline_reason": "Bug (General) (waited 51d, 5 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner. We owe the team response — post it to the reporter."
           },
           {
             "number": 30714,
@@ -2258,7 +2258,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Confirm on current build & route (Mouse Without Borders)",
-            "baseline_reason": "Bug (Mouse Without Borders) (waited 47d, 5 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+            "baseline_reason": "Bug (Mouse Without Borders) (waited 47d, 5 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner. We owe the team response — post it to the reporter."
           },
           {
             "number": 13310,
@@ -2377,7 +2377,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Confirm on current build & route (ZoomIt)",
-            "baseline_reason": "Bug (ZoomIt) (waited 91d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+            "baseline_reason": "Bug (ZoomIt) (waited 91d) — acknowledge, confirm it still repros on a current build, and route to the area owner. We owe the team response — post it to the reporter."
           },
           {
             "number": 40355,
@@ -2401,7 +2401,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Confirm on current build & route (FancyZones)",
-            "baseline_reason": "Bug (FancyZones) (waited 88d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+            "baseline_reason": "Bug (FancyZones) (waited 88d) — acknowledge, confirm it still repros on a current build, and route to the area owner. We owe the team response — post it to the reporter."
           },
           {
             "number": 43346,
@@ -2567,10 +2567,10 @@
             "age_days": 643.0,
             "triaged": false,
             "awaiting": true,
-            "baseline_action": "reply",
-            "baseline_glyph": "💬",
-            "baseline_text": "Decide on this feature request (Color Picker)",
-            "baseline_reason": "Feature/idea (Color Picker) (waited 643d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+            "baseline_action": "reassess_stale",
+            "baseline_glyph": "🗓️",
+            "baseline_text": "Stale idea — decline or close for low demand (Color Picker)",
+            "baseline_reason": "Old feature ask (Color Picker) (waited 643d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
           },
           {
             "number": 18662,
@@ -2591,10 +2591,10 @@
             "age_days": 640.0,
             "triaged": false,
             "awaiting": true,
-            "baseline_action": "reply",
-            "baseline_glyph": "💬",
-            "baseline_text": "Decide on this feature request (PowerRename)",
-            "baseline_reason": "Feature/idea (PowerRename) (waited 640d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+            "baseline_action": "reassess_stale",
+            "baseline_glyph": "🗓️",
+            "baseline_text": "Stale idea — decline or close for low demand (PowerRename)",
+            "baseline_reason": "Old feature ask (PowerRename) (waited 640d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
           },
           {
             "number": 31992,
@@ -2644,7 +2644,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Confirm on current build & route (Settings)",
-            "baseline_reason": "Bug (Settings) (waited 246d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+            "baseline_reason": "Bug (Settings) (waited 246d) — acknowledge, confirm it still repros on a current build, and route to the area owner. We owe the team response — post it to the reporter."
           },
           {
             "number": 34070,
@@ -2691,7 +2691,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Confirm on current build & route (Setup/Install)",
-            "baseline_reason": "Bug (Setup/Install) (waited 75d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+            "baseline_reason": "Bug (Setup/Install) (waited 75d) — acknowledge, confirm it still repros on a current build, and route to the area owner. We owe the team response — post it to the reporter."
           },
           {
             "number": 37775,
@@ -2715,7 +2715,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Confirm on current build & route (FancyZones)",
-            "baseline_reason": "Bug (FancyZones) (waited 57d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+            "baseline_reason": "Bug (FancyZones) (waited 57d) — acknowledge, confirm it still repros on a current build, and route to the area owner. We owe the team response — post it to the reporter."
           },
           {
             "number": 46531,
@@ -2739,7 +2739,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Confirm on current build & route (Command Palette)",
-            "baseline_reason": "Bug (Command Palette) (waited 19d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+            "baseline_reason": "Bug (Command Palette) (waited 19d) — acknowledge, confirm it still repros on a current build, and route to the area owner. We owe the team response — post it to the reporter."
           },
           {
             "number": 43206,
@@ -2763,7 +2763,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Confirm on current build & route (Peek)",
-            "baseline_reason": "Bug (Peek) (waited 14d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+            "baseline_reason": "Bug (Peek) (waited 14d) — acknowledge, confirm it still repros on a current build, and route to the area owner. We owe the team response — post it to the reporter."
           },
           {
             "number": 23547,
@@ -2787,7 +2787,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Confirm on current build & route (PowerToys Run)",
-            "baseline_reason": "Bug (PowerToys Run) (waited 12d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+            "baseline_reason": "Bug (PowerToys Run) (waited 12d) — acknowledge, confirm it still repros on a current build, and route to the area owner. We owe the team response — post it to the reporter."
           },
           {
             "number": 45913,
@@ -2812,7 +2812,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Confirm on current build & route (Command Palette)",
-            "baseline_reason": "Bug (Command Palette) (waited 1d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+            "baseline_reason": "Bug (Command Palette) (waited 1d) — acknowledge, confirm it still repros on a current build, and route to the area owner. We owe the team response — post it to the reporter."
           },
           {
             "number": 15994,
@@ -4862,10 +4862,10 @@
             "age_days": 716.0,
             "triaged": true,
             "awaiting": true,
-            "baseline_action": "reply",
-            "baseline_glyph": "💬",
-            "baseline_text": "Decide on this feature request",
-            "baseline_reason": "Feature/idea (waited 716d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+            "baseline_action": "reassess_stale",
+            "baseline_glyph": "🗓️",
+            "baseline_text": "Stale idea — decline or close for low demand",
+            "baseline_reason": "Old feature ask (waited 716d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
           },
           {
             "number": 12702,
@@ -7405,13 +7405,13 @@
             "comments": 1,
             "created_at": "2022-04-29T15:15:25Z",
             "updated_at": "2023-08-14T19:19:24Z",
-            "age_days": 1065.0,
+            "age_days": 1066.0,
             "triaged": false,
             "awaiting": false,
             "baseline_action": "reassess_stale",
             "baseline_glyph": "🗓️",
             "baseline_text": "Re-verify on current build / close stale",
-            "baseline_reason": "Very old (waited 1065d, 16 👍) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
+            "baseline_reason": "Very old (waited 1066d, 16 👍) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
           },
           {
             "number": 1290,
