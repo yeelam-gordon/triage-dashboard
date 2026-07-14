@@ -133,6 +133,13 @@
               <button x-show="iss.triaged && canRunAgentReview(iss)" @click="openReviewModal(iss)" class="px-2.5 py-1 text-xs font-medium bg-slate-700 text-white rounded hover:bg-slate-800">Run review skill</button>
             </div>
           </div>
+          <div class="m-4 rounded-lg border border-slate-300 bg-white p-3 flex flex-wrap items-center justify-center gap-3 text-sm shadow-sm" x-show="group.total > 0">
+            <button @click="setGroupPage(group.kind, 1)" :disabled="group.page <= 1" class="px-3 py-1 rounded border border-slate-300 disabled:opacity-40">« First</button>
+            <button @click="setGroupPage(group.kind, group.page - 1)" :disabled="group.page <= 1" class="px-3 py-1 rounded border border-slate-300 disabled:opacity-40">‹ Prev</button>
+            <span class="font-semibold text-slate-700" x-text="paginationText(group)"></span>
+            <button @click="setGroupPage(group.kind, group.page + 1)" :disabled="group.page >= group.totalPages" class="px-3 py-1 rounded border border-slate-300 disabled:opacity-40">Next ›</button>
+            <button @click="setGroupPage(group.kind, group.totalPages)" :disabled="group.page >= group.totalPages" class="px-3 py-1 rounded border border-slate-300 disabled:opacity-40">Last »</button>
+          </div>
         </div>
       </template>
     </div>
@@ -185,63 +192,27 @@
     </template>
   </section>
 
-  <!-- ============ Charts ============ -->
-  <section class="grid grid-cols-2 lg:grid-cols-4 gap-4" x-show="!['all_clear','spotlight'].includes(activeSituation.mode)">
-    <div class="bg-white rounded-lg shadow-sm border border-slate-200 p-4">
-      <h2 class="text-sm font-semibold mb-1">Issues by category <span class="text-xs font-normal text-slate-400">(issues only)</span></h2>
-      <p class="text-xs text-slate-400 mb-2">PR categories are excluded.</p>
-      <canvas id="categoryChart" height="180"></canvas>
-    </div>
-    <div class="bg-white rounded-lg shadow-sm border border-slate-200 p-4" x-show="!activeRepo">
-      <h2 class="text-sm font-semibold mb-1">Top label topics <span class="text-xs font-normal text-slate-400">(issues + PRs)</span></h2>
-      <p class="text-xs text-slate-400 mb-2">All-repo current labels, else suggested labels; no time-series delta.</p>
-      <ul class="space-y-1.5 text-sm" x-show="activeTrends.length">
-        <template x-for="t in activeTrends" :key="t.topic">
-          <li class="flex items-center justify-between">
-            <span x-text="t.topic"></span>
-            <span class="text-slate-500">
-              <span x-text="t.count"></span>
-            </span>
-          </li>
-        </template>
-      </ul>
-      <p class="text-sm text-slate-400" x-show="!activeTrends.length">No trend signal in this window.</p>
-    </div>
-    <div class="bg-white rounded-lg shadow-sm border border-slate-200 p-4">
-      <h2 class="text-sm font-semibold mb-1">Top labels <span class="text-xs font-normal text-slate-400">(issues + PRs)</span></h2>
-      <p class="text-xs text-slate-400 mb-2">Current labels, falling back to suggested labels.</p>
-      <div class="space-y-2" x-show="topActiveLabels.length">
-        <template x-for="l in topActiveLabels" :key="l.name">
-          <div>
-            <div class="flex justify-between text-xs">
-              <span class="truncate pr-2" x-text="l.name"></span>
-              <span class="text-slate-500" x-text="l.count"></span>
+  <!-- ============ Filter-aware charts ============ -->
+  <section class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-4" x-show="chartCards.length">
+    <template x-for="card in chartCards" :key="card.key">
+      <div class="bg-white rounded-lg shadow-sm border border-slate-200 p-4">
+        <h2 class="text-sm font-semibold mb-1" x-text="card.title"></h2>
+        <p class="text-xs text-slate-400 mb-3" x-text="card.scope"></p>
+        <div class="space-y-2">
+          <template x-for="row in card.rows" :key="row.name">
+            <div>
+              <div class="flex justify-between gap-2 text-xs">
+                <span class="truncate pr-2" x-text="row.name"></span>
+                <span class="text-slate-500 whitespace-nowrap" x-text="row.value"></span>
+              </div>
+              <div class="mt-1 h-1.5 bg-slate-100 rounded">
+                <div class="h-1.5 rounded" :class="row.color || card.color || 'bg-blue-500'" :style="'width:' + row.percent + '%'"></div>
+              </div>
             </div>
-            <div class="mt-1 h-1.5 bg-slate-100 rounded">
-              <div class="h-1.5 bg-indigo-500 rounded" :style="'width:' + l.percent + '%'"></div>
-            </div>
-          </div>
-        </template>
+          </template>
+        </div>
       </div>
-      <p class="text-sm text-slate-400" x-show="!topActiveLabels.length">No labels detected.</p>
-    </div>
-    <div class="bg-white rounded-lg shadow-sm border border-slate-200 p-4">
-      <h2 class="text-sm font-semibold mb-1">Aging / timing <span class="text-xs font-normal text-slate-400">(issues + PRs)</span></h2>
-      <p class="text-xs text-slate-400 mb-2">Issues: no-reply age. PRs: days since update/waiting age.</p>
-      <div class="space-y-2">
-        <template x-for="b in activeAgingBucketsList" :key="b.name">
-          <div>
-            <div class="flex justify-between text-xs">
-              <span x-text="b.name"></span>
-              <span class="text-slate-500" x-text="b.count"></span>
-            </div>
-            <div class="mt-1 h-1.5 bg-slate-100 rounded">
-              <div class="h-1.5 bg-amber-500 rounded" :style="'width:' + b.percent + '%'"></div>
-            </div>
-          </div>
-        </template>
-      </div>
-    </div>
+    </template>
   </section>
 
   <!-- ============ Priority queue ============ -->
@@ -267,10 +238,17 @@
           <option value="age">Age</option>
           <option value="score">Score</option>
         </select>
-        <span class="text-slate-500" x-text="(filteredIssues.length) + ' owed rows'"></span>
+        <span class="text-slate-500" x-text="selectedKindRows.length + ' owed rows'"></span>
       </div>
     </div>
-    <div class="px-4 py-10 text-center text-sm text-slate-500" x-show="filteredIssues.length === 0">
+    <div class="px-4 py-3 border-b border-slate-200 bg-slate-50 flex flex-wrap items-center justify-between gap-3">
+      <div class="inline-flex rounded-lg border border-slate-300 bg-white p-1 shadow-sm">
+        <button @click="worklistKind='issue'" class="px-4 py-2 text-sm font-semibold rounded-md" :class="worklistKind === 'issue' ? 'bg-blue-600 text-white shadow' : 'text-slate-600 hover:bg-slate-100'" x-text="'Issues (' + worklistKindCounts.issue + ')'"></button>
+        <button @click="worklistKind='pr'" class="px-4 py-2 text-sm font-semibold rounded-md" :class="worklistKind === 'pr' ? 'bg-purple-600 text-white shadow' : 'text-slate-600 hover:bg-slate-100'" x-text="'Pull requests (' + worklistKindCounts.pr + ')'"></button>
+      </div>
+      <div class="text-xs text-slate-500" x-text="worklistKind === 'issue' ? 'Issue charts and rows' : 'PR readiness charts and rows'"></div>
+    </div>
+    <div class="px-4 py-10 text-center text-sm text-slate-500" x-show="selectedKindRows.length === 0">
       <div class="font-medium text-slate-700" x-text="activeRepo ? 'No awaiting-reply worklist rows for this repo' : 'No matching items'"></div>
       <div class="mt-1" x-show="activeRepo" x-text="'Last checked ' + generatedAtText"></div>
     </div>
@@ -280,11 +258,13 @@
           <div class="px-4 py-2 text-xs font-semibold uppercase tracking-wide border-t border-slate-100 flex flex-wrap items-center justify-between gap-2"
             :class="group.muted ? 'bg-slate-50 text-slate-500' : 'bg-blue-50 text-blue-700'">
             <span x-text="group.title + ' (' + group.total + ')' + (group.capped ? ' — ' + cappedText(group) : '')"></span>
-            <span class="flex items-center gap-2 normal-case font-normal" x-show="group.totalPages > 1">
-              <button @click="setGroupPage(group.kind, group.page - 1)" :disabled="group.page <= 1" class="px-2 py-0.5 rounded border border-slate-200 disabled:opacity-40">Prev</button>
-              <span x-text="'Page ' + group.page + ' / ' + group.totalPages"></span>
-              <button @click="setGroupPage(group.kind, group.page + 1)" :disabled="group.page >= group.totalPages" class="px-2 py-0.5 rounded border border-slate-200 disabled:opacity-40">Next</button>
-            </span>
+          </div>
+          <div class="m-4 rounded-lg border border-slate-300 bg-white p-3 flex flex-wrap items-center justify-center gap-3 text-sm shadow-sm" x-show="group.total > 0">
+            <button @click="setGroupPage(group.kind, 1)" :disabled="group.page <= 1" class="px-3 py-1 rounded border border-slate-300 disabled:opacity-40">« First</button>
+            <button @click="setGroupPage(group.kind, group.page - 1)" :disabled="group.page <= 1" class="px-3 py-1 rounded border border-slate-300 disabled:opacity-40">‹ Prev</button>
+            <span class="font-semibold text-slate-700" x-text="paginationText(group)"></span>
+            <button @click="setGroupPage(group.kind, group.page + 1)" :disabled="group.page >= group.totalPages" class="px-3 py-1 rounded border border-slate-300 disabled:opacity-40">Next ›</button>
+            <button @click="setGroupPage(group.kind, group.totalPages)" :disabled="group.page >= group.totalPages" class="px-3 py-1 rounded border border-slate-300 disabled:opacity-40">Last »</button>
           </div>
           <div class="divide-y divide-slate-100">
             <template x-for="iss in group.items" :key="iss.repo + '#' + iss.number">
@@ -449,6 +429,7 @@ function dashboard() {
     pageSize: 25,
     issuePage: 1,
     prPage: 1,
+    worklistKind: 'issue',
     actionLabels: {
       label_only: 'Add labels only',
       reply: 'Reply to author',
@@ -510,6 +491,7 @@ function dashboard() {
       this.$watch('filter', () => this.resetPages());
       this.$watch('categoryFilter', () => this.resetPages());
       this.$watch('sortMode', () => this.resetPages());
+      this.$watch('worklistKind', () => this.resetPages());
       this.$watch('quickFilters.communityOnly', () => this.resetPages());
       this.$watch('quickFilters.needsReply7d', () => this.resetPages());
       this.$watch('quickFilters.actionableOnly', () => this.resetPages());
@@ -747,12 +729,19 @@ function dashboard() {
       return this.filteredWorklistItems;
     },
 
-    get itemGroups() {
+    get worklistKindCounts() {
       const rows = this.filteredWorklistItems;
-      return [
-        this.makePagedGroup('Issues', 'issue', rows.filter(i => i.kind !== 'pr')),
-        this.makePagedGroup('Pull requests', 'pr', rows.filter(i => i.kind === 'pr')),
-      ];
+      return { issue: rows.filter(i => i.kind !== 'pr').length, pr: rows.filter(i => i.kind === 'pr').length };
+    },
+
+    get selectedKindRows() {
+      const rows = this.filteredWorklistItems;
+      return this.worklistKind === 'pr' ? rows.filter(i => i.kind === 'pr') : rows.filter(i => i.kind !== 'pr');
+    },
+
+    get itemGroups() {
+      const title = this.worklistKind === 'pr' ? 'Pull requests' : 'Issues';
+      return [this.makePagedGroup(title, this.worklistKind, this.selectedKindRows)];
     },
 
     makePagedGroup(title, kind, items) {
@@ -793,6 +782,12 @@ function dashboard() {
 
     cappedText(group) {
       return `showing top ${group.total} of ${this.formatCount(group.owedTotal)} by ${group.kind === 'issue' ? 'reactions' : 'waiting age'}`;
+    },
+
+    paginationText(group) {
+      const start = group.total ? ((group.page - 1) * this.pageSize) + 1 : 0;
+      const end = Math.min(group.total, group.page * this.pageSize);
+      return `Page ${group.page} of ${group.totalPages} (showing rows ${start}–${end} of ${group.total})`;
     },
 
     get doTheseFirstItems() {
@@ -949,6 +944,125 @@ function dashboard() {
       const issueTotal = this.owedIssueTotal(counts, owed);
       const prTotal = this.owedPrTotal(counts, owed);
       return `${repoName} — ${this.formatCount(issueTotal)} issues + ${this.formatCount(prTotal)} PRs awaiting our reply · ${this.formatCount(this.totalTriaged(counts))} fully triaged · showing all (paginated)`;
+    },
+
+    get chartRows() {
+      return this.selectedKindRows;
+    },
+
+    get triagedChartRows() {
+      return this.chartRows.filter(r => r.triaged);
+    },
+
+    get chartCards() {
+      return this.worklistKind === 'pr' ? this.prChartCards : this.issueChartCards;
+    },
+
+    get issueChartCards() {
+      const rows = this.chartRows.filter(r => r.kind !== 'pr');
+      const triaged = rows.filter(r => r.triaged);
+      const cards = [];
+      const aging = this.bucketRows(rows, r => this.daysAwaiting(r));
+      if (rows.length) cards.push(this.makeChartCard('issue-aging', 'Aging / waiting', `of ${this.formatCount(rows.length)} filtered issues`, aging, 'bg-amber-500'));
+      const labels = this.topLabels(rows);
+      if (labels.length) cards.push(this.makeChartCard('issue-labels', 'Top labels', `of ${this.formatCount(rows.length)} filtered issues`, labels, 'bg-indigo-500'));
+      const reacted = [...rows].filter(r => (r.up || 0) > 0).sort((a,b)=>(b.up||0)-(a.up||0)||this.daysAwaiting(b)-this.daysAwaiting(a)).slice(0,5).map(r => ({ name: `#${r.number} ${this.truncate(r.title, 28)}`, count: r.up || 0 }));
+      if (reacted.length) cards.push(this.makeChartCard('issue-reacted', 'Most-reacted 👍', `of ${this.formatCount(rows.length)} filtered issues`, reacted, 'bg-rose-500'));
+      const cats = this.countBy(triaged, r => r.category || 'uncategorized');
+      if (cats.length) cards.push(this.makeChartCard('issue-category', 'By category', `of ${this.formatCount(triaged.length)} triaged issues`, cats, 'bg-blue-500'));
+      const sentiment = this.countBy(triaged, r => r.sentiment || 'unknown', ['frustrated','blocked','confused','neutral','positive','unknown']);
+      if (sentiment.length) cards.push(this.makeChartCard('issue-sentiment', 'By sentiment', `of ${this.formatCount(triaged.length)} triaged issues`, sentiment, 'bg-slate-500'));
+      return cards;
+    },
+
+    get prChartCards() {
+      const rows = this.chartRows.filter(r => r.kind === 'pr');
+      const triaged = rows.filter(r => r.triaged);
+      const cards = [];
+      const readinessOrder = ['needs_review','needs_rebase','fix_ci','request_changes','ready_to_merge','no_action','other'];
+      const readiness = this.countBy(triaged, r => readinessOrder.includes(r.next_action) ? r.next_action : 'other', readinessOrder)
+        .map(r => Object.assign(r, { name: this.prActionLabel(r.name), color: this.prActionColor(r.name) }));
+      if (readiness.length) cards.push(this.makeChartCard('pr-readiness', 'Review readiness', `of ${this.formatCount(triaged.length)} triaged PRs`, readiness, 'bg-amber-500'));
+      const ci = this.countBy(triaged, r => this.normalizeCi(r.pr_ci_rollup), ['Passing','Failing','Pending','Blocked','None'])
+        .map(r => Object.assign(r, { color: ({Passing:'bg-emerald-500',Failing:'bg-red-500',Pending:'bg-amber-500',Blocked:'bg-orange-500',None:'bg-slate-400'})[r.name] }));
+      if (ci.length) cards.push(this.makeChartCard('pr-ci', 'CI status', `of ${this.formatCount(triaged.length)} triaged PRs`, ci, 'bg-slate-500'));
+      const merge = this.countBy(triaged, r => this.normalizeMerge(r.pr_merge_state), ['CLEAN','DIRTY','BLOCKED','UNKNOWN'])
+        .map(r => Object.assign(r, { color: ({CLEAN:'bg-emerald-500',DIRTY:'bg-red-500',BLOCKED:'bg-orange-500',UNKNOWN:'bg-slate-400'})[r.name] }));
+      if (merge.length) cards.push(this.makeChartCard('pr-merge', 'Merge state', `of ${this.formatCount(triaged.length)} triaged PRs`, merge, 'bg-purple-500'));
+      const aging = this.bucketRows(rows, r => this.daysAwaiting(r));
+      if (rows.length) cards.push(this.makeChartCard('pr-aging', 'Waiting age', `of ${this.formatCount(rows.length)} filtered PRs`, aging, 'bg-amber-500'));
+      const labels = this.topLabels(rows);
+      if (labels.length) cards.push(this.makeChartCard('pr-labels', 'Top labels', `of ${this.formatCount(rows.length)} filtered PRs`, labels, 'bg-indigo-500'));
+      return cards;
+    },
+
+    makeChartCard(key, title, scope, rows, color) {
+      const max = Math.max(1, ...rows.map(r => Number(r.count ?? r.value ?? 0)));
+      return { key, title, scope, color, rows: rows.map(r => ({ name: r.name, value: this.formatCount(r.count ?? r.value ?? 0), percent: (Number(r.count ?? r.value ?? 0) ? Math.max(4, Math.round((Number(r.count ?? r.value ?? 0) / max) * 100)) : 0), color: r.color })) };
+    },
+
+    countBy(rows, fn, order) {
+      const counts = new Map();
+      for (const row of rows) {
+        const key = fn(row) || 'unknown';
+        counts.set(key, (counts.get(key) || 0) + 1);
+      }
+      const entries = [...counts.entries()].map(([name, count]) => ({ name, count }));
+      if (order) return entries.sort((a,b) => order.indexOf(a.name) - order.indexOf(b.name)).filter(r => r.count > 0);
+      return entries.sort((a,b) => b.count - a.count || a.name.localeCompare(b.name)).slice(0, 8);
+    },
+
+    topLabels(rows) {
+      const counts = new Map();
+      for (const row of rows) {
+        for (const label of (row.labels || row.current_labels || row.suggested_labels || [])) {
+          const name = String(label || '').trim();
+          if (name) counts.set(name, (counts.get(name) || 0) + 1);
+        }
+      }
+      return [...counts.entries()].sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0])).slice(0,8).map(([name,count])=>({name,count}));
+    },
+
+    bucketRows(rows, valueFn) {
+      const buckets = [{name:'0-1d', count:0}, {name:'2-7d', count:0}, {name:'8-30d', count:0}, {name:'>30d', count:0}];
+      for (const row of rows) {
+        const age = Number(valueFn(row)) || 0;
+        if (age <= 1) buckets[0].count++;
+        else if (age <= 7) buckets[1].count++;
+        else if (age <= 30) buckets[2].count++;
+        else buckets[3].count++;
+      }
+      return buckets;
+    },
+
+    prActionLabel(action) {
+      return ({needs_review:'Needs review', needs_rebase:'Needs rebase', fix_ci:'Fix CI', request_changes:'Request changes', ready_to_merge:'Ready to merge', no_action:'No action', other:'Other'})[action] || action;
+    },
+
+    prActionColor(action) {
+      return ({needs_rebase:'bg-red-500', fix_ci:'bg-red-500', request_changes:'bg-amber-500', needs_review:'bg-amber-500', ready_to_merge:'bg-emerald-500', no_action:'bg-slate-400', other:'bg-slate-400'})[action] || 'bg-slate-400';
+    },
+
+    normalizeCi(value) {
+      const v = String(value || '').toUpperCase();
+      if (['SUCCESS','PASSING'].includes(v)) return 'Passing';
+      if (['FAILURE','FAILING'].includes(v)) return 'Failing';
+      if (['PENDING','QUEUED'].includes(v)) return 'Pending';
+      if (v === 'BLOCKED') return 'Blocked';
+      return 'None';
+    },
+
+    normalizeMerge(value) {
+      const v = String(value || '').toUpperCase();
+      if (['CLEAN','MERGEABLE','HAS_HOOKS'].includes(v)) return 'CLEAN';
+      if (['DIRTY','UNSTABLE'].includes(v)) return 'DIRTY';
+      if (v === 'BLOCKED') return 'BLOCKED';
+      return 'UNKNOWN';
+    },
+
+    truncate(text, length) {
+      const s = String(text || '');
+      return s.length > length ? s.slice(0, length - 1) + '…' : s;
     },
 
     get highScoreThreshold() {
@@ -1258,22 +1372,7 @@ function dashboard() {
     },
 
     renderCharts() {
-      const counts = this.activeCategoryCounts;
-      const ctx = document.getElementById('categoryChart');
-      if (!ctx) return;
-      if (this._chart) { this._chart.destroy(); this._chart = null; }
-      this._chart = new Chart(ctx, {
-        type: 'bar',
-        data: {
-          labels: Object.keys(counts),
-          datasets: [{
-            label: 'Issues',
-            data: Object.values(counts),
-            backgroundColor: '#3b82f6',
-          }],
-        },
-        options: { plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true } } },
-      });
+      // Charts are rendered from Alpine-computed chartCards so they follow filters and worklist kind.
     },
 
     // ---- Token mgmt ----
