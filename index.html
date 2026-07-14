@@ -231,8 +231,15 @@
           <input type="checkbox" x-model="quickFilters.needsReply7d" /> Needs reply ≥7d
         </label>
         <label class="inline-flex items-center gap-1 px-2 py-1 rounded border border-slate-200">
+          <input type="checkbox" x-model="quickFilters.awaitingOnly" /> Awaiting our reply
+        </label>
+        <label class="inline-flex items-center gap-1 px-2 py-1 rounded border border-slate-200">
           <input type="checkbox" x-model="quickFilters.actionableOnly" /> Actionable only
         </label>
+        <span x-show="activeRepo && owedLoading[activeRepo]" class="inline-flex items-center gap-1 px-2 py-1 text-blue-600">
+          <svg class="animate-spin h-3 w-3" viewBox="0 0 24 24" fill="none"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.4 0 0 5.4 0 12h4z"></path></svg>
+          Loading full backlog…
+        </span>
         <select x-model="sortMode" class="px-2 py-1 rounded border border-slate-200">
           <option value="priority">Priority</option>
           <option value="age">Age</option>
@@ -431,7 +438,7 @@ function dashboard() {
     categoryFilter: '',
     activeRepo: '',
     sortMode: 'priority',
-    quickFilters: { communityOnly: false, needsReply7d: false, actionableOnly: false },
+    quickFilters: { communityOnly: false, needsReply7d: false, actionableOnly: false, awaitingOnly: false },
     pageSize: 25,
     issuePage: 1,
     prPage: 1,
@@ -469,6 +476,8 @@ function dashboard() {
       blocked: '⚠️',
     },
     _chart: null,
+    owedFull: {},
+    owedLoading: {},
     token: localStorage.getItem('gh_token') || '',
     tokenInput: '',
     showTokenModal: false,
@@ -488,11 +497,11 @@ function dashboard() {
       }
       // Restore repo selection from URL hash (e.g. #repo=microsoft/intelligent-terminal)
       const hashRepo = this.readHashRepo();
-      if (hashRepo) this.activeRepo = this.resolveRepoName(hashRepo);
+      if (hashRepo) { this.activeRepo = this.resolveRepoName(hashRepo); if (this.activeRepo) this.loadOwedFull(this.activeRepo); }
       window.addEventListener('hashchange', () => {
         const r = this.readHashRepo();
         const resolved = this.resolveRepoName(r);
-        if (resolved !== this.activeRepo) { this.activeRepo = resolved; this.resetPages(); this.$nextTick(() => this.renderCharts()); }
+        if (resolved !== this.activeRepo) { this.activeRepo = resolved; this.resetPages(); if (resolved) this.loadOwedFull(resolved); this.$nextTick(() => this.renderCharts()); }
       });
       this.$watch('filter', () => this.resetPages());
       this.$watch('categoryFilter', () => this.resetPages());
@@ -501,6 +510,7 @@ function dashboard() {
       this.$watch('quickFilters.communityOnly', () => this.resetPages());
       this.$watch('quickFilters.needsReply7d', () => this.resetPages());
       this.$watch('quickFilters.actionableOnly', () => this.resetPages());
+      this.$watch('quickFilters.awaitingOnly', () => this.resetPages());
       this.$nextTick(() => this.renderCharts());
     },
 
@@ -514,7 +524,45 @@ function dashboard() {
       this.categoryFilter = '';
       this.resetPages();
       location.hash = this.activeRepo ? 'repo=' + encodeURIComponent(this.activeRepo) : '';
+      if (this.activeRepo) this.loadOwedFull(this.activeRepo);
       this.$nextTick(() => this.renderCharts());
+    },
+
+    // Lazy-load a repo's FULL owed backlog (data/owed/<slug>.json). latest.json
+    // only carries a slim top-N preview per repo to keep it small; the full
+    // list (up to 7,000+ rows for PowerToys) is fetched on demand when the user
+    // opens that repo's tab, then cached reactively.
+    async loadOwedFull(repo) {
+      if (!repo || this.owedFull[repo] || this.owedLoading[repo]) return;
+      const block = this.data.per_repo && this.data.per_repo[repo] && this.data.per_repo[repo].owed_list;
+      const file = block && block.owed_file;
+      if (!file) return; // already inline (small repo) or no reference
+      this.owedLoading = Object.assign({}, this.owedLoading, { [repo]: true });
+      try {
+        const r = await fetch(file, { cache: 'no-store' });
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        const full = await r.json();
+        this.owedFull = Object.assign({}, this.owedFull, {
+          [repo]: {
+            issues: full.issues || [],
+            prs: full.prs || [],
+            issues_total: full.issues_total,
+            prs_total: full.prs_total,
+            awaiting_issues: full.awaiting_issues,
+            awaiting_prs: full.awaiting_prs,
+            backlog_issues: full.backlog_issues,
+            backlog_prs: full.backlog_prs,
+            awaiting_label: full.awaiting_label,
+            capped_issues: false,
+            capped_prs: false,
+          }
+        });
+        this.resetPages();
+      } catch (e) {
+        this.toast('err', 'Failed to load full backlog for ' + repo + ': ' + e.message);
+      } finally {
+        const l = Object.assign({}, this.owedLoading); delete l[repo]; this.owedLoading = l;
+      }
     },
 
     resolveRepoName(name) {
@@ -702,6 +750,7 @@ function dashboard() {
       if (this.quickFilters.communityOnly && row.is_community === false) return false;
       if (this.quickFilters.needsReply7d && this.daysAwaiting(row) < 7) return false;
       if (this.quickFilters.actionableOnly && row.triaged !== true) return false;
+      if (this.quickFilters.awaitingOnly && row.awaiting !== true) return false;
       return true;
     },
 
@@ -723,6 +772,7 @@ function dashboard() {
     },
 
     repoOwedList(repo) {
+      if (repo && this.owedFull[repo]) return this.owedFull[repo];
       const block = repo && this.data.per_repo && this.data.per_repo[repo];
       return (block && block.owed_list) || { issues: [], prs: [], issues_total: null, prs_total: null, capped_issues: false, capped_prs: false };
     },
@@ -930,6 +980,10 @@ function dashboard() {
     },
 
     owedIssueTotal(counts, owed) {
+      // "Awaiting our reply" = items we owe a response, NOT the full open
+      // backlog. When a full-backlog list is loaded, prefer its explicit
+      // awaiting_issues count; never inflate to the listed backlog length.
+      if (owed && owed.awaiting_issues !== undefined && owed.awaiting_issues !== null) return Number(owed.awaiting_issues) || 0;
       const listed = (owed && owed.issues && owed.issues.length) || 0;
       const raw = (owed && owed.issues_total !== undefined && owed.issues_total !== null) ? owed.issues_total : (counts && counts.awaiting_reply_issues);
       if (raw === null || raw === undefined) return listed ? listed : null;
@@ -937,6 +991,7 @@ function dashboard() {
     },
 
     owedPrTotal(counts, owed) {
+      if (owed && owed.awaiting_prs !== undefined && owed.awaiting_prs !== null) return Number(owed.awaiting_prs) || 0;
       const listed = (owed && owed.prs && owed.prs.length) || 0;
       const raw = (owed && owed.prs_total !== undefined && owed.prs_total !== null) ? owed.prs_total : (counts && counts.awaiting_reply_prs);
       if (raw === null || raw === undefined) return listed ? listed : null;
