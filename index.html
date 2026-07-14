@@ -127,7 +127,8 @@
               <a :href="iss.url" target="_blank" class="block mt-0.5 text-sm font-semibold text-slate-900 hover:text-blue-600 truncate" x-text="iss.title"></a>
               <div class="mt-1 text-xs text-slate-600" x-text="displayAction(iss).label + ' — ' + displayAction(iss).reason"></div>
             </div>
-            <div class="flex flex-wrap justify-end gap-1.5 shrink-0">
+            <div class="flex flex-wrap justify-end gap-1.5 shrink-0 items-start">
+              <span class="px-2 py-1 rounded text-xs font-bold" :class="actionBadge(iss).cls" x-text="actionBadge(iss).glyph + ' ' + actionBadge(iss).text"></span>
               <a :href="iss.url" target="_blank" class="px-2.5 py-1 text-xs font-semibold rounded bg-amber-600 text-white hover:bg-amber-700" x-text="'Open on GitHub ↗'"></a>
               <button x-show="iss.triaged && hasSuggestedReply(iss)" @click="openReplyModal(iss)" class="px-2.5 py-1 text-xs font-medium bg-blue-600 text-white rounded hover:bg-blue-700">Draft reply</button>
               <button x-show="iss.triaged && canRunAgentReview(iss)" @click="openReviewModal(iss)" class="px-2.5 py-1 text-xs font-medium bg-slate-700 text-white rounded hover:bg-slate-800">Run review skill</button>
@@ -169,6 +170,7 @@
                 <p class="mt-1 text-xs text-slate-500" x-text="displayAction(iss).reason"></p>
                 <p class="mt-2 text-xs text-slate-500"><span class="font-medium" x-text="ownerText(iss).label"></span><span x-text="ownerText(iss).value"></span></p>
                 <div class="mt-3 flex flex-wrap gap-1.5">
+                  <span class="px-2 py-1 rounded text-xs font-bold" :class="actionBadge(iss).cls" x-text="actionBadge(iss).glyph + ' ' + actionBadge(iss).text"></span>
                   <a :href="iss.url" target="_blank" class="px-2.5 py-1 text-xs font-semibold rounded bg-indigo-600 text-white hover:bg-indigo-700" x-text="'Open on GitHub ↗'"></a>
                   <button x-show="iss.triaged && hasSuggestedReply(iss)" @click="openReplyModal(iss)" class="px-2.5 py-1 text-xs font-medium bg-blue-600 text-white rounded hover:bg-blue-700">Draft reply</button>
                   <button x-show="iss.triaged && canRunAgentReview(iss)" @click="openReviewModal(iss)" class="px-2.5 py-1 text-xs font-medium bg-slate-700 text-white rounded hover:bg-slate-800">Run review skill</button>
@@ -305,14 +307,14 @@
                 <span x-text="displayAction(iss).glyph"></span>
                 <div class="min-w-0">
                   <div class="font-medium" x-text="displayAction(iss).label"></div>
-                  <div class="text-xs text-slate-500 truncate" :title="displayAction(iss).reason" x-text="displayAction(iss).reason"></div>
+                  <div class="text-xs text-slate-500" :title="displayAction(iss).reason" x-text="displayAction(iss).reason"></div>
                 </div>
               </div>
               <div class="mt-2 text-sm text-slate-700 flex items-start gap-1.5" x-show="!iss.triaged">
                 <span x-text="displayBaselineAction(iss).glyph"></span>
                 <div class="min-w-0">
                   <div class="font-medium" x-text="displayBaselineAction(iss).label"></div>
-                  <div class="text-xs text-slate-500 truncate" :title="displayBaselineAction(iss).reason" x-text="displayBaselineAction(iss).reason"></div>
+                  <div class="text-xs text-slate-500" :title="displayBaselineAction(iss).reason" x-text="displayBaselineAction(iss).reason"></div>
                 </div>
               </div>
               <div class="mt-1 text-xs text-slate-500" x-show="iss.triaged">
@@ -343,7 +345,10 @@
                 </template>
               </div>
             </div>
-            <div class="flex flex-col gap-1.5 shrink-0">
+            <div class="flex flex-col gap-1.5 shrink-0 w-36 items-stretch">
+              <div class="px-2 py-1 rounded text-xs font-bold text-center leading-tight" :class="actionBadge(iss).cls">
+                <span x-text="actionBadge(iss).glyph"></span> <span x-text="actionBadge(iss).text"></span>
+              </div>
               <a :href="iss.url" target="_blank"
                 class="px-2.5 py-1 text-xs font-semibold rounded text-center"
                 :class="iss.triaged ? (iss.kind === 'pr' ? 'bg-purple-600 text-white hover:bg-purple-700' : 'bg-blue-600 text-white hover:bg-blue-700') : 'border border-slate-300 text-slate-600 hover:bg-slate-50'"
@@ -1268,6 +1273,44 @@ function dashboard() {
         label,
         reason: String(iss.baseline_reason || '').trim() || 'We owe a response on this item.',
       };
+    },
+
+    // A short, unmistakable action verb + colour for the right-hand pill, so the
+    // "what to do" is clear at a glance on every row (not just prose on the left).
+    actionBadge(iss) {
+      const raw = String(iss.triaged ? (iss.next_action || iss.baseline_action) : iss.baseline_action || '').toLowerCase();
+      const text = String(iss.baseline_text || '').toLowerCase();
+      const map = {
+        escalate:        { text: 'Escalate now',    cls: 'bg-red-600 text-white' },
+        request_info:    { text: 'Request info',    cls: 'bg-orange-500 text-white' },
+        reassess_stale:  { text: 'Re-verify / close', cls: 'bg-amber-500 text-white' },
+        promote:         { text: 'Promote',         cls: 'bg-emerald-600 text-white' },
+        label_only:      { text: 'Set labels',      cls: 'bg-slate-500 text-white' },
+        review:          { text: 'Review',          cls: 'bg-purple-600 text-white' },
+        needs_review:    { text: 'Review',          cls: 'bg-purple-600 text-white' },
+        assign_reviewer: { text: 'Assign reviewer', cls: 'bg-purple-600 text-white' },
+        assign:          { text: 'Assign owner',    cls: 'bg-purple-600 text-white' },
+        needs_rebase:    { text: 'Ask to rebase',   cls: 'bg-amber-600 text-white' },
+        request_changes: { text: 'Author to fix',   cls: 'bg-amber-600 text-white' },
+        wait_author:     { text: 'Wait — author',   cls: 'bg-slate-400 text-white' },
+        await_author:    { text: 'Wait — author',   cls: 'bg-slate-400 text-white' },
+        await_author_changes: { text: 'Wait — author', cls: 'bg-slate-400 text-white' },
+        ready_to_merge:  { text: 'Ready to merge',  cls: 'bg-emerald-600 text-white' },
+        fix_ci:          { text: 'Fix CI',          cls: 'bg-red-500 text-white' },
+        no_action:       { text: 'No action',       cls: 'bg-slate-300 text-slate-700' },
+      };
+      let badge = map[raw] || { text: 'Reply', cls: 'bg-blue-600 text-white' };
+      // Sharpen the generic 'reply' bucket by what the suggestion actually says.
+      if (raw === 'reply') {
+        if (text.includes('team response')) badge = { text: 'Reply (team owes)', cls: 'bg-blue-600 text-white' };
+        else if (text.includes('feature request') || text.includes('roadmap')) badge = { text: 'Decide', cls: 'bg-indigo-600 text-white' };
+        else if (text.includes('park/decline')) badge = { text: 'Triage → decide', cls: 'bg-indigo-600 text-white' };
+        else if (text.includes('confirm on current build')) badge = { text: 'Confirm & route', cls: 'bg-blue-600 text-white' };
+        else if (text.includes('summarise')) badge = { text: 'Summarise & decide', cls: 'bg-blue-600 text-white' };
+        else badge = { text: 'Reply', cls: 'bg-blue-600 text-white' };
+      }
+      const glyph = iss.triaged ? (this.actionGlyphs[raw] || iss.next_action_glyph || '➡️') : (iss.baseline_glyph || this.actionGlyphs[raw] || '💬');
+      return Object.assign({ glyph }, badge);
     },
 
     actionLabelForItem(iss, action) {
