@@ -1,6 +1,6 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-07-14T15:02:22Z",
+  "generated_at": "2026-07-14T15:13:24Z",
   "awaiting_label": "Needs-Triage",
   "awaiting_issues": 34,
   "awaiting_prs": 24,
@@ -402,8 +402,8 @@
       "awaiting": true,
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
-      "baseline_text": "Request repro, version & logs",
-      "baseline_reason": "Unrouted bug (waited 29d) with no engagement — ask for exact repro steps, app version and logs, then classify + route."
+      "baseline_text": "Request exact repro, version & logs",
+      "baseline_reason": "Bug (waited 29d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 302,
@@ -447,8 +447,8 @@
       "awaiting": true,
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
-      "baseline_text": "Request repro, version & logs",
-      "baseline_reason": "Unrouted bug (waited 28d) with no engagement — ask for exact repro steps, app version and logs, then classify + route."
+      "baseline_text": "Request exact repro, version & logs",
+      "baseline_reason": "Bug (waited 28d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 295,
@@ -490,10 +490,10 @@
       "age_days": 27.0,
       "triaged": true,
       "awaiting": true,
-      "baseline_action": "escalate",
-      "baseline_glyph": "🚨",
-      "baseline_text": "Escalate — crash/reliability",
-      "baseline_reason": "Crash/reliability issue (waited 27d) — get repro+logs if missing, confirm severity, and route to the area owner urgently."
+      "baseline_action": "request_info",
+      "baseline_glyph": "🩺",
+      "baseline_text": "Confirm crash — get repro/logs & route",
+      "baseline_reason": "Crash report (waited 27d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner (no urgent page until confirmed)."
     },
     {
       "number": 325,
@@ -697,10 +697,10 @@
       "age_days": 8.0,
       "triaged": true,
       "awaiting": true,
-      "baseline_action": "escalate",
-      "baseline_glyph": "🚨",
-      "baseline_text": "Escalate — crash/reliability",
-      "baseline_reason": "Crash/reliability issue (waited 8d) — get repro+logs if missing, confirm severity, and route to the area owner urgently."
+      "baseline_action": "request_info",
+      "baseline_glyph": "🩺",
+      "baseline_text": "Confirm crash — get repro/logs & route",
+      "baseline_reason": "Crash report (waited 8d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner (no urgent page until confirmed)."
     },
     {
       "number": 394,
@@ -721,8 +721,8 @@
       "awaiting": true,
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
-      "baseline_text": "Request repro, version & logs",
-      "baseline_reason": "Unrouted bug (waited 6d) with no engagement — ask for exact repro steps, app version and logs, then classify + route."
+      "baseline_text": "Request exact repro, version & logs",
+      "baseline_reason": "Bug (waited 6d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 386,
@@ -743,8 +743,8 @@
       "awaiting": true,
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
-      "baseline_text": "Request repro, version & logs",
-      "baseline_reason": "Unrouted bug (waited 5d) with no engagement — ask for exact repro steps, app version and logs, then classify + route."
+      "baseline_text": "Request exact repro, version & logs",
+      "baseline_reason": "Bug (waited 5d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 256,
