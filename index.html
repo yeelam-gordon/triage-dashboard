@@ -93,7 +93,7 @@
           <div class="font-medium text-sm truncate" x-text="card.short"></div>
           <span class="px-1.5 py-0.5 rounded-full text-[10px] font-semibold whitespace-nowrap" :class="modeBadgeClass(card.situation.mode)" x-text="modeLabelForSituation(card.situation)"></span>
         </div>
-        <p class="mt-2 text-xs text-slate-600 line-clamp-2" x-text="situationHeadline(card.situation, card.counts)"></p>
+        <p class="mt-2 text-xs text-slate-600 line-clamp-2" x-text="situationHeadline(card.situation, card.counts, repoOwedList(card.repo))"></p>
         <div class="mt-2 text-xs text-slate-400" x-text="countTierCompact(card.counts)"></div>
       </button>
     </template>
@@ -643,8 +643,10 @@ function dashboard() {
         return { repo: r.name, short: r.short, situation, signals: situation.signals || {}, counts };
       }).sort((a, b) =>
         this.urgencyRank(a.situation) - this.urgencyRank(b.situation) ||
-        (b.signals.total || 0) - (a.signals.total || 0) ||
         this.frustratedBlockedSignal(b.signals) - this.frustratedBlockedSignal(a.signals) ||
+        (b.signals.hi_score || 0) - (a.signals.hi_score || 0) ||
+        (b.signals.missed_reply || 0) - (a.signals.missed_reply || 0) ||
+        (b.signals.total || 0) - (a.signals.total || 0) ||
         a.repo.localeCompare(b.repo));
     },
 
@@ -692,14 +694,27 @@ function dashboard() {
     },
 
     get filteredIssues() {
-      const f = this.filter.toLowerCase();
+      return this.filteredWorklistItems;
+    },
+
+    get filteredWorklistItems() {
       return this.worklistItems
-        .filter(i => !this.categoryFilter || (i.triaged && i.category === this.categoryFilter) || (!i.triaged && (i.labels || []).includes(this.categoryFilter)))
-        .filter(i => !f || (i.title || '').toLowerCase().includes(f) || ('' + i.number).includes(f) || (i.repo || '').toLowerCase().includes(f))
-        .filter(i => !this.quickFilters.communityOnly || !!i.is_community)
-        .filter(i => !this.quickFilters.needsReply7d || this.daysAwaiting(i) >= 7)
-        .filter(i => !this.quickFilters.actionableOnly || !i.triaged || this.isActionable(i))
+        .filter(i => this.matchesWorklistFilters(i))
         .sort((a, b) => this.comparePriority(a, b));
+    },
+
+    matchesWorklistFilters(row) {
+      const f = this.filter.toLowerCase();
+      if (f && !(String(row.title || '').toLowerCase().includes(f) || String(row.number || '').includes(f) || String(row.repo || '').toLowerCase().includes(f))) return false;
+      if (this.categoryFilter) {
+        const rowCategory = row.category || '';
+        const labels = (row.labels || row.current_labels || row.suggested_labels || []).map(l => String(l || ''));
+        if (rowCategory && rowCategory !== this.categoryFilter && !labels.includes(this.categoryFilter)) return false;
+      }
+      if (this.quickFilters.communityOnly && row.is_community === false) return false;
+      if (this.quickFilters.needsReply7d && this.daysAwaiting(row) < 7) return false;
+      if (this.quickFilters.actionableOnly && row.triaged !== true) return false;
+      return true;
     },
 
     get worklistItems() {
@@ -729,37 +744,14 @@ function dashboard() {
     },
 
     get priorityItems() {
-      return this.filteredIssues;
+      return this.filteredWorklistItems;
     },
 
     get itemGroups() {
-      const owed = this.activeOwedList;
-      const activeRepo = this.resolveRepoName(this.activeRepo);
-      const enrich = (row) => {
-        const repo = row.repo || activeRepo;
-        const base = Object.assign({ repo }, row);
-        if (row.triaged) {
-          const rich = this.richItem(repo, row.number);
-          if (rich) return Object.assign({}, rich, base, { triaged: true });
-        }
-        return base;
-      };
-      const f = this.quickFilters;
-      const applyFilters = (arr) => arr.filter(r => {
-        if (f.communityOnly && !r.is_community) return false;
-        if (f.needsReply7d && !((Number(r.age_days) || 0) >= 7)) return false;
-        if (f.actionableOnly && !r.triaged) return false;
-        return true;
-      });
-      // stable sort pins deep-triaged rows to the top; owed rank order preserved otherwise
-      const pin = (arr) => arr.map((r, i) => [r, i])
-        .sort((a, b) => ((b[0].triaged ? 1 : 0) - (a[0].triaged ? 1 : 0)) || (a[1] - b[1]))
-        .map(x => x[0]);
-      const issues = pin(applyFilters((owed.issues || []).map(enrich)));
-      const prs = pin(applyFilters((owed.prs || []).map(enrich)));
+      const rows = this.filteredWorklistItems;
       return [
-        this.makePagedGroup('Issues', 'issue', issues),
-        this.makePagedGroup('Pull requests', 'pr', prs),
+        this.makePagedGroup('Issues', 'issue', rows.filter(i => i.kind !== 'pr')),
+        this.makePagedGroup('Pull requests', 'pr', rows.filter(i => i.kind === 'pr')),
       ];
     },
 
@@ -769,7 +761,8 @@ function dashboard() {
       const safePage = Math.min(Math.max(1, page), totalPages);
       const owed = this.activeOwedList;
       const capped = kind === 'issue' ? !!owed.capped_issues : !!owed.capped_prs;
-      const total = kind === 'issue' ? (owed.issues_total ?? items.length) : (owed.prs_total ?? items.length);
+      const rawTotal = kind === 'issue' ? owed.issues_total : owed.prs_total;
+      const total = rawTotal === null || rawTotal === undefined ? items.length : Math.max(Number(rawTotal) || 0, items.length);
       return { title, kind, muted: false, items: items.slice((safePage - 1) * this.pageSize, safePage * this.pageSize), total: items.length, owedTotal: total, page: safePage, totalPages, capped };
     },
 
@@ -803,8 +796,8 @@ function dashboard() {
     },
 
     get doTheseFirstItems() {
-      return [...this.filteredIssues]
-        .filter(i => !this.isInformational(i))
+      return [...this.filteredWorklistItems]
+        .filter(i => i.triaged && !this.isInformational(i))
         .sort((a, b) => this.compareCrossKindUrgency(a, b))
         .slice(0, 6);
     },
@@ -814,7 +807,10 @@ function dashboard() {
     },
 
     get spotlightItems() {
-      return [...this.filteredIssues];
+      return [...this.scopedIssues]
+        .map((i, index) => Object.assign({ rank: index, triaged: true }, i))
+        .filter(i => this.matchesWorklistFilters(i))
+        .sort((a, b) => this.comparePriority(a, b));
     },
 
     get spotlightGroups() {
@@ -906,7 +902,10 @@ function dashboard() {
     },
 
     countTierText(counts) {
-      return `Awaiting our reply: ${this.formatCount(counts && counts.awaiting_reply_issues)} issues + ${this.formatCount(counts && counts.awaiting_reply_prs)} PRs — showing top ${this.formatCount(this.totalTriaged(counts))} by importance · ${this.formatCount(this.totalBacklog(counts))} open total`;
+      const owed = this.activeOwedList;
+      const issues = this.owedIssueTotal(counts, owed);
+      const prs = this.owedPrTotal(counts, owed);
+      return `Awaiting our reply: ${this.formatCount(issues)} issues + ${this.formatCount(prs)} PRs — showing top ${this.formatCount(this.totalTriaged(counts))} by importance · ${this.formatCount(this.totalBacklog(counts))} open total`;
     },
 
     countTierCompact(counts) {
@@ -918,17 +917,37 @@ function dashboard() {
       return `${repo && repo.name ? repo.name : 'All repos'}: ${this.countTierText(counts)}. Awaiting means we owe a reply/review; showing is the triaged top slice.`;
     },
 
-    situationHeadline(situation, counts) {
+    situationHeadline(situation, counts, owedOverride) {
       if (situation && situation.mode === 'all_clear') return (situation && situation.headline) || '';
-      return `Awaiting our reply — ${this.formatCount(counts && counts.awaiting_reply_issues)} issues + ${this.formatCount(counts && counts.awaiting_reply_prs)} PRs; top ${this.formatCount(this.totalTriaged(counts))} by importance below.`;
+      const owed = owedOverride || this.activeOwedList;
+      const issues = this.owedIssueTotal(counts, owed);
+      const prs = this.owedPrTotal(counts, owed);
+      const base = (situation && situation.mode === 'spotlight')
+        ? `${this.formatCount(this.totalTriaged(counts))} fully triaged item(s) waiting — review every one.`
+        : ((situation && situation.headline) || 'Awaiting our reply');
+      return `${base} · Awaiting: ${this.formatCount(issues)} issues + ${this.formatCount(prs)} PRs; showing top ${this.formatCount(this.totalTriaged(counts))}.`;
+    },
+
+    owedIssueTotal(counts, owed) {
+      const listed = (owed && owed.issues && owed.issues.length) || 0;
+      const raw = (owed && owed.issues_total !== undefined && owed.issues_total !== null) ? owed.issues_total : (counts && counts.awaiting_reply_issues);
+      if (raw === null || raw === undefined) return listed ? listed : null;
+      return Math.max(Number(raw) || 0, listed);
+    },
+
+    owedPrTotal(counts, owed) {
+      const listed = (owed && owed.prs && owed.prs.length) || 0;
+      const raw = (owed && owed.prs_total !== undefined && owed.prs_total !== null) ? owed.prs_total : (counts && counts.awaiting_reply_prs);
+      if (raw === null || raw === undefined) return listed ? listed : null;
+      return Math.max(Number(raw) || 0, listed);
     },
 
     get worklistHeaderText() {
       const repoName = this.activeRepo ? (this.activeRepo.split('/')[1] || this.activeRepo) : 'All repos';
       const counts = this.activeCounts;
       const owed = this.activeOwedList;
-      const issueTotal = owed.issues_total ?? counts.awaiting_reply_issues;
-      const prTotal = owed.prs_total ?? counts.awaiting_reply_prs;
+      const issueTotal = this.owedIssueTotal(counts, owed);
+      const prTotal = this.owedPrTotal(counts, owed);
       return `${repoName} — ${this.formatCount(issueTotal)} issues + ${this.formatCount(prTotal)} PRs awaiting our reply · ${this.formatCount(this.totalTriaged(counts))} fully triaged · showing all (paginated)`;
     },
 
@@ -1227,11 +1246,11 @@ function dashboard() {
     comparePriority(a, b) {
       const triagedDelta = Number(!!b.triaged) - Number(!!a.triaged);
       if (triagedDelta) return triagedDelta;
-      if (!a.triaged && !b.triaged) return (a.rank || 0) - (b.rank || 0);
       const actionDelta = Number(this.isActionable(b)) - Number(this.isActionable(a));
-      if (this.sortMode === 'age') return (this.daysAwaiting(b) - this.daysAwaiting(a)) || ((b.score || 0) - (a.score || 0)) || actionDelta;
-      if (this.sortMode === 'score') return ((b.score || 0) - (a.score || 0)) || (this.daysAwaiting(b) - this.daysAwaiting(a)) || actionDelta;
-      return ((b.score || 0) - (a.score || 0)) || (this.daysAwaiting(b) - this.daysAwaiting(a)) || actionDelta;
+      if (this.sortMode === 'age') return (this.daysAwaiting(b) - this.daysAwaiting(a)) || ((b.score || 0) - (a.score || 0)) || actionDelta || ((a.rank || 0) - (b.rank || 0));
+      if (this.sortMode === 'score') return ((b.score || 0) - (a.score || 0)) || (this.daysAwaiting(b) - this.daysAwaiting(a)) || actionDelta || ((a.rank || 0) - (b.rank || 0));
+      if (!a.triaged && !b.triaged) return (a.rank || 0) - (b.rank || 0);
+      return ((b.score || 0) - (a.score || 0)) || (this.daysAwaiting(b) - this.daysAwaiting(a)) || actionDelta || ((a.rank || 0) - (b.rank || 0));
     },
 
     compareCrossKindUrgency(a, b) {
