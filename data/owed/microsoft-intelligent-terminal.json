@@ -1,6 +1,6 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-07-14T14:45:24Z",
+  "generated_at": "2026-07-14T15:02:22Z",
   "awaiting_label": "Needs-Triage",
   "awaiting_issues": 34,
   "awaiting_prs": 24,
@@ -50,8 +50,8 @@
       "awaiting": true,
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
-      "baseline_text": "Triage — classify & route",
-      "baseline_reason": "Untriaged (waited 5d) — set type/area labels and route to the owner."
+      "baseline_text": "Triage — classify type & route",
+      "baseline_reason": "Untriaged (waited 5d) — set the type (bug/idea) + area labels first, then route to the owner."
     },
     {
       "number": 333,
@@ -162,8 +162,8 @@
       "awaiting": true,
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
-      "baseline_text": "Triage — classify & route",
-      "baseline_reason": "Untriaged (waited 41d) — set type/area labels and route to the owner."
+      "baseline_text": "Triage — classify type & route",
+      "baseline_reason": "Untriaged (waited 41d) — set the type (bug/idea) + area labels first, then route to the owner."
     },
     {
       "number": 189,
@@ -183,8 +183,8 @@
       "awaiting": true,
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
-      "baseline_text": "Triage — classify & route",
-      "baseline_reason": "Untriaged (waited 34d) — set type/area labels and route to the owner."
+      "baseline_text": "Triage — classify type & route",
+      "baseline_reason": "Untriaged (waited 34d) — set the type (bug/idea) + area labels first, then route to the owner."
     },
     {
       "number": 190,
@@ -204,8 +204,8 @@
       "awaiting": true,
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
-      "baseline_text": "Triage — classify & route",
-      "baseline_reason": "Untriaged (waited 34d) — set type/area labels and route to the owner."
+      "baseline_text": "Triage — classify type & route",
+      "baseline_reason": "Untriaged (waited 34d) — set the type (bug/idea) + area labels first, then route to the owner."
     },
     {
       "number": 193,
@@ -225,8 +225,8 @@
       "awaiting": true,
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
-      "baseline_text": "Triage — classify & route",
-      "baseline_reason": "Untriaged (waited 34d) — set type/area labels and route to the owner."
+      "baseline_text": "Triage — classify type & route",
+      "baseline_reason": "Untriaged (waited 34d) — set the type (bug/idea) + area labels first, then route to the owner."
     },
     {
       "number": 194,
@@ -246,8 +246,8 @@
       "awaiting": true,
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
-      "baseline_text": "Triage — classify & route",
-      "baseline_reason": "Untriaged (waited 34d) — set type/area labels and route to the owner."
+      "baseline_text": "Triage — classify type & route",
+      "baseline_reason": "Untriaged (waited 34d) — set the type (bug/idea) + area labels first, then route to the owner."
     },
     {
       "number": 196,
@@ -267,8 +267,8 @@
       "awaiting": true,
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
-      "baseline_text": "Triage — classify & route",
-      "baseline_reason": "Untriaged (waited 34d) — set type/area labels and route to the owner."
+      "baseline_text": "Triage — classify type & route",
+      "baseline_reason": "Untriaged (waited 34d) — set the type (bug/idea) + area labels first, then route to the owner."
     },
     {
       "number": 203,
@@ -288,8 +288,8 @@
       "awaiting": true,
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
-      "baseline_text": "Triage — classify & route",
-      "baseline_reason": "Untriaged (waited 34d) — set type/area labels and route to the owner."
+      "baseline_text": "Triage — classify type & route",
+      "baseline_reason": "Untriaged (waited 34d) — set the type (bug/idea) + area labels first, then route to the owner."
     },
     {
       "number": 267,
@@ -400,10 +400,10 @@
       "age_days": 29.0,
       "triaged": true,
       "awaiting": true,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 29d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "request_info",
+      "baseline_glyph": "❓",
+      "baseline_text": "Request repro, version & logs",
+      "baseline_reason": "Unrouted bug (waited 29d) with no engagement — ask for exact repro steps, app version and logs, then classify + route."
     },
     {
       "number": 302,
@@ -445,10 +445,10 @@
       "age_days": 28.0,
       "triaged": true,
       "awaiting": true,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 28d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "request_info",
+      "baseline_glyph": "❓",
+      "baseline_text": "Request repro, version & logs",
+      "baseline_reason": "Unrouted bug (waited 28d) with no engagement — ask for exact repro steps, app version and logs, then classify + route."
     },
     {
       "number": 295,
@@ -580,10 +580,10 @@
       "age_days": 22.0,
       "triaged": true,
       "awaiting": true,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 22d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_action": "label_only",
+      "baseline_glyph": "🏷️",
+      "baseline_text": "Triage — classify type & route",
+      "baseline_reason": "Untriaged (waited 22d) — set the type (bug/idea) + area labels first, then route to the owner."
     },
     {
       "number": 346,
@@ -719,10 +719,10 @@
       "age_days": 6.0,
       "triaged": true,
       "awaiting": true,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 6d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "request_info",
+      "baseline_glyph": "❓",
+      "baseline_text": "Request repro, version & logs",
+      "baseline_reason": "Unrouted bug (waited 6d) with no engagement — ask for exact repro steps, app version and logs, then classify + route."
     },
     {
       "number": 386,
@@ -741,10 +741,10 @@
       "age_days": 5.0,
       "triaged": true,
       "awaiting": true,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 5d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "request_info",
+      "baseline_glyph": "❓",
+      "baseline_text": "Request repro, version & logs",
+      "baseline_reason": "Unrouted bug (waited 5d) with no engagement — ask for exact repro steps, app version and logs, then classify + route."
     },
     {
       "number": 256,
@@ -943,10 +943,10 @@
       "is_draft": false,
       "merge_state": "",
       "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 55d) — review it."
+      "baseline_action": "assign_reviewer",
+      "baseline_glyph": "👤",
+      "baseline_text": "Assign a domain reviewer",
+      "baseline_reason": "PR has waited 55 d for us (waited 55d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 17,
@@ -965,10 +965,10 @@
       "is_draft": false,
       "merge_state": "",
       "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 54d) — review it."
+      "baseline_action": "assign_reviewer",
+      "baseline_glyph": "👤",
+      "baseline_text": "Assign a domain reviewer",
+      "baseline_reason": "PR has waited 54 d for us (waited 54d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 38,
@@ -987,10 +987,10 @@
       "is_draft": false,
       "merge_state": "",
       "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 54d) — review it."
+      "baseline_action": "assign_reviewer",
+      "baseline_glyph": "👤",
+      "baseline_text": "Assign a domain reviewer",
+      "baseline_reason": "PR has waited 54 d for us (waited 54d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 154,
@@ -1009,10 +1009,10 @@
       "is_draft": false,
       "merge_state": "",
       "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 43d) — review it."
+      "baseline_action": "assign_reviewer",
+      "baseline_glyph": "👤",
+      "baseline_text": "Assign a domain reviewer",
+      "baseline_reason": "PR has waited 43 d for us (waited 43d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 182,
@@ -1031,10 +1031,10 @@
       "is_draft": false,
       "merge_state": "",
       "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 41d) — review it."
+      "baseline_action": "assign_reviewer",
+      "baseline_glyph": "👤",
+      "baseline_text": "Assign a domain reviewer",
+      "baseline_reason": "PR has waited 41 d for us (waited 41d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 265,
@@ -1053,10 +1053,10 @@
       "is_draft": false,
       "merge_state": "",
       "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 32d) — review it."
+      "baseline_action": "assign_reviewer",
+      "baseline_glyph": "👤",
+      "baseline_text": "Assign a domain reviewer",
+      "baseline_reason": "PR has waited 32 d for us (waited 32d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 278,
@@ -1075,10 +1075,10 @@
       "is_draft": false,
       "merge_state": "",
       "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 30d) — review it."
+      "baseline_action": "assign_reviewer",
+      "baseline_glyph": "👤",
+      "baseline_text": "Assign a domain reviewer",
+      "baseline_reason": "PR has waited 30 d for us (waited 30d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 218,
@@ -1420,7 +1420,7 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-07-14T13:18:35Z",
-      "updated_at": "2026-07-14T14:42:50Z",
+      "updated_at": "2026-07-14T14:59:29Z",
       "age_days": 0.0,
       "triaged": false,
       "awaiting": true,
@@ -1471,10 +1471,10 @@
       "is_draft": false,
       "merge_state": "",
       "review_decision": "APPROVED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 47d) — review it."
+      "baseline_action": "assign_reviewer",
+      "baseline_glyph": "👤",
+      "baseline_text": "Assign a domain reviewer",
+      "baseline_reason": "PR has waited 47 d for us (waited 47d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 150,

@@ -1,6 +1,6 @@
 {
   "repo": "microsoft/win-dev-skills",
-  "generated_at": "2026-07-14T14:45:24Z",
+  "generated_at": "2026-07-14T15:02:22Z",
   "awaiting_label": null,
   "awaiting_issues": 0,
   "awaiting_prs": 8,
@@ -233,10 +233,10 @@
       "age_days": 54.0,
       "triaged": true,
       "awaiting": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 54d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "request_info",
+      "baseline_glyph": "❓",
+      "baseline_text": "Request repro, version & logs",
+      "baseline_reason": "Unrouted bug (waited 54d) with no engagement — ask for exact repro steps, app version and logs, then classify + route."
     },
     {
       "number": 97,
@@ -441,10 +441,10 @@
       "age_days": 1.0,
       "triaged": true,
       "awaiting": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 1d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "request_info",
+      "baseline_glyph": "❓",
+      "baseline_text": "Request repro, version & logs",
+      "baseline_reason": "Unrouted bug (waited 1d) with no engagement — ask for exact repro steps, app version and logs, then classify + route."
     },
     {
       "number": 121,
@@ -503,10 +503,10 @@
       "is_draft": false,
       "merge_state": "",
       "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 53d) — review it."
+      "baseline_action": "assign_reviewer",
+      "baseline_glyph": "👤",
+      "baseline_text": "Assign a domain reviewer",
+      "baseline_reason": "PR has waited 53 d for us (waited 53d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 116,
