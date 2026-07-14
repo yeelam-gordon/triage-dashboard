@@ -281,13 +281,13 @@
                 <span>·</span>
                 <span class="px-1.5 py-0.5 bg-slate-100 rounded" x-show="iss.triaged" x-text="iss.category"></span>
                 <span class="px-1.5 py-0.5 bg-emerald-50 text-emerald-700 rounded" x-show="iss.triaged">fully triaged</span>
-                <span class="px-1.5 py-0.5 bg-slate-100 text-slate-600 rounded" x-show="!iss.triaged">lightweight</span>
+                <span class="px-1.5 py-0.5 bg-slate-100 text-slate-600 rounded" x-show="!iss.triaged">quick-triage</span>
                 <span class="px-1.5 py-0.5 bg-indigo-50 text-indigo-700 rounded" x-show="iss.is_community">community</span>
                 <span class="px-1.5 py-0.5 bg-amber-50 text-amber-700 rounded" x-show="iss.triaged" x-text="'Score ' + (iss.score ?? '—')"></span>
                 <span class="px-1.5 py-0.5 bg-rose-50 text-rose-700 rounded" x-show="iss.triaged" x-text="'Severity ' + (iss.severity || '—')"></span>
                 <span class="px-1.5 py-0.5 bg-slate-100 text-slate-600 rounded" x-show="iss.triaged" x-text="'Sentiment ' + (iss.sentiment || '—')"></span>
-                <span class="px-1.5 py-0.5 bg-slate-100 text-slate-600 rounded" x-show="!iss.triaged && iss.kind === 'issue'" x-text="'👍 ' + (iss.up || 0)"></span>
-                <span class="px-1.5 py-0.5 bg-slate-100 text-slate-600 rounded" x-show="!iss.triaged" x-text="'💬 ' + (iss.comments || 0)"></span>
+                <span class="px-1.5 py-0.5 bg-slate-100 text-slate-600 rounded" x-show="!iss.triaged && iss.kind === 'issue'" x-text="(iss.up || 0) + ' 👍'"></span>
+                <span class="px-1.5 py-0.5 bg-slate-100 text-slate-600 rounded" x-show="!iss.triaged" x-text="(iss.comments || 0) + ' comments'"></span>
                 <span class="px-1.5 py-0.5 bg-orange-50 text-orange-700 rounded" x-show="daysAwaiting(iss) > 0" x-text="'⏳ ' + formatDays(daysAwaiting(iss)) + ' waiting'"></span>
                 <span class="text-amber-600" x-show="iss.days_no_reply >= 7">
                   ⏰ <span x-text="iss.days_no_reply"></span>d no reply
@@ -301,7 +301,13 @@
                   <div class="text-xs text-slate-500 truncate" :title="displayAction(iss).reason" x-text="displayAction(iss).reason"></div>
                 </div>
               </div>
-              <div class="mt-2 text-xs text-slate-500" x-show="!iss.triaged">Top items are deep-triaged each run; this one isn't yet — open on GitHub to act.</div>
+              <div class="mt-2 text-sm text-slate-700 flex items-start gap-1.5" x-show="!iss.triaged">
+                <span x-text="displayBaselineAction(iss).glyph"></span>
+                <div class="min-w-0">
+                  <div class="font-medium" x-text="displayBaselineAction(iss).label"></div>
+                  <div class="text-xs text-slate-500 truncate" :title="displayBaselineAction(iss).reason" x-text="displayBaselineAction(iss).reason"></div>
+                </div>
+              </div>
               <div class="mt-1 text-xs text-slate-500" x-show="iss.triaged">
                 <span class="font-medium text-slate-600" x-text="ownerText(iss).label"></span>
                 <span x-text="ownerText(iss).value"></span>
@@ -333,7 +339,7 @@
             <div class="flex flex-col gap-1.5 shrink-0">
               <a :href="iss.url" target="_blank"
                 class="px-2.5 py-1 text-xs font-semibold rounded text-center"
-                :class="iss.kind === 'pr' ? 'bg-purple-600 text-white hover:bg-purple-700' : 'bg-blue-600 text-white hover:bg-blue-700'"
+                :class="iss.triaged ? (iss.kind === 'pr' ? 'bg-purple-600 text-white hover:bg-purple-700' : 'bg-blue-600 text-white hover:bg-blue-700') : 'border border-slate-300 text-slate-600 hover:bg-slate-50'"
                 x-text="'Open on GitHub ↗'"></a>
               <button x-show="iss.triaged && hasSuggestedReply(iss)" @click="openReplyModal(iss)"
                 class="px-2.5 py-1 text-xs font-medium bg-blue-600 text-white rounded hover:bg-blue-700">
@@ -1197,6 +1203,15 @@ function dashboard() {
         glyph: this.actionGlyphs[raw] || iss.next_action_glyph || '➡️',
         label: this.actionLabelForItem(iss, raw),
         reason: iss.next_action_reason || 'No reason supplied.',
+      };
+    },
+
+    displayBaselineAction(iss) {
+      const label = String(iss.baseline_text || '').trim() || 'Reply — we owe a response';
+      return {
+        glyph: iss.baseline_glyph || this.actionGlyphs[iss.baseline_action] || '💬',
+        label,
+        reason: String(iss.baseline_reason || '').trim() || 'We owe a response on this item.',
       };
     },
 
