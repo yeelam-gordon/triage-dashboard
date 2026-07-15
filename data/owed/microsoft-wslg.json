@@ -1,6 +1,6 @@
 {
   "repo": "microsoft/wslg",
-  "generated_at": "2026-07-14T23:25:13Z",
+  "generated_at": "2026-07-15T00:22:09Z",
   "awaiting_label": null,
   "awaiting_issues": 0,
   "awaiting_prs": 15,
@@ -214,7 +214,7 @@
       "created_at": "2021-06-14T14:44:41Z",
       "updated_at": "2026-02-19T10:53:23Z",
       "age_days": 146.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": false,
       "baseline_action": "promote",
       "baseline_glyph": "⭐",
@@ -235,7 +235,7 @@
       "created_at": "2023-10-27T05:39:51Z",
       "updated_at": "2024-03-05T16:34:14Z",
       "age_days": 862.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": false,
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
@@ -257,7 +257,7 @@
       "created_at": "2021-04-25T10:25:59Z",
       "updated_at": "2024-01-08T11:04:11Z",
       "age_days": 919.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": false,
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
@@ -603,7 +603,7 @@
       "created_at": "2023-03-24T11:17:34Z",
       "updated_at": "2026-03-22T11:43:37Z",
       "age_days": 115.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
@@ -625,7 +625,7 @@
       "created_at": "2023-01-19T08:34:41Z",
       "updated_at": "2026-06-01T03:58:56Z",
       "age_days": 44.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
@@ -688,13 +688,13 @@
       "comments": 1,
       "created_at": "2022-01-11T17:20:32Z",
       "updated_at": "2026-05-08T20:14:53Z",
-      "age_days": 67.0,
+      "age_days": 68.0,
       "triaged": false,
       "awaiting": false,
       "baseline_action": "promote",
       "baseline_glyph": "⭐",
       "baseline_text": "High-demand feature — roadmap decision",
-      "baseline_reason": "Popular feature ask (waited 67d, 17 👍) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+      "baseline_reason": "Popular feature ask (waited 68d, 17 👍) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
     },
     {
       "number": 440,
@@ -925,7 +925,7 @@
       "created_at": "2026-03-03T08:17:24Z",
       "updated_at": "2026-06-29T18:59:16Z",
       "age_days": 16.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
@@ -1010,7 +1010,7 @@
       "created_at": "2023-03-05T20:25:29Z",
       "updated_at": "2026-06-22T04:36:50Z",
       "age_days": 23.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
@@ -1243,7 +1243,7 @@
       "created_at": "2021-07-21T22:00:29Z",
       "updated_at": "2026-06-24T21:50:25Z",
       "age_days": 20.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
@@ -1948,7 +1948,7 @@
       "created_at": "2024-01-21T22:37:55Z",
       "updated_at": "2026-07-14T11:47:12Z",
       "age_days": 1.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
@@ -2674,13 +2674,13 @@
       "comments": 1,
       "created_at": "2024-05-31T04:06:02Z",
       "updated_at": "2026-01-16T20:02:50Z",
-      "age_days": 179.0,
+      "age_days": 180.0,
       "triaged": false,
       "awaiting": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 179d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_reason": "Bug (waited 180d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 1349,
@@ -2780,7 +2780,7 @@
       "created_at": "2026-05-21T11:00:57Z",
       "updated_at": "2026-07-08T14:23:47Z",
       "age_days": 7.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
@@ -3446,13 +3446,13 @@
       "comments": 1,
       "created_at": "2021-08-02T07:17:04Z",
       "updated_at": "2021-08-05T19:37:10Z",
-      "age_days": 1804.0,
+      "age_days": 1805.0,
       "triaged": false,
       "awaiting": false,
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 1804d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_reason": "Old feature ask (waited 1805d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 506,
@@ -3596,13 +3596,13 @@
       "comments": 1,
       "created_at": "2022-11-25T20:10:52Z",
       "updated_at": "2022-11-25T20:14:24Z",
-      "age_days": 1327.0,
+      "age_days": 1328.0,
       "triaged": false,
       "awaiting": false,
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Re-verify on current build / close stale",
-      "baseline_reason": "Very old (waited 1327d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
+      "baseline_reason": "Very old (waited 1328d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
     },
     {
       "number": 844,
@@ -3831,13 +3831,13 @@
       "comments": 1,
       "created_at": "2024-09-20T12:44:08Z",
       "updated_at": "2024-10-01T19:39:15Z",
-      "age_days": 651.0,
+      "age_days": 652.0,
       "triaged": false,
       "awaiting": false,
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 651d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_reason": "Old feature ask (waited 652d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 948,
@@ -3895,13 +3895,13 @@
       "comments": 1,
       "created_at": "2021-10-02T20:46:40Z",
       "updated_at": "2025-05-05T19:54:13Z",
-      "age_days": 435.0,
+      "age_days": 436.0,
       "triaged": false,
       "awaiting": false,
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 435d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_reason": "Old feature ask (waited 436d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 590,
@@ -4084,13 +4084,13 @@
       "comments": 1,
       "created_at": "2023-04-03T19:58:54Z",
       "updated_at": "2026-03-11T19:44:32Z",
-      "age_days": 125.0,
+      "age_days": 126.0,
       "triaged": false,
       "awaiting": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 125d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_reason": "Bug (waited 126d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 684,
@@ -4256,7 +4256,7 @@
       "created_at": "2026-05-13T14:00:10Z",
       "updated_at": "2026-06-10T16:43:36Z",
       "age_days": 35.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
@@ -4663,13 +4663,13 @@
       "comments": 1,
       "created_at": "2022-08-24T15:16:07Z",
       "updated_at": "2023-02-05T19:43:13Z",
-      "age_days": 1255.0,
+      "age_days": 1256.0,
       "triaged": false,
       "awaiting": false,
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Re-verify on current build / close stale",
-      "baseline_reason": "Very old (waited 1255d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
+      "baseline_reason": "Very old (waited 1256d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
     },
     {
       "number": 871,
@@ -4684,13 +4684,13 @@
       "comments": 1,
       "created_at": "2022-10-22T16:30:23Z",
       "updated_at": "2023-02-27T20:04:05Z",
-      "age_days": 1233.0,
+      "age_days": 1234.0,
       "triaged": false,
       "awaiting": false,
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Re-verify on current build / close stale",
-      "baseline_reason": "Very old (waited 1233d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
+      "baseline_reason": "Very old (waited 1234d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
     },
     {
       "number": 1006,
@@ -5109,13 +5109,13 @@
       "comments": 1,
       "created_at": "2021-06-03T01:14:15Z",
       "updated_at": "2024-07-17T19:25:46Z",
-      "age_days": 727.0,
+      "age_days": 728.0,
       "triaged": false,
       "awaiting": false,
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Re-verify on current build / close stale",
-      "baseline_reason": "Very old (waited 727d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
+      "baseline_reason": "Very old (waited 728d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
     },
     {
       "number": 1079,
@@ -5173,13 +5173,13 @@
       "comments": 1,
       "created_at": "2023-06-22T12:09:53Z",
       "updated_at": "2024-10-04T19:55:43Z",
-      "age_days": 648.0,
+      "age_days": 649.0,
       "triaged": false,
       "awaiting": false,
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Re-verify on current build / close stale",
-      "baseline_reason": "Very old (waited 648d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
+      "baseline_reason": "Very old (waited 649d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
     },
     {
       "number": 1045,
@@ -5556,13 +5556,13 @@
       "comments": 1,
       "created_at": "2025-12-01T14:29:43Z",
       "updated_at": "2026-01-20T19:34:50Z",
-      "age_days": 175.0,
+      "age_days": 176.0,
       "triaged": false,
       "awaiting": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 175d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_reason": "Feature/idea (waited 176d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     },
     {
       "number": 890,
@@ -6027,7 +6027,7 @@
       "created_at": "2026-06-03T19:04:41Z",
       "updated_at": "2026-06-16T10:48:17Z",
       "age_days": 29.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
@@ -6676,13 +6676,13 @@
       "comments": 1,
       "created_at": "2021-07-30T08:34:55Z",
       "updated_at": "2021-08-26T19:29:53Z",
-      "age_days": 1783.0,
+      "age_days": 1784.0,
       "triaged": false,
       "awaiting": false,
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Re-verify on current build / close stale",
-      "baseline_reason": "Very old (waited 1783d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
+      "baseline_reason": "Very old (waited 1784d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
     },
     {
       "number": 421,
@@ -6719,13 +6719,13 @@
       "comments": 1,
       "created_at": "2021-08-27T16:19:25Z",
       "updated_at": "2021-09-01T20:09:39Z",
-      "age_days": 1777.0,
+      "age_days": 1778.0,
       "triaged": false,
       "awaiting": false,
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Re-verify on current build / close stale",
-      "baseline_reason": "Very old (waited 1777d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
+      "baseline_reason": "Very old (waited 1778d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
     },
     {
       "number": 314,
@@ -6890,13 +6890,13 @@
       "comments": 1,
       "created_at": "2021-05-24T02:13:46Z",
       "updated_at": "2021-10-14T19:59:18Z",
-      "age_days": 1734.0,
+      "age_days": 1735.0,
       "triaged": false,
       "awaiting": false,
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Re-verify on current build / close stale",
-      "baseline_reason": "Very old (waited 1734d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
+      "baseline_reason": "Very old (waited 1735d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
     },
     {
       "number": 278,
@@ -6984,6 +6984,28 @@
       "baseline_reason": "Very old (waited 1732d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
     },
     {
+      "number": 517,
+      "title": "0x00010407 German (IBM) Keyboard Mapping",
+      "url": "https://github.com/microsoft/wslg/issues/517",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "bug",
+        "keyboard-layout"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2021-10-16T22:00:31Z",
+      "updated_at": "2021-10-27T19:57:13Z",
+      "age_days": 1722.0,
+      "triaged": false,
+      "awaiting": false,
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Re-verify on current build / close stale",
+      "baseline_reason": "Very old (waited 1722d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
+    },
+    {
       "number": 541,
       "title": "OpenTTD loses sound after minimizing, does not come back after restoring",
       "url": "https://github.com/microsoft/wslg/issues/541",
@@ -7003,28 +7025,6 @@
       "baseline_glyph": "🗓️",
       "baseline_text": "Re-verify on current build / close stale",
       "baseline_reason": "Very old (waited 1722d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
-    },
-    {
-      "number": 517,
-      "title": "0x00010407 German (IBM) Keyboard Mapping",
-      "url": "https://github.com/microsoft/wslg/issues/517",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "bug",
-        "keyboard-layout"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2021-10-16T22:00:31Z",
-      "updated_at": "2021-10-27T19:57:13Z",
-      "age_days": 1721.0,
-      "triaged": false,
-      "awaiting": false,
-      "baseline_action": "reassess_stale",
-      "baseline_glyph": "🗓️",
-      "baseline_text": "Re-verify on current build / close stale",
-      "baseline_reason": "Very old (waited 1721d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
     },
     {
       "number": 544,
@@ -7165,13 +7165,13 @@
       "comments": 1,
       "created_at": "2021-06-22T23:38:45Z",
       "updated_at": "2021-11-11T20:05:11Z",
-      "age_days": 1706.0,
+      "age_days": 1707.0,
       "triaged": false,
       "awaiting": false,
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Re-verify on current build / close stale",
-      "baseline_reason": "Very old (waited 1706d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
+      "baseline_reason": "Very old (waited 1707d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
     },
     {
       "number": 568,
@@ -7270,13 +7270,13 @@
       "comments": 1,
       "created_at": "2021-11-01T12:12:09Z",
       "updated_at": "2021-12-04T19:49:27Z",
-      "age_days": 1683.0,
+      "age_days": 1684.0,
       "triaged": false,
       "awaiting": false,
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Re-verify on current build / close stale",
-      "baseline_reason": "Very old (waited 1683d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
+      "baseline_reason": "Very old (waited 1684d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
     },
     {
       "number": 617,
@@ -7779,13 +7779,13 @@
       "comments": 1,
       "created_at": "2021-11-04T06:36:05Z",
       "updated_at": "2022-06-13T19:25:38Z",
-      "age_days": 1492.0,
+      "age_days": 1493.0,
       "triaged": false,
       "awaiting": false,
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 1492d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_reason": "Old feature ask (waited 1493d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 470,
@@ -7909,13 +7909,13 @@
       "comments": 1,
       "created_at": "2022-07-19T17:44:24Z",
       "updated_at": "2022-07-26T19:25:33Z",
-      "age_days": 1449.0,
+      "age_days": 1450.0,
       "triaged": false,
       "awaiting": false,
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Re-verify on current build / close stale",
-      "baseline_reason": "Very old (waited 1449d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
+      "baseline_reason": "Very old (waited 1450d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
     },
     {
       "number": 486,
@@ -8104,13 +8104,13 @@
       "comments": 1,
       "created_at": "2022-09-22T20:07:44Z",
       "updated_at": "2022-10-04T19:54:10Z",
-      "age_days": 1379.0,
+      "age_days": 1380.0,
       "triaged": false,
       "awaiting": false,
       "baseline_action": "request_info",
       "baseline_glyph": "🩺",
       "baseline_text": "Revalidate crash — get fresh repro/logs",
-      "baseline_reason": "Old crash report (waited 1379d) with no priority signal — re-test on a current build and request fresh repro/logs/dumps before escalating."
+      "baseline_reason": "Old crash report (waited 1380d) with no priority signal — re-test on a current build and request fresh repro/logs/dumps before escalating."
     },
     {
       "number": 833,
@@ -8679,13 +8679,13 @@
       "comments": 1,
       "created_at": "2023-01-04T20:05:30Z",
       "updated_at": "2023-01-04T20:05:30Z",
-      "age_days": 1287.0,
+      "age_days": 1288.0,
       "triaged": false,
       "awaiting": false,
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Re-verify on current build / close stale",
-      "baseline_reason": "Very old (waited 1287d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
+      "baseline_reason": "Very old (waited 1288d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
     },
     {
       "number": 952,
@@ -8751,6 +8751,28 @@
       "baseline_reason": "Very old (waited 1271d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
     },
     {
+      "number": 958,
+      "title": "Detached windows cannot be used (e.g. in gimp)",
+      "url": "https://github.com/microsoft/wslg/issues/958",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "bug",
+        "window-management"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2023-01-18T07:33:03Z",
+      "updated_at": "2023-02-07T19:49:13Z",
+      "age_days": 1254.0,
+      "triaged": false,
+      "awaiting": false,
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Re-verify on current build / close stale",
+      "baseline_reason": "Very old (waited 1254d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
+    },
+    {
       "number": 970,
       "title": "Cannot use pt-br abnt layout on wslg",
       "url": "https://github.com/microsoft/wslg/issues/970",
@@ -8771,28 +8793,6 @@
       "baseline_glyph": "🗓️",
       "baseline_text": "Re-verify on current build / close stale",
       "baseline_reason": "Very old (waited 1254d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
-    },
-    {
-      "number": 958,
-      "title": "Detached windows cannot be used (e.g. in gimp)",
-      "url": "https://github.com/microsoft/wslg/issues/958",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "bug",
-        "window-management"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2023-01-18T07:33:03Z",
-      "updated_at": "2023-02-07T19:49:13Z",
-      "age_days": 1253.0,
-      "triaged": false,
-      "awaiting": false,
-      "baseline_action": "reassess_stale",
-      "baseline_glyph": "🗓️",
-      "baseline_text": "Re-verify on current build / close stale",
-      "baseline_reason": "Very old (waited 1253d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
     },
     {
       "number": 647,
@@ -8938,13 +8938,13 @@
       "comments": 1,
       "created_at": "2023-02-15T02:15:49Z",
       "updated_at": "2023-03-09T19:40:48Z",
-      "age_days": 1223.0,
+      "age_days": 1224.0,
       "triaged": false,
       "awaiting": false,
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Re-verify on current build / close stale",
-      "baseline_reason": "Very old (waited 1223d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
+      "baseline_reason": "Very old (waited 1224d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
     },
     {
       "number": 1000,
@@ -8960,13 +8960,13 @@
       "comments": 1,
       "created_at": "2023-03-08T17:14:50Z",
       "updated_at": "2023-03-09T19:38:10Z",
-      "age_days": 1223.0,
+      "age_days": 1224.0,
       "triaged": false,
       "awaiting": false,
       "baseline_action": "request_info",
       "baseline_glyph": "🩺",
       "baseline_text": "Revalidate crash — get fresh repro/logs",
-      "baseline_reason": "Old crash report (waited 1223d) with no priority signal — re-test on a current build and request fresh repro/logs/dumps before escalating."
+      "baseline_reason": "Old crash report (waited 1224d) with no priority signal — re-test on a current build and request fresh repro/logs/dumps before escalating."
     },
     {
       "number": 930,
@@ -9415,27 +9415,6 @@
       "baseline_reason": "Very old (waited 1171d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
     },
     {
-      "number": 1024,
-      "title": "Can the wslg subsystem be made writeable?",
-      "url": "https://github.com/microsoft/wslg/issues/1024",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "enhancement"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2023-03-28T16:06:04Z",
-      "updated_at": "2023-05-08T23:48:20Z",
-      "age_days": 1163.0,
-      "triaged": false,
-      "awaiting": false,
-      "baseline_action": "reassess_stale",
-      "baseline_glyph": "🗓️",
-      "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 1163d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
-    },
-    {
       "number": 1052,
       "title": "Launching gui app from Windows does not work the same way as from a WSL terminal.",
       "url": "https://github.com/microsoft/wslg/issues/1052",
@@ -9448,13 +9427,13 @@
       "comments": 1,
       "created_at": "2023-04-23T01:16:41Z",
       "updated_at": "2023-05-08T20:21:40Z",
-      "age_days": 1163.0,
+      "age_days": 1164.0,
       "triaged": false,
       "awaiting": false,
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Re-verify on current build / close stale",
-      "baseline_reason": "Very old (waited 1163d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
+      "baseline_reason": "Very old (waited 1164d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
     },
     {
       "number": 1053,
@@ -9470,13 +9449,13 @@
       "comments": 1,
       "created_at": "2023-04-28T07:46:15Z",
       "updated_at": "2023-05-08T20:13:20Z",
-      "age_days": 1163.0,
+      "age_days": 1164.0,
       "triaged": false,
       "awaiting": false,
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 1163d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_reason": "Old feature ask (waited 1164d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 1056,
@@ -9492,6 +9471,27 @@
       "comments": 1,
       "created_at": "2023-05-01T10:42:10Z",
       "updated_at": "2023-05-08T20:12:04Z",
+      "age_days": 1164.0,
+      "triaged": false,
+      "awaiting": false,
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Stale idea — decline or close for low demand",
+      "baseline_reason": "Old feature ask (waited 1164d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+    },
+    {
+      "number": 1024,
+      "title": "Can the wslg subsystem be made writeable?",
+      "url": "https://github.com/microsoft/wslg/issues/1024",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "enhancement"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2023-03-28T16:06:04Z",
+      "updated_at": "2023-05-08T23:48:20Z",
       "age_days": 1163.0,
       "triaged": false,
       "awaiting": false,
@@ -9535,13 +9535,13 @@
       "comments": 1,
       "created_at": "2022-02-12T10:10:07Z",
       "updated_at": "2023-05-13T19:35:35Z",
-      "age_days": 1158.0,
+      "age_days": 1159.0,
       "triaged": false,
       "awaiting": false,
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Re-verify on current build / close stale",
-      "baseline_reason": "Very old (waited 1158d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
+      "baseline_reason": "Very old (waited 1159d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
     },
     {
       "number": 1037,
@@ -10701,13 +10701,13 @@
       "comments": 1,
       "created_at": "2023-03-27T11:12:44Z",
       "updated_at": "2024-04-06T20:18:33Z",
-      "age_days": 829.0,
+      "age_days": 830.0,
       "triaged": false,
       "awaiting": false,
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Re-verify on current build / close stale",
-      "baseline_reason": "Very old (waited 829d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
+      "baseline_reason": "Very old (waited 830d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
     },
     {
       "number": 1227,
@@ -11641,13 +11641,13 @@
       "comments": 1,
       "created_at": "2025-04-07T14:18:11Z",
       "updated_at": "2025-04-10T19:39:54Z",
-      "age_days": 460.0,
+      "age_days": 461.0,
       "triaged": false,
       "awaiting": false,
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Re-verify on current build / close stale",
-      "baseline_reason": "Very old (waited 460d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
+      "baseline_reason": "Very old (waited 461d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
     },
     {
       "number": 1324,
@@ -11956,13 +11956,13 @@
       "comments": 1,
       "created_at": "2025-07-18T19:39:29Z",
       "updated_at": "2025-07-18T19:39:29Z",
-      "age_days": 361.0,
+      "age_days": 362.0,
       "triaged": false,
       "awaiting": false,
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 361d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (waited 362d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 1358,
@@ -14009,13 +14009,13 @@
       "comments": 1,
       "created_at": "2026-05-23T20:15:06Z",
       "updated_at": "2026-05-23T20:15:06Z",
-      "age_days": 52.0,
+      "age_days": 53.0,
       "triaged": false,
       "awaiting": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Reply — we owe a response",
-      "baseline_reason": "Awaiting our reply (waited 52d) — post a team response or route it."
+      "baseline_reason": "Awaiting our reply (waited 53d) — post a team response or route it."
     },
     {
       "number": 125,
@@ -14198,13 +14198,13 @@
       "comments": 1,
       "created_at": "2026-06-11T20:15:52Z",
       "updated_at": "2026-06-11T20:15:52Z",
-      "age_days": 33.0,
+      "age_days": 34.0,
       "triaged": false,
       "awaiting": false,
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 33d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (waited 34d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 1470,
@@ -14220,7 +14220,7 @@
       "created_at": "2026-06-13T17:34:08Z",
       "updated_at": "2026-06-20T10:02:55Z",
       "age_days": 25.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": false,
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
@@ -14241,7 +14241,7 @@
       "created_at": "2022-01-18T21:35:19Z",
       "updated_at": "2026-06-24T15:38:20Z",
       "age_days": 21.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": false,
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
@@ -14262,7 +14262,7 @@
       "created_at": "2026-05-20T10:07:36Z",
       "updated_at": "2026-06-24T03:41:11Z",
       "age_days": 21.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": false,
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
@@ -14283,7 +14283,7 @@
       "created_at": "2026-06-24T03:48:20Z",
       "updated_at": "2026-06-24T03:50:08Z",
       "age_days": 21.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
@@ -14304,7 +14304,7 @@
       "created_at": "2026-06-25T22:20:39Z",
       "updated_at": "2026-06-25T22:20:39Z",
       "age_days": 19.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": false,
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
@@ -14325,7 +14325,7 @@
       "created_at": "2026-06-26T07:26:27Z",
       "updated_at": "2026-06-26T07:28:56Z",
       "age_days": 19.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": false,
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
@@ -14346,7 +14346,7 @@
       "created_at": "2026-06-10T22:51:43Z",
       "updated_at": "2026-06-26T23:11:05Z",
       "age_days": 18.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": false,
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
@@ -14367,7 +14367,7 @@
       "created_at": "2026-06-30T02:39:35Z",
       "updated_at": "2026-06-30T02:39:35Z",
       "age_days": 15.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": false,
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
@@ -14388,7 +14388,7 @@
       "created_at": "2026-07-01T13:53:12Z",
       "updated_at": "2026-07-01T13:53:12Z",
       "age_days": 14.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": false,
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
@@ -14409,7 +14409,7 @@
       "created_at": "2026-07-04T09:43:46Z",
       "updated_at": "2026-07-04T10:16:28Z",
       "age_days": 11.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
@@ -14430,7 +14430,7 @@
       "created_at": "2026-07-04T00:22:50Z",
       "updated_at": "2026-07-06T20:43:27Z",
       "age_days": 8.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": false,
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
@@ -14451,7 +14451,7 @@
       "created_at": "2025-11-09T04:33:29Z",
       "updated_at": "2026-07-08T12:24:39Z",
       "age_days": 7.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": false,
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
@@ -14473,7 +14473,7 @@
       "created_at": "2025-10-31T11:01:19Z",
       "updated_at": "2026-07-10T11:57:53Z",
       "age_days": 5.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": false,
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
@@ -14517,7 +14517,7 @@
       "created_at": "2023-11-08T18:35:27Z",
       "updated_at": "2026-05-17T14:34:38Z",
       "age_days": 59.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -14541,7 +14541,7 @@
       "created_at": "2025-05-12T15:27:35Z",
       "updated_at": "2026-05-17T14:34:40Z",
       "age_days": 59.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -14625,6 +14625,30 @@
       "baseline_reason": "PR has waited 58 d for us (waited 58d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
+      "number": 1446,
+      "title": "Add Copilot CLI instructions for the repository",
+      "url": "https://github.com/microsoft/wslg/pull/1446",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [
+        "documentation"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-05-15T19:42:56Z",
+      "updated_at": "2026-05-18T20:13:19Z",
+      "age_days": 58.0,
+      "triaged": false,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "assign_reviewer",
+      "baseline_glyph": "🌐",
+      "baseline_text": "Route to docs/localization owner",
+      "baseline_reason": "Docs/localization PR (waited 58d) — route to the docs/localization owner for a domain review, not a generic pass."
+    },
+    {
       "number": 1450,
       "title": "Add community triage infrastructure: CI lint, stale bot, CODEOWNERS, docs",
       "url": "https://github.com/microsoft/wslg/pull/1450",
@@ -14649,30 +14673,6 @@
       "baseline_reason": "Docs/localization PR (waited 58d) — route to the docs/localization owner for a domain review, not a generic pass."
     },
     {
-      "number": 1446,
-      "title": "Add Copilot CLI instructions for the repository",
-      "url": "https://github.com/microsoft/wslg/pull/1446",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [
-        "documentation"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-05-15T19:42:56Z",
-      "updated_at": "2026-05-18T20:13:19Z",
-      "age_days": 57.0,
-      "triaged": true,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "assign_reviewer",
-      "baseline_glyph": "🌐",
-      "baseline_text": "Route to docs/localization owner",
-      "baseline_reason": "Docs/localization PR (waited 57d) — route to the docs/localization owner for a domain review, not a generic pass."
-    },
-    {
       "number": 1451,
       "title": "Drop vestigial -1.0 suffix from vendor/DirectX-Headers-1.0",
       "url": "https://github.com/microsoft/wslg/pull/1451",
@@ -14684,7 +14684,7 @@
       "created_at": "2026-05-18T21:02:01Z",
       "updated_at": "2026-05-18T21:06:00Z",
       "age_days": 57.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
