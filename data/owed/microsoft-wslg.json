@@ -1,6 +1,6 @@
 {
   "repo": "microsoft/wslg",
-  "generated_at": "2026-07-15T15:00:19Z",
+  "generated_at": "2026-07-15T15:14:39Z",
   "awaiting_label": null,
   "awaiting_issues": 0,
   "awaiting_prs": 15,
@@ -27,7 +27,7 @@
       "triaged": true,
       "awaiting": false,
       "fix_ready": false,
-      "build_candidate": true,
+      "build_candidate": false,
       "baseline_action": "promote",
       "baseline_glyph": "⭐",
       "baseline_text": "High-demand feature — roadmap decision",
@@ -190,10 +190,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 411d, 46 👍 high demand) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 411d, 46 👍 high demand) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 158,
@@ -278,15 +278,15 @@
       "comments": 1,
       "created_at": "2021-04-25T10:25:59Z",
       "updated_at": "2024-01-08T11:04:11Z",
-      "age_days": 919.0,
+      "age_days": 920.0,
       "triaged": true,
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 919d, 37 👍 high demand) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 920d, 37 👍 high demand) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 101,
@@ -377,10 +377,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 758d, 28 👍 high demand) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 758d, 28 👍 high demand) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 443,
@@ -732,10 +732,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 380d, 17 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 380d, 17 👍) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 632,
@@ -873,10 +873,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 1435d, 15 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1435d, 15 👍) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 584,
@@ -897,10 +897,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 657d, 15 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 657d, 15 👍) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1244,
@@ -920,10 +920,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 367d, 15 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 367d, 15 👍) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 173,
@@ -1036,10 +1036,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 486d, 13 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 486d, 13 👍) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 992,
@@ -1269,10 +1269,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 927d, 11 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 927d, 11 👍) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 240,
@@ -1292,10 +1292,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 703d, 11 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 703d, 11 👍) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 179,
@@ -1384,10 +1384,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 1358d, 10 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1358d, 10 👍) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 332,
@@ -1641,10 +1641,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 765d, 8 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 765d, 8 👍) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 633,
@@ -1711,10 +1711,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 391d, 8 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 391d, 8 👍) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 455,
@@ -1898,10 +1898,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 1500d, 7 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1500d, 7 👍) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 398,
@@ -1970,10 +1970,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 995d, 7 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 995d, 7 👍) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 405,
@@ -1993,10 +1993,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 615d, 7 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 615d, 7 👍) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1267,
@@ -2039,10 +2039,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 441d, 7 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 441d, 7 👍) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 188,
@@ -2179,10 +2179,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 1292d, 6 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1292d, 6 👍) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 225,
@@ -2226,10 +2226,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 1017d, 6 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1017d, 6 👍) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1207,
@@ -2249,10 +2249,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 865d, 6 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 865d, 6 👍) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1245,
@@ -2272,10 +2272,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 790d, 6 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 790d, 6 👍) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1140,
@@ -2482,10 +2482,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 1126d, 5 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1126d, 5 👍) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 558,
@@ -2506,10 +2506,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 1073d, 5 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1073d, 5 👍) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1110,
@@ -2552,10 +2552,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 867d, 5 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 867d, 5 👍) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 554,
@@ -2576,10 +2576,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 596d, 5 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 596d, 5 👍) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 671,
@@ -2719,10 +2719,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 1572d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1572d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1039,
@@ -2742,10 +2742,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 1164d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1164d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1008,
@@ -2765,10 +2765,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 1052d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1052d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 368,
@@ -2788,10 +2788,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 991d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 991d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1260,
@@ -2811,10 +2811,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 695d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 695d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 974,
@@ -2858,10 +2858,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 471d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 471d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1242,
@@ -2881,10 +2881,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 462d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 462d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 830,
@@ -3137,10 +3137,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 1577d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1577d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 662,
@@ -3183,10 +3183,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 1287d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1287d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1043,
@@ -3206,10 +3206,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 1189d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1189d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 619,
@@ -3230,10 +3230,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 1081d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1081d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 329,
@@ -3325,10 +3325,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 883d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 883d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1226,
@@ -3348,10 +3348,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 833d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 833d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1237,
@@ -3394,10 +3394,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 680d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 680d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 589,
@@ -3441,10 +3441,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 549d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 549d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 45,
@@ -3465,10 +3465,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 478d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 478d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1327,
@@ -3748,10 +3748,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 1861d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1861d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 396,
@@ -3794,10 +3794,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 1735d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1735d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 586,
@@ -3817,10 +3817,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 1644d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1644d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 192,
@@ -3865,10 +3865,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 1511d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1511d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 769,
@@ -3889,10 +3889,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 1490d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1490d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 891,
@@ -3912,10 +3912,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 1335d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1335d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 904,
@@ -3935,10 +3935,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 1328d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1328d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 844,
@@ -3958,10 +3958,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 1325d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1325d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 920,
@@ -3981,10 +3981,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 1293d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1293d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 595,
@@ -4004,10 +4004,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 1208d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1208d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1068,
@@ -4027,10 +4027,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 970d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 970d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 744,
@@ -4076,10 +4076,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 944d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 944d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 577,
@@ -4099,10 +4099,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 920d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 920d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1192,
@@ -4122,10 +4122,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 842d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 842d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1255,
@@ -4145,10 +4145,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 770d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 770d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 690,
@@ -4169,10 +4169,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 669d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 669d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1287,
@@ -4216,10 +4216,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 554d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 554d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1012,
@@ -4239,10 +4239,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 488d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 488d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 481,
@@ -4750,10 +4750,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 1745d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1745d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 459,
@@ -4774,10 +4774,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 1730d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1730d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 272,
@@ -4798,10 +4798,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 1723d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1723d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 327,
@@ -4845,10 +4845,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 1671d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1671d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 579,
@@ -4868,10 +4868,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 1651d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1651d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 550,
@@ -4938,10 +4938,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 1360d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1360d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 732,
@@ -5008,10 +5008,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 1317d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1317d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 519,
@@ -5078,10 +5078,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 1265d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1265d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 819,
@@ -5125,10 +5125,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 1234d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1234d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1006,
@@ -5148,10 +5148,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 1218d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1218d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1018,
@@ -5217,10 +5217,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 1124d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1124d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 401,
@@ -5240,10 +5240,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 1107d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1107d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 296,
@@ -5264,10 +5264,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 1075d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1075d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 710,
@@ -5310,10 +5310,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 966d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 966d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 749,
@@ -5334,10 +5334,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 962d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 962d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1025,
@@ -5381,10 +5381,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 901d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 901d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1161,
@@ -5404,10 +5404,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 873d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 873d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1206,
@@ -5427,10 +5427,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 853d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 853d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1225,
@@ -5473,10 +5473,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 828d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 828d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 887,
@@ -5496,10 +5496,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 770d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 770d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 664,
@@ -5543,10 +5543,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 734d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 734d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1038,
@@ -5566,10 +5566,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 731d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 731d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 259,
@@ -5590,10 +5590,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 728d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 728d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1079,
@@ -5614,10 +5614,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 726d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 726d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 524,
@@ -5637,10 +5637,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 714d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 714d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1076,
@@ -5660,10 +5660,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 649d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 649d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1045,
@@ -5684,10 +5684,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 642d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 642d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1240,
@@ -5802,10 +5802,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 570d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 570d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1295,
@@ -5849,10 +5849,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 472d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 472d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1072,
@@ -5872,10 +5872,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 468d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 468d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1307,
@@ -5918,10 +5918,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 372d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 372d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1309,
@@ -7013,7 +7013,7 @@
       "comments": 1,
       "created_at": "2021-05-24T14:16:47Z",
       "updated_at": "2021-07-05T11:09:14Z",
-      "age_days": 1836.0,
+      "age_days": 1837.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -7021,7 +7021,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🔁",
       "baseline_text": "Verify duplicate & close/link",
-      "baseline_reason": "Marked duplicate (waited 1836d) — confirm the canonical issue, link it, and close this as a duplicate."
+      "baseline_reason": "Marked duplicate (waited 1837d) — confirm the canonical issue, link it, and close this as a duplicate."
     },
     {
       "number": 343,
@@ -8249,7 +8249,7 @@
       "comments": 1,
       "created_at": "2021-08-17T17:50:38Z",
       "updated_at": "2022-02-12T11:10:35Z",
-      "age_days": 1614.0,
+      "age_days": 1615.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -8257,7 +8257,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 1614d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (waited 1615d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 665,
@@ -13603,7 +13603,7 @@
       "comments": 1,
       "created_at": "2026-01-22T10:35:35Z",
       "updated_at": "2026-01-22T11:02:11Z",
-      "age_days": 174.0,
+      "age_days": 175.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -13611,7 +13611,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 174d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (waited 175d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 1416,
@@ -13649,7 +13649,7 @@
       "comments": 1,
       "created_at": "2026-01-29T11:00:31Z",
       "updated_at": "2026-01-29T11:01:35Z",
-      "age_days": 167.0,
+      "age_days": 168.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -13657,7 +13657,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "🩺",
       "baseline_text": "Confirm crash — get repro/logs & route",
-      "baseline_reason": "Crash report (waited 167d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
+      "baseline_reason": "Crash report (waited 168d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
     },
     {
       "number": 1380,

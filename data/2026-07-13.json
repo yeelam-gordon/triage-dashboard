@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T15:00:19Z",
+  "generated_at": "2026-07-15T15:14:39Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -342,10 +342,10 @@
             "awaiting": true,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "label_only",
-            "baseline_glyph": "🏷️",
-            "baseline_text": "Triage — classify type & route",
-            "baseline_reason": "Untriaged (waited 6d) — set the type (bug/idea) + area labels first, then route to the owner."
+            "baseline_action": "reply",
+            "baseline_glyph": "💬",
+            "baseline_text": "Decide on this feature request",
+            "baseline_reason": "Feature/idea (waited 6d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
           },
           {
             "number": 333,
@@ -487,10 +487,10 @@
             "awaiting": true,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "label_only",
-            "baseline_glyph": "🏷️",
-            "baseline_text": "Triage — classify type & route",
-            "baseline_reason": "Untriaged (waited 35d) — set the type (bug/idea) + area labels first, then route to the owner."
+            "baseline_action": "reply",
+            "baseline_glyph": "💬",
+            "baseline_text": "Triage idea — scope then decide",
+            "baseline_reason": "New untriaged idea (waited 35d) — classify it and either ask for scope or make an early accept/park call."
           },
           {
             "number": 190,
@@ -1917,10 +1917,10 @@
             "awaiting": true,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "reply",
-            "baseline_glyph": "📣",
-            "baseline_text": "We owe a team response — confirm & route to the FancyZones owner (FancyZones)",
-            "baseline_reason": "Bug flagged Needs-Team-Response and routed to FancyZones (waited 658d, 19 👍) — confirm it still repros on a current build and post the FancyZones owner's response the reporter is waiting on."
+            "baseline_action": "reassess_stale",
+            "baseline_glyph": "🗓️",
+            "baseline_text": "Old unconfirmed bug — revalidate or close stale (FancyZones)",
+            "baseline_reason": "Old bug (FancyZones) (waited 658d, 19 👍) with little activity — re-test on a current build; route only if it still repros, else close as stale."
           },
           {
             "number": 27776,
@@ -2247,10 +2247,10 @@
             "awaiting": true,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "reply",
-            "baseline_glyph": "📣",
-            "baseline_text": "We owe a team response — confirm & route to the PowerToys Run owner (PowerToys Run)",
-            "baseline_reason": "Bug flagged Needs-Team-Response and routed to PowerToys Run (waited 904d) — confirm it still repros on a current build and post the PowerToys Run owner's response the reporter is waiting on."
+            "baseline_action": "reassess_stale",
+            "baseline_glyph": "🗓️",
+            "baseline_text": "Old unconfirmed bug — revalidate or close stale (PowerToys Run)",
+            "baseline_reason": "Old bug (PowerToys Run) (waited 904d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
           },
           {
             "number": 32342,
@@ -2273,10 +2273,10 @@
             "awaiting": true,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "reply",
-            "baseline_glyph": "📣",
-            "baseline_text": "We owe a team response — confirm & route to the Mouse Without Borders owner (Mouse Without Borders)",
-            "baseline_reason": "Bug flagged Needs-Team-Response and routed to Mouse Without Borders (waited 732d) — confirm it still repros on a current build and post the Mouse Without Borders owner's response the reporter is waiting on."
+            "baseline_action": "reassess_stale",
+            "baseline_glyph": "🗓️",
+            "baseline_text": "Old unconfirmed bug — revalidate or close stale (Mouse Without Borders)",
+            "baseline_reason": "Old bug (Mouse Without Borders) (waited 732d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
           },
           {
             "number": 29027,
@@ -2534,10 +2534,10 @@
             "awaiting": true,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "reply",
-            "baseline_glyph": "📣",
-            "baseline_text": "We owe a team response — confirm & route to the Localization owner (Localization)",
-            "baseline_reason": "Bug flagged Needs-Team-Response and routed to Localization (waited 1126d) — confirm it still repros on a current build and post the Localization owner's response the reporter is waiting on."
+            "baseline_action": "reassess_stale",
+            "baseline_glyph": "🗓️",
+            "baseline_text": "Old unconfirmed bug — revalidate or close stale (Localization)",
+            "baseline_reason": "Old bug (Localization) (waited 1126d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
           },
           {
             "number": 28804,
@@ -2612,10 +2612,10 @@
             "awaiting": true,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "reply",
-            "baseline_glyph": "📣",
-            "baseline_text": "We owe a team response — confirm & route to the Text Extractor owner (Text Extractor)",
-            "baseline_reason": "Bug flagged Needs-Team-Response and routed to Text Extractor (waited 602d) — confirm it still repros on a current build and post the Text Extractor owner's response the reporter is waiting on."
+            "baseline_action": "reassess_stale",
+            "baseline_glyph": "🗓️",
+            "baseline_text": "Old unconfirmed bug — revalidate or close stale (Text Extractor)",
+            "baseline_reason": "Old bug (Text Extractor) (waited 602d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
           },
           {
             "number": 27199,
@@ -2876,10 +2876,10 @@
             "awaiting": true,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "reply",
-            "baseline_glyph": "📣",
-            "baseline_text": "We owe a team response — confirm & route to the Settings owner (Settings)",
-            "baseline_reason": "Bug flagged Needs-Team-Response and routed to Settings (waited 1133d) — confirm it still repros on a current build and post the Settings owner's response the reporter is waiting on."
+            "baseline_action": "reassess_stale",
+            "baseline_glyph": "🗓️",
+            "baseline_text": "Old unconfirmed bug — revalidate or close stale (Settings)",
+            "baseline_reason": "Old bug (Settings) (waited 1133d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
           },
           {
             "number": 29834,
@@ -2901,10 +2901,10 @@
             "awaiting": true,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "reply",
-            "baseline_glyph": "📣",
-            "baseline_text": "We owe a team response — route to the File Explorer owner (File Explorer)",
-            "baseline_reason": "Flagged Needs-Team-Response and routed to File Explorer (waited 911d) — the File Explorer owner owes the reporter a decision/response; set the type label and post it."
+            "baseline_action": "reassess_stale",
+            "baseline_glyph": "🗓️",
+            "baseline_text": "Stale idea — decline or close for low demand (File Explorer)",
+            "baseline_reason": "Old feature ask (File Explorer) (waited 911d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
           },
           {
             "number": 31085,
@@ -2927,10 +2927,10 @@
             "awaiting": true,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "reply",
-            "baseline_glyph": "📣",
-            "baseline_text": "We owe a team response — confirm & route to the PowerToys Run owner (PowerToys Run)",
-            "baseline_reason": "Bug flagged Needs-Team-Response and routed to PowerToys Run (waited 904d) — confirm it still repros on a current build and post the PowerToys Run owner's response the reporter is waiting on."
+            "baseline_action": "reassess_stale",
+            "baseline_glyph": "🗓️",
+            "baseline_text": "Old unconfirmed bug — revalidate or close stale (PowerToys Run)",
+            "baseline_reason": "Old bug (PowerToys Run) (waited 904d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
           }
         ],
         "prs": [
@@ -3102,6 +3102,56 @@
             "baseline_reason": "PR has waited 36 d for us (waited 36d) — assign the area owner as reviewer and get a decision, don't leave it generic."
           },
           {
+            "number": 48352,
+            "title": "Add Runner C++ hotkey conflict unit test seed",
+            "url": "https://github.com/microsoft/PowerToys/pull/48352",
+            "kind": "pr",
+            "is_community": null,
+            "labels": [
+              "Area-Tests",
+              "Needs-Review"
+            ],
+            "up": 0,
+            "comments": 1,
+            "created_at": "2026-06-06T00:57:48Z",
+            "updated_at": "2026-06-23T11:11:55Z",
+            "age_days": 23.0,
+            "triaged": true,
+            "awaiting": true,
+            "is_draft": false,
+            "merge_state": "",
+            "review_decision": "REVIEW_REQUIRED",
+            "baseline_action": "review",
+            "baseline_glyph": "👀",
+            "baseline_text": "Review this PR (Tests)",
+            "baseline_reason": "PR (Tests) (waited 23d) — review it."
+          },
+          {
+            "number": 48363,
+            "title": "Fix runner APPLICATION_HANG_QUIESCE: handle WM_ENDSESSION and skip blocking shutdown cleanup",
+            "url": "https://github.com/microsoft/PowerToys/pull/48363",
+            "kind": "pr",
+            "is_community": null,
+            "labels": [
+              "Needs-Review",
+              "bug"
+            ],
+            "up": 0,
+            "comments": 1,
+            "created_at": "2026-06-07T02:39:42Z",
+            "updated_at": "2026-06-23T11:12:54Z",
+            "age_days": 23.0,
+            "triaged": true,
+            "awaiting": true,
+            "is_draft": false,
+            "merge_state": "",
+            "review_decision": "REVIEW_REQUIRED",
+            "baseline_action": "review",
+            "baseline_glyph": "👀",
+            "baseline_text": "Review this PR",
+            "baseline_reason": "PR (waited 23d) — review it."
+          },
+          {
             "number": 48602,
             "title": "Fix WebView2 launch issues under AppContainer ACLs",
             "url": "https://github.com/microsoft/PowerToys/pull/48602",
@@ -3146,56 +3196,6 @@
             "baseline_glyph": "👀",
             "baseline_text": "Review this PR (Mouse Without Borders)",
             "baseline_reason": "PR (Mouse Without Borders) (waited 23d) — review it."
-          },
-          {
-            "number": 48352,
-            "title": "Add Runner C++ hotkey conflict unit test seed",
-            "url": "https://github.com/microsoft/PowerToys/pull/48352",
-            "kind": "pr",
-            "is_community": null,
-            "labels": [
-              "Area-Tests",
-              "Needs-Review"
-            ],
-            "up": 0,
-            "comments": 1,
-            "created_at": "2026-06-06T00:57:48Z",
-            "updated_at": "2026-06-23T11:11:55Z",
-            "age_days": 22.0,
-            "triaged": true,
-            "awaiting": true,
-            "is_draft": false,
-            "merge_state": "",
-            "review_decision": "REVIEW_REQUIRED",
-            "baseline_action": "review",
-            "baseline_glyph": "👀",
-            "baseline_text": "Review this PR (Tests)",
-            "baseline_reason": "PR (Tests) (waited 22d) — review it."
-          },
-          {
-            "number": 48363,
-            "title": "Fix runner APPLICATION_HANG_QUIESCE: handle WM_ENDSESSION and skip blocking shutdown cleanup",
-            "url": "https://github.com/microsoft/PowerToys/pull/48363",
-            "kind": "pr",
-            "is_community": null,
-            "labels": [
-              "Needs-Review",
-              "bug"
-            ],
-            "up": 0,
-            "comments": 1,
-            "created_at": "2026-06-07T02:39:42Z",
-            "updated_at": "2026-06-23T11:12:54Z",
-            "age_days": 22.0,
-            "triaged": true,
-            "awaiting": true,
-            "is_draft": false,
-            "merge_state": "",
-            "review_decision": "REVIEW_REQUIRED",
-            "baseline_action": "review",
-            "baseline_glyph": "👀",
-            "baseline_text": "Review this PR",
-            "baseline_reason": "PR (waited 22d) — review it."
           },
           {
             "number": 48902,
@@ -5107,7 +5107,7 @@
             "comments": 1,
             "created_at": "2019-06-16T01:35:15Z",
             "updated_at": "2026-06-10T11:09:50Z",
-            "age_days": 35.0,
+            "age_days": 36.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -5115,7 +5115,7 @@
             "baseline_action": "promote",
             "baseline_glyph": "⭐",
             "baseline_text": "High-demand feature — roadmap decision",
-            "baseline_reason": "Popular feature ask (waited 35d, 539 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+            "baseline_reason": "Popular feature ask (waited 36d, 539 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
           },
           {
             "number": 4739,
@@ -5135,7 +5135,7 @@
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
-            "build_candidate": true,
+            "build_candidate": false,
             "baseline_action": "promote",
             "baseline_glyph": "⭐",
             "baseline_text": "High-demand feature — roadmap decision",
@@ -6455,28 +6455,6 @@
             "baseline_reason": "PR (waited 1d) — review it."
           },
           {
-            "number": 41057,
-            "title": "Start the plan9 server on WSL2 even when automount and mountFsTab are…",
-            "url": "https://github.com/microsoft/WSL/pull/41057",
-            "kind": "pr",
-            "is_community": null,
-            "labels": [],
-            "up": 0,
-            "comments": 1,
-            "created_at": "2026-07-11T10:54:54Z",
-            "updated_at": "2026-07-15T03:13:15Z",
-            "age_days": 1.0,
-            "triaged": true,
-            "awaiting": true,
-            "is_draft": false,
-            "merge_state": "",
-            "review_decision": "REVIEW_REQUIRED",
-            "baseline_action": "review",
-            "baseline_glyph": "👀",
-            "baseline_text": "Review this PR",
-            "baseline_reason": "PR (waited 1d) — review it."
-          },
-          {
             "number": 41073,
             "title": "Follow up to the cgroup PR #40519",
             "url": "https://github.com/microsoft/WSL/pull/41073",
@@ -6783,10 +6761,32 @@
             "baseline_glyph": "🚧",
             "baseline_text": "Wait — PR is a draft/WIP",
             "baseline_reason": "Draft/WIP PR (waited 21d) — don't review yet; nudge the author to mark it ready."
+          },
+          {
+            "number": 40937,
+            "title": "Set perf_event_paranoid=1 in WSL init to fix rr debugger on WSL 6.18",
+            "url": "https://github.com/microsoft/WSL/pull/40937",
+            "kind": "pr",
+            "is_community": null,
+            "labels": [],
+            "up": 0,
+            "comments": 1,
+            "created_at": "2026-06-27T18:18:33Z",
+            "updated_at": "2026-06-27T19:09:51Z",
+            "age_days": 18.0,
+            "triaged": false,
+            "awaiting": false,
+            "is_draft": true,
+            "merge_state": "",
+            "review_decision": "REVIEW_REQUIRED",
+            "baseline_action": "wait_author",
+            "baseline_glyph": "🚧",
+            "baseline_text": "Wait — PR is a draft/WIP",
+            "baseline_reason": "Draft/WIP PR (waited 18d) — don't review yet; nudge the author to mark it ready."
           }
         ],
         "awaiting_issues": 4,
-        "awaiting_prs": 27,
+        "awaiting_prs": 26,
         "backlog_issues": 894,
         "backlog_prs": 53,
         "issues_total": 4,
@@ -6909,7 +6909,7 @@
             "triaged": true,
             "awaiting": false,
             "fix_ready": false,
-            "build_candidate": true,
+            "build_candidate": false,
             "baseline_action": "promote",
             "baseline_glyph": "⭐",
             "baseline_text": "High-demand feature — roadmap decision",
@@ -7072,10 +7072,10 @@
             "awaiting": false,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "reply",
-            "baseline_glyph": "💬",
-            "baseline_text": "Confirm on current build & route",
-            "baseline_reason": "Bug (waited 411d, 46 👍 high demand) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+            "baseline_action": "reassess_stale",
+            "baseline_glyph": "🗓️",
+            "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+            "baseline_reason": "Old bug (waited 411d, 46 👍 high demand) with little activity — re-test on a current build; route only if it still repros, else close as stale."
           },
           {
             "number": 158,
@@ -7160,15 +7160,15 @@
             "comments": 1,
             "created_at": "2021-04-25T10:25:59Z",
             "updated_at": "2024-01-08T11:04:11Z",
-            "age_days": 919.0,
+            "age_days": 920.0,
             "triaged": true,
             "awaiting": false,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "reply",
-            "baseline_glyph": "💬",
-            "baseline_text": "Confirm on current build & route",
-            "baseline_reason": "Bug (waited 919d, 37 👍 high demand) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+            "baseline_action": "reassess_stale",
+            "baseline_glyph": "🗓️",
+            "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+            "baseline_reason": "Old bug (waited 920d, 37 👍 high demand) with little activity — re-test on a current build; route only if it still repros, else close as stale."
           },
           {
             "number": 101,
@@ -7259,10 +7259,10 @@
             "awaiting": false,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "reply",
-            "baseline_glyph": "💬",
-            "baseline_text": "Confirm on current build & route",
-            "baseline_reason": "Bug (waited 758d, 28 👍 high demand) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+            "baseline_action": "reassess_stale",
+            "baseline_glyph": "🗓️",
+            "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+            "baseline_reason": "Old bug (waited 758d, 28 👍 high demand) with little activity — re-test on a current build; route only if it still repros, else close as stale."
           },
           {
             "number": 443,
@@ -7614,10 +7614,10 @@
             "awaiting": false,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "reply",
-            "baseline_glyph": "💬",
-            "baseline_text": "Confirm on current build & route",
-            "baseline_reason": "Bug (waited 380d, 17 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+            "baseline_action": "reassess_stale",
+            "baseline_glyph": "🗓️",
+            "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+            "baseline_reason": "Old bug (waited 380d, 17 👍) with little activity — re-test on a current build; route only if it still repros, else close as stale."
           },
           {
             "number": 632,
@@ -7755,10 +7755,10 @@
             "awaiting": false,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "reply",
-            "baseline_glyph": "💬",
-            "baseline_text": "Confirm on current build & route",
-            "baseline_reason": "Bug (waited 1435d, 15 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+            "baseline_action": "reassess_stale",
+            "baseline_glyph": "🗓️",
+            "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+            "baseline_reason": "Old bug (waited 1435d, 15 👍) with little activity — re-test on a current build; route only if it still repros, else close as stale."
           },
           {
             "number": 584,
@@ -7779,10 +7779,10 @@
             "awaiting": false,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "reply",
-            "baseline_glyph": "💬",
-            "baseline_text": "Confirm on current build & route",
-            "baseline_reason": "Bug (waited 657d, 15 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+            "baseline_action": "reassess_stale",
+            "baseline_glyph": "🗓️",
+            "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+            "baseline_reason": "Old bug (waited 657d, 15 👍) with little activity — re-test on a current build; route only if it still repros, else close as stale."
           },
           {
             "number": 1244,
@@ -7802,10 +7802,10 @@
             "awaiting": false,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "reply",
-            "baseline_glyph": "💬",
-            "baseline_text": "Confirm on current build & route",
-            "baseline_reason": "Bug (waited 367d, 15 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+            "baseline_action": "reassess_stale",
+            "baseline_glyph": "🗓️",
+            "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+            "baseline_reason": "Old bug (waited 367d, 15 👍) with little activity — re-test on a current build; route only if it still repros, else close as stale."
           },
           {
             "number": 173,
@@ -11115,7 +11115,7 @@
         "Needs-Review"
       ],
       "updated_at": "2026-06-23T11:11:55Z",
-      "priority_age_days": 22.0,
+      "priority_age_days": 23.0,
       "days_awaiting": 0.0,
       "aging_basis": "PR days_since_update",
       "pr_merge_state": "BLOCKED",
@@ -11152,7 +11152,7 @@
         "bug"
       ],
       "updated_at": "2026-06-23T11:12:54Z",
-      "priority_age_days": 22.0,
+      "priority_age_days": 23.0,
       "days_awaiting": 0.0,
       "aging_basis": "PR days_since_update",
       "pr_merge_state": "BLOCKED",
