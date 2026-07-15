@@ -1,13 +1,13 @@
 {
   "repo": "microsoft/WSL",
-  "generated_at": "2026-07-15T15:14:39Z",
+  "generated_at": "2026-07-15T15:26:57Z",
   "awaiting_label": "needs-attention",
   "awaiting_issues": 4,
   "awaiting_prs": 26,
-  "backlog_issues": 894,
-  "backlog_prs": 53,
+  "backlog_issues": 893,
+  "backlog_prs": 52,
   "issues_total": 4,
-  "prs_total": 46,
+  "prs_total": 45,
   "issues": [
     {
       "number": 12508,
@@ -307,7 +307,7 @@
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
-      "build_candidate": true,
+      "build_candidate": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Answer the question / close as support",
@@ -447,8 +447,8 @@
       "build_candidate": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
-      "baseline_text": "Reply — we owe a response",
-      "baseline_reason": "Awaiting our reply (waited 104d, 192 👍 high demand) — post a team response or route it."
+      "baseline_text": "Confirm on current build & route",
+      "baseline_reason": "Bug (waited 104d, 192 👍 high demand) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 4609,
@@ -746,7 +746,7 @@
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
-      "build_candidate": true,
+      "build_candidate": false,
       "baseline_action": "promote",
       "baseline_glyph": "⭐",
       "baseline_text": "High-demand feature — roadmap decision",
@@ -814,10 +814,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Reply — we owe a response",
-      "baseline_reason": "Awaiting our reply (waited 189d, 54 👍 high demand) — post a team response or route it."
+      "baseline_action": "promote",
+      "baseline_glyph": "⭐",
+      "baseline_text": "High-demand feature — roadmap decision",
+      "baseline_reason": "Popular feature ask (waited 189d, 54 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
     },
     {
       "number": 13724,
@@ -976,8 +976,8 @@
       "build_candidate": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
-      "baseline_text": "Reply — we owe a response",
-      "baseline_reason": "Awaiting our reply (waited 1d, 42 👍 high demand) — post a team response or route it."
+      "baseline_text": "Confirm on current build & route",
+      "baseline_reason": "Bug (waited 1d, 42 👍 high demand) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 6951,
@@ -1300,10 +1300,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Reply — we owe a response",
-      "baseline_reason": "Awaiting our reply (waited 189d, 33 👍 high demand) — post a team response or route it."
+      "baseline_action": "promote",
+      "baseline_glyph": "⭐",
+      "baseline_text": "High-demand feature — roadmap decision",
+      "baseline_reason": "Popular feature ask (waited 189d, 33 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
     },
     {
       "number": 8763,
@@ -1346,8 +1346,8 @@
       "build_candidate": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
-      "baseline_text": "Reply — we owe a response",
-      "baseline_reason": "Awaiting our reply (waited 351d, 32 👍 high demand) — post a team response or route it."
+      "baseline_text": "Confirm on current build & route",
+      "baseline_reason": "Bug (waited 351d, 32 👍 high demand) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 10498,
@@ -1819,7 +1819,7 @@
       "comments": 1,
       "created_at": "2021-10-15T18:26:41Z",
       "updated_at": "2025-10-19T11:20:52Z",
-      "age_days": 269.0,
+      "age_days": 270.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -1827,7 +1827,7 @@
       "baseline_action": "promote",
       "baseline_glyph": "⭐",
       "baseline_text": "High-demand feature — roadmap decision",
-      "baseline_reason": "Popular feature ask (waited 269d, 24 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+      "baseline_reason": "Popular feature ask (waited 270d, 24 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
     },
     {
       "number": 9406,
@@ -1983,8 +1983,8 @@
       "build_candidate": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
-      "baseline_text": "Reply — we owe a response",
-      "baseline_reason": "Awaiting our reply (waited 296d, 22 👍 high demand) — post a team response or route it."
+      "baseline_text": "Confirm on current build & route",
+      "baseline_reason": "Bug (waited 296d, 22 👍 high demand) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 5272,
@@ -2368,8 +2368,8 @@
       "build_candidate": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
-      "baseline_text": "Reply — we owe a response",
-      "baseline_reason": "Awaiting our reply (waited 104d, 18 👍) — post a team response or route it."
+      "baseline_text": "Confirm on current build & route",
+      "baseline_reason": "Bug (waited 104d, 18 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 7790,
@@ -2458,10 +2458,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "promote",
-      "baseline_glyph": "⭐",
-      "baseline_text": "High-demand feature — roadmap decision",
-      "baseline_reason": "Popular feature ask (waited 32d, 18 👍) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+      "baseline_action": "reply",
+      "baseline_glyph": "💬",
+      "baseline_text": "Confirm on current build & route",
+      "baseline_reason": "Bug (waited 32d, 18 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 6881,
@@ -3788,7 +3788,7 @@
       "comments": 1,
       "created_at": "2016-06-23T23:23:58Z",
       "updated_at": "2023-11-06T11:25:17Z",
-      "age_days": 982.0,
+      "age_days": 983.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -3796,7 +3796,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 982d, 8 👍). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_reason": "Feature/idea (waited 983d, 8 👍). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     },
     {
       "number": 11951,
@@ -3979,8 +3979,8 @@
       "build_candidate": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
-      "baseline_text": "Reply — we owe a response",
-      "baseline_reason": "Awaiting our reply (waited 59d, 8 👍) — post a team response or route it."
+      "baseline_text": "Confirm on current build & route",
+      "baseline_reason": "Bug (waited 59d, 8 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 40719,
@@ -4232,8 +4232,8 @@
       "build_candidate": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
-      "baseline_text": "Reply — we owe a response",
-      "baseline_reason": "Awaiting our reply (waited 208d, 7 👍) — post a team response or route it."
+      "baseline_text": "Confirm on current build & route",
+      "baseline_reason": "Bug (waited 208d, 7 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 12567,
@@ -4276,8 +4276,8 @@
       "build_candidate": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
-      "baseline_text": "Reply — we owe a response",
-      "baseline_reason": "Awaiting our reply (waited 164d, 7 👍) — post a team response or route it."
+      "baseline_text": "Decide on this feature request",
+      "baseline_reason": "Feature/idea (waited 164d, 7 👍). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     },
     {
       "number": 12634,
@@ -4739,8 +4739,8 @@
       "build_candidate": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
-      "baseline_text": "Reply — we owe a response",
-      "baseline_reason": "Awaiting our reply (waited 246d, 6 👍) — post a team response or route it."
+      "baseline_text": "Confirm on current build & route",
+      "baseline_reason": "Bug (waited 246d, 6 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 7674,
@@ -4900,8 +4900,8 @@
       "build_candidate": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
-      "baseline_text": "Reply — we owe a response",
-      "baseline_reason": "Awaiting our reply (waited 36d, 6 👍) — post a team response or route it."
+      "baseline_text": "Confirm on current build & route",
+      "baseline_reason": "Bug (waited 36d, 6 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 1989,
@@ -7084,8 +7084,8 @@
       "build_candidate": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
-      "baseline_text": "Reply — we owe a response",
-      "baseline_reason": "Awaiting our reply (waited 59d) — post a team response or route it."
+      "baseline_text": "Confirm on current build & route",
+      "baseline_reason": "Bug (waited 59d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 12824,
@@ -8413,7 +8413,7 @@
       "comments": 1,
       "created_at": "2021-10-24T12:26:55Z",
       "updated_at": "2026-02-01T11:21:35Z",
-      "age_days": 164.0,
+      "age_days": 165.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -8421,7 +8421,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 164d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_reason": "Feature/idea (waited 165d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     },
     {
       "number": 10884,
@@ -8718,8 +8718,8 @@
       "build_candidate": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
-      "baseline_text": "Reply — we owe a response",
-      "baseline_reason": "Awaiting our reply (waited 24d) — post a team response or route it."
+      "baseline_text": "Confirm on current build & route",
+      "baseline_reason": "Bug (waited 24d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 40945,
@@ -15847,6 +15847,29 @@
       "baseline_reason": "Feature/idea (waited 292d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     },
     {
+      "number": 13530,
+      "title": "Suggestion: To use `--name <InstanceName>` as the folder name for new instances",
+      "url": "https://github.com/microsoft/WSL/issues/13530",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "feature"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2025-09-27T11:10:37Z",
+      "updated_at": "2025-09-27T11:20:44Z",
+      "age_days": 292.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "reply",
+      "baseline_glyph": "💬",
+      "baseline_text": "Decide on this feature request",
+      "baseline_reason": "Feature/idea (waited 292d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+    },
+    {
       "number": 13511,
       "title": "WSL kernel does not build with gcc 15",
       "url": "https://github.com/microsoft/WSL/issues/13511",
@@ -15868,29 +15891,6 @@
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
       "baseline_reason": "Bug (waited 291d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
-    },
-    {
-      "number": 13530,
-      "title": "Suggestion: To use `--name <InstanceName>` as the folder name for new instances",
-      "url": "https://github.com/microsoft/WSL/issues/13530",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "feature"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2025-09-27T11:10:37Z",
-      "updated_at": "2025-09-27T11:20:44Z",
-      "age_days": 291.0,
-      "triaged": false,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 291d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     },
     {
       "number": 13059,
@@ -16088,10 +16088,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 261d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_action": "request_info",
+      "baseline_glyph": "❓",
+      "baseline_text": "Request exact repro, version & logs",
+      "baseline_reason": "Bug (waited 261d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 8516,
@@ -16175,15 +16175,15 @@
       "comments": 1,
       "created_at": "2025-10-31T09:46:43Z",
       "updated_at": "2025-10-31T11:19:42Z",
-      "age_days": 257.0,
+      "age_days": 258.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
-      "baseline_text": "Reply — we owe a response",
-      "baseline_reason": "Awaiting our reply (waited 257d) — post a team response or route it."
+      "baseline_text": "Decide on this feature request",
+      "baseline_reason": "Feature/idea (waited 258d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     },
     {
       "number": 11362,
@@ -16770,10 +16770,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 191d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_action": "request_info",
+      "baseline_glyph": "❓",
+      "baseline_text": "Request exact repro, version & logs",
+      "baseline_reason": "Bug (waited 191d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 12577,
@@ -16974,6 +16974,30 @@
       "baseline_reason": "Awaiting our reply (waited 171d) — post a team response or route it."
     },
     {
+      "number": 12469,
+      "title": "autoProxy=true not creating https / no_proxy variables (as reported in #11551 )",
+      "url": "https://github.com/microsoft/WSL/issues/12469",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "network",
+        "emailed-logs"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2025-01-15T15:50:30Z",
+      "updated_at": "2026-01-29T11:17:41Z",
+      "age_days": 168.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "reply",
+      "baseline_glyph": "💬",
+      "baseline_text": "Reply — we owe a response",
+      "baseline_reason": "Awaiting our reply (waited 168d) — post a team response or route it."
+    },
+    {
       "number": 14123,
       "title": "WSL2 – Corruption totale du VHDX suite à un verrou P9NP empêchant le démontage (analyse complète)",
       "url": "https://github.com/microsoft/WSL/issues/14123",
@@ -16995,30 +17019,6 @@
       "baseline_glyph": "🩺",
       "baseline_text": "Confirm crash — get repro/logs & route",
       "baseline_reason": "Crash report (waited 168d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
-    },
-    {
-      "number": 12469,
-      "title": "autoProxy=true not creating https / no_proxy variables (as reported in #11551 )",
-      "url": "https://github.com/microsoft/WSL/issues/12469",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "network",
-        "emailed-logs"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2025-01-15T15:50:30Z",
-      "updated_at": "2026-01-29T11:17:41Z",
-      "age_days": 167.0,
-      "triaged": false,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Reply — we owe a response",
-      "baseline_reason": "Awaiting our reply (waited 167d) — post a team response or route it."
     },
     {
       "number": 12313,
@@ -17835,8 +17835,8 @@
       "build_candidate": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
-      "baseline_text": "Reply — we owe a response",
-      "baseline_reason": "Awaiting our reply (waited 90d) — post a team response or route it."
+      "baseline_text": "Decide on this feature request",
+      "baseline_reason": "Feature/idea (waited 90d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     },
     {
       "number": 13469,
@@ -17971,10 +17971,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Reply — we owe a response",
-      "baseline_reason": "Awaiting our reply (waited 80d) — post a team response or route it."
+      "baseline_action": "request_info",
+      "baseline_glyph": "❓",
+      "baseline_text": "Request exact repro, version & logs",
+      "baseline_reason": "Bug (waited 80d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 14063,
@@ -18455,10 +18455,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Reply — we owe a response",
-      "baseline_reason": "Awaiting our reply (waited 59d) — post a team response or route it."
+      "baseline_action": "request_info",
+      "baseline_glyph": "❓",
+      "baseline_text": "Request exact repro, version & logs",
+      "baseline_reason": "Bug (waited 59d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 12897,
@@ -18938,10 +18938,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 47d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_action": "request_info",
+      "baseline_glyph": "❓",
+      "baseline_text": "Request exact repro, version & logs",
+      "baseline_reason": "Bug (waited 47d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 40649,
@@ -19671,6 +19671,29 @@
       "baseline_reason": "Awaiting our reply (waited 15d) — post a team response or route it."
     },
     {
+      "number": 14489,
+      "title": "WSL2 fails to mount C:\\Program Files\\WSL\\system.vhd with HCS/ERROR_NOT_FOUND when converting distro to version 2",
+      "url": "https://github.com/microsoft/WSL/issues/14489",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "install"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-03-20T13:12:10Z",
+      "updated_at": "2026-07-02T11:17:15Z",
+      "age_days": 14.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "request_info",
+      "baseline_glyph": "❓",
+      "baseline_text": "Request exact repro, version & logs",
+      "baseline_reason": "Bug (waited 14d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+    },
+    {
       "number": 40941,
       "title": "Windows apps writing to `\\\\wsl.localhost` create files owned by root (UID 0) instead of WSL default user",
       "url": "https://github.com/microsoft/WSL/issues/40941",
@@ -19695,29 +19718,6 @@
       "baseline_glyph": "🚧",
       "baseline_text": "In progress — track the fix",
       "baseline_reason": "Already being worked (waited 14d) — a fix/PR is in flight; track it to completion, don't re-triage or close."
-    },
-    {
-      "number": 14489,
-      "title": "WSL2 fails to mount C:\\Program Files\\WSL\\system.vhd with HCS/ERROR_NOT_FOUND when converting distro to version 2",
-      "url": "https://github.com/microsoft/WSL/issues/14489",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "install"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-03-20T13:12:10Z",
-      "updated_at": "2026-07-02T11:17:15Z",
-      "age_days": 13.0,
-      "triaged": false,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "❓",
-      "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 13d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 40336,
@@ -20341,29 +20341,6 @@
       "baseline_glyph": "💬",
       "baseline_text": "Decide on this feature request",
       "baseline_reason": "Feature/idea (waited 3d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
-    },
-    {
-      "number": 41056,
-      "title": "Plan9 file server is never started on WSL2 when both automount.enabled and automount.mountFsTab are false, making \\\\wsl.localhost inaccessible",
-      "url": "https://github.com/microsoft/WSL/issues/41056",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "file system"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-07-11T10:12:29Z",
-      "updated_at": "2026-07-13T02:19:32Z",
-      "age_days": 3.0,
-      "triaged": true,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Reply — we owe a response",
-      "baseline_reason": "Awaiting our reply (waited 3d) — post a team response or route it."
     },
     {
       "number": 41062,
@@ -21731,28 +21708,6 @@
       "baseline_glyph": "🚧",
       "baseline_text": "Wait — PR is a draft/WIP",
       "baseline_reason": "Draft/WIP PR (waited 1d) — don't review yet; nudge the author to mark it ready."
-    },
-    {
-      "number": 41057,
-      "title": "Start the plan9 server on WSL2 even when automount and mountFsTab are…",
-      "url": "https://github.com/microsoft/WSL/pull/41057",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-07-11T10:54:54Z",
-      "updated_at": "2026-07-15T03:13:15Z",
-      "age_days": 1.0,
-      "triaged": true,
-      "awaiting": false,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "APPROVED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 1d) — review it."
     },
     {
       "number": 41070,

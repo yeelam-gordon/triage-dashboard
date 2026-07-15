@@ -1,6 +1,6 @@
 {
   "repo": "microsoft/wslg",
-  "generated_at": "2026-07-15T15:14:39Z",
+  "generated_at": "2026-07-15T15:26:57Z",
   "awaiting_label": null,
   "awaiting_issues": 0,
   "awaiting_prs": 15,
@@ -6572,8 +6572,8 @@
       "build_candidate": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
-      "baseline_text": "Reply — we owe a response",
-      "baseline_reason": "Awaiting our reply (waited 30d) — post a team response or route it."
+      "baseline_text": "Confirm on current build & route",
+      "baseline_reason": "Bug (waited 30d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 697,
@@ -9535,7 +9535,7 @@
       "comments": 1,
       "created_at": "2022-05-05T07:52:00Z",
       "updated_at": "2023-01-17T11:25:55Z",
-      "age_days": 1275.0,
+      "age_days": 1276.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -9543,7 +9543,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 1275d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_reason": "Old feature ask (waited 1276d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 677,
@@ -12544,7 +12544,7 @@
       "comments": 1,
       "created_at": "2022-03-07T14:11:29Z",
       "updated_at": "2025-02-12T11:22:51Z",
-      "age_days": 518.0,
+      "age_days": 519.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -12552,7 +12552,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 518d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (waited 519d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 1067,
@@ -12964,10 +12964,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Reply — we owe a response",
-      "baseline_reason": "Awaiting our reply (waited 400d) — post a team response or route it."
+      "baseline_action": "request_info",
+      "baseline_glyph": "❓",
+      "baseline_text": "Request exact repro, version & logs",
+      "baseline_reason": "Bug (waited 400d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 1347,
@@ -13177,6 +13177,29 @@
       "baseline_reason": "Bug (waited 340d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
+      "number": 1319,
+      "title": "xserver is crashing on AMD APU.",
+      "url": "https://github.com/microsoft/wslg/issues/1319",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "bug"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2025-03-30T03:05:48Z",
+      "updated_at": "2025-08-18T11:25:24Z",
+      "age_days": 332.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "request_info",
+      "baseline_glyph": "🩺",
+      "baseline_text": "Revalidate crash — get fresh repro/logs",
+      "baseline_reason": "Old crash report (waited 332d) with no priority signal — re-test on a current build and request fresh repro/logs/dumps before escalating."
+    },
+    {
       "number": 1362,
       "title": "Microsoft Store ( Try again ) message keeps appearing ...",
       "url": "https://github.com/microsoft/wslg/issues/1362",
@@ -13198,29 +13221,6 @@
       "baseline_glyph": "💬",
       "baseline_text": "Decide on this feature request",
       "baseline_reason": "Feature/idea (waited 332d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
-    },
-    {
-      "number": 1319,
-      "title": "xserver is crashing on AMD APU.",
-      "url": "https://github.com/microsoft/wslg/issues/1319",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "bug"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2025-03-30T03:05:48Z",
-      "updated_at": "2025-08-18T11:25:24Z",
-      "age_days": 331.0,
-      "triaged": false,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "🩺",
-      "baseline_text": "Revalidate crash — get fresh repro/logs",
-      "baseline_reason": "Old crash report (waited 331d) with no priority signal — re-test on a current build and request fresh repro/logs/dumps before escalating."
     },
     {
       "number": 1369,
@@ -14121,8 +14121,8 @@
       "build_candidate": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
-      "baseline_text": "Reply — we owe a response",
-      "baseline_reason": "Awaiting our reply (waited 59d) — post a team response or route it."
+      "baseline_text": "Decide on this feature request",
+      "baseline_reason": "Feature/idea (waited 59d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     },
     {
       "number": 275,
