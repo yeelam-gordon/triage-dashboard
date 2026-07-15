@@ -131,6 +131,7 @@
               <button x-show="messageAction(iss)" @click="openReplyModal(iss)" class="px-2 py-1 rounded text-xs font-bold bg-blue-600 text-white hover:bg-blue-700" x-text="messageAction(iss) ? (messageAction(iss).glyph + ' ' + messageAction(iss).label) : ''"></button>
               <span x-show="!messageAction(iss)" class="px-2 py-1 rounded text-xs font-bold" :class="actionBadge(iss).cls" x-text="actionBadge(iss).glyph + ' ' + actionBadge(iss).text"></span>
               <a :href="iss.url" target="_blank" class="px-2.5 py-1 text-xs font-semibold rounded bg-amber-600 text-white hover:bg-amber-700" x-text="'Open on GitHub ↗'"></a>
+              <button x-show="canDelegateFix(iss)" @click="openFixModal(iss)" class="px-2.5 py-1 text-xs font-semibold bg-emerald-600 text-white rounded hover:bg-emerald-700">🤖 Plan &amp; fix</button>
               <button x-show="iss.triaged && canRunAgentReview(iss)" @click="openReviewModal(iss)" class="px-2.5 py-1 text-xs font-medium bg-slate-700 text-white rounded hover:bg-slate-800">Run review skill</button>
             </div>
           </div>
@@ -166,6 +167,7 @@
                   <button x-show="messageAction(iss)" @click="openReplyModal(iss)" class="px-2 py-1 rounded text-xs font-bold bg-blue-600 text-white hover:bg-blue-700" x-text="messageAction(iss) ? (messageAction(iss).glyph + ' ' + messageAction(iss).label) : ''"></button>
                   <span x-show="!messageAction(iss)" class="px-2 py-1 rounded text-xs font-bold" :class="actionBadge(iss).cls" x-text="actionBadge(iss).glyph + ' ' + actionBadge(iss).text"></span>
                   <a :href="iss.url" target="_blank" class="px-2.5 py-1 text-xs font-semibold rounded bg-indigo-600 text-white hover:bg-indigo-700" x-text="'Open on GitHub ↗'"></a>
+                  <button x-show="canDelegateFix(iss)" @click="openFixModal(iss)" class="px-2.5 py-1 text-xs font-semibold bg-emerald-600 text-white rounded hover:bg-emerald-700">🤖 Plan &amp; fix</button>
                   <button x-show="iss.triaged && canRunAgentReview(iss)" @click="openReviewModal(iss)" class="px-2.5 py-1 text-xs font-medium bg-slate-700 text-white rounded hover:bg-slate-800">Run review skill</button>
                 </div>
               </article>
@@ -353,6 +355,10 @@
                 class="px-2.5 py-1 text-xs font-medium bg-slate-700 text-white rounded hover:bg-slate-800">
                 🛠 Run review skill
               </button>
+              <button x-show="canDelegateFix(iss)" @click="openFixModal(iss)"
+                class="px-2.5 py-1 text-xs font-semibold bg-emerald-600 text-white rounded hover:bg-emerald-700">
+                🤖 Plan &amp; fix
+              </button>
             </div>
           </div>
               </div>
@@ -374,6 +380,38 @@
     <div class="mt-3 flex justify-end gap-2">
       <button @click="replyModal.open = false" class="px-3 py-1.5 text-sm rounded border border-slate-300">Cancel</button>
       <button @click="postReply()" class="px-3 py-1.5 text-sm rounded bg-blue-600 text-white">Post comment</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ Plan & fix (delegate to Copilot) modal ============ -->
+<div x-show="fixModal.open" @keydown.escape.window="fixModal.open = false"
+  class="fixed inset-0 bg-black/40 flex items-center justify-center z-20" style="display:none">
+  <div class="bg-white rounded-lg shadow-xl w-[680px] max-w-full p-5">
+    <h3 class="text-sm font-semibold">🤖 Plan &amp; fix with Copilot · <span x-text="fixModal.issue && (fixModal.issue.repo + '#' + fixModal.issue.number)"></span></h3>
+    <p class="mt-1 text-xs text-slate-500">This bug looks confirmed and categorised — ready to hand to a coding agent. Two ways to start:</p>
+
+    <div class="mt-3">
+      <div class="flex items-center justify-between">
+        <label class="text-xs font-semibold text-slate-700">Option A · Local branch + Copilot CLI</label>
+        <button @click="copyText(fixCommand)" class="text-xs px-2 py-0.5 rounded border border-slate-300 hover:bg-slate-50">Copy commands</button>
+      </div>
+      <pre class="mt-1 w-full border border-slate-300 rounded p-2 text-xs font-mono bg-slate-50 whitespace-pre-wrap" x-text="fixCommand"></pre>
+      <p class="mt-1 text-xs text-slate-500">Branch name is editable below; the prompt tells Copilot to reproduce, plan, implement with tests, and open a PR referencing the issue.</p>
+      <div class="mt-2 grid grid-cols-1 gap-2">
+        <label class="text-xs text-slate-600">Branch<input x-model="fixModal.branch" class="mt-0.5 w-full border border-slate-300 rounded p-1.5 text-xs font-mono" /></label>
+        <label class="text-xs text-slate-600">Prompt<textarea x-model="fixModal.prompt" rows="3" class="mt-0.5 w-full border border-slate-300 rounded p-1.5 text-xs font-mono"></textarea></label>
+      </div>
+    </div>
+
+    <div class="mt-4 border-t border-slate-200 pt-3">
+      <label class="text-xs font-semibold text-slate-700">Option B · Assign the Copilot coding agent on GitHub</label>
+      <p class="mt-1 text-xs text-slate-500">On the issue, assign <span class="font-mono">@copilot</span> (or “Let Copilot work on this”) — it opens a draft PR, plans, and implements automatically. Requires the Copilot coding agent to be enabled for the repo.</p>
+      <a :href="fixModal.issue && fixModal.issue.url" target="_blank" class="inline-block mt-2 px-2.5 py-1 text-xs font-semibold rounded bg-emerald-600 text-white hover:bg-emerald-700">Open issue to assign Copilot ↗</a>
+    </div>
+
+    <div class="mt-4 flex justify-end gap-2">
+      <button @click="fixModal.open = false" class="px-3 py-1.5 text-sm rounded border border-slate-300">Close</button>
     </div>
   </div>
 </div>
@@ -480,6 +518,7 @@ function dashboard() {
     tokenInput: '',
     showTokenModal: false,
     replyModal: { open: false, issue: null, body: '' },
+    fixModal: { open: false, issue: null, branch: '', prompt: '' },
     reviewModal: { open: false, issue: null, skill: '' },
     toasts: [],
     _toastId: 0,
@@ -1595,6 +1634,37 @@ function dashboard() {
     openReplyModal(iss) {
       const body = (iss.suggested_reply && String(iss.suggested_reply).trim()) || this.draftTemplate(iss) || '';
       this.replyModal = { open: true, issue: iss, body };
+    },
+
+    // A fix-ready issue is a confirmed/categorised bug that isn't waiting on the
+    // reporter — the maintainer's real next step is to hand it to a coding agent
+    // to plan & implement, not just reply. Surface a "Plan & fix with Copilot"
+    // action for those (issues only; PRs already get review).
+    canDelegateFix(iss) {
+      return !!(iss && iss.kind !== 'pr' && iss.fix_ready === true);
+    },
+    fixBranchName(iss) {
+      const short = String(iss.repo || '').split('/')[1] || String(iss.repo || '');
+      return `fix/${short.toLowerCase()}-${iss.number}`;
+    },
+    openFixModal(iss) {
+      const branch = this.fixBranchName(iss);
+      const prompt = `Plan and fix ${iss.repo}#${iss.number} — ${String(iss.title || '').replace(/"/g, "'")}.\n`
+        + `Read the issue thread first, reproduce the bug, propose a short plan, then implement the fix with tests and open a PR that references #${iss.number}.`;
+      this.fixModal = { open: true, issue: iss, branch, prompt };
+    },
+    copyText(text) {
+      try {
+        navigator.clipboard.writeText(text);
+        this.toast('ok', 'Copied to clipboard');
+      } catch (e) { this.toast('err', 'Copy failed — select and copy manually'); }
+    },
+    get fixCommand() {
+      const m = this.fixModal;
+      if (!m.issue) return '';
+      return `git fetch origin\n`
+        + `git checkout -b ${m.branch} origin/main\n\n`
+        + `copilot -p "${m.prompt.replace(/\n/g, ' ')}"`;
     },
     async postReply() {
       if (!this.requireToken()) return;
