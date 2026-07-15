@@ -128,9 +128,9 @@
               <div class="mt-1 text-xs text-slate-600" x-text="displayAction(iss).label + ' — ' + displayAction(iss).reason"></div>
             </div>
             <div class="flex flex-wrap justify-end gap-1.5 shrink-0 items-start">
-              <span class="px-2 py-1 rounded text-xs font-bold" :class="actionBadge(iss).cls" x-text="actionBadge(iss).glyph + ' ' + actionBadge(iss).text"></span>
+              <button x-show="messageAction(iss)" @click="openReplyModal(iss)" class="px-2 py-1 rounded text-xs font-bold bg-blue-600 text-white hover:bg-blue-700" x-text="messageAction(iss) ? (messageAction(iss).glyph + ' ' + messageAction(iss).label) : ''"></button>
+              <span x-show="!messageAction(iss)" class="px-2 py-1 rounded text-xs font-bold" :class="actionBadge(iss).cls" x-text="actionBadge(iss).glyph + ' ' + actionBadge(iss).text"></span>
               <a :href="iss.url" target="_blank" class="px-2.5 py-1 text-xs font-semibold rounded bg-amber-600 text-white hover:bg-amber-700" x-text="'Open on GitHub ↗'"></a>
-              <button x-show="iss.triaged && hasSuggestedReply(iss)" @click="openReplyModal(iss)" class="px-2.5 py-1 text-xs font-medium bg-blue-600 text-white rounded hover:bg-blue-700">Draft reply</button>
               <button x-show="iss.triaged && canRunAgentReview(iss)" @click="openReviewModal(iss)" class="px-2.5 py-1 text-xs font-medium bg-slate-700 text-white rounded hover:bg-slate-800">Run review skill</button>
             </div>
           </div>
@@ -170,9 +170,9 @@
                 <p class="mt-1 text-xs text-slate-500" x-text="displayAction(iss).reason"></p>
                 <p class="mt-2 text-xs text-slate-500"><span class="font-medium" x-text="ownerText(iss).label"></span><span x-text="ownerText(iss).value"></span></p>
                 <div class="mt-3 flex flex-wrap gap-1.5">
-                  <span class="px-2 py-1 rounded text-xs font-bold" :class="actionBadge(iss).cls" x-text="actionBadge(iss).glyph + ' ' + actionBadge(iss).text"></span>
+                  <button x-show="messageAction(iss)" @click="openReplyModal(iss)" class="px-2 py-1 rounded text-xs font-bold bg-blue-600 text-white hover:bg-blue-700" x-text="messageAction(iss) ? (messageAction(iss).glyph + ' ' + messageAction(iss).label) : ''"></button>
+                  <span x-show="!messageAction(iss)" class="px-2 py-1 rounded text-xs font-bold" :class="actionBadge(iss).cls" x-text="actionBadge(iss).glyph + ' ' + actionBadge(iss).text"></span>
                   <a :href="iss.url" target="_blank" class="px-2.5 py-1 text-xs font-semibold rounded bg-indigo-600 text-white hover:bg-indigo-700" x-text="'Open on GitHub ↗'"></a>
-                  <button x-show="iss.triaged && hasSuggestedReply(iss)" @click="openReplyModal(iss)" class="px-2.5 py-1 text-xs font-medium bg-blue-600 text-white rounded hover:bg-blue-700">Draft reply</button>
                   <button x-show="iss.triaged && canRunAgentReview(iss)" @click="openReviewModal(iss)" class="px-2.5 py-1 text-xs font-medium bg-slate-700 text-white rounded hover:bg-slate-800">Run review skill</button>
                 </div>
               </article>
@@ -345,18 +345,17 @@
                 </template>
               </div>
             </div>
-            <div class="flex flex-col gap-1.5 shrink-0 w-36 items-stretch">
-              <div class="px-2 py-1 rounded text-xs font-bold text-center leading-tight" :class="actionBadge(iss).cls">
+            <div class="flex flex-col gap-1.5 shrink-0 w-40 items-stretch">
+              <button x-show="messageAction(iss)" @click="openReplyModal(iss)"
+                class="px-2 py-1 rounded text-xs font-bold text-center leading-tight bg-blue-600 text-white hover:bg-blue-700"
+                x-text="messageAction(iss) ? (messageAction(iss).glyph + ' ' + messageAction(iss).label) : ''"></button>
+              <div x-show="!messageAction(iss)" class="px-2 py-1 rounded text-xs font-bold text-center leading-tight" :class="actionBadge(iss).cls">
                 <span x-text="actionBadge(iss).glyph"></span> <span x-text="actionBadge(iss).text"></span>
               </div>
               <a :href="iss.url" target="_blank"
                 class="px-2.5 py-1 text-xs font-semibold rounded text-center"
                 :class="iss.triaged ? (iss.kind === 'pr' ? 'bg-purple-600 text-white hover:bg-purple-700' : 'bg-blue-600 text-white hover:bg-blue-700') : 'border border-slate-300 text-slate-600 hover:bg-slate-50'"
                 x-text="'Open on GitHub ↗'"></a>
-              <button x-show="iss.triaged && hasSuggestedReply(iss)" @click="openReplyModal(iss)"
-                class="px-2.5 py-1 text-xs font-medium bg-blue-600 text-white rounded hover:bg-blue-700">
-                💬 Draft reply
-              </button>
               <button x-show="iss.triaged && canRunAgentReview(iss)" @click="openReviewModal(iss)"
                 class="px-2.5 py-1 text-xs font-medium bg-slate-700 text-white rounded hover:bg-slate-800">
                 🛠 Run review skill
@@ -376,7 +375,8 @@
 <div x-show="replyModal.open" @keydown.escape.window="replyModal.open = false"
   class="fixed inset-0 bg-black/40 flex items-center justify-center z-20" style="display:none">
   <div class="bg-white rounded-lg shadow-xl w-[640px] max-w-full p-5">
-    <h3 class="text-sm font-semibold">Suggested reply · <span x-text="replyModal.issue && (replyModal.issue.repo + '#' + replyModal.issue.number)"></span></h3>
+    <h3 class="text-sm font-semibold">Draft message · <span x-text="replyModal.issue && (replyModal.issue.repo + '#' + replyModal.issue.number)"></span></h3>
+    <p class="mt-1 text-xs text-slate-500">Edit before posting. This drafts the message for the suggested action — review it, then post the comment on GitHub.</p>
     <textarea x-model="replyModal.body" rows="10" class="mt-3 w-full border border-slate-300 rounded p-2 text-sm font-mono"></textarea>
     <div class="mt-3 flex justify-end gap-2">
       <button @click="replyModal.open = false" class="px-3 py-1.5 text-sm rounded border border-slate-300">Cancel</button>
@@ -1313,6 +1313,77 @@ function dashboard() {
       return Object.assign({ glyph }, badge);
     },
 
+    // Which actions are "post a message to the reporter/author" actions — these
+    // get a Draft button (with an action-specific icon) instead of a plain pill,
+    // so there's never a redundant "Reply" pill next to a "Draft reply" button.
+    messageAction(iss) {
+      const raw = String(iss.triaged ? (iss.next_action || iss.baseline_action) : iss.baseline_action || '').toLowerCase();
+      const text = String(iss.baseline_text || '').toLowerCase();
+      const specs = {
+        reply:                { glyph: '💬', label: 'Draft reply' },
+        request_info:         { glyph: '❓', label: 'Draft info request' },
+        reassess_stale:       { glyph: '🗓️', label: 'Draft stale-close note' },
+        promote:              { glyph: '⭐', label: 'Draft decision' },
+        await_author:         { glyph: '⏳', label: 'Draft author nudge' },
+        await_author_changes: { glyph: '⏳', label: 'Draft author nudge' },
+        request_changes:      { glyph: '🛠', label: 'Draft change request' },
+        needs_rebase:         { glyph: '🔄', label: 'Draft rebase request' },
+      };
+      let spec = specs[raw] || null;
+      if (raw === 'reply') {
+        if (text.includes('team response')) spec = { glyph: '📣', label: 'Draft team response' };
+        else if (text.includes('feature request') || text.includes('roadmap') || text.includes('park/decline')) spec = { glyph: '💬', label: 'Draft decision' };
+      }
+      return spec;
+    },
+
+    // A ready-to-edit draft body for backlog rows (deep-triaged rows keep their
+    // own suggested_reply). Tailored to the action so it's a real starting point,
+    // not a blank box.
+    draftTemplate(iss) {
+      const raw = String(iss.triaged ? (iss.next_action || iss.baseline_action) : iss.baseline_action || '').toLowerCase();
+      const text = String(iss.baseline_text || '').toLowerCase();
+      const area = this.rowArea(iss);
+      const areaTeam = area ? `the ${area} team` : 'the area owner';
+      switch (raw) {
+        case 'request_info':
+          if (text.includes('repro') || text.includes('crash')) {
+            return `Thanks for the report! To help us investigate, could you please share:\n\n- Exact steps to reproduce\n- Your PowerToys version (Settings → General) and Windows build\n- A screen recording and/or the logs / crash dump if you have them\n\nOnce we have those we can confirm the repro and route it to ${areaTeam}.`;
+          }
+          return `Thanks for reaching out! Could you share a few more specifics so we can act on this:\n\n- What you expected vs. what happened\n- Your PowerToys version (Settings → General) and Windows build\n- Any relevant screenshots or logs\n\nWith that we can route it to ${areaTeam}.`;
+        case 'reassess_stale':
+          return `Thanks for your patience — this has been open for a while without recent activity. Is this still reproducible on the latest PowerToys build?\n\nIf we don't hear back we'll close it as stale to keep the backlog current, but please reply (or reopen) anytime with fresh details and we'll pick it back up.`;
+        case 'promote':
+          return `Thanks for the suggestion — this is a popular ask. We'll bring it to ${areaTeam} to decide whether it fits the roadmap. Sharing your specific scenarios/use cases here helps us prioritize it.`;
+        case 'await_author':
+        case 'await_author_changes':
+          return `Following up here — we're still waiting on the details requested above. If we don't hear back in the next couple of weeks we may close this to keep things tidy; just reply and we'll continue.`;
+        case 'needs_rebase':
+          return `Thanks for the PR! It now has conflicts / is behind the base branch. Could you rebase / merge in the latest \`main\` and resolve conflicts? Then we'll get it reviewed.`;
+        case 'request_changes':
+          return `Thanks for the PR! A few changes were requested in the review above — could you address them and push an update? Ping us once it's ready for another pass.`;
+        case 'reply':
+          if (text.includes('team response')) {
+            return `Thanks for raising this, and sorry for the wait. Flagging ${areaTeam} for a response — we'll follow up with next steps / a decision here shortly.`;
+          }
+          if (text.includes('feature request') || text.includes('roadmap') || text.includes('park/decline')) {
+            return `Thanks for the idea! We'll take this to ${areaTeam} to decide whether to accept it onto the roadmap, decline with rationale, or scope it further. Any extra detail on your use case helps us weigh it.`;
+          }
+          if (text.includes('confirm on current build')) {
+            return `Thanks for the report! We'll confirm whether this still reproduces on the current build and route it to ${areaTeam}. If you can add your PowerToys version and repro steps, that speeds things up.`;
+          }
+          return `Thanks for reaching out — we owe you a response on this. We're looking into it and will follow up with next steps shortly.`;
+        default:
+          return '';
+      }
+    },
+
+    rowArea(iss) {
+      const lbls = (iss.labels || []).map(l => String(l || ''));
+      const m = lbls.find(l => /^Product-|^Area-/i.test(l));
+      return m ? m.replace(/^Product-|^Area-/i, '').trim() : '';
+    },
+
     actionLabelForItem(iss, action) {
       switch (String(action || '')) {
         case 'label_only': {
@@ -1529,7 +1600,8 @@ function dashboard() {
 
     // ---- Action handlers ----
     openReplyModal(iss) {
-      this.replyModal = { open: true, issue: iss, body: iss.suggested_reply || '' };
+      const body = (iss.suggested_reply && String(iss.suggested_reply).trim()) || this.draftTemplate(iss) || '';
+      this.replyModal = { open: true, issue: iss, body };
     },
     async postReply() {
       if (!this.requireToken()) return;
