@@ -131,7 +131,8 @@
               <button x-show="messageAction(iss)" @click="openReplyModal(iss)" class="px-2 py-1 rounded text-xs font-bold bg-blue-600 text-white hover:bg-blue-700" x-text="messageAction(iss) ? (messageAction(iss).glyph + ' ' + messageAction(iss).label) : ''"></button>
               <span x-show="!messageAction(iss)" class="px-2 py-1 rounded text-xs font-bold" :class="actionBadge(iss).cls" x-text="actionBadge(iss).glyph + ' ' + actionBadge(iss).text"></span>
               <a :href="iss.url" target="_blank" class="px-2.5 py-1 text-xs font-semibold rounded bg-amber-600 text-white hover:bg-amber-700" x-text="'Open on GitHub ↗'"></a>
-              <button x-show="canDelegateFix(iss)" @click="openFixModal(iss)" class="px-2.5 py-1 text-xs font-semibold bg-emerald-600 text-white rounded hover:bg-emerald-700">🤖 Plan &amp; fix</button>
+              <button x-show="canDelegateFix(iss)" @click="openFixModal(iss, 'fix')" class="px-2.5 py-1 text-xs font-semibold bg-emerald-600 text-white rounded hover:bg-emerald-700">🤖 Plan &amp; fix</button>
+              <button x-show="canPrototype(iss)" @click="openFixModal(iss, 'prototype')" class="px-2.5 py-1 text-xs font-semibold bg-indigo-600 text-white rounded hover:bg-indigo-700">💡 Spike / prototype</button>
               <button x-show="iss.triaged && canRunAgentReview(iss)" @click="openReviewModal(iss)" class="px-2.5 py-1 text-xs font-medium bg-slate-700 text-white rounded hover:bg-slate-800">Run review skill</button>
             </div>
           </div>
@@ -167,7 +168,8 @@
                   <button x-show="messageAction(iss)" @click="openReplyModal(iss)" class="px-2 py-1 rounded text-xs font-bold bg-blue-600 text-white hover:bg-blue-700" x-text="messageAction(iss) ? (messageAction(iss).glyph + ' ' + messageAction(iss).label) : ''"></button>
                   <span x-show="!messageAction(iss)" class="px-2 py-1 rounded text-xs font-bold" :class="actionBadge(iss).cls" x-text="actionBadge(iss).glyph + ' ' + actionBadge(iss).text"></span>
                   <a :href="iss.url" target="_blank" class="px-2.5 py-1 text-xs font-semibold rounded bg-indigo-600 text-white hover:bg-indigo-700" x-text="'Open on GitHub ↗'"></a>
-                  <button x-show="canDelegateFix(iss)" @click="openFixModal(iss)" class="px-2.5 py-1 text-xs font-semibold bg-emerald-600 text-white rounded hover:bg-emerald-700">🤖 Plan &amp; fix</button>
+                  <button x-show="canDelegateFix(iss)" @click="openFixModal(iss, 'fix')" class="px-2.5 py-1 text-xs font-semibold bg-emerald-600 text-white rounded hover:bg-emerald-700">🤖 Plan &amp; fix</button>
+                  <button x-show="canPrototype(iss)" @click="openFixModal(iss, 'prototype')" class="px-2.5 py-1 text-xs font-semibold bg-indigo-600 text-white rounded hover:bg-indigo-700">💡 Spike / prototype</button>
                   <button x-show="iss.triaged && canRunAgentReview(iss)" @click="openReviewModal(iss)" class="px-2.5 py-1 text-xs font-medium bg-slate-700 text-white rounded hover:bg-slate-800">Run review skill</button>
                 </div>
               </article>
@@ -355,9 +357,13 @@
                 class="px-2.5 py-1 text-xs font-medium bg-slate-700 text-white rounded hover:bg-slate-800">
                 🛠 Run review skill
               </button>
-              <button x-show="canDelegateFix(iss)" @click="openFixModal(iss)"
+              <button x-show="canDelegateFix(iss)" @click="openFixModal(iss, 'fix')"
                 class="px-2.5 py-1 text-xs font-semibold bg-emerald-600 text-white rounded hover:bg-emerald-700">
                 🤖 Plan &amp; fix
+              </button>
+              <button x-show="canPrototype(iss)" @click="openFixModal(iss, 'prototype')"
+                class="px-2.5 py-1 text-xs font-semibold bg-indigo-600 text-white rounded hover:bg-indigo-700">
+                💡 Spike / prototype
               </button>
             </div>
           </div>
@@ -384,12 +390,18 @@
   </div>
 </div>
 
-<!-- ============ Plan & fix (delegate to Copilot) modal ============ -->
+<!-- ============ Plan & fix / Prototype (delegate to Copilot) modal ============ -->
 <div x-show="fixModal.open" @keydown.escape.window="fixModal.open = false"
   class="fixed inset-0 bg-black/40 flex items-center justify-center z-20" style="display:none">
   <div class="bg-white rounded-lg shadow-xl w-[680px] max-w-full p-5">
-    <h3 class="text-sm font-semibold">🤖 Plan &amp; fix with Copilot · <span x-text="fixModal.issue && (fixModal.issue.repo + '#' + fixModal.issue.number)"></span></h3>
-    <p class="mt-1 text-xs text-slate-500">This bug looks confirmed and categorised — ready to hand to a coding agent. Two ways to start:</p>
+    <h3 class="text-sm font-semibold">
+      <span x-text="fixModal.mode === 'prototype' ? '💡 Spike / prototype with Copilot' : '🤖 Plan &amp; fix with Copilot'"></span>
+      · <span x-text="fixModal.issue && (fixModal.issue.repo + '#' + fixModal.issue.number)"></span>
+    </h3>
+    <p class="mt-1 text-xs text-slate-500" x-show="fixModal.mode !== 'prototype'">This bug is maintainer-vetted (reproducible / ready-to-work) and clearly scoped — a good candidate to hand straight to a coding agent.</p>
+    <div class="mt-1 text-xs rounded bg-amber-50 border border-amber-200 text-amber-800 px-2 py-1.5" x-show="fixModal.mode === 'prototype'">
+      ⚠ High community demand, but this is a <b>feasibility spike</b>, not a committed feature — confirm the roadmap decision before shipping anything.
+    </div>
 
     <div class="mt-3">
       <div class="flex items-center justify-between">
@@ -397,7 +409,6 @@
         <button @click="copyText(fixCommand)" class="text-xs px-2 py-0.5 rounded border border-slate-300 hover:bg-slate-50">Copy commands</button>
       </div>
       <pre class="mt-1 w-full border border-slate-300 rounded p-2 text-xs font-mono bg-slate-50 whitespace-pre-wrap" x-text="fixCommand"></pre>
-      <p class="mt-1 text-xs text-slate-500">Branch name is editable below; the prompt tells Copilot to reproduce, plan, implement with tests, and open a PR referencing the issue.</p>
       <div class="mt-2 grid grid-cols-1 gap-2">
         <label class="text-xs text-slate-600">Branch<input x-model="fixModal.branch" class="mt-0.5 w-full border border-slate-300 rounded p-1.5 text-xs font-mono" /></label>
         <label class="text-xs text-slate-600">Prompt<textarea x-model="fixModal.prompt" rows="3" class="mt-0.5 w-full border border-slate-300 rounded p-1.5 text-xs font-mono"></textarea></label>
@@ -518,7 +529,7 @@ function dashboard() {
     tokenInput: '',
     showTokenModal: false,
     replyModal: { open: false, issue: null, body: '' },
-    fixModal: { open: false, issue: null, branch: '', prompt: '' },
+    fixModal: { open: false, issue: null, mode: 'fix', branch: '', prompt: '' },
     reviewModal: { open: false, issue: null, skill: '' },
     toasts: [],
     _toastId: 0,
@@ -1643,15 +1654,25 @@ function dashboard() {
     canDelegateFix(iss) {
       return !!(iss && iss.kind !== 'pr' && iss.fix_ready === true);
     },
-    fixBranchName(iss) {
-      const short = String(iss.repo || '').split('/')[1] || String(iss.repo || '');
-      return `fix/${short.toLowerCase()}-${iss.number}`;
+    canPrototype(iss) {
+      return !!(iss && iss.kind !== 'pr' && iss.build_candidate === true);
     },
-    openFixModal(iss) {
-      const branch = this.fixBranchName(iss);
-      const prompt = `Plan and fix ${iss.repo}#${iss.number} — ${String(iss.title || '').replace(/"/g, "'")}.\n`
-        + `Read the issue thread first, reproduce the bug, propose a short plan, then implement the fix with tests and open a PR that references #${iss.number}.`;
-      this.fixModal = { open: true, issue: iss, branch, prompt };
+    fixBranchName(iss, mode) {
+      const short = String(iss.repo || '').split('/')[1] || String(iss.repo || '');
+      const prefix = mode === 'prototype' ? 'spike' : 'fix';
+      return `${prefix}/${short.toLowerCase()}-${iss.number}`;
+    },
+    openFixModal(iss, mode) {
+      mode = mode === 'prototype' ? 'prototype' : 'fix';
+      const branch = this.fixBranchName(iss, mode);
+      const title = String(iss.title || '').replace(/"/g, "'");
+      const prompt = mode === 'prototype'
+        ? `Spike/prototype the feature request ${iss.repo}#${iss.number} — ${title}. `
+          + `Assess feasibility, propose a design approach and rough implementation plan, and build a minimal proof-of-concept behind a flag. `
+          + `List open questions and risks for a roadmap decision — do not ship it as final.`
+        : `Plan and fix ${iss.repo}#${iss.number} — ${title}. `
+          + `Read the issue thread first, reproduce the bug, propose a short plan, then implement the fix with tests and open a PR that references #${iss.number}.`;
+      this.fixModal = { open: true, issue: iss, mode, branch, prompt };
     },
     copyText(text) {
       try {
