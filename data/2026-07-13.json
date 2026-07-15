@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T15:38:11Z",
+  "generated_at": "2026-07-15T15:53:47Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -466,8 +466,8 @@
             "build_candidate": false,
             "baseline_action": "reply",
             "baseline_glyph": "💬",
-            "baseline_text": "Triage idea — scope then decide",
-            "baseline_reason": "New untriaged idea (waited 42d) — classify it and either ask for scope or make an early accept/park call."
+            "baseline_text": "Confirm type (bug/feature) & route",
+            "baseline_reason": "Untyped report (waited 42d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
           },
           {
             "number": 189,
@@ -512,8 +512,8 @@
             "build_candidate": false,
             "baseline_action": "reply",
             "baseline_glyph": "💬",
-            "baseline_text": "Triage idea — scope then decide",
-            "baseline_reason": "New untriaged idea (waited 35d) — classify it and either ask for scope or make an early accept/park call."
+            "baseline_text": "Confirm type (bug/feature) & route",
+            "baseline_reason": "Untyped report (waited 35d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
           },
           {
             "number": 193,
@@ -604,8 +604,8 @@
             "build_candidate": false,
             "baseline_action": "reply",
             "baseline_glyph": "💬",
-            "baseline_text": "Triage idea — scope then decide",
-            "baseline_reason": "New untriaged idea (waited 35d) — classify it and either ask for scope or make an early accept/park call."
+            "baseline_text": "Confirm type (bug/feature) & route",
+            "baseline_reason": "Untyped report (waited 35d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
           },
           {
             "number": 267,
@@ -2043,10 +2043,10 @@
             "awaiting": true,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "promote",
-            "baseline_glyph": "⭐",
-            "baseline_text": "High-demand feature — roadmap decision (Keyboard Shortcut Manager)",
-            "baseline_reason": "Popular feature ask (Keyboard Shortcut Manager) (waited 88d, 11 👍) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+            "baseline_action": "reply",
+            "baseline_glyph": "📣",
+            "baseline_text": "We owe a team response — confirm type & route to the Keyboard Shortcut Manager owner (Keyboard Shortcut Manager)",
+            "baseline_reason": "Untyped report flagged Needs-Team-Response and routed to Keyboard Shortcut Manager (waited 88d, 11 👍) — confirm whether it's a bug or a feature, then post the Keyboard Shortcut Manager owner's response."
           },
           {
             "number": 24734,
@@ -2147,9 +2147,9 @@
             "fix_ready": false,
             "build_candidate": false,
             "baseline_action": "reply",
-            "baseline_glyph": "💬",
-            "baseline_text": "Decide on this feature request (PowerToys Run)",
-            "baseline_reason": "Feature/idea (PowerToys Run) (waited 90d, 6 👍). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+            "baseline_glyph": "📣",
+            "baseline_text": "We owe a team response — confirm type & route to the PowerToys Run owner (PowerToys Run)",
+            "baseline_reason": "Untyped report flagged Needs-Team-Response and routed to PowerToys Run (waited 90d, 6 👍) — confirm whether it's a bug or a feature, then post the PowerToys Run owner's response."
           },
           {
             "number": 28981,
@@ -2172,9 +2172,9 @@
             "fix_ready": false,
             "build_candidate": false,
             "baseline_action": "reply",
-            "baseline_glyph": "💬",
-            "baseline_text": "Decide on this feature request (Setup/Install)",
-            "baseline_reason": "Feature/idea (Setup/Install) (waited 59d, 5 👍). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+            "baseline_glyph": "📣",
+            "baseline_text": "We owe a team response — confirm type & route to the Setup/Install owner (Setup/Install)",
+            "baseline_reason": "Untyped report flagged Needs-Team-Response and routed to Setup/Install (waited 59d, 5 👍) — confirm whether it's a bug or a feature, then post the Setup/Install owner's response."
           },
           {
             "number": 23193,
@@ -2346,7 +2346,7 @@
             "comments": 1,
             "created_at": "2025-01-29T14:49:30Z",
             "updated_at": "2026-04-15T11:52:21Z",
-            "age_days": 91.0,
+            "age_days": 92.0,
             "triaged": true,
             "awaiting": true,
             "fix_ready": false,
@@ -2354,7 +2354,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "📣",
             "baseline_text": "We owe a team response — confirm & route to the ZoomIt owner (ZoomIt)",
-            "baseline_reason": "Bug flagged Needs-Team-Response and routed to ZoomIt (waited 91d) — confirm it still repros on a current build and post the ZoomIt owner's response the reporter is waiting on."
+            "baseline_reason": "Bug flagged Needs-Team-Response and routed to ZoomIt (waited 92d) — confirm it still repros on a current build and post the ZoomIt owner's response the reporter is waiting on."
           },
           {
             "number": 40355,
@@ -2482,9 +2482,9 @@
             "fix_ready": false,
             "build_candidate": false,
             "baseline_action": "reply",
-            "baseline_glyph": "💬",
-            "baseline_text": "Decide on this feature request (Setup/Install)",
-            "baseline_reason": "Feature/idea (Setup/Install) (waited 88d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+            "baseline_glyph": "📣",
+            "baseline_text": "We owe a team response — confirm type & route to the Setup/Install owner (Setup/Install)",
+            "baseline_reason": "Untyped report flagged Needs-Team-Response and routed to Setup/Install (waited 88d) — confirm whether it's a bug or a feature, then post the Setup/Install owner's response."
           },
           {
             "number": 45615,
@@ -2666,9 +2666,9 @@
             "fix_ready": false,
             "build_candidate": false,
             "baseline_action": "reply",
-            "baseline_glyph": "💬",
-            "baseline_text": "Decide on this feature request (Color Picker)",
-            "baseline_reason": "Feature/idea (Color Picker) (waited 88d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+            "baseline_glyph": "📣",
+            "baseline_text": "We owe a team response — confirm type & route to the Color Picker owner (Color Picker)",
+            "baseline_reason": "Untyped report flagged Needs-Team-Response and routed to Color Picker (waited 88d) — confirm whether it's a bug or a feature, then post the Color Picker owner's response."
           },
           {
             "number": 20980,
@@ -2847,10 +2847,10 @@
             "awaiting": true,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "reassess_stale",
-            "baseline_glyph": "🗓️",
-            "baseline_text": "Stale idea — decline or close for low demand (Always On Top)",
-            "baseline_reason": "Old feature ask (Always On Top) (waited 1583d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+            "baseline_action": "reply",
+            "baseline_glyph": "📣",
+            "baseline_text": "We owe a team response — confirm type & route to the Always On Top owner (Always On Top)",
+            "baseline_reason": "Untyped report flagged Needs-Team-Response and routed to Always On Top (waited 1583d) — confirm whether it's a bug or a feature, then post the Always On Top owner's response."
           },
           {
             "number": 21217,
@@ -3453,6 +3453,31 @@
             "baseline_reason": "PR (User Interface) (waited 9d) — review it."
           },
           {
+            "number": 49161,
+            "title": "[Settings][Image Resizer] Edit/add presets in a ContentDialog instead of a Flyout",
+            "url": "https://github.com/microsoft/PowerToys/pull/49161",
+            "kind": "pr",
+            "is_community": null,
+            "labels": [
+              "Product-Settings",
+              "Product-Image Resizer"
+            ],
+            "up": 0,
+            "comments": 1,
+            "created_at": "2026-07-06T14:36:21Z",
+            "updated_at": "2026-07-08T11:53:16Z",
+            "age_days": 8.0,
+            "triaged": false,
+            "awaiting": true,
+            "is_draft": false,
+            "merge_state": "",
+            "review_decision": "REVIEW_REQUIRED",
+            "baseline_action": "review",
+            "baseline_glyph": "👀",
+            "baseline_text": "Review this PR (Settings)",
+            "baseline_reason": "PR (Settings) (waited 8d) — review it."
+          },
+          {
             "number": 43741,
             "title": "feat(AdvancedPaste): add PasteAsKeystrokes format and functionality",
             "url": "https://github.com/microsoft/PowerToys/pull/43741",
@@ -3903,31 +3928,6 @@
             "baseline_glyph": "👀",
             "baseline_text": "Review this PR (Setup/Install)",
             "baseline_reason": "PR (Setup/Install) (waited 7d) — review it."
-          },
-          {
-            "number": 48683,
-            "title": "Shortcut Guide: Replace dual windows with single transparent overlay and add holding windows button",
-            "url": "https://github.com/microsoft/PowerToys/pull/48683",
-            "kind": "pr",
-            "is_community": null,
-            "labels": [
-              "Product-Shortcut Guide",
-              "0.101"
-            ],
-            "up": 0,
-            "comments": 1,
-            "created_at": "2026-06-16T17:38:29Z",
-            "updated_at": "2026-07-08T13:48:03Z",
-            "age_days": 7.0,
-            "triaged": false,
-            "awaiting": true,
-            "is_draft": false,
-            "merge_state": "",
-            "review_decision": "REVIEW_REQUIRED",
-            "baseline_action": "review",
-            "baseline_glyph": "👀",
-            "baseline_text": "Review this PR (Shortcut Guide)",
-            "baseline_reason": "PR (Shortcut Guide) (waited 7d) — review it."
           }
         ],
         "awaiting_issues": 429,
@@ -4236,8 +4236,8 @@
             "build_candidate": false,
             "baseline_action": "reply",
             "baseline_glyph": "💬",
-            "baseline_text": "Decide on this feature request",
-            "baseline_reason": "Feature/idea (waited 77d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+            "baseline_text": "Confirm type (bug/feature) & route",
+            "baseline_reason": "Untyped report (waited 77d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
           },
           {
             "number": 68,
@@ -4441,8 +4441,8 @@
             "build_candidate": false,
             "baseline_action": "reply",
             "baseline_glyph": "💬",
-            "baseline_text": "Decide on this feature request",
-            "baseline_reason": "Feature/idea (waited 49d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+            "baseline_text": "Confirm type (bug/feature) & route",
+            "baseline_reason": "Untyped report (waited 49d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
           },
           {
             "number": 17,
@@ -4531,8 +4531,8 @@
             "build_candidate": false,
             "baseline_action": "reply",
             "baseline_glyph": "💬",
-            "baseline_text": "Decide on this feature request",
-            "baseline_reason": "Feature/idea (waited 2d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+            "baseline_text": "Confirm type (bug/feature) & route",
+            "baseline_reason": "Untyped report (waited 2d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
           },
           {
             "number": 122,
@@ -4552,8 +4552,8 @@
             "build_candidate": false,
             "baseline_action": "reply",
             "baseline_glyph": "💬",
-            "baseline_text": "Decide on this feature request",
-            "baseline_reason": "Feature/idea (waited 2d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+            "baseline_text": "Confirm type (bug/feature) & route",
+            "baseline_reason": "Untyped report (waited 2d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
           },
           {
             "number": 127,
@@ -4571,10 +4571,10 @@
             "awaiting": false,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "reply",
-            "baseline_glyph": "💬",
-            "baseline_text": "Decide on this feature request",
-            "baseline_reason": "Feature/idea (waited 1d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+            "baseline_action": "request_info",
+            "baseline_glyph": "❓",
+            "baseline_text": "Request exact repro, version & logs",
+            "baseline_reason": "Bug (waited 1d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
           },
           {
             "number": 128,
@@ -4615,8 +4615,8 @@
             "build_candidate": false,
             "baseline_action": "reply",
             "baseline_glyph": "💬",
-            "baseline_text": "Decide on this feature request",
-            "baseline_reason": "Feature/idea (waited 1d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+            "baseline_text": "Confirm type (bug/feature) & route",
+            "baseline_reason": "Untyped report (waited 1d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
           },
           {
             "number": 126,
@@ -4636,8 +4636,8 @@
             "build_candidate": false,
             "baseline_action": "reply",
             "baseline_glyph": "💬",
-            "baseline_text": "Decide on this feature request",
-            "baseline_reason": "Feature/idea (new). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+            "baseline_text": "Confirm type (bug/feature) & route",
+            "baseline_reason": "Untyped report (new) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
           }
         ],
         "prs": [
@@ -4973,8 +4973,8 @@
             "build_candidate": false,
             "baseline_action": "reply",
             "baseline_glyph": "💬",
-            "baseline_text": "Decide on this feature request",
-            "baseline_reason": "Feature/idea (waited 248d, 9 👍). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+            "baseline_text": "Confirm type (bug/feature) & route",
+            "baseline_reason": "Untyped report (waited 248d, 9 👍) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
           },
           {
             "number": 10022,
@@ -5020,8 +5020,8 @@
             "build_candidate": false,
             "baseline_action": "reply",
             "baseline_glyph": "💬",
-            "baseline_text": "Decide on this feature request",
-            "baseline_reason": "Feature/idea (waited 124d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+            "baseline_text": "Confirm type (bug/feature) & route",
+            "baseline_reason": "Untyped report (waited 124d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
           },
           {
             "number": 13296,
@@ -5088,10 +5088,10 @@
             "awaiting": false,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "promote",
-            "baseline_glyph": "⭐",
-            "baseline_text": "High-demand feature — roadmap decision",
-            "baseline_reason": "Popular feature ask (waited 14d, 650 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+            "baseline_action": "reply",
+            "baseline_glyph": "💬",
+            "baseline_text": "Confirm type (bug/feature) & route",
+            "baseline_reason": "Untyped report (waited 14d, 650 👍 high demand) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
           },
           {
             "number": 4150,
@@ -5180,10 +5180,10 @@
             "awaiting": false,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "promote",
-            "baseline_glyph": "⭐",
-            "baseline_text": "High-demand feature — roadmap decision",
-            "baseline_reason": "Popular feature ask (waited 121d, 398 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+            "baseline_action": "reply",
+            "baseline_glyph": "💬",
+            "baseline_text": "Confirm type (bug/feature) & route",
+            "baseline_reason": "Untyped report (waited 121d, 398 👍 high demand) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
           },
           {
             "number": 2195,
@@ -5269,7 +5269,7 @@
             "comments": 1,
             "created_at": "2022-06-19T15:43:01Z",
             "updated_at": "2025-08-07T11:38:52Z",
-            "age_days": 342.0,
+            "age_days": 343.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -5277,7 +5277,7 @@
             "baseline_action": "escalate",
             "baseline_glyph": "🚨",
             "baseline_text": "Escalate — crash/reliability",
-            "baseline_reason": "Crash/reliability issue (waited 342d, 264 👍 high demand) — get repro+logs if missing, confirm severity, and route to the area owner urgently."
+            "baseline_reason": "Crash/reliability issue (waited 343d, 264 👍 high demand) — get repro+logs if missing, confirm severity, and route to the area owner urgently."
           },
           {
             "number": 8696,
@@ -5295,10 +5295,10 @@
             "awaiting": false,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "promote",
-            "baseline_glyph": "⭐",
-            "baseline_text": "High-demand feature — roadmap decision",
-            "baseline_reason": "Popular feature ask (waited 79d, 253 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+            "baseline_action": "reply",
+            "baseline_glyph": "💬",
+            "baseline_text": "Confirm type (bug/feature) & route",
+            "baseline_reason": "Untyped report (waited 79d, 253 👍 high demand) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
           },
           {
             "number": 8365,
@@ -5318,10 +5318,10 @@
             "awaiting": false,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "promote",
-            "baseline_glyph": "⭐",
-            "baseline_text": "High-demand feature — roadmap decision",
-            "baseline_reason": "Popular feature ask (waited 257d, 240 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+            "baseline_action": "reply",
+            "baseline_glyph": "💬",
+            "baseline_text": "Confirm type (bug/feature) & route",
+            "baseline_reason": "Untyped report (waited 257d, 240 👍 high demand) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
           },
           {
             "number": 5836,
@@ -5341,10 +5341,10 @@
             "awaiting": false,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "promote",
-            "baseline_glyph": "⭐",
-            "baseline_text": "High-demand feature — roadmap decision",
-            "baseline_reason": "Popular feature ask (waited 93d, 204 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+            "baseline_action": "reply",
+            "baseline_glyph": "💬",
+            "baseline_text": "Confirm type (bug/feature) & route",
+            "baseline_reason": "Untyped report (waited 93d, 204 👍 high demand) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
           },
           {
             "number": 4322,
@@ -5408,7 +5408,7 @@
             "comments": 1,
             "created_at": "2019-10-21T05:43:54Z",
             "updated_at": "2026-07-02T11:52:02Z",
-            "age_days": 13.0,
+            "age_days": 14.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -5416,7 +5416,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Confirm on current build & route",
-            "baseline_reason": "Bug (waited 13d, 157 👍 high demand) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+            "baseline_reason": "Bug (waited 14d, 157 👍 high demand) — acknowledge, confirm it still repros on a current build, and route to the area owner."
           },
           {
             "number": 4103,
@@ -5483,10 +5483,10 @@
             "awaiting": false,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "promote",
-            "baseline_glyph": "⭐",
-            "baseline_text": "High-demand feature — roadmap decision",
-            "baseline_reason": "Popular feature ask (waited 162d, 104 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+            "baseline_action": "reply",
+            "baseline_glyph": "💬",
+            "baseline_text": "Confirm type (bug/feature) & route",
+            "baseline_reason": "Untyped report (waited 162d, 104 👍 high demand) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
           },
           {
             "number": 5092,
@@ -5506,10 +5506,10 @@
             "awaiting": false,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "promote",
-            "baseline_glyph": "⭐",
-            "baseline_text": "High-demand feature — roadmap decision",
-            "baseline_reason": "Popular feature ask (waited 35d, 102 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+            "baseline_action": "reply",
+            "baseline_glyph": "💬",
+            "baseline_text": "Confirm type (bug/feature) & route",
+            "baseline_reason": "Untyped report (waited 35d, 102 👍 high demand) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
           },
           {
             "number": 40948,
@@ -5552,7 +5552,7 @@
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
-            "build_candidate": true,
+            "build_candidate": false,
             "baseline_action": "promote",
             "baseline_glyph": "⭐",
             "baseline_text": "High-demand feature — roadmap decision",
@@ -5666,10 +5666,10 @@
             "awaiting": false,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "promote",
-            "baseline_glyph": "⭐",
-            "baseline_text": "High-demand feature — roadmap decision",
-            "baseline_reason": "Popular feature ask (waited 226d, 71 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+            "baseline_action": "reply",
+            "baseline_glyph": "💬",
+            "baseline_text": "Confirm type (bug/feature) & route",
+            "baseline_reason": "Untyped report (waited 226d, 71 👍 high demand) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
           },
           {
             "number": 242,
@@ -5734,10 +5734,10 @@
             "awaiting": false,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "promote",
-            "baseline_glyph": "⭐",
-            "baseline_text": "High-demand feature — roadmap decision",
-            "baseline_reason": "Popular feature ask (waited 20d, 55 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+            "baseline_action": "reply",
+            "baseline_glyph": "💬",
+            "baseline_text": "Confirm type (bug/feature) & route",
+            "baseline_reason": "Untyped report (waited 20d, 55 👍 high demand) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
           },
           {
             "number": 5231,
@@ -5780,10 +5780,10 @@
             "awaiting": false,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "promote",
-            "baseline_glyph": "⭐",
-            "baseline_text": "High-demand feature — roadmap decision",
-            "baseline_reason": "Popular feature ask (waited 9d, 50 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+            "baseline_action": "reply",
+            "baseline_glyph": "💬",
+            "baseline_text": "Confirm type (bug/feature) & route",
+            "baseline_reason": "Untyped report (waited 9d, 50 👍 high demand) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
           },
           {
             "number": 5178,
@@ -5803,7 +5803,7 @@
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
-            "build_candidate": true,
+            "build_candidate": false,
             "baseline_action": "promote",
             "baseline_glyph": "⭐",
             "baseline_text": "High-demand feature — roadmap decision",
@@ -7141,10 +7141,10 @@
             "awaiting": false,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "promote",
-            "baseline_glyph": "⭐",
-            "baseline_text": "High-demand feature — roadmap decision",
-            "baseline_reason": "Popular feature ask (waited 862d, 39 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+            "baseline_action": "reply",
+            "baseline_glyph": "💬",
+            "baseline_text": "Confirm type (bug/feature) & route",
+            "baseline_reason": "Untyped report (waited 862d, 39 👍 high demand) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
           },
           {
             "number": 96,
@@ -7538,7 +7538,7 @@
             "comments": 1,
             "created_at": "2023-03-24T11:17:34Z",
             "updated_at": "2026-03-22T11:43:37Z",
-            "age_days": 115.0,
+            "age_days": 116.0,
             "triaged": true,
             "awaiting": false,
             "fix_ready": false,
@@ -7546,7 +7546,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Confirm on current build & route",
-            "baseline_reason": "Bug (waited 115d, 18 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+            "baseline_reason": "Bug (waited 116d, 18 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
           },
           {
             "number": 959,

@@ -1,6 +1,6 @@
 {
   "repo": "microsoft/wslg",
-  "generated_at": "2026-07-15T15:38:11Z",
+  "generated_at": "2026-07-15T15:53:47Z",
   "awaiting_label": null,
   "awaiting_issues": 0,
   "awaiting_prs": 15,
@@ -259,10 +259,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "promote",
-      "baseline_glyph": "⭐",
-      "baseline_text": "High-demand feature — roadmap decision",
-      "baseline_reason": "Popular feature ask (waited 862d, 39 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+      "baseline_action": "reply",
+      "baseline_glyph": "💬",
+      "baseline_text": "Confirm type (bug/feature) & route",
+      "baseline_reason": "Untyped report (waited 862d, 39 👍 high demand) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
     },
     {
       "number": 96,
@@ -656,7 +656,7 @@
       "comments": 1,
       "created_at": "2023-03-24T11:17:34Z",
       "updated_at": "2026-03-22T11:43:37Z",
-      "age_days": 115.0,
+      "age_days": 116.0,
       "triaged": true,
       "awaiting": false,
       "fix_ready": false,
@@ -664,7 +664,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 115d, 18 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_reason": "Bug (waited 116d, 18 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 959,
@@ -1893,7 +1893,7 @@
       "comments": 1,
       "created_at": "2021-05-06T19:42:47Z",
       "updated_at": "2022-06-06T11:52:46Z",
-      "age_days": 1500.0,
+      "age_days": 1501.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -1901,7 +1901,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Old unconfirmed bug — revalidate or close stale",
-      "baseline_reason": "Old bug (waited 1500d, 7 👍) with little activity — re-test on a current build; route only if it still repros, else close as stale."
+      "baseline_reason": "Old bug (waited 1501d, 7 👍) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 398,
@@ -2127,7 +2127,7 @@
       "comments": 1,
       "created_at": "2024-01-21T22:37:55Z",
       "updated_at": "2026-07-14T11:47:12Z",
-      "age_days": 1.0,
+      "age_days": 2.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -2135,7 +2135,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 1d, 7 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_reason": "Bug (waited 2d, 7 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 489,
@@ -4234,7 +4234,7 @@
       "comments": 1,
       "created_at": "2023-03-21T11:23:08Z",
       "updated_at": "2025-03-14T11:49:50Z",
-      "age_days": 488.0,
+      "age_days": 489.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -4242,7 +4242,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Old unconfirmed bug — revalidate or close stale",
-      "baseline_reason": "Old bug (waited 488d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
+      "baseline_reason": "Old bug (waited 489d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 481,
@@ -6097,7 +6097,7 @@
       "comments": 1,
       "created_at": "2022-11-15T09:41:05Z",
       "updated_at": "2026-02-04T11:49:34Z",
-      "age_days": 161.0,
+      "age_days": 162.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -6105,7 +6105,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 161d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_reason": "Bug (waited 162d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 1122,
@@ -6503,8 +6503,8 @@
       "build_candidate": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 51d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_text": "Confirm type (bug/feature) & route",
+      "baseline_reason": "Untyped report (waited 51d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
     },
     {
       "number": 1392,
@@ -7202,7 +7202,7 @@
       "comments": 1,
       "created_at": "2021-07-09T02:40:49Z",
       "updated_at": "2021-08-06T11:40:08Z",
-      "age_days": 1804.0,
+      "age_days": 1805.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -7210,7 +7210,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 1804d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (waited 1805d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 402,
@@ -7322,7 +7322,7 @@
       "comments": 1,
       "created_at": "2021-08-21T10:39:46Z",
       "updated_at": "2021-08-27T11:52:01Z",
-      "age_days": 1783.0,
+      "age_days": 1784.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -7330,7 +7330,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 1783d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (waited 1784d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 427,
@@ -7602,7 +7602,7 @@
       "comments": 1,
       "created_at": "2021-09-20T14:41:20Z",
       "updated_at": "2021-10-16T11:43:22Z",
-      "age_days": 1733.0,
+      "age_days": 1734.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -7610,7 +7610,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 1733d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (waited 1734d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 518,
@@ -8574,7 +8574,7 @@
       "comments": 1,
       "created_at": "2021-12-06T01:16:54Z",
       "updated_at": "2022-07-05T11:42:40Z",
-      "age_days": 1471.0,
+      "age_days": 1472.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -8582,7 +8582,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 1471d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (waited 1472d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 649,
@@ -10774,7 +10774,7 @@
       "comments": 1,
       "created_at": "2023-09-11T11:42:53Z",
       "updated_at": "2023-09-11T11:52:27Z",
-      "age_days": 1038.0,
+      "age_days": 1039.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -10782,7 +10782,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 1038d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (waited 1039d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 856,
@@ -10874,8 +10874,8 @@
       "build_candidate": false,
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
-      "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 1021d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_text": "Ageing untyped report — confirm type & revalidate",
+      "baseline_reason": "Untyped report (waited 1021d) sat 180+ days — confirm whether it still applies (bug: repro on a current build; feature: still wanted), then route or close."
     },
     {
       "number": 1111,
@@ -12095,7 +12095,7 @@
       "comments": 1,
       "created_at": "2024-07-26T04:18:37Z",
       "updated_at": "2024-07-26T11:44:04Z",
-      "age_days": 719.0,
+      "age_days": 720.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -12103,7 +12103,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 719d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (waited 720d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 1216,
@@ -13304,7 +13304,7 @@
       "comments": 1,
       "created_at": "2021-04-24T17:17:24Z",
       "updated_at": "2025-09-11T11:50:20Z",
-      "age_days": 307.0,
+      "age_days": 308.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -13312,7 +13312,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 307d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (waited 308d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 1375,
@@ -13766,7 +13766,7 @@
       "comments": 1,
       "created_at": "2021-07-09T12:14:40Z",
       "updated_at": "2026-02-18T11:42:43Z",
-      "age_days": 147.0,
+      "age_days": 148.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -13774,7 +13774,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 147d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (waited 148d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 1428,
@@ -15326,8 +15326,8 @@
       "build_candidate": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 53d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_text": "Confirm type (bug/feature) & route",
+      "baseline_reason": "Untyped report (waited 53d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
     },
     {
       "number": 125,
@@ -15510,8 +15510,8 @@
       "build_candidate": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 36d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_text": "Confirm type (bug/feature) & route",
+      "baseline_reason": "Untyped report (waited 36d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
     },
     {
       "number": 1468,

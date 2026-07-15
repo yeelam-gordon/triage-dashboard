@@ -1,6 +1,6 @@
 {
   "repo": "microsoft/win-dev-skills",
-  "generated_at": "2026-07-15T15:38:11Z",
+  "generated_at": "2026-07-15T15:53:47Z",
   "awaiting_label": null,
   "awaiting_issues": 0,
   "awaiting_prs": 7,
@@ -211,8 +211,8 @@
       "build_candidate": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 77d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_text": "Confirm type (bug/feature) & route",
+      "baseline_reason": "Untyped report (waited 77d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
     },
     {
       "number": 68,
@@ -416,8 +416,8 @@
       "build_candidate": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 49d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_text": "Confirm type (bug/feature) & route",
+      "baseline_reason": "Untyped report (waited 49d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
     },
     {
       "number": 17,
@@ -506,8 +506,8 @@
       "build_candidate": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 2d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_text": "Confirm type (bug/feature) & route",
+      "baseline_reason": "Untyped report (waited 2d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
     },
     {
       "number": 122,
@@ -527,8 +527,8 @@
       "build_candidate": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 2d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_text": "Confirm type (bug/feature) & route",
+      "baseline_reason": "Untyped report (waited 2d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
     },
     {
       "number": 127,
@@ -546,10 +546,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 1d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_action": "request_info",
+      "baseline_glyph": "❓",
+      "baseline_text": "Request exact repro, version & logs",
+      "baseline_reason": "Bug (waited 1d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 128,
@@ -590,8 +590,8 @@
       "build_candidate": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 1d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_text": "Confirm type (bug/feature) & route",
+      "baseline_reason": "Untyped report (waited 1d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
     },
     {
       "number": 126,
@@ -611,8 +611,8 @@
       "build_candidate": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (new). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_text": "Confirm type (bug/feature) & route",
+      "baseline_reason": "Untyped report (new) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
     }
   ],
   "prs": [
