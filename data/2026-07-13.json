@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-15T14:05:07Z",
+  "generated_at": "2026-07-15T15:00:19Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -45,15 +45,15 @@
     "backlog_open_issues": null,
     "backlog_open_prs": null,
     "awaiting_reply_issues": 464,
-    "awaiting_reply_prs": 184,
+    "awaiting_reply_prs": 175,
     "awaiting_label": null,
     "window_label": "Daily (24h)"
   },
   "owed_list": {
-    "issues_total": 8897,
-    "prs_total": 224,
-    "listed_issues": 8897,
-    "listed_prs": 224,
+    "issues_total": 8895,
+    "prs_total": 222,
+    "listed_issues": 8895,
+    "listed_prs": 222,
     "capped_issues": false,
     "capped_prs": false
   },
@@ -289,11 +289,11 @@
         "triaged_issues": 27,
         "triaged_prs": 21,
         "window_active_issues": 1,
-        "window_active_prs": 8,
+        "window_active_prs": 7,
         "backlog_open_issues": 38,
-        "backlog_open_prs": 26,
+        "backlog_open_prs": 25,
         "awaiting_reply_issues": 31,
-        "awaiting_reply_prs": 24,
+        "awaiting_reply_prs": 23,
         "awaiting_label": "Needs-Triage",
         "window_label": "Daily (24h)"
       },
@@ -579,10 +579,10 @@
             "awaiting": true,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "label_only",
-            "baseline_glyph": "🏷️",
-            "baseline_text": "Triage — classify type & route",
-            "baseline_reason": "Untriaged (waited 35d) — set the type (bug/idea) + area labels first, then route to the owner."
+            "baseline_action": "reply",
+            "baseline_glyph": "💬",
+            "baseline_text": "Triage idea — scope then decide",
+            "baseline_reason": "New untriaged idea (waited 35d) — classify it and either ask for scope or make an early accept/park call."
           },
           {
             "number": 203,
@@ -802,7 +802,7 @@
             "baseline_action": "request_info",
             "baseline_glyph": "🩺",
             "baseline_text": "Confirm crash — get repro/logs & route",
-            "baseline_reason": "Crash report (waited 28d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner (no urgent page until confirmed)."
+            "baseline_reason": "Crash report (waited 28d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
           },
           {
             "number": 325,
@@ -897,10 +897,10 @@
             "awaiting": true,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "label_only",
-            "baseline_glyph": "🏷️",
-            "baseline_text": "Triage — classify type & route",
-            "baseline_reason": "Untriaged (waited 23d) — set the type (bug/idea) + area labels first, then route to the owner."
+            "baseline_action": "reply",
+            "baseline_glyph": "💬",
+            "baseline_text": "Triage idea — scope then decide",
+            "baseline_reason": "New untriaged idea (waited 23d) — classify it and either ask for scope or make an early accept/park call."
           },
           {
             "number": 346,
@@ -1027,7 +1027,7 @@
             "baseline_action": "request_info",
             "baseline_glyph": "🩺",
             "baseline_text": "Confirm crash — get repro/logs & route",
-            "baseline_reason": "Crash report (waited 9d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner (no urgent page until confirmed)."
+            "baseline_reason": "Crash report (waited 9d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
           },
           {
             "number": 386,
@@ -1674,7 +1674,7 @@
             "up": 0,
             "comments": 1,
             "created_at": "2026-07-15T09:24:55Z",
-            "updated_at": "2026-07-15T13:50:52Z",
+            "updated_at": "2026-07-15T14:41:54Z",
             "age_days": 0.0,
             "triaged": false,
             "awaiting": true,
@@ -1709,28 +1709,6 @@
             "baseline_reason": "PR (new) — review it."
           },
           {
-            "number": 417,
-            "title": "Add store-listing-localizer agent skill",
-            "url": "https://github.com/microsoft/intelligent-terminal/pull/417",
-            "kind": "pr",
-            "is_community": null,
-            "labels": [],
-            "up": 0,
-            "comments": 1,
-            "created_at": "2026-07-15T13:37:30Z",
-            "updated_at": "2026-07-15T13:56:53Z",
-            "age_days": 0.0,
-            "triaged": false,
-            "awaiting": true,
-            "is_draft": false,
-            "merge_state": "",
-            "review_decision": "REVIEW_REQUIRED",
-            "baseline_action": "review",
-            "baseline_glyph": "👀",
-            "baseline_text": "Review this PR",
-            "baseline_reason": "PR (new) — review it."
-          },
-          {
             "number": 418,
             "title": "Recognize profile-defined aliases; make resolve_command profile-aware (#286)",
             "url": "https://github.com/microsoft/intelligent-terminal/pull/418",
@@ -1740,7 +1718,7 @@
             "up": 0,
             "comments": 1,
             "created_at": "2026-07-15T13:51:32Z",
-            "updated_at": "2026-07-15T13:58:49Z",
+            "updated_at": "2026-07-15T14:32:35Z",
             "age_days": 0.0,
             "triaged": false,
             "awaiting": true,
@@ -1798,13 +1776,13 @@
           }
         ],
         "awaiting_issues": 31,
-        "awaiting_prs": 24,
+        "awaiting_prs": 23,
         "backlog_issues": 38,
-        "backlog_prs": 26,
+        "backlog_prs": 25,
         "issues_total": 31,
-        "prs_total": 24,
+        "prs_total": 23,
         "listed_issues": 38,
-        "listed_prs": 26,
+        "listed_prs": 25,
         "preview_count": 40,
         "has_more_issues": false,
         "has_more_prs": false,
@@ -1908,10 +1886,10 @@
       "counts": {
         "triaged_issues": 22,
         "triaged_prs": 21,
-        "window_active_issues": 30,
-        "window_active_prs": 24,
-        "backlog_open_issues": 7259,
-        "backlog_open_prs": 120,
+        "window_active_issues": 29,
+        "window_active_prs": 23,
+        "backlog_open_issues": 7257,
+        "backlog_open_prs": 119,
         "awaiting_reply_issues": 429,
         "awaiting_reply_prs": 90,
         "awaiting_label": "Needs-Team-Response",
@@ -1939,10 +1917,10 @@
             "awaiting": true,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "reassess_stale",
-            "baseline_glyph": "🗓️",
-            "baseline_text": "Re-verify on current build / close stale (FancyZones)",
-            "baseline_reason": "Very old (FancyZones) (waited 658d, 19 👍) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
+            "baseline_action": "reply",
+            "baseline_glyph": "📣",
+            "baseline_text": "We owe a team response — confirm & route to the FancyZones owner (FancyZones)",
+            "baseline_reason": "Bug flagged Needs-Team-Response and routed to FancyZones (waited 658d, 19 👍) — confirm it still repros on a current build and post the FancyZones owner's response the reporter is waiting on."
           },
           {
             "number": 27776,
@@ -1964,10 +1942,10 @@
             "awaiting": true,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "promote",
-            "baseline_glyph": "⭐",
-            "baseline_text": "High-demand feature — roadmap decision (Peek)",
-            "baseline_reason": "Popular feature ask (Peek) (waited 345d, 16 👍) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+            "baseline_action": "reply",
+            "baseline_glyph": "💬",
+            "baseline_text": "Decide on this feature request (Peek)",
+            "baseline_reason": "Feature/idea (Peek) (waited 345d, 16 👍). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
           },
           {
             "number": 34597,
@@ -1989,10 +1967,10 @@
             "awaiting": true,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "reply",
-            "baseline_glyph": "📣",
-            "baseline_text": "We owe a team response — route to the Workspaces owner (Workspaces)",
-            "baseline_reason": "Flagged Needs-Team-Response and routed to Workspaces (waited 94d, 16 👍) — the Workspaces owner owes the reporter a decision/response; set the type label and post it."
+            "baseline_action": "promote",
+            "baseline_glyph": "⭐",
+            "baseline_text": "High-demand feature — roadmap decision (Workspaces)",
+            "baseline_reason": "Popular feature ask (Workspaces) (waited 94d, 16 👍) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
           },
           {
             "number": 24767,
@@ -2014,10 +1992,10 @@
             "awaiting": true,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "reply",
-            "baseline_glyph": "📣",
-            "baseline_text": "We owe a team response — route to the Setup/Install owner (Setup/Install)",
-            "baseline_reason": "Flagged Needs-Team-Response and routed to Setup/Install (waited 88d, 13 👍) — the Setup/Install owner owes the reporter a decision/response; set the type label and post it."
+            "baseline_action": "promote",
+            "baseline_glyph": "⭐",
+            "baseline_text": "High-demand feature — roadmap decision (Setup/Install)",
+            "baseline_reason": "Popular feature ask (Setup/Install) (waited 88d, 13 👍) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
           },
           {
             "number": 45158,
@@ -2085,7 +2063,7 @@
             "comments": 1,
             "created_at": "2023-03-10T16:10:21Z",
             "updated_at": "2026-04-20T10:55:55Z",
-            "age_days": 86.0,
+            "age_days": 87.0,
             "triaged": true,
             "awaiting": true,
             "fix_ready": false,
@@ -2093,7 +2071,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Decide on this feature request",
-            "baseline_reason": "Feature/idea (waited 86d, 8 👍). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+            "baseline_reason": "Feature/idea (waited 87d, 8 👍). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
           },
           {
             "number": 46216,
@@ -2118,9 +2096,9 @@
             "fix_ready": false,
             "build_candidate": false,
             "baseline_action": "reply",
-            "baseline_glyph": "💬",
-            "baseline_text": "Confirm on current build & route (Command Palette)",
-            "baseline_reason": "Bug (Command Palette) (waited 16d, 8 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner. We owe the team response — post it to the reporter."
+            "baseline_glyph": "📣",
+            "baseline_text": "We owe a team response — confirm & route to the Command Palette owner (Command Palette)",
+            "baseline_reason": "Bug flagged Needs-Team-Response and routed to Command Palette (waited 16d, 8 👍) — confirm it still repros on a current build and post the Command Palette owner's response the reporter is waiting on."
           },
           {
             "number": 29949,
@@ -2220,9 +2198,9 @@
             "fix_ready": false,
             "build_candidate": false,
             "baseline_action": "reply",
-            "baseline_glyph": "💬",
-            "baseline_text": "Confirm on current build & route (General)",
-            "baseline_reason": "Bug (General) (waited 52d, 5 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner. We owe the team response — post it to the reporter."
+            "baseline_glyph": "📣",
+            "baseline_text": "We owe a team response — confirm & route to the General owner (General)",
+            "baseline_reason": "Bug flagged Needs-Team-Response and routed to General (waited 52d, 5 👍) — confirm it still repros on a current build and post the General owner's response the reporter is waiting on."
           },
           {
             "number": 30714,
@@ -2245,9 +2223,9 @@
             "fix_ready": false,
             "build_candidate": false,
             "baseline_action": "reply",
-            "baseline_glyph": "💬",
-            "baseline_text": "Confirm on current build & route (Mouse Without Borders)",
-            "baseline_reason": "Bug (Mouse Without Borders) (waited 48d, 5 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner. We owe the team response — post it to the reporter."
+            "baseline_glyph": "📣",
+            "baseline_text": "We owe a team response — confirm & route to the Mouse Without Borders owner (Mouse Without Borders)",
+            "baseline_reason": "Bug flagged Needs-Team-Response and routed to Mouse Without Borders (waited 48d, 5 👍) — confirm it still repros on a current build and post the Mouse Without Borders owner's response the reporter is waiting on."
           },
           {
             "number": 13310,
@@ -2269,10 +2247,10 @@
             "awaiting": true,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "reassess_stale",
-            "baseline_glyph": "🗓️",
-            "baseline_text": "Re-verify on current build / close stale (PowerToys Run)",
-            "baseline_reason": "Very old (PowerToys Run) (waited 904d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
+            "baseline_action": "reply",
+            "baseline_glyph": "📣",
+            "baseline_text": "We owe a team response — confirm & route to the PowerToys Run owner (PowerToys Run)",
+            "baseline_reason": "Bug flagged Needs-Team-Response and routed to PowerToys Run (waited 904d) — confirm it still repros on a current build and post the PowerToys Run owner's response the reporter is waiting on."
           },
           {
             "number": 32342,
@@ -2290,15 +2268,15 @@
             "comments": 1,
             "created_at": "2024-04-08T23:57:54Z",
             "updated_at": "2024-07-14T10:46:03Z",
-            "age_days": 731.0,
+            "age_days": 732.0,
             "triaged": true,
             "awaiting": true,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "reassess_stale",
-            "baseline_glyph": "🗓️",
-            "baseline_text": "Re-verify on current build / close stale (Mouse Without Borders)",
-            "baseline_reason": "Very old (Mouse Without Borders) (waited 731d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
+            "baseline_action": "reply",
+            "baseline_glyph": "📣",
+            "baseline_text": "We owe a team response — confirm & route to the Mouse Without Borders owner (Mouse Without Borders)",
+            "baseline_reason": "Bug flagged Needs-Team-Response and routed to Mouse Without Borders (waited 732d) — confirm it still repros on a current build and post the Mouse Without Borders owner's response the reporter is waiting on."
           },
           {
             "number": 29027,
@@ -2374,9 +2352,9 @@
             "fix_ready": false,
             "build_candidate": false,
             "baseline_action": "reply",
-            "baseline_glyph": "💬",
-            "baseline_text": "Confirm on current build & route (ZoomIt)",
-            "baseline_reason": "Bug (ZoomIt) (waited 91d) — acknowledge, confirm it still repros on a current build, and route to the area owner. We owe the team response — post it to the reporter."
+            "baseline_glyph": "📣",
+            "baseline_text": "We owe a team response — confirm & route to the ZoomIt owner (ZoomIt)",
+            "baseline_reason": "Bug flagged Needs-Team-Response and routed to ZoomIt (waited 91d) — confirm it still repros on a current build and post the ZoomIt owner's response the reporter is waiting on."
           },
           {
             "number": 40355,
@@ -2400,9 +2378,9 @@
             "fix_ready": false,
             "build_candidate": false,
             "baseline_action": "reply",
-            "baseline_glyph": "💬",
-            "baseline_text": "Confirm on current build & route (FancyZones)",
-            "baseline_reason": "Bug (FancyZones) (waited 88d) — acknowledge, confirm it still repros on a current build, and route to the area owner. We owe the team response — post it to the reporter."
+            "baseline_glyph": "📣",
+            "baseline_text": "We owe a team response — confirm & route to the FancyZones owner (FancyZones)",
+            "baseline_reason": "Bug flagged Needs-Team-Response and routed to FancyZones (waited 88d) — confirm it still repros on a current build and post the FancyZones owner's response the reporter is waiting on."
           },
           {
             "number": 43346,
@@ -2454,8 +2432,8 @@
             "build_candidate": false,
             "baseline_action": "reassess_stale",
             "baseline_glyph": "🗓️",
-            "baseline_text": "No repro after a year — close stale (Settings)",
-            "baseline_reason": "Marked needs-repro (Settings) (waited 837d) with no repro provided in a year — close as stale (reopen if a fresh repro arrives)."
+            "baseline_text": "No repro provided — close stale (Settings)",
+            "baseline_reason": "Marked needs-repro (Settings) (waited 837d) with no repro forthcoming — close as stale (reopen if a fresh repro arrives)."
           },
           {
             "number": 16945,
@@ -2529,9 +2507,9 @@
             "fix_ready": false,
             "build_candidate": false,
             "baseline_action": "reply",
-            "baseline_glyph": "📣",
-            "baseline_text": "We owe a team response — route to the Settings owner (Settings)",
-            "baseline_reason": "Flagged Needs-Team-Response and routed to Settings (waited 88d) — the Settings owner owes the reporter a decision/response; set the type label and post it."
+            "baseline_glyph": "💬",
+            "baseline_text": "Decide on this feature request (Settings)",
+            "baseline_reason": "Feature/idea (Settings) (waited 88d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
           },
           {
             "number": 20726,
@@ -2556,10 +2534,10 @@
             "awaiting": true,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "reassess_stale",
-            "baseline_glyph": "🗓️",
-            "baseline_text": "Re-verify on current build / close stale (Localization)",
-            "baseline_reason": "Very old (Localization) (waited 1126d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
+            "baseline_action": "reply",
+            "baseline_glyph": "📣",
+            "baseline_text": "We owe a team response — confirm & route to the Localization owner (Localization)",
+            "baseline_reason": "Bug flagged Needs-Team-Response and routed to Localization (waited 1126d) — confirm it still repros on a current build and post the Localization owner's response the reporter is waiting on."
           },
           {
             "number": 28804,
@@ -2634,10 +2612,10 @@
             "awaiting": true,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "reassess_stale",
-            "baseline_glyph": "🗓️",
-            "baseline_text": "Re-verify on current build / close stale (Text Extractor)",
-            "baseline_reason": "Very old (Text Extractor) (waited 602d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
+            "baseline_action": "reply",
+            "baseline_glyph": "📣",
+            "baseline_text": "We owe a team response — confirm & route to the Text Extractor owner (Text Extractor)",
+            "baseline_reason": "Bug flagged Needs-Team-Response and routed to Text Extractor (waited 602d) — confirm it still repros on a current build and post the Text Extractor owner's response the reporter is waiting on."
           },
           {
             "number": 27199,
@@ -2663,9 +2641,9 @@
             "fix_ready": false,
             "build_candidate": false,
             "baseline_action": "reply",
-            "baseline_glyph": "💬",
-            "baseline_text": "Confirm on current build & route (Settings)",
-            "baseline_reason": "Bug (Settings) (waited 246d) — acknowledge, confirm it still repros on a current build, and route to the area owner. We owe the team response — post it to the reporter."
+            "baseline_glyph": "📣",
+            "baseline_text": "We owe a team response — confirm & route to the Settings owner (Settings)",
+            "baseline_reason": "Bug flagged Needs-Team-Response and routed to Settings (waited 246d) — confirm it still repros on a current build and post the Settings owner's response the reporter is waiting on."
           },
           {
             "number": 34070,
@@ -2714,9 +2692,9 @@
             "fix_ready": false,
             "build_candidate": false,
             "baseline_action": "reply",
-            "baseline_glyph": "💬",
-            "baseline_text": "Confirm on current build & route (Setup/Install)",
-            "baseline_reason": "Bug (Setup/Install) (waited 75d) — acknowledge, confirm it still repros on a current build, and route to the area owner. We owe the team response — post it to the reporter."
+            "baseline_glyph": "📣",
+            "baseline_text": "We owe a team response — confirm & route to the Setup/Install owner (Setup/Install)",
+            "baseline_reason": "Bug flagged Needs-Team-Response and routed to Setup/Install (waited 75d) — confirm it still repros on a current build and post the Setup/Install owner's response the reporter is waiting on."
           },
           {
             "number": 37775,
@@ -2740,9 +2718,9 @@
             "fix_ready": false,
             "build_candidate": false,
             "baseline_action": "reply",
-            "baseline_glyph": "💬",
-            "baseline_text": "Confirm on current build & route (FancyZones)",
-            "baseline_reason": "Bug (FancyZones) (waited 57d) — acknowledge, confirm it still repros on a current build, and route to the area owner. We owe the team response — post it to the reporter."
+            "baseline_glyph": "📣",
+            "baseline_text": "We owe a team response — confirm & route to the FancyZones owner (FancyZones)",
+            "baseline_reason": "Bug flagged Needs-Team-Response and routed to FancyZones (waited 57d) — confirm it still repros on a current build and post the FancyZones owner's response the reporter is waiting on."
           },
           {
             "number": 46531,
@@ -2766,9 +2744,9 @@
             "fix_ready": false,
             "build_candidate": false,
             "baseline_action": "reply",
-            "baseline_glyph": "💬",
-            "baseline_text": "Confirm on current build & route (Command Palette)",
-            "baseline_reason": "Bug (Command Palette) (waited 20d) — acknowledge, confirm it still repros on a current build, and route to the area owner. We owe the team response — post it to the reporter."
+            "baseline_glyph": "📣",
+            "baseline_text": "We owe a team response — confirm & route to the Command Palette owner (Command Palette)",
+            "baseline_reason": "Bug flagged Needs-Team-Response and routed to Command Palette (waited 20d) — confirm it still repros on a current build and post the Command Palette owner's response the reporter is waiting on."
           },
           {
             "number": 43206,
@@ -2792,9 +2770,9 @@
             "fix_ready": false,
             "build_candidate": false,
             "baseline_action": "reply",
-            "baseline_glyph": "💬",
-            "baseline_text": "Confirm on current build & route (Peek)",
-            "baseline_reason": "Bug (Peek) (waited 14d) — acknowledge, confirm it still repros on a current build, and route to the area owner. We owe the team response — post it to the reporter."
+            "baseline_glyph": "📣",
+            "baseline_text": "We owe a team response — confirm & route to the Peek owner (Peek)",
+            "baseline_reason": "Bug flagged Needs-Team-Response and routed to Peek (waited 14d) — confirm it still repros on a current build and post the Peek owner's response the reporter is waiting on."
           },
           {
             "number": 23547,
@@ -2818,9 +2796,9 @@
             "fix_ready": false,
             "build_candidate": false,
             "baseline_action": "reply",
-            "baseline_glyph": "💬",
-            "baseline_text": "Confirm on current build & route (PowerToys Run)",
-            "baseline_reason": "Bug (PowerToys Run) (waited 12d) — acknowledge, confirm it still repros on a current build, and route to the area owner. We owe the team response — post it to the reporter."
+            "baseline_glyph": "📣",
+            "baseline_text": "We owe a team response — confirm & route to the PowerToys Run owner (PowerToys Run)",
+            "baseline_reason": "Bug flagged Needs-Team-Response and routed to PowerToys Run (waited 12d) — confirm it still repros on a current build and post the PowerToys Run owner's response the reporter is waiting on."
           },
           {
             "number": 45913,
@@ -2845,9 +2823,9 @@
             "fix_ready": false,
             "build_candidate": false,
             "baseline_action": "reply",
-            "baseline_glyph": "💬",
-            "baseline_text": "Confirm on current build & route (Command Palette)",
-            "baseline_reason": "Bug (Command Palette) (waited 2d) — acknowledge, confirm it still repros on a current build, and route to the area owner. We owe the team response — post it to the reporter."
+            "baseline_glyph": "📣",
+            "baseline_text": "We owe a team response — confirm & route to the Command Palette owner (Command Palette)",
+            "baseline_reason": "Bug flagged Needs-Team-Response and routed to Command Palette (waited 2d) — confirm it still repros on a current build and post the Command Palette owner's response the reporter is waiting on."
           },
           {
             "number": 15994,
@@ -2898,10 +2876,10 @@
             "awaiting": true,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "reassess_stale",
-            "baseline_glyph": "🗓️",
-            "baseline_text": "Re-verify on current build / close stale (Settings)",
-            "baseline_reason": "Very old (Settings) (waited 1133d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
+            "baseline_action": "reply",
+            "baseline_glyph": "📣",
+            "baseline_text": "We owe a team response — confirm & route to the Settings owner (Settings)",
+            "baseline_reason": "Bug flagged Needs-Team-Response and routed to Settings (waited 1133d) — confirm it still repros on a current build and post the Settings owner's response the reporter is waiting on."
           },
           {
             "number": 29834,
@@ -2949,10 +2927,10 @@
             "awaiting": true,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "reassess_stale",
-            "baseline_glyph": "🗓️",
-            "baseline_text": "Re-verify on current build / close stale (PowerToys Run)",
-            "baseline_reason": "Very old (PowerToys Run) (waited 904d) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
+            "baseline_action": "reply",
+            "baseline_glyph": "📣",
+            "baseline_text": "We owe a team response — confirm & route to the PowerToys Run owner (PowerToys Run)",
+            "baseline_reason": "Bug flagged Needs-Team-Response and routed to PowerToys Run (waited 904d) — confirm it still repros on a current build and post the PowerToys Run owner's response the reporter is waiting on."
           }
         ],
         "prs": [
@@ -3954,12 +3932,12 @@
         ],
         "awaiting_issues": 429,
         "awaiting_prs": 85,
-        "backlog_issues": 7259,
-        "backlog_prs": 120,
+        "backlog_issues": 7257,
+        "backlog_prs": 119,
         "issues_total": 429,
         "prs_total": 90,
-        "listed_issues": 7259,
-        "listed_prs": 120,
+        "listed_issues": 7257,
+        "listed_prs": 119,
         "preview_count": 40,
         "has_more_issues": true,
         "has_more_prs": true,
@@ -4050,7 +4028,7 @@
         "backlog_open_issues": null,
         "backlog_open_prs": null,
         "awaiting_reply_issues": null,
-        "awaiting_reply_prs": 8,
+        "awaiting_reply_prs": null,
         "awaiting_label": null,
         "window_label": "Daily (24h)"
       },
@@ -4638,7 +4616,7 @@
             "baseline_action": "request_info",
             "baseline_glyph": "🩺",
             "baseline_text": "Confirm crash — get repro/logs & route",
-            "baseline_reason": "Crash report (new) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner (no urgent page until confirmed)."
+            "baseline_reason": "Crash report (new) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
           },
           {
             "number": 129,
@@ -4867,7 +4845,7 @@
         "backlog_issues": 27,
         "backlog_prs": 9,
         "issues_total": 27,
-        "prs_total": 8,
+        "prs_total": 9,
         "listed_issues": 27,
         "listed_prs": 9,
         "preview_count": 40,
@@ -5183,8 +5161,8 @@
             "build_candidate": false,
             "baseline_action": "reply",
             "baseline_glyph": "💬",
-            "baseline_text": "Reply — we owe a response",
-            "baseline_reason": "Awaiting our reply (waited 55d, 433 👍 high demand) — post a team response or route it."
+            "baseline_text": "Confirm on current build & route",
+            "baseline_reason": "Bug (waited 55d, 433 👍 high demand) — acknowledge, confirm it still repros on a current build, and route to the area owner."
           },
           {
             "number": 7456,
@@ -5273,10 +5251,10 @@
             "awaiting": false,
             "fix_ready": false,
             "build_candidate": true,
-            "baseline_action": "promote",
-            "baseline_glyph": "⭐",
-            "baseline_text": "High-demand feature — roadmap decision",
-            "baseline_reason": "Popular feature ask (waited 83d, 291 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+            "baseline_action": "reply",
+            "baseline_glyph": "💬",
+            "baseline_text": "Answer the question / close as support",
+            "baseline_reason": "Looks like a question/support request (waited 83d, 291 👍 high demand) — answer it (or link docs) and close; convert to a bug/feature only if it turns out to be one."
           },
           {
             "number": 8529,
@@ -5386,7 +5364,7 @@
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
-            "build_candidate": true,
+            "build_candidate": false,
             "baseline_action": "promote",
             "baseline_glyph": "⭐",
             "baseline_text": "High-demand feature — roadmap decision",
@@ -5456,7 +5434,7 @@
             "comments": 1,
             "created_at": "2019-06-13T00:32:03Z",
             "updated_at": "2026-03-01T10:52:41Z",
-            "age_days": 136.0,
+            "age_days": 137.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -5464,7 +5442,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Confirm on current build & route",
-            "baseline_reason": "Bug (waited 136d, 121 👍 high demand) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+            "baseline_reason": "Bug (waited 137d, 121 👍 high demand) — acknowledge, confirm it still repros on a current build, and route to the area owner."
           },
           {
             "number": 4689,
@@ -5486,8 +5464,8 @@
             "build_candidate": false,
             "baseline_action": "reply",
             "baseline_glyph": "💬",
-            "baseline_text": "Reply — we owe a response",
-            "baseline_reason": "Awaiting our reply (waited 139d, 107 👍 high demand) — post a team response or route it."
+            "baseline_text": "Confirm on current build & route",
+            "baseline_reason": "Bug (waited 139d, 107 👍 high demand) — acknowledge, confirm it still repros on a current build, and route to the area owner."
           },
           {
             "number": 8995,
@@ -5848,7 +5826,7 @@
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
-            "build_candidate": true,
+            "build_candidate": false,
             "baseline_action": "promote",
             "baseline_glyph": "⭐",
             "baseline_text": "High-demand feature — roadmap decision",
@@ -5894,7 +5872,7 @@
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
-            "build_candidate": true,
+            "build_candidate": false,
             "baseline_action": "promote",
             "baseline_glyph": "⭐",
             "baseline_text": "High-demand feature — roadmap decision",
@@ -7000,7 +6978,7 @@
             "triaged": true,
             "awaiting": false,
             "fix_ready": false,
-            "build_candidate": true,
+            "build_candidate": false,
             "baseline_action": "promote",
             "baseline_glyph": "⭐",
             "baseline_text": "High-demand feature — roadmap decision",
@@ -7042,7 +7020,7 @@
             "comments": 1,
             "created_at": "2021-03-09T00:12:56Z",
             "updated_at": "2026-01-20T10:12:58Z",
-            "age_days": 176.0,
+            "age_days": 177.0,
             "triaged": true,
             "awaiting": false,
             "fix_ready": false,
@@ -7050,7 +7028,7 @@
             "baseline_action": "promote",
             "baseline_glyph": "⭐",
             "baseline_text": "High-demand feature — roadmap decision",
-            "baseline_reason": "Popular feature ask (waited 176d, 61 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+            "baseline_reason": "Popular feature ask (waited 177d, 61 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
           },
           {
             "number": 894,
@@ -7071,10 +7049,10 @@
             "awaiting": false,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "reply",
-            "baseline_glyph": "💬",
-            "baseline_text": "Reply — we owe a response",
-            "baseline_reason": "Awaiting our reply (waited 34d, 48 👍 high demand) — post a team response or route it."
+            "baseline_action": "no_action",
+            "baseline_glyph": "🚧",
+            "baseline_text": "In progress — track the fix",
+            "baseline_reason": "Already being worked (waited 34d, 48 👍 high demand) — a fix/PR is in flight; track it to completion, don't re-triage or close."
           },
           {
             "number": 1148,
@@ -7094,10 +7072,10 @@
             "awaiting": false,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "reassess_stale",
-            "baseline_glyph": "🗓️",
-            "baseline_text": "Re-verify on current build / close stale",
-            "baseline_reason": "Very old (waited 411d, 46 👍 high demand) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
+            "baseline_action": "reply",
+            "baseline_glyph": "💬",
+            "baseline_text": "Confirm on current build & route",
+            "baseline_reason": "Bug (waited 411d, 46 👍 high demand) — acknowledge, confirm it still repros on a current build, and route to the area owner."
           },
           {
             "number": 158,
@@ -7135,7 +7113,7 @@
             "comments": 1,
             "created_at": "2021-06-14T14:44:41Z",
             "updated_at": "2026-02-19T10:53:23Z",
-            "age_days": 146.0,
+            "age_days": 147.0,
             "triaged": true,
             "awaiting": false,
             "fix_ready": false,
@@ -7143,7 +7121,7 @@
             "baseline_action": "promote",
             "baseline_glyph": "⭐",
             "baseline_text": "High-demand feature — roadmap decision",
-            "baseline_reason": "Popular feature ask (waited 146d, 41 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+            "baseline_reason": "Popular feature ask (waited 147d, 41 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
           },
           {
             "number": 1130,
@@ -7163,10 +7141,10 @@
             "awaiting": false,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "reassess_stale",
-            "baseline_glyph": "🗓️",
-            "baseline_text": "Re-verify on current build / close stale",
-            "baseline_reason": "Very old (waited 862d, 39 👍 high demand) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
+            "baseline_action": "reply",
+            "baseline_glyph": "💬",
+            "baseline_text": "Reply — we owe a response",
+            "baseline_reason": "Awaiting our reply (waited 862d, 39 👍 high demand) — post a team response or route it."
           },
           {
             "number": 96,
@@ -7187,10 +7165,10 @@
             "awaiting": false,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "reassess_stale",
-            "baseline_glyph": "🗓️",
-            "baseline_text": "Re-verify on current build / close stale",
-            "baseline_reason": "Very old (waited 919d, 37 👍 high demand) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
+            "baseline_action": "reply",
+            "baseline_glyph": "💬",
+            "baseline_text": "Confirm on current build & route",
+            "baseline_reason": "Bug (waited 919d, 37 👍 high demand) — acknowledge, confirm it still repros on a current build, and route to the area owner."
           },
           {
             "number": 101,
@@ -7209,7 +7187,7 @@
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
-            "build_candidate": true,
+            "build_candidate": false,
             "baseline_action": "promote",
             "baseline_glyph": "⭐",
             "baseline_text": "High-demand feature — roadmap decision",
@@ -7232,11 +7210,11 @@
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
-            "build_candidate": true,
-            "baseline_action": "promote",
-            "baseline_glyph": "⭐",
-            "baseline_text": "High-demand feature — roadmap decision",
-            "baseline_reason": "Popular feature ask (waited 1332d, 34 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+            "build_candidate": false,
+            "baseline_action": "reply",
+            "baseline_glyph": "💬",
+            "baseline_text": "Answer the question / close as support",
+            "baseline_reason": "Looks like a question/support request (waited 1332d, 34 👍 high demand) — answer it (or link docs) and close; convert to a bug/feature only if it turns out to be one."
           },
           {
             "number": 84,
@@ -7281,10 +7259,10 @@
             "awaiting": false,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "reassess_stale",
-            "baseline_glyph": "🗓️",
-            "baseline_text": "Re-verify on current build / close stale",
-            "baseline_reason": "Very old (waited 758d, 28 👍 high demand) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
+            "baseline_action": "reply",
+            "baseline_glyph": "💬",
+            "baseline_text": "Confirm on current build & route",
+            "baseline_reason": "Bug (waited 758d, 28 👍 high demand) — acknowledge, confirm it still repros on a current build, and route to the area owner."
           },
           {
             "number": 443,
@@ -7306,10 +7284,10 @@
             "awaiting": false,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "reply",
-            "baseline_glyph": "💬",
-            "baseline_text": "Confirm on current build & route",
-            "baseline_reason": "Bug (waited 319d, 28 👍 high demand) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+            "baseline_action": "reassess_stale",
+            "baseline_glyph": "🔁",
+            "baseline_text": "Verify duplicate & close/link",
+            "baseline_reason": "Marked duplicate (waited 319d, 28 👍 high demand) — confirm the canonical issue, link it, and close this as a duplicate."
           },
           {
             "number": 841,
@@ -7329,12 +7307,12 @@
             "age_days": 83.0,
             "triaged": true,
             "awaiting": false,
-            "fix_ready": true,
+            "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "reply",
-            "baseline_glyph": "💬",
-            "baseline_text": "Confirm on current build & route",
-            "baseline_reason": "Bug (waited 83d, 25 👍 high demand) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+            "baseline_action": "no_action",
+            "baseline_glyph": "🚧",
+            "baseline_text": "In progress — track the fix",
+            "baseline_reason": "Already being worked (waited 83d, 25 👍 high demand) — a fix/PR is in flight; track it to completion, don't re-triage or close."
           },
           {
             "number": 529,
@@ -7543,9 +7521,9 @@
             "fix_ready": false,
             "build_candidate": false,
             "baseline_action": "reassess_stale",
-            "baseline_glyph": "🗓️",
-            "baseline_text": "Re-verify on current build / close stale",
-            "baseline_reason": "Very old (waited 875d, 18 👍) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
+            "baseline_glyph": "🔁",
+            "baseline_text": "Verify duplicate & close/link",
+            "baseline_reason": "Marked duplicate (waited 875d, 18 👍) — confirm the canonical issue, link it, and close this as a duplicate."
           },
           {
             "number": 1015,
@@ -7612,10 +7590,10 @@
             "awaiting": false,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "promote",
-            "baseline_glyph": "⭐",
-            "baseline_text": "High-demand feature — roadmap decision",
-            "baseline_reason": "Popular feature ask (waited 1425d, 17 👍) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+            "baseline_action": "reply",
+            "baseline_glyph": "💬",
+            "baseline_text": "Decide on this feature request",
+            "baseline_reason": "Feature/idea (waited 1425d, 17 👍). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
           },
           {
             "number": 614,
@@ -7636,10 +7614,10 @@
             "awaiting": false,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "reassess_stale",
-            "baseline_glyph": "🗓️",
-            "baseline_text": "Re-verify on current build / close stale",
-            "baseline_reason": "Very old (waited 380d, 17 👍) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
+            "baseline_action": "reply",
+            "baseline_glyph": "💬",
+            "baseline_text": "Confirm on current build & route",
+            "baseline_reason": "Bug (waited 380d, 17 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
           },
           {
             "number": 632,
@@ -7682,10 +7660,10 @@
             "awaiting": false,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "promote",
-            "baseline_glyph": "⭐",
-            "baseline_text": "High-demand feature — roadmap decision",
-            "baseline_reason": "Popular feature ask (waited 1654d, 16 👍) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+            "baseline_action": "reply",
+            "baseline_glyph": "💬",
+            "baseline_text": "Decide on this feature request",
+            "baseline_reason": "Feature/idea (waited 1654d, 16 👍). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
           },
           {
             "number": 728,
@@ -7705,12 +7683,12 @@
             "age_days": 1066.0,
             "triaged": false,
             "awaiting": false,
-            "fix_ready": true,
+            "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "reassess_stale",
-            "baseline_glyph": "🗓️",
-            "baseline_text": "Re-verify on current build / close stale",
-            "baseline_reason": "Very old (waited 1066d, 16 👍) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
+            "baseline_action": "no_action",
+            "baseline_glyph": "🚧",
+            "baseline_text": "In progress — track the fix",
+            "baseline_reason": "Already being worked (waited 1066d, 16 👍) — a fix/PR is in flight; track it to completion, don't re-triage or close."
           },
           {
             "number": 1290,
@@ -7753,10 +7731,10 @@
             "awaiting": false,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "promote",
-            "baseline_glyph": "⭐",
-            "baseline_text": "High-demand feature — roadmap decision",
-            "baseline_reason": "Popular feature ask (waited 1605d, 15 👍) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+            "baseline_action": "request_info",
+            "baseline_glyph": "❓",
+            "baseline_text": "Ask for scope / concrete proposal",
+            "baseline_reason": "Feature ask (waited 1605d, 15 👍) is too vague to act on — ask the author for a concrete scenario, expected behaviour and scope before a decision."
           },
           {
             "number": 722,
@@ -7777,10 +7755,10 @@
             "awaiting": false,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "reassess_stale",
-            "baseline_glyph": "🗓️",
-            "baseline_text": "Re-verify on current build / close stale",
-            "baseline_reason": "Very old (waited 1435d, 15 👍) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
+            "baseline_action": "reply",
+            "baseline_glyph": "💬",
+            "baseline_text": "Confirm on current build & route",
+            "baseline_reason": "Bug (waited 1435d, 15 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
           },
           {
             "number": 584,
@@ -7801,10 +7779,10 @@
             "awaiting": false,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "reassess_stale",
-            "baseline_glyph": "🗓️",
-            "baseline_text": "Re-verify on current build / close stale",
-            "baseline_reason": "Very old (waited 657d, 15 👍) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
+            "baseline_action": "reply",
+            "baseline_glyph": "💬",
+            "baseline_text": "Confirm on current build & route",
+            "baseline_reason": "Bug (waited 657d, 15 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
           },
           {
             "number": 1244,
@@ -7824,10 +7802,10 @@
             "awaiting": false,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "reassess_stale",
-            "baseline_glyph": "🗓️",
-            "baseline_text": "Re-verify on current build / close stale",
-            "baseline_reason": "Very old (waited 367d, 15 👍) — re-test on a current build, then make a keep-backlog vs close-as-stale decision."
+            "baseline_action": "reply",
+            "baseline_glyph": "💬",
+            "baseline_text": "Confirm on current build & route",
+            "baseline_reason": "Bug (waited 367d, 15 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
           },
           {
             "number": 173,
@@ -7843,15 +7821,15 @@
             "comments": 1,
             "created_at": "2021-05-08T07:31:52Z",
             "updated_at": "2025-12-11T10:21:59Z",
-            "age_days": 216.0,
+            "age_days": 217.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
             "build_candidate": false,
-            "baseline_action": "promote",
-            "baseline_glyph": "⭐",
-            "baseline_text": "High-demand feature — roadmap decision",
-            "baseline_reason": "Popular feature ask (waited 216d, 15 👍) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+            "baseline_action": "reply",
+            "baseline_glyph": "💬",
+            "baseline_text": "Decide on this feature request",
+            "baseline_reason": "Feature/idea (waited 217d, 15 👍). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
           }
         ],
         "prs": [

@@ -1,13 +1,13 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-07-15T14:05:07Z",
+  "generated_at": "2026-07-15T15:00:19Z",
   "awaiting_label": "Needs-Triage",
   "awaiting_issues": 31,
-  "awaiting_prs": 24,
+  "awaiting_prs": 23,
   "backlog_issues": 38,
-  "backlog_prs": 26,
+  "backlog_prs": 25,
   "issues_total": 31,
-  "prs_total": 24,
+  "prs_total": 23,
   "issues": [
     {
       "number": 231,
@@ -289,10 +289,10 @@
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "label_only",
-      "baseline_glyph": "🏷️",
-      "baseline_text": "Triage — classify type & route",
-      "baseline_reason": "Untriaged (waited 35d) — set the type (bug/idea) + area labels first, then route to the owner."
+      "baseline_action": "reply",
+      "baseline_glyph": "💬",
+      "baseline_text": "Triage idea — scope then decide",
+      "baseline_reason": "New untriaged idea (waited 35d) — classify it and either ask for scope or make an early accept/park call."
     },
     {
       "number": 203,
@@ -512,7 +512,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "🩺",
       "baseline_text": "Confirm crash — get repro/logs & route",
-      "baseline_reason": "Crash report (waited 28d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner (no urgent page until confirmed)."
+      "baseline_reason": "Crash report (waited 28d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
     },
     {
       "number": 325,
@@ -607,10 +607,10 @@
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "label_only",
-      "baseline_glyph": "🏷️",
-      "baseline_text": "Triage — classify type & route",
-      "baseline_reason": "Untriaged (waited 23d) — set the type (bug/idea) + area labels first, then route to the owner."
+      "baseline_action": "reply",
+      "baseline_glyph": "💬",
+      "baseline_text": "Triage idea — scope then decide",
+      "baseline_reason": "New untriaged idea (waited 23d) — classify it and either ask for scope or make an early accept/park call."
     },
     {
       "number": 346,
@@ -737,7 +737,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "🩺",
       "baseline_text": "Confirm crash — get repro/logs & route",
-      "baseline_reason": "Crash report (waited 9d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner (no urgent page until confirmed)."
+      "baseline_reason": "Crash report (waited 9d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
     },
     {
       "number": 386,
@@ -1384,7 +1384,7 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-07-15T09:24:55Z",
-      "updated_at": "2026-07-15T13:50:52Z",
+      "updated_at": "2026-07-15T14:41:54Z",
       "age_days": 0.0,
       "triaged": false,
       "awaiting": true,
@@ -1419,28 +1419,6 @@
       "baseline_reason": "PR (new) — review it."
     },
     {
-      "number": 417,
-      "title": "Add store-listing-localizer agent skill",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/417",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-07-15T13:37:30Z",
-      "updated_at": "2026-07-15T13:56:53Z",
-      "age_days": 0.0,
-      "triaged": false,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (new) — review it."
-    },
-    {
       "number": 418,
       "title": "Recognize profile-defined aliases; make resolve_command profile-aware (#286)",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/418",
@@ -1450,7 +1428,7 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-07-15T13:51:32Z",
-      "updated_at": "2026-07-15T13:58:49Z",
+      "updated_at": "2026-07-15T14:32:35Z",
       "age_days": 0.0,
       "triaged": false,
       "awaiting": true,
