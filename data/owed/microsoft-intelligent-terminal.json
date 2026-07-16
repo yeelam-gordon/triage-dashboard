@@ -1,6 +1,6 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-07-16T09:28:39Z",
+  "generated_at": "2026-07-16T12:05:17Z",
   "awaiting_label": "Needs-Triage",
   "awaiting_issues": 30,
   "awaiting_prs": 19,
@@ -24,7 +24,7 @@
       "comments": 1,
       "created_at": "2026-06-04T15:31:43Z",
       "updated_at": "2026-06-28T06:17:42Z",
-      "age_days": 18.0,
+      "age_days": 19.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -32,7 +32,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 18d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 19d) — correct them, then route."
     },
     {
       "number": 192,
@@ -47,7 +47,7 @@
       "comments": 1,
       "created_at": "2026-06-02T18:31:10Z",
       "updated_at": "2026-07-10T05:47:39Z",
-      "age_days": 6.0,
+      "age_days": 7.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -55,7 +55,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 6d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_reason": "Feature/idea (waited 7d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     },
     {
       "number": 333,
@@ -310,7 +310,7 @@
       "comments": 1,
       "created_at": "2026-06-11T07:45:42Z",
       "updated_at": "2026-06-11T07:46:16Z",
-      "age_days": 35.0,
+      "age_days": 36.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -318,7 +318,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 35d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 36d) — correct them, then route."
     },
     {
       "number": 276,
@@ -635,7 +635,7 @@
       "comments": 1,
       "created_at": "2026-06-12T07:59:39Z",
       "updated_at": "2026-07-03T07:18:17Z",
-      "age_days": 13.0,
+      "age_days": 14.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -643,7 +643,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 13d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 14d) — correct them, then route."
     },
     {
       "number": 384,
@@ -670,6 +670,53 @@
       "baseline_reason": "Crash report (waited 10d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
     },
     {
+      "number": 189,
+      "title": "No 'thinking/processing' indicator shown when a tool operation needs an 'allow' confirmation",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/189",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "Needs-Triage"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-06-02T11:56:48Z",
+      "updated_at": "2026-07-16T06:38:15Z",
+      "age_days": 1.0,
+      "triaged": true,
+      "awaiting": true,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "reply",
+      "baseline_glyph": "💬",
+      "baseline_text": "Triage idea — scope then decide",
+      "baseline_reason": "New untriaged idea (waited 1d) — classify it and either ask for scope or make an early accept/park call."
+    },
+    {
+      "number": 386,
+      "title": "Stucked on loading",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/386",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "Issue-Bug",
+        "Needs-Triage"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-07-07T06:26:21Z",
+      "updated_at": "2026-07-16T07:38:53Z",
+      "age_days": 1.0,
+      "triaged": true,
+      "awaiting": true,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "request_info",
+      "baseline_glyph": "❓",
+      "baseline_text": "Request exact repro, version & logs",
+      "baseline_reason": "Bug (waited 1d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+    },
+    {
       "number": 421,
       "title": "Make PATH-based command lookup / near-match shell-agnostic (currently PowerShell-only)",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/421",
@@ -692,53 +739,6 @@
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
       "baseline_reason": "Wrong/missing tags (waited 1d) — correct them, then route."
-    },
-    {
-      "number": 189,
-      "title": "No 'thinking/processing' indicator shown when a tool operation needs an 'allow' confirmation",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/189",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "Needs-Triage"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-06-02T11:56:48Z",
-      "updated_at": "2026-07-16T06:38:15Z",
-      "age_days": 0.0,
-      "triaged": true,
-      "awaiting": true,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Triage idea — scope then decide",
-      "baseline_reason": "New untriaged idea (new) — classify it and either ask for scope or make an early accept/park call."
-    },
-    {
-      "number": 386,
-      "title": "Stucked on loading",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/386",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "Issue-Bug",
-        "Needs-Triage"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-07-07T06:26:21Z",
-      "updated_at": "2026-07-16T07:38:53Z",
-      "age_days": 0.0,
-      "triaged": true,
-      "awaiting": true,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "❓",
-      "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (new) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 200,
@@ -1230,7 +1230,7 @@
       "comments": 1,
       "created_at": "2026-07-03T05:26:14Z",
       "updated_at": "2026-07-03T05:31:53Z",
-      "age_days": 13.0,
+      "age_days": 14.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -1239,7 +1239,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 13d) — review it."
+      "baseline_reason": "PR (waited 14d) — review it."
     },
     {
       "number": 373,
@@ -1296,7 +1296,7 @@
       "comments": 1,
       "created_at": "2026-07-09T08:20:31Z",
       "updated_at": "2026-07-15T06:17:58Z",
-      "age_days": 1.0,
+      "age_days": 2.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -1305,7 +1305,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 1d) — review it."
+      "baseline_reason": "PR (waited 2d) — review it."
     },
     {
       "number": 426,
@@ -1319,7 +1319,7 @@
       "created_at": "2026-07-16T08:19:23Z",
       "updated_at": "2026-07-16T09:16:55Z",
       "age_days": 0.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1362,7 +1362,7 @@
       "comments": 1,
       "created_at": "2026-05-31T07:48:32Z",
       "updated_at": "2026-05-31T07:57:16Z",
-      "age_days": 46.0,
+      "age_days": 47.0,
       "triaged": false,
       "awaiting": false,
       "is_draft": true,
@@ -1371,7 +1371,7 @@
       "baseline_action": "wait_author",
       "baseline_glyph": "🚧",
       "baseline_text": "Wait — PR is a draft/WIP",
-      "baseline_reason": "Draft/WIP PR (waited 46d) — don't review yet; nudge the author to mark it ready."
+      "baseline_reason": "Draft/WIP PR (waited 47d) — don't review yet; nudge the author to mark it ready."
     },
     {
       "number": 218,
