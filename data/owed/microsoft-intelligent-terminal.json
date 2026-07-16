@@ -1,13 +1,13 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-07-16T06:19:18Z",
+  "generated_at": "2026-07-16T09:28:39Z",
   "awaiting_label": "Needs-Triage",
-  "awaiting_issues": 32,
-  "awaiting_prs": 20,
-  "backlog_issues": 39,
-  "backlog_prs": 25,
-  "issues_total": 32,
-  "prs_total": 20,
+  "awaiting_issues": 30,
+  "awaiting_prs": 19,
+  "backlog_issues": 37,
+  "backlog_prs": 24,
+  "issues_total": 30,
+  "prs_total": 19,
   "issues": [
     {
       "number": 231,
@@ -96,7 +96,7 @@
       "comments": 1,
       "created_at": "2026-06-24T01:08:25Z",
       "updated_at": "2026-06-24T04:51:23Z",
-      "age_days": 22.0,
+      "age_days": 23.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -104,7 +104,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 22d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_reason": "Bug (waited 23d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 248,
@@ -169,53 +169,7 @@
       "comments": 1,
       "created_at": "2026-06-03T01:30:33Z",
       "updated_at": "2026-06-04T03:52:02Z",
-      "age_days": 42.0,
-      "triaged": false,
-      "awaiting": true,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm type (bug/feature) & route",
-      "baseline_reason": "Untyped report (waited 42d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
-    },
-    {
-      "number": 189,
-      "title": "No 'thinking/processing' indicator shown when a tool operation needs an 'allow' confirmation",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/189",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "Needs-Triage"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-06-02T11:56:48Z",
-      "updated_at": "2026-06-11T02:06:43Z",
-      "age_days": 36.0,
-      "triaged": true,
-      "awaiting": true,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Triage idea — scope then decide",
-      "baseline_reason": "New untriaged idea (waited 36d) — classify it and either ask for scope or make an early accept/park call."
-    },
-    {
-      "number": 190,
-      "title": "Pasting multiple lines into agent pane chat executes each line as a separate command",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/190",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "Needs-Triage"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-06-02T11:59:11Z",
-      "updated_at": "2026-06-11T02:07:01Z",
-      "age_days": 36.0,
+      "age_days": 43.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -223,7 +177,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm type (bug/feature) & route",
-      "baseline_reason": "Untyped report (waited 36d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+      "baseline_reason": "Untyped report (waited 43d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
     },
     {
       "number": 193,
@@ -239,7 +193,7 @@
       "created_at": "2026-06-03T01:21:45Z",
       "updated_at": "2026-06-11T02:07:06Z",
       "age_days": 36.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -262,7 +216,7 @@
       "created_at": "2026-06-03T01:29:02Z",
       "updated_at": "2026-06-11T02:07:08Z",
       "age_days": 36.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -285,7 +239,7 @@
       "created_at": "2026-06-03T01:38:29Z",
       "updated_at": "2026-06-11T02:07:11Z",
       "age_days": 36.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -308,7 +262,7 @@
       "created_at": "2026-06-03T08:42:40Z",
       "updated_at": "2026-06-11T02:07:21Z",
       "age_days": 36.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -332,7 +286,7 @@
       "created_at": "2026-06-11T00:59:30Z",
       "updated_at": "2026-06-11T02:07:59Z",
       "age_days": 36.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -357,7 +311,7 @@
       "created_at": "2026-06-11T07:45:42Z",
       "updated_at": "2026-06-11T07:46:16Z",
       "age_days": 35.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -407,7 +361,7 @@
       "comments": 1,
       "created_at": "2026-06-12T14:52:42Z",
       "updated_at": "2026-06-16T04:34:26Z",
-      "age_days": 30.0,
+      "age_days": 31.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -415,7 +369,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 30d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 31d) — correct them, then route."
     },
     {
       "number": 291,
@@ -716,54 +670,6 @@
       "baseline_reason": "Crash report (waited 10d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
     },
     {
-      "number": 386,
-      "title": "Stucked on loading sessions",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/386",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "Issue-Bug",
-        "Needs-Triage"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-07-07T06:26:21Z",
-      "updated_at": "2026-07-15T01:41:42Z",
-      "age_days": 2.0,
-      "triaged": true,
-      "awaiting": true,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "❓",
-      "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 2d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
-    },
-    {
-      "number": 419,
-      "title": "Closing an agent tab mid-turn kills the shared agent CLI and breaks every other tab",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/419",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "Needs-Triage",
-        "Needs-Tag-Fix"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-07-16T00:28:16Z",
-      "updated_at": "2026-07-16T00:28:48Z",
-      "age_days": 1.0,
-      "triaged": true,
-      "awaiting": true,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "label_only",
-      "baseline_glyph": "🏷️",
-      "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 1d) — correct them, then route."
-    },
-    {
       "number": 421,
       "title": "Make PATH-based command lookup / near-match shell-agnostic (currently PowerShell-only)",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/421",
@@ -788,6 +694,53 @@
       "baseline_reason": "Wrong/missing tags (waited 1d) — correct them, then route."
     },
     {
+      "number": 189,
+      "title": "No 'thinking/processing' indicator shown when a tool operation needs an 'allow' confirmation",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/189",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "Needs-Triage"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-06-02T11:56:48Z",
+      "updated_at": "2026-07-16T06:38:15Z",
+      "age_days": 0.0,
+      "triaged": true,
+      "awaiting": true,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "reply",
+      "baseline_glyph": "💬",
+      "baseline_text": "Triage idea — scope then decide",
+      "baseline_reason": "New untriaged idea (new) — classify it and either ask for scope or make an early accept/park call."
+    },
+    {
+      "number": 386,
+      "title": "Stucked on loading",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/386",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "Issue-Bug",
+        "Needs-Triage"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-07-07T06:26:21Z",
+      "updated_at": "2026-07-16T07:38:53Z",
+      "age_days": 0.0,
+      "triaged": true,
+      "awaiting": true,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "request_info",
+      "baseline_glyph": "❓",
+      "baseline_text": "Request exact repro, version & logs",
+      "baseline_reason": "Bug (new) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+    },
+    {
       "number": 200,
       "title": "Support WSL terminals",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/200",
@@ -802,7 +755,7 @@
       "comments": 1,
       "created_at": "2026-06-03T07:06:39Z",
       "updated_at": "2026-06-24T03:16:46Z",
-      "age_days": 22.0,
+      "age_days": 23.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -810,7 +763,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 22d, 7 👍) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 23d, 7 👍) — correct them, then route."
     },
     {
       "number": 228,
@@ -898,7 +851,7 @@
       "comments": 1,
       "created_at": "2026-06-12T01:46:06Z",
       "updated_at": "2026-06-16T04:27:15Z",
-      "age_days": 30.0,
+      "age_days": 31.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -906,7 +859,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 30d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 31d) — correct them, then route."
     },
     {
       "number": 259,
@@ -1036,7 +989,7 @@
       "created_at": "2026-05-31T13:02:26Z",
       "updated_at": "2026-06-01T13:27:42Z",
       "age_days": 45.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1058,7 +1011,7 @@
       "created_at": "2026-06-02T06:11:49Z",
       "updated_at": "2026-06-04T01:22:36Z",
       "age_days": 43.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1080,7 +1033,7 @@
       "created_at": "2026-06-11T00:15:22Z",
       "updated_at": "2026-06-12T13:23:22Z",
       "age_days": 34.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1102,7 +1055,7 @@
       "created_at": "2026-06-12T02:00:08Z",
       "updated_at": "2026-06-15T01:05:22Z",
       "age_days": 32.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1355,18 +1308,18 @@
       "baseline_reason": "PR (waited 1d) — review it."
     },
     {
-      "number": 415,
-      "title": "Fix multiline paste into agent pane input",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/415",
+      "number": 426,
+      "title": "fix(wta): cap agent_client_protocol at info in debug log filter",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/426",
       "kind": "pr",
       "is_community": null,
       "labels": [],
       "up": 0,
       "comments": 1,
-      "created_at": "2026-07-15T09:24:55Z",
-      "updated_at": "2026-07-16T02:13:36Z",
-      "age_days": 1.0,
-      "triaged": true,
+      "created_at": "2026-07-16T08:19:23Z",
+      "updated_at": "2026-07-16T09:16:55Z",
+      "age_days": 0.0,
+      "triaged": false,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1374,29 +1327,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 1d) — review it."
-    },
-    {
-      "number": 420,
-      "title": "Cancel orphaned sessions on helper disconnect so the shared agent CLI survives (#419)",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/420",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-07-16T00:31:33Z",
-      "updated_at": "2026-07-16T01:58:47Z",
-      "age_days": 1.0,
-      "triaged": true,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 1d) — review it."
+      "baseline_reason": "PR (new) — review it."
     },
     {
       "number": 22,
@@ -1453,7 +1384,7 @@
       "comments": 1,
       "created_at": "2026-06-04T06:14:02Z",
       "updated_at": "2026-07-16T05:05:55Z",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "triaged": true,
       "awaiting": false,
       "is_draft": false,
@@ -1462,7 +1393,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (new) — review it."
+      "baseline_reason": "PR (waited 1d) — review it."
     },
     {
       "number": 408,
@@ -1475,7 +1406,7 @@
       "comments": 1,
       "created_at": "2026-07-14T13:18:35Z",
       "updated_at": "2026-07-16T05:05:22Z",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "triaged": true,
       "awaiting": false,
       "is_draft": false,
@@ -1484,7 +1415,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (new) — review it."
+      "baseline_reason": "PR (waited 1d) — review it."
     },
     {
       "number": 422,
@@ -1497,7 +1428,7 @@
       "comments": 1,
       "created_at": "2026-07-16T03:12:01Z",
       "updated_at": "2026-07-16T05:05:31Z",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "triaged": true,
       "awaiting": false,
       "is_draft": false,
@@ -1506,7 +1437,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (new) — review it."
+      "baseline_reason": "PR (waited 1d) — review it."
     }
   ]
 }
