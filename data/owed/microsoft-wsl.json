@@ -1,6 +1,6 @@
 {
   "repo": "microsoft/WSL",
-  "generated_at": "2026-07-16T03:15:55Z",
+  "generated_at": "2026-07-16T03:39:11Z",
   "awaiting_label": "needs-attention",
   "awaiting_issues": 4,
   "awaiting_prs": 27,
@@ -992,7 +992,7 @@
       "comments": 1,
       "created_at": "2021-05-17T15:01:09Z",
       "updated_at": "2026-03-04T23:28:14Z",
-      "age_days": 133.0,
+      "age_days": 134.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -1000,7 +1000,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm type (bug/feature) & route",
-      "baseline_reason": "Untyped report (waited 133d, 41 👍 high demand) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+      "baseline_reason": "Untyped report (waited 134d, 41 👍 high demand) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
     },
     {
       "number": 11293,
@@ -1801,10 +1801,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "promote",
-      "baseline_glyph": "⭐",
-      "baseline_text": "High-demand feature — roadmap decision",
-      "baseline_reason": "Popular feature ask (waited 665d, 24 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+      "baseline_action": "label_only",
+      "baseline_glyph": "🔗",
+      "baseline_text": "Track the external dependency / blocker",
+      "baseline_reason": "Blocked on an external/upstream dependency (waited 665d, 24 👍 high demand) — record the blocker + upstream link and track it; don't treat as a normal roadmap/repro item."
     },
     {
       "number": 7547,
@@ -2246,7 +2246,7 @@
       "comments": 1,
       "created_at": "2021-01-19T17:38:44Z",
       "updated_at": "2026-06-27T23:28:15Z",
-      "age_days": 18.0,
+      "age_days": 19.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -2254,7 +2254,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm type (bug/feature) & route",
-      "baseline_reason": "Untyped report (waited 18d, 19 👍) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+      "baseline_reason": "Untyped report (waited 19d, 19 👍) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
     },
     {
       "number": 791,
@@ -2727,7 +2727,7 @@
       "comments": 1,
       "created_at": "2023-04-14T07:13:17Z",
       "updated_at": "2026-07-04T23:17:11Z",
-      "age_days": 11.0,
+      "age_days": 12.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -2735,7 +2735,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm type (bug/feature) & route",
-      "baseline_reason": "Untyped report (waited 11d, 15 👍) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+      "baseline_reason": "Untyped report (waited 12d, 15 👍) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
     },
     {
       "number": 6874,
@@ -3441,7 +3441,7 @@
       "comments": 1,
       "created_at": "2019-02-07T04:12:26Z",
       "updated_at": "2020-06-23T23:39:05Z",
-      "age_days": 2213.0,
+      "age_days": 2214.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -3449,7 +3449,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 2213d, 9 👍) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_reason": "Old feature ask (waited 2214d, 9 👍) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 6114,
@@ -5904,10 +5904,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm type (bug/feature) & route",
-      "baseline_reason": "Untyped report (waited 44d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+      "baseline_action": "label_only",
+      "baseline_glyph": "🔗",
+      "baseline_text": "Track the external dependency / blocker",
+      "baseline_reason": "Blocked on an external/upstream dependency (waited 44d) — record the blocker + upstream link and track it; don't treat as a normal roadmap/repro item."
     },
     {
       "number": 40736,
@@ -6132,7 +6132,7 @@
       "comments": 1,
       "created_at": "2020-11-15T21:55:22Z",
       "updated_at": "2020-11-16T23:32:07Z",
-      "age_days": 2067.0,
+      "age_days": 2068.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -6140,7 +6140,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 2067d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_reason": "Old feature ask (waited 2068d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 2443,
@@ -6847,7 +6847,7 @@
       "comments": 1,
       "created_at": "2025-09-05T21:51:09Z",
       "updated_at": "2025-09-22T23:22:20Z",
-      "age_days": 296.0,
+      "age_days": 297.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -6855,7 +6855,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 296d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_reason": "Bug (waited 297d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 12601,
@@ -8809,7 +8809,7 @@
       "created_at": "2026-07-13T00:54:23Z",
       "updated_at": "2026-07-13T02:38:39Z",
       "age_days": 3.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
@@ -9710,7 +9710,7 @@
       "comments": 1,
       "created_at": "2024-04-15T15:23:12Z",
       "updated_at": "2024-09-13T23:22:42Z",
-      "age_days": 670.0,
+      "age_days": 671.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -9718,7 +9718,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 670d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_reason": "Old feature ask (waited 671d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 12143,
@@ -10846,7 +10846,7 @@
       "created_at": "2026-07-06T01:28:01Z",
       "updated_at": "2026-07-09T14:58:28Z",
       "age_days": 7.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
@@ -13708,7 +13708,7 @@
       "comments": 1,
       "created_at": "2024-04-09T10:24:05Z",
       "updated_at": "2024-04-09T23:31:28Z",
-      "age_days": 827.0,
+      "age_days": 828.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -13716,7 +13716,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 827d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_reason": "Old feature ask (waited 828d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 11452,
@@ -13765,6 +13765,29 @@
       "baseline_reason": "Old feature ask (waited 820d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
+      "number": 5291,
+      "title": "Start a distro with fixed MAC address on WSL2",
+      "url": "https://github.com/microsoft/WSL/issues/5291",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "feature"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2020-05-29T13:45:29Z",
+      "updated_at": "2024-04-18T23:27:04Z",
+      "age_days": 819.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Stale idea — decline or close for low demand",
+      "baseline_reason": "Old feature ask (waited 819d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+    },
+    {
       "number": 8110,
       "title": "Support for multiple ethernet virtual adaptors in WSL2",
       "url": "https://github.com/microsoft/WSL/issues/8110",
@@ -13786,29 +13809,6 @@
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
       "baseline_reason": "Old feature ask (waited 819d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
-    },
-    {
-      "number": 5291,
-      "title": "Start a distro with fixed MAC address on WSL2",
-      "url": "https://github.com/microsoft/WSL/issues/5291",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "feature"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2020-05-29T13:45:29Z",
-      "updated_at": "2024-04-18T23:27:04Z",
-      "age_days": 818.0,
-      "triaged": false,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "reassess_stale",
-      "baseline_glyph": "🗓️",
-      "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 818d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 8564,
@@ -14031,7 +14031,7 @@
       "comments": 1,
       "created_at": "2023-03-03T21:52:58Z",
       "updated_at": "2024-07-21T23:23:30Z",
-      "age_days": 724.0,
+      "age_days": 725.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -14039,7 +14039,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 724d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_reason": "Old feature ask (waited 725d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 11866,
@@ -15200,10 +15200,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "❓",
-      "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 366d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 366d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 13247,
@@ -15223,10 +15223,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "❓",
-      "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 365d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 365d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 11823,
@@ -15247,9 +15247,9 @@
       "fix_ready": false,
       "build_candidate": false,
       "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 364d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_glyph": "🗂️",
+      "baseline_text": "Low-traction idea — park or decline",
+      "baseline_reason": "Feature ask (waited 364d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
     },
     {
       "number": 13014,
@@ -15314,10 +15314,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "❓",
-      "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 357d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Ageing, unconfirmed bug — revalidate",
+      "baseline_reason": "Bug (waited 357d) sat 180+ days with no traction — re-test on a current build; request repro/logs or close stale if it no longer repros."
     },
     {
       "number": 11997,
@@ -15359,9 +15359,9 @@
       "fix_ready": false,
       "build_candidate": false,
       "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 356d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_glyph": "🗂️",
+      "baseline_text": "Low-traction idea — park or decline",
+      "baseline_reason": "Feature ask (waited 356d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
     },
     {
       "number": 13239,
@@ -15382,10 +15382,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "❓",
-      "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 351d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Ageing, unconfirmed bug — revalidate",
+      "baseline_reason": "Bug (waited 351d) sat 180+ days with no traction — re-test on a current build; request repro/logs or close stale if it no longer repros."
     },
     {
       "number": 12673,
@@ -15430,9 +15430,9 @@
       "fix_ready": false,
       "build_candidate": false,
       "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 345d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_glyph": "🗂️",
+      "baseline_text": "Low-traction idea — park or decline",
+      "baseline_reason": "Feature ask (waited 345d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
     },
     {
       "number": 13313,
@@ -15452,10 +15452,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "❓",
-      "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 343d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Ageing, unconfirmed bug — revalidate",
+      "baseline_reason": "Bug (waited 343d) sat 180+ days with no traction — re-test on a current build; request repro/logs or close stale if it no longer repros."
     },
     {
       "number": 13380,
@@ -15523,10 +15523,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "❓",
-      "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 332d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Ageing, unconfirmed bug — revalidate",
+      "baseline_reason": "Bug (waited 332d) sat 180+ days with no traction — re-test on a current build; request repro/logs or close stale if it no longer repros."
     },
     {
       "number": 13375,
@@ -15593,9 +15593,9 @@
       "fix_ready": false,
       "build_candidate": false,
       "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 329d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_glyph": "🗂️",
+      "baseline_text": "Low-traction idea — park or decline",
+      "baseline_reason": "Feature ask (waited 329d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
     },
     {
       "number": 13443,
@@ -15613,10 +15613,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "❓",
-      "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 317d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Ageing, unconfirmed bug — revalidate",
+      "baseline_reason": "Bug (waited 317d) sat 180+ days with no traction — re-test on a current build; request repro/logs or close stale if it no longer repros."
     },
     {
       "number": 13294,
@@ -15637,10 +15637,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "❓",
-      "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 311d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Ageing, unconfirmed bug — revalidate",
+      "baseline_reason": "Bug (waited 311d) sat 180+ days with no traction — re-test on a current build; request repro/logs or close stale if it no longer repros."
     },
     {
       "number": 10947,
@@ -15658,10 +15658,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "❓",
-      "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 310d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Ageing, unconfirmed bug — revalidate",
+      "baseline_reason": "Bug (waited 310d) sat 180+ days with no traction — re-test on a current build; request repro/logs or close stale if it no longer repros."
     },
     {
       "number": 13426,
@@ -15682,9 +15682,9 @@
       "fix_ready": false,
       "build_candidate": false,
       "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 309d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_glyph": "🗂️",
+      "baseline_text": "Low-traction idea — park or decline",
+      "baseline_reason": "Feature ask (waited 309d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
     },
     {
       "number": 13472,
@@ -15705,9 +15705,9 @@
       "fix_ready": false,
       "build_candidate": false,
       "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 309d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_glyph": "🗂️",
+      "baseline_text": "Low-traction idea — park or decline",
+      "baseline_reason": "Feature ask (waited 309d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
     },
     {
       "number": 12262,
@@ -15752,10 +15752,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "❓",
-      "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 297d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Ageing, unconfirmed bug — revalidate",
+      "baseline_reason": "Bug (waited 297d) sat 180+ days with no traction — re-test on a current build; request repro/logs or close stale if it no longer repros."
     },
     {
       "number": 12834,
@@ -15799,10 +15799,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "❓",
-      "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 293d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Ageing, unconfirmed bug — revalidate",
+      "baseline_reason": "Bug (waited 293d) sat 180+ days with no traction — re-test on a current build; request repro/logs or close stale if it no longer repros."
     },
     {
       "number": 12734,
@@ -15820,10 +15820,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "❓",
-      "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 292d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Ageing, unconfirmed bug — revalidate",
+      "baseline_reason": "Bug (waited 292d) sat 180+ days with no traction — re-test on a current build; request repro/logs or close stale if it no longer repros."
     },
     {
       "number": 13529,
@@ -15844,9 +15844,9 @@
       "fix_ready": false,
       "build_candidate": false,
       "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 292d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_glyph": "🗂️",
+      "baseline_text": "Low-traction idea — park or decline",
+      "baseline_reason": "Feature ask (waited 292d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
     },
     {
       "number": 13530,
@@ -15867,9 +15867,9 @@
       "fix_ready": false,
       "build_candidate": false,
       "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 292d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_glyph": "🗂️",
+      "baseline_text": "Low-traction idea — park or decline",
+      "baseline_reason": "Feature ask (waited 292d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
     },
     {
       "number": 13511,
@@ -15889,10 +15889,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "❓",
-      "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 291d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Ageing, unconfirmed bug — revalidate",
+      "baseline_reason": "Bug (waited 291d) sat 180+ days with no traction — re-test on a current build; request repro/logs or close stale if it no longer repros."
     },
     {
       "number": 13059,
@@ -15912,10 +15912,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "❓",
-      "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 282d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Ageing, unconfirmed bug — revalidate",
+      "baseline_reason": "Bug (waited 282d) sat 180+ days with no traction — re-test on a current build; request repro/logs or close stale if it no longer repros."
     },
     {
       "number": 13578,
@@ -15933,10 +15933,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "❓",
-      "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 281d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Ageing, unconfirmed bug — revalidate",
+      "baseline_reason": "Bug (waited 281d) sat 180+ days with no traction — re-test on a current build; request repro/logs or close stale if it no longer repros."
     },
     {
       "number": 13592,
@@ -15958,9 +15958,9 @@
       "fix_ready": false,
       "build_candidate": false,
       "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 274d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_glyph": "🗂️",
+      "baseline_text": "Low-traction idea — park or decline",
+      "baseline_reason": "Feature ask (waited 274d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
     },
     {
       "number": 13166,
@@ -15978,10 +15978,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "❓",
-      "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 272d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Ageing, unconfirmed bug — revalidate",
+      "baseline_reason": "Bug (waited 272d) sat 180+ days with no traction — re-test on a current build; request repro/logs or close stale if it no longer repros."
     },
     {
       "number": 13181,
@@ -16090,10 +16090,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "❓",
-      "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 262d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Ageing, unconfirmed bug — revalidate",
+      "baseline_reason": "Bug (waited 262d) sat 180+ days with no traction — re-test on a current build; request repro/logs or close stale if it no longer repros."
     },
     {
       "number": 8516,
@@ -16160,9 +16160,9 @@
       "fix_ready": false,
       "build_candidate": false,
       "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 259d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_glyph": "🗂️",
+      "baseline_text": "Low-traction idea — park or decline",
+      "baseline_reason": "Feature ask (waited 259d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
     },
     {
       "number": 13656,
@@ -16183,9 +16183,9 @@
       "fix_ready": false,
       "build_candidate": false,
       "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 258d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_glyph": "🗂️",
+      "baseline_text": "Low-traction idea — park or decline",
+      "baseline_reason": "Feature ask (waited 258d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
     },
     {
       "number": 11362,
@@ -16229,9 +16229,9 @@
       "fix_ready": false,
       "build_candidate": false,
       "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 254d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_glyph": "🗂️",
+      "baseline_text": "Low-traction idea — park or decline",
+      "baseline_reason": "Feature ask (waited 254d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
     },
     {
       "number": 13665,
@@ -16252,9 +16252,9 @@
       "fix_ready": false,
       "build_candidate": false,
       "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 254d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_glyph": "🗂️",
+      "baseline_text": "Low-traction idea — park or decline",
+      "baseline_reason": "Feature ask (waited 254d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
     },
     {
       "number": 12224,
@@ -16275,10 +16275,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "❓",
-      "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 253d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Ageing, unconfirmed bug — revalidate",
+      "baseline_reason": "Bug (waited 253d) sat 180+ days with no traction — re-test on a current build; request repro/logs or close stale if it no longer repros."
     },
     {
       "number": 13668,
@@ -16389,10 +16389,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "❓",
-      "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 237d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Ageing, unconfirmed bug — revalidate",
+      "baseline_reason": "Bug (waited 237d) sat 180+ days with no traction — re-test on a current build; request repro/logs or close stale if it no longer repros."
     },
     {
       "number": 12811,
@@ -16410,10 +16410,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "❓",
-      "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 235d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Ageing, unconfirmed bug — revalidate",
+      "baseline_reason": "Bug (waited 235d) sat 180+ days with no traction — re-test on a current build; request repro/logs or close stale if it no longer repros."
     },
     {
       "number": 13671,
@@ -16504,9 +16504,9 @@
       "fix_ready": false,
       "build_candidate": false,
       "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 225d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_glyph": "🗂️",
+      "baseline_text": "Low-traction idea — park or decline",
+      "baseline_reason": "Feature ask (waited 225d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
     },
     {
       "number": 11671,
@@ -16527,9 +16527,9 @@
       "fix_ready": false,
       "build_candidate": false,
       "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 224d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_glyph": "🗂️",
+      "baseline_text": "Low-traction idea — park or decline",
+      "baseline_reason": "Feature ask (waited 224d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
     },
     {
       "number": 13714,
@@ -16570,10 +16570,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "❓",
-      "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 220d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Ageing, unconfirmed bug — revalidate",
+      "baseline_reason": "Bug (waited 220d) sat 180+ days with no traction — re-test on a current build; request repro/logs or close stale if it no longer repros."
     },
     {
       "number": 12751,
@@ -16615,10 +16615,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "❓",
-      "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 213d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Ageing, unconfirmed bug — revalidate",
+      "baseline_reason": "Bug (waited 213d) sat 180+ days with no traction — re-test on a current build; request repro/logs or close stale if it no longer repros."
     },
     {
       "number": 13910,
@@ -16639,9 +16639,9 @@
       "fix_ready": false,
       "build_candidate": false,
       "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 213d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_glyph": "🗂️",
+      "baseline_text": "Low-traction idea — park or decline",
+      "baseline_reason": "Feature ask (waited 213d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
     },
     {
       "number": 13794,
@@ -16685,9 +16685,9 @@
       "fix_ready": false,
       "build_candidate": false,
       "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 202d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_glyph": "🗂️",
+      "baseline_text": "Low-traction idea — park or decline",
+      "baseline_reason": "Feature ask (waited 202d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
     },
     {
       "number": 12308,
@@ -16729,9 +16729,9 @@
       "fix_ready": false,
       "build_candidate": false,
       "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 197d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_glyph": "🗂️",
+      "baseline_text": "Low-traction idea — park or decline",
+      "baseline_reason": "Feature ask (waited 197d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
     },
     {
       "number": 10324,
@@ -16749,10 +16749,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "❓",
-      "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 192d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Ageing, unconfirmed bug — revalidate",
+      "baseline_reason": "Bug (waited 192d) sat 180+ days with no traction — re-test on a current build; request repro/logs or close stale if it no longer repros."
     },
     {
       "number": 12577,
@@ -16770,10 +16770,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "❓",
-      "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 192d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Ageing, unconfirmed bug — revalidate",
+      "baseline_reason": "Bug (waited 192d) sat 180+ days with no traction — re-test on a current build; request repro/logs or close stale if it no longer repros."
     },
     {
       "number": 11819,
@@ -16793,10 +16793,10 @@
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "❓",
-      "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 191d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Ageing, unconfirmed bug — revalidate",
+      "baseline_reason": "Bug (waited 191d) sat 180+ days with no traction — re-test on a current build; request repro/logs or close stale if it no longer repros."
     },
     {
       "number": 13246,
@@ -17109,9 +17109,9 @@
       "fix_ready": false,
       "build_candidate": false,
       "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 153d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_glyph": "🗂️",
+      "baseline_text": "Low-traction idea — park or decline",
+      "baseline_reason": "Feature ask (waited 153d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
     },
     {
       "number": 13985,
@@ -17153,9 +17153,9 @@
       "fix_ready": false,
       "build_candidate": false,
       "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 151d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_glyph": "🗂️",
+      "baseline_text": "Low-traction idea — park or decline",
+      "baseline_reason": "Feature ask (waited 151d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
     },
     {
       "number": 14220,
@@ -17246,9 +17246,9 @@
       "fix_ready": false,
       "build_candidate": false,
       "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 142d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_glyph": "🗂️",
+      "baseline_text": "Low-traction idea — park or decline",
+      "baseline_reason": "Feature ask (waited 142d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
     },
     {
       "number": 14235,
@@ -17269,9 +17269,9 @@
       "fix_ready": false,
       "build_candidate": false,
       "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 142d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_glyph": "🗂️",
+      "baseline_text": "Low-traction idea — park or decline",
+      "baseline_reason": "Feature ask (waited 142d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
     },
     {
       "number": 12273,
@@ -17357,9 +17357,9 @@
       "fix_ready": false,
       "build_candidate": false,
       "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 132d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_glyph": "🗂️",
+      "baseline_text": "Low-traction idea — park or decline",
+      "baseline_reason": "Feature ask (waited 132d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
     },
     {
       "number": 12497,
@@ -17491,9 +17491,9 @@
       "fix_ready": false,
       "build_candidate": false,
       "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 125d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_glyph": "🗂️",
+      "baseline_text": "Low-traction idea — park or decline",
+      "baseline_reason": "Feature ask (waited 125d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
     },
     {
       "number": 12615,
@@ -17630,9 +17630,9 @@
       "fix_ready": false,
       "build_candidate": false,
       "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 111d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_glyph": "🗂️",
+      "baseline_text": "Low-traction idea — park or decline",
+      "baseline_reason": "Feature ask (waited 111d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
     },
     {
       "number": 14568,
@@ -17653,9 +17653,9 @@
       "fix_ready": false,
       "build_candidate": false,
       "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 110d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_glyph": "🗂️",
+      "baseline_text": "Low-traction idea — park or decline",
+      "baseline_reason": "Feature ask (waited 110d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
     },
     {
       "number": 14570,
@@ -17700,9 +17700,9 @@
       "fix_ready": false,
       "build_candidate": false,
       "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 104d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_glyph": "🗂️",
+      "baseline_text": "Low-traction idea — park or decline",
+      "baseline_reason": "Feature ask (waited 104d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
     },
     {
       "number": 14170,
@@ -17724,9 +17724,9 @@
       "fix_ready": false,
       "build_candidate": false,
       "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 104d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_glyph": "🗂️",
+      "baseline_text": "Low-traction idea — park or decline",
+      "baseline_reason": "Feature ask (waited 104d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
     },
     {
       "number": 14446,
@@ -17860,9 +17860,9 @@
       "fix_ready": false,
       "build_candidate": false,
       "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 90d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_glyph": "🗂️",
+      "baseline_text": "Low-traction idea — park or decline",
+      "baseline_reason": "Feature ask (waited 90d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
     },
     {
       "number": 13825,
@@ -19434,6 +19434,30 @@
       "baseline_reason": "Untyped report (waited 26d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
     },
     {
+      "number": 40591,
+      "title": "Cannot access docker compose published ports in WSL2 from Windows",
+      "url": "https://github.com/microsoft/WSL/issues/40591",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "network",
+        "wsl2"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-05-19T05:27:41Z",
+      "updated_at": "2026-06-21T23:35:27Z",
+      "age_days": 25.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "request_info",
+      "baseline_glyph": "❓",
+      "baseline_text": "Request exact repro, version & logs",
+      "baseline_reason": "Bug (waited 25d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+    },
+    {
       "number": 5851,
       "title": "Persist /mnt/wsl mountpoints",
       "url": "https://github.com/microsoft/WSL/issues/5851",
@@ -19455,30 +19479,6 @@
       "baseline_glyph": "💬",
       "baseline_text": "Decide on this feature request",
       "baseline_reason": "Feature/idea (waited 24d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
-    },
-    {
-      "number": 40591,
-      "title": "Cannot access docker compose published ports in WSL2 from Windows",
-      "url": "https://github.com/microsoft/WSL/issues/40591",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "network",
-        "wsl2"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-05-19T05:27:41Z",
-      "updated_at": "2026-06-21T23:35:27Z",
-      "age_days": 24.0,
-      "triaged": false,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "❓",
-      "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 24d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 40705,
@@ -20074,7 +20074,7 @@
       "created_at": "2026-07-09T18:14:01Z",
       "updated_at": "2026-07-09T21:00:12Z",
       "age_days": 7.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
@@ -20145,7 +20145,7 @@
       "created_at": "2026-07-09T14:40:28Z",
       "updated_at": "2026-07-10T08:55:56Z",
       "age_days": 6.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
@@ -20169,7 +20169,7 @@
       "created_at": "2026-07-09T17:15:51Z",
       "updated_at": "2026-07-10T02:16:28Z",
       "age_days": 6.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
@@ -20216,7 +20216,7 @@
       "created_at": "2026-07-10T03:40:42Z",
       "updated_at": "2026-07-10T05:49:26Z",
       "age_days": 6.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
@@ -20241,7 +20241,7 @@
       "created_at": "2026-07-10T08:13:34Z",
       "updated_at": "2026-07-10T17:59:55Z",
       "age_days": 6.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
@@ -20265,7 +20265,7 @@
       "created_at": "2026-07-10T13:50:09Z",
       "updated_at": "2026-07-10T17:58:18Z",
       "age_days": 6.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
@@ -20336,7 +20336,7 @@
       "created_at": "2026-07-10T21:39:38Z",
       "updated_at": "2026-07-13T02:17:15Z",
       "age_days": 3.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
@@ -20359,7 +20359,7 @@
       "created_at": "2026-07-12T10:14:50Z",
       "updated_at": "2026-07-13T02:33:58Z",
       "age_days": 3.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
@@ -20383,7 +20383,7 @@
       "created_at": "2026-07-13T13:52:14Z",
       "updated_at": "2026-07-13T20:43:09Z",
       "age_days": 3.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
@@ -20457,7 +20457,7 @@
       "created_at": "2026-07-13T14:32:35Z",
       "updated_at": "2026-07-14T04:20:32Z",
       "age_days": 2.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
@@ -20526,7 +20526,7 @@
       "created_at": "2026-07-15T14:00:41Z",
       "updated_at": "2026-07-15T15:05:23Z",
       "age_days": 1.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
@@ -20551,7 +20551,7 @@
       "created_at": "2026-07-12T06:20:59Z",
       "updated_at": "2026-07-15T23:54:22Z",
       "age_days": 0.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
@@ -20574,7 +20574,7 @@
       "created_at": "2026-07-15T12:22:38Z",
       "updated_at": "2026-07-16T02:04:55Z",
       "age_days": 0.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
@@ -20600,7 +20600,7 @@
       "created_at": "2026-02-27T21:05:28Z",
       "updated_at": "2026-05-17T14:29:37Z",
       "age_days": 60.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -20719,7 +20719,7 @@
       "created_at": "2026-02-27T22:02:59Z",
       "updated_at": "2026-06-10T17:43:33Z",
       "age_days": 36.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -20882,7 +20882,7 @@
       "created_at": "2026-06-30T00:58:27Z",
       "updated_at": "2026-07-01T21:50:27Z",
       "age_days": 15.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -21105,7 +21105,7 @@
       "created_at": "2026-07-01T23:08:36Z",
       "updated_at": "2026-07-14T22:14:21Z",
       "age_days": 2.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -21149,7 +21149,7 @@
       "created_at": "2026-07-09T04:39:39Z",
       "updated_at": "2026-07-15T22:13:02Z",
       "age_days": 1.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -21402,6 +21402,28 @@
       "baseline_reason": "Draft/WIP PR (waited 22d) — don't review yet; nudge the author to mark it ready."
     },
     {
+      "number": 40729,
+      "title": "aggregate virtiofs: share multiple Windows folders via a single device",
+      "url": "https://github.com/microsoft/WSL/pull/40729",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-06-06T06:12:40Z",
+      "updated_at": "2026-06-24T23:23:16Z",
+      "age_days": 22.0,
+      "triaged": false,
+      "awaiting": false,
+      "is_draft": true,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "wait_author",
+      "baseline_glyph": "🚧",
+      "baseline_text": "Wait — PR is a draft/WIP",
+      "baseline_reason": "Draft/WIP PR (waited 22d) — don't review yet; nudge the author to mark it ready."
+    },
+    {
       "number": 40739,
       "title": "Back system distro overlay with a per-instance scratch vhd",
       "url": "https://github.com/microsoft/WSL/pull/40739",
@@ -21444,28 +21466,6 @@
       "baseline_glyph": "🚧",
       "baseline_text": "Wait — PR is a draft/WIP",
       "baseline_reason": "Draft/WIP PR (waited 22d) — don't review yet; nudge the author to mark it ready."
-    },
-    {
-      "number": 40729,
-      "title": "aggregate virtiofs: share multiple Windows folders via a single device",
-      "url": "https://github.com/microsoft/WSL/pull/40729",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-06-06T06:12:40Z",
-      "updated_at": "2026-06-24T23:23:16Z",
-      "age_days": 21.0,
-      "triaged": false,
-      "awaiting": false,
-      "is_draft": true,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "wait_author",
-      "baseline_glyph": "🚧",
-      "baseline_text": "Wait — PR is a draft/WIP",
-      "baseline_reason": "Draft/WIP PR (waited 21d) — don't review yet; nudge the author to mark it ready."
     },
     {
       "number": 40887,
@@ -21735,28 +21735,6 @@
       "baseline_reason": "Draft/WIP PR (waited 1d) — don't review yet; nudge the author to mark it ready."
     },
     {
-      "number": 41083,
-      "title": "Log real elapsed time (and hangs) in SlowOperation telemetry",
-      "url": "https://github.com/microsoft/WSL/pull/41083",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-07-15T13:33:26Z",
-      "updated_at": "2026-07-15T14:58:17Z",
-      "age_days": 1.0,
-      "triaged": false,
-      "awaiting": false,
-      "is_draft": true,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "wait_author",
-      "baseline_glyph": "🚧",
-      "baseline_text": "Wait — PR is a draft/WIP",
-      "baseline_reason": "Draft/WIP PR (waited 1d) — don't review yet; nudge the author to mark it ready."
-    },
-    {
       "number": 41085,
       "title": "Cap guest usage of host ephemeral range to half of the ports in mirrored mode",
       "url": "https://github.com/microsoft/WSL/pull/41085",
@@ -21777,6 +21755,28 @@
       "baseline_glyph": "🚧",
       "baseline_text": "Wait — PR is a draft/WIP",
       "baseline_reason": "Draft/WIP PR (waited 1d) — don't review yet; nudge the author to mark it ready."
+    },
+    {
+      "number": 41083,
+      "title": "Log real elapsed time (and hangs) in SlowOperation telemetry",
+      "url": "https://github.com/microsoft/WSL/pull/41083",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-07-15T13:33:26Z",
+      "updated_at": "2026-07-16T03:30:07Z",
+      "age_days": 0.0,
+      "triaged": false,
+      "awaiting": false,
+      "is_draft": true,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "wait_author",
+      "baseline_glyph": "🚧",
+      "baseline_text": "Wait — PR is a draft/WIP",
+      "baseline_reason": "Draft/WIP PR (new) — don't review yet; nudge the author to mark it ready."
     }
   ]
 }
