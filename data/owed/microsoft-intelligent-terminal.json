@@ -1,13 +1,13 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-07-17T06:31:09Z",
+  "generated_at": "2026-07-17T09:28:42Z",
   "awaiting_label": "Needs-Triage",
   "awaiting_issues": 28,
-  "awaiting_prs": 20,
+  "awaiting_prs": 19,
   "backlog_issues": 35,
-  "backlog_prs": 25,
+  "backlog_prs": 24,
   "issues_total": 28,
-  "prs_total": 20,
+  "prs_total": 19,
   "issues": [
     {
       "number": 231,
@@ -145,7 +145,7 @@
       "comments": 1,
       "created_at": "2026-06-03T01:30:33Z",
       "updated_at": "2026-06-04T03:52:02Z",
-      "age_days": 43.0,
+      "age_days": 44.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -153,7 +153,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm type (bug/feature) & route",
-      "baseline_reason": "Untyped report (waited 43d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+      "baseline_reason": "Untyped report (waited 44d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
     },
     {
       "number": 193,
@@ -337,7 +337,7 @@
       "comments": 1,
       "created_at": "2026-06-12T14:52:42Z",
       "updated_at": "2026-06-16T04:34:26Z",
-      "age_days": 31.0,
+      "age_days": 32.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -345,7 +345,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 31d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 32d) — correct them, then route."
     },
     {
       "number": 291,
@@ -708,7 +708,7 @@
       "comments": 1,
       "created_at": "2026-06-03T07:06:39Z",
       "updated_at": "2026-06-24T03:16:46Z",
-      "age_days": 23.0,
+      "age_days": 24.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -716,7 +716,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 23d, 7 👍) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 24d, 7 👍) — correct them, then route."
     },
     {
       "number": 228,
@@ -804,7 +804,7 @@
       "comments": 1,
       "created_at": "2026-06-12T01:46:06Z",
       "updated_at": "2026-06-16T04:27:15Z",
-      "age_days": 31.0,
+      "age_days": 32.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -812,7 +812,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 31d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 32d) — correct them, then route."
     },
     {
       "number": 259,
@@ -1217,6 +1217,28 @@
       "baseline_reason": "PR (waited 1d) — review it."
     },
     {
+      "number": 428,
+      "title": "Replace agent card JSON with typed MCP proposals",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/428",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-07-16T12:46:08Z",
+      "updated_at": "2026-07-17T03:08:59Z",
+      "age_days": 1.0,
+      "triaged": true,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (waited 1d) — review it."
+    },
+    {
       "number": 430,
       "title": "Pin --session-id for recommendation-card agent launches",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/430",
@@ -1239,60 +1261,16 @@
       "baseline_reason": "PR (waited 1d) — review it."
     },
     {
-      "number": 428,
-      "title": "Replace agent card JSON with typed MCP proposals",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/428",
+      "number": 436,
+      "title": "remove submodules instructions; update doc and script to accept vs2026",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/436",
       "kind": "pr",
       "is_community": null,
       "labels": [],
       "up": 0,
       "comments": 1,
-      "created_at": "2026-07-16T12:46:08Z",
-      "updated_at": "2026-07-17T03:08:59Z",
-      "age_days": 0.0,
-      "triaged": true,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (new) — review it."
-    },
-    {
-      "number": 433,
-      "title": "fix(wta): buffer + replay pre-binding session notifications instead of dropping",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/433",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-07-17T03:33:06Z",
-      "updated_at": "2026-07-17T03:39:05Z",
-      "age_days": 0.0,
-      "triaged": true,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (new) — review it."
-    },
-    {
-      "number": 435,
-      "title": "docs(e2e): track delegate title-echo guard as checklist item C229 (#400)",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/435",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-07-17T05:35:05Z",
-      "updated_at": "2026-07-17T06:24:49Z",
+      "created_at": "2026-07-17T08:45:24Z",
+      "updated_at": "2026-07-17T08:49:11Z",
       "age_days": 0.0,
       "triaged": false,
       "awaiting": true,
@@ -1359,7 +1337,7 @@
       "comments": 1,
       "created_at": "2026-06-04T06:14:02Z",
       "updated_at": "2026-07-16T05:05:55Z",
-      "age_days": 1.0,
+      "age_days": 2.0,
       "triaged": false,
       "awaiting": false,
       "is_draft": false,
@@ -1368,7 +1346,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 1d) — review it."
+      "baseline_reason": "PR (waited 2d) — review it."
     },
     {
       "number": 408,
@@ -1381,7 +1359,7 @@
       "comments": 1,
       "created_at": "2026-07-14T13:18:35Z",
       "updated_at": "2026-07-16T05:05:22Z",
-      "age_days": 1.0,
+      "age_days": 2.0,
       "triaged": false,
       "awaiting": false,
       "is_draft": false,
@@ -1390,7 +1368,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 1d) — review it."
+      "baseline_reason": "PR (waited 2d) — review it."
     },
     {
       "number": 422,
