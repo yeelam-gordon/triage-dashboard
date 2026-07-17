@@ -1,6 +1,6 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-07-16T21:04:06Z",
+  "generated_at": "2026-07-17T00:13:18Z",
   "awaiting_label": "Needs-Triage",
   "awaiting_issues": 30,
   "awaiting_prs": 20,
@@ -459,7 +459,7 @@
       "comments": 1,
       "created_at": "2026-06-17T19:14:31Z",
       "updated_at": "2026-06-17T19:15:42Z",
-      "age_days": 29.0,
+      "age_days": 30.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -467,7 +467,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 29d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 30d) — correct them, then route."
     },
     {
       "number": 332,
@@ -899,7 +899,7 @@
       "comments": 1,
       "created_at": "2026-06-17T19:32:42Z",
       "updated_at": "2026-06-17T19:35:27Z",
-      "age_days": 29.0,
+      "age_days": 30.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -907,7 +907,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 29d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 30d) — correct them, then route."
     }
   ],
   "prs": [
@@ -1308,28 +1308,6 @@
       "baseline_reason": "PR (waited 1d) — review it."
     },
     {
-      "number": 426,
-      "title": "fix(wta): cap agent_client_protocol at info in debug log filter",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/426",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-07-16T08:19:23Z",
-      "updated_at": "2026-07-16T09:16:55Z",
-      "age_days": 1.0,
-      "triaged": true,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 1d) — review it."
-    },
-    {
       "number": 428,
       "title": "Replace agent card JSON with typed MCP proposals",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/428",
@@ -1350,6 +1328,28 @@
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
       "baseline_reason": "PR (waited 1d) — review it."
+    },
+    {
+      "number": 426,
+      "title": "fix(wta): stop ACP crate dumping full response bodies into debug log",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/426",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-07-16T08:19:23Z",
+      "updated_at": "2026-07-16T23:18:56Z",
+      "age_days": 0.0,
+      "triaged": true,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (new) — review it."
     },
     {
       "number": 22,
