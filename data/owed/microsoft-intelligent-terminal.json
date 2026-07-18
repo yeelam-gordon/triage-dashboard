@@ -1,6 +1,6 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-07-18T09:17:07Z",
+  "generated_at": "2026-07-18T12:06:23Z",
   "awaiting_label": "Needs-Triage",
   "awaiting_issues": 29,
   "awaiting_prs": 29,
@@ -24,7 +24,7 @@
       "comments": 1,
       "created_at": "2026-06-04T15:31:43Z",
       "updated_at": "2026-06-28T06:17:42Z",
-      "age_days": 20.0,
+      "age_days": 21.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -32,7 +32,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 20d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 21d) — correct them, then route."
     },
     {
       "number": 192,
@@ -47,7 +47,7 @@
       "comments": 1,
       "created_at": "2026-06-02T18:31:10Z",
       "updated_at": "2026-07-10T05:47:39Z",
-      "age_days": 8.0,
+      "age_days": 9.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -55,7 +55,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 8d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_reason": "Feature/idea (waited 9d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     },
     {
       "number": 333,
@@ -286,7 +286,7 @@
       "comments": 1,
       "created_at": "2026-06-11T07:45:42Z",
       "updated_at": "2026-06-11T07:46:16Z",
-      "age_days": 37.0,
+      "age_days": 38.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -294,7 +294,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 37d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 38d) — correct them, then route."
     },
     {
       "number": 276,
@@ -611,7 +611,7 @@
       "comments": 1,
       "created_at": "2026-06-12T07:59:39Z",
       "updated_at": "2026-07-03T07:18:17Z",
-      "age_days": 15.0,
+      "age_days": 16.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -619,7 +619,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 15d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 16d) — correct them, then route."
     },
     {
       "number": 384,
@@ -646,6 +646,30 @@
       "baseline_reason": "Crash report (waited 12d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
     },
     {
+      "number": 386,
+      "title": "Stucked on loading",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/386",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "Issue-Bug",
+        "Needs-Triage"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-07-07T06:26:21Z",
+      "updated_at": "2026-07-16T07:38:53Z",
+      "age_days": 3.0,
+      "triaged": true,
+      "awaiting": true,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "request_info",
+      "baseline_glyph": "❓",
+      "baseline_text": "Request exact repro, version & logs",
+      "baseline_reason": "Bug (waited 3d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+    },
+    {
       "number": 421,
       "title": "Make PATH-based command lookup / near-match shell-agnostic (currently PowerShell-only)",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/421",
@@ -670,30 +694,6 @@
       "baseline_reason": "Wrong/missing tags (waited 3d) — correct them, then route."
     },
     {
-      "number": 386,
-      "title": "Stucked on loading",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/386",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "Issue-Bug",
-        "Needs-Triage"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-07-07T06:26:21Z",
-      "updated_at": "2026-07-16T07:38:53Z",
-      "age_days": 2.0,
-      "triaged": true,
-      "awaiting": true,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "❓",
-      "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 2d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
-    },
-    {
       "number": 445,
       "title": "Delegate new-tab action blocks on synchronous terminal initialization",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/445",
@@ -707,7 +707,7 @@
       "comments": 1,
       "created_at": "2026-07-18T05:49:49Z",
       "updated_at": "2026-07-18T05:50:23Z",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -715,7 +715,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (new) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 1d) — correct them, then route."
     },
     {
       "number": 200,
@@ -1163,7 +1163,7 @@
       "comments": 1,
       "created_at": "2026-07-03T05:26:14Z",
       "updated_at": "2026-07-03T05:31:53Z",
-      "age_days": 15.0,
+      "age_days": 16.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -1172,7 +1172,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 15d) — review it."
+      "baseline_reason": "PR (waited 16d) — review it."
     },
     {
       "number": 373,
@@ -1207,7 +1207,7 @@
       "comments": 1,
       "created_at": "2026-07-09T08:20:31Z",
       "updated_at": "2026-07-15T06:17:58Z",
-      "age_days": 3.0,
+      "age_days": 4.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -1216,7 +1216,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 3d) — review it."
+      "baseline_reason": "PR (waited 4d) — review it."
     },
     {
       "number": 265,
@@ -1261,28 +1261,6 @@
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
       "baseline_reason": "PR (waited 2d) — review it."
-    },
-    {
-      "number": 428,
-      "title": "Replace agent card JSON with typed MCP proposals",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/428",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-07-16T12:46:08Z",
-      "updated_at": "2026-07-17T10:26:01Z",
-      "age_days": 1.0,
-      "triaged": true,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 1d) — review it."
     },
     {
       "number": 437,
@@ -1449,7 +1427,7 @@
       "comments": 1,
       "created_at": "2026-07-18T03:57:50Z",
       "updated_at": "2026-07-18T05:41:10Z",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -1458,7 +1436,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (new) — review it."
+      "baseline_reason": "PR (waited 1d) — review it."
     },
     {
       "number": 446,
@@ -1471,7 +1449,7 @@
       "comments": 1,
       "created_at": "2026-07-18T06:26:44Z",
       "updated_at": "2026-07-18T06:32:01Z",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -1480,7 +1458,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (new) — review it."
+      "baseline_reason": "PR (waited 1d) — review it."
     },
     {
       "number": 447,
@@ -1493,7 +1471,7 @@
       "comments": 1,
       "created_at": "2026-07-18T06:42:01Z",
       "updated_at": "2026-07-18T06:47:21Z",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -1502,7 +1480,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (new) — review it."
+      "baseline_reason": "PR (waited 1d) — review it."
     },
     {
       "number": 448,
@@ -1515,12 +1493,34 @@
       "comments": 1,
       "created_at": "2026-07-18T07:49:56Z",
       "updated_at": "2026-07-18T07:58:04Z",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
       "review_decision": "",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (waited 1d) — review it."
+    },
+    {
+      "number": 428,
+      "title": "Replace agent card JSON with typed MCP proposals",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/428",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-07-16T12:46:08Z",
+      "updated_at": "2026-07-18T12:06:00Z",
+      "age_days": 0.0,
+      "triaged": true,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
@@ -1559,7 +1559,7 @@
       "comments": 1,
       "created_at": "2026-05-31T07:48:32Z",
       "updated_at": "2026-05-31T07:57:16Z",
-      "age_days": 48.0,
+      "age_days": 49.0,
       "triaged": false,
       "awaiting": false,
       "is_draft": true,
@@ -1568,7 +1568,7 @@
       "baseline_action": "wait_author",
       "baseline_glyph": "🚧",
       "baseline_text": "Wait — PR is a draft/WIP",
-      "baseline_reason": "Draft/WIP PR (waited 48d) — don't review yet; nudge the author to mark it ready."
+      "baseline_reason": "Draft/WIP PR (waited 49d) — don't review yet; nudge the author to mark it ready."
     },
     {
       "number": 218,
