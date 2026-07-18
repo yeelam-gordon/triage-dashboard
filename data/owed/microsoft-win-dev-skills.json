@@ -1,6 +1,6 @@
 {
   "repo": "microsoft/win-dev-skills",
-  "generated_at": "2026-07-18T15:11:56Z",
+  "generated_at": "2026-07-18T18:24:52Z",
   "awaiting_label": null,
   "awaiting_issues": 0,
   "awaiting_prs": 7,
@@ -68,7 +68,7 @@
       "comments": 1,
       "created_at": "2026-05-28T14:12:43Z",
       "updated_at": "2026-05-28T14:19:09Z",
-      "age_days": 51.0,
+      "age_days": 52.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -76,7 +76,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 51d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_reason": "Feature/idea (waited 52d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     },
     {
       "number": 18,
@@ -250,7 +250,7 @@
       "comments": 1,
       "created_at": "2026-05-21T14:16:27Z",
       "updated_at": "2026-05-21T14:16:27Z",
-      "age_days": 58.0,
+      "age_days": 59.0,
       "triaged": true,
       "awaiting": false,
       "fix_ready": false,
@@ -258,7 +258,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 58d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (waited 59d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 97,
@@ -531,27 +531,6 @@
       "baseline_reason": "Untyped report (waited 5d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
     },
     {
-      "number": 126,
-      "title": "Transform win-dev-skills into a true skills marketplace",
-      "url": "https://github.com/microsoft/win-dev-skills/issues/126",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-07-15T11:27:09Z",
-      "updated_at": "2026-07-15T15:27:49Z",
-      "age_days": 3.0,
-      "triaged": false,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm type (bug/feature) & route",
-      "baseline_reason": "Untyped report (waited 3d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
-    },
-    {
       "number": 127,
       "title": "[Skill] WinUI runtime error diagnostics",
       "url": "https://github.com/microsoft/win-dev-skills/issues/127",
@@ -562,7 +541,7 @@
       "comments": 1,
       "created_at": "2026-07-15T11:28:59Z",
       "updated_at": "2026-07-15T11:28:59Z",
-      "age_days": 3.0,
+      "age_days": 4.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -570,7 +549,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 3d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (waited 4d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 128,
@@ -583,7 +562,7 @@
       "comments": 1,
       "created_at": "2026-07-15T11:29:00Z",
       "updated_at": "2026-07-15T11:29:00Z",
-      "age_days": 3.0,
+      "age_days": 4.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -591,7 +570,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "🩺",
       "baseline_text": "Confirm crash — get repro/logs & route",
-      "baseline_reason": "Crash report (waited 3d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
+      "baseline_reason": "Crash report (waited 4d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
     },
     {
       "number": 129,
@@ -604,6 +583,27 @@
       "comments": 1,
       "created_at": "2026-07-15T11:29:00Z",
       "updated_at": "2026-07-15T11:29:00Z",
+      "age_days": 4.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "reply",
+      "baseline_glyph": "💬",
+      "baseline_text": "Confirm type (bug/feature) & route",
+      "baseline_reason": "Untyped report (waited 4d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+    },
+    {
+      "number": 126,
+      "title": "Transform win-dev-skills into a true skills marketplace",
+      "url": "https://github.com/microsoft/win-dev-skills/issues/126",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-07-15T11:27:09Z",
+      "updated_at": "2026-07-15T15:27:49Z",
       "age_days": 3.0,
       "triaged": false,
       "awaiting": false,
@@ -650,7 +650,7 @@
       "created_at": "2026-06-29T22:08:03Z",
       "updated_at": "2026-06-29T22:08:04Z",
       "age_days": 19.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -672,7 +672,7 @@
       "created_at": "2026-05-26T03:40:18Z",
       "updated_at": "2026-07-06T22:06:46Z",
       "age_days": 12.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -694,7 +694,7 @@
       "created_at": "2026-07-06T22:06:53Z",
       "updated_at": "2026-07-06T22:06:54Z",
       "age_days": 12.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -716,7 +716,7 @@
       "created_at": "2026-07-06T22:07:22Z",
       "updated_at": "2026-07-06T22:07:22Z",
       "age_days": 12.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
