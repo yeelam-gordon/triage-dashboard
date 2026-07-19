@@ -1,11 +1,11 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-07-19T09:26:25Z",
+  "generated_at": "2026-07-19T12:05:20Z",
   "awaiting_label": "Needs-Triage",
   "awaiting_issues": 29,
-  "awaiting_prs": 31,
+  "awaiting_prs": 29,
   "backlog_issues": 36,
-  "backlog_prs": 37,
+  "backlog_prs": 35,
   "issues_total": 29,
   "prs_total": 22,
   "issues": [
@@ -24,7 +24,7 @@
       "comments": 1,
       "created_at": "2026-06-04T15:31:43Z",
       "updated_at": "2026-06-28T06:17:42Z",
-      "age_days": 21.0,
+      "age_days": 22.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -32,7 +32,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 21d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 22d) — correct them, then route."
     },
     {
       "number": 192,
@@ -47,7 +47,7 @@
       "comments": 1,
       "created_at": "2026-06-02T18:31:10Z",
       "updated_at": "2026-07-10T05:47:39Z",
-      "age_days": 9.0,
+      "age_days": 10.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -55,7 +55,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 9d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_reason": "Feature/idea (waited 10d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     },
     {
       "number": 333,
@@ -286,7 +286,7 @@
       "comments": 1,
       "created_at": "2026-06-11T07:45:42Z",
       "updated_at": "2026-06-11T07:46:16Z",
-      "age_days": 38.0,
+      "age_days": 39.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -294,7 +294,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 38d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 39d) — correct them, then route."
     },
     {
       "number": 276,
@@ -611,7 +611,7 @@
       "comments": 1,
       "created_at": "2026-06-12T07:59:39Z",
       "updated_at": "2026-07-03T07:18:17Z",
-      "age_days": 16.0,
+      "age_days": 17.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -619,7 +619,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 16d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 17d) — correct them, then route."
     },
     {
       "number": 384,
@@ -646,6 +646,30 @@
       "baseline_reason": "Crash report (waited 13d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
     },
     {
+      "number": 386,
+      "title": "Stucked on loading",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/386",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "Issue-Bug",
+        "Needs-Triage"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-07-07T06:26:21Z",
+      "updated_at": "2026-07-16T07:38:53Z",
+      "age_days": 4.0,
+      "triaged": true,
+      "awaiting": true,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "request_info",
+      "baseline_glyph": "❓",
+      "baseline_text": "Request exact repro, version & logs",
+      "baseline_reason": "Bug (waited 4d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+    },
+    {
       "number": 421,
       "title": "Make PATH-based command lookup / near-match shell-agnostic (currently PowerShell-only)",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/421",
@@ -670,30 +694,6 @@
       "baseline_reason": "Wrong/missing tags (waited 4d) — correct them, then route."
     },
     {
-      "number": 386,
-      "title": "Stucked on loading",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/386",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "Issue-Bug",
-        "Needs-Triage"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-07-07T06:26:21Z",
-      "updated_at": "2026-07-16T07:38:53Z",
-      "age_days": 3.0,
-      "triaged": true,
-      "awaiting": true,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "❓",
-      "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 3d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
-    },
-    {
       "number": 445,
       "title": "Delegate new-tab action blocks on synchronous terminal initialization",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/445",
@@ -707,7 +707,7 @@
       "comments": 1,
       "created_at": "2026-07-18T05:49:49Z",
       "updated_at": "2026-07-18T05:50:23Z",
-      "age_days": 1.0,
+      "age_days": 2.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -715,7 +715,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 1d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 2d) — correct them, then route."
     },
     {
       "number": 200,
@@ -1163,7 +1163,7 @@
       "comments": 1,
       "created_at": "2026-07-03T05:26:14Z",
       "updated_at": "2026-07-03T05:31:53Z",
-      "age_days": 16.0,
+      "age_days": 17.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -1172,7 +1172,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 16d) — review it."
+      "baseline_reason": "PR (waited 17d) — review it."
     },
     {
       "number": 373,
@@ -1207,7 +1207,7 @@
       "comments": 1,
       "created_at": "2026-07-09T08:20:31Z",
       "updated_at": "2026-07-15T06:17:58Z",
-      "age_days": 4.0,
+      "age_days": 5.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -1216,7 +1216,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 4d) — review it."
+      "baseline_reason": "PR (waited 5d) — review it."
     },
     {
       "number": 265,
@@ -1351,16 +1351,16 @@
       "baseline_reason": "PR (waited 2d) — review it."
     },
     {
-      "number": 443,
-      "title": "Durable sessions step 2: persist pane agent sessions",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/443",
+      "number": 448,
+      "title": "Durable sessions step 5: keep commands running after Terminal closes",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/448",
       "kind": "pr",
       "is_community": null,
       "labels": [],
       "up": 0,
       "comments": 1,
-      "created_at": "2026-07-18T02:44:36Z",
-      "updated_at": "2026-07-18T03:37:53Z",
+      "created_at": "2026-07-18T07:49:56Z",
+      "updated_at": "2026-07-18T07:58:04Z",
       "age_days": 2.0,
       "triaged": true,
       "awaiting": true,
@@ -1395,50 +1395,6 @@
       "baseline_reason": "PR (waited 1d) — review it."
     },
     {
-      "number": 444,
-      "title": "Durable sessions step 3: restore durable agent pane sessions",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/444",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-07-18T03:57:50Z",
-      "updated_at": "2026-07-18T05:41:10Z",
-      "age_days": 1.0,
-      "triaged": true,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 1d) — review it."
-    },
-    {
-      "number": 446,
-      "title": "Durable sessions step 4: restore durable workspace sessions",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/446",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-07-18T06:26:44Z",
-      "updated_at": "2026-07-18T06:32:01Z",
-      "age_days": 1.0,
-      "triaged": true,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 1d) — review it."
-    },
-    {
       "number": 447,
       "title": "Add secure Copilot BYOK configuration",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/447",
@@ -1455,28 +1411,6 @@
       "is_draft": false,
       "merge_state": "",
       "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 1d) — review it."
-    },
-    {
-      "number": 448,
-      "title": "Durable sessions step 5: keep commands running after Terminal closes",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/448",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-07-18T07:49:56Z",
-      "updated_at": "2026-07-18T07:58:04Z",
-      "age_days": 1.0,
-      "triaged": true,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "",
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
@@ -1536,7 +1470,7 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-07-17T12:52:06Z",
-      "updated_at": "2026-07-19T06:34:56Z",
+      "updated_at": "2026-07-19T11:30:59Z",
       "age_days": 0.0,
       "triaged": false,
       "awaiting": true,
@@ -1558,7 +1492,29 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-07-18T00:59:36Z",
-      "updated_at": "2026-07-19T09:25:40Z",
+      "updated_at": "2026-07-19T11:33:56Z",
+      "age_days": 0.0,
+      "triaged": true,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (new) — review it."
+    },
+    {
+      "number": 443,
+      "title": "Durable sessions step 2: persist pane agent sessions",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/443",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-07-18T02:44:36Z",
+      "updated_at": "2026-07-19T11:40:14Z",
       "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
@@ -1603,7 +1559,7 @@
       "comments": 1,
       "created_at": "2026-05-31T07:48:32Z",
       "updated_at": "2026-05-31T07:57:16Z",
-      "age_days": 49.0,
+      "age_days": 50.0,
       "triaged": false,
       "awaiting": false,
       "is_draft": true,
@@ -1612,7 +1568,7 @@
       "baseline_action": "wait_author",
       "baseline_glyph": "🚧",
       "baseline_text": "Wait — PR is a draft/WIP",
-      "baseline_reason": "Draft/WIP PR (waited 49d) — don't review yet; nudge the author to mark it ready."
+      "baseline_reason": "Draft/WIP PR (waited 50d) — don't review yet; nudge the author to mark it ready."
     },
     {
       "number": 218,
