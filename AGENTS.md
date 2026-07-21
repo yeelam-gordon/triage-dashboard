@@ -114,6 +114,35 @@ If you also write a date-stamped copy, future versions of the dashboard will
 render day-over-day diffs. Use UTC date, no timezone suffix:
 `data/2026-06-12.json`. Never overwrite an existing date file.
 
+### Full backlog: `data/owed/<owner>-<repo>.json`
+
+Each repo's **complete** owed backlog (every open issue/PR, as lightweight rows)
+lives in `data/owed/<slug>.json` and is lazy-loaded when a repo tab is opened.
+`latest.json` carries only the top deeply-triaged slice plus a per-repo
+`owed_list` summary (with an `owed_file` pointer). Keep `baseline_action` (and,
+for PRs, `merge_state`/`review_decision`) on **every** owed row — the dashboard
+derives each row's triage State and its "▶ Run agent" action from those, so the
+whole backlog stays actionable, not just the triaged slice. Set the true open
+totals: global `owed_list.issues_total`/`prs_total`, and per-repo
+`owed_list.backlog_issues`/`backlog_prs` (drives the header "open backlog").
+
+### Dashboard-derived fields (client-side — you do NOT emit these)
+
+The dashboard computes these from the fields above; don't add them to the JSON:
+
+- **Triage State** — one mutually-exclusive pill per row, from `next_action`
+  (deep-triaged) or `baseline_action` (lightweight). See
+  `scripts/collector-prompt.md` for the full vocabulary.
+- **Ranking** — default "Priority" = actionable → problem → recency
+  (`updated_at` desc). Keep `updated_at` accurate.
+- **PowerToys module skills** — mapped client-side from `Product-*` labels to the
+  `powertoys-<module>-knowledge` skills in `yeelam-gordon/PowerToys#86`; the
+  Run-agent prompt references the matching skill. No `skill` field needed — just
+  keep PowerToys `Product-*` labels accurate.
+
+The authoritative field contract and deep-triage cap guidance live in
+[`scripts/collector-prompt.md`](scripts/collector-prompt.md).
+
 ---
 
 ## Delivery methods

@@ -4,6 +4,11 @@
   Nightly triage collector. Runs Copilot CLI to analyze tracked repos and
   produces data/latest.json + data/YYYY-MM-DD.json, then commits & pushes.
 
+  NOTE: This is a simplified reference. The authoritative output contract the
+  dashboard depends on (row tiers, baseline_action for the whole backlog, true
+  open totals, and the fields derived client-side) is documented in
+  scripts/collector-prompt.md — read it before changing collector output.
+
 .USAGE
   pwsh .\scripts\triage-collect.ps1
   pwsh .\scripts\triage-collect.ps1 -Repos 'microsoft/intelligent-terminal','yeelam-gordon/awesome-copilot'
