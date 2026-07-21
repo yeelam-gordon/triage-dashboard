@@ -369,6 +369,9 @@
                 class="px-2.5 py-1 text-xs font-medium bg-slate-700 text-white rounded hover:bg-slate-800">
                 🛠 Run review skill
               </button>
+              <button x-show="iss.kind !== 'pr' && !canDelegateFix(iss) && !canPrototype(iss)" @click="openAgentModal(iss)"
+                class="px-2.5 py-1 text-xs font-semibold bg-teal-600 text-white rounded hover:bg-teal-700 text-center leading-tight"
+                x-text="'▶ ' + agentTaskFor(iss).label"></button>
               <button x-show="canDelegateFix(iss)" @click="openFixModal(iss, 'fix')"
                 class="px-2.5 py-1 text-xs font-semibold bg-emerald-600 text-white rounded hover:bg-emerald-700">
                 🤖 Plan &amp; fix
@@ -407,22 +410,23 @@
   class="fixed inset-0 bg-black/40 flex items-center justify-center z-20" style="display:none">
   <div class="bg-white rounded-lg shadow-xl w-[680px] max-w-full p-5">
     <h3 class="text-sm font-semibold">
-      <span x-text="fixModal.mode === 'prototype' ? '💡 Spike / prototype with Copilot' : '🤖 Plan &amp; fix with Copilot'"></span>
+      <span x-text="fixModal.mode === 'agent' ? ((fixModal.agentGlyph || '▶') + ' ' + (fixModal.agentLabel || 'Run agent') + ' with Copilot') : (fixModal.mode === 'prototype' ? '💡 Spike / prototype with Copilot' : '🤖 Plan &amp; fix with Copilot')"></span>
       · <span x-text="fixModal.issue && (fixModal.issue.repo + '#' + fixModal.issue.number)"></span>
     </h3>
-    <p class="mt-1 text-xs text-slate-500" x-show="fixModal.mode !== 'prototype'">This bug is maintainer-vetted (reproducible / ready-to-work) and clearly scoped — a good candidate to hand straight to a coding agent.</p>
+    <p class="mt-1 text-xs text-slate-500" x-show="fixModal.mode === 'fix'">This bug is maintainer-vetted (reproducible / ready-to-work) and clearly scoped — a good candidate to hand straight to a coding agent.</p>
+    <p class="mt-1 text-xs text-slate-500" x-show="fixModal.mode === 'agent'">Ready-to-run Copilot CLI prompt for this issue's triage state. Review/edit the prompt, copy it, and run it locally — the agent uses <span class="font-mono">gh</span> to act on the issue.</p>
     <div class="mt-1 text-xs rounded bg-amber-50 border border-amber-200 text-amber-800 px-2 py-1.5" x-show="fixModal.mode === 'prototype'">
       ⚠ High community demand, but this is a <b>feasibility spike</b>, not a committed feature — confirm the roadmap decision before shipping anything.
     </div>
 
     <div class="mt-3">
       <div class="flex items-center justify-between">
-        <label class="text-xs font-semibold text-slate-700">Option A · Local branch + Copilot CLI</label>
+        <label class="text-xs font-semibold text-slate-700">Option A · Local Copilot CLI</label>
         <button @click="copyText(fixCommand)" class="text-xs px-2 py-0.5 rounded border border-slate-300 hover:bg-slate-50">Copy commands</button>
       </div>
       <pre class="mt-1 w-full border border-slate-300 rounded p-2 text-xs font-mono bg-slate-50 whitespace-pre-wrap" x-text="fixCommand"></pre>
       <div class="mt-2 grid grid-cols-1 gap-2">
-        <label class="text-xs text-slate-600">Branch<input x-model="fixModal.branch" class="mt-0.5 w-full border border-slate-300 rounded p-1.5 text-xs font-mono" /></label>
+        <label class="text-xs text-slate-600" x-show="fixModal.branch">Branch<input x-model="fixModal.branch" class="mt-0.5 w-full border border-slate-300 rounded p-1.5 text-xs font-mono" /></label>
         <label class="text-xs text-slate-600">Prompt<textarea x-model="fixModal.prompt" rows="3" class="mt-0.5 w-full border border-slate-300 rounded p-1.5 text-xs font-mono"></textarea></label>
       </div>
     </div>
@@ -1698,14 +1702,16 @@ function dashboard() {
       if (this.sortMode === 'age') return (this.daysAwaiting(b) - this.daysAwaiting(a)) || ((b.score || 0) - (a.score || 0)) || actionDelta || ((a.rank || 0) - (b.rank || 0));
       if (this.sortMode === 'score') return ((b.score || 0) - (a.score || 0)) || (this.daysAwaiting(b) - this.daysAwaiting(a)) || actionDelta || ((a.rank || 0) - (b.rank || 0));
       if (this.sortMode === 'recent') return (this.recencyMs(b) - this.recencyMs(a)) || (Number(this.hasProblem(b)) - Number(this.hasProblem(a))) || ((b.score || 0) - (a.score || 0)) || actionDelta || ((a.rank || 0) - (b.rank || 0));
-      // priority (default): problems first, then the most recently active within that tier, so the
-      // latest issue/PR with a problem leads the daily list. Stalled items remain inside the problem
-      // tier (above everything non-problem) rather than being demoted to the bottom.
+      // priority (default): items that NEED ACTION lead, then urgent problems within that tier,
+      // then the most recently active — so the latest issues/PRs that need action are on top.
+      // Tracked / no-action items always sink below everything actionable (even if they look stale),
+      // while stalled-but-important actionable items stay high (problem tier), never at the bottom.
+      if (actionDelta) return actionDelta;
       const problemDelta = Number(this.hasProblem(b)) - Number(this.hasProblem(a));
       if (problemDelta) return problemDelta;
       const recencyDelta = this.recencyMs(b) - this.recencyMs(a);
       if (recencyDelta) return recencyDelta;
-      return ((b.score || 0) - (a.score || 0)) || (this.daysAwaiting(b) - this.daysAwaiting(a)) || actionDelta || ((a.rank || 0) - (b.rank || 0));
+      return ((b.score || 0) - (a.score || 0)) || (this.daysAwaiting(b) - this.daysAwaiting(a)) || ((a.rank || 0) - (b.rank || 0));
     },
 
     compareCrossKindUrgency(a, b) {
@@ -1788,6 +1794,55 @@ function dashboard() {
           + `Read the issue thread first, reproduce the bug, propose a short plan, then implement the fix with tests and open a PR that references #${iss.number}.`;
       this.fixModal = { open: true, issue: iss, mode, branch, prompt };
     },
+
+    // Per-state agent task: maps an issue's triage state to a concrete Copilot
+    // agent action + a ready-to-run prompt, so every issue is executable.
+    agentTaskFor(iss) {
+      const st = this.stateOf(iss);
+      const repo = iss.repo, n = iss.number;
+      const title = String(iss.title || '').replace(/"/g, "'");
+      const reason = String(iss.next_action_reason || '').replace(/"/g, "'").replace(/\s+/g, ' ').trim();
+      const labels = (this.netNewSuggestedLabels ? this.netNewSuggestedLabels(iss) : (iss.suggested_labels || [])).join(', ');
+      const draft = String(iss.suggested_reply || '').replace(/"/g, "'").replace(/\s+/g, ' ').trim();
+      const base = `${repo}#${n} — ${title}`;
+      switch (st.key) {
+        case 'needs_reply':
+          return { glyph: '💬', label: 'Draft & post reply', prompt:
+            `Draft and post a maintainer reply on ${base}. Context: ${reason || 'we owe the author a response'}. `
+            + `${draft ? 'Suggested draft to refine: ' + draft + '. ' : ''}Read the thread with gh, refine the reply, then post it as a comment after I confirm.` };
+        case 'needs_info':
+          return { glyph: '❓', label: 'Request info', prompt:
+            `Post an info-request comment on ${base}: ask for exact repro steps, version/build, and logs. `
+            + `${draft ? 'Suggested: ' + draft + '. ' : ''}Post via gh, then apply a needs-author-feedback label.` };
+        case 'needs_labels':
+          return { glyph: '🏷️', label: 'Apply labels', prompt:
+            `Apply labels [${labels || 'infer the correct area + type labels from the issue'}] to ${base} via gh, and remove any Needs-Triage label.` };
+        case 'assign': {
+          const cls = String(iss.classification_type || '').toLowerCase();
+          if (['feature', 'enhancement'].includes(cls)) return { glyph: '🧭', label: 'Evaluate alignment', prompt:
+            `Evaluate the feature request ${base} against product goals and design. Read the thread with gh, summarize the ask and the demand signal, `
+            + `then recommend accept / decline (with rationale) / needs-scoping and post it as a comment.` };
+          return { glyph: '🔧', label: 'Plan & fix', branch: this.fixBranchName(iss, 'fix'), prompt:
+            `Plan and fix ${base}. Read the issue thread first, reproduce the bug, propose a short plan, then implement the fix with tests and open a PR that references #${n}.` };
+        }
+        case 'duplicate':
+          return { glyph: '🗂️', label: 'Close as duplicate', prompt:
+            `Identify the original issue that ${base} duplicates${reason ? ' (hint: ' + reason + ')' : ''}. Post a comment "Duplicate of #<original>" that links it, then close ${base} as a duplicate via gh.` };
+        case 'tracked':
+          return { glyph: '📋', label: 'Confirm disposition', prompt:
+            `Confirm the disposition for ${base} (currently tracked / no action; reason: ${reason || 'none given'}). `
+            + `If it is won't-fix / by-design / duplicate, post the rationale as a comment and apply the matching label; otherwise re-triage and set the correct next action.` };
+        default:
+          return { glyph: '🔎', label: 'Triage', prompt:
+            `Triage ${base}: classify it (bug/feature), assess severity, propose labels, and decide the next action with a one-line rationale.` };
+      }
+    },
+
+    openAgentModal(iss) {
+      const t = this.agentTaskFor(iss);
+      this.fixModal = { open: true, issue: iss, mode: 'agent', branch: t.branch || '', prompt: t.prompt, agentGlyph: t.glyph, agentLabel: t.label };
+    },
+
     copyText(text) {
       try {
         navigator.clipboard.writeText(text);
@@ -1797,9 +1852,11 @@ function dashboard() {
     get fixCommand() {
       const m = this.fixModal;
       if (!m.issue) return '';
+      const cmd = `copilot -p "${String(m.prompt || '').replace(/\n/g, ' ').replace(/"/g, '\\"')}"`;
+      if (!m.branch) return cmd;
       return `git fetch origin\n`
         + `git checkout -b ${m.branch} origin/main\n\n`
-        + `copilot -p "${m.prompt.replace(/\n/g, ' ')}"`;
+        + cmd;
     },
     async postReply() {
       if (!this.requireToken()) return;
