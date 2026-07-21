@@ -1,13 +1,13 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-07-20T21:18:06Z",
+  "generated_at": "2026-07-21T03:10:15Z",
   "awaiting_label": "Needs-Triage",
-  "awaiting_issues": 29,
-  "awaiting_prs": 27,
-  "backlog_issues": 36,
-  "backlog_prs": 30,
-  "issues_total": 29,
-  "prs_total": 22,
+  "awaiting_issues": 30,
+  "awaiting_prs": 29,
+  "backlog_issues": 37,
+  "backlog_prs": 32,
+  "issues_total": 30,
+  "prs_total": 23,
   "issues": [
     {
       "number": 231,
@@ -71,8 +71,8 @@
       "up": 2,
       "comments": 1,
       "created_at": "2026-06-20T12:24:47Z",
-      "updated_at": "2026-06-20T12:25:33Z",
-      "age_days": 31.0,
+      "updated_at": "2026-07-21T02:54:47Z",
+      "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -80,7 +80,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 31d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (new) — correct them, then route."
     },
     {
       "number": 248,
@@ -96,8 +96,8 @@
       "up": 1,
       "comments": 1,
       "created_at": "2026-06-05T14:23:16Z",
-      "updated_at": "2026-06-25T14:43:14Z",
-      "age_days": 26.0,
+      "updated_at": "2026-07-21T02:54:44Z",
+      "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -105,7 +105,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 26d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (new) — correct them, then route."
     },
     {
       "number": 269,
@@ -121,8 +121,8 @@
       "up": 1,
       "comments": 1,
       "created_at": "2026-06-11T07:43:28Z",
-      "updated_at": "2026-07-07T12:32:57Z",
-      "age_days": 14.0,
+      "updated_at": "2026-07-21T02:55:01Z",
+      "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -130,7 +130,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 14d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (new) — correct them, then route."
     },
     {
       "number": 195,
@@ -225,6 +225,54 @@
       "baseline_reason": "New untriaged idea (waited 40d) — classify it and either ask for scope or make an early accept/park call."
     },
     {
+      "number": 325,
+      "title": "Add portable mode",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/325",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "Issue-Feature",
+        "Needs-Triage",
+        "Needs-Tag-Fix"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-06-17T19:14:31Z",
+      "updated_at": "2026-06-17T19:15:42Z",
+      "age_days": 34.0,
+      "triaged": true,
+      "awaiting": true,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "label_only",
+      "baseline_glyph": "🏷️",
+      "baseline_text": "Fix the labels / tags",
+      "baseline_reason": "Wrong/missing tags (waited 34d) — correct them, then route."
+    },
+    {
+      "number": 207,
+      "title": "[Feature Request] Add support of Goose",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/207",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "Needs-Triage"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-06-03T12:49:59Z",
+      "updated_at": "2026-06-22T21:09:03Z",
+      "age_days": 29.0,
+      "triaged": true,
+      "awaiting": true,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "reply",
+      "baseline_glyph": "💬",
+      "baseline_text": "Triage idea — scope then decide",
+      "baseline_reason": "New untriaged idea (waited 29d) — classify it and either ask for scope or make an early accept/park call."
+    },
+    {
       "number": 203,
       "title": "Multi-turn command execution",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/203",
@@ -236,8 +284,8 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-06-03T08:42:40Z",
-      "updated_at": "2026-06-11T02:07:21Z",
-      "age_days": 40.0,
+      "updated_at": "2026-07-21T02:54:54Z",
+      "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -245,7 +293,31 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm type (bug/feature) & route",
-      "baseline_reason": "Untyped report (waited 40d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+      "baseline_reason": "Untyped report (new) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+    },
+    {
+      "number": 263,
+      "title": "Terminal Hang",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/263",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "Issue-Bug",
+        "Needs-Triage"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-06-10T06:56:53Z",
+      "updated_at": "2026-07-21T02:54:34Z",
+      "age_days": 0.0,
+      "triaged": true,
+      "awaiting": true,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "request_info",
+      "baseline_glyph": "🩺",
+      "baseline_text": "Confirm crash — get repro/logs & route",
+      "baseline_reason": "Crash report (new) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
     },
     {
       "number": 270,
@@ -261,8 +333,8 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-06-11T07:45:42Z",
-      "updated_at": "2026-06-11T07:46:16Z",
-      "age_days": 40.0,
+      "updated_at": "2026-07-21T02:54:59Z",
+      "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -270,7 +342,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 40d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (new) — correct them, then route."
     },
     {
       "number": 276,
@@ -287,8 +359,8 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-06-11T22:48:48Z",
-      "updated_at": "2026-06-11T22:49:42Z",
-      "age_days": 39.0,
+      "updated_at": "2026-07-21T02:54:58Z",
+      "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -296,7 +368,32 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags (Settings)",
-      "baseline_reason": "Wrong/missing tags (Settings) (waited 39d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (Settings) (new) — correct them, then route."
+    },
+    {
+      "number": 282,
+      "title": "Able to save the Agent Customized Name instead of command line default name.",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/282",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "Issue-Feature",
+        "Needs-Triage",
+        "Needs-Tag-Fix"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-06-12T07:59:39Z",
+      "updated_at": "2026-07-21T02:55:06Z",
+      "age_days": 0.0,
+      "triaged": true,
+      "awaiting": true,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "label_only",
+      "baseline_glyph": "🏷️",
+      "baseline_text": "Fix the labels / tags",
+      "baseline_reason": "Wrong/missing tags (new) — correct them, then route."
     },
     {
       "number": 285,
@@ -312,8 +409,8 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-06-12T14:52:42Z",
-      "updated_at": "2026-06-16T04:34:26Z",
-      "age_days": 35.0,
+      "updated_at": "2026-07-21T02:55:04Z",
+      "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -321,7 +418,31 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 35d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (new) — correct them, then route."
+    },
+    {
+      "number": 291,
+      "title": "Undocumented limitation when using Intelligent Terminal with Copilot on Windows 11",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/291",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "Issue-Bug",
+        "Needs-Triage"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-06-14T09:17:07Z",
+      "updated_at": "2026-07-21T02:54:36Z",
+      "age_days": 0.0,
+      "triaged": true,
+      "awaiting": true,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "request_info",
+      "baseline_glyph": "❓",
+      "baseline_text": "Request exact repro, version & logs",
+      "baseline_reason": "Bug (new) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 302,
@@ -337,8 +458,8 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-06-16T08:37:29Z",
-      "updated_at": "2026-06-16T08:38:08Z",
-      "age_days": 35.0,
+      "updated_at": "2026-07-21T02:54:45Z",
+      "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -346,80 +467,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 35d) — correct them, then route."
-    },
-    {
-      "number": 263,
-      "title": "Terminal Hang",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/263",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "Issue-Bug",
-        "Needs-Triage"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-06-10T06:56:53Z",
-      "updated_at": "2026-06-17T13:27:29Z",
-      "age_days": 34.0,
-      "triaged": true,
-      "awaiting": true,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "🩺",
-      "baseline_text": "Confirm crash — get repro/logs & route",
-      "baseline_reason": "Crash report (waited 34d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
-    },
-    {
-      "number": 291,
-      "title": "Undocumented limitation when using Intelligent Terminal with Copilot on Windows 11",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/291",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "Issue-Bug",
-        "Needs-Triage"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-06-14T09:17:07Z",
-      "updated_at": "2026-06-16T23:43:45Z",
-      "age_days": 34.0,
-      "triaged": true,
-      "awaiting": true,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "❓",
-      "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 34d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
-    },
-    {
-      "number": 325,
-      "title": "Add portable mode",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/325",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "Issue-Feature",
-        "Needs-Triage",
-        "Needs-Tag-Fix"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-06-17T19:14:31Z",
-      "updated_at": "2026-06-17T19:15:42Z",
-      "age_days": 33.0,
-      "triaged": true,
-      "awaiting": true,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "label_only",
-      "baseline_glyph": "🏷️",
-      "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 33d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (new) — correct them, then route."
     },
     {
       "number": 332,
@@ -435,8 +483,8 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-06-19T15:55:20Z",
-      "updated_at": "2026-06-19T16:27:47Z",
-      "age_days": 32.0,
+      "updated_at": "2026-07-21T02:55:09Z",
+      "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -444,7 +492,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 32d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (new) — correct them, then route."
     },
     {
       "number": 334,
@@ -460,8 +508,8 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-06-21T08:46:07Z",
-      "updated_at": "2026-06-21T08:46:50Z",
-      "age_days": 30.0,
+      "updated_at": "2026-07-21T02:55:07Z",
+      "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -469,30 +517,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 30d) — correct them, then route."
-    },
-    {
-      "number": 207,
-      "title": "[Feature Request] Add support of Goose",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/207",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "Needs-Triage"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-06-03T12:49:59Z",
-      "updated_at": "2026-06-22T21:09:03Z",
-      "age_days": 28.0,
-      "triaged": true,
-      "awaiting": true,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Triage idea — scope then decide",
-      "baseline_reason": "New untriaged idea (waited 28d) — classify it and either ask for scope or make an early accept/park call."
+      "baseline_reason": "Wrong/missing tags (new) — correct them, then route."
     },
     {
       "number": 346,
@@ -510,8 +535,8 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-06-24T00:03:58Z",
-      "updated_at": "2026-06-24T00:04:44Z",
-      "age_days": 27.0,
+      "updated_at": "2026-07-21T02:55:02Z",
+      "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -519,7 +544,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags (AgentPane)",
-      "baseline_reason": "Wrong/missing tags (AgentPane) (waited 27d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (AgentPane) (new) — correct them, then route."
     },
     {
       "number": 347,
@@ -535,8 +560,8 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-06-24T00:13:33Z",
-      "updated_at": "2026-06-24T00:14:18Z",
-      "age_days": 27.0,
+      "updated_at": "2026-07-21T02:54:48Z",
+      "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -544,7 +569,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 27d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (new) — correct them, then route."
     },
     {
       "number": 349,
@@ -561,8 +586,8 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-06-24T03:06:30Z",
-      "updated_at": "2026-06-25T15:23:40Z",
-      "age_days": 26.0,
+      "updated_at": "2026-07-21T02:54:39Z",
+      "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -570,32 +595,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags (AgentPane)",
-      "baseline_reason": "Wrong/missing tags (AgentPane) (waited 26d) — correct them, then route."
-    },
-    {
-      "number": 282,
-      "title": "Able to save the Agent Customized Name instead of command line default name.",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/282",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "Issue-Feature",
-        "Needs-Triage",
-        "Needs-Tag-Fix"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-06-12T07:59:39Z",
-      "updated_at": "2026-07-03T07:18:17Z",
-      "age_days": 18.0,
-      "triaged": true,
-      "awaiting": true,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "label_only",
-      "baseline_glyph": "🏷️",
-      "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 18d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (AgentPane) (new) — correct them, then route."
     },
     {
       "number": 384,
@@ -610,8 +610,8 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-07-06T22:30:25Z",
-      "updated_at": "2026-07-06T22:31:14Z",
-      "age_days": 14.0,
+      "updated_at": "2026-07-21T02:54:31Z",
+      "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -619,7 +619,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "🩺",
       "baseline_text": "Confirm crash — get repro/logs & route",
-      "baseline_reason": "Crash report (waited 14d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
+      "baseline_reason": "Crash report (new) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
     },
     {
       "number": 386,
@@ -634,8 +634,8 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-07-07T06:26:21Z",
-      "updated_at": "2026-07-16T07:38:53Z",
-      "age_days": 5.0,
+      "updated_at": "2026-07-21T02:54:33Z",
+      "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -643,7 +643,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 5d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (new) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 421,
@@ -658,8 +658,8 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-07-16T00:55:41Z",
-      "updated_at": "2026-07-16T00:56:21Z",
-      "age_days": 5.0,
+      "updated_at": "2026-07-21T02:54:53Z",
+      "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -667,7 +667,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 5d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (new) — correct them, then route."
     },
     {
       "number": 445,
@@ -682,8 +682,8 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-07-18T05:49:49Z",
-      "updated_at": "2026-07-18T05:50:23Z",
-      "age_days": 3.0,
+      "updated_at": "2026-07-21T02:54:40Z",
+      "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -691,7 +691,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 3d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (new) — correct them, then route."
     },
     {
       "number": 459,
@@ -706,9 +706,33 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-07-20T20:47:46Z",
-      "updated_at": "2026-07-20T20:48:36Z",
+      "updated_at": "2026-07-21T02:54:37Z",
       "age_days": 0.0,
-      "triaged": false,
+      "triaged": true,
+      "awaiting": true,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "label_only",
+      "baseline_glyph": "🏷️",
+      "baseline_text": "Fix the labels / tags",
+      "baseline_reason": "Wrong/missing tags (new) — correct them, then route."
+    },
+    {
+      "number": 460,
+      "title": "Add built-in OpenCode ACP agent support",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/460",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "Needs-Triage",
+        "Needs-Tag-Fix"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-07-21T01:19:56Z",
+      "updated_at": "2026-07-21T03:08:32Z",
+      "age_days": 0.0,
+      "triaged": true,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -755,8 +779,8 @@
       "up": 4,
       "comments": 1,
       "created_at": "2026-06-04T11:19:15Z",
-      "updated_at": "2026-06-11T02:07:34Z",
-      "age_days": 40.0,
+      "updated_at": "2026-07-21T01:59:49Z",
+      "age_days": 0.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -764,7 +788,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 40d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (new) — correct them, then route."
     },
     {
       "number": 254,
@@ -876,7 +900,7 @@
       "comments": 1,
       "created_at": "2026-06-17T19:32:42Z",
       "updated_at": "2026-06-17T19:35:27Z",
-      "age_days": 33.0,
+      "age_days": 34.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -884,7 +908,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 33d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 34d) — correct them, then route."
     }
   ],
   "prs": [
@@ -1274,7 +1298,7 @@
       "created_at": "2026-07-17T13:39:55Z",
       "updated_at": "2026-07-18T02:27:14Z",
       "age_days": 3.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1296,7 +1320,7 @@
       "created_at": "2026-07-18T07:49:56Z",
       "updated_at": "2026-07-18T07:58:04Z",
       "age_days": 3.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1340,7 +1364,7 @@
       "created_at": "2026-07-17T12:52:06Z",
       "updated_at": "2026-07-20T05:17:09Z",
       "age_days": 1.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1362,7 +1386,7 @@
       "created_at": "2026-07-18T00:59:36Z",
       "updated_at": "2026-07-20T05:46:27Z",
       "age_days": 1.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1470,8 +1494,8 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-07-20T14:48:52Z",
-      "updated_at": "2026-07-20T14:54:30Z",
-      "age_days": 1.0,
+      "updated_at": "2026-07-21T03:10:41Z",
+      "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -1480,7 +1504,51 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 1d) — review it."
+      "baseline_reason": "PR (new) — review it."
+    },
+    {
+      "number": 461,
+      "title": "Extract autofix ACP transform proxy",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/461",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-07-21T01:39:20Z",
+      "updated_at": "2026-07-21T01:44:19Z",
+      "age_days": 0.0,
+      "triaged": false,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (new) — review it."
+    },
+    {
+      "number": 462,
+      "title": "Upgrade Codex ACP adapter to 1.1.4",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/462",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-07-21T02:20:26Z",
+      "updated_at": "2026-07-21T03:00:38Z",
+      "age_days": 0.0,
+      "triaged": false,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (new) — review it."
     },
     {
       "number": 22,
