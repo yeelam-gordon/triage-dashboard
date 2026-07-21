@@ -241,6 +241,7 @@
         </span>
         <select x-model="sortMode" class="px-2 py-1 rounded border border-slate-200">
           <option value="priority">Priority</option>
+          <option value="recent">Recent</option>
           <option value="age">Age</option>
           <option value="score">Score</option>
         </select>
@@ -298,6 +299,8 @@
                 <span class="text-amber-600" x-show="iss.days_no_reply >= 7">
                   ⏰ <span x-text="iss.days_no_reply"></span>d no reply
                 </span>
+                <span class="px-1.5 py-0.5 bg-slate-100 text-slate-600 rounded" x-show="iss.updated_at" :title="'Updated ' + new Date(iss.updated_at).toLocaleString()" x-text="'📅 updated ' + updatedText(iss)"></span>
+                <span class="px-1.5 py-0.5 bg-green-100 text-green-700 rounded font-medium" x-show="isRecent(iss)">🆕 recent</span>
               </div>
               <a :href="iss.url" target="_blank" class="block mt-0.5 text-sm font-medium text-slate-900 hover:text-blue-600 truncate" x-text="iss.title"></a>
               <div class="mt-2 text-sm text-slate-700 flex items-start gap-1.5" x-show="iss.triaged">
@@ -1557,6 +1560,41 @@ function dashboard() {
       return Number(iss && (iss.days_awaiting ?? iss.age_days ?? iss.priority_age_days ?? iss.days_no_reply ?? 0)) || 0;
     },
 
+    recencyMs(iss) {
+      const t = Date.parse((iss && iss.updated_at) || '');
+      return Number.isNaN(t) ? 0 : t;
+    },
+
+    recencyDays(iss) {
+      const ms = this.recencyMs(iss);
+      if (!ms) return Infinity;
+      return (Date.now() - ms) / 86400000;
+    },
+
+    updatedText(iss) {
+      const d = this.recencyDays(iss);
+      if (!Number.isFinite(d)) return 'unknown';
+      if (d < 1) return 'today';
+      if (d < 2) return '1d ago';
+      return `${Math.floor(d)}d ago`;
+    },
+
+    isRecent(iss) {
+      return this.recencyDays(iss) < 3;
+    },
+
+    hasProblem(iss) {
+      if (this.isNeedsAttention(iss)) return true;
+      const sev = String((iss && iss.severity) || '').toLowerCase();
+      if (['crash', 'security', 'risk', 'regression', 'bug'].includes(sev)) return true;
+      if (iss && iss.kind === 'pr') {
+        if (String(iss.pr_ci_rollup || '').toUpperCase() === 'FAILURE') return true;
+        if (['DIRTY', 'BLOCKED', 'BEHIND'].includes(String(iss.pr_merge_state || '').toUpperCase())) return true;
+        if (String(iss.pr_review_decision || '').toUpperCase() === 'CHANGES_REQUESTED') return true;
+      }
+      return false;
+    },
+
     formatDays(value) {
       const n = Number(value) || 0;
       return Number.isInteger(n) ? `${n}d` : `${n.toFixed(1).replace(/\.0$/, '')}d`;
@@ -1590,12 +1628,19 @@ function dashboard() {
       const actionDelta = Number(this.isActionable(b)) - Number(this.isActionable(a));
       if (this.sortMode === 'age') return (this.daysAwaiting(b) - this.daysAwaiting(a)) || ((b.score || 0) - (a.score || 0)) || actionDelta || ((a.rank || 0) - (b.rank || 0));
       if (this.sortMode === 'score') return ((b.score || 0) - (a.score || 0)) || (this.daysAwaiting(b) - this.daysAwaiting(a)) || actionDelta || ((a.rank || 0) - (b.rank || 0));
-      if (!a.triaged && !b.triaged) return (a.rank || 0) - (b.rank || 0);
+      if (this.sortMode === 'recent') return (this.recencyMs(b) - this.recencyMs(a)) || (Number(this.hasProblem(b)) - Number(this.hasProblem(a))) || ((b.score || 0) - (a.score || 0)) || actionDelta || ((a.rank || 0) - (b.rank || 0));
+      // priority (default): problems first, then the most recently active within that tier, so the
+      // latest issue/PR with a problem leads the daily list. Stalled items remain inside the problem
+      // tier (above everything non-problem) rather than being demoted to the bottom.
+      const problemDelta = Number(this.hasProblem(b)) - Number(this.hasProblem(a));
+      if (problemDelta) return problemDelta;
+      const recencyDelta = this.recencyMs(b) - this.recencyMs(a);
+      if (recencyDelta) return recencyDelta;
       return ((b.score || 0) - (a.score || 0)) || (this.daysAwaiting(b) - this.daysAwaiting(a)) || actionDelta || ((a.rank || 0) - (b.rank || 0));
     },
 
     compareCrossKindUrgency(a, b) {
-      return ((b.score || 0) - (a.score || 0)) || (this.daysAwaiting(b) - this.daysAwaiting(a)) || String(a.repo || '').localeCompare(String(b.repo || '')) || ((a.number || 0) - (b.number || 0));
+      return ((b.score || 0) - (a.score || 0)) || (this.recencyMs(b) - this.recencyMs(a)) || (this.daysAwaiting(b) - this.daysAwaiting(a)) || String(a.repo || '').localeCompare(String(b.repo || '')) || ((a.number || 0) - (b.number || 0));
     },
 
     renderCharts() {
