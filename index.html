@@ -297,6 +297,7 @@
                 <span class="px-1.5 py-0.5 bg-emerald-50 text-emerald-700 rounded" x-show="iss.triaged">fully triaged</span>
                 <span class="px-1.5 py-0.5 bg-slate-100 text-slate-600 rounded" x-show="!iss.triaged">quick-triage</span>
                 <span class="px-1.5 py-0.5 bg-indigo-50 text-indigo-700 rounded" x-show="iss.is_community">community</span>
+                <span class="px-1.5 py-0.5 bg-cyan-50 text-cyan-800 border border-cyan-200 rounded font-medium" x-show="powerToysSkillFor(iss)" :title="powerToysSkillFor(iss) ? ('.github/skills/' + powerToysSkillFor(iss).skill + '/  (PR #86)') : ''" x-text="powerToysSkillFor(iss) ? ('🧩 ' + powerToysSkillFor(iss).module + ' skill') : ''"></span>
                 <span class="px-1.5 py-0.5 rounded" x-show="iss.kind === 'pr' && !!prCiChip(iss)" :class="prCiChip(iss) ? prCiChip(iss).cls : ''" x-text="prCiChip(iss) ? (prCiChip(iss).glyph + ' ' + prCiChip(iss).label) : ''"></span>
                 <span class="px-1.5 py-0.5 bg-red-100 text-red-700 rounded font-medium" x-show="atRisk(iss)">😤 at-risk</span>
                 <span class="px-1.5 py-0.5 bg-amber-50 text-amber-700 rounded" x-show="iss.triaged" x-text="'Score ' + (iss.score ?? '—')"></span>
@@ -369,7 +370,7 @@
                 class="px-2.5 py-1 text-xs font-medium bg-slate-700 text-white rounded hover:bg-slate-800">
                 🛠 Run review skill
               </button>
-              <button x-show="iss.kind !== 'pr' && !canDelegateFix(iss) && !canPrototype(iss)" @click="openAgentModal(iss)"
+              <button x-show="!canDelegateFix(iss) && !canPrototype(iss)" @click="openAgentModal(iss)"
                 class="px-2.5 py-1 text-xs font-semibold bg-teal-600 text-white rounded hover:bg-teal-700 text-center leading-tight"
                 x-text="'▶ ' + agentTaskFor(iss).label"></button>
               <button x-show="canDelegateFix(iss)" @click="openFixModal(iss, 'fix')"
@@ -415,6 +416,9 @@
     </h3>
     <p class="mt-1 text-xs text-slate-500" x-show="fixModal.mode === 'fix'">This bug is maintainer-vetted (reproducible / ready-to-work) and clearly scoped — a good candidate to hand straight to a coding agent.</p>
     <p class="mt-1 text-xs text-slate-500" x-show="fixModal.mode === 'agent'">Ready-to-run Copilot CLI prompt for this issue's triage state. Review/edit the prompt, copy it, and run it locally — the agent uses <span class="font-mono">gh</span> to act on the issue.</p>
+    <div class="mt-1 text-xs rounded bg-cyan-50 border border-cyan-200 text-cyan-800 px-2 py-1.5" x-show="fixModal.mode === 'agent' && fixModal.agentSkill">
+      🧩 Uses PowerToys module skill <span class="font-mono" x-text="fixModal.agentSkill"></span> from PR #86 — the prompt points the agent at <span class="font-mono">.github/skills/</span> for the Module Map, regression catalog, and review/triage templates.
+    </div>
     <div class="mt-1 text-xs rounded bg-amber-50 border border-amber-200 text-amber-800 px-2 py-1.5" x-show="fixModal.mode === 'prototype'">
       ⚠ High community demand, but this is a <b>feasibility spike</b>, not a committed feature — confirm the roadmap decision before shipping anything.
     </div>
@@ -1615,8 +1619,15 @@ function dashboard() {
       return (iss && iss.kind === 'pr') ? this.prStateOf(iss) : this.issueStateOf(iss);
     },
 
+    // Effective action = deep-triage next_action if present, else the lightweight
+    // baseline_action carried by every owed row. This lets ALL rows (not just the
+    // deep-triaged slice) resolve to a meaningful triage state.
+    effectiveAction(iss) {
+      return String((iss && (iss.next_action || iss.baseline_action)) || '').toLowerCase();
+    },
+
     issueStateOf(iss) {
-      const na = String((iss && iss.next_action) || '').toLowerCase();
+      const na = this.effectiveAction(iss);
       if (na === 'reply') return { key: 'needs_reply', glyph: '💬', label: 'Needs reply', cls: 'bg-blue-100 text-blue-800 border border-blue-300' };
       if (na === 'request_info') return { key: 'needs_info', glyph: '❓', label: 'Needs info', cls: 'bg-amber-100 text-amber-800 border border-amber-300' };
       if (na === 'label_only' || na === 'label') return { key: 'needs_labels', glyph: '🏷️', label: 'Needs labels', cls: 'bg-violet-100 text-violet-800 border border-violet-300' };
@@ -1629,6 +1640,10 @@ function dashboard() {
         const label = isBug ? 'Assign to fix' : (isFeat ? 'Assign to evaluate' : 'Assign');
         return { key: 'assign', glyph, label, cls: 'bg-teal-100 text-teal-800 border border-teal-300' };
       }
+      if (na === 'promote') return { key: 'evaluate', glyph: '🧭', label: 'Evaluate demand', cls: 'bg-teal-100 text-teal-800 border border-teal-300' };
+      if (na === 'escalate') return { key: 'escalate', glyph: '🚨', label: 'Escalate', cls: 'bg-red-100 text-red-800 border border-red-300' };
+      if (na === 'reassess_stale') return { key: 'reassess_stale', glyph: '🕰️', label: 'Reassess stale', cls: 'bg-stone-100 text-stone-700 border border-stone-300' };
+      if (na === 'await_author' || na === 'awaiting_author') return { key: 'awaiting_author', glyph: '⏳', label: 'Awaiting author', cls: 'bg-slate-100 text-slate-600 border border-slate-300' };
       if (na === 'close_dup') return { key: 'duplicate', glyph: '🗂️', label: 'Close as duplicate', cls: 'bg-slate-100 text-slate-700 border border-slate-300' };
       if (na === 'no_action') return { key: 'tracked', glyph: '📋', label: 'Tracked', cls: 'bg-slate-100 text-slate-600 border border-slate-300' };
       return { key: 'untriaged', glyph: '🆕', label: 'Untriaged', cls: 'bg-slate-100 text-slate-700 border border-slate-300' };
@@ -1637,16 +1652,67 @@ function dashboard() {
     prStateOf(iss) {
       const ci = String((iss && iss.pr_ci_rollup) || '').toUpperCase();
       const failing = ((iss && iss.pr_failing_jobs) || []).length > 0;
-      const na = String((iss && iss.next_action) || '').toLowerCase();
-      const merge = String((iss && iss.pr_merge_state) || '').toUpperCase();
-      const review = String((iss && iss.pr_review_decision) || '').toUpperCase();
+      const na = this.effectiveAction(iss);
+      const merge = String((iss && (iss.pr_merge_state || iss.merge_state)) || '').toUpperCase();
+      const review = String((iss && (iss.pr_review_decision || iss.review_decision)) || '').toUpperCase();
       if (na === 'no_action') return { key: 'no_action', glyph: '✅', label: 'No action', cls: 'bg-slate-100 text-slate-600 border border-slate-300' };
       if (ci === 'FAILURE' || ci === 'FAILING' || failing || na === 'fix_ci') return { key: 'ci_failing', glyph: '❌', label: 'CI failing', cls: 'bg-rose-100 text-rose-800 border border-rose-300' };
       if (merge === 'DIRTY' || na === 'needs_rebase') return { key: 'needs_rebase', glyph: '🔀', label: 'Needs rebase', cls: 'bg-orange-100 text-orange-800 border border-orange-300' };
-      if (review === 'CHANGES_REQUESTED') return { key: 'changes_requested', glyph: '🔧', label: 'Changes requested', cls: 'bg-amber-100 text-amber-800 border border-amber-300' };
-      if (na === 'needs_review' || review === 'REVIEW_REQUIRED') return { key: 'needs_review', glyph: '👀', label: 'Needs review', cls: 'bg-purple-100 text-purple-800 border border-purple-300' };
+      if (review === 'CHANGES_REQUESTED' || na === 'request_changes' || na === 'await_author_changes') return { key: 'changes_requested', glyph: '🔧', label: 'Changes requested', cls: 'bg-amber-100 text-amber-800 border border-amber-300' };
+      if (na === 'wait_author') return { key: 'awaiting_author', glyph: '⏳', label: 'Awaiting author', cls: 'bg-slate-100 text-slate-600 border border-slate-300' };
+      if (na === 'needs_review' || na === 'review' || na === 'assign_reviewer' || review === 'REVIEW_REQUIRED') return { key: 'needs_review', glyph: '👀', label: 'Needs review', cls: 'bg-purple-100 text-purple-800 border border-purple-300' };
       if (review === 'APPROVED' && (ci === 'SUCCESS' || ci === '')) return { key: 'ready', glyph: '🟢', label: 'Ready to merge', cls: 'bg-emerald-100 text-emerald-800 border border-emerald-300' };
       return { key: 'needs_review', glyph: '👀', label: 'Needs review', cls: 'bg-purple-100 text-purple-800 border border-purple-300' };
+    },
+
+    // ---- PowerToys module skills (from PR yeelam-gordon/PowerToys#86) ----
+    // Deterministic Product-* label -> per-module knowledge skill, applied client-side
+    // so EVERY PowerToys issue/PR (all ~7k) can invoke its module skill, not just the
+    // deep-triaged slice. No data regeneration; survives nightly collector runs.
+    ptSkillMap: {
+      'Product-FancyZones': 'powertoys-fancyzones-knowledge',
+      'Product-PowerToys Run': 'powertoys-powertoysrun-knowledge',
+      'Product-Command Palette': 'powertoys-cmdpal-knowledge',
+      'Product-Keyboard Shortcut Manager': 'powertoys-keyboardmanager-knowledge',
+      'Product-Keyboard Manager': 'powertoys-keyboardmanager-knowledge',
+      'Product-Mouse Without Borders': 'powertoys-mousewithoutborders-knowledge',
+      'Product-Peek': 'powertoys-peek-knowledge',
+      'Product-Always On Top': 'powertoys-alwaysontop-knowledge',
+      'Product-Workspaces': 'powertoys-workspaces-knowledge',
+      'Product-Color Picker': 'powertoys-colorpicker-knowledge',
+      'Product-Mouse Utilities': 'powertoys-mouseutils-knowledge',
+      'Product-Find My Mouse': 'powertoys-mouseutils-knowledge',
+      'Product-Mouse Highlighter': 'powertoys-mouseutils-knowledge',
+      'Product-Mouse Pointer Crosshairs': 'powertoys-mouseutils-knowledge',
+      'Product-Mouse Jump': 'powertoys-mouseutils-knowledge',
+      'Product-Cursor Wrap': 'powertoys-mouseutils-knowledge',
+      'Product-ZoomIt': 'powertoys-zoomit-knowledge',
+      'Product-Image Resizer': 'powertoys-imageresizer-knowledge',
+      'Product-PowerDisplay': 'powertoys-powerdisplay-knowledge',
+      'Product-Grab And Move': 'powertoys-grabandmove-knowledge',
+      'Product-Text Extractor': 'powertoys-textextractor-knowledge',
+      'Product-Awake': 'powertoys-awake-knowledge',
+      'Product-New+': 'powertoys-newplus-knowledge',
+      'Product-File Locksmith': 'powertoys-filelocksmith-knowledge',
+      'Product-Screen Ruler': 'powertoys-screenruler-knowledge',
+      'Product-CropAndLock': 'powertoys-cropandlock-knowledge',
+      'Product-LightSwitch': 'powertoys-lightswitch-knowledge',
+      'Product-Environment Variables': 'powertoys-environmentvariables-knowledge',
+      'Product-Hosts File Editor': 'powertoys-hosts-knowledge',
+      'Product-Registry Preview': 'powertoys-registrypreview-knowledge',
+      'Product-Shortcut Guide': 'powertoys-shortcutguide-knowledge',
+      'Product-CommandNotFound': 'powertoys-cmdnotfound-knowledge',
+      'Product-File Explorer': 'powertoys-previewpane-knowledge',
+    },
+
+    powerToysSkillFor(iss) {
+      if (!iss || String(iss.repo || '') !== 'microsoft/PowerToys') return null;
+      const labels = iss.labels || iss.current_labels || [];
+      for (const l of labels) {
+        const skill = this.ptSkillMap[l];
+        if (skill) return { skill, label: String(l).replace(/^Product-/, ''), module: String(l).replace(/^Product-/, '') };
+      }
+      return null;
     },
 
     prCiChip(iss) {
@@ -1664,8 +1730,8 @@ function dashboard() {
 
     get stateOptions() {
       return this.worklistKind === 'pr'
-        ? [['ci_failing', '❌ CI failing'], ['needs_rebase', '🔀 Needs rebase'], ['changes_requested', '🔧 Changes requested'], ['needs_review', '👀 Needs review'], ['ready', '🟢 Ready to merge'], ['no_action', '✅ No action']]
-        : [['needs_reply', '💬 Needs reply'], ['needs_info', '❓ Needs info'], ['needs_labels', '🏷️ Needs labels'], ['assign', '🔧 Assign (fix/evaluate)'], ['duplicate', '🗂️ Close as duplicate'], ['tracked', '📋 Tracked'], ['untriaged', '🆕 Untriaged']];
+        ? [['ci_failing', '❌ CI failing'], ['needs_rebase', '🔀 Needs rebase'], ['changes_requested', '🔧 Changes requested'], ['needs_review', '👀 Needs review'], ['awaiting_author', '⏳ Awaiting author'], ['ready', '🟢 Ready to merge'], ['no_action', '✅ No action']]
+        : [['needs_reply', '💬 Needs reply'], ['needs_info', '❓ Needs info'], ['needs_labels', '🏷️ Needs labels'], ['assign', '🔧 Assign (fix/evaluate)'], ['evaluate', '🧭 Evaluate demand'], ['escalate', '🚨 Escalate'], ['reassess_stale', '🕰️ Reassess stale'], ['awaiting_author', '⏳ Awaiting author'], ['duplicate', '🗂️ Close as duplicate'], ['tracked', '📋 Tracked'], ['untriaged', '🆕 Untriaged']];
     },
 
     formatDays(value) {
@@ -1797,11 +1863,24 @@ function dashboard() {
 
     // Per-state agent task: maps an issue's triage state to a concrete Copilot
     // agent action + a ready-to-run prompt, so every issue is executable.
+    // Wrapper appends the PowerToys module skill (PR #86) when applicable.
     agentTaskFor(iss) {
+      const t = this._agentTaskBase(iss);
+      const sk = this.powerToysSkillFor(iss);
+      if (sk) {
+        t.skill = sk.skill;
+        t.prompt = `Use the ${sk.skill} skill (.github/skills/${sk.skill}/ — Module Map, regression-catalog, and the bug-triage / pr-review-checklist templates) as your primary reference for this ${sk.module} issue. `
+          + t.prompt
+          + ` Ground every claim in the skill's Module Map file paths/symbols and check its Regression Playbooks before proposing changes.`;
+      }
+      return t;
+    },
+
+    _agentTaskBase(iss) {
       const st = this.stateOf(iss);
       const repo = iss.repo, n = iss.number;
       const title = String(iss.title || '').replace(/"/g, "'");
-      const reason = String(iss.next_action_reason || '').replace(/"/g, "'").replace(/\s+/g, ' ').trim();
+      const reason = String(iss.next_action_reason || iss.baseline_reason || '').replace(/"/g, "'").replace(/\s+/g, ' ').trim();
       const labels = (this.netNewSuggestedLabels ? this.netNewSuggestedLabels(iss) : (iss.suggested_labels || [])).join(', ');
       const draft = String(iss.suggested_reply || '').replace(/"/g, "'").replace(/\s+/g, ' ').trim();
       const base = `${repo}#${n} — ${title}`;
@@ -1825,6 +1904,19 @@ function dashboard() {
           return { glyph: '🔧', label: 'Plan & fix', branch: this.fixBranchName(iss, 'fix'), prompt:
             `Plan and fix ${base}. Read the issue thread first, reproduce the bug, propose a short plan, then implement the fix with tests and open a PR that references #${n}.` };
         }
+        case 'evaluate':
+          return { glyph: '🧭', label: 'Evaluate demand', prompt:
+            `Assess the feature request ${base} (${iss.up || 0} 👍, ${reason || 'gauge demand vs product goals'}). Read the thread with gh, summarize the use cases and demand signal, `
+            + `then recommend promote-to-roadmap / keep-gathering-signal / decline with rationale, and post it as a comment.` };
+        case 'escalate':
+          return { glyph: '🚨', label: 'Escalate', prompt:
+            `Escalate ${base} to the area owner. Summarize the problem, impact, and why it needs attention now (${reason || 'flagged for escalation'}), then post a comment tagging the owner and apply the appropriate priority label via gh.` };
+        case 'reassess_stale':
+          return { glyph: '🕰️', label: 'Reassess stale', prompt:
+            `Reassess the stale item ${base} (last activity ${iss.age_days != null ? iss.age_days + 'd ago' : 'a while ago'}). Read the thread with gh, check whether it still reproduces on the current build, then either post a "still relevant?" nudge or recommend closing as stale with rationale.` };
+        case 'awaiting_author':
+          return { glyph: '⏳', label: 'Nudge author', prompt:
+            `Post a follow-up nudge on ${base}: we are waiting on the author for the details/changes requested above. Ask them to reply, and note it may be closed if there is no response. Post via gh.` };
         case 'duplicate':
           return { glyph: '🗂️', label: 'Close as duplicate', prompt:
             `Identify the original issue that ${base} duplicates${reason ? ' (hint: ' + reason + ')' : ''}. Post a comment "Duplicate of #<original>" that links it, then close ${base} as a duplicate via gh.` };
@@ -1832,6 +1924,18 @@ function dashboard() {
           return { glyph: '📋', label: 'Confirm disposition', prompt:
             `Confirm the disposition for ${base} (currently tracked / no action; reason: ${reason || 'none given'}). `
             + `If it is won't-fix / by-design / duplicate, post the rationale as a comment and apply the matching label; otherwise re-triage and set the correct next action.` };
+        case 'ci_failing':
+          return { glyph: '❌', label: 'Fix CI', branch: this.fixBranchName(iss, 'fix'), prompt:
+            `Investigate and fix the failing CI on PR ${base}. Read the failing checks with gh, reproduce locally, fix the root cause, and push the update.` };
+        case 'needs_rebase':
+          return { glyph: '🔀', label: 'Rebase', branch: this.fixBranchName(iss, 'fix'), prompt:
+            `Rebase PR ${base} onto the latest base branch, resolve conflicts, run the build/tests, and push. Then leave a comment that it is ready for review.` };
+        case 'changes_requested':
+          return { glyph: '🔧', label: 'Address review', branch: this.fixBranchName(iss, 'fix'), prompt:
+            `Address the requested changes on PR ${base}. Read the review threads with gh, make the changes, push, and reply to each thread describing the fix.` };
+        case 'needs_review':
+          return { glyph: '👀', label: 'Review PR', prompt:
+            `Review PR ${base}. Read the diff and thread with gh, assess correctness / risk / test coverage, and post review comments with a clear recommendation (approve / request changes).` };
         default:
           return { glyph: '🔎', label: 'Triage', prompt:
             `Triage ${base}: classify it (bug/feature), assess severity, propose labels, and decide the next action with a one-line rationale.` };
@@ -1840,7 +1944,7 @@ function dashboard() {
 
     openAgentModal(iss) {
       const t = this.agentTaskFor(iss);
-      this.fixModal = { open: true, issue: iss, mode: 'agent', branch: t.branch || '', prompt: t.prompt, agentGlyph: t.glyph, agentLabel: t.label };
+      this.fixModal = { open: true, issue: iss, mode: 'agent', branch: t.branch || '', prompt: t.prompt, agentGlyph: t.glyph, agentLabel: t.label, agentSkill: t.skill || '' };
     },
 
     copyText(text) {
