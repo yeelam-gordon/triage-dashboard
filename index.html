@@ -1615,8 +1615,18 @@ function dashboard() {
       const na = String((iss && iss.next_action) || '').toLowerCase();
       if (na === 'reply') return { key: 'needs_reply', glyph: '💬', label: 'Needs reply', cls: 'bg-blue-100 text-blue-800 border border-blue-300' };
       if (na === 'request_info') return { key: 'needs_info', glyph: '❓', label: 'Needs info', cls: 'bg-amber-100 text-amber-800 border border-amber-300' };
-      if (na === 'label_only') return { key: 'needs_labels', glyph: '🏷️', label: 'Needs labels', cls: 'bg-violet-100 text-violet-800 border border-violet-300' };
-      if (na === 'no_action') return { key: 'no_action', glyph: '✅', label: 'No action', cls: 'bg-slate-100 text-slate-600 border border-slate-300' };
+      if (na === 'label_only' || na === 'label') return { key: 'needs_labels', glyph: '🏷️', label: 'Needs labels', cls: 'bg-violet-100 text-violet-800 border border-violet-300' };
+      if (na === 'assign') {
+        const cls = String((iss && iss.classification_type) || '').toLowerCase();
+        const sev = String((iss && iss.severity) || '').toLowerCase();
+        const isBug = ['bug', 'crash', 'regression'].includes(cls) || ['crash', 'regression'].includes(sev);
+        const isFeat = ['feature', 'enhancement'].includes(cls);
+        const glyph = isBug ? '🔧' : (isFeat ? '🧭' : '👤');
+        const label = isBug ? 'Assign to fix' : (isFeat ? 'Assign to evaluate' : 'Assign');
+        return { key: 'assign', glyph, label, cls: 'bg-teal-100 text-teal-800 border border-teal-300' };
+      }
+      if (na === 'close_dup') return { key: 'duplicate', glyph: '🗂️', label: 'Close as duplicate', cls: 'bg-slate-100 text-slate-700 border border-slate-300' };
+      if (na === 'no_action') return { key: 'tracked', glyph: '📋', label: 'Tracked', cls: 'bg-slate-100 text-slate-600 border border-slate-300' };
       return { key: 'untriaged', glyph: '🆕', label: 'Untriaged', cls: 'bg-slate-100 text-slate-700 border border-slate-300' };
     },
 
@@ -1651,7 +1661,7 @@ function dashboard() {
     get stateOptions() {
       return this.worklistKind === 'pr'
         ? [['ci_failing', '❌ CI failing'], ['needs_rebase', '🔀 Needs rebase'], ['changes_requested', '🔧 Changes requested'], ['needs_review', '👀 Needs review'], ['ready', '🟢 Ready to merge'], ['no_action', '✅ No action']]
-        : [['needs_reply', '💬 Needs reply'], ['needs_info', '❓ Needs info'], ['needs_labels', '🏷️ Needs labels'], ['no_action', '✅ No action'], ['untriaged', '🆕 Untriaged']];
+        : [['needs_reply', '💬 Needs reply'], ['needs_info', '❓ Needs info'], ['needs_labels', '🏷️ Needs labels'], ['assign', '🔧 Assign (fix/evaluate)'], ['duplicate', '🗂️ Close as duplicate'], ['tracked', '📋 Tracked'], ['untriaged', '🆕 Untriaged']];
     },
 
     formatDays(value) {
