@@ -709,12 +709,30 @@ function dashboard() {
     get activeCounts() {
       const repo = this.resolveRepoName(this.activeRepo);
       if (repo) return this.repoCounts(repo);
-      return this.data.counts || this.deriveCounts(this.scopedIssues);
+      return this.withTrueBacklog(this.data.counts || this.deriveCounts(this.scopedIssues), this.data.owed_list);
     },
 
     repoCounts(repo) {
       const block = repo && this.data.per_repo && this.data.per_repo[repo];
-      return (block && block.counts) || this.deriveCounts((this.data.issues || []).filter(i => i.repo === repo));
+      const counts = (block && block.counts) || this.deriveCounts((this.data.issues || []).filter(i => i.repo === repo));
+      return this.withTrueBacklog(counts, this.repoOwedList(repo));
+    },
+
+    // Fill backlog_open_* (the true full open count) from the owed list so the
+    // "open backlog" stat reflects real scale (e.g. PowerToys 7,415) per scope,
+    // not the tiny triaged slice. Prefers backlog_issues/backlog_prs (true opens),
+    // falls back to issues_total/prs_total (global owed_list carries true opens there).
+    withTrueBacklog(counts, owed) {
+      const c = Object.assign({}, counts || {});
+      if (c.backlog_open_issues === null || c.backlog_open_issues === undefined) {
+        const it = owed && (owed.backlog_issues != null ? owed.backlog_issues : owed.issues_total);
+        if (it !== null && it !== undefined) c.backlog_open_issues = Number(it) || 0;
+      }
+      if (c.backlog_open_prs === null || c.backlog_open_prs === undefined) {
+        const pt = owed && (owed.backlog_prs != null ? owed.backlog_prs : owed.prs_total);
+        if (pt !== null && pt !== undefined) c.backlog_open_prs = Number(pt) || 0;
+      }
+      return c;
     },
 
     deriveCounts(items) {
@@ -1004,7 +1022,13 @@ function dashboard() {
     },
 
     totalBacklog(counts) {
-      return this.nullSafeSum(counts && counts.backlog_open_issues, counts && counts.backlog_open_prs);
+      const explicit = this.nullSafeSum(counts && counts.backlog_open_issues, counts && counts.backlog_open_prs);
+      if (explicit !== null && explicit !== undefined) return explicit;
+      // Fall back to the true full open backlog carried by the owed list
+      // (owed_list.issues_total/prs_total), so the real scale (e.g. 8,900+)
+      // is surfaced instead of a blank when the collector leaves backlog_open_* null.
+      const owed = this.activeOwedList || {};
+      return this.nullSafeSum(owed.issues_total, owed.prs_total);
     },
 
     formatCount(value) {
@@ -1685,7 +1709,6 @@ function dashboard() {
       'Product-Mouse Highlighter': 'powertoys-mouseutils-knowledge',
       'Product-Mouse Pointer Crosshairs': 'powertoys-mouseutils-knowledge',
       'Product-Mouse Jump': 'powertoys-mouseutils-knowledge',
-      'Product-Cursor Wrap': 'powertoys-mouseutils-knowledge',
       'Product-ZoomIt': 'powertoys-zoomit-knowledge',
       'Product-Image Resizer': 'powertoys-imageresizer-knowledge',
       'Product-PowerDisplay': 'powertoys-powerdisplay-knowledge',
