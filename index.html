@@ -131,12 +131,9 @@
               <div class="mt-1 text-xs text-slate-600" x-text="displayAction(iss).label + ' — ' + displayAction(iss).reason"></div>
             </div>
             <div class="flex flex-wrap justify-end gap-1.5 shrink-0 items-start">
-              <button x-show="messageAction(iss)" @click="openReplyModal(iss)" class="px-2 py-1 rounded text-xs font-bold bg-blue-600 text-white hover:bg-blue-700" x-text="messageAction(iss) ? (messageAction(iss).glyph + ' ' + messageAction(iss).label) : ''"></button>
-              <span x-show="!messageAction(iss)" class="px-2 py-1 rounded text-xs font-bold" :class="actionBadge(iss).cls" x-text="actionBadge(iss).glyph + ' ' + actionBadge(iss).text"></span>
+              <button x-show="!isQueued(iss)" @click="primaryQueue(iss)" class="px-2 py-1 rounded text-xs font-bold bg-blue-600 text-white hover:bg-blue-700" x-text="primaryActionLabel(iss)"></button>
+              <span x-show="isQueued(iss)" class="px-2 py-1 rounded text-xs font-semibold bg-sky-100 text-sky-800 border border-sky-300">✓ Queued <button @click="unqueue(queueKey(iss))" class="ml-1 text-slate-500 hover:text-rose-600" title="Remove from queue">✕</button></span>
               <a :href="iss.url" target="_blank" class="px-2.5 py-1 text-xs font-semibold rounded bg-amber-600 text-white hover:bg-amber-700" x-text="'Open on GitHub ↗'"></a>
-              <button x-show="canDelegateFix(iss)" @click="openFixModal(iss, 'fix')" class="px-2.5 py-1 text-xs font-semibold bg-emerald-600 text-white rounded hover:bg-emerald-700">🤖 Plan &amp; fix</button>
-              <button x-show="canPrototype(iss)" @click="openFixModal(iss, 'prototype')" class="px-2.5 py-1 text-xs font-semibold bg-indigo-600 text-white rounded hover:bg-indigo-700">💡 Spike / prototype</button>
-              <button x-show="iss.triaged && canRunAgentReview(iss)" @click="openReviewModal(iss)" class="px-2.5 py-1 text-xs font-medium bg-slate-700 text-white rounded hover:bg-slate-800">Run review skill</button>
             </div>
           </div>
         </div>
@@ -168,12 +165,9 @@
                 <p class="mt-1 text-xs text-slate-500" x-text="displayAction(iss).reason"></p>
                 <p class="mt-2 text-xs text-slate-500"><span class="font-medium" x-text="ownerText(iss).label"></span><span x-text="ownerText(iss).value"></span></p>
                 <div class="mt-3 flex flex-wrap gap-1.5">
-                  <button x-show="messageAction(iss)" @click="openReplyModal(iss)" class="px-2 py-1 rounded text-xs font-bold bg-blue-600 text-white hover:bg-blue-700" x-text="messageAction(iss) ? (messageAction(iss).glyph + ' ' + messageAction(iss).label) : ''"></button>
-                  <span x-show="!messageAction(iss)" class="px-2 py-1 rounded text-xs font-bold" :class="actionBadge(iss).cls" x-text="actionBadge(iss).glyph + ' ' + actionBadge(iss).text"></span>
+                  <button x-show="!isQueued(iss)" @click="primaryQueue(iss)" class="px-2 py-1 rounded text-xs font-bold bg-blue-600 text-white hover:bg-blue-700" x-text="primaryActionLabel(iss)"></button>
+                  <span x-show="isQueued(iss)" class="px-2 py-1 rounded text-xs font-semibold bg-sky-100 text-sky-800 border border-sky-300">✓ Queued <button @click="unqueue(queueKey(iss))" class="ml-1 text-slate-500 hover:text-rose-600" title="Remove from queue">✕</button></span>
                   <a :href="iss.url" target="_blank" class="px-2.5 py-1 text-xs font-semibold rounded bg-indigo-600 text-white hover:bg-indigo-700" x-text="'Open on GitHub ↗'"></a>
-                  <button x-show="canDelegateFix(iss)" @click="openFixModal(iss, 'fix')" class="px-2.5 py-1 text-xs font-semibold bg-emerald-600 text-white rounded hover:bg-emerald-700">🤖 Plan &amp; fix</button>
-                  <button x-show="canPrototype(iss)" @click="openFixModal(iss, 'prototype')" class="px-2.5 py-1 text-xs font-semibold bg-indigo-600 text-white rounded hover:bg-indigo-700">💡 Spike / prototype</button>
-                  <button x-show="iss.triaged && canRunAgentReview(iss)" @click="openReviewModal(iss)" class="px-2.5 py-1 text-xs font-medium bg-slate-700 text-white rounded hover:bg-slate-800">Run review skill</button>
                 </div>
               </article>
             </template>
@@ -342,9 +336,9 @@
               <div class="mt-1 flex flex-wrap gap-1" x-show="iss.triaged">
                 <template x-for="chip in suggestedLabelChips(iss)" :key="chip.name">
                   <span>
-                    <button x-show="!chip.exists" @click="addLabel(iss, chip.name)"
+                    <button x-show="!chip.exists" @click="queueLabels(iss, [chip.name])"
                     class="px-2 py-0.5 text-xs rounded border border-dashed border-slate-300 text-slate-600 hover:bg-blue-50 hover:border-blue-300"
-                    :title="'Apply label: ' + chip.name">
+                    :title="'Queue label: ' + chip.name">
                     + <span x-text="chip.name"></span>
                     </button>
                     <span x-show="chip.exists" class="px-2 py-0.5 text-xs rounded bg-slate-100 text-slate-400"
@@ -359,11 +353,12 @@
               </div>
             </div>
             <div class="flex flex-col gap-1.5 shrink-0 w-40 items-stretch">
-              <button x-show="messageAction(iss)" @click="openReplyModal(iss)"
+              <button x-show="!isQueued(iss)" @click="primaryQueue(iss)"
                 class="px-2 py-1 rounded text-xs font-bold text-center leading-tight bg-blue-600 text-white hover:bg-blue-700"
-                x-text="messageAction(iss) ? (messageAction(iss).glyph + ' ' + messageAction(iss).label) : ''"></button>
-              <div x-show="!messageAction(iss)" class="px-2 py-1 rounded text-xs font-bold text-center leading-tight" :class="actionBadge(iss).cls">
-                <span x-text="actionBadge(iss).glyph"></span> <span x-text="actionBadge(iss).text"></span>
+                x-text="primaryActionLabel(iss)"></button>
+              <div x-show="isQueued(iss)" class="px-2 py-1 rounded text-xs font-semibold text-center bg-sky-100 text-sky-800 border border-sky-300 leading-tight">
+                ✓ Queued: <span x-text="queuedLabel(iss)"></span>
+                <button @click="unqueue(queueKey(iss))" class="ml-1 text-slate-500 hover:text-rose-600" title="Remove from queue">✕</button>
               </div>
               <a :href="iss.url" target="_blank"
                 class="px-2.5 py-1 text-xs font-semibold rounded text-center"
@@ -373,12 +368,6 @@
                 class="px-2.5 py-1 text-xs font-medium bg-slate-700 text-white rounded hover:bg-slate-800">
                 🛠 Run review skill
               </button>
-              <button x-show="!isQueued(iss)" @click="queueCommand(iss)"
-                class="px-2.5 py-1 text-xs font-semibold border border-teal-300 text-teal-700 rounded hover:bg-teal-50 text-center"
-                title="Queue the Copilot command for this action to run locally">＋ Queue command</button>
-              <div x-show="isQueued(iss)" class="px-2 py-1 rounded text-xs font-semibold text-center bg-sky-100 text-sky-800 border border-sky-300">
-                ✓ Queued <button @click="unqueue(queueKey(iss))" class="ml-1 text-slate-500 hover:text-rose-600" title="Remove from queue">✕</button>
-              </div>
               <button x-show="canDelegateFix(iss)" @click="openFixModal(iss, 'fix')"
                 class="px-2.5 py-1 text-xs font-semibold bg-emerald-600 text-white rounded hover:bg-emerald-700">
                 🤖 Plan &amp; fix
@@ -406,7 +395,7 @@
       <h3 class="text-sm font-semibold">📋 Action queue <span class="font-normal text-slate-500" x-text="'(' + queuedCount + ' command' + (queuedCount === 1 ? '' : 's') + ')'"></span></h3>
       <button @click="showQueue = false" class="text-slate-400 hover:text-slate-700">✕</button>
     </div>
-    <p class="mt-1 text-xs text-slate-500">Copilot CLI commands you queued from rows. Copy or export them and run locally — each sets up a branch (if needed) then runs a <span class="font-mono">copilot -p</span> instruction. Nothing is sent anywhere from here.</p>
+    <p class="mt-1 text-xs text-slate-500">Actions you queued from rows (comments, labels, and Copilot tasks). Copy or export them and run locally — comments/labels run via <span class="font-mono">gh</span>, agent tasks via the Copilot CLI. Nothing is sent from here.</p>
     <div class="mt-3 flex gap-2">
       <button @click="copyQueue()" :disabled="!queuedCount" class="px-3 py-1.5 text-sm rounded bg-teal-600 text-white disabled:opacity-40">⧉ Copy all</button>
       <button @click="exportQueue()" :disabled="!queuedCount" class="px-3 py-1.5 text-sm rounded border border-slate-300 disabled:opacity-40">⬇ Export script</button>
@@ -435,11 +424,11 @@
   class="fixed inset-0 bg-black/40 flex items-center justify-center z-20" style="display:none">
   <div class="bg-white rounded-lg shadow-xl w-[640px] max-w-full p-5">
     <h3 class="text-sm font-semibold">Draft message · <span x-text="replyModal.issue && (replyModal.issue.repo + '#' + replyModal.issue.number)"></span></h3>
-    <p class="mt-1 text-xs text-slate-500">Edit before posting. This drafts the message for the suggested action — review it, then post the comment on GitHub.</p>
+    <p class="mt-1 text-xs text-slate-500">Edit the reply, then <b>queue</b> it. It's added to the 📋 Action queue as a <span class="font-mono">gh … comment</span> command you run locally — nothing is posted from here.</p>
     <textarea x-model="replyModal.body" rows="10" class="mt-3 w-full border border-slate-300 rounded p-2 text-sm font-mono"></textarea>
     <div class="mt-3 flex justify-end gap-2">
       <button @click="replyModal.open = false" class="px-3 py-1.5 text-sm rounded border border-slate-300">Cancel</button>
-      <button @click="postReply()" class="px-3 py-1.5 text-sm rounded bg-blue-600 text-white">Post comment</button>
+      <button @click="queueComment(replyModal.issue, replyModal.body); replyModal.open = false" class="px-3 py-1.5 text-sm rounded bg-blue-600 text-white">＋ Queue comment</button>
     </div>
   </div>
 </div>
@@ -690,12 +679,45 @@ function dashboard() {
       localStorage.setItem('triage_cmd_queue', JSON.stringify(this.queue));
     },
     queueKey(iss) {
-      return `${iss.repo}#${iss.number}`;
+      return iss ? `${iss.repo}#${iss.number}` : '';
     },
     isQueued(iss) {
-      return !!this.queue[this.queueKey(iss)];
+      return !!(iss && this.queue[this.queueKey(iss)]);
     },
-    // Build the ready-to-run command string for a row (branch setup + copilot -p).
+    queuedLabel(iss) {
+      const q = iss && this.queue[this.queueKey(iss)];
+      return q ? q.label : '';
+    },
+    _shq(s) { // single-quote-escape for a POSIX shell argument
+      return `'${String(s).replace(/'/g, `'\\''`)}'`;
+    },
+    _store(iss, entry) {
+      if (!iss) return;
+      const key = this.queueKey(iss);
+      this.queue = Object.assign({}, this.queue, {
+        [key]: Object.assign({ repo: iss.repo, number: iss.number, url: iss.url, kind: iss.kind, title: iss.title, queued_at: new Date().toISOString() }, entry)
+      });
+      this.persistQueue();
+      this.toast('ok', `Queued: ${entry.label} · ${iss.repo}#${iss.number}`);
+    },
+    // Queue a comment (the drafted/edited reply) as a local `gh ... comment` command.
+    queueComment(iss, body) {
+      const text = String(body != null ? body : (iss.suggested_reply || this.draftTemplate(iss) || '')).trim();
+      if (!text) { this.toast('err', 'Nothing to queue — empty comment'); return; }
+      const sub = iss.kind === 'pr' ? 'pr' : 'issue';
+      const cmd = `gh ${sub} comment ${iss.number} --repo ${iss.repo} --body ${this._shq(text)}`;
+      this._store(iss, { action: 'comment', label: 'Comment', skill: '', command: cmd });
+    },
+    // Queue label additions as a local `gh ... edit --add-label` command.
+    queueLabels(iss, labels) {
+      const list = (labels || this.netNewSuggestedLabels(iss)).filter(Boolean);
+      if (!list.length) { this.toast('info', 'No new labels to queue'); return; }
+      const sub = iss.kind === 'pr' ? 'pr' : 'issue';
+      const parts = list.map(l => `--add-label ${this._shq(l)}`).join(' ');
+      const cmd = `gh ${sub} edit ${iss.number} --repo ${iss.repo} ${parts}`;
+      this._store(iss, { action: 'labels', label: `Labels: ${list.join(', ')}`, skill: '', command: cmd });
+    },
+    // Queue the Copilot instruction for the row's state (assign/fix/review/etc.).
     commandFor(iss) {
       const t = this.agentTaskFor(iss);
       const cmd = `copilot -p "${String(t.prompt || '').replace(/\n/g, ' ').replace(/"/g, '\\"')}"`;
@@ -705,13 +727,25 @@ function dashboard() {
       return { label: t.label, skill: t.skill || '', branch: t.branch || '', command: lines.join('\n') };
     },
     queueCommand(iss) {
-      const key = this.queueKey(iss);
       const c = this.commandFor(iss);
-      this.queue = Object.assign({}, this.queue, {
-        [key]: { repo: iss.repo, number: iss.number, url: iss.url, kind: iss.kind, title: iss.title, label: c.label, skill: c.skill, command: c.command, queued_at: new Date().toISOString() }
-      });
-      this.persistQueue();
-      this.toast('ok', `Queued: ${c.label} for ${iss.repo}#${iss.number}`);
+      this._store(iss, { action: 'agent', label: c.label, skill: c.skill, command: c.command });
+    },
+    // The row's ONE natural action — clicking it queues the right thing:
+    // comment states open the draft modal (which queues); labels/agent queue directly.
+    primaryQueue(iss) {
+      if (this.isQueued(iss)) return;
+      const st = this.stateOf(iss);
+      if (st.key === 'needs_labels') { this.queueLabels(iss); return; }
+      if (this.messageAction(iss)) { this.openReplyModal(iss); return; } // modal → Queue comment
+      this.queueCommand(iss);
+    },
+    primaryActionLabel(iss) {
+      const st = this.stateOf(iss);
+      if (st.key === 'needs_labels') return '🏷 Queue labels';
+      const m = this.messageAction(iss);
+      if (m) return `${m.glyph} ${m.label}`;
+      const t = this.agentTaskFor(iss);
+      return `${t.glyph || '▶'} ${t.label}`;
     },
     unqueue(key) {
       const q = Object.assign({}, this.queue); delete q[key]; this.queue = q;
@@ -727,7 +761,7 @@ function dashboard() {
     get queuedCount() {
       return Object.keys(this.queue).length;
     },
-    // A single copy-pasteable script of all queued commands.
+    // A single copy-pasteable script of all queued actions.
     queueScript() {
       return this.queueList.map(q => `# ${q.repo}#${q.number} — ${q.label}${q.skill ? ' [' + q.skill + ']' : ''}\n# ${q.url}\n${q.command}`).join('\n\n');
     },
@@ -735,14 +769,14 @@ function dashboard() {
       this.copyText(this.queueScript());
     },
     exportQueue() {
-      const header = '# Queued triage actions — run locally with the Copilot CLI.\n# Each block sets up a branch (if needed) then runs a copilot -p instruction.\n\n';
+      const header = '#!/usr/bin/env bash\n# Queued triage actions — run locally. Needs `gh` (authenticated) and, for\n# agent tasks, the Copilot CLI. Review before running.\nset -e\n\n';
       const blob = new Blob([header + this.queueScript() + '\n'], { type: 'text/plain' });
       const a = document.createElement('a');
       a.href = URL.createObjectURL(blob);
       a.download = 'triage-actions.sh';
       a.click();
       URL.revokeObjectURL(a.href);
-      this.toast('ok', `Exported ${this.queuedCount} command(s)`);
+      this.toast('ok', `Exported ${this.queuedCount} action(s)`);
     },
 
     // Lazy-load a repo's FULL owed backlog (data/owed/<slug>.json). latest.json
