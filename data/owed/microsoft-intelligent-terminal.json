@@ -1,12 +1,12 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-07-21T21:16:32Z",
+  "generated_at": "2026-07-22T00:30:05Z",
   "awaiting_label": "Needs-Triage",
-  "awaiting_issues": 29,
+  "awaiting_issues": 30,
   "awaiting_prs": 28,
-  "backlog_issues": 36,
+  "backlog_issues": 37,
   "backlog_prs": 31,
-  "issues_total": 29,
+  "issues_total": 30,
   "prs_total": 22,
   "issues": [
     {
@@ -239,7 +239,7 @@
       "comments": 1,
       "created_at": "2026-06-17T19:14:31Z",
       "updated_at": "2026-06-17T19:15:42Z",
-      "age_days": 34.0,
+      "age_days": 35.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -247,7 +247,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 34d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 35d) — correct them, then route."
     },
     {
       "number": 207,
@@ -718,6 +718,30 @@
       "baseline_reason": "Wrong/missing tags (waited 1d) — correct them, then route."
     },
     {
+      "number": 465,
+      "title": "Selection style should be aligned across all agent pane, use /sessions",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/465",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "Issue-Bug",
+        "Needs-Triage"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-07-22T00:23:59Z",
+      "updated_at": "2026-07-22T00:24:42Z",
+      "age_days": 0.0,
+      "triaged": false,
+      "awaiting": true,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "request_info",
+      "baseline_glyph": "❓",
+      "baseline_text": "Request exact repro, version & logs",
+      "baseline_reason": "Bug (new) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+    },
+    {
       "number": 200,
       "title": "Support WSL terminals",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/200",
@@ -876,7 +900,7 @@
       "comments": 1,
       "created_at": "2026-06-17T19:32:42Z",
       "updated_at": "2026-06-17T19:35:27Z",
-      "age_days": 34.0,
+      "age_days": 35.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -884,7 +908,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 34d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 35d) — correct them, then route."
     }
   ],
   "prs": [
