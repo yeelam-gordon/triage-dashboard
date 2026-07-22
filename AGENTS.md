@@ -140,26 +140,19 @@ The dashboard computes these from the fields above; don't add them to the JSON:
   Run-agent prompt references the matching skill. No `skill` field needed — just
   keep PowerToys `Product-*` labels accurate.
 
-## Approval queue (human-in-the-loop apply)
+## Action queue (queue Copilot commands to run locally)
 
-The dashboard lets you **✓ Agree** (or ✎ edit then agree) a row's suggested
-action. Decisions are saved in the browser (localStorage) and shown in the
-**📋 Decisions** panel. Flow to actually apply them:
+Each triaged row has two ways to act:
+- **Do it now** — post the drafted reply or add labels immediately (needs a
+  GitHub token entered in the dashboard).
+- **▶ Run agent** — opens the ready-to-run Copilot CLI command for the row's
+  state (branch setup + `copilot -p "…"`), skill-aware for PowerToys.
 
-1. In the dashboard: **⬇ Export for bench** → downloads `decisions-export.json`.
-2. Drop it into `data/decisions/pending/` and commit (or point the applier at it).
-3. The **15-minute bench job** (`scripts/apply-decisions.ps1`, scheduled by
-   `scripts/Install-DecisionApplier.ps1`) polls `data/decisions/pending/`,
-   **re-checks applicability** against the live item (still open? new activity
-   since approval? label already present?), applies the still-valid ones via
-   `gh` (comment / add labels / close-as-duplicate), and moves each record to
-   `applied/` or `skipped/` with a reason. It writes `data/decisions/results.json`.
-4. Back in the dashboard: **⬆ Import results** → shows ✅ applied / ⚠️ skipped
-   per row and prunes applied items from the queue.
-
-`data/decisions/pending/` is the only tracked input; `applied/`, `skipped/`, and
-`results.json` are gitignored working state. The applier commits only the pending
-queue changes, so it coexists with the collector's own pushes.
+**＋ Queue command** (on the row, or "＋ Queue for later" in the Run agent modal)
+collects that Copilot command into a local queue (browser localStorage). The
+**📋 Action queue** panel lets you **Copy all** or **Export script**
+(`triage-actions.sh`) to run the batch locally with the Copilot CLI. Nothing is
+sent anywhere from the dashboard — the commands do the work when you run them.
 
 The authoritative field contract and deep-triage cap guidance live in
 [`scripts/collector-prompt.md`](scripts/collector-prompt.md).
