@@ -23,6 +23,14 @@ microsoft/win-dev-skills
 - `data/owed/<owner>-<repo>.json` — each repo's **full owed backlog** (every
   open issue/PR as a lightweight row). Lazy-loaded when a repo tab is opened.
   PowerToys is ~7,400 rows / ~6.8 MB — this is expected.
+- `data/triage/<owner>-<repo>.json` + `data/triage/_all.json` — **deep-triage
+  overlay** (OPTIONAL, out-of-band). Keyed by `"repo#number"`, merged over owed
+  rows by the dashboard (`applyOverlay`). The collector MUST NOT write or delete
+  these — they are produced separately (e.g. a sub-agent fleet) and persist
+  across nightly runs. Each entry may carry `next_action`, `next_action_reason`,
+  `category`, `classification_type`, `severity`, `sentiment`, `score`,
+  `suggested_labels`, `suggested_reply`, `suggested_owner`, and (PowerToys)
+  `skill`. This is how deep triage extends beyond the collector's top slice.
 
 ## Fields the dashboard reads
 
