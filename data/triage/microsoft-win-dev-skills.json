@@ -1,0 +1,528 @@
+{
+ "repo": "microsoft/win-dev-skills",
+ "generated_at": "2026-07-22T03:32:53.703Z",
+ "items": {
+  "microsoft/win-dev-skills#15": {
+   "next_action": "reply",
+   "next_action_reason": "Clear skill request with references and AOT pitfall; needs maintainer acknowledgement or assignment.",
+   "category": "xaml-behaviors",
+   "classification_type": "enhancement",
+   "severity": "none",
+   "sentiment": "positive",
+   "score": 5,
+   "suggested_labels": [
+    "skill: xaml-behaviors"
+   ],
+   "suggested_reply": "Thanks for proposing a dedicated XAML Behaviors skill and for collecting the key references. The AOT caveat around ChangePropertyAction/EventTriggerBehavior is exactly the sort of pitfall the skill should call out. Next step: please confirm whether you still plan to author this, or we can mark it ready for someone else to pick up with those references as the starting outline.",
+   "suggested_owner": "michael-hawker"
+  },
+  "microsoft/win-dev-skills#20": {
+   "next_action": "reply",
+   "next_action_reason": "Input-control guidance is scoped and linked to forms/search sibling issues; ready to backlog or assign.",
+   "category": "input",
+   "classification_type": "enhancement",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 5,
+   "suggested_labels": [
+    "skill: input"
+   ],
+   "suggested_reply": "Thanks for outlining the input-control decision guidance. This sounds well-scoped as a companion to fluent-design, with #21 covering dense form layout and #19 covering deeper text scenarios. Next step: let's capture this as an input skill backlog item focused on choosing controls and grouping patterns, then link out to the form/search/text skills where the guidance gets more specialized.",
+   "suggested_owner": "michael-hawker"
+  },
+  "microsoft/win-dev-skills#105": {
+   "next_action": "reply",
+   "next_action_reason": "Feature asks to consolidate winmd/search/analyzer/build tools into winui.exe; needs roadmap triage.",
+   "category": "tooling",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 6,
+   "suggested_labels": [
+    "area: cli",
+    "needs-prioritization"
+   ],
+   "suggested_reply": "Thanks for the proposal. A single `winui` entry point for winmd, search, analyzer, and build/run tooling would make discovery much easier and could also create a cleaner bridge to the WinApp CLI. Next step: could you rank which subcommand should be the first MVP and note whether this should wrap existing executables or move them behind one shared command surface?"
+  },
+  "microsoft/win-dev-skills#16": {
+   "next_action": "reply",
+   "next_action_reason": "Supportive comment asks how Toolkit vs Labs inclusion should be explained; reply can settle scope.",
+   "category": "windows-community-toolkit",
+   "classification_type": "enhancement",
+   "severity": "none",
+   "sentiment": "positive",
+   "score": 5,
+   "suggested_labels": [
+    "skill: toolkit"
+   ],
+   "suggested_reply": "Good call on covering both Toolkit and Labs. The skill should distinguish stable Toolkit packages from Labs experiments, including how components are installed, namespace differences, and when to defer to dedicated skills for deeper controls or patterns. Next step: let's scope the first version around package selection, current WinUI namespaces, Toolkit-vs-Labs guidance, and links to specialized skills such as settings and tables.",
+   "suggested_owner": "michael-hawker"
+  },
+  "microsoft/win-dev-skills#18": {
+   "next_action": "reply",
+   "next_action_reason": "Charting request has a concrete source discussion and asks agents to avoid custom charts by default.",
+   "category": "charting",
+   "classification_type": "enhancement",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 4,
+   "suggested_labels": [
+    "skill: charting"
+   ],
+   "suggested_reply": "Thanks for tracking this. A charting skill would be useful if it helps the agent choose between known libraries and simple custom rendering instead of inventing a chart control every time. Next step: let's turn the linked Community Toolkit discussion into a short decision matrix covering supported chart types, licensing/support, WinUI compatibility, and when a custom implementation is acceptable.",
+   "suggested_owner": "michael-hawker"
+  },
+  "microsoft/win-dev-skills#19": {
+   "next_action": "reply",
+   "next_action_reason": "Comment challenges code-editing scope and asks about Markdown; needs a scope decision.",
+   "category": "text-editing",
+   "classification_type": "enhancement",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 5,
+   "suggested_labels": [
+    "skill: text-editing"
+   ],
+   "suggested_reply": "Thanks for the feedback on scope. I agree the core skill should start with TextBox and RichEditBox, then treat Markdown and code editors as advanced branches rather than default recommendations. Next step: let's define the first version as text-entry decision guidance, with optional callouts for Markdown/Labs and Scintilla-style code editing when the app explicitly needs those scenarios.",
+   "suggested_owner": "michael-hawker"
+  },
+  "microsoft/win-dev-skills#21": {
+   "next_action": "reply",
+   "next_action_reason": "Form-layout skill is clearly related to input/settings and has concrete design references.",
+   "category": "input-form",
+   "classification_type": "enhancement",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 4,
+   "suggested_labels": [
+    "skill: forms"
+   ],
+   "suggested_reply": "Thanks for splitting complex form layout out from the broader input guidance. That separation should help agents decide both what control to use and how to organize many fields without producing dense or inconsistent pages. Next step: let's scope this around form structure, grouping, validation placement, spacing, and responsive behavior, with links back to #20 for individual input choices.",
+   "suggested_owner": "michael-hawker"
+  },
+  "microsoft/win-dev-skills#22": {
+   "next_action": "reply",
+   "next_action_reason": "Comment agrees with search UX but says implementation guidance is too broad; reply should narrow scope.",
+   "category": "search",
+   "classification_type": "enhancement",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 5,
+   "suggested_labels": [
+    "skill: search"
+   ],
+   "suggested_reply": "Thanks for the scope check. The first part seems clearly in-scope: where search belongs, how many boxes to use, and how to distinguish app-level from local search. The implementation side should probably stay as pattern guidance rather than teaching every backend. Next step: let's split the skill into search UX guidance plus a small async/indexing checklist, and defer database/API-specific optimization to app context.",
+   "suggested_owner": "michael-hawker"
+  },
+  "microsoft/win-dev-skills#53": {
+   "next_action": "reply",
+   "next_action_reason": "User gave detailed quick-start pain points and later positive comparison; deserves a consolidated response.",
+   "category": "quick-start",
+   "classification_type": "feedback",
+   "severity": "papercut",
+   "sentiment": "frustrated",
+   "score": 7,
+   "suggested_labels": [
+    "area: quick-start",
+    "needs-follow-up"
+   ],
+   "suggested_reply": "Thanks for the detailed quick-start feedback and the comparison run. The permission prompts, unclear wait state, and generated XAML quality are all actionable experience issues even when the final result was better than the baseline. Next step: we'll use this to improve the quick-start expectations and prompt guidance; if you can share any generated app files or specific nested-XAML examples, that would help target the code-quality checks."
+  },
+  "microsoft/win-dev-skills#68": {
+   "next_action": "reply",
+   "next_action_reason": "Long tracking issue lists concrete rough edges from a successful Claude session; needs split/triage.",
+   "category": "agent-experience",
+   "classification_type": "feedback",
+   "severity": "papercut",
+   "sentiment": "positive",
+   "score": 6,
+   "suggested_labels": [
+    "area: agent-experience",
+    "needs-split"
+   ],
+   "suggested_reply": "Thanks for capturing the Claude Code validation in this much detail. The session proves the skills transfer well, and the rough edges are useful backlog material. Next step: let's split this tracking item into focused issues for each actionable skill/tooling gap, keeping this issue as the umbrella for cross-harness validation notes.",
+   "suggested_owner": "nmetulev"
+  },
+  "microsoft/win-dev-skills#94": {
+   "next_action": "request_info",
+   "next_action_reason": "Permission-denied report lacks Copilot mode/version and exact permission prompt context.",
+   "category": "permissions",
+   "classification_type": "bug",
+   "severity": "bug",
+   "sentiment": "blocked",
+   "score": 6,
+   "suggested_labels": [
+    "area: permissions",
+    "needs-repro"
+   ],
+   "suggested_reply": "Thanks for reporting this. Since the same `dotnet new` command works when you run it directly, the failure is likely in the agent permission/approval path rather than the template itself. Next step: please share the Copilot CLI version, whether you were using an allowlist/autopilot mode, the exact prompt you gave the agent, and any session log lines around the permission-denied message."
+  },
+  "microsoft/win-dev-skills#93": {
+   "next_action": "needs_review",
+   "next_action_reason": "Open PR adds winui-layout skill and reports validation passed; only policy comment visible.",
+   "category": "winui-layout",
+   "classification_type": "enhancement",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 6,
+   "suggested_labels": [
+    "skill: layout",
+    "needs-review"
+   ],
+   "suggested_reply": "Thanks for adding the WinUI layout skill and for listing the validation you ran. The PR appears ready for a maintainer pass on scope, naming, and whether version manifests intentionally stay unchanged. Next step: a reviewer should validate the skill routing from winui-design and either approve or request any doc/manifest adjustments."
+  },
+  "microsoft/win-dev-skills#97": {
+   "next_action": "no_action",
+   "next_action_reason": "Umbrella issue already tracks concrete sub-issues #98-#102 from Joe's blog feedback.",
+   "category": "tracking",
+   "classification_type": "feedback",
+   "severity": "none",
+   "sentiment": "positive",
+   "score": 5,
+   "suggested_labels": [
+    "area: tracking"
+   ],
+   "suggested_reply": "Thanks for creating the umbrella issue and splitting the blog feedback into actionable sub-issues. This can stay as the parent tracker while the individual fixes move independently. Next step: keep the checklist updated as #98 through #102 are prioritized or closed so readers can see the current status from one place.",
+   "suggested_owner": "nmetulev"
+  },
+  "microsoft/win-dev-skills#98": {
+   "next_action": "assign",
+   "next_action_reason": "Production signing gap is concrete and high-impact; issue names Azure Trusted Signing and appinstaller needs.",
+   "category": "winui-packaging",
+   "classification_type": "enhancement",
+   "severity": "none",
+   "sentiment": "blocked",
+   "score": 8,
+   "suggested_labels": [
+    "skill: packaging",
+    "area: signing"
+   ],
+   "suggested_reply": "Thanks for spelling out the production signing gap. The current dev-cert guidance is not enough for a distributable MSIX, and Azure Trusted Signing, EV/OV tradeoffs, timestamping, and update channels need a clear playbook. Next step: assign this to the packaging skill owner to add a production signing section with a concrete recommendation matrix and sample commands.",
+   "suggested_owner": "nmetulev"
+  },
+  "microsoft/win-dev-skills#99": {
+   "next_action": "assign",
+   "next_action_reason": "Inline GitHub Actions YAML is known untested and has concrete path/SDK/architecture flaws.",
+   "category": "winui-packaging",
+   "classification_type": "enhancement",
+   "severity": "none",
+   "sentiment": "blocked",
+   "score": 8,
+   "suggested_labels": [
+    "skill: packaging",
+    "area: ci"
+   ],
+   "suggested_reply": "Thanks for identifying the CI snippet drift. Moving the workflow into a real referenced file is the right fix because it lets the repo validate the example instead of shipping prose that may fail. Next step: assign this to add the tested build-and-package workflow reference, cover x64/Arm64 output paths, and wire validation so future changes catch drift.",
+   "suggested_owner": "nmetulev"
+  },
+  "microsoft/win-dev-skills#100": {
+   "next_action": "assign",
+   "next_action_reason": "Greenfield scaffold lacks a solution file; proposed commands and fallback are concrete.",
+   "category": "winui-dev-workflow",
+   "classification_type": "enhancement",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 6,
+   "suggested_labels": [
+    "skill: dev-workflow",
+    "area: scaffold"
+   ],
+   "suggested_reply": "Thanks for calling this out. Creating a `.slnx` during greenfield scaffold is a small change that improves the Visual Studio path and multi-project growth. Next step: update the dev-workflow skill to create the solution after `dotnet new winui-mvvm`, with a graceful fallback to legacy `.sln` when the installed SDK cannot create `.slnx`.",
+   "suggested_owner": "nmetulev"
+  },
+  "microsoft/win-dev-skills#101": {
+   "next_action": "assign",
+   "next_action_reason": "Multi-arch packaging failure is defined with a scaffold fix and analyzer rule proposal.",
+   "category": "winui-dev-workflow",
+   "classification_type": "bug",
+   "severity": "papercut",
+   "sentiment": "blocked",
+   "score": 7,
+   "suggested_labels": [
+    "skill: dev-workflow",
+    "tool: winui-analyzer"
+   ],
+   "suggested_reply": "Thanks for documenting the RuntimeIdentifiers failure path. This should be handled both at scaffold time and by analyzer guidance so package architecture mismatches are caught before `winapp package` fails. Next step: add `win-x64;win-arm64` for new projects and track the analyzer rule proposal for manifests that declare architectures not present in RuntimeIdentifiers.",
+   "suggested_owner": "nmetulev"
+  },
+  "microsoft/win-dev-skills#102": {
+   "next_action": "assign",
+   "next_action_reason": "Greenfield apps triggering VS style hints is a polish issue with existing code-review rules to reuse.",
+   "category": "winui-code-review",
+   "classification_type": "enhancement",
+   "severity": "papercut",
+   "sentiment": "neutral",
+   "score": 6,
+   "suggested_labels": [
+    "skill: code-review",
+    "area: style"
+   ],
+   "suggested_reply": "Thanks for tying the Visual Studio style warnings back to the greenfield workflow. For new apps, the skill should seed a canonical `.editorconfig` and run a style polish pass so Microsoft's generated output does not immediately light up in Microsoft's IDE. Next step: define the baseline editorconfig and update the scaffold/review guidance to apply it by default for greenfield projects.",
+   "suggested_owner": "nmetulev"
+  },
+  "microsoft/win-dev-skills#103": {
+   "next_action": "assign",
+   "next_action_reason": "Hardcoded brush list can drift; proposal gives canonical WinUI Gallery source and offline concerns.",
+   "category": "winui-design",
+   "classification_type": "enhancement",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 6,
+   "suggested_labels": [
+    "skill: design",
+    "area: data-refresh"
+   ],
+   "suggested_reply": "Thanks for proposing a single source of truth for theme brushes. Replacing the hardcoded list with a pinned WinUI Gallery fetch plus cached fallback would reduce drift while keeping offline runs reliable. Next step: assign this to decide the fetch command shape, pinned ref policy, and fallback behavior before removing the embedded brush list.",
+   "suggested_owner": "niels9001"
+  },
+  "microsoft/win-dev-skills#17": {
+   "next_action": "reply",
+   "next_action_reason": "Latest comment proposes positioning WinUI.TableView as free OSS while noting commercial alternatives.",
+   "category": "tables",
+   "classification_type": "enhancement",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 5,
+   "suggested_labels": [
+    "skill: tables"
+   ],
+   "suggested_reply": "Thanks for the follow-up on table options. The proposed framing makes sense: avoid recommending DataGrid by default, present Grid for simple read-only layouts, WCT Labs DataTable for moderate scenarios, and WinUI.TableView as the primary free/open-source editable option while acknowledging commercial controls where support/licensing matter. Next step: use that decision matrix as the first draft of the tables skill.",
+   "suggested_owner": "michael-hawker"
+  },
+  "microsoft/win-dev-skills#108": {
+   "next_action": "needs_review",
+   "next_action_reason": "Open PR adds cost calculation module with demo but no visible review discussion.",
+   "category": "tooling",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 4,
+   "suggested_labels": [
+    "area: cost",
+    "needs-review"
+   ],
+   "suggested_reply": "Thanks for the cost calculation module and the demo instructions. The PR needs a maintainer review for API shape, output parity with `/usage`, and whether the module belongs in this repo's tools surface. Next step: a reviewer should run the demo against a sample session and confirm the calculated report matches the CLI usage expectations."
+  },
+  "microsoft/win-dev-skills#95": {
+   "next_action": "request_changes",
+   "next_action_reason": "Dependabot says newer CSharp exists and this 5.3 PR is superseded by 5.6 PRs.",
+   "category": "dependencies",
+   "classification_type": "enhancement",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 3,
+   "suggested_labels": [
+    "dependencies",
+    "tool: winui-analyzer"
+   ],
+   "suggested_reply": "Thanks for the dependency update. A newer Microsoft.CodeAnalysis.CSharp update is already represented by the 5.6.0 PRs, so this 5.3.0 PR looks superseded. Next step: close this PR in favor of the current 5.6.0 update path, then fix the missing Dependabot labels so future dependency PRs are routed correctly."
+  },
+  "microsoft/win-dev-skills#117": {
+   "next_action": "needs_review",
+   "next_action_reason": "Current Dependabot PR updates analyzer and CSharp to 5.6; label creation failed.",
+   "category": "dependencies",
+   "classification_type": "enhancement",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 5,
+   "suggested_labels": [
+    "dependencies",
+    "tool: winui-analyzer"
+   ],
+   "suggested_reply": "Thanks for the Roslyn dependency update. This appears to be the broadest current 5.6.0 update, but Dependabot could not apply the configured labels because they do not exist. Next step: create the `dependencies` and `tool: winui-analyzer` labels, then run the normal analyzer build/test review for this PR."
+  },
+  "microsoft/win-dev-skills#118": {
+   "next_action": "request_changes",
+   "next_action_reason": "This CSharp-only 5.6 PR overlaps with #117, which also updates Analyzers.",
+   "category": "dependencies",
+   "classification_type": "enhancement",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 3,
+   "suggested_labels": [
+    "dependencies",
+    "tool: winui-analyzer"
+   ],
+   "suggested_reply": "Thanks for the CSharp update. This appears to overlap with #117, which updates Microsoft.CodeAnalysis.CSharp to the same version while also updating Microsoft.CodeAnalysis.Analyzers. Next step: decide which dependency PR should be the canonical update and close the duplicate so the analyzer package versions stay coherent."
+  },
+  "microsoft/win-dev-skills#119": {
+   "next_action": "no_action",
+   "next_action_reason": "Maintainer asked for trial results and author said they will report after trying existing skills.",
+   "category": "migration",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 4,
+   "suggested_labels": [
+    "skill: winforms-migration"
+   ],
+   "suggested_reply": "Thanks for the WinForms-to-WinUI migration suggestion. Since you plan to try the existing skills first, we can wait for that data before designing a dedicated migration skill. Next step: after your trial, please share the source app shape, where the existing skills failed, and which WinForms patterns were hardest to map to WinUI 3."
+  },
+  "microsoft/win-dev-skills#120": {
+   "next_action": "no_action",
+   "next_action_reason": "Issue is closed by release #137 after comment clarified the larger sample-format overhaul.",
+   "category": "winui-search",
+   "classification_type": "bug",
+   "severity": "regression",
+   "sentiment": "blocked",
+   "score": 1,
+   "suggested_labels": [
+    "area: search"
+   ],
+   "suggested_reply": "Thanks for the detailed investigation, including the follow-up that this was a sample-format overhaul rather than a simple URL move. This is now closed via the release that restored Gallery refresh behavior. Next step: no further action unless the refreshed search data regresses again on current main."
+  },
+  "microsoft/win-dev-skills#121": {
+   "next_action": "reply",
+   "next_action_reason": "Broad marketplace proposal lists scope, source-code location, contribution, and curation questions.",
+   "category": "meta",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 6,
+   "suggested_labels": [
+    "area: marketplace",
+    "needs-design"
+   ],
+   "suggested_reply": "Thanks for the detailed marketplace proposal. The scope, repo-structure, curation, and contribution-path questions are the right design topics before adding more Windows developer tooling here. Next step: maintainers should respond with the intended repo scope and whether tools remain in this repo, then split agreed workstreams into focused implementation issues."
+  },
+  "microsoft/win-dev-skills#122": {
+   "next_action": "reply",
+   "next_action_reason": "Process proposal asks WinApp CLI reviews to consider breaking/improving skill changes.",
+   "category": "process",
+   "classification_type": "enhancement",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 5,
+   "suggested_labels": [
+    "area: process",
+    "winapp-cli"
+   ],
+   "suggested_reply": "Thanks for raising the skill freshness problem as the WinApp CLI evolves. Tying CLI review to skill-impact checks is a good way to prevent silent drift without blocking every improvement. Next step: document a lightweight review checklist that distinguishes breaking skill changes, optional skill improvements, and new-skill opportunities, then decide where that checklist should live."
+  },
+  "microsoft/win-dev-skills#126": {
+   "next_action": "no_action",
+   "next_action_reason": "Marketplace epic already tracks infra, contribution path, and seed skill sub-issues #127-#129.",
+   "category": "meta",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 7,
+   "suggested_labels": [
+    "area: marketplace"
+   ],
+   "suggested_reply": "Thanks for creating the marketplace epic and linking the seed skill issues. This can serve as the parent tracker for catalog infrastructure, contribution flow, curation, and initial diagnostics/debugging skills. Next step: keep the seed checklist and workstreams updated as #127, #128, and #129 are assigned or split."
+  },
+  "microsoft/win-dev-skills#127": {
+   "next_action": "assign",
+   "next_action_reason": "Runtime diagnostics skill has concrete target HRESULTs, symptoms, fixes, and deliverables.",
+   "category": "diagnostics",
+   "classification_type": "enhancement",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 6,
+   "suggested_labels": [
+    "skill: diagnostics",
+    "area: winui-runtime"
+   ],
+   "suggested_reply": "Thanks for the well-scoped runtime diagnostics skill proposal. The listed HRESULTs and symptom-to-fix checklists are concrete enough to start without more information. Next step: assign an owner to draft the skill and example guidance for class-not-registered, wrong-thread, bootstrapper/runtime, and XAML parse/binding failures."
+  },
+  "microsoft/win-dev-skills#128": {
+   "next_action": "assign",
+   "next_action_reason": "WinDbg/TTD skill has clear dump, symbols, TTD, command cheatsheet, and walkthrough deliverables.",
+   "category": "debugging",
+   "classification_type": "enhancement",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 6,
+   "suggested_labels": [
+    "skill: windbg",
+    "area: diagnostics"
+   ],
+   "suggested_reply": "Thanks for the WinDbg and TTD skill proposal. The scope is clear as a guidance skill for crash dumps, symbol setup, trace navigation, and command-line debugging workflows. Next step: assign an owner to draft the skill plus at least one native and one managed/WinRT crash walkthrough, and keep any live-debugger MCP work separate."
+  },
+  "microsoft/win-dev-skills#129": {
+   "next_action": "assign",
+   "next_action_reason": "ETW skill is scoped to headless capture and text/structured extraction for agents.",
+   "category": "diagnostics",
+   "classification_type": "enhancement",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 6,
+   "suggested_labels": [
+    "skill: etw",
+    "area: diagnostics"
+   ],
+   "suggested_reply": "Thanks for proposing an ETW skill focused on headless agent workflows. The capture and extraction requirements are specific enough to start, especially WPR/xperf/netsh trace choices and tools like tracerpt, wpaexporter, PerfView, or TraceProcessing. Next step: assign an owner to draft the skill and one slow-startup capture-to-analysis walkthrough."
+  },
+  "microsoft/win-dev-skills#88": {
+   "next_action": "request_changes",
+   "next_action_reason": "Open UWP migration PR overlaps with newer #134 adding the same skill plus more supporting scripts.",
+   "category": "migration",
+   "classification_type": "enhancement",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 4,
+   "suggested_labels": [
+    "skill: uwp-migration",
+    "needs-decision"
+   ],
+   "suggested_reply": "Thanks for adding the UWP migration skill. There is now another open PR, #134, that appears to cover the same skill area with additional automation and supporting references. Next step: maintainers should decide whether to merge content between the PRs or close one as superseded before doing detailed review."
+  },
+  "microsoft/win-dev-skills#135": {
+   "next_action": "needs_review",
+   "next_action_reason": "Dependabot setup-dotnet v6 PR is current, but configured github-actions labels are missing.",
+   "category": "dependencies",
+   "classification_type": "enhancement",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 4,
+   "suggested_labels": [
+    "dependencies",
+    "github-actions"
+   ],
+   "suggested_reply": "Thanks for the setup-dotnet v6 update. The visible issue is that Dependabot could not apply the configured labels because they do not exist. Next step: create the `dependencies` and `github-actions` labels, then run the workflow review to confirm the action major-version bump is compatible."
+  },
+  "microsoft/win-dev-skills#136": {
+   "next_action": "needs_review",
+   "next_action_reason": "Dependabot test SDK update has concrete release notes and only missing-label routing visible.",
+   "category": "dependencies",
+   "classification_type": "enhancement",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 4,
+   "suggested_labels": [
+    "dependencies",
+    "tool: winui-analyzer"
+   ],
+   "suggested_reply": "Thanks for the Microsoft.NET.Test.Sdk update. The PR needs the configured dependency labels created and then a normal analyzer/test validation pass. Next step: create the `dependencies` and `tool: winui-analyzer` labels, then run the test suite or targeted analyzer validation before merging."
+  },
+  "microsoft/win-dev-skills#134": {
+   "next_action": "needs_review",
+   "next_action_reason": "Open PR adds comprehensive UWP migration skill with scripts and pattern inventory; no review discussion visible.",
+   "category": "migration",
+   "classification_type": "enhancement",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 7,
+   "suggested_labels": [
+    "skill: uwp-migration",
+    "needs-review"
+   ],
+   "suggested_reply": "Thanks for the comprehensive UWP-to-WinUI migration skill and supporting scripts. The PR looks substantial and should be reviewed for overlap with #88, script safety, validation coverage, and whether the pattern inventory is maintainable. Next step: assign a reviewer to compare it with #88 and run the documented post-migration validation flow."
+  },
+  "microsoft/win-dev-skills#137": {
+   "next_action": "no_action",
+   "next_action_reason": "Release 0.5.0 PR is already merged and closed issue #120 among other release changes.",
+   "category": "release",
+   "classification_type": "functional",
+   "severity": "none",
+   "sentiment": "positive",
+   "score": 1,
+   "suggested_labels": [
+    "area: release"
+   ],
+   "suggested_reply": "Thanks for completing the 0.5.0 promotion. The PR is merged and documents the user-facing changes, including the winui-search Gallery refresh fix. Next step: no action is needed unless a post-release regression is reported.",
+   "suggested_owner": "nmetulev"
+  }
+ }
+}

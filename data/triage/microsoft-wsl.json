@@ -1,0 +1,532 @@
+{
+ "repo": "microsoft/WSL",
+ "generated_at": "2026-07-22T03:32:53.703Z",
+ "items": {
+  "microsoft/WSL#4699": {
+   "next_action": "assign",
+   "next_action_reason": "Very high-upvote VHDX compaction feature; latest comment reports Optimize-VHD corruption risk after workaround.",
+   "category": "feature",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "frustrated",
+   "score": 10,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for keeping this thread current. The newest reports show the workaround is still risky because manual Optimize-VHD can leave users worried about VHDX corruption. We should treat this as a first-class storage-management feature rather than relying on manual cleanup. Next step: WSL maintainers should confirm whether automatic safe shrink/reclaim is on the roadmap or split out the remaining design constraints."
+  },
+  "microsoft/WSL#4197": {
+   "next_action": "assign",
+   "next_action_reason": "Hundreds of reports still show /mnt filesystem perf far slower than WSL1, even with virtiofs enabled.",
+   "category": "bug",
+   "classification_type": "functional",
+   "severity": "bug",
+   "sentiment": "frustrated",
+   "score": 10,
+   "suggested_labels": [
+    "performance"
+   ],
+   "suggested_reply": "Thanks for the continued measurements. Recent comments still show large gaps for metadata-heavy access under /mnt, including virtiofs configurations. This looks confirmed and high-impact for developer workflows. Next step: maintainers should identify the current expected baseline for /mnt performance and whether fresh traces from current WSL builds would help isolate the remaining bottleneck."
+  },
+  "microsoft/WSL#4150": {
+   "next_action": "reply",
+   "next_action_reason": "Popular networking feature; thread now mixes bridged/mirrored mode, port workarounds, and off-topic config snippets.",
+   "category": "feature",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 8,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the continued feedback on bridged/mirrored networking scenarios. This issue is tracking the need for WSL networking that is reachable from the LAN without fragile port-forwarding. Some recent comments include workarounds for dynamic port ranges, but the core request remains broader. Next step: please share current WSL version, Windows build, networkingMode setting, and the exact LAN reachability scenario that still fails."
+  },
+  "microsoft/WSL#4739": {
+   "next_action": "assign",
+   "next_action_reason": "WSL2 inotify gap still reproduced in 2026, including Docker Desktop bind mounts from Windows paths.",
+   "category": "feature",
+   "classification_type": "functional",
+   "severity": "bug",
+   "sentiment": "frustrated",
+   "score": 9,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the updated Docker Desktop reproduction. The new data point that bind mounts from Windows paths inherit the missing inotify behavior is useful and keeps this issue actionable. Next step: maintainers should confirm whether this is tracked in the Plan9/Windows-filesystem notification layer and whether a minimal repro with inotifywait on /mnt/c plus a container bind mount is sufficient."
+  },
+  "microsoft/WSL#4166": {
+   "next_action": "reply",
+   "next_action_reason": "High-impact memory reclaim complaint persists on WSL 2.6.3; users report manual cache dropping still needed.",
+   "category": "bug",
+   "classification_type": "functional",
+   "severity": "bug",
+   "sentiment": "frustrated",
+   "score": 9,
+   "suggested_labels": [
+    "performance"
+   ],
+   "suggested_reply": "Thanks for the current WSL 2.6.3 report. The memory-reclaim problem is still affecting real workloads after package installs and headless-browser dependency setup. Next step: please add whether autoMemoryReclaim is enabled in .wslconfig and collect WSL logs plus Task Manager memory screenshots before and after the workload so the team can compare host-visible VmmemWSL usage with Linux memory accounting."
+  },
+  "microsoft/WSL#7456": {
+   "next_action": "reply",
+   "next_action_reason": "Zone.Identifier duplicate of/related to #4609; latest reports say policy fixes do not work consistently.",
+   "category": "bug",
+   "classification_type": "bug",
+   "severity": "papercut",
+   "sentiment": "confused",
+   "score": 6,
+   "suggested_labels": [
+    "file system"
+   ],
+   "suggested_reply": "Thanks for the detailed report. This appears to be the same Zone.Identifier alternate-data-stream behavior tracked in #4609, but reports here add the browser Save As path directly into WSL. Next step: please confirm whether adding *.wsl.localhost to Local Intranet sites changes the behavior for newly downloaded files, and include your Windows build and WSL version if it still reproduces."
+  },
+  "microsoft/WSL#2195": {
+   "next_action": "reply",
+   "next_action_reason": "Long-running native USB/libusb request; latest comments ask for status despite usbipd-win workaround.",
+   "category": "feature",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "frustrated",
+   "score": 8,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for continuing to document native USB/libusb needs such as ADB and embedded-device workflows. usbipd-win helps many cases, but the request here is native, lower-friction USB support in WSL. Next step: please add current scenarios that usbipd-win cannot cover, including device class, WSL version, and whether kernel driver support or attach UX is the blocker."
+  },
+  "microsoft/WSL#5118": {
+   "next_action": "assign",
+   "next_action_reason": "Recent comment demonstrates symlink browsing still fails in Explorer/JetBrains NativeMode despite claims of fixes.",
+   "category": "bug",
+   "classification_type": "functional",
+   "severity": "bug",
+   "sentiment": "neutral",
+   "score": 7,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the concrete A/B symlink example. That shows there is still at least one unresolved path where Linux symlinks appear as files from Windows tooling instead of navigable directories. Next step: maintainers should validate the ~/A/B -> /other/path/C case on current WSL and clarify which symlink shapes are expected to work through \\wsl$."
+  },
+  "microsoft/WSL#689": {
+   "next_action": "reply",
+   "next_action_reason": "Decade-old block-device request remains active; users still need low-level drive tooling without repeated usbipd steps.",
+   "category": "feature",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "frustrated",
+   "score": 7,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the updated use cases around dd, hdparm, secure erase, and low-level drive operations. This issue is still a broad request for opt-in block-device access in WSL rather than per-device workarounds. Next step: please describe the minimum device classes and commands you need, and whether an explicit admin/opt-in model would satisfy your scenario."
+  },
+  "microsoft/WSL#8529": {
+   "next_action": "request_info",
+   "next_action_reason": "Hang/CPU issue has many reports; latest notes mention Docker Resource Saver fix but remaining cases lack fresh WSL logs.",
+   "category": "bug",
+   "classification_type": "bug",
+   "severity": "crash",
+   "sentiment": "blocked",
+   "score": 8,
+   "suggested_labels": [
+    "needs-investigation"
+   ],
+   "suggested_reply": "Thanks for the reports. Some hangs in this thread appear related to Docker Desktop Resource Saver, while others may be separate WSL shutdown/startup deadlocks. Next step: if this still happens on current WSL and Docker Desktop, please collect WSL logs immediately after the hang and include whether Docker Desktop is installed, whether Resource Saver is enabled, and whether wsl --shutdown also hangs."
+  },
+  "microsoft/WSL#8696": {
+   "next_action": "assign",
+   "next_action_reason": "Maintainer posted partial fix in 2.7.3 pre-release and explicitly needs validation for hibernate resume hangs.",
+   "category": "bug",
+   "classification_type": "bug",
+   "severity": "regression",
+   "sentiment": "blocked",
+   "score": 9,
+   "suggested_labels": [
+    "needs-investigation"
+   ],
+   "suggested_reply": "Thanks everyone for the long-running validation. A partial fix is available in WSL 2.7.3 pre-release, and this issue needs focused confirmation from affected machines. Next step: please install the 2.7.3 pre-release, reproduce a hibernate/resume cycle, and report whether WSL still hangs along with fresh logs if it does."
+  },
+  "microsoft/WSL#8365": {
+   "next_action": "reply",
+   "next_action_reason": "DNS umbrella issue has workaround confirmations; still needs current logs only for unresolved cases.",
+   "category": "bug",
+   "classification_type": "bug",
+   "severity": "bug",
+   "sentiment": "confused",
+   "score": 7,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for tracking DNS failures here. Recent comments indicate mirrored networking helped at least one affected user, but this umbrella remains useful for unresolved DNS timeouts. Next step: if DNS still fails without manual resolv.conf edits, please include your WSL version, networkingMode, dnsTunneling setting, VPN/security software, and networking logs from the recommended WSL log collector."
+  },
+  "microsoft/WSL#5836": {
+   "next_action": "label_only",
+   "next_action_reason": "Umbrella failure-to-launch thread has noisy comments and no clear current repro in latest activity.",
+   "category": "bug",
+   "classification_type": "bug",
+   "severity": "crash",
+   "sentiment": "confused",
+   "score": 5,
+   "suggested_labels": [
+    "needs-investigation"
+   ],
+   "suggested_reply": "Thanks for the reports. This thread has accumulated several different launch failures, so new investigation needs a fresh, specific repro. Next step: if WSL still will not start on current builds, please open or add a comment with the exact error text, Windows build, WSL version, distro, and logs from the WSL launch-issue collection steps."
+  },
+  "microsoft/WSL#4322": {
+   "next_action": "reply",
+   "next_action_reason": "Serial-device support request persists; latest comments point to usbipd-win workaround for some cases.",
+   "category": "feature",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 6,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the continued serial-device reports. The thread shows WSL2 behavior differs from WSL1 and that usbipd-win can help some devices, but not necessarily all workflows. Next step: please confirm whether current usbipd-win resolves your specific COM/serial device scenario, and if not, share device model, WSL version, and the exact /dev/tty* behavior."
+  },
+  "microsoft/WSL#4901": {
+   "next_action": "request_info",
+   "next_action_reason": "Network throughput remains variable; latest workaround mentions non-persistent NetAdapter LSO changes.",
+   "category": "bug",
+   "classification_type": "bug",
+   "severity": "bug",
+   "sentiment": "frustrated",
+   "score": 7,
+   "suggested_labels": [
+    "needs-investigation"
+   ],
+   "suggested_reply": "Thanks for the updated network-speed data. Because reports vary by adapter, NAT/mirrored mode, IPv6, and LSO settings, the next useful step is fresh diagnostics. Please share WSL version, Windows build, adapter model/driver, networkingMode, before/after speed tests, and whether Disable-NetAdapterLso changes the result after reboot."
+  },
+  "microsoft/WSL#4609": {
+   "next_action": "reply",
+   "next_action_reason": "Zone.Identifier bug has fixedininsiderbuilds but still reproduces; workaround via Local Intranet trusted site confirmed.",
+   "category": "bug",
+   "classification_type": "bug",
+   "severity": "papercut",
+   "sentiment": "confused",
+   "score": 7,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for confirming the *.wsl.localhost Local Intranet workaround. Since this issue still reproduces for some users despite the fixedininsiderbuilds label, the thread needs current-version confirmation. Next step: please include Windows build, WSL version, and whether the trusted-site workaround works for both copy/paste and browser downloads into \\wsl.localhost."
+  },
+  "microsoft/WSL#4103": {
+   "next_action": "reply",
+   "next_action_reason": "Known launch failure with workaround label; latest comment adds WSA sparse/encryption variant rather than new WSL data.",
+   "category": "bug",
+   "classification_type": "bug",
+   "severity": "crash",
+   "sentiment": "confused",
+   "score": 5,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for documenting the virtual-disk limitation. For WSL distros, the known mitigation remains ensuring the VHDX and containing folders are not compressed, encrypted, or sparse. Next step: if this still affects a current WSL distro after clearing those attributes, please add Windows build, WSL version, distro install path, and the exact error output."
+  },
+  "microsoft/WSL#4689": {
+   "next_action": "reply",
+   "next_action_reason": "File-locking limitation still affects SQLite/SVN over \\wsl$; comments share app-level nolock workaround.",
+   "category": "bug",
+   "classification_type": "functional",
+   "severity": "bug",
+   "sentiment": "neutral",
+   "score": 6,
+   "suggested_labels": [
+    "bug"
+   ],
+   "suggested_reply": "Thanks for the workaround reports. The core issue remains that Windows access through \\wsl$ does not provide the locking semantics expected by tools like SQLite/SVN. Next step: please identify current applications still blocked by this and whether they require byte-range locks, POSIX locks, or SQLite locking specifically so the team can scope expected support."
+  },
+  "microsoft/WSL#40948": {
+   "next_action": "assign",
+   "next_action_reason": "Active WSLc feature owned by maintainer; recent comments converge on bundling upstream Compose/API endpoint.",
+   "category": "feature",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "positive",
+   "score": 8,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the design discussion. The latest comments suggest a pragmatic path: expose a Docker-compatible API endpoint and bundle upstream Compose rather than reimplementing Compose. Next step: WSLc maintainers should decide whether bundling upstream Compose is acceptable and capture any licensing, update, or endpoint-compatibility constraints."
+  },
+  "microsoft/WSL#8995": {
+   "next_action": "reply",
+   "next_action_reason": "Defender performance issue lacks labels; latest report says exclusions improve WSL Emacs sluggishness.",
+   "category": "bug",
+   "classification_type": "bug",
+   "severity": "bug",
+   "sentiment": "frustrated",
+   "score": 7,
+   "suggested_labels": [
+    "bug",
+    "performance"
+   ],
+   "suggested_reply": "Thanks for the latest exclusion-based workaround. This issue appears to be about Defender scanning of WSL filesystem/process paths causing severe IDE/editor performance problems. Next step: please provide a minimal benchmark before and after adding WSL folder/process exclusions, plus Windows Security configuration, WSL version, and whether the path is under \\wsl.localhost or /mnt/c."
+  },
+  "microsoft/WSL#5092": {
+   "next_action": "request_info",
+   "next_action_reason": "4294967295 launch failures continue but latest comments are anecdotal/restart-only without logs.",
+   "category": "bug",
+   "classification_type": "bug",
+   "severity": "crash",
+   "sentiment": "blocked",
+   "score": 6,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the updates. Exit code 4294967295 can come from several launch failure paths, so fresh diagnostics are needed to separate this from related hang and resource issues. Next step: when it happens again, please collect WSL launch logs before rebooting and include Windows build, WSL version, distro, recent updates, and whether File Explorer access to the distro failed first."
+  },
+  "microsoft/WSL#5151": {
+   "next_action": "reply",
+   "next_action_reason": "Multi-user WSL install/admin model request remains active with enterprise/sysadmin use cases.",
+   "category": "feature",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 7,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for clarifying the multi-user requirement. The request is not just multiple terminals; it is shared installation with separate profiles, configuration, home directories, and controlled sudo/admin rights. Next step: please add concrete enterprise deployment requirements such as Store/offline install expectations, per-user distro isolation, and how admins should provision or update shared distros."
+  },
+  "microsoft/WSL#4241": {
+   "next_action": "reply",
+   "next_action_reason": "Distro rename request remains straightforward; recent comments are status pings without new technical data.",
+   "category": "feature",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 5,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the continued interest. The scenario remains allowing a distro display/API name to change without breaking existing installs, UNC paths, or app identities. Next step: distro publishers should add any current cases where a rename is blocked, including whether the need is display-only, \\wsl$ path-related, or API identity-related."
+  },
+  "microsoft/WSL#2466": {
+   "next_action": "reply",
+   "next_action_reason": "Desktop notification feature has community workaround implementation but no native integration status.",
+   "category": "feature",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "positive",
+   "score": 5,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for sharing community notification bridges. The original request is still native forwarding of Linux desktop notifications into Windows notification surfaces. Next step: please add current WSLg/desktop-notification scenarios that are not covered by existing tools, including distro, desktop environment if any, and whether action buttons/persistence are required."
+  },
+  "microsoft/WSL#11206": {
+   "next_action": "reply",
+   "next_action_reason": "NixOS distribution request is small and actionable but depends on distro/store publishing ownership.",
+   "category": "feature",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 4,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for pointing to NixOS-WSL and the downstream publishing discussion. This looks less like a WSL runtime bug and more like coordination for an official Store/distribution entry. Next step: NixOS maintainers or interested contributors should confirm publishing ownership, package identity, and support expectations so WSL maintainers can route the request appropriately."
+  },
+  "microsoft/WSL#6011": {
+   "next_action": "reply",
+   "next_action_reason": "USB flash --mount support remains requested; recent comment says Windows cannot offline removable disks without risky driver workaround.",
+   "category": "feature",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 6,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the additional context on removable disks. The key blocker appears to be Windows treatment of removable media/offline disks, which makes wsl --mount unreliable for USB flash drives without lower-filter workarounds. Next step: please share current Windows build, WSL version, disk type, and whether the device appears as fixed or removable in Disk Management."
+  },
+  "microsoft/WSL#9231": {
+   "next_action": "reply",
+   "next_action_reason": "Session 0 access limitation has many service/NSSM workarounds but no product-supported answer in latest comments.",
+   "category": "bug",
+   "classification_type": "functional",
+   "severity": "bug",
+   "sentiment": "neutral",
+   "score": 6,
+   "suggested_labels": [
+    "bug"
+   ],
+   "suggested_reply": "Thanks for documenting service and remote-session workarounds. The underlying ask is supported WSL access from Session 0 contexts such as services, ssh, or psremote. Next step: please add the exact service/remoting scenario, account type, WSL package version, and whether using the absolute wsl.exe path changes the Access is denied result."
+  },
+  "microsoft/WSL#242": {
+   "next_action": "reply",
+   "next_action_reason": "Bluetooth hardware support feature remains requested for RF/device-development scenarios.",
+   "category": "feature",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 4,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the Bluetooth use cases. This issue tracks native Bluetooth access from WSL, including development and testing workflows that need Linux tooling with Windows hardware. Next step: please add current device classes and commands you need, and whether usbipd or another pass-through approach would satisfy the scenario."
+  },
+  "microsoft/WSL#9932": {
+   "next_action": "assign",
+   "next_action_reason": "Destructive unregister UX continues to cause data loss; recent user misunderstood unregister/import-in-place flow.",
+   "category": "enhancement",
+   "classification_type": "feedback",
+   "severity": "papercut",
+   "sentiment": "frustrated",
+   "score": 8,
+   "suggested_labels": [
+    "enhancement"
+   ],
+   "suggested_reply": "Thanks for the latest data-loss report. Even though help text documents deletion, the command name and lack of confirmation continue to surprise users who expect unregister to preserve the VHDX for import-in-place. Next step: maintainers should consider a confirmation prompt plus a --force flag, or clearer command naming/docs in the command output before deletion."
+  },
+  "microsoft/WSL#5231": {
+   "next_action": "reply",
+   "next_action_reason": "Resource launch error has workaround by limiting memory/processors; needs current HCS diagnostics for root cause.",
+   "category": "bug",
+   "classification_type": "bug",
+   "severity": "crash",
+   "sentiment": "blocked",
+   "score": 6,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for sharing the .wslconfig workaround. Limiting memory/processors helps some machines, but the HCS 0x800705aa resource failure still needs current diagnostics. Next step: please collect WSL logs on a current WSL version when the error occurs and include CPU core count, RAM, .wslconfig, virtual memory settings, and whether restarting HV Host Service helps."
+  },
+  "microsoft/WSL#13724": {
+   "next_action": "request_info",
+   "next_action_reason": "Specific VPN mirrored-network regression; maintainer requested networking logs and latest comment adds GlobalProtect affected.",
+   "category": "bug",
+   "classification_type": "bug",
+   "severity": "regression",
+   "sentiment": "blocked",
+   "score": 8,
+   "suggested_labels": [
+    "needs-investigation"
+   ],
+   "suggested_reply": "Thanks for confirming GlobalProtect is affected. Because KB and VPN-client combinations differ, this needs targeted networking logs. Next step: please collect WSL networking logs using .\\collect-wsl-logs.ps1 -LogProfile networking on the affected KB, and include VPN client/version, networkingMode, dnsTunneling, and whether KB5072033 changes the result."
+  },
+  "microsoft/WSL#5178": {
+   "next_action": "reply",
+   "next_action_reason": "TPM access feature has clear crypto/hardware-binding use cases and recent renewed demand.",
+   "category": "feature",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 5,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the TPM scenarios. The request is for WSL to access TPM-backed operations either directly or through a Windows-side broker, enabling SSH, GPG, and hardware-bound credentials. Next step: please list the specific Linux TPM tools/APIs you need and whether forwarding to Windows TPM services would satisfy your workflow."
+  },
+  "microsoft/WSL#8655": {
+   "next_action": "reply",
+   "next_action_reason": "Webcam driver request has some success reports but unclear default kernel/support status.",
+   "category": "feature",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 4,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the webcam driver reports. Some users have found configurations where cameras work, but the original request is for default WSL kernel support that creates /dev/video* after USB attach. Next step: please confirm on current WSL whether your camera works without a custom kernel, and share camera model, WSL version, kernel version, and usbipd attach output if it does not."
+  },
+  "microsoft/WSL#11187": {
+   "next_action": "assign",
+   "next_action_reason": "Persistent VHDX automount request has concrete enterprise/dev workflow and recent support.",
+   "category": "feature",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 6,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the multi-VHD development-environment examples. Native persistent VHDX mounting would remove fragile PowerShell/profile scripts and improve enterprise automation. Next step: maintainers should clarify whether this belongs in .wslconfig, wsl.conf, or a new mount policy, and what security/privilege model would apply."
+  },
+  "microsoft/WSL#11207": {
+   "next_action": "reply",
+   "next_action_reason": "Windows SSH-Agent forwarding feature has workarounds but gaps remain for signing and general agent socket use.",
+   "category": "feature",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 5,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the SSH-agent forwarding workarounds. Using Windows OpenSSH for git helps some clone/push cases, but commit signing and generic SSH_AUTH_SOCK workflows still need a first-class socket bridge. Next step: please add which clients fail today, especially signing or non-git tools, and whether a /mnt/wsl/ssh-agent socket would satisfy them."
+  },
+  "microsoft/WSL#6460": {
+   "next_action": "reply",
+   "next_action_reason": "Small Explorer UX feature; recent comments propose Windows metadata accessor for hidden files.",
+   "category": "enhancement",
+   "classification_type": "enhancement",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 3,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the suggestion. Hiding dotfiles in Explorer, or exposing a way for WSL to set Windows Hidden metadata, would be a quality-of-life improvement rather than a correctness bug. Next step: please clarify whether you expect all dotfiles to be hidden automatically or want an opt-in metadata bridge/config setting."
+  },
+  "microsoft/WSL#10378": {
+   "next_action": "request_info",
+   "next_action_reason": "Random freeze issue has frustrated recent comments but no current reproducible steps beyond old logs.",
+   "category": "bug",
+   "classification_type": "bug",
+   "severity": "crash",
+   "sentiment": "frustrated",
+   "score": 7,
+   "suggested_labels": [
+    "needs-investigation"
+   ],
+   "suggested_reply": "Thanks for the reports. Random freezes are still high impact, but this thread needs current diagnostics to distinguish WSL, Docker/Rancher, filesystem, and sleep/resume causes. Next step: on the latest WSL release, please collect logs immediately after a freeze and include whether Docker/Rancher is running, whether wsl --shutdown works, and what changed since boot."
+  },
+  "microsoft/WSL#6951": {
+   "next_action": "reply",
+   "next_action_reason": "OpenCL support now has community POCL/Intel workarounds but performance remains poor for some GPU workflows.",
+   "category": "feature",
+   "classification_type": "functional",
+   "severity": "bug",
+   "sentiment": "neutral",
+   "score": 5,
+   "suggested_labels": [
+    "gpu"
+   ],
+   "suggested_reply": "Thanks for the OpenCL updates. Community paths such as Intel compute-runtime or POCL can work for some users, but reports still show major performance and compatibility gaps. Next step: please share current GPU vendor/model, Windows driver, WSL version, OpenCL runtime used, and a simple native-vs-WSL benchmark so maintainers can separate support from performance issues."
+  },
+  "microsoft/WSL#11293": {
+   "next_action": "request_info",
+   "next_action_reason": "GPU dxg ioctl failures have possible duplicate/related #12702 and WSLg #1394; needs fresh logs and current versions.",
+   "category": "bug",
+   "classification_type": "bug",
+   "severity": "bug",
+   "sentiment": "confused",
+   "score": 6,
+   "suggested_labels": [
+    "needs-investigation"
+   ],
+   "suggested_reply": "Thanks for linking related GPU failures. Because this may overlap with #12702 and microsoft/wslg#1394, the next step is to capture the exact current state. Please add WSL version, kernel, Windows build, GPU driver, output of ls /dev/dri, nvidia-smi inside WSL, and dmesg lines around dxgkio_query_adapter_info."
+  },
+  "microsoft/WSL#5065": {
+   "next_action": "reply",
+   "next_action_reason": "Interop socket request has old workaround scripts; latest comments indicate WSL2/tmux cases still break.",
+   "category": "feature",
+   "classification_type": "functional",
+   "severity": "bug",
+   "sentiment": "neutral",
+   "score": 4,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the interop socket workarounds. The request remains for a stable shared /run/WSL interop socket so tmux/shell nesting does not depend on fragile PID-derived paths. Next step: please confirm the current failure mode on latest WSL with tmux, including WSL_INTEROP value, /run/WSL contents, and the Windows command that fails."
+  },
+  "microsoft/WSL#5895": {
+   "next_action": "assign",
+   "next_action_reason": "Filesystem corruption remains severe; fixedininsiderbuilds label is years old and users report current ARM/data corruption cases.",
+   "category": "bug",
+   "classification_type": "bug",
+   "severity": "regression",
+   "sentiment": "blocked",
+   "score": 9,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the continued reports. Data corruption is severe, and the fixedininsiderbuilds label has not resolved user concern while new cases still appear. Next step: maintainers should clarify whether the original corruption bug reached GA, whether current reports are the same issue, and what logs or disk images are safe to provide for investigation."
+  },
+  "microsoft/WSL#1405": {
+   "next_action": "reply",
+   "next_action_reason": "Environment/login-shell behavior is debated; latest comments clarify WSL-injected DISPLAY breaks with login hack.",
+   "category": "feature",
+   "classification_type": "functional",
+   "severity": "papercut",
+   "sentiment": "confused",
+   "score": 4,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the discussion. The core request is for /etc/environment-style variables to be available in WSL sessions without breaking WSL-injected variables such as DISPLAY. Next step: please provide the exact launch path affected (Windows Terminal, wsl.exe, VS Code, etc.) and the desired precedence between Linux login environment and WSL-provided variables."
+  },
+  "microsoft/WSL#5961": {
+   "next_action": "reply",
+   "next_action_reason": "AF_UNIX interop over Windows paths remains unsupported; recent user asks for mitigations for named-pipe relays.",
+   "category": "feature",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 4,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the current repro. Binding AF_UNIX sockets under /mnt/c still returns operation not supported, which blocks some named-pipe relay patterns. Next step: please describe the specific Windows-to-WSL socket/named-pipe bridge you need and whether Linux-only sockets in the WSL filesystem are sufficient for part of the workflow."
+  },
+  "microsoft/WSL#5968": {
+   "next_action": "reply",
+   "next_action_reason": "NBD kernel support request is clear; latest comment asks how to use community kernel automation.",
+   "category": "feature",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 4,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the NBD use case. Today users appear to rely on custom kernels or community automation, but the request is for default WSL kernel support for network block devices. Next step: please add the NBD workflow you need, filesystem types involved, and whether enabling the kernel module in the stock WSL kernel would be enough."
+  },
+  "microsoft/WSL#237": {
+   "next_action": "reply",
+   "next_action_reason": "Audio device/ALSA feature request is old; recent comments broaden it to MIDI support.",
+   "category": "feature",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 3,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for adding audio and MIDI scenarios. This issue tracks Linux-visible sound device support such as ALSA/MIDI rather than only Windows audio output. Next step: please describe the current tool or device you need to use, whether WSLg audio covers any part of it, and which /dev/snd or MIDI interfaces are missing."
+  }
+ }
+}

@@ -1,0 +1,628 @@
+{
+ "repo": "microsoft/intelligent-terminal",
+ "generated_at": "2026-07-22T03:32:53.703Z",
+ "items": {
+  "microsoft/intelligent-terminal#200": {
+   "next_action": "close_dup",
+   "next_action_reason": "Maintainer split the bundled WSL report into fixed shell-context and separate tracking issues #350/#349/#352.",
+   "category": "bug",
+   "classification_type": "bug",
+   "severity": "bug",
+   "sentiment": "frustrated",
+   "score": 8,
+   "suggested_labels": [
+    "Area-WSL"
+   ],
+   "suggested_reply": "Thanks for the detailed WSL report. This thread now bundles multiple issues, and we have split them into dedicated trackers: shell-context awareness was fixed in #345, WSL insert/run failures are tracked in #350, WSL agent backends in #349, and WSL profile launch behavior separately. To keep follow-up actionable, I suggest closing this umbrella item and continuing validation on the specific tracker that matches the remaining failure. If you still hit insert/run in WSL, please add the current version and repro steps to #350."
+  },
+  "microsoft/intelligent-terminal#228": {
+   "next_action": "assign",
+   "next_action_reason": "Gemini CLI consumer deprecation can break existing native integration; maintainer already marked it priority backlog.",
+   "category": "agent-integrations",
+   "classification_type": "functional",
+   "severity": "regression",
+   "sentiment": "neutral",
+   "score": 8,
+   "suggested_labels": [
+    "Area-AgentCLI"
+   ],
+   "suggested_reply": "Thanks for flagging the Antigravity/agy migration. Since this affects users relying on the existing Gemini CLI integration, we should track it as a compatibility break rather than a generic feature request. Next step: confirm the supported agy ACP/stdio invocation and add detection/configuration coverage so existing Gemini users have a migration path before the old CLI stops working."
+  },
+  "microsoft/intelligent-terminal#231": {
+   "next_action": "assign",
+   "next_action_reason": "Multiple users report first-run install/auth/execution-policy failures after attempted fixes, with screenshots and repro detail.",
+   "category": "first-run",
+   "classification_type": "bug",
+   "severity": "bug",
+   "sentiment": "blocked",
+   "score": 8,
+   "suggested_labels": [
+    "Area-FirstRun"
+   ],
+   "suggested_reply": "Thanks for the detailed first-run reports and follow-up screenshots. There are still at least two actionable issues here after the initial fix: clearer install progress/error handling and better guidance or handling for PowerShell execution policy/auth setup. Next step: route this to the first-run/setup owner to reproduce on a clean Windows image and split any remaining distinct failures into focused bugs."
+  },
+  "microsoft/intelligent-terminal#192": {
+   "next_action": "reply",
+   "next_action_reason": "Maintainer acknowledged BYOK/local endpoints as priority; new comment adds a concrete OpenAI-compatible smoke-test target.",
+   "category": "models",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "positive",
+   "score": 7,
+   "suggested_labels": [
+    "Issue-Feature",
+    "Area-Models",
+    "Area-BYOK"
+   ],
+   "suggested_reply": "Thanks for the concrete OpenAI-compatible endpoint shape and smoke-test target. This is helpful for defining the minimum BYOK contract: configurable base URL, bearer/API key, model selection/discovery, clear diagnostics, and no silent fallback. Next step: we should fold this into the BYOK/local-model requirements and validate against at least one plain OpenAI-compatible endpoint during implementation."
+  },
+  "microsoft/intelligent-terminal#254": {
+   "next_action": "label_only",
+   "next_action_reason": "Feature request is clear and already acknowledged: first launch only probes Windows, not WSL-installed ACP CLIs.",
+   "category": "wsl",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 6,
+   "suggested_labels": [
+    "Area-WSL",
+    "Area-FirstRun"
+   ],
+   "suggested_reply": "Thanks for calling this out. Today first-launch detection does not probe inside WSL distributions, so users with ACP agents installed only in WSL can be told incorrectly that no compatible CLI exists. Next step: track this as a WSL first-run enhancement and decide whether the first version should auto-detect selected distros or provide an explicit WSL command registration path."
+  },
+  "microsoft/intelligent-terminal#333": {
+   "next_action": "reply",
+   "next_action_reason": "Remote SSH workflow request has no maintainer response and outlines several separable session discovery/resume scenarios.",
+   "category": "remote-sessions",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 6,
+   "suggested_labels": [
+    "Area-Remote",
+    "Area-Sessions"
+   ],
+   "suggested_reply": "Thanks for the detailed SSH remote-session proposal. The request spans host discovery, remote agent-session listing/resume, and optional tmux-style persistence, so it is worth scoping in stages. Next step: please confirm the highest-priority scenario: discovering sessions from an already-open SSH pane, launching a new SSH session from config, or resuming tmux/remote sessions."
+  },
+  "microsoft/intelligent-terminal#233": {
+   "next_action": "no_action",
+   "next_action_reason": "Maintainer explained Win+X Terminal mapping is a different app integration and added it to feature backlog.",
+   "category": "settings",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "confused",
+   "score": 3,
+   "suggested_labels": [
+    "Area-Settings"
+   ],
+   "suggested_reply": "Thanks for clarifying the Win+X scenario. Intelligent Terminal is a separate app from Windows Terminal, so replacing that specific Win+X entry is not currently something the app can do automatically. This is now captured as a feature request; next step is to prioritize it if more users ask for Win+X integration."
+  },
+  "microsoft/intelligent-terminal#277": {
+   "next_action": "assign",
+   "next_action_reason": "Maintainer agreed first-run setup should show progress or percentage instead of only 'setting up...'.",
+   "category": "first-run",
+   "classification_type": "enhancement",
+   "severity": "papercut",
+   "sentiment": "neutral",
+   "score": 5,
+   "suggested_labels": [
+    "Area-FirstRun"
+   ],
+   "suggested_reply": "Agreed that a single 'setting up...' state is too opaque for first-run dependency installation. Showing the current step, progress, and a recoverable failure message would make setup much easier to understand. Next step: assign this to the first-run/setup workstream and define the visible states for Copilot, Node.js, auth, and policy checks."
+  },
+  "microsoft/intelligent-terminal#248": {
+   "next_action": "no_action",
+   "next_action_reason": "Local/BYOK Copilot CLI support is already acknowledged as top-of-mind; comments add demand but no new repro data.",
+   "category": "models",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "positive",
+   "score": 7,
+   "suggested_labels": [
+    "Area-Models",
+    "Area-AgentCLI"
+   ],
+   "suggested_reply": "Thanks for the request and the extra context around local/BYOK Copilot CLI usage. This is aligned with the broader local-model and OpenAI-compatible endpoint work the team is already investigating. Next step: keep this issue as the external Copilot CLI ACP tracking item and update it once there is a supported invocation/configuration path."
+  },
+  "microsoft/intelligent-terminal#269": {
+   "next_action": "reply",
+   "next_action_reason": "Request is underspecified but has a +1 and a concrete UX suggestion to show token consumption in the agent pane.",
+   "category": "usage-metrics",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 4,
+   "suggested_labels": [
+    "Area-UsageMetrics"
+   ],
+   "suggested_reply": "Thanks for the suggestion. Showing token consumption would be useful, especially for the built-in GitHub Copilot agent and any provider that exposes usage data. Next step: please clarify whether you want per-turn usage, cumulative session usage, or both; that will help decide where this belongs in the agent pane UI."
+  },
+  "microsoft/intelligent-terminal#18": {
+   "next_action": "request_changes",
+   "next_action_reason": "Maintainer noted CI already generates cargo config/auth, so the PR needs a remaining-gap justification before review.",
+   "category": "build",
+   "classification_type": "functional",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 3,
+   "suggested_labels": [
+    "Needs-Author"
+   ],
+   "suggested_reply": "Thanks for the compliance-focused PR. Current CI already generates its cargo config and authenticates the IntelligentTerminal_Cargo feed during the build, so this change needs a clearer statement of the remaining compliance gap it solves. Next step: please update the PR with why the generated CI config is insufficient, or close this if the existing pipeline satisfies the requirement."
+  },
+  "microsoft/intelligent-terminal#17": {
+   "next_action": "needs_review",
+   "next_action_reason": "Author pushed back that LLM-produced command input is not purely internal, so the fuzzing value needs an owner decision.",
+   "category": "security",
+   "classification_type": "enhancement",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 4,
+   "suggested_labels": [
+    "Needs-Review",
+    "Area-Security"
+   ],
+   "suggested_reply": "Thanks for the fuzzing proposal and the follow-up clarification. The key review decision is whether LLM-generated command input makes this boundary security-relevant enough to justify ongoing fuzzing and CI cost. Next step: a maintainer should decide whether to accept this fuzz target, narrow its CI cadence, or replace it with focused quoting/property tests."
+  },
+  "microsoft/intelligent-terminal#38": {
+   "next_action": "needs_review",
+   "next_action_reason": "PR replaces hand-rolled command-line escaping with CommandLineToArgvW-compatible quoting and JSON agent config.",
+   "category": "security",
+   "classification_type": "bug",
+   "severity": "bug",
+   "sentiment": "neutral",
+   "score": 7,
+   "suggested_labels": [
+    "Needs-Review",
+    "Area-Security"
+   ],
+   "suggested_reply": "This looks like a security/reliability improvement for WT-to-WTA argument passing by reducing the quoting surface to a JSON-encoded agent config. Next step: review the backward compatibility path for legacy args and add/verify tests for quotes, backslashes, and mixed legacy/new config invocation."
+  },
+  "microsoft/intelligent-terminal#22": {
+   "next_action": "needs_review",
+   "next_action_reason": "PR targets MSIX upgrade blocker by exiting idle COM server; needs lifecycle review for windows/dialogs/live COM clients.",
+   "category": "packaging",
+   "classification_type": "bug",
+   "severity": "bug",
+   "sentiment": "blocked",
+   "score": 6,
+   "suggested_labels": [
+    "Needs-Review",
+    "Area-Packaging"
+   ],
+   "suggested_reply": "Thanks for tackling the lingering COM-server upgrade blocker. The proposed idle timer is sensible, but it needs careful review around live COM object tracking, message boxes, and race-free shutdown. Next step: have a maintainer review the lifecycle edge cases and validate the MSIX upgrade scenario that previously hit 0x80073D02."
+  },
+  "microsoft/intelligent-terminal#150": {
+   "next_action": "needs_rebase",
+   "next_action_reason": "WIP bot PR is old, targets follow-up to #98, and likely needs refresh against current main before review.",
+   "category": "sessions",
+   "classification_type": "enhancement",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 2,
+   "suggested_labels": [
+    "WIP",
+    "Needs-Rebase"
+   ],
+   "suggested_reply": "This is still marked WIP and was opened as a follow-up branch for #98. Given its age and the amount of session-management work since then, it likely needs a refresh before useful review. Next step: please rebase/update the branch, mark whether this is still intended to merge, and refresh the PR description with current validation."
+  },
+  "microsoft/intelligent-terminal#154": {
+   "next_action": "needs_review",
+   "next_action_reason": "PR changes WTA prompt routing for autofix and terminal-agent classification; bot comments are spelling infra noise.",
+   "category": "prompts",
+   "classification_type": "bug",
+   "severity": "papercut",
+   "sentiment": "neutral",
+   "score": 5,
+   "suggested_labels": [
+    "Needs-Review",
+    "Area-Prompts"
+   ],
+   "suggested_reply": "Thanks for tightening the prompt routing. The behavior change is clear: package-missing errors should produce fixes, while terminal-agent requests should route to the agent flow. Next step: review prompt examples/regressions and verify the intended classifications still hold for tool-not-installed versus package-not-installed cases."
+  },
+  "microsoft/intelligent-terminal#182": {
+   "next_action": "needs_review",
+   "next_action_reason": "Fixes first-ever Copilot sessions not appearing live by addressing synthetic-key registry publication gaps.",
+   "category": "sessions",
+   "classification_type": "bug",
+   "severity": "bug",
+   "sentiment": "neutral",
+   "score": 6,
+   "suggested_labels": [
+    "Needs-Review",
+    "Area-Sessions"
+   ],
+   "suggested_reply": "This PR addresses a concrete live-session registration bug where first-ever Copilot sessions only appear after restart. Next step: review the synthetic-key to real-session transition and validate first-run, fresh-tab, and restart scenarios so the master registry updates live without duplicating rows."
+  },
+  "microsoft/intelligent-terminal#195": {
+   "next_action": "reply",
+   "next_action_reason": "Feature request lists several slash commands but lacks prioritization and overlaps with later focused PRs/issues.",
+   "category": "commands",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 4,
+   "suggested_labels": [
+    "Issue-Feature",
+    "Area-SlashCommands"
+   ],
+   "suggested_reply": "Thanks for the slash-command ideas. Some of these now have focused tracking or PRs, such as workspace/pane/passthrough and multi-turn command execution. Next step: let's split any still-untracked commands into individual issues, starting with the highest-value one you want first, so each command has clear behavior and acceptance criteria."
+  },
+  "microsoft/intelligent-terminal#193": {
+   "next_action": "no_action",
+   "next_action_reason": "Agent workspace idea is now directly tracked by PR #310 for /workspace save/list/restore.",
+   "category": "workspace",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 5,
+   "suggested_labels": [
+    "Issue-Feature",
+    "Area-Workspace"
+   ],
+   "suggested_reply": "Thanks for the workspace snapshot idea. This is now being implemented in PR #310 with `/workspace save`, `/workspace list`, and persisted named workspace slots. Next step: continue design and validation feedback on #310 so this issue can close when that PR lands."
+  },
+  "microsoft/intelligent-terminal#194": {
+   "next_action": "no_action",
+   "next_action_reason": "Pane selector request is directly implemented by PR #313 with @ index/title context injection.",
+   "category": "pane-context",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 5,
+   "suggested_labels": [
+    "Issue-Feature",
+    "Area-PaneContext"
+   ],
+   "suggested_reply": "Thanks for the pane selector proposal. PR #313 now implements an `@` pane selector flow for injecting pane context by index or title prefix. Next step: review and test #313; this issue can close when the pane-selector behavior is accepted and merged."
+  },
+  "microsoft/intelligent-terminal#196": {
+   "next_action": "no_action",
+   "next_action_reason": "Pass-through mode request is directly implemented by PR #315 with /passthrough per-tab context.",
+   "category": "agent-pane",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 5,
+   "suggested_labels": [
+    "Issue-Feature",
+    "Area-AgentPane"
+   ],
+   "suggested_reply": "Thanks for the pass-through mode idea. PR #315 now implements `/passthrough` so the agent can include its own pane output as context on subsequent turns. Next step: review the UX and safety behavior in #315, then close this issue once the PR lands."
+  },
+  "microsoft/intelligent-terminal#259": {
+   "next_action": "assign",
+   "next_action_reason": "Reporter provided requested Oh My Posh setup, screenshots, logs, and profile after maintainer asked for details.",
+   "category": "autofix",
+   "classification_type": "bug",
+   "severity": "bug",
+   "sentiment": "neutral",
+   "score": 7,
+   "suggested_labels": [
+    "Needs-Investigation",
+    "Area-Autofix"
+   ],
+   "suggested_reply": "Thanks for providing the Oh My Posh details, screenshots, logs, and profile. We now have the information requested to investigate why error detection stops with that prompt configuration. Next step: assign this for reproduction using the provided theme/profile and compare the before/after logs to see whether prompt escape sequences are hiding the error signal."
+  },
+  "microsoft/intelligent-terminal#278": {
+   "next_action": "needs_review",
+   "next_action_reason": "PR adds busy-prompt queueing and Esc dequeue semantics; only bot spelling reports are visible.",
+   "category": "tui",
+   "classification_type": "enhancement",
+   "severity": "papercut",
+   "sentiment": "neutral",
+   "score": 5,
+   "suggested_labels": [
+    "Needs-Review",
+    "Area-TUI"
+   ],
+   "suggested_reply": "Thanks for rebuilding the pending-prompt queue change on current main. The UX improvement is clear: do not discard typed prompts while an agent turn is busy, and make Esc behavior predictable. Next step: review queue ordering, cancellation semantics, and any tests around busy-to-accepting transitions."
+  },
+  "microsoft/intelligent-terminal#310": {
+   "next_action": "needs_review",
+   "next_action_reason": "CLA is satisfied and PR closes #193 with workspace save/list/restore and tests.",
+   "category": "workspace",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 6,
+   "suggested_labels": [
+    "Needs-Review",
+    "Area-Workspace"
+   ],
+   "suggested_reply": "Thanks for implementing `/workspace` snapshot commands and adding tests. CLA appears satisfied, so this is ready for maintainer review. Next step: review persistence location, i18n updates, and restore behavior across terminal restarts before merging."
+  },
+  "microsoft/intelligent-terminal#312": {
+   "next_action": "needs_review",
+   "next_action_reason": "CLA is satisfied and PR adds per-profile agent override settings following profile-setting patterns.",
+   "category": "settings",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 5,
+   "suggested_labels": [
+    "Needs-Review",
+    "Area-Settings"
+   ],
+   "suggested_reply": "Thanks for adding per-profile default agent settings. CLA appears satisfied, and the implementation follows the profile-setting override/reset pattern. Next step: review settings-model/schema compatibility and verify the UI override source/reset behavior for both ACP and delegate agents."
+  },
+  "microsoft/intelligent-terminal#313": {
+   "next_action": "needs_review",
+   "next_action_reason": "CLA is satisfied and PR implements the pane selector requested in #194.",
+   "category": "pane-context",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 6,
+   "suggested_labels": [
+    "Needs-Review",
+    "Area-PaneContext"
+   ],
+   "suggested_reply": "Thanks for implementing `@` pane context injection. CLA appears satisfied, and the feature maps directly to #194. Next step: review token parsing, unresolved-token UX, and whether pane output size/redaction limits are needed before merge."
+  },
+  "microsoft/intelligent-terminal#314": {
+   "next_action": "needs_review",
+   "next_action_reason": "PR closes #203 by feeding command output back to the ACP session as a follow-up turn.",
+   "category": "command-execution",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 7,
+   "suggested_labels": [
+    "Needs-Review",
+    "Area-CommandExecution"
+   ],
+   "suggested_reply": "Thanks for wiring command output back into the agent turn loop. This directly addresses multi-turn command execution in #203. Next step: review timing/fallback capture behavior, session_id routing, and safeguards for large or sensitive pane output before merge."
+  },
+  "microsoft/intelligent-terminal#315": {
+   "next_action": "needs_review",
+   "next_action_reason": "PR closes #196 with per-tab /passthrough mode and tests; CLA is satisfied.",
+   "category": "agent-pane",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 5,
+   "suggested_labels": [
+    "Needs-Review",
+    "Area-AgentPane"
+   ],
+   "suggested_reply": "Thanks for implementing `/passthrough` mode. This closes the core request in #196 and includes tests for toggling and per-tab behavior. Next step: review context size, user visibility, and whether agent-pane output should be bounded or summarized before submission."
+  },
+  "microsoft/intelligent-terminal#325": {
+   "next_action": "label_only",
+   "next_action_reason": "Internal feature request asks to enable Windows Terminal-style portable mode in Intelligent Terminal.",
+   "category": "packaging",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 4,
+   "suggested_labels": [
+    "Area-Packaging",
+    "Area-PortableMode"
+   ],
+   "suggested_reply": "Thanks for tracking portable mode. This is a straightforward feature request to bring Intelligent Terminal closer to Windows Terminal behavior. Next step: label it for packaging/settings ownership and define whether portable mode should match upstream Terminal semantics exactly or needs Intelligent Terminal-specific state handling."
+  },
+  "microsoft/intelligent-terminal#326": {
+   "next_action": "label_only",
+   "next_action_reason": "Feature request is clear: allow passing agent CLI options such as --allow-all/--yolo from the agent pane.",
+   "category": "agent-config",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 5,
+   "suggested_labels": [
+    "Area-AgentConfig"
+   ],
+   "suggested_reply": "Thanks for moving this from the discussion into an issue. Supporting explicit agent CLI options would help users configure permission modes such as `--allow-all` or `--yolo`. Next step: define a safe settings surface that makes the effective command visible and avoids silently applying risky options."
+  },
+  "microsoft/intelligent-terminal#207": {
+   "next_action": "reply",
+   "next_action_reason": "Goose ACP support request has no maintainer response and includes Windows release links plus docs context.",
+   "category": "agent-integrations",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 4,
+   "suggested_labels": [
+    "Issue-Feature",
+    "Area-AgentCLI"
+   ],
+   "suggested_reply": "Thanks for the Goose request and links. Since Goose supports ACP and Windows builds, this is a reasonable candidate for custom agent integration or detection. Next step: please confirm the exact Goose command line that should be launched in stdio/ACP mode on Windows so we can document or add detection for it."
+  },
+  "microsoft/intelligent-terminal#371": {
+   "next_action": "needs_review",
+   "next_action_reason": "PR adds /agent per-tab custom agent override and provider-aware discovery; only bot spelling output visible.",
+   "category": "agent-config",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 6,
+   "suggested_labels": [
+    "Needs-Review",
+    "Area-AgentConfig"
+   ],
+   "suggested_reply": "Thanks for the `/agent` custom-agent override work. This is a meaningful UX addition for per-tab specialization and reusable `.agent.md` definitions. Next step: review discovery scope, frontmatter parsing, per-tab persistence semantics, and fallback to the built-in default agent."
+  },
+  "microsoft/intelligent-terminal#380": {
+   "next_action": "request_changes",
+   "next_action_reason": "Auto-generated baseline PR has an empty body and only bot output, so reviewers lack purpose and validation.",
+   "category": "meta",
+   "classification_type": "functional",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 2,
+   "suggested_labels": [
+    "Needs-Author"
+   ],
+   "suggested_reply": "This PR needs more context before review. The body is empty and the only visible comment is automated spelling infrastructure output, so it is not clear what baselines changed or why. Next step: please update the description with the generator, files affected, reason for the update, and validation performed."
+  },
+  "microsoft/intelligent-terminal#373": {
+   "next_action": "needs_review",
+   "next_action_reason": "PR implements gated /save-tab and /restore-tab eternal-terminal step with storage and restore details.",
+   "category": "workspace",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 6,
+   "suggested_labels": [
+    "Needs-Review",
+    "Area-Workspace"
+   ],
+   "suggested_reply": "Thanks for the first Eternal Terminal save/restore step. The PR has a clear gated design for `/save-tab` and `/restore-tab` plus storage/cleanup details. Next step: review state persistence, cleanup interactions with crash recovery buffers, and disabled-setting behavior before merge."
+  },
+  "microsoft/intelligent-terminal#397": {
+   "next_action": "needs_review",
+   "next_action_reason": "ACP 1.0 routing migration PR has clear design notes and no visible discussion yet.",
+   "category": "acp",
+   "classification_type": "enhancement",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 7,
+   "suggested_labels": [
+    "Needs-Review",
+    "Area-ACP"
+   ],
+   "suggested_reply": "Thanks for the Phase 1 ACP routing migration. The rationale for keeping WTA's N:1 routing while introducing `SessionRouter` is clearly documented. Next step: review session routing invariants, orphan/rebind behavior, and compatibility with the planned conductor/proxy phases."
+  },
+  "microsoft/intelligent-terminal#218": {
+   "next_action": "needs_review",
+   "next_action_reason": "Long-running upstream-sync skill PR was redesigned after feedback and still needs final maintainer review.",
+   "category": "automation",
+   "classification_type": "enhancement",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 5,
+   "suggested_labels": [
+    "Needs-Review",
+    "Area-GitHubActions"
+   ],
+   "suggested_reply": "Thanks for iterating on the upstream-sync skill and removing the extra state directory in favor of authoritative sources. Next step: perform a final review of the skill contract, stuck-lock issue format, and cherry-pick watermark logic, then decide whether this automation should merge as-is or be split."
+  },
+  "microsoft/intelligent-terminal#265": {
+   "next_action": "needs_review",
+   "next_action_reason": "PR fixes WSL custom ACP session/new cwd failures by learning namespace from session/list and fallback.",
+   "category": "wsl",
+   "classification_type": "bug",
+   "severity": "bug",
+   "sentiment": "blocked",
+   "score": 8,
+   "suggested_labels": [
+    "Needs-Review",
+    "Area-WSL"
+   ],
+   "suggested_reply": "Thanks for the WSL cwd namespace fix. The problem is concrete: WSL agents reject Windows paths such as system32 during `session/new`. Next step: review the namespace inference/fallback logic and validate native Windows and WSL ACP agents so the fix does not regress non-WSL launches."
+  },
+  "microsoft/intelligent-terminal#430": {
+   "next_action": "needs_review",
+   "next_action_reason": "PR fixes recommendation-card delegate launches missing pinned session IDs and live session registration.",
+   "category": "sessions",
+   "classification_type": "bug",
+   "severity": "bug",
+   "sentiment": "neutral",
+   "score": 6,
+   "suggested_labels": [
+    "Needs-Review",
+    "Area-Sessions"
+   ],
+   "suggested_reply": "Thanks for fixing recommendation-card agent launches so they pin `--session-id` and register born-bound with the master. Next step: review parity with the existing delegate prompt path and verify launched sessions appear correctly in `/sessions`."
+  },
+  "microsoft/intelligent-terminal#441": {
+   "next_action": "needs_review",
+   "next_action_reason": "Docs spike compares tmux vs psmux for keep-running durable sessions and reports verified psmux viability.",
+   "category": "docs",
+   "classification_type": "enhancement",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 4,
+   "suggested_labels": [
+    "Needs-Review",
+    "Area-DurableSessions"
+   ],
+   "suggested_reply": "Thanks for documenting the keep-running session-host investigation. The psmux findings give the durable-sessions work a concrete direction. Next step: review the spike for accuracy and decide whether psmux should become the implementation dependency for the next durable-sessions phase."
+  },
+  "microsoft/intelligent-terminal#448": {
+   "next_action": "needs_review",
+   "next_action_reason": "PR implements opt-in psmux backend to keep commands running after Terminal closes.",
+   "category": "durable-sessions",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 7,
+   "suggested_labels": [
+    "Needs-Review",
+    "Area-DurableSessions"
+   ],
+   "suggested_reply": "Thanks for the psmux-backed keep-running implementation. This is a substantial durable-sessions step with attach/detach, scrollback restore, and opt-in settings behavior. Next step: review lifecycle failure modes, missing-psmux UX, resize/input handling, and persistence compatibility before merge."
+  },
+  "microsoft/intelligent-terminal#437": {
+   "next_action": "needs_review",
+   "next_action_reason": "PR adds durable shell-session save/restore with persistent state and dedicated scrollback buffers.",
+   "category": "durable-sessions",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 7,
+   "suggested_labels": [
+    "Needs-Review",
+    "Area-DurableSessions"
+   ],
+   "suggested_reply": "Thanks for the durable shell-session save/restore work. The design separates shell-session buffers from crash-recovery cleanup and exposes `/shell-sessions`. Next step: review persistence format, buffer cleanup, restore behavior, and how this composes with the later keep-running step."
+  },
+  "microsoft/intelligent-terminal#453": {
+   "next_action": "needs_review",
+   "next_action_reason": "Stacked ACP control-plane PR renames SessionConductor, adds canonical conductor runtime, and preserves routing invariants.",
+   "category": "acp",
+   "classification_type": "enhancement",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 8,
+   "suggested_labels": [
+    "Needs-Review",
+    "Area-ACP"
+   ],
+   "suggested_reply": "Thanks for extracting the ACP session routing control plane and introducing the canonical conductor chain. Next step: review exact-instance cleanup, EOF propagation, generation-token behavior, and the no-op proxy chain before stacking the tracing proxy on top."
+  },
+  "microsoft/intelligent-terminal#456": {
+   "next_action": "needs_review",
+   "next_action_reason": "Docs-only PR updates ACP request cancellation failure classification and includes a focused cargo test command.",
+   "category": "docs",
+   "classification_type": "enhancement",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 3,
+   "suggested_labels": [
+    "Needs-Review",
+    "Area-ACP"
+   ],
+   "suggested_reply": "Thanks for updating the ACP cancellation documentation. The scope is small and includes a focused test command. Next step: review that the numeric error-code matching rationale is clear and still matches the stable ACP adapter behavior."
+  },
+  "microsoft/intelligent-terminal#457": {
+   "next_action": "needs_rebase",
+   "next_action_reason": "PR explicitly says it is stacked on #453 and should merge after that base PR.",
+   "category": "acp",
+   "classification_type": "enhancement",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 6,
+   "suggested_labels": [
+    "Needs-Rebase",
+    "Area-ACP"
+   ],
+   "suggested_reply": "Thanks for adding the transparent ACP tracing proxy and validation notes. Since this is stacked on #453 and the body says to merge that PR first, final review should wait until the base lands or this branch is rebased. Next step: merge/rebase after #453, then review privacy-safe trace fields and proxy lifecycle coverage."
+  },
+  "microsoft/intelligent-terminal#203": {
+   "next_action": "no_action",
+   "next_action_reason": "Multi-turn command execution is directly addressed by PR #314, which feeds command output into follow-up turns.",
+   "category": "command-execution",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 6,
+   "suggested_labels": [
+    "Issue-Feature",
+    "Area-CommandExecution"
+   ],
+   "suggested_reply": "Thanks for the multi-turn command execution request. PR #314 now implements the core behavior by capturing command output and feeding it back to the ACP session as the next turn. Next step: review and validate #314; this issue can close once that PR lands."
+  }
+ }
+}

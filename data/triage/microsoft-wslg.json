@@ -1,0 +1,531 @@
+{
+ "repo": "microsoft/wslg",
+ "generated_at": "2026-07-22T03:32:53.703Z",
+ "items": {
+  "microsoft/wslg#22": {
+   "next_action": "assign",
+   "next_action_reason": "149 upvotes plus recent analysis identifies an msrdc ServerLocalMoveSize gap blocking drag-to-snap.",
+   "category": "enhancement",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 9,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the continued reports and the recent protocol analysis. This is still a high-impact window-management gap; the next useful step is for a WSLg/RDP owner to confirm whether the remaining ServerLocalMoveSize/msrdc behavior is actionable and link any tracking work here."
+  },
+  "microsoft/wslg#40": {
+   "next_action": "reply",
+   "next_action_reason": "Vulkan remains highly requested, but latest comments point at Mesa/distro Vulkan stack ownership as much as WSLg.",
+   "category": "enhancement",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 7,
+   "suggested_labels": [
+    "GPU"
+   ],
+   "suggested_reply": "Thanks for keeping this thread current. From the latest reports, this appears to depend heavily on the Mesa/D3D12 Vulkan stack and the versions each distro ships. The next useful step is to share current `wsl --version`, distro, Mesa version, GPU/driver, and `vulkaninfo --summary` output so maintainers can tell whether there is still a WSLg-specific gap."
+  },
+  "microsoft/wslg#37": {
+   "next_action": "reply",
+   "next_action_reason": "Recent comments identify Qt/window-decoration theming workarounds rather than a clear WSLg bug.",
+   "category": "enhancement",
+   "classification_type": "feedback",
+   "severity": "none",
+   "sentiment": "confused",
+   "score": 4,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the discussion. The latest comments suggest this is mostly about toolkit/window-decoration theming, especially Qt apps, rather than one confirmed WSLg defect. If someone can reproduce on current WSLg with a small app and include the toolkit, distro, theme packages, and screenshots for expected vs actual decorations, that would be the best next step."
+  },
+  "microsoft/wslg#23": {
+   "next_action": "assign",
+   "next_action_reason": "84 upvotes and current comments show fractional scaling still needs WSLg behavior clarification despite env workarounds.",
+   "category": "enhancement",
+   "classification_type": "feature",
+   "severity": "papercut",
+   "sentiment": "neutral",
+   "score": 8,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the detailed follow-up and log checks. Fractional scaling is still an important usability gap, especially on mixed-DPI setups. The next step is for a maintainer to confirm the intended behavior of `WESTON_RDP_FRACTIONAL_HI_DPI_SCALING*` on current WSLg and document whether remaining toolkit-specific scaling issues are expected."
+  },
+  "microsoft/wslg#530": {
+   "next_action": "reply",
+   "next_action_reason": "Request is clear and active; comments show app-specific workarounds but no generic no-decoration support.",
+   "category": "enhancement",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 6,
+   "suggested_labels": [
+    "window-management"
+   ],
+   "suggested_reply": "Thanks for the request. WSLg currently adds host-side window management, and the thread shows only app-specific workarounds for borderless/no-decoration windows. The next useful step is to provide one minimal X11 sample or command that requests an undecorated window and describe the expected Windows-side behavior for move/resize/focus."
+  },
+  "microsoft/wslg#9": {
+   "next_action": "assign",
+   "next_action_reason": "IME support has 61 upvotes and latest comments cite RDP text-input and Wayland input-method protocol paths.",
+   "category": "enhancement",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 8,
+   "suggested_labels": [
+    "keyboard-layout"
+   ],
+   "suggested_reply": "Thanks for the protocol research and continued signal. IME support is a broad but well-scoped accessibility/productivity feature for CJK users. The next step is for the team to confirm whether the likely direction is RDP text input integration, Linux IME auto-configuration, or both, and identify a current test app matrix."
+  },
+  "microsoft/wslg#894": {
+   "next_action": "no_action",
+   "next_action_reason": "Already labeled fixinbound and rdp-client-connection; reports confirm impact but routing is tracked.",
+   "category": "bug",
+   "classification_type": "bug",
+   "severity": "bug",
+   "sentiment": "frustrated",
+   "score": 7,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the additional confirmations. This is already routed as an RDP client connection issue and marked fix-inbound, so no new triage action is needed from the issue queue right now. The actionable next step is to watch for the WSLg/MSRDC build carrying the fix and retest with `wsl --version` once available."
+  },
+  "microsoft/wslg#1148": {
+   "next_action": "request_info",
+   "next_action_reason": "Latest comments narrow artifacts to Intel driver / hardware acceleration, but no current clean repro matrix.",
+   "category": "bug",
+   "classification_type": "bug",
+   "severity": "bug",
+   "sentiment": "confused",
+   "score": 6,
+   "suggested_labels": [
+    "GPU"
+   ],
+   "suggested_reply": "Thanks for the reports. The recent comments suggest a hardware-acceleration or Intel graphics driver interaction, but the issue needs a current repro matrix. Please add your latest `wsl --version`, Windows build, GPU model, Windows graphics driver version, affected app, and whether forcing another adapter or disabling acceleration changes the artifacts."
+  },
+  "microsoft/wslg#158": {
+   "next_action": "assign",
+   "next_action_reason": "45 upvotes and many tray-dependent apps affected; standalone tray workaround confirms missing platform feature.",
+   "category": "enhancement",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 7,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the examples and workaround notes. Tray support remains a clear WSLg integration feature request affecting apps that minimize to tray. The next step is for maintainers to decide whether WSLg should expose a supported tray bridge or document standalone tray workarounds as the recommended path."
+  },
+  "microsoft/wslg#290": {
+   "next_action": "assign",
+   "next_action_reason": "PipeWire request is active; latest comments mention PipeWire 1.6 and patch/CI implications.",
+   "category": "enhancement",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 7,
+   "suggested_labels": [
+    "audio"
+   ],
+   "suggested_reply": "Thanks for keeping the PipeWire discussion current. This is a significant audio architecture request rather than a small package swap, especially for JACK, Flatpak, and distro integration. The next step is for a maintainer to state whether PipeWire is on the roadmap or whether WSLg will stay PulseAudio-based for now."
+  },
+  "microsoft/wslg#1130": {
+   "next_action": "request_info",
+   "next_action_reason": "GPU/SDL artifacts are reproducible for several users, but current versions and a minimal SDL repro are missing.",
+   "category": "bug",
+   "classification_type": "bug",
+   "severity": "bug",
+   "sentiment": "frustrated",
+   "score": 6,
+   "suggested_labels": [
+    "bug"
+   ],
+   "suggested_reply": "Thanks for the reports. To move this forward, maintainers need a current minimal repro rather than app-specific screenshots. Please add current `wsl --version`, Windows build, GPU/driver, distro, SDL version, and ideally a small SDL sample or public app/command that reliably shows the shifted rendering after a fresh `wsl --shutdown`."
+  },
+  "microsoft/wslg#96": {
+   "next_action": "request_info",
+   "next_action_reason": "Old JetBrains dialog issue has mixed reports after upstream fixes; needs current WSLg and IDE confirmation.",
+   "category": "bug",
+   "classification_type": "bug",
+   "severity": "papercut",
+   "sentiment": "frustrated",
+   "score": 4,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the historical reports. Because JetBrains and WSLg have both changed since the original issue, the next useful step is a current confirmation: IDE name/version, WSLg version, whether the app is X11 or Wayland, and exact steps showing the dialog disappearing on the latest WSL release."
+  },
+  "microsoft/wslg#101": {
+   "next_action": "reply",
+   "next_action_reason": "Full Linux desktop/window-manager support is a broad feature request with partial sway workaround notes.",
+   "category": "enhancement",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 4,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the request. WSLg is primarily integrated around individual Linux GUI apps rather than hosting a complete Linux desktop/window-manager session, and the comments show only partial workarounds. The next actionable step is to document the specific compositor/window-manager scenario needed, including keyboard, clipboard, and window-routing requirements."
+  },
+  "microsoft/wslg#446": {
+   "next_action": "reply",
+   "next_action_reason": "Latest comment says Windows 10 21H2 support works via related issue #567, so the ask appears answered.",
+   "category": "enhancement",
+   "classification_type": "feedback",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 3,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the question. Based on the later comment referencing #567, WSLg has worked on Windows 10 21H2 builds such as 19044.2311. The next step is to update to the current Store WSL package and run `wsl --version`; if WSLg still does not start on a supported Windows 10 build, please open a fresh issue with that output."
+  },
+  "microsoft/wslg#84": {
+   "next_action": "assign",
+   "next_action_reason": "Drag-and-drop remains relevant and directly improves host/guest app integration; recent comment pings continued need.",
+   "category": "enhancement",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 6,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the continued signal. Host/guest drag-and-drop is a clear integration feature for file managers, browsers, and media apps. The next step is for maintainers to define the supported direction, including file-only vs text/URI drag data and Linux-to-Windows vs Windows-to-Linux behavior."
+  },
+  "microsoft/wslg#715": {
+   "next_action": "request_info",
+   "next_action_reason": "Old NVIDIA segfault reports mention Mesa/driver updates helping; current driver/WSLg status is unclear.",
+   "category": "bug",
+   "classification_type": "bug",
+   "severity": "crash",
+   "sentiment": "blocked",
+   "score": 5,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the reports and workaround notes. Since several comments point to Mesa and graphics driver versions, please retest on current WSLg with updated Windows GPU drivers and add `wsl --version`, distro, Mesa version, GPU/driver version, and the exact `glxinfo -B`/app crash output if it still reproduces."
+  },
+  "microsoft/wslg#443": {
+   "next_action": "close_dup",
+   "next_action_reason": "Already labeled duplicate; current focus-stealing reports overlap with msrdc focus issue #894.",
+   "category": "bug",
+   "classification_type": "bug",
+   "severity": "bug",
+   "sentiment": "frustrated",
+   "score": 3,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the additional confirmations. This issue is already marked duplicate and the current reports appear to overlap with the tracked msrdc focus-stealing problem in #894. The actionable next step is to continue adding current `wsl --version` and focus-repro details to the canonical issue so the fix can be verified in one place."
+  },
+  "microsoft/wslg#841": {
+   "next_action": "no_action",
+   "next_action_reason": "Issue is already fixinbound and routed to rdp-client-connection; workaround comments exist.",
+   "category": "bug",
+   "classification_type": "bug",
+   "severity": "papercut",
+   "sentiment": "frustrated",
+   "score": 5,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the workaround confirmations. This is already routed as an RDP client connection bug and marked fix-inbound, so no additional queue action is needed right now. The next step is to retest when the next WSLg/MSRDC update lands and report whether the prompt loop is gone."
+  },
+  "microsoft/wslg#529": {
+   "next_action": "reply",
+   "next_action_reason": "Workarounds exist for off-screen title bars, but the feature gap remains tied to snap/move support.",
+   "category": "enhancement",
+   "classification_type": "feature",
+   "severity": "papercut",
+   "sentiment": "neutral",
+   "score": 5,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the report and workaround suggestions. This remains related to broader WSLg window move/snap behavior: if the title bar is off-screen, recovery is harder than for native Windows apps. The next step is to confirm whether Win+Shift+Arrow or other keyboard move workarounds work on current WSLg, and note any app where they do not."
+  },
+  "microsoft/wslg#294": {
+   "next_action": "request_info",
+   "next_action_reason": "Waiting User Info is present, but recent comments say sleep/wake loss still occurs on WSLg 1.0.66.",
+   "category": "bug",
+   "classification_type": "bug",
+   "severity": "bug",
+   "sentiment": "frustrated",
+   "score": 6,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the updated confirmations. To separate GTK/app behavior from WSLg session loss, please add a current minimal repro with `wsl --version`, Windows build, app name, whether the app is Wayland or X11, and logs from `/mnt/wslg/weston.log` after the next sleep/wake failure."
+  },
+  "microsoft/wslg#1250": {
+   "next_action": "reply",
+   "next_action_reason": "Multiple recent comments say updating WSL to 2.5.1+ or 2.6.3 resolved the Ubuntu 24.04 slowness.",
+   "category": "bug",
+   "classification_type": "bug",
+   "severity": "papercut",
+   "sentiment": "neutral",
+   "score": 5,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the follow-up reports. Several users report this is resolved after `wsl --update` to newer WSL builds, including 2.5.1+ and 2.6.3. The next step is for affected users, especially the original reporter, to retest on current WSL and confirm whether this can be closed or whether a fresh repro remains."
+  },
+  "microsoft/wslg#1092": {
+   "next_action": "assign",
+   "next_action_reason": "Network/sleep still makes windows disappear in 2026; regression was tied to WSLg 1.0.55 pre-release.",
+   "category": "bug",
+   "classification_type": "bug",
+   "severity": "regression",
+   "sentiment": "blocked",
+   "score": 7,
+   "suggested_labels": [
+    "rdp-client-connection"
+   ],
+   "suggested_reply": "Thanks for the continued reports. This still looks like a regression in GUI session resilience when the network path changes or the machine resumes from sleep. The next step is for a maintainer to confirm whether current WSLg is expected to survive those transitions and, if not, collect logs around the RDP/Weston disconnect."
+  },
+  "microsoft/wslg#864": {
+   "next_action": "reply",
+   "next_action_reason": "ALSA support request has a partial libasound workaround, but latest comment says it breaks with newer stacks.",
+   "category": "enhancement",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 5,
+   "suggested_labels": [
+    "audio"
+   ],
+   "suggested_reply": "Thanks for the workaround and later validation. Installing `libasound2-plugins` can help some apps, but recent comments show it is not a complete solution on newer audio stacks. The next step is to provide a current failing command such as `aplay` plus distro, package versions, and WSLg version so the expected ALSA compatibility story can be clarified."
+  },
+  "microsoft/wslg#426": {
+   "next_action": "reply",
+   "next_action_reason": "Users found unofficial Weston restart commands; request is for a supported GUI reset path.",
+   "category": "enhancement",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 5,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the workaround notes. The request remains valid: users need a supported way to restart WSLg GUI components without terminating all WSL workloads. The next step is for maintainers to confirm whether any documented command is safe today, or whether this should remain a feature request for a first-class GUI restart operation."
+  },
+  "microsoft/wslg#908": {
+   "next_action": "request_info",
+   "next_action_reason": "Audio stutter persists for some users, but workarounds vary by distro, time sync, and player buffering.",
+   "category": "bug",
+   "classification_type": "bug",
+   "severity": "bug",
+   "sentiment": "frustrated",
+   "score": 6,
+   "suggested_labels": [
+    "audio"
+   ],
+   "suggested_reply": "Thanks for the continued audio reports. Because the latest workarounds vary, please add a current repro with `wsl --version`, Windows build, distro, app/player, whether systemd is enabled, PulseAudio logs, and whether changing buffering or stopping `systemd-timesyncd` changes the stutter."
+  },
+  "microsoft/wslg#643": {
+   "next_action": "request_info",
+   "next_action_reason": "Severe freezes are old and broad; later comments discuss hardware decoding but no current focused repro.",
+   "category": "bug",
+   "classification_type": "bug",
+   "severity": "crash",
+   "sentiment": "blocked",
+   "score": 5,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the reports. This issue covers several symptoms, so maintainers need a current focused repro to act on it. Please retest on latest WSLg and add `wsl --version`, GPU/driver, distro, one affected app, exact freeze steps, and whether the issue happens with both Wayland and X11 backends."
+  },
+  "microsoft/wslg#388": {
+   "next_action": "close_dup",
+   "next_action_reason": "Already labeled duplicate; content overlaps the active fractional/HiDPI scaling discussion in #23.",
+   "category": "bug",
+   "classification_type": "bug",
+   "severity": "papercut",
+   "sentiment": "neutral",
+   "score": 2,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the confirmations. This issue is already marked duplicate and appears to overlap with the active HiDPI/fractional scaling tracking in #23. The actionable next step is to add current scaling logs and app-specific results to the canonical scaling issue so the data stays consolidated."
+  },
+  "microsoft/wslg#959": {
+   "next_action": "assign",
+   "next_action_reason": "Current 2026 reports show Alt+Tab raises windows without keyboard focus on kitty/LibreWolf.",
+   "category": "bug",
+   "classification_type": "bug",
+   "severity": "bug",
+   "sentiment": "frustrated",
+   "score": 6,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the detailed focus reports and workarounds. The latest comments show this still reproduces on current WSLg for multiple apps, where Alt+Tab raises the window but keyboard focus stays elsewhere. The next step is for maintainers to collect a minimal app matrix and confirm whether this is an RDP focus activation bug."
+  },
+  "microsoft/wslg#1015": {
+   "next_action": "reply",
+   "next_action_reason": "Recent workaround exists; likely tied to broader borderless/window-management behavior rather than a new isolated bug.",
+   "category": "bug",
+   "classification_type": "bug",
+   "severity": "papercut",
+   "sentiment": "neutral",
+   "score": 5,
+   "suggested_labels": [
+    "window-management"
+   ],
+   "suggested_reply": "Thanks for the report and workaround. This appears related to WSLg handling of borderless/maximized windows and may overlap with no-decoration/fullscreen requests. The next useful step is to share a minimal reproducible app or command that creates the borderless window, plus current `wsl --version`, so maintainers can compare expected Windows maximize behavior."
+  },
+  "microsoft/wslg#65": {
+   "next_action": "reply",
+   "next_action_reason": "Cursor integration is an old enhancement with one supporting screenshot and no current implementation signal.",
+   "category": "enhancement",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 3,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the request. Seamless cursor theming would improve integration, but this thread does not yet define the desired behavior across X11, Wayland, app borders, and Windows themes. The next step is to add current screenshots and specify whether the ask is host cursor reuse, size matching, theme matching, or all three."
+  },
+  "microsoft/wslg#614": {
+   "next_action": "request_info",
+   "next_action_reason": "Icon issue still has workarounds around .desktop, StartupWMClass, and icon formats, but no clean current repro.",
+   "category": "bug",
+   "classification_type": "bug",
+   "severity": "papercut",
+   "sentiment": "confused",
+   "score": 5,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the examples and scripts. To determine whether a WSLg fix is still needed, please provide one current app where the `.desktop` file, `Icon`, and `StartupWMClass` are correct but WSLg still shows the generic icon, plus `wsl --version` and the relevant desktop-file contents."
+  },
+  "microsoft/wslg#632": {
+   "next_action": "assign",
+   "next_action_reason": "Pinned Linux app icons launching new instances breaks Win+number workflows; recent users confirm need.",
+   "category": "enhancement",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 5,
+   "suggested_labels": [
+    "start-menu-integration"
+   ],
+   "suggested_reply": "Thanks for the detailed workflow description. Single-instance pinning is a clear Windows shell integration gap for WSLg apps and affects keyboard-driven workflows. The next step is for maintainers to define whether WSLg can map a pinned app to an existing Linux window via app ID/StartupWMClass instead of always launching a new process."
+  },
+  "microsoft/wslg#440": {
+   "next_action": "no_action",
+   "next_action_reason": "Maintainer already linked likely dependency to broader WSL USB/Bluetooth redirection work.",
+   "category": "enhancement",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 3,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the request. The maintainer response linked this to broader USB/Bluetooth redirection work in WSL, so there is no WSLg-specific triage action to take here right now. The next step is to follow the linked WSL tracking issue and retest controller visibility once device redirection support changes."
+  },
+  "microsoft/wslg#728": {
+   "next_action": "no_action",
+   "next_action_reason": "Severe NVIDIA shutdown freeze is already labeled bug, GPU, and fixinbound.",
+   "category": "bug",
+   "classification_type": "bug",
+   "severity": "crash",
+   "sentiment": "blocked",
+   "score": 7,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the additional confirmations. This is already routed as a GPU bug and marked fix-inbound, so no new label or reply action is needed from triage. The actionable next step is to retest on the WSLg/MSRDC build that includes the fix and report whether `wsl --shutdown` still freezes the host."
+  },
+  "microsoft/wslg#1290": {
+   "next_action": "reply",
+   "next_action_reason": "Large cursor after Ubuntu 24.04 has an Xresources workaround confirmed by multiple users.",
+   "category": "bug",
+   "classification_type": "bug",
+   "severity": "papercut",
+   "sentiment": "neutral",
+   "score": 4,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the reports. A current workaround is to set an X cursor size, for example create `~/.Xresources` with `Xcursor.size: 24`, run `xrdb -merge ~/.Xresources`, then relaunch the affected app. The next step is to confirm whether this is still needed on the latest WSLg and whether it affects X11 apps only."
+  },
+  "microsoft/wslg#166": {
+   "next_action": "reply",
+   "next_action_reason": "Author clarified desire for borderless/fullscreen behavior; overlaps newer no-decoration/maximize threads.",
+   "category": "enhancement",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 4,
+   "suggested_labels": [
+    "window-management"
+   ],
+   "suggested_reply": "Thanks for clarifying the desired fullscreen/no-decoration behavior. This overlaps the broader borderless and no-decoration window-management requests. The next step is to define the expected escape/move/resize behavior for such windows so WSLg can avoid creating an unmanageable fullscreen surface."
+  },
+  "microsoft/wslg#722": {
+   "next_action": "reply",
+   "next_action_reason": "Original reporter later said latest WSL release may have fixed the invisible menu issue.",
+   "category": "bug",
+   "classification_type": "bug",
+   "severity": "papercut",
+   "sentiment": "positive",
+   "score": 2,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the update that the latest WSL release may have fixed this. The next step is for affected users to retest on current WSLg and comment with `wsl --version` if menus are still invisible; otherwise this can likely be closed as resolved by newer builds."
+  },
+  "microsoft/wslg#584": {
+   "next_action": "assign",
+   "next_action_reason": "Ongoing comments show popup/menu placement still affects Eclipse/IntelliJ and may map to a Weston issue.",
+   "category": "bug",
+   "classification_type": "bug",
+   "severity": "papercut",
+   "sentiment": "frustrated",
+   "score": 5,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the continued reports. This still looks like a popup/window-geometry issue affecting IDE menus, with a possible Weston upstream link. The next step is for maintainers to confirm whether the referenced Weston issue matches WSLg behavior and whether a current minimal GTK/Qt popup repro can be used for tracking."
+  },
+  "microsoft/wslg#1244": {
+   "next_action": "reply",
+   "next_action_reason": "Ubuntu 24.04 Wayland fallback has a known XDG_RUNTIME_DIR symlink workaround in recent comments.",
+   "category": "bug",
+   "classification_type": "bug",
+   "severity": "papercut",
+   "sentiment": "confused",
+   "score": 5,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for documenting the Ubuntu 24.04 behavior. Recent comments identify an `XDG_RUNTIME_DIR`/systemd interaction and a symlink workaround for Wayland sockets. The next step is to confirm on current WSLg whether WSLg should create those links automatically or whether the workaround should be documented for affected distros."
+  },
+  "microsoft/wslg#173": {
+   "next_action": "request_info",
+   "next_action_reason": "Custom KLC layout still has current reports, including logs, but needs a maintainer-readable repro package.",
+   "category": "enhancement",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "confused",
+   "score": 5,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the keyboard-layout details. To triage custom KLC support, please provide a minimal repro with the Windows layout name/locale, expected key output, actual WSLg key output, current `wsl --version`, and the relevant `/mnt/wslg/weston.log` keyboard layout lines."
+  },
+  "microsoft/wslg#1424": {
+   "next_action": "reply",
+   "next_action_reason": "Recent cursor-disappears issue has confirmations and a PowerShell restart workaround.",
+   "category": "bug",
+   "classification_type": "bug",
+   "severity": "bug",
+   "sentiment": "frustrated",
+   "score": 6,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the confirmations. The workaround to restart the relevant WSLg/remote app component appears to help, but maintainers still need a reproducible trigger. The next step is to add the exact PowerShell command used, affected apps, and `wsl --version` when the cursor disappears again."
+  },
+  "microsoft/wslg#672": {
+   "next_action": "reply",
+   "next_action_reason": "Super key capture is a known integration limitation with AutoHotKey workarounds but no native path.",
+   "category": "enhancement",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 4,
+   "suggested_labels": [
+    "keyboard-layout"
+   ],
+   "suggested_reply": "Thanks for the reports and workaround links. Passing the Windows/Super key through to Linux apps conflicts with host-level Windows shortcuts, so this needs an explicit design rather than a simple bug fix. The next step is to describe the desired opt-in behavior and affected apps so maintainers can evaluate feasibility."
+  },
+  "microsoft/wslg#1188": {
+   "next_action": "label_only",
+   "next_action_reason": "Umbrella request calls out window manager, clipboard, and keyboard gaps and even asks for those labels.",
+   "category": "enhancement",
+   "classification_type": "feedback",
+   "severity": "none",
+   "sentiment": "frustrated",
+   "score": 4,
+   "suggested_labels": [
+    "window-management",
+    "clipboard-integration",
+    "keyboard-layout"
+   ],
+   "suggested_reply": "Thanks for summarizing the broader integration gaps. This is useful as an umbrella feedback issue, and the best immediate triage step is to route it with the window-management, clipboard, and keyboard labels while keeping specific bugs in their dedicated issues. Please add links to any missing focused issues for individual failures."
+  },
+  "microsoft/wslg#1022": {
+   "next_action": "request_info",
+   "next_action_reason": "Emacs focus has workarounds requiring external binaries; current WSLg native repro still needs confirmation.",
+   "category": "bug",
+   "classification_type": "bug",
+   "severity": "papercut",
+   "sentiment": "neutral",
+   "score": 4,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the workaround details. To decide whether WSLg can fix this directly, please add a current `emacs -Q` repro on latest WSLg, including `wsl --version`, whether Emacs is X11 or pgtk/Wayland, and exactly what Windows focus behavior is expected after `C-x 5 2` and `other-frame`."
+  },
+  "microsoft/wslg#992": {
+   "next_action": "reply",
+   "next_action_reason": "Feature depends on Windows OpenSSH discovering WSLg display plumbing; only one third-party-client expansion comment.",
+   "category": "enhancement",
+   "classification_type": "feature",
+   "severity": "none",
+   "sentiment": "neutral",
+   "score": 3,
+   "suggested_labels": [],
+   "suggested_reply": "Thanks for the feature request. Supporting `ssh -X` from Windows-native OpenSSH would require the Windows client to discover and forward to the WSLg display environment, so this likely spans WSLg and Windows OpenSSH. The next step is to provide the desired command flow and whether third-party Windows SSH clients should be in scope."
+  }
+ }
+}
