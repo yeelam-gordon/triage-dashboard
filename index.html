@@ -546,6 +546,7 @@ function dashboard() {
     _chart: null,
     owedFull: {},
     owedLoading: {},
+    deepTriage: {},
     token: localStorage.getItem('gh_token') || '',
     tokenInput: '',
     showTokenModal: false,
@@ -564,6 +565,10 @@ function dashboard() {
       } catch (e) {
         this.toast('err', 'Failed to load data/latest.json: ' + e.message);
       }
+      // Deep-triage overlay (durable — the nightly collector never writes here).
+      // Enriches rows beyond the collector's top slice; merged over owed rows by
+      // "repo#number". Global shard covers the landing view + small repos.
+      this.loadDeepTriage('_all');
       // Restore repo selection from URL hash (e.g. #repo=microsoft/intelligent-terminal)
       const hashRepo = this.readHashRepo();
       if (hashRepo) { this.activeRepo = this.resolveRepoName(hashRepo); if (this.activeRepo) this.loadOwedFull(this.activeRepo); }
@@ -598,12 +603,44 @@ function dashboard() {
       this.$nextTick(() => this.renderCharts());
     },
 
+    repoSlug(repo) {
+      return String(repo || '').replace(/\//g, '-').toLowerCase();
+    },
+
+    // Load a deep-triage overlay shard (data/triage/<slug>.json or _all.json) and
+    // merge its items into this.deepTriage keyed by "repo#number". Missing shard
+    // (404) is fine — the overlay is optional and additive.
+    async loadDeepTriage(key) {
+      const slug = key === '_all' ? '_all' : this.repoSlug(key);
+      const file = `data/triage/${slug}.json`;
+      try {
+        const r = await fetch(file, { cache: 'no-store' });
+        if (!r.ok) return;
+        const data = await r.json();
+        const items = data.items || {};
+        const merged = Object.assign({}, this.deepTriage);
+        for (const [k, v] of Object.entries(items)) merged[k] = v;
+        this.deepTriage = merged;
+        this.resetPages();
+      } catch (e) { /* overlay optional */ }
+    },
+
+    // Merge the deep-triage overlay over a row (overlay wins). Marks triaged.
+    applyOverlay(row) {
+      if (!row) return row;
+      const key = `${row.repo}#${row.number}`;
+      const ov = this.deepTriage[key];
+      if (!ov) return row;
+      return Object.assign({}, row, ov, { triaged: true, deep_overlay: true });
+    },
+
     // Lazy-load a repo's FULL owed backlog (data/owed/<slug>.json). latest.json
     // only carries a slim top-N preview per repo to keep it small; the full
     // list (up to 7,000+ rows for PowerToys) is fetched on demand when the user
     // opens that repo's tab, then cached reactively.
     async loadOwedFull(repo) {
       if (!repo || this.owedFull[repo] || this.owedLoading[repo]) return;
+      this.loadDeepTriage(repo);
       const block = this.data.per_repo && this.data.per_repo[repo] && this.data.per_repo[repo].owed_list;
       const file = block && block.owed_file;
       if (!file) return; // already inline (small repo) or no reference
@@ -851,11 +888,12 @@ function dashboard() {
           const repo = row.repo || this.resolveRepoName(this.activeRepo);
           const rich = this.richItem(repo, row.number);
           const base = Object.assign({}, row, { repo, rank: index, triaged: !!(row.triaged || rich) });
-          rows.push(rich ? Object.assign(base, rich, { labels: row.labels || rich.current_labels || [], up: row.up || 0, comments: row.comments || 0, age_days: row.age_days }) : base);
+          const merged = rich ? Object.assign(base, rich, { labels: row.labels || rich.current_labels || [], up: row.up || 0, comments: row.comments || 0, age_days: row.age_days }) : base;
+          rows.push(this.applyOverlay(merged));
         });
       }
       if (!rows.length) {
-        return this.scopedIssues.map((i, index) => Object.assign({ rank: index, triaged: true }, i));
+        return this.scopedIssues.map((i, index) => this.applyOverlay(Object.assign({ rank: index, triaged: true }, i)));
       }
       return rows;
     },
