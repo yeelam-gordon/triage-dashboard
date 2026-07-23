@@ -1,6 +1,6 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-07-23T18:20:08Z",
+  "generated_at": "2026-07-23T21:19:06Z",
   "awaiting_label": "Needs-Triage",
   "awaiting_issues": 27,
   "awaiting_prs": 29,
@@ -897,7 +897,7 @@
       "comments": 1,
       "created_at": "2026-05-19T18:03:05Z",
       "updated_at": "2026-05-21T16:11:54Z",
-      "age_days": 63.0,
+      "age_days": 64.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -906,7 +906,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 63 d for us (waited 63d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 64 d for us (waited 64d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 38,
@@ -1415,6 +1415,28 @@
       "baseline_reason": "PR (waited 1d) — review it."
     },
     {
+      "number": 447,
+      "title": "Add shared BYOK provider support",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/447",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-07-18T06:42:01Z",
+      "updated_at": "2026-07-23T14:54:06Z",
+      "age_days": 1.0,
+      "triaged": true,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (waited 1d) — review it."
+    },
+    {
       "number": 473,
       "title": "Support WSL ACP agent sources in agent panes",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/473",
@@ -1479,28 +1501,6 @@
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
       "baseline_reason": "PR (waited 1d) — review it."
-    },
-    {
-      "number": 447,
-      "title": "Add shared BYOK provider support",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/447",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-07-18T06:42:01Z",
-      "updated_at": "2026-07-23T14:54:06Z",
-      "age_days": 0.0,
-      "triaged": true,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (new) — review it."
     },
     {
       "number": 22,
