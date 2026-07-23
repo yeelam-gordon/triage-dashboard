@@ -1,6 +1,6 @@
 {
   "repo": "microsoft/dynwinrt",
-  "generated_at": "2026-07-23T00:25:29Z",
+  "generated_at": "2026-07-23T03:20:31Z",
   "awaiting_label": null,
   "awaiting_issues": 0,
   "awaiting_prs": 2,
@@ -10,28 +10,6 @@
   "prs_total": 3,
   "issues": [],
   "prs": [
-    {
-      "number": 65,
-      "title": "Classic-COM support: CoCreateInstance + vtable + natural codegen (interop/SMTC)",
-      "url": "https://github.com/microsoft/dynwinrt/pull/65",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-07-22T14:03:55Z",
-      "updated_at": "2026-07-22T15:04:29Z",
-      "age_days": 1.0,
-      "triaged": true,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 1d) — review it."
-    },
     {
       "number": 66,
       "title": "Add WinRT regression test harness (portable golden net)",
@@ -55,6 +33,28 @@
       "baseline_reason": "PR (waited 1d) — review it."
     },
     {
+      "number": 65,
+      "title": "Classic-COM support: CoCreateInstance + vtable + natural codegen (interop/SMTC)",
+      "url": "https://github.com/microsoft/dynwinrt/pull/65",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-07-22T14:03:55Z",
+      "updated_at": "2026-07-23T02:36:41Z",
+      "age_days": 0.0,
+      "triaged": true,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (new) — review it."
+    },
+    {
       "number": 67,
       "title": "Flat Win32 ([DllImport]) support: generated natural wrappers + Registry (stacks on #65)",
       "url": "https://github.com/microsoft/dynwinrt/pull/67",
@@ -64,8 +64,8 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-07-22T14:08:05Z",
-      "updated_at": "2026-07-22T14:38:51Z",
-      "age_days": 1.0,
+      "updated_at": "2026-07-23T03:14:32Z",
+      "age_days": 0.0,
       "triaged": true,
       "awaiting": false,
       "is_draft": true,
@@ -74,7 +74,7 @@
       "baseline_action": "wait_author",
       "baseline_glyph": "🚧",
       "baseline_text": "Wait — PR is a draft/WIP",
-      "baseline_reason": "Draft/WIP PR (waited 1d) — don't review yet; nudge the author to mark it ready."
+      "baseline_reason": "Draft/WIP PR (new) — don't review yet; nudge the author to mark it ready."
     }
   ]
 }
