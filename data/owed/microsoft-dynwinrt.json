@@ -1,14 +1,36 @@
 {
   "repo": "microsoft/dynwinrt",
-  "generated_at": "2026-07-24T03:28:07Z",
+  "generated_at": "2026-07-24T06:19:09Z",
   "awaiting_label": null,
   "awaiting_issues": 0,
-  "awaiting_prs": 3,
-  "backlog_issues": 0,
-  "backlog_prs": 3,
-  "issues_total": null,
-  "prs_total": 3,
-  "issues": [],
+  "awaiting_prs": 4,
+  "backlog_issues": 1,
+  "backlog_prs": 4,
+  "issues_total": 1,
+  "prs_total": 4,
+  "issues": [
+    {
+      "number": 69,
+      "title": "Generated bindings: IAsyncOperation<DeviceInformationCollection> QI fails with E_NOINTERFACE — DeviceInformation.FindAllAsync (device enumeration) unusable",
+      "url": "https://github.com/microsoft/dynwinrt/issues/69",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-07-24T03:50:47Z",
+      "updated_at": "2026-07-24T03:50:47Z",
+      "age_days": 0.0,
+      "triaged": true,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "request_info",
+      "baseline_glyph": "❓",
+      "baseline_text": "Request exact repro, version & logs",
+      "baseline_reason": "Bug (new) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+    }
+  ],
   "prs": [
     {
       "number": 66,
@@ -42,7 +64,7 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-07-22T14:03:55Z",
-      "updated_at": "2026-07-24T03:22:43Z",
+      "updated_at": "2026-07-24T03:38:13Z",
       "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
@@ -75,6 +97,28 @@
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
       "baseline_reason": "PR (new) — review it."
+    },
+    {
+      "number": 70,
+      "title": "docs(readme): add Win32 + classic COM section (JavaScript/TypeScript)",
+      "url": "https://github.com/microsoft/dynwinrt/pull/70",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-07-24T04:09:48Z",
+      "updated_at": "2026-07-24T04:09:48Z",
+      "age_days": 0.0,
+      "triaged": true,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "assign_reviewer",
+      "baseline_glyph": "🌐",
+      "baseline_text": "Route to docs/localization owner",
+      "baseline_reason": "Docs/localization PR (new) — route to the docs/localization owner for a domain review, not a generic pass."
     }
   ]
 }
