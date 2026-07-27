@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26T21:11:50Z",
+  "generated_at": "2026-07-27T00:09:29Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -38,8 +38,8 @@
     }
   },
   "counts": {
-    "triaged_issues": 176,
-    "triaged_prs": 114,
+    "triaged_issues": 179,
+    "triaged_prs": 113,
     "window_active_issues": null,
     "window_active_prs": null,
     "backlog_open_issues": null,
@@ -58,16 +58,16 @@
     "capped_prs": false
   },
   "totals": {
-    "open_issues": 176,
-    "open_prs": 114
+    "open_issues": 179,
+    "open_prs": 113
   },
   "category_counts": {
     "agent-pane": 7,
     "auto-fix": 2,
-    "bug": 84,
+    "bug": 86,
     "build": 1,
     "enhancement": 11,
-    "feature": 50,
+    "feature": 51,
     "feedback": 1,
     "first-run": 3,
     "installer": 2,
@@ -79,16 +79,16 @@
   },
   "label_counts": {
     "bug": 47,
-    "Needs-Triage": 62,
+    "Needs-Triage": 64,
     "Area-SessionManagement": 1,
     "Area-AgentPane": 4,
     "Issue-Feature": 11,
     "Needs-Tag-Fix": 15,
-    "Issue-Bug": 33,
+    "Issue-Bug": 34,
     "Area-Settings": 1,
     "Area-AutoFix": 1,
     "Product-FancyZones": 6,
-    "Needs-Team-Response": 41,
+    "Needs-Team-Response": 43,
     "Product-PowerToys Run": 7,
     "Idea-Enhancement": 7,
     "Run-Plugin": 2,
@@ -99,7 +99,7 @@
     "Product-PowerRename": 3,
     "Product-Color Picker": 4,
     "Needs-Repro": 2,
-    "Area-Localization": 2,
+    "Area-Localization": 3,
     "Loc-Sent To Team": 1,
     "Issue-Translation": 1,
     "Area-Setup/Install": 6,
@@ -115,7 +115,7 @@
     "Product-ZoomIt": 3,
     "Needs-Discussion": 1,
     "Product-File Locksmith": 1,
-    "Product-Command Palette": 5,
+    "Product-Command Palette": 6,
     "CmdPal - All Apps": 1,
     "Area-Build": 2,
     "Product-File Explorer": 3,
@@ -137,6 +137,7 @@
     "Area-User Interface": 1,
     "Area-Accessibility": 1,
     "Issue-Refactoring": 1,
+    "Product-PowerDisplay": 1,
     "Resolution-Duplicate": 3,
     "enhancement": 33,
     "documentation": 4,
@@ -152,7 +153,7 @@
     "systemd": 1,
     "needs-investigation": 3,
     "wsl1": 1,
-    "emailed-logs": 2,
+    "emailed-logs": 3,
     "GPU": 2,
     "window-management": 4,
     "clipboard-integration": 2,
@@ -164,30 +165,30 @@
     "keyboard-layout": 1
   },
   "aging_buckets": {
-    "0-1d": 103,
+    "0-1d": 105,
     "2-7d": 28,
-    "8-30d": 57,
-    ">30d": 102
+    "8-30d": 56,
+    ">30d": 103
   },
   "situation": {
     "mode": "at_risk",
     "is_internal": false,
     "signals": {
-      "total": 290,
-      "issues": 176,
-      "prs": 114,
-      "community": 174,
-      "frustrated_blocked": 27,
-      "frustrated_only": 23,
-      "missed_reply": 97,
+      "total": 292,
+      "issues": 179,
+      "prs": 113,
+      "community": 178,
+      "frustrated_blocked": 28,
+      "frustrated_only": 24,
+      "missed_reply": 99,
       "missed_reply_basis": "source missed_reply.qualifies; days_no_reply>=7 proxy",
-      "hi_score": 93,
+      "hi_score": 94,
       "hi_score_threshold": 6,
-      "bugs": 88,
-      "actionable": 258,
-      "stale7d": 165
+      "bugs": 90,
+      "actionable": 260,
+      "stale7d": 164
     },
-    "headline": "⚠ Respond now — 27 frustrated/blocked; 93 high-priority (score ≥ 6; may overlap).",
+    "headline": "⚠ Respond now — 28 frustrated/blocked; 94 high-priority (score ≥ 6; may overlap).",
     "recommendation": "Do these first."
   },
   "per_repo": {
@@ -404,7 +405,7 @@
     "microsoft/intelligent-terminal": {
       "totals": {
         "open_issues": 25,
-        "open_prs": 28
+        "open_prs": 26
       },
       "category_counts": {
         "agent-pane": 7,
@@ -429,7 +430,7 @@
       },
       "aging_buckets": {
         "0-1d": 16,
-        "2-7d": 13,
+        "2-7d": 11,
         "8-30d": 8,
         ">30d": 16
       },
@@ -437,9 +438,9 @@
         "mode": "at_risk",
         "is_internal": false,
         "signals": {
-          "total": 53,
+          "total": 51,
           "issues": 25,
-          "prs": 28,
+          "prs": 26,
           "community": 16,
           "frustrated_blocked": 3,
           "frustrated_only": 3,
@@ -448,15 +449,15 @@
           "hi_score": 13,
           "hi_score_threshold": 6,
           "bugs": 7,
-          "actionable": 52,
-          "stale7d": 27
+          "actionable": 50,
+          "stale7d": 26
         },
         "headline": "⚠ Respond now — 3 frustrated/blocked; 13 high-priority (score ≥ 6; may overlap).",
         "recommendation": "Do these first."
       },
       "counts": {
         "triaged_issues": 25,
-        "triaged_prs": 28,
+        "triaged_prs": 26,
         "window_active_issues": 19,
         "window_active_prs": 15,
         "backlog_open_issues": 32,
@@ -698,7 +699,7 @@
             "comments": 1,
             "created_at": "2026-06-17T19:14:31Z",
             "updated_at": "2026-06-17T19:15:42Z",
-            "age_days": 39.0,
+            "age_days": 40.0,
             "triaged": true,
             "awaiting": true,
             "fix_ready": false,
@@ -706,7 +707,7 @@
             "baseline_action": "label_only",
             "baseline_glyph": "🏷️",
             "baseline_text": "Fix the labels / tags",
-            "baseline_reason": "Wrong/missing tags (waited 39d) — correct them, then route."
+            "baseline_reason": "Wrong/missing tags (waited 40d) — correct them, then route."
           },
           {
             "number": 207,
@@ -1211,7 +1212,7 @@
             "comments": 1,
             "created_at": "2026-06-17T19:32:42Z",
             "updated_at": "2026-06-17T19:35:27Z",
-            "age_days": 39.0,
+            "age_days": 40.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -1219,7 +1220,7 @@
             "baseline_action": "label_only",
             "baseline_glyph": "🏷️",
             "baseline_text": "Fix the labels / tags",
-            "baseline_reason": "Wrong/missing tags (waited 39d) — correct them, then route."
+            "baseline_reason": "Wrong/missing tags (waited 40d) — correct them, then route."
           },
           {
             "number": 384,
@@ -1699,7 +1700,7 @@
             "created_at": "2026-07-20T13:21:33Z",
             "updated_at": "2026-07-20T13:27:27Z",
             "age_days": 7.0,
-            "triaged": true,
+            "triaged": false,
             "awaiting": true,
             "is_draft": false,
             "merge_state": "",
@@ -1721,7 +1722,7 @@
             "created_at": "2026-07-21T01:39:20Z",
             "updated_at": "2026-07-21T01:44:19Z",
             "age_days": 6.0,
-            "triaged": true,
+            "triaged": false,
             "awaiting": true,
             "is_draft": false,
             "merge_state": "",
@@ -2061,30 +2062,30 @@
     },
     "microsoft/PowerToys": {
       "totals": {
-        "open_issues": 52,
-        "open_prs": 41
+        "open_issues": 54,
+        "open_prs": 42
       },
       "category_counts": {
-        "bug": 28,
+        "bug": 29,
         "enhancement": 6,
-        "feature": 18
+        "feature": 19
       },
       "label_counts": {
-        "Issue-Bug": 28,
+        "Issue-Bug": 29,
         "Product-FancyZones": 6,
-        "Needs-Team-Response": 41,
+        "Needs-Team-Response": 43,
         "Product-PowerToys Run": 7,
         "Idea-Enhancement": 7,
         "Run-Plugin": 2,
         "Product-Always On Top": 1,
-        "Needs-Triage": 41,
+        "Needs-Triage": 43,
         "Product-Mouse Utilities": 2,
         "Product-Find My Mouse": 1,
         "Idea-New PowerToy": 8,
         "Product-PowerRename": 3,
         "Product-Color Picker": 4,
         "Needs-Repro": 2,
-        "Area-Localization": 2,
+        "Area-Localization": 3,
         "Loc-Sent To Team": 1,
         "Issue-Translation": 1,
         "Area-Setup/Install": 6,
@@ -2100,7 +2101,7 @@
         "Product-ZoomIt": 3,
         "Needs-Discussion": 1,
         "Product-File Locksmith": 1,
-        "Product-Command Palette": 5,
+        "Product-Command Palette": 6,
         "CmdPal - All Apps": 1,
         "Area-Build": 2,
         "Product-File Explorer": 3,
@@ -2123,40 +2124,41 @@
         "Area-User Interface": 1,
         "Area-Accessibility": 1,
         "Issue-Refactoring": 1,
+        "Product-PowerDisplay": 1,
         "Resolution-Duplicate": 3
       },
       "aging_buckets": {
-        "0-1d": 17,
-        "2-7d": 2,
-        "8-30d": 28,
-        ">30d": 46
+        "0-1d": 18,
+        "2-7d": 4,
+        "8-30d": 27,
+        ">30d": 47
       },
       "situation": {
         "mode": "at_risk",
         "is_internal": false,
         "signals": {
-          "total": 93,
-          "issues": 52,
-          "prs": 41,
-          "community": 62,
-          "frustrated_blocked": 9,
-          "frustrated_only": 8,
-          "missed_reply": 42,
+          "total": 96,
+          "issues": 54,
+          "prs": 42,
+          "community": 65,
+          "frustrated_blocked": 10,
+          "frustrated_only": 9,
+          "missed_reply": 44,
           "missed_reply_basis": "source missed_reply.qualifies; days_no_reply>=7 proxy",
-          "hi_score": 26,
+          "hi_score": 27,
           "hi_score_threshold": 6,
-          "bugs": 27,
-          "actionable": 84,
+          "bugs": 28,
+          "actionable": 87,
           "stale7d": 75
         },
-        "headline": "⚠ Respond now — 9 frustrated/blocked; 26 high-priority (score ≥ 6; may overlap).",
+        "headline": "⚠ Respond now — 10 frustrated/blocked; 27 high-priority (score ≥ 6; may overlap).",
         "recommendation": "Do these first."
       },
       "counts": {
-        "triaged_issues": 52,
-        "triaged_prs": 41,
-        "window_active_issues": 161,
-        "window_active_prs": 63,
+        "triaged_issues": 54,
+        "triaged_prs": 42,
+        "window_active_issues": 114,
+        "window_active_prs": 60,
         "backlog_open_issues": 7308,
         "backlog_open_prs": 137,
         "awaiting_reply_issues": 433,
@@ -2231,7 +2233,7 @@
             "comments": 1,
             "created_at": "2024-09-04T13:23:20Z",
             "updated_at": "2026-04-12T19:56:36Z",
-            "age_days": 105.0,
+            "age_days": 106.0,
             "triaged": true,
             "awaiting": true,
             "fix_ready": false,
@@ -2239,7 +2241,7 @@
             "baseline_action": "promote",
             "baseline_glyph": "⭐",
             "baseline_text": "High-demand feature — roadmap decision (Workspaces)",
-            "baseline_reason": "Popular feature ask (Workspaces) (waited 105d, 16 👍) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+            "baseline_reason": "Popular feature ask (Workspaces) (waited 106d, 16 👍) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
           },
           {
             "number": 45158,
@@ -2410,7 +2412,7 @@
             "comments": 1,
             "created_at": "2023-06-26T06:42:56Z",
             "updated_at": "2026-04-16T19:15:36Z",
-            "age_days": 101.0,
+            "age_days": 102.0,
             "triaged": true,
             "awaiting": true,
             "fix_ready": false,
@@ -2418,7 +2420,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "📣",
             "baseline_text": "We owe a team response — confirm type & route to the PowerToys Run owner (PowerToys Run)",
-            "baseline_reason": "Untyped report flagged Needs-Team-Response and routed to PowerToys Run (waited 101d, 6 👍) — confirm whether it's a bug or a feature, then post the PowerToys Run owner's response."
+            "baseline_reason": "Untyped report flagged Needs-Team-Response and routed to PowerToys Run (waited 102d, 6 👍) — confirm whether it's a bug or a feature, then post the PowerToys Run owner's response."
           },
           {
             "number": 28981,
@@ -2563,7 +2565,7 @@
             "comments": 1,
             "created_at": "2023-10-05T01:21:27Z",
             "updated_at": "2024-10-10T17:53:57Z",
-            "age_days": 654.0,
+            "age_days": 655.0,
             "triaged": true,
             "awaiting": true,
             "fix_ready": false,
@@ -2571,7 +2573,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Decide on this feature request (Peek)",
-            "baseline_reason": "Feature/idea (Peek) (waited 654d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+            "baseline_reason": "Feature/idea (Peek) (waited 655d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
           },
           {
             "number": 17036,
@@ -2852,7 +2854,7 @@
             "comments": 1,
             "created_at": "2023-09-27T10:59:26Z",
             "updated_at": "2024-10-10T17:51:47Z",
-            "age_days": 654.0,
+            "age_days": 655.0,
             "triaged": true,
             "awaiting": true,
             "fix_ready": false,
@@ -2860,7 +2862,7 @@
             "baseline_action": "reassess_stale",
             "baseline_glyph": "🗓️",
             "baseline_text": "Stale idea — decline or close for low demand (Color Picker)",
-            "baseline_reason": "Old feature ask (Color Picker) (waited 654d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+            "baseline_reason": "Old feature ask (Color Picker) (waited 655d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
           },
           {
             "number": 18662,
@@ -2904,7 +2906,7 @@
             "comments": 1,
             "created_at": "2024-03-19T11:34:17Z",
             "updated_at": "2024-11-20T17:25:16Z",
-            "age_days": 613.0,
+            "age_days": 614.0,
             "triaged": true,
             "awaiting": true,
             "fix_ready": false,
@@ -2912,7 +2914,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "📣",
             "baseline_text": "We owe a team response — confirm & route to the Text Extractor owner (Text Extractor)",
-            "baseline_reason": "Bug flagged Needs-Team-Response and routed to Text Extractor (waited 613d) — confirm it still repros on a current build and post the Text Extractor owner's response the reporter is waiting on."
+            "baseline_reason": "Bug flagged Needs-Team-Response and routed to Text Extractor (waited 614d) — confirm it still repros on a current build and post the Text Extractor owner's response the reporter is waiting on."
           },
           {
             "number": 34070,
@@ -2955,7 +2957,7 @@
             "comments": 1,
             "created_at": "2022-10-02T21:46:38Z",
             "updated_at": "2026-05-01T18:21:02Z",
-            "age_days": 86.0,
+            "age_days": 87.0,
             "triaged": true,
             "awaiting": true,
             "fix_ready": false,
@@ -2963,7 +2965,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "📣",
             "baseline_text": "We owe a team response — confirm & route to the Setup/Install owner (Setup/Install)",
-            "baseline_reason": "Bug flagged Needs-Team-Response and routed to Setup/Install (waited 86d) — confirm it still repros on a current build and post the Setup/Install owner's response the reporter is waiting on."
+            "baseline_reason": "Bug flagged Needs-Team-Response and routed to Setup/Install (waited 87d) — confirm it still repros on a current build and post the Setup/Install owner's response the reporter is waiting on."
           },
           {
             "number": 37775,
@@ -3265,7 +3267,7 @@
             "comments": 1,
             "created_at": "2025-08-06T08:49:58Z",
             "updated_at": "2026-06-05T18:25:20Z",
-            "age_days": 51.0,
+            "age_days": 52.0,
             "triaged": true,
             "awaiting": true,
             "is_draft": false,
@@ -3274,7 +3276,7 @@
             "baseline_action": "assign_reviewer",
             "baseline_glyph": "👤",
             "baseline_text": "Assign a domain reviewer",
-            "baseline_reason": "PR has waited 51 d for us (waited 51d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+            "baseline_reason": "PR has waited 52 d for us (waited 52d) — assign the area owner as reviewer and get a decision, don't leave it generic."
           },
           {
             "number": 46056,
@@ -3291,7 +3293,7 @@
             "comments": 1,
             "created_at": "2026-03-10T20:28:33Z",
             "updated_at": "2026-06-05T18:21:53Z",
-            "age_days": 51.0,
+            "age_days": 52.0,
             "triaged": true,
             "awaiting": true,
             "is_draft": false,
@@ -3300,7 +3302,7 @@
             "baseline_action": "assign_reviewer",
             "baseline_glyph": "👤",
             "baseline_text": "Assign a domain reviewer (Setup/Install)",
-            "baseline_reason": "PR (Setup/Install) has waited 51 d for us (waited 51d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+            "baseline_reason": "PR (Setup/Install) has waited 52 d for us (waited 52d) — assign the area owner as reviewer and get a decision, don't leave it generic."
           },
           {
             "number": 48244,
@@ -3315,7 +3317,7 @@
             "comments": 1,
             "created_at": "2026-06-01T14:57:03Z",
             "updated_at": "2026-06-05T18:54:19Z",
-            "age_days": 51.0,
+            "age_days": 52.0,
             "triaged": true,
             "awaiting": true,
             "is_draft": false,
@@ -3324,7 +3326,7 @@
             "baseline_action": "assign_reviewer",
             "baseline_glyph": "👤",
             "baseline_text": "Assign a domain reviewer (GitHub workflow)",
-            "baseline_reason": "PR (GitHub workflow) has waited 51 d for us (waited 51d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+            "baseline_reason": "PR (GitHub workflow) has waited 52 d for us (waited 52d) — assign the area owner as reviewer and get a decision, don't leave it generic."
           },
           {
             "number": 48378,
@@ -3482,7 +3484,7 @@
             "comments": 1,
             "created_at": "2026-06-26T10:06:24Z",
             "updated_at": "2026-06-26T18:49:08Z",
-            "age_days": 30.0,
+            "age_days": 31.0,
             "triaged": true,
             "awaiting": true,
             "is_draft": false,
@@ -3491,7 +3493,7 @@
             "baseline_action": "assign_reviewer",
             "baseline_glyph": "👤",
             "baseline_text": "Assign a domain reviewer (Settings)",
-            "baseline_reason": "PR (Settings) has waited 30 d for us (waited 30d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+            "baseline_reason": "PR (Settings) has waited 31 d for us (waited 31d) — assign the area owner as reviewer and get a decision, don't leave it generic."
           },
           {
             "number": 48398,
@@ -3543,6 +3545,33 @@
             "baseline_reason": "PR (ZoomIt) (waited 25d) — review it."
           },
           {
+            "number": 49077,
+            "title": "[Workspaces] Migrate Editor from WPF to WinUI 3",
+            "url": "https://github.com/microsoft/PowerToys/pull/49077",
+            "kind": "pr",
+            "is_community": null,
+            "labels": [
+              "Area-User Interface",
+              "Area-Accessibility",
+              "Issue-Refactoring",
+              "Product-Workspaces"
+            ],
+            "up": 2,
+            "comments": 1,
+            "created_at": "2026-07-01T21:54:14Z",
+            "updated_at": "2026-07-02T18:41:19Z",
+            "age_days": 25.0,
+            "triaged": true,
+            "awaiting": true,
+            "is_draft": false,
+            "merge_state": "",
+            "review_decision": "REVIEW_REQUIRED",
+            "baseline_action": "review",
+            "baseline_glyph": "👀",
+            "baseline_text": "Review this PR (User Interface)",
+            "baseline_reason": "PR (User Interface) (waited 25d) — review it."
+          },
+          {
             "number": 48572,
             "title": "[PowerAccent] Fix injection hygiene and reset state on focus loss",
             "url": "https://github.com/microsoft/PowerToys/pull/48572",
@@ -3566,33 +3595,6 @@
             "baseline_glyph": "🛡️",
             "baseline_text": "Security-sensitive review (Quick Accent)",
             "baseline_reason": "Security-sensitive PR (Quick Accent) (waited 24d) — prioritise a careful review + owner sign-off."
-          },
-          {
-            "number": 49077,
-            "title": "[Workspaces] Migrate Editor from WPF to WinUI 3",
-            "url": "https://github.com/microsoft/PowerToys/pull/49077",
-            "kind": "pr",
-            "is_community": null,
-            "labels": [
-              "Area-User Interface",
-              "Area-Accessibility",
-              "Issue-Refactoring",
-              "Product-Workspaces"
-            ],
-            "up": 2,
-            "comments": 1,
-            "created_at": "2026-07-01T21:54:14Z",
-            "updated_at": "2026-07-02T18:41:19Z",
-            "age_days": 24.0,
-            "triaged": true,
-            "awaiting": true,
-            "is_draft": false,
-            "merge_state": "",
-            "review_decision": "REVIEW_REQUIRED",
-            "baseline_action": "review",
-            "baseline_glyph": "👀",
-            "baseline_text": "Review this PR (User Interface)",
-            "baseline_reason": "PR (User Interface) (waited 24d) — review it."
           },
           {
             "number": 48100,
@@ -3750,6 +3752,30 @@
             "baseline_reason": "PR is flagged for team response (waited 19d) — the ball is with us; assign a reviewer and review it."
           },
           {
+            "number": 46837,
+            "title": "[EnvironmentVariables] Validation fixes, centralised validation, error message improvements",
+            "url": "https://github.com/microsoft/PowerToys/pull/46837",
+            "kind": "pr",
+            "is_community": null,
+            "labels": [
+              "Product-Environment Variables"
+            ],
+            "up": 0,
+            "comments": 1,
+            "created_at": "2026-04-08T22:40:27Z",
+            "updated_at": "2026-07-08T17:19:45Z",
+            "age_days": 19.0,
+            "triaged": true,
+            "awaiting": true,
+            "is_draft": false,
+            "merge_state": "",
+            "review_decision": "REVIEW_REQUIRED",
+            "baseline_action": "review",
+            "baseline_glyph": "👀",
+            "baseline_text": "Review this PR (Environment Variables)",
+            "baseline_reason": "PR (Environment Variables) (waited 19d) — review it."
+          },
+          {
             "number": 47487,
             "title": "Add low memory mode for supported utilities",
             "url": "https://github.com/microsoft/PowerToys/pull/47487",
@@ -3904,6 +3930,31 @@
             "baseline_reason": "Docs/localization PR (Settings) (waited 19d) — route to the docs/localization owner for a domain review, not a generic pass."
           },
           {
+            "number": 49049,
+            "title": "Fixing a WindowBase warning during compile",
+            "url": "https://github.com/microsoft/PowerToys/pull/49049",
+            "kind": "pr",
+            "is_community": null,
+            "labels": [
+              "Area-Build",
+              "Needs-Review"
+            ],
+            "up": 0,
+            "comments": 1,
+            "created_at": "2026-06-30T18:23:41Z",
+            "updated_at": "2026-07-08T18:32:09Z",
+            "age_days": 19.0,
+            "triaged": true,
+            "awaiting": true,
+            "is_draft": false,
+            "merge_state": "",
+            "review_decision": "REVIEW_REQUIRED",
+            "baseline_action": "review",
+            "baseline_glyph": "👀",
+            "baseline_text": "Review this PR (Build)",
+            "baseline_reason": "PR (Build) (waited 19d) — review it."
+          },
+          {
             "number": 49161,
             "title": "[Settings][Image Resizer] Edit/add presets in a ContentDialog instead of a Flyout",
             "url": "https://github.com/microsoft/PowerToys/pull/49161",
@@ -3951,30 +4002,6 @@
             "baseline_glyph": "👀",
             "baseline_text": "Review this PR (Command Palette)",
             "baseline_reason": "PR (Command Palette) (waited 19d) — review it."
-          },
-          {
-            "number": 46837,
-            "title": "[EnvironmentVariables] Validation fixes, centralised validation, error message improvements",
-            "url": "https://github.com/microsoft/PowerToys/pull/46837",
-            "kind": "pr",
-            "is_community": null,
-            "labels": [
-              "Product-Environment Variables"
-            ],
-            "up": 0,
-            "comments": 1,
-            "created_at": "2026-04-08T22:40:27Z",
-            "updated_at": "2026-07-08T17:19:45Z",
-            "age_days": 18.0,
-            "triaged": true,
-            "awaiting": true,
-            "is_draft": false,
-            "merge_state": "",
-            "review_decision": "REVIEW_REQUIRED",
-            "baseline_action": "review",
-            "baseline_glyph": "👀",
-            "baseline_text": "Review this PR (Environment Variables)",
-            "baseline_reason": "PR (Environment Variables) (waited 18d) — review it."
           },
           {
             "number": 46973,
@@ -4048,31 +4075,6 @@
             "baseline_glyph": "👀",
             "baseline_text": "Team owes review — assign a reviewer (Keyboard Manager)",
             "baseline_reason": "PR is flagged for team response (Keyboard Manager) (waited 18d) — the ball is with us; assign a reviewer and review it."
-          },
-          {
-            "number": 49049,
-            "title": "Fixing a WindowBase warning during compile",
-            "url": "https://github.com/microsoft/PowerToys/pull/49049",
-            "kind": "pr",
-            "is_community": null,
-            "labels": [
-              "Area-Build",
-              "Needs-Review"
-            ],
-            "up": 0,
-            "comments": 1,
-            "created_at": "2026-06-30T18:23:41Z",
-            "updated_at": "2026-07-08T18:32:09Z",
-            "age_days": 18.0,
-            "triaged": true,
-            "awaiting": true,
-            "is_draft": false,
-            "merge_state": "",
-            "review_decision": "REVIEW_REQUIRED",
-            "baseline_action": "review",
-            "baseline_glyph": "👀",
-            "baseline_text": "Review this PR (Build)",
-            "baseline_reason": "PR (Build) (waited 18d) — review it."
           },
           {
             "number": 49105,
@@ -4224,15 +4226,15 @@
       "trends": [
         {
           "topic": "Needs-Team-Response",
-          "count": 41
+          "count": 43
         },
         {
           "topic": "Needs-Triage",
-          "count": 41
+          "count": 43
         },
         {
           "topic": "Issue-Bug",
-          "count": 28
+          "count": 29
         },
         {
           "topic": "Needs-Review",
@@ -4497,7 +4499,7 @@
             "comments": 1,
             "created_at": "2026-04-29T15:08:31Z",
             "updated_at": "2026-04-29T19:57:06Z",
-            "age_days": 88.0,
+            "age_days": 89.0,
             "triaged": true,
             "awaiting": false,
             "fix_ready": false,
@@ -4505,7 +4507,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Confirm type (bug/feature) & route",
-            "baseline_reason": "Untyped report (waited 88d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+            "baseline_reason": "Untyped report (waited 89d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
           },
           {
             "number": 68,
@@ -4520,7 +4522,7 @@
             "comments": 1,
             "created_at": "2026-05-05T17:42:00Z",
             "updated_at": "2026-05-05T17:42:00Z",
-            "age_days": 82.0,
+            "age_days": 83.0,
             "triaged": true,
             "awaiting": false,
             "fix_ready": false,
@@ -4528,7 +4530,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Decide on this feature request",
-            "baseline_reason": "Feature/idea (waited 82d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+            "baseline_reason": "Feature/idea (waited 83d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
           },
           {
             "number": 94,
@@ -4748,7 +4750,7 @@
             "comments": 1,
             "created_at": "2026-07-09T06:27:31Z",
             "updated_at": "2026-07-09T19:32:59Z",
-            "age_days": 17.0,
+            "age_days": 18.0,
             "triaged": true,
             "awaiting": false,
             "fix_ready": false,
@@ -4756,7 +4758,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Decide on this feature request",
-            "baseline_reason": "Feature/idea (waited 17d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+            "baseline_reason": "Feature/idea (waited 18d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
           },
           {
             "number": 121,
@@ -5124,11 +5126,11 @@
     },
     "microsoft/WSL": {
       "totals": {
-        "open_issues": 21,
+        "open_issues": 22,
         "open_prs": 15
       },
       "category_counts": {
-        "bug": 15,
+        "bug": 16,
         "feature": 6
       },
       "label_counts": {
@@ -5144,11 +5146,11 @@
         "systemd": 1,
         "needs-investigation": 3,
         "wsl1": 1,
-        "emailed-logs": 2,
+        "emailed-logs": 3,
         "GPU": 1
       },
       "aging_buckets": {
-        "0-1d": 18,
+        "0-1d": 19,
         "2-7d": 2,
         "8-30d": 9,
         ">30d": 7
@@ -5157,29 +5159,29 @@
         "mode": "at_risk",
         "is_internal": false,
         "signals": {
-          "total": 36,
-          "issues": 21,
+          "total": 37,
+          "issues": 22,
           "prs": 15,
-          "community": 25,
+          "community": 26,
           "frustrated_blocked": 3,
           "frustrated_only": 1,
           "missed_reply": 11,
           "missed_reply_basis": "source missed_reply.qualifies; days_no_reply>=7 proxy",
           "hi_score": 10,
           "hi_score_threshold": 6,
-          "bugs": 16,
-          "actionable": 33,
+          "bugs": 17,
+          "actionable": 34,
           "stale7d": 16
         },
         "headline": "⚠ Respond now — 3 frustrated/blocked; 10 high-priority (score ≥ 6; may overlap).",
         "recommendation": "Do these first."
       },
       "counts": {
-        "triaged_issues": 21,
+        "triaged_issues": 22,
         "triaged_prs": 15,
-        "window_active_issues": 44,
+        "window_active_issues": 46,
         "window_active_prs": 22,
-        "backlog_open_issues": 905,
+        "backlog_open_issues": 906,
         "backlog_open_prs": 61,
         "awaiting_reply_issues": 4,
         "awaiting_reply_prs": 49,
@@ -5482,7 +5484,7 @@
             "comments": 1,
             "created_at": "2016-07-25T16:05:09Z",
             "updated_at": "2026-04-23T17:45:26Z",
-            "age_days": 94.0,
+            "age_days": 95.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -5490,7 +5492,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Answer the question / close as support",
-            "baseline_reason": "Looks like a question/support request (waited 94d, 291 👍 high demand) — answer it (or link docs) and close; convert to a bug/feature only if it turns out to be one."
+            "baseline_reason": "Looks like a question/support request (waited 95d, 291 👍 high demand) — answer it (or link docs) and close; convert to a bug/feature only if it turns out to be one."
           },
           {
             "number": 8529,
@@ -5549,7 +5551,7 @@
             "comments": 1,
             "created_at": "2022-05-03T21:36:30Z",
             "updated_at": "2025-10-31T18:28:16Z",
-            "age_days": 268.0,
+            "age_days": 269.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -5557,7 +5559,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Confirm type (bug/feature) & route",
-            "baseline_reason": "Untyped report (waited 268d, 240 👍 high demand) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+            "baseline_reason": "Untyped report (waited 269d, 240 👍 high demand) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
           },
           {
             "number": 5836,
@@ -5807,7 +5809,7 @@
             "comments": 1,
             "created_at": "2019-06-28T00:33:16Z",
             "updated_at": "2025-05-13T17:39:47Z",
-            "age_days": 439.0,
+            "age_days": 440.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -5815,7 +5817,7 @@
             "baseline_action": "promote",
             "baseline_glyph": "⭐",
             "baseline_text": "High-demand feature — roadmap decision",
-            "baseline_reason": "Popular feature ask (waited 439d, 83 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+            "baseline_reason": "Popular feature ask (waited 440d, 83 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
           },
           {
             "number": 2466,
@@ -5853,7 +5855,7 @@
             "comments": 1,
             "created_at": "2024-02-24T17:05:57Z",
             "updated_at": "2025-02-06T17:50:24Z",
-            "age_days": 535.0,
+            "age_days": 536.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -5861,7 +5863,7 @@
             "baseline_action": "promote",
             "baseline_glyph": "⭐",
             "baseline_text": "High-demand feature — roadmap decision",
-            "baseline_reason": "Popular feature ask (waited 535d, 75 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+            "baseline_reason": "Popular feature ask (waited 536d, 75 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
           },
           {
             "number": 6011,
@@ -5942,7 +5944,7 @@
             "comments": 1,
             "created_at": "2023-04-07T08:07:56Z",
             "updated_at": "2026-06-25T18:25:41Z",
-            "age_days": 31.0,
+            "age_days": 32.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -5950,7 +5952,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Confirm type (bug/feature) & route",
-            "baseline_reason": "Untyped report (waited 31d, 56 👍 high demand) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+            "baseline_reason": "Untyped report (waited 32d, 56 👍 high demand) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
           },
           {
             "number": 5231,
@@ -6081,7 +6083,7 @@
             "comments": 1,
             "created_at": "2024-02-24T19:37:29Z",
             "updated_at": "2025-07-10T17:20:04Z",
-            "age_days": 381.0,
+            "age_days": 382.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -6089,7 +6091,7 @@
             "baseline_action": "promote",
             "baseline_glyph": "⭐",
             "baseline_text": "High-demand feature — roadmap decision",
-            "baseline_reason": "Popular feature ask (waited 381d, 42 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+            "baseline_reason": "Popular feature ask (waited 382d, 42 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
           },
           {
             "number": 6460,
@@ -6176,7 +6178,7 @@
             "comments": 1,
             "created_at": "2026-02-27T22:02:59Z",
             "updated_at": "2026-06-10T17:43:33Z",
-            "age_days": 46.0,
+            "age_days": 47.0,
             "triaged": false,
             "awaiting": true,
             "is_draft": false,
@@ -6185,7 +6187,7 @@
             "baseline_action": "assign_reviewer",
             "baseline_glyph": "👤",
             "baseline_text": "Assign a domain reviewer",
-            "baseline_reason": "PR has waited 46 d for us (waited 46d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+            "baseline_reason": "PR has waited 47 d for us (waited 47d) — assign the area owner as reviewer and get a decision, don't leave it generic."
           },
           {
             "number": 14377,
@@ -6317,7 +6319,7 @@
             "comments": 1,
             "created_at": "2026-06-11T17:07:40Z",
             "updated_at": "2026-06-26T20:06:49Z",
-            "age_days": 30.0,
+            "age_days": 31.0,
             "triaged": false,
             "awaiting": true,
             "is_draft": false,
@@ -6326,7 +6328,7 @@
             "baseline_action": "assign_reviewer",
             "baseline_glyph": "🌐",
             "baseline_text": "Route to docs/localization owner",
-            "baseline_reason": "Docs/localization PR (waited 30d) — route to the docs/localization owner for a domain review, not a generic pass."
+            "baseline_reason": "Docs/localization PR (waited 31d) — route to the docs/localization owner for a domain review, not a generic pass."
           },
           {
             "number": 40949,
@@ -6383,7 +6385,7 @@
             "comments": 1,
             "created_at": "2026-02-21T01:23:34Z",
             "updated_at": "2026-07-09T17:33:34Z",
-            "age_days": 17.0,
+            "age_days": 18.0,
             "triaged": false,
             "awaiting": true,
             "is_draft": false,
@@ -6392,7 +6394,7 @@
             "baseline_action": "review",
             "baseline_glyph": "👀",
             "baseline_text": "Review this PR",
-            "baseline_reason": "PR (waited 17d) — review it."
+            "baseline_reason": "PR (waited 18d) — review it."
           },
           {
             "number": 40890,
@@ -6405,7 +6407,7 @@
             "comments": 1,
             "created_at": "2026-06-24T18:40:08Z",
             "updated_at": "2026-07-09T19:00:28Z",
-            "age_days": 17.0,
+            "age_days": 18.0,
             "triaged": false,
             "awaiting": true,
             "is_draft": false,
@@ -6414,7 +6416,7 @@
             "baseline_action": "review",
             "baseline_glyph": "👀",
             "baseline_text": "Review this PR",
-            "baseline_reason": "PR (waited 17d) — review it."
+            "baseline_reason": "PR (waited 18d) — review it."
           },
           {
             "number": 14456,
@@ -6452,7 +6454,7 @@
             "comments": 1,
             "created_at": "2026-03-28T17:29:05Z",
             "updated_at": "2026-07-14T18:24:59Z",
-            "age_days": 12.0,
+            "age_days": 13.0,
             "triaged": true,
             "awaiting": true,
             "is_draft": false,
@@ -6461,7 +6463,7 @@
             "baseline_action": "review",
             "baseline_glyph": "👀",
             "baseline_text": "Review this PR",
-            "baseline_reason": "PR (waited 12d) — review it."
+            "baseline_reason": "PR (waited 13d) — review it."
           },
           {
             "number": 41051,
@@ -6474,7 +6476,7 @@
             "comments": 1,
             "created_at": "2026-07-10T08:50:31Z",
             "updated_at": "2026-07-14T17:33:36Z",
-            "age_days": 12.0,
+            "age_days": 13.0,
             "triaged": true,
             "awaiting": true,
             "is_draft": false,
@@ -6483,7 +6485,7 @@
             "baseline_action": "review",
             "baseline_glyph": "👀",
             "baseline_text": "Review this PR",
-            "baseline_reason": "PR (waited 12d) — review it."
+            "baseline_reason": "PR (waited 13d) — review it."
           },
           {
             "number": 41085,
@@ -6508,6 +6510,28 @@
             "baseline_reason": "Changes were requested (waited 10d) — ball is with the author; nudge if quiet."
           },
           {
+            "number": 41103,
+            "title": "Fix: Un-escape the value before setting LANG",
+            "url": "https://github.com/microsoft/WSL/pull/41103",
+            "kind": "pr",
+            "is_community": null,
+            "labels": [],
+            "up": 0,
+            "comments": 1,
+            "created_at": "2026-07-17T05:11:53Z",
+            "updated_at": "2026-07-17T17:55:13Z",
+            "age_days": 10.0,
+            "triaged": true,
+            "awaiting": true,
+            "is_draft": false,
+            "merge_state": "",
+            "review_decision": "REVIEW_REQUIRED",
+            "baseline_action": "review",
+            "baseline_glyph": "👀",
+            "baseline_text": "Review this PR",
+            "baseline_reason": "PR (waited 10d) — review it."
+          },
+          {
             "number": 41104,
             "title": "Fix minor issues found during code review",
             "url": "https://github.com/microsoft/WSL/pull/41104",
@@ -6518,6 +6542,28 @@
             "comments": 1,
             "created_at": "2026-07-17T08:08:24Z",
             "updated_at": "2026-07-17T08:38:18Z",
+            "age_days": 10.0,
+            "triaged": true,
+            "awaiting": true,
+            "is_draft": false,
+            "merge_state": "",
+            "review_decision": "REVIEW_REQUIRED",
+            "baseline_action": "review",
+            "baseline_glyph": "👀",
+            "baseline_text": "Review this PR",
+            "baseline_reason": "PR (waited 10d) — review it."
+          },
+          {
+            "number": 41109,
+            "title": "Added keep alive setting",
+            "url": "https://github.com/microsoft/WSL/pull/41109",
+            "kind": "pr",
+            "is_community": null,
+            "labels": [],
+            "up": 0,
+            "comments": 1,
+            "created_at": "2026-07-17T20:00:22Z",
+            "updated_at": "2026-07-17T20:06:26Z",
             "age_days": 10.0,
             "triaged": true,
             "awaiting": true,
@@ -6552,50 +6598,6 @@
             "baseline_glyph": "🌐",
             "baseline_text": "Route to docs/localization owner",
             "baseline_reason": "Docs/localization PR (waited 9d) — route to the docs/localization owner for a domain review, not a generic pass."
-          },
-          {
-            "number": 41103,
-            "title": "Fix: Un-escape the value before setting LANG",
-            "url": "https://github.com/microsoft/WSL/pull/41103",
-            "kind": "pr",
-            "is_community": null,
-            "labels": [],
-            "up": 0,
-            "comments": 1,
-            "created_at": "2026-07-17T05:11:53Z",
-            "updated_at": "2026-07-17T17:55:13Z",
-            "age_days": 9.0,
-            "triaged": true,
-            "awaiting": true,
-            "is_draft": false,
-            "merge_state": "",
-            "review_decision": "REVIEW_REQUIRED",
-            "baseline_action": "review",
-            "baseline_glyph": "👀",
-            "baseline_text": "Review this PR",
-            "baseline_reason": "PR (waited 9d) — review it."
-          },
-          {
-            "number": 41109,
-            "title": "Added keep alive setting",
-            "url": "https://github.com/microsoft/WSL/pull/41109",
-            "kind": "pr",
-            "is_community": null,
-            "labels": [],
-            "up": 0,
-            "comments": 1,
-            "created_at": "2026-07-17T20:00:22Z",
-            "updated_at": "2026-07-17T20:06:26Z",
-            "age_days": 9.0,
-            "triaged": true,
-            "awaiting": true,
-            "is_draft": false,
-            "merge_state": "",
-            "review_decision": "REVIEW_REQUIRED",
-            "baseline_action": "review",
-            "baseline_glyph": "👀",
-            "baseline_text": "Review this PR",
-            "baseline_reason": "PR (waited 9d) — review it."
           },
           {
             "number": 14311,
@@ -6689,6 +6691,50 @@
             "baseline_reason": "Changes were requested (waited 3d) — ball is with the author; nudge if quiet."
           },
           {
+            "number": 41164,
+            "title": "Bound relay drains so a wedged guest socket cannot hang wsl.exe",
+            "url": "https://github.com/microsoft/WSL/pull/41164",
+            "kind": "pr",
+            "is_community": null,
+            "labels": [],
+            "up": 0,
+            "comments": 1,
+            "created_at": "2026-07-24T15:07:59Z",
+            "updated_at": "2026-07-24T18:02:03Z",
+            "age_days": 3.0,
+            "triaged": false,
+            "awaiting": true,
+            "is_draft": false,
+            "merge_state": "",
+            "review_decision": "CHANGES_REQUESTED",
+            "baseline_action": "await_author_changes",
+            "baseline_glyph": "✍️",
+            "baseline_text": "Await author's changes",
+            "baseline_reason": "Changes were requested (waited 3d) — ball is with the author; nudge if quiet."
+          },
+          {
+            "number": 41165,
+            "title": "Mitigate and instrument the utility-VM boot-connect timeout",
+            "url": "https://github.com/microsoft/WSL/pull/41165",
+            "kind": "pr",
+            "is_community": null,
+            "labels": [],
+            "up": 0,
+            "comments": 1,
+            "created_at": "2026-07-24T15:08:02Z",
+            "updated_at": "2026-07-24T17:57:47Z",
+            "age_days": 3.0,
+            "triaged": false,
+            "awaiting": true,
+            "is_draft": false,
+            "merge_state": "",
+            "review_decision": "REVIEW_REQUIRED",
+            "baseline_action": "review",
+            "baseline_glyph": "👀",
+            "baseline_text": "Review this PR",
+            "baseline_reason": "PR (waited 3d) — review it."
+          },
+          {
             "number": 40481,
             "title": "Draft: add manual VHDX compaction command for stopped WSL distros",
             "url": "https://github.com/microsoft/WSL/pull/40481",
@@ -6767,50 +6813,6 @@
             "comments": 1,
             "created_at": "2026-07-17T15:49:46Z",
             "updated_at": "2026-07-24T23:39:21Z",
-            "age_days": 2.0,
-            "triaged": false,
-            "awaiting": true,
-            "is_draft": false,
-            "merge_state": "",
-            "review_decision": "REVIEW_REQUIRED",
-            "baseline_action": "review",
-            "baseline_glyph": "👀",
-            "baseline_text": "Review this PR",
-            "baseline_reason": "PR (waited 2d) — review it."
-          },
-          {
-            "number": 41164,
-            "title": "Bound relay drains so a wedged guest socket cannot hang wsl.exe",
-            "url": "https://github.com/microsoft/WSL/pull/41164",
-            "kind": "pr",
-            "is_community": null,
-            "labels": [],
-            "up": 0,
-            "comments": 1,
-            "created_at": "2026-07-24T15:07:59Z",
-            "updated_at": "2026-07-24T18:02:03Z",
-            "age_days": 2.0,
-            "triaged": false,
-            "awaiting": true,
-            "is_draft": false,
-            "merge_state": "",
-            "review_decision": "CHANGES_REQUESTED",
-            "baseline_action": "await_author_changes",
-            "baseline_glyph": "✍️",
-            "baseline_text": "Await author's changes",
-            "baseline_reason": "Changes were requested (waited 2d) — ball is with the author; nudge if quiet."
-          },
-          {
-            "number": 41165,
-            "title": "Mitigate and instrument the utility-VM boot-connect timeout",
-            "url": "https://github.com/microsoft/WSL/pull/41165",
-            "kind": "pr",
-            "is_community": null,
-            "labels": [],
-            "up": 0,
-            "comments": 1,
-            "created_at": "2026-07-24T15:08:02Z",
-            "updated_at": "2026-07-24T17:57:47Z",
             "age_days": 2.0,
             "triaged": false,
             "awaiting": true,
@@ -6965,7 +6967,7 @@
             "comments": 1,
             "created_at": "2026-05-15T17:58:29Z",
             "updated_at": "2026-05-15T19:33:05Z",
-            "age_days": 72.0,
+            "age_days": 73.0,
             "triaged": false,
             "awaiting": false,
             "is_draft": true,
@@ -6974,7 +6976,7 @@
             "baseline_action": "wait_author",
             "baseline_glyph": "🚧",
             "baseline_text": "Wait — PR is a draft/WIP",
-            "baseline_reason": "Draft/WIP PR (waited 72d) — don't review yet; nudge the author to mark it ready."
+            "baseline_reason": "Draft/WIP PR (waited 73d) — don't review yet; nudge the author to mark it ready."
           },
           {
             "number": 40388,
@@ -7009,7 +7011,7 @@
             "comments": 1,
             "created_at": "2026-05-29T23:06:34Z",
             "updated_at": "2026-06-01T19:14:51Z",
-            "age_days": 55.0,
+            "age_days": 56.0,
             "triaged": false,
             "awaiting": false,
             "is_draft": true,
@@ -7018,7 +7020,7 @@
             "baseline_action": "wait_author",
             "baseline_glyph": "🚧",
             "baseline_text": "Wait — PR is a draft/WIP",
-            "baseline_reason": "Draft/WIP PR (waited 55d) — don't review yet; nudge the author to mark it ready."
+            "baseline_reason": "Draft/WIP PR (waited 56d) — don't review yet; nudge the author to mark it ready."
           }
         ],
         "awaiting_issues": 4,
@@ -7144,7 +7146,7 @@
             "comments": 1,
             "created_at": "2021-04-21T21:18:20Z",
             "updated_at": "2026-04-15T19:10:43Z",
-            "age_days": 102.0,
+            "age_days": 103.0,
             "triaged": true,
             "awaiting": false,
             "fix_ready": false,
@@ -7152,7 +7154,7 @@
             "baseline_action": "promote",
             "baseline_glyph": "⭐",
             "baseline_text": "High-demand feature — roadmap decision",
-            "baseline_reason": "Popular feature ask (waited 102d, 149 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+            "baseline_reason": "Popular feature ask (waited 103d, 149 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
           },
           {
             "number": 40,
@@ -7919,15 +7921,15 @@
             "comments": 1,
             "created_at": "2022-04-29T15:15:25Z",
             "updated_at": "2023-08-14T19:19:24Z",
-            "age_days": 1077.0,
+            "age_days": 1078.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
             "build_candidate": false,
             "baseline_action": "label_only",
             "baseline_glyph": "🚧",
-            "baseline_text": "In progress 1077 d — audit the linked work",
-            "baseline_reason": "Marked in-progress but 1077 d old (waited 1077d, 16 👍) — verify the linked PR/owner is still active; if it stalled, reassign or drop the in-progress status."
+            "baseline_text": "In progress 1078 d — audit the linked work",
+            "baseline_reason": "Marked in-progress but 1078 d old (waited 1078d, 16 👍) — verify the linked PR/owner is still active; if it stalled, reassign or drop the in-progress status."
           },
           {
             "number": 1290,
@@ -7965,7 +7967,7 @@
             "comments": 1,
             "created_at": "2026-03-03T08:17:24Z",
             "updated_at": "2026-06-29T18:59:16Z",
-            "age_days": 27.0,
+            "age_days": 28.0,
             "triaged": true,
             "awaiting": false,
             "fix_ready": false,
@@ -7973,7 +7975,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Confirm on current build & route",
-            "baseline_reason": "Bug (waited 27d, 16 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+            "baseline_reason": "Bug (waited 28d, 16 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
           },
           {
             "number": 166,
@@ -8144,6 +8146,30 @@
             "baseline_reason": "PR has waited 71 d for us (waited 71d) — assign the area owner as reviewer and get a decision, don't leave it generic."
           },
           {
+            "number": 1436,
+            "title": "Add max total crash limit to stop relaunching persistently failing pr…",
+            "url": "https://github.com/microsoft/wslg/pull/1436",
+            "kind": "pr",
+            "is_community": null,
+            "labels": [
+              "bug"
+            ],
+            "up": 0,
+            "comments": 1,
+            "created_at": "2026-04-10T23:07:57Z",
+            "updated_at": "2026-05-18T18:38:26Z",
+            "age_days": 70.0,
+            "triaged": true,
+            "awaiting": true,
+            "is_draft": false,
+            "merge_state": "",
+            "review_decision": "REVIEW_REQUIRED",
+            "baseline_action": "assign_reviewer",
+            "baseline_glyph": "👤",
+            "baseline_text": "Assign a domain reviewer",
+            "baseline_reason": "PR has waited 70 d for us (waited 70d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+          },
+          {
             "number": 1450,
             "title": "Add community triage infrastructure: CI lint, stale bot, CODEOWNERS, docs",
             "url": "https://github.com/microsoft/wslg/pull/1450",
@@ -8166,30 +8192,6 @@
             "baseline_glyph": "🌐",
             "baseline_text": "Route to docs/localization owner",
             "baseline_reason": "Docs/localization PR (waited 70d) — route to the docs/localization owner for a domain review, not a generic pass."
-          },
-          {
-            "number": 1436,
-            "title": "Add max total crash limit to stop relaunching persistently failing pr…",
-            "url": "https://github.com/microsoft/wslg/pull/1436",
-            "kind": "pr",
-            "is_community": null,
-            "labels": [
-              "bug"
-            ],
-            "up": 0,
-            "comments": 1,
-            "created_at": "2026-04-10T23:07:57Z",
-            "updated_at": "2026-05-18T18:38:26Z",
-            "age_days": 69.0,
-            "triaged": true,
-            "awaiting": true,
-            "is_draft": false,
-            "merge_state": "",
-            "review_decision": "REVIEW_REQUIRED",
-            "baseline_action": "assign_reviewer",
-            "baseline_glyph": "👤",
-            "baseline_text": "Assign a domain reviewer",
-            "baseline_reason": "PR has waited 69 d for us (waited 69d) — assign the area owner as reviewer and get a decision, don't leave it generic."
           },
           {
             "number": 1446,
@@ -8515,7 +8517,7 @@
   "trends": [
     {
       "topic": "Needs-Triage",
-      "count": 62
+      "count": 64
     },
     {
       "topic": "bug",
@@ -8523,14 +8525,14 @@
     },
     {
       "topic": "Needs-Team-Response",
-      "count": 41
-    },
-    {
-      "topic": "enhancement",
-      "count": 33
+      "count": 43
     },
     {
       "topic": "Issue-Bug",
+      "count": 34
+    },
+    {
+      "topic": "enhancement",
       "count": 33
     }
   ],
@@ -10338,76 +10340,6 @@
       "pr_merge_state": "BLOCKED",
       "pr_review_decision": "REVIEW_REQUIRED",
       "pr_ci_rollup": "SUCCESS",
-      "pr_failing_jobs": [],
-      "pr_latest_human_review": ""
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
-      "number": 457,
-      "title": "Add transparent ACP tracing proxy",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/457",
-      "kind": "pr",
-      "category": "refactor",
-      "days_no_reply": 0,
-      "missed_reply": false,
-      "is_community": false,
-      "score": 4.0,
-      "severity": "none",
-      "sentiment": "",
-      "classification_type": "refactor",
-      "next_action_glyph": "🔴",
-      "next_action": "fix_ci",
-      "next_action_reason": "check-spelling check is failing (UNSTABLE); author should fix the spelling allowlist before this can be merged. Also needs a reviewer assigned.",
-      "suggested_labels": [],
-      "suggested_reply": "",
-      "suggested_owner": "yeelam-gordon",
-      "owner_evidence": "Touches wta ACP conductor/proxy chain (tools/wta); yeelam-gordon and vanzue are the primary wta/ACP git-log authors.",
-      "owner_fallback_reason": "Touches wta ACP conductor/proxy chain (tools/wta); yeelam-gordon and vanzue are the primary wta/ACP git-log authors.",
-      "owner_kind": "reviewer",
-      "current_labels": [],
-      "updated_at": "2026-07-20T13:27:27Z",
-      "priority_age_days": 7.0,
-      "days_awaiting": 2.0,
-      "aging_basis": "PR days_since_update",
-      "pr_merge_state": "UNSTABLE",
-      "pr_review_decision": "",
-      "pr_ci_rollup": "UNSTABLE",
-      "pr_failing_jobs": [
-        "check-spelling"
-      ],
-      "pr_latest_human_review": ""
-    },
-    {
-      "repo": "microsoft/intelligent-terminal",
-      "number": 461,
-      "title": "Extract autofix ACP transform proxy",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/461",
-      "kind": "pr",
-      "category": "refactor",
-      "days_no_reply": 0,
-      "missed_reply": false,
-      "is_community": false,
-      "score": 3.0,
-      "severity": "none",
-      "sentiment": "",
-      "classification_type": "refactor",
-      "next_action_glyph": "👀",
-      "next_action": "needs_review",
-      "next_action_reason": "CLEAN internal PR with no reviewer assigned; route to a wta/ACP owner for review.",
-      "suggested_labels": [],
-      "suggested_reply": "",
-      "suggested_owner": "yeelam-gordon",
-      "owner_evidence": "Touches wta ACP proxy/autofix chain (tools/wta); yeelam-gordon and vanzue are the primary wta/ACP git-log authors.",
-      "owner_fallback_reason": "Touches wta ACP proxy/autofix chain (tools/wta); yeelam-gordon and vanzue are the primary wta/ACP git-log authors.",
-      "owner_kind": "reviewer",
-      "current_labels": [],
-      "updated_at": "2026-07-21T01:44:19Z",
-      "priority_age_days": 6.0,
-      "days_awaiting": 1.0,
-      "aging_basis": "PR days_since_update",
-      "pr_merge_state": "CLEAN",
-      "pr_review_decision": "",
-      "pr_ci_rollup": "CLEAN",
       "pr_failing_jobs": [],
       "pr_latest_human_review": ""
     },
@@ -12665,7 +12597,7 @@
       "owner_kind": "reviewer",
       "current_labels": [],
       "updated_at": "2026-06-23T18:57:15Z",
-      "priority_age_days": 33.0,
+      "priority_age_days": 34.0,
       "days_awaiting": 33.0,
       "aging_basis": "PR days_since_update",
       "pr_merge_state": "BLOCKED",
@@ -12701,7 +12633,7 @@
         "Product-Environment Variables"
       ],
       "updated_at": "2026-07-08T17:19:45Z",
-      "priority_age_days": 18.0,
+      "priority_age_days": 19.0,
       "days_awaiting": 0.0,
       "aging_basis": "PR days_since_update",
       "pr_merge_state": "BLOCKED",
@@ -12812,7 +12744,7 @@
       "owner_kind": "reviewer",
       "current_labels": [],
       "updated_at": "2026-06-05T17:35:22Z",
-      "priority_age_days": 51.0,
+      "priority_age_days": 52.0,
       "days_awaiting": 51.0,
       "aging_basis": "PR days_since_update",
       "pr_merge_state": "DIRTY",
@@ -12926,7 +12858,7 @@
         "Area-GitHub workflow"
       ],
       "updated_at": "2026-06-05T18:54:19Z",
-      "priority_age_days": 51.0,
+      "priority_age_days": 52.0,
       "days_awaiting": 0.0,
       "aging_basis": "PR days_since_update",
       "pr_merge_state": "BLOCKED",
@@ -13507,7 +13439,7 @@
         "Product-Workspaces"
       ],
       "updated_at": "2026-06-26T18:49:08Z",
-      "priority_age_days": 30.0,
+      "priority_age_days": 31.0,
       "days_awaiting": 0.0,
       "aging_basis": "PR days_since_update",
       "pr_merge_state": "BLOCKED",
@@ -13582,7 +13514,7 @@
         "Needs-Review"
       ],
       "updated_at": "2026-07-08T10:32:09Z",
-      "priority_age_days": 18.0,
+      "priority_age_days": 19.0,
       "days_awaiting": 0.0,
       "aging_basis": "PR days_since_update",
       "pr_merge_state": "BLOCKED",
@@ -13621,7 +13553,7 @@
         "Product-Workspaces"
       ],
       "updated_at": "2026-07-02T18:41:19Z",
-      "priority_age_days": 24.0,
+      "priority_age_days": 25.0,
       "days_awaiting": 0.0,
       "aging_basis": "PR days_since_update",
       "pr_merge_state": "BLOCKED",
@@ -13773,6 +13705,121 @@
       "pr_merge_state": "BLOCKED",
       "pr_review_decision": "REVIEW_REQUIRED",
       "pr_ci_rollup": "SUCCESS",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": ""
+    },
+    {
+      "repo": "microsoft/PowerToys",
+      "number": 49410,
+      "title": "Add support for scroll wheel control of brightness, when hovering over taskbar icon",
+      "url": "https://github.com/microsoft/PowerToys/issues/49410",
+      "kind": "issue",
+      "category": "feature",
+      "days_no_reply": 0,
+      "missed_reply": false,
+      "is_community": true,
+      "score": 0.0,
+      "severity": "none",
+      "sentiment": "neutral",
+      "classification_type": "feature",
+      "next_action_glyph": "💬",
+      "next_action": "reply",
+      "next_action_reason": "Brand-new feature request with team-response label; give a quick acknowledgement and route to PowerDisplay.",
+      "suggested_labels": [],
+      "suggested_reply": "Thanks for the suggestion — scroll-to-adjust-brightness over the tray icon (like TwinkleTray) is a nice ergonomic addition for PowerDisplay. We'll flag it for the PowerDisplay owners to consider alongside the existing brightness controls.",
+      "suggested_owner": "",
+      "owner_evidence": "CODEOWNERS covers only .github/pipelines; no per-module owner mapping and no closing-PR evidence to attribute an individual. Route via product-area label to the owning team.",
+      "owner_fallback_reason": "CODEOWNERS covers only .github/pipelines; no per-module owner mapping and no closing-PR evidence to attribute an individual. Route via product-area label to the owning team.",
+      "owner_kind": "assignee",
+      "current_labels": [
+        "Needs-Triage",
+        "Needs-Team-Response",
+        "Product-PowerDisplay"
+      ],
+      "updated_at": "2026-07-21T11:23:38Z",
+      "priority_age_days": 0.0,
+      "days_awaiting": 0.8,
+      "aging_basis": "issue days_no_reply",
+      "pr_merge_state": "",
+      "pr_review_decision": "",
+      "pr_ci_rollup": "",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": ""
+    },
+    {
+      "repo": "microsoft/PowerToys",
+      "number": 49437,
+      "title": "[CmdPal] Add \"Update and restart\" / \"Update and shut down\" system commands",
+      "url": "https://github.com/microsoft/PowerToys/pull/49437",
+      "kind": "pr",
+      "category": "feature",
+      "days_no_reply": 6,
+      "missed_reply": true,
+      "is_community": true,
+      "score": 6.0,
+      "severity": "none",
+      "sentiment": "",
+      "classification_type": "feature",
+      "next_action_glyph": "👀",
+      "next_action": "needs_review",
+      "next_action_reason": "Community PR, CI + CLA green, closes a triaged issue, no reviewer assigned. Assign/ping a CmdPal reviewer (zadjii-msft) for a first pass. Do not request changes — nothing outstanding from the author.",
+      "suggested_labels": [],
+      "suggested_reply": "@zadjii-msft this community PR from @Subhro-ai adds \"Update and restart\" / \"Update and shut down\" to the CmdPal System commands (closes #48849, which you commented on). CLA + CI are green and it ships unit tests — could you take a first review pass when you have a moment?",
+      "suggested_owner": "zadjii-msft",
+      "owner_evidence": "PR body: author commented on the closing issue #48849 before starting and zadjii-msft engaged there.; Touched area is Command Palette (src/modules/cmdpal/ext/Microsoft.CmdPal.Ext.System) — zadjii-msft is the establish...",
+      "owner_fallback_reason": "PR body: author commented on the closing issue #48849 before starting and zadjii-msft engaged there.; Touched area is Command Palette (src/modules/cmdpal/ext/Microsoft.CmdPal.Ext.System) — zadjii-msft is the establish...",
+      "owner_kind": "reviewer",
+      "current_labels": [
+        "Area-Localization",
+        "Product-Command Palette"
+      ],
+      "updated_at": "2026-07-21T16:54:48Z",
+      "priority_age_days": 6.0,
+      "days_awaiting": 6.0,
+      "aging_basis": "PR waiting age",
+      "pr_merge_state": "BLOCKED",
+      "pr_review_decision": "REVIEW_REQUIRED",
+      "pr_ci_rollup": "SUCCESS",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": ""
+    },
+    {
+      "repo": "microsoft/PowerToys",
+      "number": 49438,
+      "title": "PowerToys Kills Itself in Background",
+      "url": "https://github.com/microsoft/PowerToys/issues/49438",
+      "kind": "issue",
+      "category": "bug",
+      "days_no_reply": 6,
+      "missed_reply": true,
+      "is_community": true,
+      "score": 5.0,
+      "severity": "crash",
+      "sentiment": "frustrated",
+      "classification_type": "bug",
+      "next_action_glyph": "💬",
+      "next_action": "reply",
+      "next_action_reason": "Community author supplied the bug-report ZIP we requested; acknowledge, begin runner-log analysis, and ask for the one still-missing correlation detail (active modules / sleep-resume timing). Do NOT re-request logs — already provided.",
+      "suggested_labels": [
+        "Product-Runner"
+      ],
+      "suggested_reply": "Thanks @mjmatthiesen — the bug report ZIP came through, appreciate it. We'll dig into the runner/watchdog logs to see why the PowerToys process is exiting in the background. In the meantime, if you can note roughly what you were doing when it last vanished (which modules were active, whether it lines up with sleep/resume or an update), that context would help us correlate against the logs.",
+      "suggested_owner": "",
+      "owner_evidence": "No per-area CODEOWNERS; runner-crash owner not derivable from git-log without deeper investigation. Route via triage after bug-report-zip analysis.",
+      "owner_fallback_reason": "No per-area CODEOWNERS; runner-crash owner not derivable from git-log without deeper investigation. Route via triage after bug-report-zip analysis.",
+      "owner_kind": "assignee",
+      "current_labels": [
+        "Issue-Bug",
+        "Needs-Triage",
+        "Needs-Team-Response"
+      ],
+      "updated_at": "2026-07-21T18:21:46Z",
+      "priority_age_days": 6.0,
+      "days_awaiting": 6.0,
+      "aging_basis": "issue days_no_reply",
+      "pr_merge_state": "",
+      "pr_review_decision": "",
+      "pr_ci_rollup": "",
       "pr_failing_jobs": [],
       "pr_latest_human_review": ""
     },
@@ -16003,7 +16050,7 @@
       "owner_kind": "reviewer",
       "current_labels": [],
       "updated_at": "2026-07-17T19:54:58Z",
-      "priority_age_days": 9.0,
+      "priority_age_days": 10.0,
       "days_awaiting": 0.0,
       "aging_basis": "PR days_since_update",
       "pr_merge_state": "DIRTY",
@@ -16037,7 +16084,7 @@
       "owner_kind": "reviewer",
       "current_labels": [],
       "updated_at": "2026-07-14T17:33:36Z",
-      "priority_age_days": 12.0,
+      "priority_age_days": 13.0,
       "days_awaiting": 15.0,
       "aging_basis": "PR days_since_update",
       "pr_merge_state": "BLOCKED",
@@ -16071,7 +16118,7 @@
       "owner_kind": "reviewer",
       "current_labels": [],
       "updated_at": "2026-07-17T17:55:13Z",
-      "priority_age_days": 9.0,
+      "priority_age_days": 10.0,
       "days_awaiting": 0.0,
       "aging_basis": "PR days_since_update",
       "pr_merge_state": "BLOCKED",
@@ -16142,7 +16189,7 @@
       "owner_kind": "reviewer",
       "current_labels": [],
       "updated_at": "2026-07-17T20:06:26Z",
-      "priority_age_days": 9.0,
+      "priority_age_days": 10.0,
       "days_awaiting": 2.0,
       "aging_basis": "PR days_since_update",
       "pr_merge_state": "BLOCKED",
@@ -16836,6 +16883,45 @@
         "emailed-logs"
       ],
       "updated_at": "2026-07-26T05:57:51Z",
+      "priority_age_days": 0.0,
+      "days_awaiting": 0.0,
+      "aging_basis": "issue days_no_reply",
+      "pr_merge_state": "",
+      "pr_review_decision": "",
+      "pr_ci_rollup": "",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": ""
+    },
+    {
+      "repo": "microsoft/WSL",
+      "number": 41179,
+      "title": "WSL2 VM launch fails with Wsl/Service/E_UNEXPECTED across 4 independently-verified fixes + reboots (RTX 5070, MSIX package)",
+      "url": "https://github.com/microsoft/WSL/issues/41179",
+      "kind": "issue",
+      "category": "bug",
+      "days_no_reply": 0,
+      "missed_reply": false,
+      "is_community": true,
+      "score": 3.0,
+      "severity": "crash",
+      "sentiment": "neutral",
+      "classification_type": "bug",
+      "next_action_glyph": "💬",
+      "next_action": "reply",
+      "next_action_reason": "Community author emailed logs and asked specific diagnostic questions; team owes a reply. Don't re-ask for logs (already emailed) — acknowledge, confirm HypervisorPlatform/bcdedit state, and request a full collect-wsl-logs ETW trace of the failing launch to resolve E_UNEXPECTED to a specific HCS error.",
+      "suggested_labels": [
+        "failure-to-launch",
+        "needs-investigation"
+      ],
+      "suggested_reply": "Thanks for the exceptionally thorough writeup and for emailing the logs. A couple of things stand out that will help us pinpoint where the launch is failing:\n\n1. The empty `Win32_DeviceGuard` WMI result plus `HypervisorPlatform` having been disabled points at the VBS / virtualization-security stack rather than WSL itself. Since you've now enabled `HypervisorPlatform` and rebooted, can you confirm `Get-WindowsOptionalFeature -Online -FeatureName HypervisorPlatform,VirtualMachinePlatform` both show `Enabled`, and that `bcdedit /enum {current}` shows `hypervisorlaunchtype Auto`?\n2. So we can see exactly where the VM launch aborts, please capture an ETW trace of a failing `wsl -d Ubuntu` using the full collector (this captures more than `wsl --status`):\n\n```\nInvoke-WebRequest -UseBasicParsing \"https://raw.githubusercontent.com/microsoft/WSL/master/diagnostics/collect-wsl-logs.ps1\" -OutFile collect-wsl-logs.ps1\nSet-ExecutionPolicy Bypass -Scope Process -Force\n.\\collect-wsl-logs.ps1\n```\n\nRun it, then reproduce `wsl -d Ubuntu` while it's tracing, and email the resulting `.zip` to wsl-gh-logs@microsoft.com with `#41179` in the subject (or attach it here). The `E_UNEXPECTED` at the VM-boot step usually resolves to a more specific vmcompute/HCS error inside that trace.",
+      "suggested_owner": "",
+      "owner_evidence": "CODEOWNERS default owner is @microsoft/wsl-maintainers; no path-specific evidence for launch/VBS stack in this env-specific report",
+      "owner_fallback_reason": "CODEOWNERS default owner is @microsoft/wsl-maintainers; no path-specific evidence for launch/VBS stack in this env-specific report",
+      "owner_kind": "assignee",
+      "current_labels": [
+        "emailed-logs"
+      ],
+      "updated_at": "2026-07-26T21:35:12Z",
       "priority_age_days": 0.0,
       "days_awaiting": 0.0,
       "aging_basis": "issue days_no_reply",
@@ -18458,7 +18544,7 @@
         "bug"
       ],
       "updated_at": "2026-05-18T18:38:26Z",
-      "priority_age_days": 69.0,
+      "priority_age_days": 70.0,
       "days_awaiting": 0.0,
       "aging_basis": "PR days_since_update",
       "pr_merge_state": "BLOCKED",
