@@ -1,13 +1,13 @@
 {
   "repo": "microsoft/dynwinrt",
-  "generated_at": "2026-07-28T03:12:51Z",
+  "generated_at": "2026-07-28T06:23:25Z",
   "awaiting_label": null,
   "awaiting_issues": 0,
   "awaiting_prs": 5,
   "backlog_issues": 2,
-  "backlog_prs": 5,
+  "backlog_prs": 6,
   "issues_total": 2,
-  "prs_total": 5,
+  "prs_total": 6,
   "issues": [
     {
       "number": 69,
@@ -129,7 +129,7 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-07-24T04:09:48Z",
-      "updated_at": "2026-07-28T03:16:35Z",
+      "updated_at": "2026-07-28T04:17:01Z",
       "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
@@ -165,6 +165,28 @@
       "baseline_glyph": "📦",
       "baseline_text": "Dependency PR — check CI & merge/close",
       "baseline_reason": "Dependency bump (new) — verify CI + changelog risk, then merge or close."
+    },
+    {
+      "number": 74,
+      "title": "Fix WinRT type signatures, GUID ABI, and empty struct vectors",
+      "url": "https://github.com/microsoft/dynwinrt/pull/74",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-07-28T06:05:30Z",
+      "updated_at": "2026-07-28T06:09:19Z",
+      "age_days": 0.0,
+      "triaged": true,
+      "awaiting": false,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "APPROVED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (new) — review it."
     }
   ]
 }
