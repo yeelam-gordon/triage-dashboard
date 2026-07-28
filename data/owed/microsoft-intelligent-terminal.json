@@ -1,6 +1,6 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-07-28T12:29:44Z",
+  "generated_at": "2026-07-28T15:17:23Z",
   "awaiting_label": "Needs-Triage",
   "awaiting_issues": 28,
   "awaiting_prs": 32,
@@ -1423,7 +1423,7 @@
       "comments": 1,
       "created_at": "2026-07-22T09:10:21Z",
       "updated_at": "2026-07-23T08:52:08Z",
-      "age_days": 5.0,
+      "age_days": 6.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -1432,7 +1432,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 5d) — review it."
+      "baseline_reason": "PR (waited 6d) — review it."
     },
     {
       "number": 488,
@@ -1445,7 +1445,7 @@
       "comments": 1,
       "created_at": "2026-07-24T06:58:09Z",
       "updated_at": "2026-07-24T10:06:55Z",
-      "age_days": 4.0,
+      "age_days": 5.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -1454,7 +1454,29 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 4d) — review it."
+      "baseline_reason": "PR (waited 5d) — review it."
+    },
+    {
+      "number": 490,
+      "title": "Restore persisted agent sessions and panes",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/490",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-07-24T09:56:06Z",
+      "updated_at": "2026-07-27T10:40:46Z",
+      "age_days": 2.0,
+      "triaged": true,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (waited 2d) — review it."
     },
     {
       "number": 447,
@@ -1479,16 +1501,16 @@
       "baseline_reason": "PR (waited 1d) — review it."
     },
     {
-      "number": 490,
-      "title": "Restore persisted agent sessions and panes",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/490",
+      "number": 484,
+      "title": "Route WTA CLI terminal-action proposals directly to Helpers",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/484",
       "kind": "pr",
       "is_community": null,
       "labels": [],
       "up": 0,
       "comments": 1,
-      "created_at": "2026-07-24T09:56:06Z",
-      "updated_at": "2026-07-27T10:40:46Z",
+      "created_at": "2026-07-23T12:55:37Z",
+      "updated_at": "2026-07-28T09:32:23Z",
       "age_days": 1.0,
       "triaged": true,
       "awaiting": true,
@@ -1523,28 +1545,6 @@
       "baseline_reason": "PR changes file modes/permissions (waited 1d) — review the security impact carefully + owner sign-off."
     },
     {
-      "number": 484,
-      "title": "Route WTA CLI terminal-action proposals directly to Helpers",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/484",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-07-23T12:55:37Z",
-      "updated_at": "2026-07-28T09:32:23Z",
-      "age_days": 0.0,
-      "triaged": true,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (new) — review it."
-    },
-    {
       "number": 506,
       "title": "Implement WTA chat mouse interactions and text selection",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/506",
@@ -1555,7 +1555,7 @@
       "comments": 1,
       "created_at": "2026-07-28T04:33:16Z",
       "updated_at": "2026-07-28T08:59:14Z",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -1564,7 +1564,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (new) — review it."
+      "baseline_reason": "PR (waited 1d) — review it."
     },
     {
       "number": 22,
