@@ -1,6 +1,6 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-07-28T09:27:48Z",
+  "generated_at": "2026-07-28T12:29:44Z",
   "awaiting_label": "Needs-Triage",
   "awaiting_issues": 28,
   "awaiting_prs": 32,
@@ -24,7 +24,7 @@
       "comments": 1,
       "created_at": "2026-06-04T15:31:43Z",
       "updated_at": "2026-06-28T06:17:42Z",
-      "age_days": 30.0,
+      "age_days": 31.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -32,7 +32,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 30d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 31d) — correct them, then route."
     },
     {
       "number": 192,
@@ -47,7 +47,7 @@
       "comments": 1,
       "created_at": "2026-06-02T18:31:10Z",
       "updated_at": "2026-07-10T05:47:39Z",
-      "age_days": 18.0,
+      "age_days": 19.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -55,7 +55,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 18d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_reason": "Feature/idea (waited 19d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     },
     {
       "number": 333,
@@ -850,7 +850,7 @@
       "comments": 1,
       "created_at": "2026-07-06T22:30:25Z",
       "updated_at": "2026-07-22T07:44:01Z",
-      "age_days": 6.0,
+      "age_days": 7.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -858,7 +858,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "🩺",
       "baseline_text": "Confirm crash — get repro/logs & route",
-      "baseline_reason": "Crash report (waited 6d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
+      "baseline_reason": "Crash report (waited 7d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
     }
   ],
   "prs": [
@@ -1137,7 +1137,7 @@
       "comments": 1,
       "created_at": "2026-07-03T05:26:14Z",
       "updated_at": "2026-07-03T05:31:53Z",
-      "age_days": 25.0,
+      "age_days": 26.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -1146,7 +1146,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 25d) — review it."
+      "baseline_reason": "PR (waited 26d) — review it."
     },
     {
       "number": 373,
@@ -1181,7 +1181,7 @@
       "comments": 1,
       "created_at": "2026-07-09T08:20:31Z",
       "updated_at": "2026-07-15T06:17:58Z",
-      "age_days": 13.0,
+      "age_days": 14.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -1190,7 +1190,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 13d) — review it."
+      "baseline_reason": "PR (waited 14d) — review it."
     },
     {
       "number": 441,
@@ -1225,7 +1225,7 @@
       "comments": 1,
       "created_at": "2026-07-18T07:49:56Z",
       "updated_at": "2026-07-18T07:58:04Z",
-      "age_days": 10.0,
+      "age_days": 11.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -1234,7 +1234,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 10d) — review it."
+      "baseline_reason": "PR (waited 11d) — review it."
     },
     {
       "number": 437,
@@ -1347,6 +1347,28 @@
       "baseline_reason": "PR (waited 8d) — review it."
     },
     {
+      "number": 462,
+      "title": "Upgrade Codex ACP adapter to 1.1.4",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/462",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-07-21T02:20:26Z",
+      "updated_at": "2026-07-21T05:39:43Z",
+      "age_days": 8.0,
+      "triaged": true,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (waited 8d) — review it."
+    },
+    {
       "number": 442,
       "title": "Durable sessions step 1: persist and restore shell tabs",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/442",
@@ -1363,28 +1385,6 @@
       "is_draft": false,
       "merge_state": "",
       "review_decision": "",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 7d) — review it."
-    },
-    {
-      "number": 462,
-      "title": "Upgrade Codex ACP adapter to 1.1.4",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/462",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-07-21T02:20:26Z",
-      "updated_at": "2026-07-21T05:39:43Z",
-      "age_days": 7.0,
-      "triaged": true,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
@@ -1457,6 +1457,28 @@
       "baseline_reason": "PR (waited 4d) — review it."
     },
     {
+      "number": 447,
+      "title": "Add shared BYOK provider support",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/447",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-07-18T06:42:01Z",
+      "updated_at": "2026-07-28T05:34:21Z",
+      "age_days": 1.0,
+      "triaged": true,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (waited 1d) — review it."
+    },
+    {
       "number": 490,
       "title": "Restore persisted agent sessions and panes",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/490",
@@ -1479,26 +1501,26 @@
       "baseline_reason": "PR (waited 1d) — review it."
     },
     {
-      "number": 447,
-      "title": "Add shared BYOK provider support",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/447",
+      "number": 505,
+      "title": "Add yolo mode: auto-approve tool-call permission requests",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/505",
       "kind": "pr",
       "is_community": null,
       "labels": [],
       "up": 0,
       "comments": 1,
-      "created_at": "2026-07-18T06:42:01Z",
-      "updated_at": "2026-07-28T05:34:21Z",
-      "age_days": 0.0,
+      "created_at": "2026-07-28T01:59:08Z",
+      "updated_at": "2026-07-28T05:42:09Z",
+      "age_days": 1.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
       "review_decision": "REVIEW_REQUIRED",
       "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (new) — review it."
+      "baseline_glyph": "🔐",
+      "baseline_text": "Permission-sensitive review",
+      "baseline_reason": "PR changes file modes/permissions (waited 1d) — review the security impact carefully + owner sign-off."
     },
     {
       "number": 484,
@@ -1510,7 +1532,7 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-07-23T12:55:37Z",
-      "updated_at": "2026-07-28T09:28:37Z",
+      "updated_at": "2026-07-28T09:32:23Z",
       "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
@@ -1521,28 +1543,6 @@
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
       "baseline_reason": "PR (new) — review it."
-    },
-    {
-      "number": 505,
-      "title": "Add yolo mode: auto-approve tool-call permission requests",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/505",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-07-28T01:59:08Z",
-      "updated_at": "2026-07-28T05:42:09Z",
-      "age_days": 0.0,
-      "triaged": true,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "🔐",
-      "baseline_text": "Permission-sensitive review",
-      "baseline_reason": "PR changes file modes/permissions (new) — review the security impact carefully + owner sign-off."
     },
     {
       "number": 506,
@@ -1599,7 +1599,7 @@
       "comments": 1,
       "created_at": "2026-05-31T07:48:32Z",
       "updated_at": "2026-05-31T07:57:16Z",
-      "age_days": 58.0,
+      "age_days": 59.0,
       "triaged": false,
       "awaiting": false,
       "is_draft": true,
@@ -1608,7 +1608,7 @@
       "baseline_action": "wait_author",
       "baseline_glyph": "🚧",
       "baseline_text": "Wait — PR is a draft/WIP",
-      "baseline_reason": "Draft/WIP PR (waited 58d) — don't review yet; nudge the author to mark it ready."
+      "baseline_reason": "Draft/WIP PR (waited 59d) — don't review yet; nudge the author to mark it ready."
     },
     {
       "number": 218,
