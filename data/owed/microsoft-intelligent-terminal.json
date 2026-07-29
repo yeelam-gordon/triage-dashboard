@@ -1,13 +1,13 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-07-29T12:15:57Z",
+  "generated_at": "2026-07-29T15:15:43Z",
   "awaiting_label": "Needs-Triage",
   "awaiting_issues": 28,
   "awaiting_prs": 32,
   "backlog_issues": 35,
-  "backlog_prs": 35,
+  "backlog_prs": 36,
   "issues_total": 28,
-  "prs_total": 26,
+  "prs_total": 27,
   "issues": [
     {
       "number": 231,
@@ -1423,7 +1423,7 @@
       "comments": 1,
       "created_at": "2026-07-22T09:10:21Z",
       "updated_at": "2026-07-23T08:52:08Z",
-      "age_days": 6.0,
+      "age_days": 7.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -1432,7 +1432,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 6d) — review it."
+      "baseline_reason": "PR (waited 7d) — review it."
     },
     {
       "number": 488,
@@ -1445,7 +1445,7 @@
       "comments": 1,
       "created_at": "2026-07-24T06:58:09Z",
       "updated_at": "2026-07-24T10:06:55Z",
-      "age_days": 5.0,
+      "age_days": 6.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -1454,29 +1454,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 5d) — review it."
-    },
-    {
-      "number": 447,
-      "title": "Add shared BYOK provider support",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/447",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-07-18T06:42:01Z",
-      "updated_at": "2026-07-28T05:34:21Z",
-      "age_days": 2.0,
-      "triaged": true,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 2d) — review it."
+      "baseline_reason": "PR (waited 6d) — review it."
     },
     {
       "number": 490,
@@ -1489,6 +1467,28 @@
       "comments": 1,
       "created_at": "2026-07-24T09:56:06Z",
       "updated_at": "2026-07-27T10:40:46Z",
+      "age_days": 3.0,
+      "triaged": true,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (waited 3d) — review it."
+    },
+    {
+      "number": 447,
+      "title": "Add shared BYOK provider support",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/447",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-07-18T06:42:01Z",
+      "updated_at": "2026-07-28T05:34:21Z",
       "age_days": 2.0,
       "triaged": true,
       "awaiting": true,
@@ -1555,7 +1555,7 @@
       "comments": 1,
       "created_at": "2026-07-29T08:07:55Z",
       "updated_at": "2026-07-29T09:39:18Z",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -1564,7 +1564,7 @@
       "baseline_action": "review",
       "baseline_glyph": "🔐",
       "baseline_text": "Permission-sensitive review",
-      "baseline_reason": "PR changes file modes/permissions (new) — review the security impact carefully + owner sign-off."
+      "baseline_reason": "PR changes file modes/permissions (waited 1d) — review the security impact carefully + owner sign-off."
     },
     {
       "number": 22,
@@ -1631,6 +1631,28 @@
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
       "baseline_reason": "PR (waited 14d) — review it."
+    },
+    {
+      "number": 512,
+      "title": "Show the token usage and cost",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/512",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-07-29T15:03:07Z",
+      "updated_at": "2026-07-29T15:13:12Z",
+      "age_days": 0.0,
+      "triaged": false,
+      "awaiting": false,
+      "is_draft": true,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "wait_author",
+      "baseline_glyph": "🚧",
+      "baseline_text": "Wait — PR is a draft/WIP",
+      "baseline_reason": "Draft/WIP PR (new) — don't review yet; nudge the author to mark it ready."
     }
   ]
 }
