@@ -145,29 +145,6 @@ test('PR approval is submitted with the signed-in user token', async () => {
     requests.push({ url: String(url), options });
     return response(200, { id: 1 });
   });
-
-  test('PRs needing review open direct review controls without workflow capability', async () => {
-    const { value } = await component();
-    const pr = { repo: 'microsoft/PowerToys', number: 86, kind: 'pr' };
-    value.authUser = { login: 'reviewer' };
-    value.authorizedRepos = ['microsoft/PowerToys'];
-    value.stateOf = () => ({ key: 'needs_review' });
-    value.canRunAgentReview = () => false;
-    value.primaryAction(pr);
-    assert.equal(value.reviewModal.open, true);
-    assert.equal(value.reviewModal.issue.number, 86);
-  });
-
-  test('model-suggested bot assignees are rejected', async () => {
-    const { value } = await component();
-    assert.deepEqual(
-      [...value.assigneeHandles({
-        owner_kind: 'assignee',
-        suggested_owner: 'alice, @copilot, dependabot[bot], github-actions, area-bot',
-      })],
-      ['alice'],
-    );
-  });
   value.token = 'ghu_reviewer';
   value.tokenExpiresAt = Date.now() + 120000;
   value.authUser = { login: 'reviewer' };
@@ -184,6 +161,29 @@ test('PR approval is submitted with the signed-in user token', async () => {
   assert.deepEqual(JSON.parse(requests[0].options.body), { event: 'APPROVE', body: 'Looks good.' });
 });
 
+test('PRs needing review open direct review controls without workflow capability', async () => {
+  const { value } = await component();
+  const pr = { repo: 'microsoft/PowerToys', number: 86, kind: 'pr' };
+  value.authUser = { login: 'reviewer' };
+  value.authorizedRepos = ['microsoft/PowerToys'];
+  value.stateOf = () => ({ key: 'needs_review' });
+  value.canRunAgentReview = () => false;
+  value.primaryAction(pr);
+  assert.equal(value.reviewModal.open, true);
+  assert.equal(value.reviewModal.issue.number, 86);
+});
+
+test('model-suggested bot assignees are rejected', async () => {
+  const { value } = await component();
+  assert.deepEqual(
+    [...value.assigneeHandles({
+      owner_kind: 'assignee',
+      suggested_owner: 'alice, @copilot, dependabot[bot], github-actions, area-bot',
+    })],
+    ['alice'],
+  );
+});
+
 test('OAuth callback exchanges with PKCE and grants mapped team repos', async () => {
   const { value, context, location } = await component(async (url) => {
     const href = String(url);
@@ -195,44 +195,6 @@ test('OAuth callback exchanges with PKCE and grants mapped team repos', async ()
     return response(404, { message: 'Not Found' });
   });
 
-  test('concurrent expiry checks share one refresh-token exchange', async () => {
-    let exchanges = 0;
-    const { value } = await component(async (url) => {
-      if (String(url) !== 'https://github.com/login/oauth/access_token') throw new Error(`Unexpected ${url}`);
-      exchanges++;
-      await new Promise(resolve => setTimeout(resolve, 10));
-      return response(200, { access_token: 'ghu_new', refresh_token: 'ghr_new', expires_in: 28800 });
-    });
-    value.oauthClientId = 'Iv1.test';
-    value.token = 'ghu_old';
-    value.refreshToken = 'ghr_old';
-    value.tokenExpiresAt = Date.now();
-    await Promise.all([value.ensureToken(), value.ensureToken(), value.ensureToken()]);
-    assert.equal(exchanges, 1);
-    assert.equal(value.token, 'ghu_new');
-    assert.equal(value.refreshToken, 'ghr_new');
-  });
-
-  test('sign-out prevents an in-flight refresh from restoring tokens', async () => {
-    let resolveExchange;
-    const exchange = new Promise(resolve => { resolveExchange = resolve; });
-    const { value } = await component(async (url) => {
-      if (String(url) !== 'https://github.com/login/oauth/access_token') throw new Error(`Unexpected ${url}`);
-      await exchange;
-      return response(200, { access_token: 'ghu_resurrected', refresh_token: 'ghr_resurrected', expires_in: 28800 });
-    });
-    value.oauthClientId = 'Iv1.test';
-    value.token = 'ghu_old';
-    value.refreshToken = 'ghr_old';
-    value.tokenExpiresAt = Date.now();
-    const pending = value.ensureToken();
-    value.clearToken(false);
-    resolveExchange();
-    await assert.rejects(pending, /Authentication changed/);
-    assert.equal(value.token, '');
-    assert.equal(value.refreshToken, '');
-    assert.equal(value.authUser, null);
-  });
   value.oauthClientId = 'Iv1.test';
   value.oauthCallbackUrl = 'https://yeelam-gordon.github.io/triage-dashboard/';
   value.authPolicy = {
@@ -248,6 +210,45 @@ test('OAuth callback exchanges with PKCE and grants mapped team repos', async ()
   assert.equal(value.authUser.login, 'octocat');
   assert.deepEqual([...value.authorizedRepos], ['microsoft/WSL']);
   assert.equal(context.localStorage.getItem('gh_token'), null);
+});
+
+test('concurrent expiry checks share one refresh-token exchange', async () => {
+  let exchanges = 0;
+  const { value } = await component(async (url) => {
+    if (String(url) !== 'https://github.com/login/oauth/access_token') throw new Error(`Unexpected ${url}`);
+    exchanges++;
+    await new Promise(resolve => setTimeout(resolve, 10));
+    return response(200, { access_token: 'ghu_new', refresh_token: 'ghr_new', expires_in: 28800 });
+  });
+  value.oauthClientId = 'Iv1.test';
+  value.token = 'ghu_old';
+  value.refreshToken = 'ghr_old';
+  value.tokenExpiresAt = Date.now();
+  await Promise.all([value.ensureToken(), value.ensureToken(), value.ensureToken()]);
+  assert.equal(exchanges, 1);
+  assert.equal(value.token, 'ghu_new');
+  assert.equal(value.refreshToken, 'ghr_new');
+});
+
+test('sign-out prevents an in-flight refresh from restoring tokens', async () => {
+  let resolveExchange;
+  const exchange = new Promise(resolve => { resolveExchange = resolve; });
+  const { value } = await component(async (url) => {
+    if (String(url) !== 'https://github.com/login/oauth/access_token') throw new Error(`Unexpected ${url}`);
+    await exchange;
+    return response(200, { access_token: 'ghu_resurrected', refresh_token: 'ghr_resurrected', expires_in: 28800 });
+  });
+  value.oauthClientId = 'Iv1.test';
+  value.token = 'ghu_old';
+  value.refreshToken = 'ghr_old';
+  value.tokenExpiresAt = Date.now();
+  const pending = value.ensureToken();
+  value.clearToken(false);
+  resolveExchange();
+  await assert.rejects(pending, /Authentication changed/);
+  assert.equal(value.token, '');
+  assert.equal(value.refreshToken, '');
+  assert.equal(value.authUser, null);
 });
 
 test('queued Copilot prompt is POSIX-quoted against command substitution', async () => {
