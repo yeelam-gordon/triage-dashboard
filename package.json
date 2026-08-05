@@ -1,0 +1,17 @@
+{
+  "name": "triage-dashboard",
+  "private": true,
+  "scripts": {
+    "build": "tailwindcss -i ./assets/tailwind-input.css -o ./assets/tailwind.css --minify && node ./scripts/copy-vendor.mjs && node ./scripts/check-csp.mjs",
+    "test": "node --test test/auth.test.mjs && node ./scripts/check-csp.mjs",
+    "test:browser": "node ./test/browser-smoke.mjs"
+  },
+  "dependencies": {
+    "alpinejs": "3.14.9",
+    "chart.js": "4.4.0"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.55.0",
+    "tailwindcss": "3.4.17"
+  }
+}

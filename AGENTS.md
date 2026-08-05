@@ -143,8 +143,9 @@ The dashboard computes these from the fields above; don't add them to the JSON:
 ## Action queue (queue Copilot commands to run locally)
 
 Each triaged row has two ways to act:
-- **Do it now** — post the drafted reply or add labels immediately (needs a
-  GitHub token entered in the dashboard).
+- **Do it now** — authorized GitHub team members post the drafted reply or add
+  labels immediately using a GitHub App SPA user token; GitHub attributes the
+  action to that signed-in human.
 - **▶ Run agent** — opens the ready-to-run Copilot CLI command for the row's
   state (branch setup + `copilot -p "…"`), skill-aware for PowerToys.
 
@@ -153,6 +154,11 @@ collects that Copilot command into a local queue (browser localStorage). The
 **📋 Action queue** panel lets you **Copy all** or **Export script**
 (`triage-actions.sh`) to run the batch locally with the Copilot CLI. Nothing is
 sent anywhere from the dashboard — the commands do the work when you run them.
+
+The dashboard is read-only for anonymous users and signed-in users who are not
+members of a team/repository mapping in `auth-config.json`. The team check is a
+client-side UX gate; GitHub's repository permissions and GitHub App installation
+scope are the actual enforcement boundary.
 
 The authoritative field contract and deep-triage cap guidance live in
 [`scripts/collector-prompt.md`](scripts/collector-prompt.md).

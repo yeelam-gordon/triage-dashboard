@@ -16,32 +16,69 @@ by Copilot CLI running locally and consumed by an interactive browser UI.
   - trending topics with 7d delta
   - no-reply queue with per-issue action buttons
 
-## Single-click actions
+## Authentication and actions
 
-Each issue card exposes four actions that call the GitHub REST API directly
-from the browser using a PAT you paste once (stored in `localStorage`):
+The public dashboard is read-only by default. It uses the GitHub Apps
+**Single-page application support preview** (authorization-code flow with
+mandatory PKCE) for secretless, backend-free GitHub login:
+
+1. The browser redirects to GitHub to authorize the GitHub App.
+2. GitHub redirects back with an authorization code.
+3. The SPA exchanges the code directly with GitHub using PKCE (no client
+   secret). GitHub enables CORS for callback URLs marked as SPA clients.
+4. Access and refresh tokens remain in memory only and disappear on reload.
+5. The dashboard checks active membership in the teams listed in
+   `auth-config.json`. Authorized repos receive write actions; every other row
+   remains read-only.
+
+GitHub still enforces the actual security boundary: the user must have the
+repository permission, and the GitHub App must be installed on that repository.
+The browser team check controls dashboard UX but is not tamper-proof.
+
+Actions that GitHub can perform directly use the user access token and are
+attributed to the signed-in human. Coding/investigation work remains a local
+Copilot CLI command in the Action queue:
 
 | Button | API call |
 |---|---|
-| 💬 Preview reply | `POST /repos/{o}/{r}/issues/{n}/comments` (after you review/edit the suggested body) |
-| 🤖 Send to Copilot | `POST /repos/{o}/{r}/issues/{n}/assignees` with `assignees:["Copilot"]` — triggers the Copilot coding agent |
+| 💬 Preview reply | `POST /repos/{o}/{r}/issues/{n}/comments` as the signed-in user |
+| 🏷 Apply labels | `POST /repos/{o}/{r}/issues/{n}/labels` as the signed-in user |
+| 👤 Assign owner | `POST /repos/{o}/{r}/issues/{n}/assignees` as the signed-in user |
+| 🗂 Close duplicate | Post the edited duplicate note, then close the issue as not planned |
+| ✅ Approve / request changes | `POST /repos/{o}/{r}/pulls/{n}/reviews` as the signed-in user |
 | 🛠 Run review skill | `POST /repos/{o}/{r}/actions/workflows/agent-review.yml/dispatches` with `inputs.skill` |
-| + label chip | `POST /repos/{o}/{r}/issues/{n}/labels` |
+| ＋ Queue agent task | Stores a skill-aware `copilot -p "…"` command locally for copy/export |
 
 ## First-time setup
 
 1. **Create the repo** (or fork this one) — e.g. `yeelam-gordon/triage-dashboard`.
 2. Push the contents of this folder.
 3. In the repo on github.com: **Settings → Pages → Source: GitHub Actions**.
-4. Open the deployed URL.
-5. Click **🔒 Sign in**, paste a fine-grained PAT with:
-   - `Issues: read & write`
-   - `Pull requests: read & write`
-   - `Actions: read & write`
-   on the repos you triage.
+4. Register a GitHub App (see [GitHub App setup](#github-app-setup)), install it
+   on the target repositories, and put its public client ID in
+   `auth-config.json`.
+5. Open the deployed URL and click **Sign in**.
 6. Drop `agent-review.yml` into each *target* repo too (so dispatch from the
    dashboard finds it). Or change `config.review_workflow` in `data/latest.json`
    to point at a workflow that already exists in each target repo.
+
+## GitHub App setup
+
+Register the GitHub App with:
+
+- **Callback URL:** `https://yeelam-gordon.github.io/triage-dashboard/`
+- **SPA client:** enabled (GitHub Apps SPA support preview)
+- **Repository permissions:** Metadata read, Issues read/write, Pull requests
+  read/write, Actions read/write
+- **Organization permissions:** Members read
+- **User access token expiration:** enabled
+
+Install the app on only the target repositories. Copy the public **Client ID**
+into `auth-config.json`. Add or change authorized teams there; each team maps
+to the repository rows it can act on.
+
+No client secret is stored in this repository or browser. If the GitHub App is
+not configured, the dashboard fails closed to read-only.
 
 ## Local schedule
 
@@ -93,6 +130,6 @@ Actions cron), atomic-write rules, concurrency, and conventions.
 
 - Zero hosting cost (GitHub Pages is free).
 - No backend to maintain.
-- Token never leaves your browser.
-- For *personal* use only — if you ever share the URL, swap PAT for the
-  GitHub OAuth Device Flow.
+- No client secret in the page.
+- GitHub App user tokens remain memory-only and actions are attributed to the
+  signed-in user.
