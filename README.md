@@ -50,6 +50,8 @@ fixed validated actions (no arbitrary shell endpoint):
 Copilot/code tasks remain reviewed, copyable local commands. The bridge records
 successful actions in `data/actions/latest.json`; when `push_receipts` is true,
 it commits and pushes the receipt so the public Pages view shows who applied it.
+The local Action queue is persisted in `.triage-local/queue.json` (gitignored),
+so it survives browser restarts and is shared across local browser windows.
 
 ## First-time setup
 

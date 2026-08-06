@@ -10,6 +10,8 @@ import { pathToFileURL } from 'node:url';
 const exec = promisify(execFile);
 const root = resolve(process.cwd());
 const localConfigPath = join(root, 'local-config.json');
+const localStateDir = join(root, '.triage-local');
+const queuePath = join(localStateDir, 'queue.json');
 const defaultConfig = { port: 43129, push_receipts: true, allowed_repos: [] };
 const config = existsSync(localConfigPath)
   ? { ...defaultConfig, ...JSON.parse(await readFile(localConfigPath, 'utf8')) }
@@ -20,6 +22,7 @@ const origin = `http://${host}:${port}`;
 const csrf = randomBytes(32).toString('base64url');
 const execOptions = { windowsHide: true, maxBuffer: 10 * 1024 * 1024 };
 let gitQueue = Promise.resolve();
+let queueOperations = Promise.resolve();
 
 const mime = {
   '.html': 'text/html; charset=utf-8',
@@ -38,6 +41,72 @@ function json(res, status, value) {
     'Referrer-Policy': 'no-referrer',
   });
   res.end(JSON.stringify(value));
+}
+
+async function readQueue() {
+  try {
+    const value = JSON.parse(await readFile(queuePath, 'utf8'));
+    return value && typeof value === 'object' && !Array.isArray(value) ? value : {};
+  } catch {
+    return {};
+  }
+}
+
+export function validateQueueEntry(key, entry, allowlist) {
+  if (!/^[^#]+#\d+$/.test(key) || !entry || typeof entry !== 'object') throw new Error('Invalid queue entry');
+  const repo = validateRepo(entry.repo, allowlist);
+  const number = validateNumber(entry.number);
+  if (key !== `${repo}#${number}`) throw new Error('Queue key does not match repo/number');
+  return {
+    repo,
+    number,
+    url: validateText(entry.url, 'url', 1000),
+    kind: entry.kind === 'pr' ? 'pr' : 'issue',
+    title: String(entry.title || '').slice(0, 1000),
+    action: validateText(entry.action, 'action', 50),
+    label: validateText(entry.label, 'label', 500),
+    skill: String(entry.skill || '').slice(0, 200),
+    command: validateText(entry.command, 'command', 20000),
+    queued_at: String(entry.queued_at || new Date().toISOString()),
+  };
+}
+
+async function writeQueue(items) {
+  const allowlist = await trackedRepos();
+  const clean = {};
+  for (const [key, entry] of Object.entries(items || {})) {
+    if (Object.keys(clean).length >= 500) throw new Error('Queue limit exceeded');
+    clean[key] = validateQueueEntry(key, entry, allowlist);
+  }
+  await mkdir(localStateDir, { recursive: true });
+  const temp = `${queuePath}.${randomBytes(8).toString('hex')}.tmp`;
+  await writeFile(temp, JSON.stringify(clean, null, 2) + '\n');
+  await rename(temp, queuePath);
+  return clean;
+}
+
+function withQueueLock(task) {
+  const operation = queueOperations.then(task, task);
+  queueOperations = operation.catch(() => {});
+  return operation;
+}
+
+async function mutateQueue(payload) {
+  return withQueueLock(async () => {
+    const allowlist = await trackedRepos();
+    const current = await readQueue();
+    if (payload.op === 'put') {
+      const key = String(payload.key || '');
+      current[key] = validateQueueEntry(key, payload.entry, allowlist);
+    } else if (payload.op === 'remove') {
+      delete current[String(payload.key || '')];
+    } else if (payload.op === 'clear') {
+      for (const key of Object.keys(current)) delete current[key];
+    } else {
+      throw new Error('Invalid queue operation');
+    }
+    return writeQueue(current);
+  });
 }
 
 async function gh(args) {
@@ -259,7 +328,7 @@ async function serveFile(req, res, pathname) {
   const relativePath = pathname === '/' ? 'index.html' : decodeURIComponent(pathname).replace(/^\/+/, '');
   const target = resolve(root, relativePath);
   const rel = relative(root, target);
-  if (rel.startsWith('..') || rel.includes('.git') || rel.startsWith('node_modules') || relativePath === 'local-config.json') {
+  if (rel.startsWith('..') || rel.includes('.git') || rel.startsWith('node_modules') || rel.startsWith('.triage-local') || relativePath === 'local-config.json') {
     res.writeHead(403); res.end('Forbidden'); return;
   }
   try {
@@ -296,6 +365,18 @@ const server = createHttpServer(async (req, res) => {
         csrf,
         push_receipts: !!config.push_receipts,
       });
+    }
+    if (url.pathname === '/api/local/queue' && req.method === 'GET') {
+      return json(res, 200, { items: await readQueue() });
+    }
+    if (url.pathname === '/api/local/queue' && req.method === 'POST') {
+      if (req.headers.origin !== origin) return json(res, 403, { error: 'Invalid origin' });
+      if (req.headers['x-triage-token'] !== csrf) return json(res, 403, { error: 'Invalid local token' });
+      if (!String(req.headers['content-type'] || '').startsWith('application/json')) {
+        return json(res, 415, { error: 'JSON required' });
+      }
+      const payload = await readBody(req);
+      return json(res, 200, { ok: true, items: await mutateQueue(payload) });
     }
     if (url.pathname === '/api/local/action' && req.method === 'POST') {
       if (req.headers.origin !== origin) return json(res, 403, { error: 'Invalid origin' });

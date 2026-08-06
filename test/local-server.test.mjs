@@ -6,6 +6,7 @@ import {
   validateText,
   validateLabels,
   validateAssignees,
+  validateQueueEntry,
 } from '../scripts/local-server.mjs';
 
 test('repository actions are limited to the dashboard allowlist', () => {
@@ -29,4 +30,24 @@ test('labels are deduplicated and assignee bots are rejected', () => {
     ['alice'],
   );
   assert.throws(() => validateAssignees(['copilot', 'github-actions']), /No allowed/);
+});
+
+test('local queue entries are bounded and tied to an allowed repo key', () => {
+  const allowlist = new Set(['microsoft/PowerToys']);
+  const entry = validateQueueEntry('microsoft/PowerToys#86', {
+    repo: 'microsoft/PowerToys',
+    number: 86,
+    url: 'https://github.com/microsoft/PowerToys/issues/86',
+    kind: 'issue',
+    title: 'Test',
+    action: 'agent',
+    label: 'Plan & fix',
+    command: "copilot -p 'review issue 86'",
+  }, allowlist);
+  assert.equal(entry.repo, 'microsoft/PowerToys');
+  assert.throws(() => validateQueueEntry('microsoft/WSL#86', {
+    ...entry,
+    repo: 'microsoft/WSL',
+  }, allowlist), /allowlist/);
+  assert.throws(() => validateQueueEntry('microsoft/PowerToys#87', entry, allowlist), /does not match/);
 });

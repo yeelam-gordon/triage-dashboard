@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-eval' 'sha256-YbTcWc5pstceCwgWWta91gxy8LKwmWwL6fr9MdYn5q8='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://avatars.githubusercontent.com; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-eval' 'sha256-DTaE6SRPRUMOzBLILbU6IwAwhNr1HlOXABuseEiQwDM='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://avatars.githubusercontent.com; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'" />
 <meta name="referrer" content="no-referrer" />
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><text y='.9em' font-size='56'>📋</text></svg>" />
 <title>Triage Dashboard</title>
@@ -595,7 +595,7 @@ function dashboard() {
       // "repo#number". Global shard covers the landing view + small repos.
       this.loadDeepTriage('_all');
       this.loadActionReceipts();
-      this.loadQueue();
+      await this.loadQueue();
       if (this.localMode) {
         this._localRefreshTimer = setInterval(() => this.refreshLocalData(), 5 * 60 * 1000);
       }
@@ -667,12 +667,32 @@ function dashboard() {
     // ---- Queue of Copilot commands to run locally ----
     // "Queue for action" collects the proposed Copilot instruction/command for a
     // row (the same command the ▶ Run agent modal shows), so you can batch them
-    // and run them locally. Stored in localStorage; export as a runnable script.
-    loadQueue() {
-      try { this.queue = JSON.parse(localStorage.getItem('triage_cmd_queue') || '{}') || {}; } catch (e) { this.queue = {}; }
+    // and run them locally. In local operator mode the bridge persists the queue
+    // in .triage-local/queue.json (ignored by git); public mode has no queue.
+    async loadQueue() {
+      if (!this.localMode) { this.queue = {}; return; }
+      try {
+        const response = await fetch('/api/local/queue', { cache: 'no-store' });
+        if (!response.ok) throw new Error(`queue failed (${response.status})`);
+        this.queue = (await response.json()).items || {};
+      } catch (error) {
+        this.queue = {};
+        this.toast('err', `Could not load local queue: ${error.message}`);
+      }
     },
-    persistQueue() {
-      localStorage.setItem('triage_cmd_queue', JSON.stringify(this.queue));
+    async mutateQueue(op, key = '', entry = null) {
+      if (!this.localMode || !this.localCsrf) return;
+      const response = await fetch('/api/local/queue', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-Triage-Token': this.localCsrf,
+        },
+        body: JSON.stringify({ op, key, entry }),
+      });
+      const result = await response.json();
+      if (!response.ok || !result.ok) throw new Error(result.error || `queue save failed (${response.status})`);
+      this.queue = result.items || {};
     },
     queueKey(iss) {
       return iss ? `${iss.repo}#${iss.number}` : '';
@@ -687,31 +707,33 @@ function dashboard() {
     _shq(s) { // single-quote-escape for a POSIX shell argument
       return `'${String(s).replace(/'/g, `'\\''`)}'`;
     },
-    _store(iss, entry) {
+    async _store(iss, entry) {
       if (!iss) return;
       const key = this.queueKey(iss);
-      this.queue = Object.assign({}, this.queue, {
-        [key]: Object.assign({ repo: iss.repo, number: iss.number, url: iss.url, kind: iss.kind, title: iss.title, queued_at: new Date().toISOString() }, entry)
-      });
-      this.persistQueue();
-      this.toast('ok', `Queued: ${entry.label} · ${iss.repo}#${iss.number}`);
+      const value = Object.assign({ repo: iss.repo, number: iss.number, url: iss.url, kind: iss.kind, title: iss.title, queued_at: new Date().toISOString() }, entry);
+      try {
+        await this.mutateQueue('put', key, value);
+        this.toast('ok', `Queued: ${entry.label} · ${iss.repo}#${iss.number}`);
+      } catch (error) {
+        this.toast('err', `Queue save failed: ${error.message}`);
+      }
     },
     // Queue a comment (the drafted/edited reply) as a local `gh ... comment` command.
-    queueComment(iss, body) {
+    async queueComment(iss, body) {
       const text = String(body != null ? body : (iss.suggested_reply || this.draftTemplate(iss) || '')).trim();
       if (!text) { this.toast('err', 'Nothing to queue — empty comment'); return; }
       const sub = iss.kind === 'pr' ? 'pr' : 'issue';
       const cmd = `gh ${sub} comment ${iss.number} --repo ${iss.repo} --body ${this._shq(text)}`;
-      this._store(iss, { action: 'comment', label: 'Comment', skill: '', command: cmd });
+      await this._store(iss, { action: 'comment', label: 'Comment', skill: '', command: cmd });
     },
     // Queue label additions as a local `gh ... edit --add-label` command.
-    queueLabels(iss, labels) {
+    async queueLabels(iss, labels) {
       const list = (labels || this.netNewSuggestedLabels(iss)).filter(Boolean);
       if (!list.length) { this.toast('info', 'No new labels to queue'); return; }
       const sub = iss.kind === 'pr' ? 'pr' : 'issue';
       const parts = list.map(l => `--add-label ${this._shq(l)}`).join(' ');
       const cmd = `gh ${sub} edit ${iss.number} --repo ${iss.repo} ${parts}`;
-      this._store(iss, { action: 'labels', label: `Labels: ${list.join(', ')}`, skill: '', command: cmd });
+      await this._store(iss, { action: 'labels', label: `Labels: ${list.join(', ')}`, skill: '', command: cmd });
     },
     // Queue the Copilot instruction for the row's state (assign/fix/review/etc.).
     commandFor(iss) {
@@ -722,18 +744,18 @@ function dashboard() {
       lines.push(cmd);
       return { label: t.label, skill: t.skill || '', branch: t.branch || '', command: lines.join('\n') };
     },
-    queueCommand(iss) {
+    async queueCommand(iss) {
       const c = this.commandFor(iss);
-      this._store(iss, { action: 'agent', label: c.label, skill: c.skill, command: c.command });
+      await this._store(iss, { action: 'agent', label: c.label, skill: c.skill, command: c.command });
     },
-    queueModalCommand() {
+    async queueModalCommand() {
       const iss = this.fixModal.issue;
       if (!iss) return;
       const lines = [];
       const branch = String(this.fixModal.branch || '').trim();
       if (branch) lines.push('git fetch origin', `git checkout -b ${this._shq(branch)} origin/main`, '');
       lines.push(`copilot -p ${this._shq(String(this.fixModal.prompt || '').replace(/\n/g, ' '))}`);
-      this._store(iss, {
+      await this._store(iss, {
         action: 'agent',
         label: this.fixModal.agentLabel || (this.fixModal.mode === 'prototype' ? 'Spike / prototype' : 'Plan & fix'),
         skill: this.fixModal.agentSkill || '',
@@ -767,12 +789,15 @@ function dashboard() {
       const t = this.agentTaskFor(iss);
       return `＋ Queue: ${t.glyph || '▶'} ${t.label}`;
     },
-    unqueue(key) {
-      const q = Object.assign({}, this.queue); delete q[key]; this.queue = q;
-      this.persistQueue();
+    async unqueue(key) {
+      try { await this.mutateQueue('remove', key); } catch (error) {
+        this.toast('err', `Queue save failed: ${error.message}`);
+      }
     },
-    clearQueue() {
-      this.queue = {}; this.persistQueue();
+    async clearQueue() {
+      try { await this.mutateQueue('clear'); } catch (error) {
+        this.toast('err', `Queue save failed: ${error.message}`);
+      }
     },
     get queueList() {
       return Object.entries(this.queue).map(([key, q]) => Object.assign({ key }, q))

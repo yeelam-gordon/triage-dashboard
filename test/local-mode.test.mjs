@@ -86,6 +86,7 @@ test('local action sends structured payload and CSRF token', async () => {
       },
       sync: { pushed: true },
     });
+
   });
   value.localMode = true;
   value.localCsrf = 'csrf';
@@ -106,6 +107,39 @@ test('local action sends structured payload and CSRF token', async () => {
     labels: ['Issue-Bug'],
   });
   assert.equal(value.actionReceipts['microsoft/PowerToys#86'].actor, 'octocat');
+});
+
+test('local queue loads and persists through the bridge', async () => {
+  const requests = [];
+  const existing = {
+    'microsoft/PowerToys#86': {
+      repo: 'microsoft/PowerToys',
+      number: 86,
+      url: 'https://github.com/microsoft/PowerToys/issues/86',
+      kind: 'issue',
+      title: 'Test',
+      action: 'agent',
+      label: 'Plan & fix',
+      skill: '',
+      command: "copilot -p 'test'",
+      queued_at: '2026-08-06T00:00:00Z',
+    },
+  };
+  const { value } = await component(async (url, options = {}) => {
+    requests.push({ url: String(url), options });
+    if (!options.method) return response(200, { items: existing });
+    const payload = JSON.parse(options.body);
+    return response(200, { ok: true, items: payload.op === 'clear' ? {} : existing });
+  });
+  value.localMode = true;
+  value.localCsrf = 'csrf';
+  await value.loadQueue();
+  assert.equal(value.queuedCount, 1);
+  await value.clearQueue();
+  assert.equal(value.queuedCount, 0);
+  assert.equal(requests[1].url, '/api/local/queue');
+  assert.equal(requests[1].options.headers['X-Triage-Token'], 'csrf');
+  assert.deepEqual(JSON.parse(requests[1].options.body), { op: 'clear', key: '', entry: null });
 });
 
 test('public direct write fails closed before local API call', async () => {

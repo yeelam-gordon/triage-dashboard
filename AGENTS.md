@@ -149,7 +149,9 @@ Each triaged row has two ways to act:
   state (branch setup + `copilot -p "…"`), skill-aware for PowerToys.
 
 **＋ Queue command** (on the row, or "＋ Queue for later" in the Run agent modal)
-collects that Copilot command into a local queue (browser localStorage). The
+collects that Copilot command into `.triage-local/queue.json`, persisted by the
+loopback bridge and ignored by git. It is shared by local browser windows but
+never appears on the public site. The
 **📋 Action queue** panel lets you **Copy all** or **Export script**
 (`triage-actions.sh`) to run the batch locally with the Copilot CLI. Nothing is
 sent anywhere from the dashboard — the commands do the work when you run them.
