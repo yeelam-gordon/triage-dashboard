@@ -143,9 +143,8 @@ The dashboard computes these from the fields above; don't add them to the JSON:
 ## Action queue (queue Copilot commands to run locally)
 
 Each triaged row has two ways to act:
-- **Do it now** — authorized GitHub team members post the drafted reply or add
-  labels immediately using a GitHub App SPA user token; GitHub attributes the
-  action to that signed-in human.
+- **Do it now (local operator mode)** — the loopback bridge performs fixed
+  validated `gh` actions under the locally authenticated user.
 - **▶ Run agent** — opens the ready-to-run Copilot CLI command for the row's
   state (branch setup + `copilot -p "…"`), skill-aware for PowerToys.
 
@@ -155,10 +154,11 @@ collects that Copilot command into a local queue (browser localStorage). The
 (`triage-actions.sh`) to run the batch locally with the Copilot CLI. Nothing is
 sent anywhere from the dashboard — the commands do the work when you run them.
 
-The dashboard is read-only for anonymous users and signed-in users who are not
-members of a team/repository mapping in `auth-config.json`. The team check is a
-client-side UX gate; GitHub's repository permissions and GitHub App installation
-scope are the actual enforcement boundary.
+The public GitHub Pages dashboard is always read-only. Run
+`scripts/start-local-dashboard.ps1` to serve the same dashboard from
+`127.0.0.1`; it detects the local bridge and enables actions. Successful action
+receipts are written to `data/actions/latest.json` and may be committed/pushed
+back to the public dashboard.
 
 The authoritative field contract and deep-triage cap guidance live in
 [`scripts/collector-prompt.md`](scripts/collector-prompt.md).

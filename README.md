@@ -9,76 +9,62 @@ by Copilot CLI running locally and consumed by an interactive browser UI.
   Scheduler. It invokes `copilot -p ...` to analyze tracked repos via `gh` and
   writes `data/latest.json` + `data/<date>.json`, then commits & pushes.
 - **GitHub Pages** auto-deploys on push (`.github/workflows/deploy-pages.yml`).
-- **Dashboard** (`index.html`, plain HTML + Alpine.js + Tailwind via CDN — no
-  build step) renders:
+- **Dashboard** (`index.html`, Alpine.js + Chart.js + compiled Tailwind,
+  self-hosted under `assets/`) renders:
   - summary cards (open issues/PRs, no-reply backlog, category count)
   - category bar chart (Chart.js)
   - trending topics with 7d delta
   - no-reply queue with per-issue action buttons
 
-## Authentication and actions
+## Public and local modes
 
-The public dashboard is read-only by default. It uses the GitHub Apps
-**Single-page application support preview** (authorization-code flow with
-mandatory PKCE) for secretless, backend-free GitHub login:
+The same dashboard runs in two modes:
 
-1. The browser redirects to GitHub to authorize the GitHub App.
-2. GitHub redirects back with an authorization code.
-3. The SPA exchanges the code directly with GitHub using PKCE (no client
-   secret). GitHub enables CORS for callback URLs marked as SPA clients.
-4. Access and refresh tokens remain in memory only and disappear on reload.
-5. The dashboard checks active membership in the teams listed in
-   `auth-config.json`. Authorized repos receive write actions; every other row
-   remains read-only.
+### Public mode
 
-GitHub still enforces the actual security boundary: the user must have the
-repository permission, and the GitHub App must be installed on that repository.
-The browser team check controls dashboard UX but is not tamper-proof.
+`https://yeelam-gordon.github.io/triage-dashboard/`
 
-Actions that GitHub can perform directly use the user access token and are
-attributed to the signed-in human. Coding/investigation work remains a local
-Copilot CLI command in the Action queue:
+- Shared, read-only view for everyone.
+- No login, PAT, GitHub App, or browser token.
+- Action receipts pushed by local operators are visible publicly.
 
-| Button | API call |
+### Local operator mode
+
+```powershell
+pwsh scripts\start-local-dashboard.ps1
+```
+
+Opens `http://127.0.0.1:43129/` and uses the account from `gh auth status`.
+The local bridge binds only to loopback, serves the same UI/data, and exposes
+fixed validated actions (no arbitrary shell endpoint):
+
+| Action | Local command |
 |---|---|
-| 💬 Preview reply | `POST /repos/{o}/{r}/issues/{n}/comments` as the signed-in user |
-| 🏷 Apply labels | `POST /repos/{o}/{r}/issues/{n}/labels` as the signed-in user |
-| 👤 Assign owner | `POST /repos/{o}/{r}/issues/{n}/assignees` as the signed-in user |
-| 🗂 Close duplicate | Post the edited duplicate note, then close the issue as not planned |
-| ✅ Approve / request changes | `POST /repos/{o}/{r}/pulls/{n}/reviews` as the signed-in user |
-| 🛠 Run review skill | `POST /repos/{o}/{r}/actions/workflows/agent-review.yml/dispatches` with `inputs.skill` |
-| ＋ Queue agent task | Stores a skill-aware `copilot -p "…"` command locally for copy/export |
+| Post reply | `gh issue/pr comment` |
+| Apply labels | `gh issue/pr edit --add-label` |
+| Assign owner | `gh issue/pr edit --add-assignee` |
+| Close duplicate | comment, then `gh issue close` |
+| Approve/request changes | `gh pr review` |
+| Run review workflow | `gh workflow run` |
+
+Copilot/code tasks remain reviewed, copyable local commands. The bridge records
+successful actions in `data/actions/latest.json`; when `push_receipts` is true,
+it commits and pushes the receipt so the public Pages view shows who applied it.
 
 ## First-time setup
 
 1. **Create the repo** (or fork this one) — e.g. `yeelam-gordon/triage-dashboard`.
 2. Push the contents of this folder.
 3. In the repo on github.com: **Settings → Pages → Source: GitHub Actions**.
-4. Register a GitHub App (see [GitHub App setup](#github-app-setup)), install it
-   on the target repositories, and put its public client ID in
-   `auth-config.json`.
-5. Open the deployed URL and click **Sign in**.
-6. Drop `agent-review.yml` into each *target* repo too (so dispatch from the
-   dashboard finds it). Or change `config.review_workflow` in `data/latest.json`
-   to point at a workflow that already exists in each target repo.
+4. Open the deployed URL for the public read-only view.
+5. Operators clone the repository, run `gh auth login`, then start local mode
+   with `pwsh scripts\start-local-dashboard.ps1`.
 
-## GitHub App setup
+`start-local-dashboard.ps1` pulls `origin/main` before starting. While running,
+the local page pulls and reloads fresh dashboard data every five minutes.
 
-Register the GitHub App with:
-
-- **Callback URL:** `https://yeelam-gordon.github.io/triage-dashboard/`
-- **SPA client:** enabled (GitHub Apps SPA support preview)
-- **Repository permissions:** Metadata read, Issues read/write, Pull requests
-  read/write, Actions read/write
-- **Organization permissions:** Members read
-- **User access token expiration:** enabled
-
-Install the app on only the target repositories. Copy the public **Client ID**
-into `auth-config.json`. Add or change authorized teams there; each team maps
-to the repository rows it can act on.
-
-No client secret is stored in this repository or browser. If the GitHub App is
-not configured, the dashboard fails closed to read-only.
+Copy `local-config.example.json` to `local-config.json` to change the port,
+or enable/disable receipt pushes.
 
 ## Local schedule
 
@@ -126,10 +112,10 @@ See [**AGENTS.md**](AGENTS.md) — the definitive contract for any agent
 It covers the JSON schema, three delivery methods (git push / Contents API /
 Actions cron), atomic-write rules, concurrency, and conventions.
 
-## Why static + REST-from-browser?
+## Why public + local?
 
 - Zero hosting cost (GitHub Pages is free).
-- No backend to maintain.
-- No client secret in the page.
-- GitHub App user tokens remain memory-only and actions are attributed to the
-  signed-in user.
+- Public users never receive write credentials.
+- Local actions use each operator's existing `gh` identity and permissions.
+- No GitHub App approval, PAT distribution, shared token, or central backend.
+- The public dashboard and local operator view use the same repository/data.

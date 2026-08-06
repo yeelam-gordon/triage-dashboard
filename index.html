@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-eval' 'sha256-XMK0HNRwPpc+yFxDsl5NrN03PieI2HcYCbcWVBCOvGk='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://avatars.githubusercontent.com; connect-src 'self' https://api.github.com https://github.com; object-src 'none'; base-uri 'none'; form-action 'self' https://github.com" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-eval' 'sha256-YbTcWc5pstceCwgWWta91gxy8LKwmWwL6fr9MdYn5q8='; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://avatars.githubusercontent.com; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'self'" />
 <meta name="referrer" content="no-referrer" />
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><text y='.9em' font-size='56'>📋</text></svg>" />
 <title>Triage Dashboard</title>
@@ -33,14 +33,12 @@
           <option :value="c" x-text="c"></option>
         </template>
       </select>
-      <button x-show="isAuthorized" @click="showQueue = true"
+      <button x-show="localMode" @click="showQueue = true"
         class="px-3 py-1.5 rounded text-sm font-medium bg-sky-100 text-sky-800 hover:bg-sky-200"
         x-text="'📋 Action queue' + (queuedCount ? ' (' + queuedCount + ')' : '')"></button>
-      <button @click="authUser ? clearToken() : signIn()"
-        class="px-3 py-1.5 rounded text-sm font-medium"
-        :class="isAuthorized ? 'bg-emerald-100 text-emerald-700' : (authUser ? 'bg-slate-100 text-slate-700' : 'bg-amber-100 text-amber-800')"
-        :title="authUser ? 'Click to sign out' : 'Sign in with GitHub'"
-        x-text="authChecking ? 'Checking…' : (authUser ? ('@' + authUser.login + (isAuthorized ? '' : ' · read-only')) : '🔒 Sign in')"></button>
+      <span class="px-3 py-1.5 rounded text-sm font-medium"
+        :class="localMode ? 'bg-emerald-100 text-emerald-700' : 'bg-slate-100 text-slate-600'"
+        x-text="localMode ? ('💻 Local · @' + localActor.login) : '🌐 Public · read-only'"></span>
     </div>
   </div>
 </header>
@@ -314,6 +312,9 @@
                 </span>
                 <span class="px-1.5 py-0.5 bg-slate-100 text-slate-600 rounded" x-show="iss.updated_at" :title="'Updated ' + new Date(iss.updated_at).toLocaleString()" x-text="'📅 updated ' + updatedText(iss)"></span>
                 <span class="px-1.5 py-0.5 bg-green-100 text-green-700 rounded font-medium" x-show="isRecent(iss)">🆕 recent</span>
+                <span class="px-1.5 py-0.5 bg-emerald-100 text-emerald-800 rounded font-medium" x-show="actionReceiptFor(iss)"
+                  :title="actionReceiptFor(iss) ? (actionReceiptFor(iss).result + ' · ' + new Date(actionReceiptFor(iss).applied_at).toLocaleString()) : ''"
+                  x-text="actionReceiptFor(iss) ? ('✓ ' + actionReceiptFor(iss).action + ' by @' + actionReceiptFor(iss).actor) : ''"></span>
               </div>
               <a :href="iss.url" target="_blank" class="block mt-0.5 text-sm font-medium text-slate-900 hover:text-blue-600 truncate" x-text="iss.title"></a>
               <div class="mt-2 text-sm text-slate-700 flex items-start gap-1.5" x-show="iss.triaged">
@@ -344,7 +345,7 @@
                   <span>
                     <button x-show="canAct(iss) && !chip.exists" @click="addLabel(iss, chip.name)"
                     class="px-2 py-0.5 text-xs rounded border border-dashed border-slate-300 text-slate-600 hover:bg-blue-50 hover:border-blue-300"
-                    :title="'Apply label as @' + (authUser ? authUser.login : '') + ': ' + chip.name">
+                    :title="'Apply label as @' + (localActor ? localActor.login : 'local-user') + ': ' + chip.name">
                     + <span x-text="chip.name"></span>
                     </button>
                     <span x-show="!canAct(iss) && !chip.exists" class="px-2 py-0.5 text-xs rounded border border-slate-200 text-slate-400"
@@ -423,11 +424,11 @@
   class="fixed inset-0 bg-black/40 flex items-center justify-center z-20" style="display:none">
   <div class="bg-white rounded-lg shadow-xl w-[640px] max-w-full p-5">
     <h3 class="text-sm font-semibold">Draft message · <span x-text="replyModal.issue && (replyModal.issue.repo + '#' + replyModal.issue.number)"></span></h3>
-    <p class="mt-1 text-xs text-slate-500" x-text="replyModal.mode === 'close_dup' ? 'Edit the duplicate note, then comment and close this issue as the signed-in user.' : 'Edit the reply, then post it directly to GitHub as ' + (authUser ? '@' + authUser.login : 'the signed-in user') + '.'"></p>
+    <p class="mt-1 text-xs text-slate-500" x-text="replyModal.mode === 'close_dup' ? 'Edit the duplicate note, then apply it through your local gh session.' : 'Edit the reply, then post it through your local gh session as @' + (localActor ? localActor.login : 'local-user') + '.'"></p>
     <textarea x-model="replyModal.body" rows="10" class="mt-3 w-full border border-slate-300 rounded p-2 text-sm font-mono"></textarea>
     <div class="mt-3 flex justify-end gap-2">
       <button @click="replyModal.open = false" class="px-3 py-1.5 text-sm rounded border border-slate-300">Cancel</button>
-      <button @click="submitReplyAction()" class="px-3 py-1.5 text-sm rounded bg-blue-600 text-white" x-text="replyModal.mode === 'close_dup' ? 'Comment & close duplicate' : (authUser ? ('Post as @' + authUser.login) : 'Post comment')"></button>
+      <button @click="submitReplyAction()" class="px-3 py-1.5 text-sm rounded bg-blue-600 text-white" x-text="replyModal.mode === 'close_dup' ? 'Comment & close duplicate' : ('Post as @' + (localActor ? localActor.login : 'local-user'))"></button>
     </div>
   </div>
 </div>
@@ -494,7 +495,7 @@
     <div class="mt-4 flex justify-end gap-2">
       <button @click="reviewModal.open = false" class="px-3 py-1.5 text-sm rounded border border-slate-300">Cancel</button>
       <button @click="submitPrReview('REQUEST_CHANGES')" class="px-3 py-1.5 text-sm rounded bg-amber-600 text-white">Request changes</button>
-      <button @click="submitPrReview('APPROVE')" class="px-3 py-1.5 text-sm rounded bg-emerald-600 text-white" x-text="authUser ? ('Approve as @' + authUser.login) : 'Approve'"></button>
+      <button @click="submitPrReview('APPROVE')" class="px-3 py-1.5 text-sm rounded bg-emerald-600 text-white" x-text="'Approve as @' + (localActor ? localActor.login : 'local-user')"></button>
       <button x-show="reviewModal.issue && canRunAgentReview(reviewModal.issue)" @click="dispatchReview()" class="px-3 py-1.5 text-sm rounded bg-slate-700 text-white">Run skill</button>
     </div>
   </div>
@@ -565,20 +566,14 @@ function dashboard() {
     owedFull: {},
     owedLoading: {},
     deepTriage: {},
+    actionReceipts: {},
     queue: {},
     showQueue: false,
-    token: '',
-    refreshToken: '',
-    tokenExpiresAt: 0,
-    _refreshPromise: null,
-    _authGeneration: 0,
-    oauthClientId: '',
-    oauthCallbackUrl: '',
-    authChecking: false,
-    authUser: null,
-    authTeams: [],
-    authorizedRepos: [],
-    authPolicy: { organization: 'microsoft', teams: [] },
+    localMode: false,
+    localActor: null,
+    localCsrf: '',
+    localPushReceipts: false,
+    _localRefreshTimer: null,
     replyModal: { open: false, issue: null, body: '', mode: 'comment' },
     fixModal: { open: false, issue: null, mode: 'fix', branch: '', prompt: '' },
     reviewModal: { open: false, issue: null, skill: '', body: '' },
@@ -586,19 +581,7 @@ function dashboard() {
     _toastId: 0,
 
     async init() {
-      try {
-        const authResponse = await fetch('auth-config.json', { cache: 'no-store' });
-        if (authResponse.ok) {
-          const authConfig = await authResponse.json();
-          this.authPolicy = authConfig;
-          this.oauthClientId = String(authConfig.github_app_client_id || '');
-          this.oauthCallbackUrl = String(authConfig.callback_url || location.origin + location.pathname);
-          await this.completeOAuthLogin();
-        }
-      } catch (e) {
-        this.authPolicy = { organization: 'microsoft', teams: [] };
-        this.toast('err', `Authentication configuration failed: ${e.message}`);
-      }
+      await this.detectLocalMode();
       try {
         const r = await fetch('data/latest.json', { cache: 'no-store' });
         this.data = await r.json();
@@ -611,7 +594,11 @@ function dashboard() {
       // Enriches rows beyond the collector's top slice; merged over owed rows by
       // "repo#number". Global shard covers the landing view + small repos.
       this.loadDeepTriage('_all');
+      this.loadActionReceipts();
       this.loadQueue();
+      if (this.localMode) {
+        this._localRefreshTimer = setInterval(() => this.refreshLocalData(), 5 * 60 * 1000);
+      }
       // Restore repo selection from URL hash (e.g. #repo=microsoft/intelligent-terminal)
       const hashRepo = this.readHashRepo();
       if (hashRepo) { this.activeRepo = this.resolveRepoName(hashRepo); if (this.activeRepo) this.loadOwedFull(this.activeRepo); }
@@ -2027,198 +2014,90 @@ function dashboard() {
       // Charts are rendered from Alpine-computed chartCards so they follow filters and worklist kind.
     },
 
-    // ---- GitHub App SPA authentication (PKCE preview; tokens are memory-only) ----
+    // ---- Local operator mode ----
     get isAuthorized() {
-      return !!(this.authUser && this.authorizedRepos.length);
+      return this.localMode;
     },
     canAct(iss) {
-      return !!(iss && this.authUser && this.authorizedRepos.includes(String(iss.repo || '')));
+      return !!(iss && this.localMode);
     },
-    _base64url(bytes) {
-      let text = '';
-      for (const byte of bytes) text += String.fromCharCode(byte);
-      return btoa(text).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/g, '');
-    },
-    _randomToken(size = 32) {
-      return this._base64url(crypto.getRandomValues(new Uint8Array(size)));
-    },
-    async _pkceChallenge(verifier) {
-      return this._base64url(new Uint8Array(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(verifier))));
-    },
-    async signIn() {
-      if (!this.oauthClientId) {
-        this.toast('err', 'GitHub App SPA client ID is not configured');
-        return;
-      }
-      const verifier = this._randomToken(48);
-      const state = this._randomToken(32);
-      sessionStorage.setItem('triage_oauth_verifier', verifier);
-      sessionStorage.setItem('triage_oauth_state', state);
-      sessionStorage.setItem('triage_oauth_return_hash', location.hash || '');
-      const target = new URL('https://github.com/login/oauth/authorize');
-      target.searchParams.set('client_id', this.oauthClientId);
-      target.searchParams.set('redirect_uri', this.oauthCallbackUrl);
-      target.searchParams.set('state', state);
-      target.searchParams.set('code_challenge', await this._pkceChallenge(verifier));
-      target.searchParams.set('code_challenge_method', 'S256');
-      target.searchParams.set('allow_signup', 'false');
-      target.searchParams.set('prompt', 'select_account');
-      location.assign(target.toString());
-    },
-    async completeOAuthLogin() {
-      const url = new URL(location.href);
-      const code = url.searchParams.get('code');
-      const returnedState = url.searchParams.get('state');
-      const oauthError = url.searchParams.get('error');
-      if (!code && !oauthError) return;
-      const generation = ++this._authGeneration;
-      this.authChecking = true;
+    async detectLocalMode() {
+      if (String(location.hostname || '').endsWith('github.io') || new URL(location.href).searchParams.get('public') === '1') return;
       try {
-        if (oauthError) throw new Error(url.searchParams.get('error_description') || oauthError);
-        const expectedState = sessionStorage.getItem('triage_oauth_state');
-        const verifier = sessionStorage.getItem('triage_oauth_verifier');
-        if (!expectedState || returnedState !== expectedState || !verifier) throw new Error('Invalid OAuth state');
-        const body = new URLSearchParams({
-          client_id: this.oauthClientId,
-          code,
-          redirect_uri: this.oauthCallbackUrl,
-          code_verifier: verifier,
-        });
-        const response = await fetch('https://github.com/login/oauth/access_token', {
-          method: 'POST',
-          headers: { 'Accept': 'application/json', 'Content-Type': 'application/x-www-form-urlencoded' },
-          body,
-        });
-        const tokenData = await response.json();
-        if (!response.ok || tokenData.error || !tokenData.access_token) {
-          throw new Error(tokenData.error_description || tokenData.error || `Token exchange failed (${response.status})`);
-        }
-        if (generation !== this._authGeneration) throw new Error('Authentication changed');
-        this.token = tokenData.access_token;
-        this.refreshToken = tokenData.refresh_token || '';
-        this.tokenExpiresAt = Date.now() + Number(tokenData.expires_in || 28800) * 1000;
-        await this.loadAuthorizedUser(true);
-      } catch (e) {
-        this.clearToken(false);
-        this.toast('err', `Sign-in failed: ${e.message}`);
-      } finally {
-        const returnHash = sessionStorage.getItem('triage_oauth_return_hash') || '';
-        sessionStorage.removeItem('triage_oauth_state');
-        sessionStorage.removeItem('triage_oauth_verifier');
-        sessionStorage.removeItem('triage_oauth_return_hash');
-        for (const name of ['code', 'state', 'error', 'error_description']) url.searchParams.delete(name);
-        history.replaceState(null, '', url.pathname + (url.search ? url.search : '') + returnHash);
-        this.authChecking = false;
+        const response = await fetch('/api/local/status', { cache: 'no-store' });
+        if (!response.ok) return;
+        const status = await response.json();
+        this.localMode = status.local === true;
+        this.localActor = status.actor || null;
+        this.localCsrf = String(status.csrf || '');
+        this.localPushReceipts = status.push_receipts === true;
+      } catch {
+        this.localMode = false;
+        this.localActor = null;
+        this.localCsrf = '';
       }
     },
-    async refreshAccessToken() {
-      if (!this.refreshToken) throw new Error('Session expired; sign in again');
-      const generation = this._authGeneration;
-      const response = await fetch('https://github.com/login/oauth/access_token', {
+    async loadActionReceipts() {
+      try {
+        const response = await fetch('data/actions/latest.json', { cache: 'no-store' });
+        if (response.ok) this.actionReceipts = (await response.json()).items || {};
+      } catch {}
+    },
+    actionReceiptFor(iss) {
+      return iss ? this.actionReceipts[`${iss.repo}#${iss.number}`] || null : null;
+    },
+    async localAction(payload) {
+      if (!this.localMode || !this.localCsrf) throw new Error('Open the local operator dashboard to take actions');
+      const response = await fetch('/api/local/action', {
         method: 'POST',
-        headers: { 'Accept': 'application/json', 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams({
-          client_id: this.oauthClientId,
-          grant_type: 'refresh_token',
-          refresh_token: this.refreshToken,
-        }),
+        headers: {
+          'Content-Type': 'application/json',
+          'X-Triage-Token': this.localCsrf,
+        },
+        body: JSON.stringify(payload),
       });
-      const tokenData = await response.json();
-      if (!response.ok || tokenData.error || !tokenData.access_token) throw new Error(tokenData.error_description || tokenData.error || 'Refresh failed');
-      if (generation !== this._authGeneration) throw new Error('Authentication changed');
-      this.token = tokenData.access_token;
-      this.refreshToken = tokenData.refresh_token || this.refreshToken;
-      this.tokenExpiresAt = Date.now() + Number(tokenData.expires_in || 28800) * 1000;
+      const result = await response.json();
+      if (!response.ok || !result.ok) throw new Error(result.error || `Local action failed (${response.status})`);
+      if (result.receipt) {
+        this.actionReceipts = Object.assign({}, this.actionReceipts, {
+          [`${result.receipt.repo}#${result.receipt.number}`]: result.receipt,
+        });
+      }
+      if (result.sync && result.sync.error) this.toast('info', result.sync.error);
+      return result;
     },
-    async ensureToken() {
-      if (!this.token) throw new Error('Sign in first');
-      if (this.tokenExpiresAt && Date.now() >= this.tokenExpiresAt - 60000) {
-        if (!this._refreshPromise) {
-          this._refreshPromise = this.refreshAccessToken().finally(() => {
-            this._refreshPromise = null;
-          });
+    async refreshLocalData() {
+      if (!this.localMode || !this.localCsrf) return;
+      try {
+        const sync = await fetch('/api/local/sync', {
+          method: 'POST',
+          headers: { 'X-Triage-Token': this.localCsrf },
+        });
+        if (!sync.ok) throw new Error(`sync failed (${sync.status})`);
+        const latest = await fetch(`data/latest.json?t=${Date.now()}`, { cache: 'no-store' });
+        if (!latest.ok) throw new Error(`latest.json failed (${latest.status})`);
+        const nextData = await latest.json();
+        await this.loadActionReceipts();
+        await this.loadDeepTriage('_all');
+        if (nextData.generated_at !== this.data.generated_at) {
+          this.data = nextData;
+          if (this.data.config) Object.assign(this.config, this.data.config);
+          if (this.data.skills) this.skills = this.data.skills;
+          this.owedFull = {};
+          if (this.activeRepo) await this.loadOwedFull(this.activeRepo);
+          this.resetPages();
+          this.toast('ok', 'Synced latest dashboard data from origin/main');
         }
-        await this._refreshPromise;
+      } catch (error) {
+        this.toast('err', `Local sync failed: ${error.message}`);
       }
-    },
-    async loadAuthorizedUser(showToast = true) {
-      const generation = this._authGeneration;
-      const user = await this.gh('GET', '/user');
-      const grantedTeams = [];
-      const grantedRepos = new Set();
-      const org = this.authPolicy.organization || 'microsoft';
-      for (const policy of (this.authPolicy.teams || [])) {
-        try {
-          const membership = await this.gh('GET', `/orgs/${encodeURIComponent(org)}/teams/${encodeURIComponent(policy.slug)}/memberships/${encodeURIComponent(user.login)}`);
-          if (membership && membership.state === 'active') {
-            grantedTeams.push(`${org}/${policy.slug}`);
-            for (const repo of (policy.repos || [])) grantedRepos.add(repo);
-          }
-        } catch (e) {
-          if (!String(e.message).startsWith('404 ')) throw e;
-        }
-      }
-      if (generation !== this._authGeneration) throw new Error('Authentication changed');
-      this.authUser = { login: user.login, avatar_url: user.avatar_url, name: user.name || '' };
-      this.authTeams = grantedTeams;
-      this.authorizedRepos = [...grantedRepos];
-      if (showToast) {
-        if (grantedRepos.size) this.toast('ok', `Signed in as @${user.login} · authorized for ${grantedRepos.size} repo(s)`);
-        else this.toast('info', `Signed in as @${user.login} · read-only (not in an authorized team)`);
-      }
-    },
-    clearToken(showToast = true) {
-      this._authGeneration++;
-      this.token = '';
-      this.refreshToken = '';
-      this.tokenExpiresAt = 0;
-      this._refreshPromise = null;
-      this.authUser = null;
-      this.authTeams = [];
-      this.authorizedRepos = [];
-      if (showToast) this.toast('info', 'Signed out; dashboard is read-only');
     },
     async requireAuthorization(iss) {
-      if (!this.authUser) {
-        this.toast('err', 'Sign in first');
-        return false;
-      }
       if (!this.canAct(iss)) {
-        this.toast('err', `Read-only: @${this.authUser.login} is not authorized for ${iss && iss.repo}`);
-        return false;
-      }
-      try {
-        await this.loadAuthorizedUser(false);
-      } catch (error) {
-        this.clearToken(false);
-        this.toast('err', `Session expired or authorization failed: ${error.message}`);
-        return false;
-      }
-      if (!this.canAct(iss)) {
-        this.toast('err', `Authorization changed; ${iss && iss.repo} is now read-only`);
+        this.toast('err', 'Open this dashboard in local operator mode first');
         return false;
       }
       return true;
-    },
-
-    // ---- GitHub API ----
-    async gh(method, path, body) {
-      await this.ensureToken();
-      const r = await fetch('https://api.github.com' + path, {
-        method,
-        headers: {
-          'Accept': 'application/vnd.github+json',
-          'Authorization': 'Bearer ' + this.token,
-          'X-GitHub-Api-Version': '2022-11-28',
-          'Content-Type': 'application/json',
-        },
-        body: body ? JSON.stringify(body) : undefined,
-      });
-      if (!r.ok) {
-        const txt = await r.text();
-        throw new Error(r.status + ' ' + r.statusText + ': ' + txt.slice(0, 200));
-      }
-      return r.status === 204 ? null : await r.json();
     },
 
     // ---- Action handlers ----
@@ -2361,8 +2240,13 @@ function dashboard() {
       const iss = this.replyModal.issue;
       if (!await this.requireAuthorization(iss)) return;
       try {
-        const [owner, repo] = iss.repo.split('/');
-        await this.gh('POST', `/repos/${owner}/${repo}/issues/${iss.number}/comments`, { body: this.replyModal.body });
+        await this.localAction({
+          action: 'comment',
+          repo: iss.repo,
+          number: iss.number,
+          kind: iss.kind,
+          body: this.replyModal.body,
+        });
         this.toast('ok', `Posted on ${iss.repo}#${iss.number}`);
         this.replyModal.open = false;
       } catch (e) { this.toast('err', e.message); }
@@ -2375,17 +2259,20 @@ function dashboard() {
       const iss = this.reviewModal.issue;
       if (!await this.requireAuthorization(iss)) return;
       try {
-        const [owner, repo] = iss.repo.split('/');
         const body = String(this.reviewModal.body || '').trim();
         if (event === 'REQUEST_CHANGES' && !body) {
           this.toast('err', 'Explain the requested changes before submitting');
           return;
         }
-        await this.gh('POST', `/repos/${owner}/${repo}/pulls/${iss.number}/reviews`, {
+        await this.localAction({
+          action: 'pr_review',
+          repo: iss.repo,
+          number: iss.number,
+          kind: 'pr',
           event,
           body,
         });
-        this.toast('ok', `${event === 'APPROVE' ? 'Approved' : 'Requested changes'} as @${this.authUser.login}`);
+        this.toast('ok', `${event === 'APPROVE' ? 'Approved' : 'Requested changes'} as @${this.localActor.login}`);
         this.reviewModal.open = false;
       } catch (e) { this.toast('err', e.message); }
     },
@@ -2393,8 +2280,12 @@ function dashboard() {
       const iss = this.reviewModal.issue;
       if (!await this.requireAuthorization(iss)) return;
       try {
-        const [owner, repo] = iss.repo.split('/');
-        await this.gh('POST', `/repos/${owner}/${repo}/actions/workflows/${this.config.review_workflow}/dispatches`, {
+        await this.localAction({
+          action: 'workflow',
+          repo: iss.repo,
+          number: iss.number,
+          kind: iss.kind,
+          workflow: this.config.review_workflow,
           ref: this.config.default_ref,
           inputs: { issue_number: String(iss.number), skill: this.reviewModal.skill },
         });
@@ -2406,8 +2297,7 @@ function dashboard() {
     async addLabel(iss, label) {
       if (!await this.requireAuthorization(iss)) return;
       try {
-        const [owner, repo] = iss.repo.split('/');
-        await this.gh('POST', `/repos/${owner}/${repo}/issues/${iss.number}/labels`, { labels: [label] });
+        await this.localAction({ action: 'labels', repo: iss.repo, number: iss.number, kind: iss.kind, labels: [label] });
         this.toast('ok', `+ ${label} on ${iss.repo}#${iss.number}`);
         iss.suggested_labels = (iss.suggested_labels || []).filter(l => l !== label);
       } catch (e) { this.toast('err', e.message); }
@@ -2416,9 +2306,8 @@ function dashboard() {
       const list = (labels || []).filter(Boolean);
       if (!list.length || !await this.requireAuthorization(iss)) return;
       try {
-        const [owner, repo] = iss.repo.split('/');
-        await this.gh('POST', `/repos/${owner}/${repo}/issues/${iss.number}/labels`, { labels: list });
-        this.toast('ok', `Added ${list.join(', ')} as @${this.authUser.login}`);
+        await this.localAction({ action: 'labels', repo: iss.repo, number: iss.number, kind: iss.kind, labels: list });
+        this.toast('ok', `Added ${list.join(', ')} as @${this.localActor.login}`);
         iss.suggested_labels = (iss.suggested_labels || []).filter(l => !list.includes(l));
       } catch (e) { this.toast('err', e.message); }
     },
@@ -2437,23 +2326,23 @@ function dashboard() {
       const evidence = String(iss.owner_evidence || iss.owner_fallback_reason || 'No ownership evidence was supplied.');
       if (!window.confirm(`Assign ${assignees.map(value => '@' + value).join(', ')} to ${iss.repo}#${iss.number}?\n\nEvidence: ${evidence}`)) return;
       try {
-        const [owner, repo] = iss.repo.split('/');
-        await this.gh('POST', `/repos/${owner}/${repo}/issues/${iss.number}/assignees`, { assignees });
-        this.toast('ok', `Assigned ${assignees.map(value => '@' + value).join(', ')} as @${this.authUser.login}`);
+        await this.localAction({ action: 'assign', repo: iss.repo, number: iss.number, kind: iss.kind, assignees });
+        this.toast('ok', `Assigned ${assignees.map(value => '@' + value).join(', ')} as @${this.localActor.login}`);
       } catch (e) { this.toast('err', e.message); }
     },
     async closeDuplicate() {
       const iss = this.replyModal.issue;
       if (!await this.requireAuthorization(iss)) return;
       try {
-        const [owner, repo] = iss.repo.split('/');
         const body = String(this.replyModal.body || '').trim();
-        if (body) await this.gh('POST', `/repos/${owner}/${repo}/issues/${iss.number}/comments`, { body });
-        await this.gh('PATCH', `/repos/${owner}/${repo}/issues/${iss.number}`, {
-          state: 'closed',
-          state_reason: 'not_planned',
+        await this.localAction({
+          action: 'close_duplicate',
+          repo: iss.repo,
+          number: iss.number,
+          kind: 'issue',
+          body,
         });
-        this.toast('ok', `Closed duplicate as @${this.authUser.login}`);
+        this.toast('ok', `Closed duplicate as @${this.localActor.login}`);
         this.replyModal.open = false;
       } catch (e) { this.toast('err', e.message); }
     },

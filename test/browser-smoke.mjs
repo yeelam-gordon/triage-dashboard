@@ -17,20 +17,28 @@ page.on('console', message => {
   if (message.type() === 'error') errors.push(message.text());
 });
 page.on('pageerror', error => errors.push(error.message));
-await page.goto(process.env.DASHBOARD_URL || 'http://127.0.0.1:8765', { waitUntil: 'networkidle' });
+const targetUrl = process.env.DASHBOARD_URL || 'http://127.0.0.1:8765/?public=1';
+const expectLocal = process.env.EXPECT_LOCAL === '1';
+await page.goto(targetUrl, { waitUntil: 'networkidle' });
 
 const result = {
   cloaked: await page.locator('body').getAttribute('x-cloak'),
-  signInText: (await page.locator('header button').last().textContent())?.trim(),
+  modeText: (await page.locator('header').getByText(/Public · read-only|Local · @/).first().textContent())?.trim(),
   repoVisible: await page.getByText('PowerToys', { exact: true }).count(),
-  readOnlyVisible: await page.getByText('🔒 Read-only', { exact: true }).count(),
-  errors,
+  readOnlyVisible: await page.getByText('🔒 Read-only', { exact: true }).evaluateAll(elements =>
+    elements.filter(element => getComputedStyle(element).display !== 'none' && element.getClientRects().length).length),
+  actionVisible: await page.locator('button').evaluateAll(elements =>
+    elements.filter(element => getComputedStyle(element).display !== 'none' && element.getClientRects().length && /Apply labels|Draft|Assign|Review|Close as duplicate/.test(element.textContent || '')).length),
+  errors: errors.filter(error => !error.includes('status of 404')),
 };
 console.log(JSON.stringify(result, null, 2));
 await browser.close();
 
 if (result.cloaked !== null) throw new Error('Dashboard remained cloaked');
-if (!result.signInText?.includes('Sign in')) throw new Error(`Sign-in control did not render: ${result.signInText}`);
+const expectedMode = expectLocal ? 'Local · @' : 'Public · read-only';
+if (!result.modeText?.includes(expectedMode)) throw new Error(`Expected ${expectedMode}, got: ${result.modeText}`);
 if (!result.repoVisible) throw new Error('Repository data did not render');
-if (!result.readOnlyVisible) throw new Error('Anonymous read-only state did not render');
+if (expectLocal && result.readOnlyVisible) throw new Error('Read-only badges remained visible in local mode');
+if (!expectLocal && !result.readOnlyVisible) throw new Error('Public read-only state did not render');
+if (expectLocal && !result.actionVisible) throw new Error('Local action controls did not render');
 if (errors.length) throw new Error(`Browser errors:\n${errors.join('\n')}`);
