@@ -1,13 +1,13 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-08-07T11:59:28Z",
+  "generated_at": "2026-08-07T15:10:13Z",
   "awaiting_label": "Needs-Triage",
   "awaiting_issues": 33,
-  "awaiting_prs": 36,
+  "awaiting_prs": 35,
   "backlog_issues": 40,
-  "backlog_prs": 39,
+  "backlog_prs": 38,
   "issues_total": 33,
-  "prs_total": 32,
+  "prs_total": 31,
   "issues": [
     {
       "number": 231,
@@ -73,7 +73,7 @@
       "created_at": "2026-06-20T12:24:47Z",
       "updated_at": "2026-07-21T02:54:47Z",
       "age_days": 18.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -658,7 +658,7 @@
       "created_at": "2026-07-27T03:17:13Z",
       "updated_at": "2026-07-27T03:17:45Z",
       "age_days": 12.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -810,7 +810,7 @@
       "comments": 1,
       "created_at": "2026-07-30T08:43:49Z",
       "updated_at": "2026-07-30T08:44:27Z",
-      "age_days": 8.0,
+      "age_days": 9.0,
       "triaged": false,
       "awaiting": true,
       "fix_ready": false,
@@ -818,7 +818,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags (SessionManagement)",
-      "baseline_reason": "Wrong/missing tags (SessionManagement) (waited 8d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (SessionManagement) (waited 9d) — correct them, then route."
     },
     {
       "number": 228,
@@ -1024,7 +1024,7 @@
       "created_at": "2026-05-19T18:03:05Z",
       "updated_at": "2026-05-21T16:11:54Z",
       "age_days": 78.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1046,7 +1046,7 @@
       "created_at": "2026-05-21T15:14:26Z",
       "updated_at": "2026-05-21T23:48:24Z",
       "age_days": 78.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1441,7 +1441,7 @@
       "comments": 1,
       "created_at": "2026-07-24T09:56:06Z",
       "updated_at": "2026-07-27T10:40:46Z",
-      "age_days": 11.0,
+      "age_days": 12.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -1450,7 +1450,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 11d) — review it."
+      "baseline_reason": "PR (waited 12d) — review it."
     },
     {
       "number": 505,
@@ -1463,7 +1463,7 @@
       "comments": 1,
       "created_at": "2026-07-28T01:59:08Z",
       "updated_at": "2026-07-30T08:11:44Z",
-      "age_days": 8.0,
+      "age_days": 9.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -1472,7 +1472,7 @@
       "baseline_action": "review",
       "baseline_glyph": "🔐",
       "baseline_text": "Permission-sensitive review",
-      "baseline_reason": "PR changes file modes/permissions (waited 8d) — review the security impact carefully + owner sign-off."
+      "baseline_reason": "PR changes file modes/permissions (waited 9d) — review the security impact carefully + owner sign-off."
     },
     {
       "number": 520,
@@ -1726,7 +1726,7 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-08-07T04:21:44Z",
-      "updated_at": "2026-08-07T11:49:57Z",
+      "updated_at": "2026-08-07T12:13:33Z",
       "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
@@ -1750,29 +1750,7 @@
       "created_at": "2026-08-07T11:44:31Z",
       "updated_at": "2026-08-07T11:47:51Z",
       "age_days": 0.0,
-      "triaged": false,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (new) — review it."
-    },
-    {
-      "number": 570,
-      "title": "Unify inline notice styling",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/570",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-08-07T11:58:41Z",
-      "updated_at": "2026-08-07T11:59:28Z",
-      "age_days": 0.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1837,7 +1815,7 @@
       "comments": 1,
       "created_at": "2026-08-07T07:54:12Z",
       "updated_at": "2026-08-07T07:59:55Z",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "triaged": false,
       "awaiting": false,
       "is_draft": true,
@@ -1846,7 +1824,7 @@
       "baseline_action": "wait_author",
       "baseline_glyph": "🚧",
       "baseline_text": "Wait — PR is a draft/WIP",
-      "baseline_reason": "Draft/WIP PR (new) — don't review yet; nudge the author to mark it ready."
+      "baseline_reason": "Draft/WIP PR (waited 1d) — don't review yet; nudge the author to mark it ready."
     }
   ]
 }
