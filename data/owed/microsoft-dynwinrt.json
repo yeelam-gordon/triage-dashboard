@@ -1,13 +1,13 @@
 {
   "repo": "microsoft/dynwinrt",
-  "generated_at": "2026-08-09T23:52:57Z",
+  "generated_at": "2026-08-10T02:56:38Z",
   "awaiting_label": null,
   "awaiting_issues": 0,
-  "awaiting_prs": 3,
+  "awaiting_prs": 4,
   "backlog_issues": 0,
-  "backlog_prs": 3,
+  "backlog_prs": 4,
   "issues_total": null,
-  "prs_total": 3,
+  "prs_total": 4,
   "issues": [],
   "prs": [
     {
@@ -75,6 +75,28 @@
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
       "baseline_reason": "PR (waited 10d) — review it."
+    },
+    {
+      "number": 88,
+      "title": "Fix delegate dependency closure in WinRT code generation",
+      "url": "https://github.com/microsoft/dynwinrt/pull/88",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-08-10T01:40:56Z",
+      "updated_at": "2026-08-10T02:44:30Z",
+      "age_days": 0.0,
+      "triaged": true,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (new) — review it."
     }
   ]
 }
