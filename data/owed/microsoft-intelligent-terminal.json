@@ -1,6 +1,6 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-08-10T18:01:00Z",
+  "generated_at": "2026-08-10T20:51:48Z",
   "awaiting_label": "Needs-Triage",
   "awaiting_issues": 34,
   "awaiting_prs": 38,
@@ -73,7 +73,7 @@
       "created_at": "2026-06-20T12:24:47Z",
       "updated_at": "2026-07-21T02:54:47Z",
       "age_days": 21.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -106,6 +106,30 @@
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
       "baseline_reason": "Wrong/missing tags (waited 21d) — correct them, then route."
+    },
+    {
+      "number": 581,
+      "title": "Etiquetas",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/581",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "Issue-Bug",
+        "Needs-Triage"
+      ],
+      "up": 1,
+      "comments": 1,
+      "created_at": "2026-08-10T05:23:24Z",
+      "updated_at": "2026-08-10T20:05:24Z",
+      "age_days": 0.0,
+      "triaged": true,
+      "awaiting": true,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "reply",
+      "baseline_glyph": "💬",
+      "baseline_text": "Confirm on current build & route",
+      "baseline_reason": "Bug (new) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 195,
@@ -821,30 +845,6 @@
       "baseline_reason": "Wrong/missing tags (SessionManagement) (waited 12d) — correct them, then route."
     },
     {
-      "number": 581,
-      "title": "Etiqueta",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/581",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "Issue-Bug",
-        "Needs-Triage"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-08-10T05:23:24Z",
-      "updated_at": "2026-08-10T05:23:53Z",
-      "age_days": 1.0,
-      "triaged": false,
-      "awaiting": true,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "❓",
-      "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 1d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
-    },
-    {
       "number": 228,
       "title": "Feature Request: Support for Antigravity CLI (agy) integration",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/228",
@@ -1047,7 +1047,7 @@
       "comments": 1,
       "created_at": "2026-05-19T18:03:05Z",
       "updated_at": "2026-05-21T16:11:54Z",
-      "age_days": 81.0,
+      "age_days": 82.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -1056,7 +1056,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 81 d for us (waited 81d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 82 d for us (waited 82d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 38,
@@ -1466,7 +1466,7 @@
       "created_at": "2026-07-24T09:56:06Z",
       "updated_at": "2026-07-27T10:40:46Z",
       "age_days": 15.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1763,6 +1763,28 @@
       "baseline_reason": "PR (waited 1d) — review it."
     },
     {
+      "number": 579,
+      "title": "Make keep-running sessions tab-scoped",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/579",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-08-10T04:28:59Z",
+      "updated_at": "2026-08-10T15:25:54Z",
+      "age_days": 1.0,
+      "triaged": true,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (waited 1d) — review it."
+    },
+    {
       "number": 587,
       "title": "test(e2e): cover atomic image attachment editing",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/587",
@@ -1807,28 +1829,6 @@
       "baseline_reason": "PR (waited 1d) — review it."
     },
     {
-      "number": 579,
-      "title": "Make keep-running sessions tab-scoped",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/579",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-08-10T04:28:59Z",
-      "updated_at": "2026-08-10T15:25:54Z",
-      "age_days": 0.0,
-      "triaged": true,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (new) — review it."
-    },
-    {
       "number": 589,
       "title": "test(e2e): cover agent model switching lifecycle",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/589",
@@ -1839,8 +1839,8 @@
       "comments": 1,
       "created_at": "2026-08-10T14:12:23Z",
       "updated_at": "2026-08-10T14:15:36Z",
-      "age_days": 0.0,
-      "triaged": true,
+      "age_days": 1.0,
+      "triaged": false,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1848,7 +1848,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (new) — review it."
+      "baseline_reason": "PR (waited 1d) — review it."
     },
     {
       "number": 150,
