@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-10T09:18:28Z",
+  "generated_at": "2026-08-10T11:06:56Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -45,15 +45,15 @@
     "backlog_open_issues": null,
     "backlog_open_prs": null,
     "awaiting_reply_issues": 465,
-    "awaiting_reply_prs": 192,
+    "awaiting_reply_prs": 194,
     "awaiting_label": null,
     "window_label": "Weekly (7d)"
   },
   "owed_list": {
-    "issues_total": 9010,
-    "prs_total": 261,
-    "listed_issues": 9010,
-    "listed_prs": 261,
+    "issues_total": 8996,
+    "prs_total": 260,
+    "listed_issues": 8996,
+    "listed_prs": 260,
     "capped_issues": false,
     "capped_prs": false
   },
@@ -202,9 +202,9 @@
         "triaged_issues": 0,
         "triaged_prs": 6,
         "window_active_issues": 0,
-        "window_active_prs": 3,
+        "window_active_prs": 0,
         "backlog_open_issues": 0,
-        "backlog_open_prs": 6,
+        "backlog_open_prs": 3,
         "awaiting_reply_issues": null,
         "awaiting_reply_prs": null,
         "awaiting_label": null,
@@ -278,82 +278,16 @@
             "baseline_glyph": "👀",
             "baseline_text": "Review this PR",
             "baseline_reason": "PR (waited 10d) — review it."
-          },
-          {
-            "number": 89,
-            "title": "Improve Python projections, lazy loading, and coverage reporting",
-            "url": "https://github.com/microsoft/dynwinrt/pull/89",
-            "kind": "pr",
-            "is_community": null,
-            "labels": [],
-            "up": 0,
-            "comments": 1,
-            "created_at": "2026-08-10T04:14:26Z",
-            "updated_at": "2026-08-10T08:31:07Z",
-            "age_days": 0.0,
-            "triaged": true,
-            "awaiting": false,
-            "is_draft": false,
-            "merge_state": "",
-            "review_decision": "APPROVED",
-            "baseline_action": "review",
-            "baseline_glyph": "👀",
-            "baseline_text": "Review this PR",
-            "baseline_reason": "PR (new) — review it."
-          },
-          {
-            "number": 90,
-            "title": "Add typed projection fast paths",
-            "url": "https://github.com/microsoft/dynwinrt/pull/90",
-            "kind": "pr",
-            "is_community": null,
-            "labels": [],
-            "up": 0,
-            "comments": 1,
-            "created_at": "2026-08-10T05:23:02Z",
-            "updated_at": "2026-08-10T08:31:09Z",
-            "age_days": 0.0,
-            "triaged": true,
-            "awaiting": false,
-            "is_draft": false,
-            "merge_state": "",
-            "review_decision": "APPROVED",
-            "baseline_action": "review",
-            "baseline_glyph": "👀",
-            "baseline_text": "Review this PR",
-            "baseline_reason": "PR (new) — review it."
-          },
-          {
-            "number": 91,
-            "title": "Add Electron Windows Share UI sample",
-            "url": "https://github.com/microsoft/dynwinrt/pull/91",
-            "kind": "pr",
-            "is_community": null,
-            "labels": [],
-            "up": 0,
-            "comments": 1,
-            "created_at": "2026-08-10T08:05:00Z",
-            "updated_at": "2026-08-10T08:31:15Z",
-            "age_days": 0.0,
-            "triaged": true,
-            "awaiting": false,
-            "is_draft": false,
-            "merge_state": "",
-            "review_decision": "APPROVED",
-            "baseline_action": "review",
-            "baseline_glyph": "👀",
-            "baseline_text": "Review this PR",
-            "baseline_reason": "PR (new) — review it."
           }
         ],
         "awaiting_issues": 0,
         "awaiting_prs": 3,
         "backlog_issues": 0,
-        "backlog_prs": 6,
+        "backlog_prs": 3,
         "issues_total": null,
-        "prs_total": 6,
+        "prs_total": 3,
         "listed_issues": 0,
-        "listed_prs": 6,
+        "listed_prs": 3,
         "preview_count": 40,
         "has_more_issues": false,
         "has_more_prs": false,
@@ -435,9 +369,9 @@
         "triaged_issues": 15,
         "triaged_prs": 15,
         "window_active_issues": 1,
-        "window_active_prs": 17,
+        "window_active_prs": 19,
         "backlog_open_issues": 41,
-        "backlog_open_prs": 41,
+        "backlog_open_prs": 43,
         "awaiting_reply_issues": 34,
         "awaiting_reply_prs": 31,
         "awaiting_label": "Needs-Triage",
@@ -460,7 +394,7 @@
             "comments": 1,
             "created_at": "2026-06-04T15:31:43Z",
             "updated_at": "2026-06-28T06:17:42Z",
-            "age_days": 43.0,
+            "age_days": 44.0,
             "triaged": true,
             "awaiting": true,
             "fix_ready": false,
@@ -468,7 +402,7 @@
             "baseline_action": "label_only",
             "baseline_glyph": "🏷️",
             "baseline_text": "Fix the labels / tags",
-            "baseline_reason": "Wrong/missing tags (waited 43d) — correct them, then route."
+            "baseline_reason": "Wrong/missing tags (waited 44d) — correct them, then route."
           },
           {
             "number": 192,
@@ -483,7 +417,7 @@
             "comments": 1,
             "created_at": "2026-06-02T18:31:10Z",
             "updated_at": "2026-07-10T05:47:39Z",
-            "age_days": 31.0,
+            "age_days": 32.0,
             "triaged": true,
             "awaiting": true,
             "fix_ready": false,
@@ -491,7 +425,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Decide on this feature request",
-            "baseline_reason": "Feature/idea (waited 31d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+            "baseline_reason": "Feature/idea (waited 32d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
           },
           {
             "number": 333,
@@ -1195,7 +1129,7 @@
             "comments": 1,
             "created_at": "2026-07-30T05:33:50Z",
             "updated_at": "2026-07-30T05:34:17Z",
-            "age_days": 11.0,
+            "age_days": 12.0,
             "triaged": false,
             "awaiting": true,
             "fix_ready": false,
@@ -1203,7 +1137,7 @@
             "baseline_action": "label_only",
             "baseline_glyph": "🏷️",
             "baseline_text": "Fix the labels / tags",
-            "baseline_reason": "Wrong/missing tags (waited 11d) — correct them, then route."
+            "baseline_reason": "Wrong/missing tags (waited 12d) — correct them, then route."
           },
           {
             "number": 525,
@@ -1220,7 +1154,7 @@
             "comments": 1,
             "created_at": "2026-07-30T05:37:29Z",
             "updated_at": "2026-07-30T05:38:03Z",
-            "age_days": 11.0,
+            "age_days": 12.0,
             "triaged": false,
             "awaiting": true,
             "fix_ready": false,
@@ -1228,7 +1162,7 @@
             "baseline_action": "label_only",
             "baseline_glyph": "🏷️",
             "baseline_text": "Fix the labels / tags",
-            "baseline_reason": "Wrong/missing tags (waited 11d) — correct them, then route."
+            "baseline_reason": "Wrong/missing tags (waited 12d) — correct them, then route."
           },
           {
             "number": 528,
@@ -1270,7 +1204,7 @@
             "comments": 1,
             "created_at": "2026-08-10T05:23:24Z",
             "updated_at": "2026-08-10T05:23:53Z",
-            "age_days": 0.0,
+            "age_days": 1.0,
             "triaged": true,
             "awaiting": true,
             "fix_ready": false,
@@ -1278,7 +1212,7 @@
             "baseline_action": "request_info",
             "baseline_glyph": "❓",
             "baseline_text": "Request exact repro, version & logs",
-            "baseline_reason": "Bug (new) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+            "baseline_reason": "Bug (waited 1d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
           },
           {
             "number": 228,
@@ -1657,7 +1591,7 @@
             "comments": 1,
             "created_at": "2026-07-03T05:26:14Z",
             "updated_at": "2026-07-03T05:31:53Z",
-            "age_days": 38.0,
+            "age_days": 39.0,
             "triaged": false,
             "awaiting": true,
             "is_draft": false,
@@ -1666,7 +1600,7 @@
             "baseline_action": "assign_reviewer",
             "baseline_glyph": "👤",
             "baseline_text": "Assign a domain reviewer",
-            "baseline_reason": "PR has waited 38 d for us (waited 38d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+            "baseline_reason": "PR has waited 39 d for us (waited 39d) — assign the area owner as reviewer and get a decision, don't leave it generic."
           },
           {
             "number": 373,
@@ -1701,7 +1635,7 @@
             "comments": 1,
             "created_at": "2026-07-09T08:20:31Z",
             "updated_at": "2026-07-15T06:17:58Z",
-            "age_days": 26.0,
+            "age_days": 27.0,
             "triaged": true,
             "awaiting": true,
             "is_draft": false,
@@ -1710,7 +1644,7 @@
             "baseline_action": "review",
             "baseline_glyph": "👀",
             "baseline_text": "Review this PR",
-            "baseline_reason": "PR (waited 26d) — review it."
+            "baseline_reason": "PR (waited 27d) — review it."
           },
           {
             "number": 441,
@@ -1943,7 +1877,7 @@
             "comments": 1,
             "created_at": "2026-07-18T07:49:56Z",
             "updated_at": "2026-08-05T06:57:09Z",
-            "age_days": 5.0,
+            "age_days": 6.0,
             "triaged": false,
             "awaiting": true,
             "is_draft": false,
@@ -1952,7 +1886,7 @@
             "baseline_action": "review",
             "baseline_glyph": "👀",
             "baseline_text": "Review this PR",
-            "baseline_reason": "PR (waited 5d) — review it."
+            "baseline_reason": "PR (waited 6d) — review it."
           },
           {
             "number": 544,
@@ -2031,7 +1965,7 @@
             "comments": 1,
             "created_at": "2026-08-06T05:28:55Z",
             "updated_at": "2026-08-06T05:32:04Z",
-            "age_days": 4.0,
+            "age_days": 5.0,
             "triaged": false,
             "awaiting": true,
             "is_draft": false,
@@ -2040,7 +1974,7 @@
             "baseline_action": "review",
             "baseline_glyph": "👀",
             "baseline_text": "Review this PR",
-            "baseline_reason": "PR (waited 4d) — review it."
+            "baseline_reason": "PR (waited 5d) — review it."
           },
           {
             "number": 552,
@@ -2053,7 +1987,7 @@
             "comments": 1,
             "created_at": "2026-08-06T06:06:40Z",
             "updated_at": "2026-08-06T06:10:46Z",
-            "age_days": 4.0,
+            "age_days": 5.0,
             "triaged": false,
             "awaiting": true,
             "is_draft": false,
@@ -2062,7 +1996,7 @@
             "baseline_action": "review",
             "baseline_glyph": "👀",
             "baseline_text": "Review this PR",
-            "baseline_reason": "PR (waited 4d) — review it."
+            "baseline_reason": "PR (waited 5d) — review it."
           },
           {
             "number": 553,
@@ -2075,7 +2009,7 @@
             "comments": 1,
             "created_at": "2026-08-06T06:08:05Z",
             "updated_at": "2026-08-06T06:13:56Z",
-            "age_days": 4.0,
+            "age_days": 5.0,
             "triaged": false,
             "awaiting": true,
             "is_draft": false,
@@ -2084,7 +2018,7 @@
             "baseline_action": "review",
             "baseline_glyph": "👀",
             "baseline_text": "Review this PR",
-            "baseline_reason": "PR (waited 4d) — review it."
+            "baseline_reason": "PR (waited 5d) — review it."
           },
           {
             "number": 561,
@@ -2241,6 +2175,50 @@
             "baseline_reason": "PR (new) — review it."
           },
           {
+            "number": 585,
+            "title": "test(e2e): cover per-tab agent pane moves",
+            "url": "https://github.com/microsoft/intelligent-terminal/pull/585",
+            "kind": "pr",
+            "is_community": null,
+            "labels": [],
+            "up": 0,
+            "comments": 1,
+            "created_at": "2026-08-10T10:10:51Z",
+            "updated_at": "2026-08-10T10:11:54Z",
+            "age_days": 0.0,
+            "triaged": false,
+            "awaiting": true,
+            "is_draft": false,
+            "merge_state": "",
+            "review_decision": "",
+            "baseline_action": "review",
+            "baseline_glyph": "👀",
+            "baseline_text": "Review this PR",
+            "baseline_reason": "PR (new) — review it."
+          },
+          {
+            "number": 586,
+            "title": "test(e2e): cover proposal target focus",
+            "url": "https://github.com/microsoft/intelligent-terminal/pull/586",
+            "kind": "pr",
+            "is_community": null,
+            "labels": [],
+            "up": 0,
+            "comments": 1,
+            "created_at": "2026-08-10T11:02:28Z",
+            "updated_at": "2026-08-10T11:03:20Z",
+            "age_days": 0.0,
+            "triaged": false,
+            "awaiting": true,
+            "is_draft": false,
+            "merge_state": "",
+            "review_decision": "",
+            "baseline_action": "review",
+            "baseline_glyph": "👀",
+            "baseline_text": "Review this PR",
+            "baseline_reason": "PR (new) — review it."
+          },
+          {
             "number": 150,
             "title": "[WIP] Add read-only Codex CLI history support",
             "url": "https://github.com/microsoft/intelligent-terminal/pull/150",
@@ -2261,60 +2239,16 @@
             "baseline_glyph": "🚧",
             "baseline_text": "Wait — PR is a draft/WIP",
             "baseline_reason": "Draft/WIP PR (waited 71d) — don't review yet; nudge the author to mark it ready."
-          },
-          {
-            "number": 541,
-            "title": "Add native local Git repository awareness",
-            "url": "https://github.com/microsoft/intelligent-terminal/pull/541",
-            "kind": "pr",
-            "is_community": null,
-            "labels": [],
-            "up": 0,
-            "comments": 1,
-            "created_at": "2026-08-05T13:12:38Z",
-            "updated_at": "2026-08-05T13:18:20Z",
-            "age_days": 5.0,
-            "triaged": false,
-            "awaiting": false,
-            "is_draft": true,
-            "merge_state": "",
-            "review_decision": "REVIEW_REQUIRED",
-            "baseline_action": "wait_author",
-            "baseline_glyph": "🚧",
-            "baseline_text": "Wait — PR is a draft/WIP",
-            "baseline_reason": "Draft/WIP PR (waited 5d) — don't review yet; nudge the author to mark it ready."
-          },
-          {
-            "number": 564,
-            "title": "Dev/haonanttt/rich tab infra",
-            "url": "https://github.com/microsoft/intelligent-terminal/pull/564",
-            "kind": "pr",
-            "is_community": null,
-            "labels": [],
-            "up": 0,
-            "comments": 1,
-            "created_at": "2026-08-07T07:54:12Z",
-            "updated_at": "2026-08-07T07:59:55Z",
-            "age_days": 3.0,
-            "triaged": false,
-            "awaiting": false,
-            "is_draft": true,
-            "merge_state": "",
-            "review_decision": "REVIEW_REQUIRED",
-            "baseline_action": "wait_author",
-            "baseline_glyph": "🚧",
-            "baseline_text": "Wait — PR is a draft/WIP",
-            "baseline_reason": "Draft/WIP PR (waited 3d) — don't review yet; nudge the author to mark it ready."
           }
         ],
         "awaiting_issues": 34,
-        "awaiting_prs": 37,
+        "awaiting_prs": 39,
         "backlog_issues": 41,
-        "backlog_prs": 41,
+        "backlog_prs": 43,
         "issues_total": 34,
         "prs_total": 31,
         "listed_issues": 41,
-        "listed_prs": 41,
+        "listed_prs": 43,
         "preview_count": 40,
         "has_more_issues": true,
         "has_more_prs": true,
@@ -2414,12 +2348,12 @@
       "counts": {
         "triaged_issues": 15,
         "triaged_prs": 15,
-        "window_active_issues": 256,
-        "window_active_prs": 86,
-        "backlog_open_issues": 7340,
+        "window_active_issues": 259,
+        "window_active_prs": 87,
+        "backlog_open_issues": 7325,
         "backlog_open_prs": 131,
         "awaiting_reply_issues": 428,
-        "awaiting_reply_prs": 100,
+        "awaiting_reply_prs": 102,
         "awaiting_label": "Needs-Team-Response",
         "window_label": "Weekly (7d)"
       },
@@ -3859,30 +3793,6 @@
             "baseline_reason": "PR (File Explorer) (waited 16d) — review it."
           },
           {
-            "number": 49571,
-            "title": "[Keyboard Manager] Honor normal elevation when launching programs",
-            "url": "https://github.com/microsoft/PowerToys/pull/49571",
-            "kind": "pr",
-            "is_community": null,
-            "labels": [
-              "Product-Keyboard Manager"
-            ],
-            "up": 0,
-            "comments": 1,
-            "created_at": "2026-07-29T21:59:49Z",
-            "updated_at": "2026-07-29T22:00:11Z",
-            "age_days": 12.0,
-            "triaged": true,
-            "awaiting": true,
-            "is_draft": false,
-            "merge_state": "",
-            "review_decision": "REVIEW_REQUIRED",
-            "baseline_action": "review",
-            "baseline_glyph": "👀",
-            "baseline_text": "Review this PR (Keyboard Manager)",
-            "baseline_reason": "PR (Keyboard Manager) (waited 12d) — review it."
-          },
-          {
             "number": 49472,
             "title": "ZoomIt: Add DemoMirror to mirror a monitor, region, or window to a second display",
             "url": "https://github.com/microsoft/PowerToys/pull/49472",
@@ -3905,6 +3815,28 @@
             "baseline_glyph": "👀",
             "baseline_text": "Review this PR (ZoomIt)",
             "baseline_reason": "PR (ZoomIt) (waited 11d) — review it."
+          },
+          {
+            "number": 49597,
+            "title": "Upgrade Windows App SDK to 2.3.1",
+            "url": "https://github.com/microsoft/PowerToys/pull/49597",
+            "kind": "pr",
+            "is_community": null,
+            "labels": [],
+            "up": 0,
+            "comments": 1,
+            "created_at": "2026-07-31T04:55:20Z",
+            "updated_at": "2026-07-31T06:34:25Z",
+            "age_days": 11.0,
+            "triaged": false,
+            "awaiting": true,
+            "is_draft": false,
+            "merge_state": "",
+            "review_decision": "REVIEW_REQUIRED",
+            "baseline_action": "review",
+            "baseline_glyph": "👀",
+            "baseline_text": "Review this PR",
+            "baseline_reason": "PR (waited 11d) — review it."
           },
           {
             "number": 49093,
@@ -3956,28 +3888,6 @@
             "baseline_reason": "PR (Screen Ruler) (waited 10d) — review it."
           },
           {
-            "number": 49597,
-            "title": "Upgrade Windows App SDK to 2.3.1",
-            "url": "https://github.com/microsoft/PowerToys/pull/49597",
-            "kind": "pr",
-            "is_community": null,
-            "labels": [],
-            "up": 0,
-            "comments": 1,
-            "created_at": "2026-07-31T04:55:20Z",
-            "updated_at": "2026-07-31T06:34:25Z",
-            "age_days": 10.0,
-            "triaged": false,
-            "awaiting": true,
-            "is_draft": false,
-            "merge_state": "",
-            "review_decision": "REVIEW_REQUIRED",
-            "baseline_action": "review",
-            "baseline_glyph": "👀",
-            "baseline_text": "Review this PR",
-            "baseline_reason": "PR (waited 10d) — review it."
-          },
-          {
             "number": 49279,
             "title": "Add Mouse Button Lock (ClickLock for left, right, and middle mouse buttons)",
             "url": "https://github.com/microsoft/PowerToys/pull/49279",
@@ -4017,7 +3927,7 @@
             "comments": 1,
             "created_at": "2026-06-15T06:17:28Z",
             "updated_at": "2026-08-03T05:29:52Z",
-            "age_days": 7.0,
+            "age_days": 8.0,
             "triaged": false,
             "awaiting": true,
             "is_draft": false,
@@ -4026,7 +3936,7 @@
             "baseline_action": "await_author_changes",
             "baseline_glyph": "✍️",
             "baseline_text": "Await author's changes (Setup/Install)",
-            "baseline_reason": "Changes were requested (Setup/Install) (waited 7d) — ball is with the author; nudge if quiet."
+            "baseline_reason": "Changes were requested (Setup/Install) (waited 8d) — ball is with the author; nudge if quiet."
           },
           {
             "number": 49034,
@@ -4433,15 +4343,39 @@
             "baseline_glyph": "👀",
             "baseline_text": "Review this PR (Command Palette)",
             "baseline_reason": "PR (Command Palette) (waited 5d) — review it."
+          },
+          {
+            "number": 49326,
+            "title": "CmdPal JS/TS Extensions - Phase 5: gallery npm install/uninstall",
+            "url": "https://github.com/microsoft/PowerToys/pull/49326",
+            "kind": "pr",
+            "is_community": null,
+            "labels": [
+              "Product-Command Palette"
+            ],
+            "up": 0,
+            "comments": 1,
+            "created_at": "2026-07-15T05:30:46Z",
+            "updated_at": "2026-08-06T01:56:33Z",
+            "age_days": 5.0,
+            "triaged": false,
+            "awaiting": true,
+            "is_draft": false,
+            "merge_state": "",
+            "review_decision": "REVIEW_REQUIRED",
+            "baseline_action": "review",
+            "baseline_glyph": "👀",
+            "baseline_text": "Review this PR (Command Palette)",
+            "baseline_reason": "PR (Command Palette) (waited 5d) — review it."
           }
         ],
         "awaiting_issues": 428,
         "awaiting_prs": 85,
-        "backlog_issues": 7340,
+        "backlog_issues": 7325,
         "backlog_prs": 131,
         "issues_total": 428,
-        "prs_total": 100,
-        "listed_issues": 7340,
+        "prs_total": 102,
+        "listed_issues": 7325,
         "listed_prs": 131,
         "preview_count": 40,
         "has_more_issues": true,
@@ -5147,7 +5081,7 @@
             "comments": 1,
             "created_at": "2026-05-20T08:07:05Z",
             "updated_at": "2026-05-23T06:43:10Z",
-            "age_days": 79.0,
+            "age_days": 80.0,
             "triaged": true,
             "awaiting": true,
             "is_draft": false,
@@ -5156,7 +5090,7 @@
             "baseline_action": "assign_reviewer",
             "baseline_glyph": "👤",
             "baseline_text": "Assign a domain reviewer",
-            "baseline_reason": "PR has waited 79 d for us (waited 79d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+            "baseline_reason": "PR has waited 80 d for us (waited 80d) — assign the area owner as reviewer and get a decision, don't leave it generic."
           },
           {
             "number": 95,
@@ -5389,7 +5323,7 @@
             "comments": 1,
             "created_at": "2026-06-12T08:45:02Z",
             "updated_at": "2026-06-16T06:29:44Z",
-            "age_days": 55.0,
+            "age_days": 56.0,
             "triaged": true,
             "awaiting": false,
             "is_draft": true,
@@ -5398,7 +5332,7 @@
             "baseline_action": "wait_author",
             "baseline_glyph": "🚧",
             "baseline_text": "Wait — PR is a draft/WIP",
-            "baseline_reason": "Draft/WIP PR (waited 55d) — don't review yet; nudge the author to mark it ready."
+            "baseline_reason": "Draft/WIP PR (waited 56d) — don't review yet; nudge the author to mark it ready."
           }
         ],
         "awaiting_issues": 0,
@@ -5497,9 +5431,9 @@
       "counts": {
         "triaged_issues": 15,
         "triaged_prs": 15,
-        "window_active_issues": 54,
+        "window_active_issues": 55,
         "window_active_prs": 20,
-        "backlog_open_issues": 915,
+        "backlog_open_issues": 916,
         "backlog_open_prs": 54,
         "awaiting_reply_issues": 3,
         "awaiting_reply_prs": 44,
@@ -5616,7 +5550,7 @@
             "comments": 1,
             "created_at": "2019-06-19T22:29:56Z",
             "updated_at": "2026-07-02T06:51:23Z",
-            "age_days": 39.0,
+            "age_days": 40.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -5624,7 +5558,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Confirm type (bug/feature) & route",
-            "baseline_reason": "Untyped report (waited 39d, 650 👍 high demand) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+            "baseline_reason": "Untyped report (waited 40d, 650 👍 high demand) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
           },
           {
             "number": 4150,
@@ -5823,7 +5757,7 @@
             "comments": 1,
             "created_at": "2022-08-06T12:30:08Z",
             "updated_at": "2026-04-28T06:09:38Z",
-            "age_days": 104.0,
+            "age_days": 105.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -5831,7 +5765,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Confirm type (bug/feature) & route",
-            "baseline_reason": "Untyped report (waited 104d, 255 👍 high demand) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+            "baseline_reason": "Untyped report (waited 105d, 255 👍 high demand) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
           },
           {
             "number": 8365,
@@ -6472,7 +6406,7 @@
             "comments": 1,
             "created_at": "2026-04-13T18:50:11Z",
             "updated_at": "2026-06-05T05:42:00Z",
-            "age_days": 66.0,
+            "age_days": 67.0,
             "triaged": true,
             "awaiting": true,
             "is_draft": false,
@@ -6481,7 +6415,7 @@
             "baseline_action": "assign_reviewer",
             "baseline_glyph": "👤",
             "baseline_text": "Assign a domain reviewer",
-            "baseline_reason": "PR has waited 66 d for us (waited 66d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+            "baseline_reason": "PR has waited 67 d for us (waited 67d) — assign the area owner as reviewer and get a decision, don't leave it generic."
           },
           {
             "number": 14313,
@@ -6806,6 +6740,28 @@
             "baseline_reason": "Changes were requested (waited 13d) — ball is with the author; nudge if quiet."
           },
           {
+            "number": 41120,
+            "title": "Add AzureLinux official WSL image to the distribution manifest",
+            "url": "https://github.com/microsoft/WSL/pull/41120",
+            "kind": "pr",
+            "is_community": null,
+            "labels": [],
+            "up": 0,
+            "comments": 1,
+            "created_at": "2026-07-20T15:50:28Z",
+            "updated_at": "2026-08-04T05:39:05Z",
+            "age_days": 7.0,
+            "triaged": false,
+            "awaiting": true,
+            "is_draft": false,
+            "merge_state": "",
+            "review_decision": "CHANGES_REQUESTED",
+            "baseline_action": "await_author_changes",
+            "baseline_glyph": "✍️",
+            "baseline_text": "Await author's changes",
+            "baseline_reason": "Changes were requested (waited 7d) — ball is with the author; nudge if quiet."
+          },
+          {
             "number": 41140,
             "title": "Container lifecycle transitions",
             "url": "https://github.com/microsoft/WSL/pull/41140",
@@ -6826,28 +6782,6 @@
             "baseline_glyph": "✍️",
             "baseline_text": "Await author's changes",
             "baseline_reason": "Changes were requested (waited 7d) — ball is with the author; nudge if quiet."
-          },
-          {
-            "number": 41120,
-            "title": "Add AzureLinux official WSL image to the distribution manifest",
-            "url": "https://github.com/microsoft/WSL/pull/41120",
-            "kind": "pr",
-            "is_community": null,
-            "labels": [],
-            "up": 0,
-            "comments": 1,
-            "created_at": "2026-07-20T15:50:28Z",
-            "updated_at": "2026-08-04T05:39:05Z",
-            "age_days": 6.0,
-            "triaged": false,
-            "awaiting": true,
-            "is_draft": false,
-            "merge_state": "",
-            "review_decision": "CHANGES_REQUESTED",
-            "baseline_action": "await_author_changes",
-            "baseline_glyph": "✍️",
-            "baseline_text": "Await author's changes",
-            "baseline_reason": "Changes were requested (waited 6d) — ball is with the author; nudge if quiet."
           },
           {
             "number": 41240,
@@ -7261,7 +7195,7 @@
             "comments": 1,
             "created_at": "2026-06-17T23:58:01Z",
             "updated_at": "2026-06-18T05:32:04Z",
-            "age_days": 53.0,
+            "age_days": 54.0,
             "triaged": false,
             "awaiting": false,
             "is_draft": true,
@@ -7270,7 +7204,7 @@
             "baseline_action": "wait_author",
             "baseline_glyph": "🚧",
             "baseline_text": "Wait — PR is a draft/WIP",
-            "baseline_reason": "Draft/WIP PR (waited 53d) — don't review yet; nudge the author to mark it ready."
+            "baseline_reason": "Draft/WIP PR (waited 54d) — don't review yet; nudge the author to mark it ready."
           },
           {
             "number": 40608,
@@ -7341,11 +7275,11 @@
         ],
         "awaiting_issues": 3,
         "awaiting_prs": 33,
-        "backlog_issues": 915,
+        "backlog_issues": 916,
         "backlog_prs": 54,
         "issues_total": 3,
         "prs_total": 44,
-        "listed_issues": 915,
+        "listed_issues": 916,
         "listed_prs": 54,
         "preview_count": 40,
         "has_more_issues": true,
@@ -7922,7 +7856,7 @@
             "comments": 1,
             "created_at": "2024-05-30T22:19:58Z",
             "updated_at": "2026-01-03T05:51:20Z",
-            "age_days": 219.0,
+            "age_days": 220.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -7930,7 +7864,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Confirm on current build & route",
-            "baseline_reason": "Bug (waited 219d, 23 👍 high demand) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+            "baseline_reason": "Bug (waited 220d, 23 👍 high demand) — acknowledge, confirm it still repros on a current build, and route to the area owner."
           },
           {
             "number": 1092,
@@ -9966,7 +9900,7 @@
       "owner_kind": "reviewer",
       "current_labels": [],
       "updated_at": "2026-07-15T06:17:58Z",
-      "priority_age_days": 26.0,
+      "priority_age_days": 27.0,
       "days_awaiting": 0.0,
       "aging_basis": "PR days_since_update",
       "pr_merge_state": "DIRTY",
@@ -11474,7 +11408,7 @@
       "owner_kind": "reviewer",
       "current_labels": [],
       "updated_at": "2026-06-16T06:29:44Z",
-      "priority_age_days": 55.0,
+      "priority_age_days": 56.0,
       "days_awaiting": 0.0,
       "aging_basis": "PR days_since_update",
       "pr_merge_state": "BLOCKED",
@@ -12210,7 +12144,7 @@
         "network"
       ],
       "updated_at": "2026-06-05T05:42:00Z",
-      "priority_age_days": 66.0,
+      "priority_age_days": 67.0,
       "days_awaiting": 0.0,
       "aging_basis": "PR days_since_update",
       "pr_merge_state": "BLOCKED",
