@@ -1,13 +1,13 @@
 {
   "repo": "microsoft/dynwinrt",
-  "generated_at": "2026-08-11T06:01:30Z",
+  "generated_at": "2026-08-11T09:05:26Z",
   "awaiting_label": null,
   "awaiting_issues": 0,
-  "awaiting_prs": 6,
+  "awaiting_prs": 5,
   "backlog_issues": 0,
-  "backlog_prs": 6,
+  "backlog_prs": 5,
   "issues_total": null,
-  "prs_total": 6,
+  "prs_total": 5,
   "issues": [],
   "prs": [
     {
@@ -43,7 +43,7 @@
       "comments": 1,
       "created_at": "2026-07-24T04:09:48Z",
       "updated_at": "2026-07-28T04:17:01Z",
-      "age_days": 14.0,
+      "age_days": 15.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -52,7 +52,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "🌐",
       "baseline_text": "Route to docs/localization owner",
-      "baseline_reason": "Docs/localization PR (waited 14d) — route to the docs/localization owner for a domain review, not a generic pass."
+      "baseline_reason": "Docs/localization PR (waited 15d) — route to the docs/localization owner for a domain review, not a generic pass."
     },
     {
       "number": 67,
@@ -77,50 +77,6 @@
       "baseline_reason": "PR (waited 11d) — review it."
     },
     {
-      "number": 93,
-      "title": "Add Electron Windows Hello sample",
-      "url": "https://github.com/microsoft/dynwinrt/pull/93",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-08-11T04:40:07Z",
-      "updated_at": "2026-08-11T05:42:47Z",
-      "age_days": 0.0,
-      "triaged": true,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (new) — review it."
-    },
-    {
-      "number": 94,
-      "title": "Increase generated Python branch coverage",
-      "url": "https://github.com/microsoft/dynwinrt/pull/94",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-08-11T04:54:58Z",
-      "updated_at": "2026-08-11T05:05:41Z",
-      "age_days": 0.0,
-      "triaged": true,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (new) — review it."
-    },
-    {
       "number": 95,
       "title": "Optimize generated binding layout",
       "url": "https://github.com/microsoft/dynwinrt/pull/95",
@@ -130,7 +86,7 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-08-11T05:32:31Z",
-      "updated_at": "2026-08-11T05:41:25Z",
+      "updated_at": "2026-08-11T08:49:15Z",
       "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
@@ -141,6 +97,31 @@
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
       "baseline_reason": "PR (new) — review it."
+    },
+    {
+      "number": 96,
+      "title": "Bump electron from 40.10.6 to 41.10.3 in /samples/js/windows-hello",
+      "url": "https://github.com/microsoft/dynwinrt/pull/96",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [
+        "dependencies",
+        "javascript"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-08-11T08:54:20Z",
+      "updated_at": "2026-08-11T08:54:21Z",
+      "age_days": 0.0,
+      "triaged": false,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "📦",
+      "baseline_text": "Dependency PR — check CI & merge/close",
+      "baseline_reason": "Dependency bump (new) — verify CI + changelog risk, then merge or close."
     }
   ]
 }
