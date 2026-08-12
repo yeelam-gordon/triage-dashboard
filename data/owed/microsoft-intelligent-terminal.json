@@ -1,13 +1,13 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-08-11T23:49:18Z",
+  "generated_at": "2026-08-12T02:49:57Z",
   "awaiting_label": "Needs-Triage",
-  "awaiting_issues": 33,
-  "awaiting_prs": 37,
-  "backlog_issues": 40,
-  "backlog_prs": 41,
-  "issues_total": 33,
-  "prs_total": 34,
+  "awaiting_issues": 32,
+  "awaiting_prs": 36,
+  "backlog_issues": 39,
+  "backlog_prs": 40,
+  "issues_total": 32,
+  "prs_total": 33,
   "issues": [
     {
       "number": 231,
@@ -121,7 +121,7 @@
       "comments": 1,
       "created_at": "2026-08-10T05:23:24Z",
       "updated_at": "2026-08-10T20:05:24Z",
-      "age_days": 1.0,
+      "age_days": 2.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -129,7 +129,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 1d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_reason": "Bug (waited 2d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 195,
@@ -239,7 +239,7 @@
       "created_at": "2026-06-17T19:14:31Z",
       "updated_at": "2026-06-17T19:15:42Z",
       "age_days": 56.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -261,7 +261,7 @@
       "comments": 1,
       "created_at": "2026-06-03T12:49:59Z",
       "updated_at": "2026-06-22T21:09:03Z",
-      "age_days": 50.0,
+      "age_days": 51.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -269,7 +269,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Triage idea — scope then decide",
-      "baseline_reason": "New untriaged idea (waited 50d) — classify it and either ask for scope or make an early accept/park call."
+      "baseline_reason": "New untriaged idea (waited 51d) — classify it and either ask for scope or make an early accept/park call."
     },
     {
       "number": 203,
@@ -360,7 +360,7 @@
       "created_at": "2026-06-11T22:48:48Z",
       "updated_at": "2026-07-21T02:54:58Z",
       "age_days": 22.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -610,7 +610,7 @@
       "created_at": "2026-07-27T01:20:14Z",
       "updated_at": "2026-07-27T01:20:46Z",
       "age_days": 16.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -759,7 +759,7 @@
       "comments": 1,
       "created_at": "2026-07-30T02:40:16Z",
       "updated_at": "2026-08-10T22:26:39Z",
-      "age_days": 1.0,
+      "age_days": 2.0,
       "triaged": false,
       "awaiting": true,
       "fix_ready": false,
@@ -767,7 +767,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags (AgentPane)",
-      "baseline_reason": "Wrong/missing tags (AgentPane) (waited 1d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (AgentPane) (waited 2d) — correct them, then route."
     },
     {
       "number": 591,
@@ -784,30 +784,6 @@
       "comments": 1,
       "created_at": "2026-08-11T01:16:16Z",
       "updated_at": "2026-08-11T01:16:52Z",
-      "age_days": 1.0,
-      "triaged": false,
-      "awaiting": true,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "label_only",
-      "baseline_glyph": "🏷️",
-      "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 1d) — correct them, then route."
-    },
-    {
-      "number": 600,
-      "title": "Preserve and render ACP tool-call progress and output",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/600",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "Needs-Triage",
-        "Needs-Tag-Fix"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-08-11T13:37:03Z",
-      "updated_at": "2026-08-11T13:38:25Z",
       "age_days": 1.0,
       "triaged": false,
       "awaiting": true,
@@ -1779,28 +1755,6 @@
       "baseline_glyph": "🔐",
       "baseline_text": "Permission-sensitive review",
       "baseline_reason": "PR changes file modes/permissions (waited 1d) — review the security impact carefully + owner sign-off."
-    },
-    {
-      "number": 601,
-      "title": "Improve ACP tool call output visibility",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/601",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-08-11T14:58:25Z",
-      "updated_at": "2026-08-11T15:59:17Z",
-      "age_days": 1.0,
-      "triaged": true,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 1d) — review it."
     },
     {
       "number": 150,
