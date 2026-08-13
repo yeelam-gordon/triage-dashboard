@@ -1,13 +1,13 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-08-13T02:55:11Z",
+  "generated_at": "2026-08-13T06:06:39Z",
   "awaiting_label": "Needs-Triage",
   "awaiting_issues": 33,
-  "awaiting_prs": 38,
+  "awaiting_prs": 40,
   "backlog_issues": 40,
-  "backlog_prs": 42,
+  "backlog_prs": 44,
   "issues_total": 33,
-  "prs_total": 35,
+  "prs_total": 37,
   "issues": [
     {
       "number": 231,
@@ -73,7 +73,7 @@
       "created_at": "2026-06-20T12:24:47Z",
       "updated_at": "2026-07-21T02:54:47Z",
       "age_days": 23.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -239,7 +239,7 @@
       "created_at": "2026-06-17T19:14:31Z",
       "updated_at": "2026-06-17T19:15:42Z",
       "age_days": 57.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -584,7 +584,7 @@
       "comments": 1,
       "created_at": "2026-07-27T01:20:14Z",
       "updated_at": "2026-07-27T01:20:48Z",
-      "age_days": 17.0,
+      "age_days": 18.0,
       "triaged": false,
       "awaiting": true,
       "fix_ready": false,
@@ -592,7 +592,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm on current build & route (AgentPane)",
-      "baseline_reason": "Bug (AgentPane) (waited 17d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_reason": "Bug (AgentPane) (waited 18d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 495,
@@ -609,15 +609,15 @@
       "comments": 1,
       "created_at": "2026-07-27T01:20:14Z",
       "updated_at": "2026-07-27T01:20:46Z",
-      "age_days": 17.0,
-      "triaged": false,
+      "age_days": 18.0,
+      "triaged": true,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm on current build & route (SessionManagement)",
-      "baseline_reason": "Bug (SessionManagement) (waited 17d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_reason": "Bug (SessionManagement) (waited 18d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 498,
@@ -633,7 +633,7 @@
       "comments": 1,
       "created_at": "2026-07-27T01:57:31Z",
       "updated_at": "2026-07-27T01:58:02Z",
-      "age_days": 17.0,
+      "age_days": 18.0,
       "triaged": false,
       "awaiting": true,
       "fix_ready": false,
@@ -641,7 +641,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 17d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 18d) — correct them, then route."
     },
     {
       "number": 500,
@@ -658,7 +658,7 @@
       "created_at": "2026-07-27T03:17:13Z",
       "updated_at": "2026-07-27T03:17:45Z",
       "age_days": 17.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -784,7 +784,7 @@
       "comments": 1,
       "created_at": "2026-08-11T01:16:16Z",
       "updated_at": "2026-08-11T01:16:52Z",
-      "age_days": 2.0,
+      "age_days": 3.0,
       "triaged": false,
       "awaiting": true,
       "fix_ready": false,
@@ -792,7 +792,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 2d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 3d) — correct them, then route."
     },
     {
       "number": 608,
@@ -832,7 +832,7 @@
       "comments": 1,
       "created_at": "2026-06-04T11:19:15Z",
       "updated_at": "2026-07-21T01:59:49Z",
-      "age_days": 23.0,
+      "age_days": 24.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -840,7 +840,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 23d, 5 👍) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 24d, 5 👍) — correct them, then route."
     },
     {
       "number": 254,
@@ -1043,8 +1043,8 @@
       "comments": 1,
       "created_at": "2026-05-21T15:14:26Z",
       "updated_at": "2026-05-21T23:48:24Z",
-      "age_days": 83.0,
-      "triaged": false,
+      "age_days": 84.0,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1052,7 +1052,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 83 d for us (waited 83d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 84 d for us (waited 84d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 278,
@@ -1065,7 +1065,7 @@
       "comments": 1,
       "created_at": "2026-06-12T02:00:08Z",
       "updated_at": "2026-06-15T01:05:22Z",
-      "age_days": 59.0,
+      "age_days": 60.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -1074,7 +1074,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 59 d for us (waited 59d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 60 d for us (waited 60d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 310,
@@ -1241,7 +1241,7 @@
       "comments": 1,
       "created_at": "2026-07-02T11:35:34Z",
       "updated_at": "2026-07-13T01:45:03Z",
-      "age_days": 31.0,
+      "age_days": 32.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -1250,7 +1250,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 31 d for us (waited 31d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 32 d for us (waited 32d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 397,
@@ -1395,7 +1395,7 @@
       "comments": 1,
       "created_at": "2026-07-21T01:39:20Z",
       "updated_at": "2026-07-21T01:44:19Z",
-      "age_days": 23.0,
+      "age_days": 24.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -1404,7 +1404,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 23d) — review it."
+      "baseline_reason": "PR (waited 24d) — review it."
     },
     {
       "number": 265,
@@ -1417,7 +1417,7 @@
       "comments": 1,
       "created_at": "2026-06-11T00:15:22Z",
       "updated_at": "2026-07-23T00:56:50Z",
-      "age_days": 21.0,
+      "age_days": 22.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -1426,7 +1426,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 21d) — review it."
+      "baseline_reason": "PR (waited 22d) — review it."
     },
     {
       "number": 490,
@@ -1506,7 +1506,7 @@
       "created_at": "2026-08-06T02:00:47Z",
       "updated_at": "2026-08-06T02:14:45Z",
       "age_days": 7.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1660,7 +1660,7 @@
       "created_at": "2026-08-07T07:52:00Z",
       "updated_at": "2026-08-07T07:58:14Z",
       "age_days": 6.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1682,7 +1682,7 @@
       "created_at": "2026-08-08T02:30:43Z",
       "updated_at": "2026-08-08T04:36:36Z",
       "age_days": 5.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1748,7 +1748,7 @@
       "created_at": "2026-07-28T01:59:08Z",
       "updated_at": "2026-08-12T10:21:14Z",
       "age_days": 1.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1781,6 +1781,28 @@
       "baseline_reason": "PR (waited 1d) — review it."
     },
     {
+      "number": 609,
+      "title": "Update and pin ACP wrappers",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/609",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-08-13T01:36:04Z",
+      "updated_at": "2026-08-13T01:39:07Z",
+      "age_days": 1.0,
+      "triaged": true,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (waited 1d) — review it."
+    },
+    {
       "number": 597,
       "title": "Add ACP path grants and permission policies",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/597",
@@ -1790,7 +1812,7 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-08-11T08:59:38Z",
-      "updated_at": "2026-08-13T02:53:16Z",
+      "updated_at": "2026-08-13T05:36:33Z",
       "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
@@ -1803,18 +1825,40 @@
       "baseline_reason": "PR changes file modes/permissions (new) — review the security impact carefully + owner sign-off."
     },
     {
-      "number": 609,
-      "title": "Update and pin ACP wrappers",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/609",
+      "number": 610,
+      "title": "Release replaced agent pane sessions",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/610",
       "kind": "pr",
       "is_community": null,
       "labels": [],
       "up": 0,
       "comments": 1,
-      "created_at": "2026-08-13T01:36:04Z",
-      "updated_at": "2026-08-13T01:39:07Z",
+      "created_at": "2026-08-13T03:21:18Z",
+      "updated_at": "2026-08-13T05:33:18Z",
       "age_days": 0.0,
       "triaged": true,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (new) — review it."
+    },
+    {
+      "number": 612,
+      "title": "Agent pane: Unify conversation TUI transcript",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/612",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-08-13T05:47:30Z",
+      "updated_at": "2026-08-13T05:52:55Z",
+      "age_days": 0.0,
+      "triaged": false,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1880,7 +1924,7 @@
       "created_at": "2026-08-07T07:54:12Z",
       "updated_at": "2026-08-11T08:45:26Z",
       "age_days": 2.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": false,
       "is_draft": true,
       "merge_state": "",
