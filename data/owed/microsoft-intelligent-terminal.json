@@ -1,6 +1,6 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-08-14T23:51:54Z",
+  "generated_at": "2026-08-15T03:01:38Z",
   "awaiting_label": "Needs-Triage",
   "awaiting_issues": 36,
   "awaiting_prs": 38,
@@ -121,7 +121,7 @@
       "comments": 1,
       "created_at": "2026-08-10T05:23:24Z",
       "updated_at": "2026-08-10T20:05:24Z",
-      "age_days": 4.0,
+      "age_days": 5.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -129,7 +129,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 4d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_reason": "Bug (waited 5d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 195,
@@ -261,7 +261,7 @@
       "comments": 1,
       "created_at": "2026-06-03T12:49:59Z",
       "updated_at": "2026-06-22T21:09:03Z",
-      "age_days": 53.0,
+      "age_days": 54.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -269,7 +269,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Triage idea — scope then decide",
-      "baseline_reason": "New untriaged idea (waited 53d) — classify it and either ask for scope or make an early accept/park call."
+      "baseline_reason": "New untriaged idea (waited 54d) — classify it and either ask for scope or make an early accept/park call."
     },
     {
       "number": 203,
@@ -511,7 +511,7 @@
       "created_at": "2026-06-24T00:03:58Z",
       "updated_at": "2026-07-21T02:55:02Z",
       "age_days": 25.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -759,7 +759,7 @@
       "comments": 1,
       "created_at": "2026-07-30T02:40:16Z",
       "updated_at": "2026-08-10T22:26:39Z",
-      "age_days": 4.0,
+      "age_days": 5.0,
       "triaged": false,
       "awaiting": true,
       "fix_ready": false,
@@ -767,7 +767,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags (AgentPane)",
-      "baseline_reason": "Wrong/missing tags (AgentPane) (waited 4d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (AgentPane) (waited 5d) — correct them, then route."
     },
     {
       "number": 591,
@@ -808,7 +808,7 @@
       "comments": 1,
       "created_at": "2026-08-12T21:55:46Z",
       "updated_at": "2026-08-12T21:56:25Z",
-      "age_days": 2.0,
+      "age_days": 3.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -816,7 +816,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 2d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (waited 3d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 613,
@@ -882,7 +882,7 @@
       "created_at": "2026-08-14T05:54:34Z",
       "updated_at": "2026-08-14T06:00:19Z",
       "age_days": 1.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -1513,7 +1513,7 @@
       "created_at": "2026-07-24T09:56:06Z",
       "updated_at": "2026-07-27T10:40:46Z",
       "age_days": 19.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1579,7 +1579,7 @@
       "created_at": "2026-08-06T02:00:47Z",
       "updated_at": "2026-08-06T02:14:45Z",
       "age_days": 9.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1711,7 +1711,7 @@
       "created_at": "2026-08-07T07:52:00Z",
       "updated_at": "2026-08-07T07:58:14Z",
       "age_days": 8.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1832,28 +1832,6 @@
       "baseline_reason": "PR (waited 1d) — review it."
     },
     {
-      "number": 571,
-      "title": "Replace PowerShell agent hooks with native wtcli bridge",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/571",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 1,
-      "comments": 1,
-      "created_at": "2026-08-08T02:30:43Z",
-      "updated_at": "2026-08-14T06:39:02Z",
-      "age_days": 1.0,
-      "triaged": true,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 1d) — review it."
-    },
-    {
       "number": 597,
       "title": "Add ACP path grants and permission policies",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/597",
@@ -1887,7 +1865,7 @@
       "created_at": "2026-08-14T16:41:36Z",
       "updated_at": "2026-08-14T16:44:57Z",
       "age_days": 1.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1896,6 +1874,28 @@
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
       "baseline_reason": "PR (waited 1d) — review it."
+    },
+    {
+      "number": 571,
+      "title": "Replace PowerShell agent hooks with native wtcli bridge",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/571",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 1,
+      "comments": 1,
+      "created_at": "2026-08-08T02:30:43Z",
+      "updated_at": "2026-08-15T00:33:08Z",
+      "age_days": 0.0,
+      "triaged": true,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (new) — review it."
     },
     {
       "number": 150,
