@@ -1,6 +1,6 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-08-15T08:55:01Z",
+  "generated_at": "2026-08-15T12:00:01Z",
   "awaiting_label": "Needs-Triage",
   "awaiting_issues": 36,
   "awaiting_prs": 38,
@@ -24,7 +24,7 @@
       "comments": 1,
       "created_at": "2026-06-04T15:31:43Z",
       "updated_at": "2026-06-28T06:17:42Z",
-      "age_days": 48.0,
+      "age_days": 49.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -32,7 +32,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 48d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 49d) — correct them, then route."
     },
     {
       "number": 192,
@@ -47,7 +47,7 @@
       "comments": 1,
       "created_at": "2026-06-02T18:31:10Z",
       "updated_at": "2026-07-10T05:47:39Z",
-      "age_days": 36.0,
+      "age_days": 37.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -55,7 +55,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 36d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_reason": "Feature/idea (waited 37d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     },
     {
       "number": 333,
@@ -668,6 +668,30 @@
       "baseline_reason": "Wrong/missing tags (waited 20d) — correct them, then route."
     },
     {
+      "number": 515,
+      "title": "Track incremental WTA architecture refactoring",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/515",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "Needs-Triage",
+        "Needs-Tag-Fix"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-07-30T01:30:01Z",
+      "updated_at": "2026-07-30T05:06:44Z",
+      "age_days": 17.0,
+      "triaged": false,
+      "awaiting": true,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "label_only",
+      "baseline_glyph": "🏷️",
+      "baseline_text": "Fix the labels / tags",
+      "baseline_reason": "Wrong/missing tags (waited 17d) — correct them, then route."
+    },
+    {
       "number": 521,
       "title": "Track Dependabot updates for WTA Rust dependencies",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/521",
@@ -694,30 +718,6 @@
       "baseline_reason": "Wrong/missing tags (CLI) (waited 17d) — correct them, then route."
     },
     {
-      "number": 515,
-      "title": "Track incremental WTA architecture refactoring",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/515",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "Needs-Triage",
-        "Needs-Tag-Fix"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-07-30T01:30:01Z",
-      "updated_at": "2026-07-30T05:06:44Z",
-      "age_days": 16.0,
-      "triaged": false,
-      "awaiting": true,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "label_only",
-      "baseline_glyph": "🏷️",
-      "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 16d) — correct them, then route."
-    },
-    {
       "number": 525,
       "title": "Return confirmed terminal action execution results to the agent",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/525",
@@ -732,7 +732,7 @@
       "comments": 1,
       "created_at": "2026-07-30T05:37:29Z",
       "updated_at": "2026-07-30T05:38:03Z",
-      "age_days": 16.0,
+      "age_days": 17.0,
       "triaged": false,
       "awaiting": true,
       "fix_ready": false,
@@ -740,7 +740,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 16d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 17d) — correct them, then route."
     },
     {
       "number": 518,
@@ -857,15 +857,15 @@
       "comments": 1,
       "created_at": "2026-08-13T16:49:19Z",
       "updated_at": "2026-08-14T06:16:49Z",
-      "age_days": 1.0,
-      "triaged": false,
+      "age_days": 2.0,
+      "triaged": true,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 1d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (waited 2d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 620,
@@ -881,7 +881,7 @@
       "comments": 1,
       "created_at": "2026-08-14T05:54:34Z",
       "updated_at": "2026-08-14T06:00:19Z",
-      "age_days": 1.0,
+      "age_days": 2.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -889,7 +889,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 1d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 2d) — correct them, then route."
     },
     {
       "number": 228,
@@ -1049,7 +1049,7 @@
       "comments": 1,
       "created_at": "2026-07-06T22:30:25Z",
       "updated_at": "2026-07-22T07:44:01Z",
-      "age_days": 24.0,
+      "age_days": 25.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -1057,7 +1057,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "🩺",
       "baseline_text": "Confirm crash — get repro/logs & route",
-      "baseline_reason": "Crash report (waited 24d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
+      "baseline_reason": "Crash report (waited 25d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
     }
   ],
   "prs": [
@@ -1117,7 +1117,7 @@
       "created_at": "2026-05-21T15:14:26Z",
       "updated_at": "2026-05-21T23:48:24Z",
       "age_days": 86.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1292,7 +1292,7 @@
       "comments": 1,
       "created_at": "2026-07-03T05:26:14Z",
       "updated_at": "2026-07-03T05:31:53Z",
-      "age_days": 43.0,
+      "age_days": 44.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -1301,7 +1301,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 43 d for us (waited 43d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 44 d for us (waited 44d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 373,
@@ -1336,8 +1336,8 @@
       "comments": 1,
       "created_at": "2026-07-09T08:20:31Z",
       "updated_at": "2026-07-15T06:17:58Z",
-      "age_days": 31.0,
-      "triaged": true,
+      "age_days": 32.0,
+      "triaged": false,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1345,7 +1345,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 31 d for us (waited 31d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 32 d for us (waited 32d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 441,
@@ -1380,7 +1380,7 @@
       "comments": 1,
       "created_at": "2026-07-17T12:52:06Z",
       "updated_at": "2026-07-20T05:17:09Z",
-      "age_days": 26.0,
+      "age_days": 27.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -1389,7 +1389,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 26d) — review it."
+      "baseline_reason": "PR (waited 27d) — review it."
     },
     {
       "number": 453,
@@ -1403,7 +1403,7 @@
       "created_at": "2026-07-20T09:44:47Z",
       "updated_at": "2026-07-20T13:47:42Z",
       "age_days": 26.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1513,7 +1513,7 @@
       "created_at": "2026-07-24T09:56:06Z",
       "updated_at": "2026-07-27T10:40:46Z",
       "age_days": 19.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1534,7 +1534,7 @@
       "comments": 1,
       "created_at": "2026-07-30T03:19:23Z",
       "updated_at": "2026-07-31T07:25:10Z",
-      "age_days": 15.0,
+      "age_days": 16.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -1543,7 +1543,7 @@
       "baseline_action": "review",
       "baseline_glyph": "📦",
       "baseline_text": "Dependency PR — check CI & merge/close",
-      "baseline_reason": "Dependency bump (waited 15d) — verify CI + changelog risk, then merge or close."
+      "baseline_reason": "Dependency bump (waited 16d) — verify CI + changelog risk, then merge or close."
     },
     {
       "number": 448,
@@ -1556,7 +1556,7 @@
       "comments": 1,
       "created_at": "2026-07-18T07:49:56Z",
       "updated_at": "2026-08-05T06:57:09Z",
-      "age_days": 10.0,
+      "age_days": 11.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -1565,7 +1565,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 10d) — review it."
+      "baseline_reason": "PR (waited 11d) — review it."
     },
     {
       "number": 544,
@@ -1644,7 +1644,7 @@
       "comments": 1,
       "created_at": "2026-08-06T05:28:55Z",
       "updated_at": "2026-08-06T05:32:04Z",
-      "age_days": 9.0,
+      "age_days": 10.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -1653,7 +1653,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 9d) — review it."
+      "baseline_reason": "PR (waited 10d) — review it."
     },
     {
       "number": 552,
@@ -1666,7 +1666,7 @@
       "comments": 1,
       "created_at": "2026-08-06T06:06:40Z",
       "updated_at": "2026-08-06T06:10:46Z",
-      "age_days": 9.0,
+      "age_days": 10.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -1675,7 +1675,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 9d) — review it."
+      "baseline_reason": "PR (waited 10d) — review it."
     },
     {
       "number": 553,
@@ -1688,7 +1688,7 @@
       "comments": 1,
       "created_at": "2026-08-06T06:08:05Z",
       "updated_at": "2026-08-06T06:13:56Z",
-      "age_days": 9.0,
+      "age_days": 10.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -1697,7 +1697,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 9d) — review it."
+      "baseline_reason": "PR (waited 10d) — review it."
     },
     {
       "number": 563,
@@ -1710,7 +1710,7 @@
       "comments": 1,
       "created_at": "2026-08-07T07:52:00Z",
       "updated_at": "2026-08-07T07:58:14Z",
-      "age_days": 8.0,
+      "age_days": 9.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -1719,7 +1719,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 8d) — review it."
+      "baseline_reason": "PR (waited 9d) — review it."
     },
     {
       "number": 596,
@@ -1732,7 +1732,7 @@
       "comments": 1,
       "created_at": "2026-08-11T05:58:31Z",
       "updated_at": "2026-08-11T06:01:06Z",
-      "age_days": 4.0,
+      "age_days": 5.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -1741,7 +1741,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 4d) — review it."
+      "baseline_reason": "PR (waited 5d) — review it."
     },
     {
       "number": 607,
@@ -1821,7 +1821,7 @@
       "created_at": "2026-08-11T08:59:38Z",
       "updated_at": "2026-08-14T02:16:44Z",
       "age_days": 2.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1843,7 +1843,7 @@
       "created_at": "2026-08-07T04:21:44Z",
       "updated_at": "2026-08-14T16:11:23Z",
       "age_days": 1.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1865,7 +1865,7 @@
       "created_at": "2026-08-08T02:30:43Z",
       "updated_at": "2026-08-15T00:33:08Z",
       "age_days": 1.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1908,7 +1908,7 @@
       "comments": 1,
       "created_at": "2026-05-31T07:48:32Z",
       "updated_at": "2026-05-31T07:57:16Z",
-      "age_days": 76.0,
+      "age_days": 77.0,
       "triaged": false,
       "awaiting": false,
       "is_draft": true,
@@ -1917,7 +1917,7 @@
       "baseline_action": "wait_author",
       "baseline_glyph": "🚧",
       "baseline_text": "Wait — PR is a draft/WIP",
-      "baseline_reason": "Draft/WIP PR (waited 76d) — don't review yet; nudge the author to mark it ready."
+      "baseline_reason": "Draft/WIP PR (waited 77d) — don't review yet; nudge the author to mark it ready."
     },
     {
       "number": 541,
@@ -1974,7 +1974,7 @@
       "comments": 1,
       "created_at": "2026-08-07T07:54:12Z",
       "updated_at": "2026-08-14T07:20:15Z",
-      "age_days": 1.0,
+      "age_days": 2.0,
       "triaged": false,
       "awaiting": false,
       "is_draft": true,
@@ -1983,7 +1983,7 @@
       "baseline_action": "wait_author",
       "baseline_glyph": "🚧",
       "baseline_text": "Wait — PR is a draft/WIP",
-      "baseline_reason": "Draft/WIP PR (waited 1d) — don't review yet; nudge the author to mark it ready."
+      "baseline_reason": "Draft/WIP PR (waited 2d) — don't review yet; nudge the author to mark it ready."
     }
   ]
 }
