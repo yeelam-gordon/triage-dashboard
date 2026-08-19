@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T02:27:16Z",
+  "generated_at": "2026-08-19T05:18:24Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -45,15 +45,15 @@
     "backlog_open_issues": null,
     "backlog_open_prs": null,
     "awaiting_reply_issues": 473,
-    "awaiting_reply_prs": 187,
+    "awaiting_reply_prs": 189,
     "awaiting_label": null,
     "window_label": "Daily (24h)"
   },
   "owed_list": {
-    "issues_total": 9054,
-    "prs_total": 248,
-    "listed_issues": 9054,
-    "listed_prs": 248,
+    "issues_total": 9052,
+    "prs_total": 249,
+    "listed_issues": 9052,
+    "listed_prs": 249,
     "capped_issues": false,
     "capped_prs": false
   },
@@ -944,7 +944,7 @@
             "comments": 1,
             "created_at": "2026-08-11T01:16:16Z",
             "updated_at": "2026-08-11T01:16:52Z",
-            "age_days": 8.0,
+            "age_days": 9.0,
             "triaged": false,
             "awaiting": true,
             "fix_ready": false,
@@ -952,7 +952,7 @@
             "baseline_action": "label_only",
             "baseline_glyph": "🏷️",
             "baseline_text": "Fix the labels / tags",
-            "baseline_reason": "Wrong/missing tags (waited 8d) — correct them, then route."
+            "baseline_reason": "Wrong/missing tags (waited 9d) — correct them, then route."
           },
           {
             "number": 608,
@@ -1204,16 +1204,16 @@
             "comments": 1,
             "created_at": "2026-05-21T15:14:26Z",
             "updated_at": "2026-05-21T23:48:24Z",
-            "age_days": 89.0,
+            "age_days": 90.0,
             "triaged": false,
             "awaiting": true,
             "is_draft": false,
             "merge_state": "",
             "review_decision": "REVIEW_REQUIRED",
-            "baseline_action": "assign_reviewer",
-            "baseline_glyph": "👤",
-            "baseline_text": "Assign a domain reviewer",
-            "baseline_reason": "PR has waited 89 d for us (waited 89d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+            "baseline_action": "review",
+            "baseline_glyph": "🕰️",
+            "baseline_text": "Stale PR — status or close",
+            "baseline_reason": "PR has sat 90 d (waited 90d) — ping for status/rebase or close if abandoned."
           },
           {
             "number": 278,
@@ -1226,7 +1226,7 @@
             "comments": 1,
             "created_at": "2026-06-12T02:00:08Z",
             "updated_at": "2026-06-15T01:05:22Z",
-            "age_days": 65.0,
+            "age_days": 66.0,
             "triaged": false,
             "awaiting": true,
             "is_draft": false,
@@ -1235,7 +1235,7 @@
             "baseline_action": "assign_reviewer",
             "baseline_glyph": "👤",
             "baseline_text": "Assign a domain reviewer",
-            "baseline_reason": "PR has waited 65 d for us (waited 65d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+            "baseline_reason": "PR has waited 66 d for us (waited 66d) — assign the area owner as reviewer and get a decision, don't leave it generic."
           },
           {
             "number": 310,
@@ -1578,7 +1578,7 @@
             "comments": 1,
             "created_at": "2026-06-11T00:15:22Z",
             "updated_at": "2026-07-23T00:56:50Z",
-            "age_days": 27.0,
+            "age_days": 28.0,
             "triaged": false,
             "awaiting": true,
             "is_draft": false,
@@ -1587,7 +1587,7 @@
             "baseline_action": "review",
             "baseline_glyph": "👀",
             "baseline_text": "Review this PR",
-            "baseline_reason": "PR (waited 27d) — review it."
+            "baseline_reason": "PR (waited 28d) — review it."
           },
           {
             "number": 490,
@@ -1864,7 +1864,7 @@
             "comments": 1,
             "created_at": "2026-07-18T00:59:36Z",
             "updated_at": "2026-08-13T23:32:12Z",
-            "age_days": 5.0,
+            "age_days": 6.0,
             "triaged": false,
             "awaiting": true,
             "is_draft": false,
@@ -1873,7 +1873,7 @@
             "baseline_action": "review",
             "baseline_glyph": "👀",
             "baseline_text": "Review this PR",
-            "baseline_reason": "PR (waited 5d) — review it."
+            "baseline_reason": "PR (waited 6d) — review it."
           },
           {
             "number": 505,
@@ -1973,7 +1973,7 @@
             "up": 1,
             "comments": 1,
             "created_at": "2026-08-08T02:30:43Z",
-            "updated_at": "2026-08-19T02:26:40Z",
+            "updated_at": "2026-08-19T05:14:36Z",
             "age_days": 0.0,
             "triaged": false,
             "awaiting": true,
@@ -2752,7 +2752,7 @@
             "comments": 1,
             "created_at": "2026-08-13T23:28:29Z",
             "updated_at": "2026-08-13T23:28:29Z",
-            "age_days": 5.0,
+            "age_days": 6.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -2760,7 +2760,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Decide on this feature request",
-            "baseline_reason": "Feature/idea (waited 5d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+            "baseline_reason": "Feature/idea (waited 6d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
           }
         ],
         "prs": [
@@ -2973,7 +2973,7 @@
             "comments": 1,
             "created_at": "2026-08-13T21:16:49Z",
             "updated_at": "2026-08-13T23:30:04Z",
-            "age_days": 5.0,
+            "age_days": 6.0,
             "triaged": true,
             "awaiting": true,
             "is_draft": false,
@@ -2982,7 +2982,7 @@
             "baseline_action": "review",
             "baseline_glyph": "👀",
             "baseline_text": "Review this PR",
-            "baseline_reason": "PR (waited 5d) — review it."
+            "baseline_reason": "PR (waited 6d) — review it."
           },
           {
             "number": 147,
@@ -2995,7 +2995,7 @@
             "comments": 1,
             "created_at": "2026-08-13T22:16:41Z",
             "updated_at": "2026-08-13T23:30:04Z",
-            "age_days": 5.0,
+            "age_days": 6.0,
             "triaged": true,
             "awaiting": true,
             "is_draft": false,
@@ -3004,7 +3004,7 @@
             "baseline_action": "review",
             "baseline_glyph": "👀",
             "baseline_text": "Review this PR",
-            "baseline_reason": "PR (waited 5d) — review it."
+            "baseline_reason": "PR (waited 6d) — review it."
           },
           {
             "number": 148,
@@ -3017,7 +3017,7 @@
             "comments": 1,
             "created_at": "2026-08-13T23:08:14Z",
             "updated_at": "2026-08-13T23:30:04Z",
-            "age_days": 5.0,
+            "age_days": 6.0,
             "triaged": true,
             "awaiting": true,
             "is_draft": false,
@@ -3026,7 +3026,7 @@
             "baseline_action": "review",
             "baseline_glyph": "👀",
             "baseline_text": "Review this PR",
-            "baseline_reason": "PR (waited 5d) — review it."
+            "baseline_reason": "PR (waited 6d) — review it."
           },
           {
             "number": 150,
@@ -3251,11 +3251,11 @@
         "triaged_issues": 10,
         "triaged_prs": 5,
         "window_active_issues": 7,
-        "window_active_prs": 7,
+        "window_active_prs": 9,
         "backlog_open_issues": 909,
-        "backlog_open_prs": 51,
+        "backlog_open_prs": 53,
         "awaiting_reply_issues": 3,
-        "awaiting_reply_prs": 42,
+        "awaiting_reply_prs": 44,
         "awaiting_label": "needs-attention",
         "window_label": "Daily (24h)"
       },
@@ -3275,7 +3275,7 @@
             "comments": 1,
             "created_at": "2025-01-27T19:48:51Z",
             "updated_at": "2025-11-09T22:39:03Z",
-            "age_days": 282.0,
+            "age_days": 283.0,
             "triaged": false,
             "awaiting": true,
             "fix_ready": false,
@@ -3283,7 +3283,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Confirm type (bug/feature) & route",
-            "baseline_reason": "Untyped report (waited 282d, 9 👍) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+            "baseline_reason": "Untyped report (waited 283d, 9 👍) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
           },
           {
             "number": 10022,
@@ -3417,7 +3417,7 @@
             "comments": 1,
             "created_at": "2019-12-06T14:55:12Z",
             "updated_at": "2026-05-24T00:32:11Z",
-            "age_days": 87.0,
+            "age_days": 88.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -3425,7 +3425,7 @@
             "baseline_action": "promote",
             "baseline_glyph": "⭐",
             "baseline_text": "High-demand feature — roadmap decision",
-            "baseline_reason": "Popular feature ask (waited 87d, 513 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+            "baseline_reason": "Popular feature ask (waited 88d, 513 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
           },
           {
             "number": 4166,
@@ -3440,7 +3440,7 @@
             "comments": 1,
             "created_at": "2019-06-17T14:44:01Z",
             "updated_at": "2026-05-21T23:15:08Z",
-            "age_days": 89.0,
+            "age_days": 90.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -3448,7 +3448,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Confirm on current build & route",
-            "baseline_reason": "Bug (waited 89d, 433 👍 high demand) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+            "baseline_reason": "Bug (waited 90d, 433 👍 high demand) — acknowledge, confirm it still repros on a current build, and route to the area owner."
           },
           {
             "number": 7456,
@@ -3599,7 +3599,7 @@
             "comments": 1,
             "created_at": "2020-08-31T20:10:13Z",
             "updated_at": "2026-04-13T22:57:04Z",
-            "age_days": 127.0,
+            "age_days": 128.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -3607,7 +3607,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Confirm type (bug/feature) & route",
-            "baseline_reason": "Untyped report (waited 127d, 204 👍 high demand) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+            "baseline_reason": "Untyped report (waited 128d, 204 👍 high demand) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
           },
           {
             "number": 4322,
@@ -3903,7 +3903,7 @@
             "comments": 1,
             "created_at": "2020-10-01T12:01:59Z",
             "updated_at": "2026-06-25T22:54:00Z",
-            "age_days": 54.0,
+            "age_days": 55.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -3911,7 +3911,7 @@
             "baseline_action": "promote",
             "baseline_glyph": "⭐",
             "baseline_text": "High-demand feature — roadmap decision",
-            "baseline_reason": "Popular feature ask (waited 54d, 72 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+            "baseline_reason": "Popular feature ask (waited 55d, 72 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
           },
           {
             "number": 9231,
@@ -3969,7 +3969,7 @@
             "comments": 1,
             "created_at": "2023-04-07T08:07:56Z",
             "updated_at": "2026-07-30T23:03:01Z",
-            "age_days": 19.0,
+            "age_days": 20.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -3977,7 +3977,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Confirm type (bug/feature) & route",
-            "baseline_reason": "Untyped report (waited 19d, 58 👍 high demand) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+            "baseline_reason": "Untyped report (waited 20d, 58 👍 high demand) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
           },
           {
             "number": 5231,
@@ -3992,7 +3992,7 @@
             "comments": 1,
             "created_at": "2020-05-19T12:22:38Z",
             "updated_at": "2026-01-07T22:44:27Z",
-            "age_days": 223.0,
+            "age_days": 224.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -4000,7 +4000,7 @@
             "baseline_action": "promote",
             "baseline_glyph": "⭐",
             "baseline_text": "High-demand feature — roadmap decision",
-            "baseline_reason": "Popular feature ask (waited 223d, 54 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+            "baseline_reason": "Popular feature ask (waited 224d, 54 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
           },
           {
             "number": 13724,
@@ -4175,7 +4175,7 @@
             "comments": 1,
             "created_at": "2021-05-17T15:01:09Z",
             "updated_at": "2026-03-04T23:28:14Z",
-            "age_days": 167.0,
+            "age_days": 168.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -4183,7 +4183,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Confirm type (bug/feature) & route",
-            "baseline_reason": "Untyped report (waited 167d, 41 👍 high demand) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+            "baseline_reason": "Untyped report (waited 168d, 41 👍 high demand) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
           }
         ],
         "prs": [
@@ -4271,7 +4271,7 @@
             "comments": 1,
             "created_at": "2026-04-28T22:01:36Z",
             "updated_at": "2026-06-24T22:50:37Z",
-            "age_days": 55.0,
+            "age_days": 56.0,
             "triaged": false,
             "awaiting": true,
             "is_draft": false,
@@ -4280,7 +4280,7 @@
             "baseline_action": "assign_reviewer",
             "baseline_glyph": "👤",
             "baseline_text": "Assign a domain reviewer",
-            "baseline_reason": "PR has waited 55 d for us (waited 55d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+            "baseline_reason": "PR has waited 56 d for us (waited 56d) — assign the area owner as reviewer and get a decision, don't leave it generic."
           },
           {
             "number": 40542,
@@ -4295,7 +4295,7 @@
             "comments": 1,
             "created_at": "2026-05-14T21:26:55Z",
             "updated_at": "2026-06-24T22:54:20Z",
-            "age_days": 55.0,
+            "age_days": 56.0,
             "triaged": false,
             "awaiting": true,
             "is_draft": false,
@@ -4304,7 +4304,7 @@
             "baseline_action": "assign_reviewer",
             "baseline_glyph": "👤",
             "baseline_text": "Assign a domain reviewer",
-            "baseline_reason": "PR has waited 55 d for us (waited 55d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+            "baseline_reason": "PR has waited 56 d for us (waited 56d) — assign the area owner as reviewer and get a decision, don't leave it generic."
           },
           {
             "number": 40769,
@@ -4540,7 +4540,7 @@
             "comments": 1,
             "created_at": "2026-02-21T01:23:34Z",
             "updated_at": "2026-08-10T22:49:39Z",
-            "age_days": 8.0,
+            "age_days": 9.0,
             "triaged": false,
             "awaiting": true,
             "is_draft": false,
@@ -4549,7 +4549,7 @@
             "baseline_action": "review",
             "baseline_glyph": "👀",
             "baseline_text": "Review this PR",
-            "baseline_reason": "PR (waited 8d) — review it."
+            "baseline_reason": "PR (waited 9d) — review it."
           },
           {
             "number": 40244,
@@ -4765,7 +4765,7 @@
             "comments": 1,
             "created_at": "2026-08-13T10:12:32Z",
             "updated_at": "2026-08-18T00:26:48Z",
-            "age_days": 1.0,
+            "age_days": 2.0,
             "triaged": false,
             "awaiting": true,
             "is_draft": false,
@@ -4774,7 +4774,7 @@
             "baseline_action": "review",
             "baseline_glyph": "👀",
             "baseline_text": "Review this PR",
-            "baseline_reason": "PR (waited 1d) — review it."
+            "baseline_reason": "PR (waited 2d) — review it."
           },
           {
             "number": 41353,
@@ -4787,6 +4787,50 @@
             "comments": 1,
             "created_at": "2026-08-13T23:40:35Z",
             "updated_at": "2026-08-18T23:52:41Z",
+            "age_days": 1.0,
+            "triaged": false,
+            "awaiting": true,
+            "is_draft": false,
+            "merge_state": "",
+            "review_decision": "REVIEW_REQUIRED",
+            "baseline_action": "review",
+            "baseline_glyph": "👀",
+            "baseline_text": "Review this PR",
+            "baseline_reason": "PR (waited 1d) — review it."
+          },
+          {
+            "number": 41379,
+            "title": "Fix: Reattach stale cached device after backing volume is reattached",
+            "url": "https://github.com/microsoft/WSL/pull/41379",
+            "kind": "pr",
+            "is_community": null,
+            "labels": [],
+            "up": 0,
+            "comments": 1,
+            "created_at": "2026-08-19T03:14:11Z",
+            "updated_at": "2026-08-19T04:42:31Z",
+            "age_days": 0.0,
+            "triaged": false,
+            "awaiting": true,
+            "is_draft": false,
+            "merge_state": "",
+            "review_decision": "REVIEW_REQUIRED",
+            "baseline_action": "review",
+            "baseline_glyph": "👀",
+            "baseline_text": "Review this PR",
+            "baseline_reason": "PR (new) — review it."
+          },
+          {
+            "number": 41380,
+            "title": "Propagate LaunchInit error code",
+            "url": "https://github.com/microsoft/WSL/pull/41380",
+            "kind": "pr",
+            "is_community": null,
+            "labels": [],
+            "up": 0,
+            "comments": 1,
+            "created_at": "2026-08-19T03:31:39Z",
+            "updated_at": "2026-08-19T04:41:59Z",
             "age_days": 0.0,
             "triaged": false,
             "awaiting": true,
@@ -4809,7 +4853,7 @@
             "comments": 1,
             "created_at": "2026-05-01T22:19:15Z",
             "updated_at": "2026-05-27T23:49:18Z",
-            "age_days": 83.0,
+            "age_days": 84.0,
             "triaged": false,
             "awaiting": false,
             "is_draft": false,
@@ -4818,7 +4862,7 @@
             "baseline_action": "assign_reviewer",
             "baseline_glyph": "👤",
             "baseline_text": "Assign a domain reviewer",
-            "baseline_reason": "PR has waited 83 d for us (waited 83d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+            "baseline_reason": "PR has waited 84 d for us (waited 84d) — assign the area owner as reviewer and get a decision, don't leave it generic."
           },
           {
             "number": 40675,
@@ -4853,7 +4897,7 @@
             "comments": 1,
             "created_at": "2026-05-22T22:24:41Z",
             "updated_at": "2026-06-10T22:45:41Z",
-            "age_days": 69.0,
+            "age_days": 70.0,
             "triaged": false,
             "awaiting": false,
             "is_draft": true,
@@ -4862,7 +4906,7 @@
             "baseline_action": "wait_author",
             "baseline_glyph": "🚧",
             "baseline_text": "Wait — PR is a draft/WIP",
-            "baseline_reason": "Draft/WIP PR (waited 69d) — don't review yet; nudge the author to mark it ready."
+            "baseline_reason": "Draft/WIP PR (waited 70d) — don't review yet; nudge the author to mark it ready."
           },
           {
             "number": 40838,
@@ -4897,7 +4941,7 @@
             "comments": 1,
             "created_at": "2026-05-20T19:53:23Z",
             "updated_at": "2026-06-24T22:50:11Z",
-            "age_days": 55.0,
+            "age_days": 56.0,
             "triaged": false,
             "awaiting": false,
             "is_draft": true,
@@ -4906,7 +4950,7 @@
             "baseline_action": "wait_author",
             "baseline_glyph": "🚧",
             "baseline_text": "Wait — PR is a draft/WIP",
-            "baseline_reason": "Draft/WIP PR (waited 55d) — don't review yet; nudge the author to mark it ready."
+            "baseline_reason": "Draft/WIP PR (waited 56d) — don't review yet; nudge the author to mark it ready."
           },
           {
             "number": 40609,
@@ -4919,7 +4963,7 @@
             "comments": 1,
             "created_at": "2026-05-20T20:49:45Z",
             "updated_at": "2026-06-24T22:59:44Z",
-            "age_days": 55.0,
+            "age_days": 56.0,
             "triaged": false,
             "awaiting": false,
             "is_draft": true,
@@ -4928,7 +4972,7 @@
             "baseline_action": "wait_author",
             "baseline_glyph": "🚧",
             "baseline_text": "Wait — PR is a draft/WIP",
-            "baseline_reason": "Draft/WIP PR (waited 55d) — don't review yet; nudge the author to mark it ready."
+            "baseline_reason": "Draft/WIP PR (waited 56d) — don't review yet; nudge the author to mark it ready."
           },
           {
             "number": 40622,
@@ -4941,7 +4985,7 @@
             "comments": 1,
             "created_at": "2026-05-21T19:17:54Z",
             "updated_at": "2026-06-24T22:58:27Z",
-            "age_days": 55.0,
+            "age_days": 56.0,
             "triaged": false,
             "awaiting": false,
             "is_draft": true,
@@ -4950,7 +4994,7 @@
             "baseline_action": "wait_author",
             "baseline_glyph": "🚧",
             "baseline_text": "Wait — PR is a draft/WIP",
-            "baseline_reason": "Draft/WIP PR (waited 55d) — don't review yet; nudge the author to mark it ready."
+            "baseline_reason": "Draft/WIP PR (waited 56d) — don't review yet; nudge the author to mark it ready."
           },
           {
             "number": 40739,
@@ -4963,7 +5007,7 @@
             "comments": 1,
             "created_at": "2026-06-07T20:05:48Z",
             "updated_at": "2026-06-24T23:00:46Z",
-            "age_days": 55.0,
+            "age_days": 56.0,
             "triaged": false,
             "awaiting": false,
             "is_draft": true,
@@ -4972,7 +5016,7 @@
             "baseline_action": "wait_author",
             "baseline_glyph": "🚧",
             "baseline_text": "Wait — PR is a draft/WIP",
-            "baseline_reason": "Draft/WIP PR (waited 55d) — don't review yet; nudge the author to mark it ready."
+            "baseline_reason": "Draft/WIP PR (waited 56d) — don't review yet; nudge the author to mark it ready."
           },
           {
             "number": 40876,
@@ -4985,7 +5029,7 @@
             "comments": 1,
             "created_at": "2026-06-23T02:27:31Z",
             "updated_at": "2026-06-24T22:54:30Z",
-            "age_days": 55.0,
+            "age_days": 56.0,
             "triaged": false,
             "awaiting": false,
             "is_draft": true,
@@ -4994,7 +5038,7 @@
             "baseline_action": "wait_author",
             "baseline_glyph": "🚧",
             "baseline_text": "Wait — PR is a draft/WIP",
-            "baseline_reason": "Draft/WIP PR (waited 55d) — don't review yet; nudge the author to mark it ready."
+            "baseline_reason": "Draft/WIP PR (waited 56d) — don't review yet; nudge the author to mark it ready."
           },
           {
             "number": 40600,
@@ -5042,60 +5086,16 @@
             "baseline_glyph": "🚧",
             "baseline_text": "Wait — PR is a draft/WIP",
             "baseline_reason": "Draft/WIP PR (waited 37d) — don't review yet; nudge the author to mark it ready."
-          },
-          {
-            "number": 41053,
-            "title": "Move OneBranch pipelines to Windows Server 2025 / VSE 2026 image",
-            "url": "https://github.com/microsoft/WSL/pull/41053",
-            "kind": "pr",
-            "is_community": null,
-            "labels": [],
-            "up": 0,
-            "comments": 1,
-            "created_at": "2026-07-10T18:16:40Z",
-            "updated_at": "2026-07-13T17:01:47Z",
-            "age_days": 37.0,
-            "triaged": false,
-            "awaiting": false,
-            "is_draft": true,
-            "merge_state": "",
-            "review_decision": "REVIEW_REQUIRED",
-            "baseline_action": "wait_author",
-            "baseline_glyph": "🚧",
-            "baseline_text": "Wait — PR is a draft/WIP",
-            "baseline_reason": "Draft/WIP PR (waited 37d) — don't review yet; nudge the author to mark it ready."
-          },
-          {
-            "number": 40971,
-            "title": "Wslc events",
-            "url": "https://github.com/microsoft/WSL/pull/40971",
-            "kind": "pr",
-            "is_community": null,
-            "labels": [],
-            "up": 0,
-            "comments": 1,
-            "created_at": "2026-07-01T22:49:03Z",
-            "updated_at": "2026-07-23T23:44:35Z",
-            "age_days": 26.0,
-            "triaged": false,
-            "awaiting": false,
-            "is_draft": false,
-            "merge_state": "",
-            "review_decision": "APPROVED",
-            "baseline_action": "review",
-            "baseline_glyph": "👀",
-            "baseline_text": "Review this PR",
-            "baseline_reason": "PR (waited 26d) — review it."
           }
         ],
         "awaiting_issues": 3,
-        "awaiting_prs": 27,
+        "awaiting_prs": 29,
         "backlog_issues": 909,
-        "backlog_prs": 51,
+        "backlog_prs": 53,
         "issues_total": 3,
-        "prs_total": 42,
+        "prs_total": 44,
         "listed_issues": 909,
-        "listed_prs": 51,
+        "listed_prs": 53,
         "preview_count": 40,
         "has_more_issues": true,
         "has_more_prs": true,
@@ -5160,16 +5160,16 @@
           "actionable": 0,
           "stale7d": 0
         },
-        "headline": "7499 awaiting our reply/review — triage the top items below.",
+        "headline": "7496 awaiting our reply/review — triage the top items below.",
         "recommendation": "Work the owed backlog top-down (highest importance first)."
       },
       "counts": {
         "triaged_issues": 0,
         "triaged_prs": 0,
-        "window_active_issues": 25,
-        "window_active_prs": 24,
-        "backlog_open_issues": 7384,
-        "backlog_open_prs": 115,
+        "window_active_issues": 24,
+        "window_active_prs": 23,
+        "backlog_open_issues": 7382,
+        "backlog_open_prs": 114,
         "awaiting_reply_issues": 434,
         "awaiting_reply_prs": 93,
         "awaiting_label": "Needs-Team-Response",
@@ -5268,7 +5268,7 @@
             "comments": 1,
             "created_at": "2024-09-04T13:23:20Z",
             "updated_at": "2026-07-31T01:17:31Z",
-            "age_days": 19.0,
+            "age_days": 20.0,
             "triaged": false,
             "awaiting": true,
             "fix_ready": false,
@@ -5276,7 +5276,7 @@
             "baseline_action": "promote",
             "baseline_glyph": "⭐",
             "baseline_text": "High-demand feature — roadmap decision (Workspaces)",
-            "baseline_reason": "Popular feature ask (Workspaces) (waited 19d, 16 👍) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+            "baseline_reason": "Popular feature ask (Workspaces) (waited 20d, 16 👍) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
           },
           {
             "number": 45158,
@@ -5523,7 +5523,7 @@
             "comments": 1,
             "created_at": "2024-01-03T02:51:43Z",
             "updated_at": "2026-05-28T23:49:21Z",
-            "age_days": 82.0,
+            "age_days": 83.0,
             "triaged": false,
             "awaiting": true,
             "fix_ready": false,
@@ -5531,7 +5531,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "📣",
             "baseline_text": "We owe a team response — confirm & route to the Mouse Without Borders owner (Mouse Without Borders)",
-            "baseline_reason": "Bug flagged Needs-Team-Response and routed to Mouse Without Borders (waited 82d, 5 👍) — confirm it still repros on a current build and post the Mouse Without Borders owner's response the reporter is waiting on."
+            "baseline_reason": "Bug flagged Needs-Team-Response and routed to Mouse Without Borders (waited 83d, 5 👍) — confirm it still repros on a current build and post the Mouse Without Borders owner's response the reporter is waiting on."
           },
           {
             "number": 13310,
@@ -7190,13 +7190,13 @@
           }
         ],
         "awaiting_issues": 434,
-        "awaiting_prs": 73,
-        "backlog_issues": 7384,
-        "backlog_prs": 115,
+        "awaiting_prs": 72,
+        "backlog_issues": 7382,
+        "backlog_prs": 114,
         "issues_total": 434,
         "prs_total": 93,
-        "listed_issues": 7384,
-        "listed_prs": 115,
+        "listed_issues": 7382,
+        "listed_prs": 114,
         "preview_count": 40,
         "has_more_issues": true,
         "has_more_prs": true,
@@ -7293,7 +7293,7 @@
             "comments": 1,
             "created_at": "2021-04-22T13:25:13Z",
             "updated_at": "2026-01-29T01:09:23Z",
-            "age_days": 202.0,
+            "age_days": 203.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -7301,7 +7301,7 @@
             "baseline_action": "promote",
             "baseline_glyph": "⭐",
             "baseline_text": "High-demand feature — roadmap decision",
-            "baseline_reason": "Popular feature ask (waited 202d, 113 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+            "baseline_reason": "Popular feature ask (waited 203d, 113 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
           },
           {
             "number": 23,
@@ -7432,7 +7432,7 @@
             "comments": 1,
             "created_at": "2021-05-04T05:56:43Z",
             "updated_at": "2025-12-10T01:05:01Z",
-            "age_days": 252.0,
+            "age_days": 253.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -7440,7 +7440,7 @@
             "baseline_action": "promote",
             "baseline_glyph": "⭐",
             "baseline_text": "High-demand feature — roadmap decision",
-            "baseline_reason": "Popular feature ask (waited 252d, 45 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+            "baseline_reason": "Popular feature ask (waited 253d, 45 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
           },
           {
             "number": 290,
@@ -7670,7 +7670,7 @@
             "comments": 1,
             "created_at": "2022-09-25T06:21:20Z",
             "updated_at": "2026-04-24T01:02:19Z",
-            "age_days": 117.0,
+            "age_days": 118.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -7678,7 +7678,7 @@
             "baseline_action": "no_action",
             "baseline_glyph": "🚧",
             "baseline_text": "In progress — track the fix",
-            "baseline_reason": "Already being worked (waited 117d, 25 👍 high demand) — a fix/PR is in flight; track it to completion, don't re-triage or close."
+            "baseline_reason": "Already being worked (waited 118d, 25 👍 high demand) — a fix/PR is in flight; track it to completion, don't re-triage or close."
           },
           {
             "number": 294,
@@ -7880,7 +7880,7 @@
             "comments": 1,
             "created_at": "2021-07-26T23:32:47Z",
             "updated_at": "2024-02-22T00:27:41Z",
-            "age_days": 909.0,
+            "age_days": 910.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -7888,7 +7888,7 @@
             "baseline_action": "reassess_stale",
             "baseline_glyph": "🔁",
             "baseline_text": "Verify duplicate & close/link",
-            "baseline_reason": "Marked duplicate (waited 909d, 19 👍) — confirm the canonical issue, link it, and close this as a duplicate."
+            "baseline_reason": "Marked duplicate (waited 910d, 19 👍) — confirm the canonical issue, link it, and close this as a duplicate."
           },
           {
             "number": 959,
@@ -7951,7 +7951,7 @@
             "comments": 1,
             "created_at": "2021-12-21T11:24:39Z",
             "updated_at": "2025-07-01T00:27:16Z",
-            "age_days": 414.0,
+            "age_days": 415.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -7959,7 +7959,7 @@
             "baseline_action": "reassess_stale",
             "baseline_glyph": "🗓️",
             "baseline_text": "Old unconfirmed bug — revalidate or close stale",
-            "baseline_reason": "Old bug (waited 414d, 17 👍) with little activity — re-test on a current build; route only if it still repros, else close as stale."
+            "baseline_reason": "Old bug (waited 415d, 17 👍) with little activity — re-test on a current build; route only if it still repros, else close as stale."
           },
           {
             "number": 632,
@@ -8115,7 +8115,7 @@
             "comments": 1,
             "created_at": "2022-04-22T18:20:02Z",
             "updated_at": "2022-08-10T23:43:42Z",
-            "age_days": 1469.0,
+            "age_days": 1470.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -8123,7 +8123,7 @@
             "baseline_action": "reassess_stale",
             "baseline_glyph": "🗓️",
             "baseline_text": "Old unconfirmed bug — revalidate or close stale",
-            "baseline_reason": "Old bug (waited 1469d, 15 👍) with little activity — re-test on a current build; route only if it still repros, else close as stale."
+            "baseline_reason": "Old bug (waited 1470d, 15 👍) with little activity — re-test on a current build; route only if it still repros, else close as stale."
           },
           {
             "number": 584,
@@ -8516,7 +8516,7 @@
             "comments": 1,
             "created_at": "2026-06-25T22:28:57Z",
             "updated_at": "2026-06-26T00:12:38Z",
-            "age_days": 54.0,
+            "age_days": 55.0,
             "triaged": false,
             "awaiting": true,
             "is_draft": false,
@@ -8525,7 +8525,7 @@
             "baseline_action": "assign_reviewer",
             "baseline_glyph": "👤",
             "baseline_text": "Assign a domain reviewer",
-            "baseline_reason": "PR has waited 54 d for us (waited 54d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+            "baseline_reason": "PR has waited 55 d for us (waited 55d) — assign the area owner as reviewer and get a decision, don't leave it generic."
           },
           {
             "number": 1418,
@@ -8563,7 +8563,7 @@
             "comments": 1,
             "created_at": "2026-05-19T18:19:06Z",
             "updated_at": "2026-05-19T23:10:31Z",
-            "age_days": 91.0,
+            "age_days": 92.0,
             "triaged": false,
             "awaiting": false,
             "is_draft": true,
@@ -8572,7 +8572,7 @@
             "baseline_action": "wait_author",
             "baseline_glyph": "🚧",
             "baseline_text": "Wait — PR is a draft/WIP",
-            "baseline_reason": "Draft/WIP PR (waited 91d) — don't review yet; nudge the author to mark it ready."
+            "baseline_reason": "Draft/WIP PR (waited 92d) — don't review yet; nudge the author to mark it ready."
           },
           {
             "number": 1486,
