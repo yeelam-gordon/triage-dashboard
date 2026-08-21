@@ -1,11 +1,11 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-08-20T20:55:32Z",
+  "generated_at": "2026-08-20T23:56:06Z",
   "awaiting_label": "Needs-Triage",
   "awaiting_issues": 35,
   "awaiting_prs": 40,
   "backlog_issues": 40,
-  "backlog_prs": 45,
+  "backlog_prs": 44,
   "issues_total": 35,
   "prs_total": 37,
   "issues": [
@@ -263,7 +263,7 @@
       "comments": 1,
       "created_at": "2026-06-17T19:14:31Z",
       "updated_at": "2026-06-17T19:15:42Z",
-      "age_days": 64.0,
+      "age_days": 65.0,
       "triaged": false,
       "awaiting": true,
       "fix_ready": false,
@@ -271,7 +271,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 64d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 65d) — correct them, then route."
     },
     {
       "number": 207,
@@ -953,7 +953,7 @@
       "comments": 1,
       "created_at": "2026-06-17T19:32:42Z",
       "updated_at": "2026-06-17T19:35:27Z",
-      "age_days": 64.0,
+      "age_days": 65.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -961,7 +961,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 64d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 65d) — correct them, then route."
     },
     {
       "number": 259,
@@ -1738,6 +1738,28 @@
       "baseline_reason": "PR (waited 4d) — review it."
     },
     {
+      "number": 626,
+      "title": "Pin GitHub Actions to full-length commit SHAs",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/626",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-08-18T17:36:27Z",
+      "updated_at": "2026-08-18T17:45:25Z",
+      "age_days": 3.0,
+      "triaged": false,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (waited 3d) — review it."
+    },
+    {
       "number": 505,
       "title": "Add yolo mode: auto-approve tool-call permission requests",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/505",
@@ -1780,28 +1802,6 @@
       "baseline_glyph": "📦",
       "baseline_text": "Dependency PR — check CI & merge/close",
       "baseline_reason": "Dependency bump (waited 2d) — verify CI + changelog risk, then merge or close."
-    },
-    {
-      "number": 626,
-      "title": "Pin GitHub Actions to full-length commit SHAs",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/626",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-08-18T17:36:27Z",
-      "updated_at": "2026-08-18T17:45:25Z",
-      "age_days": 2.0,
-      "triaged": false,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 2d) — review it."
     },
     {
       "number": 628,
@@ -1956,28 +1956,6 @@
       "baseline_glyph": "🚧",
       "baseline_text": "Wait — PR is a draft/WIP",
       "baseline_reason": "Draft/WIP PR (waited 3d) — don't review yet; nudge the author to mark it ready."
-    },
-    {
-      "number": 636,
-      "title": "Fix the OpenCode hook row and name the CLIs that fail to install",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/636",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-08-20T05:05:00Z",
-      "updated_at": "2026-08-20T13:45:51Z",
-      "age_days": 1.0,
-      "triaged": true,
-      "awaiting": false,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "APPROVED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 1d) — review it."
     }
   ]
 }
