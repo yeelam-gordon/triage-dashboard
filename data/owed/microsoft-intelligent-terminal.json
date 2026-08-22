@@ -1,11 +1,11 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-08-22T03:03:38Z",
+  "generated_at": "2026-08-22T06:01:58Z",
   "awaiting_label": "Needs-Triage",
   "awaiting_issues": 33,
   "awaiting_prs": 42,
   "backlog_issues": 38,
-  "backlog_prs": 48,
+  "backlog_prs": 47,
   "issues_total": 33,
   "prs_total": 39,
   "issues": [
@@ -996,7 +996,7 @@
       "comments": 1,
       "created_at": "2026-05-21T15:14:26Z",
       "updated_at": "2026-05-21T23:48:24Z",
-      "age_days": 92.0,
+      "age_days": 93.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -1005,7 +1005,7 @@
       "baseline_action": "review",
       "baseline_glyph": "🕰️",
       "baseline_text": "Stale PR — status or close",
-      "baseline_reason": "PR has sat 92 d (waited 92d) — ping for status/rebase or close if abandoned."
+      "baseline_reason": "PR has sat 93 d (waited 93d) — ping for status/rebase or close if abandoned."
     },
     {
       "number": 278,
@@ -1018,7 +1018,7 @@
       "comments": 1,
       "created_at": "2026-06-12T02:00:08Z",
       "updated_at": "2026-06-15T01:05:22Z",
-      "age_days": 68.0,
+      "age_days": 69.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -1027,7 +1027,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 68 d for us (waited 68d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 69 d for us (waited 69d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 310,
@@ -1194,7 +1194,7 @@
       "comments": 1,
       "created_at": "2026-07-02T11:35:34Z",
       "updated_at": "2026-07-13T01:45:03Z",
-      "age_days": 40.0,
+      "age_days": 41.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -1203,7 +1203,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 40 d for us (waited 40d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 41 d for us (waited 41d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 397,
@@ -1326,7 +1326,7 @@
       "comments": 1,
       "created_at": "2026-07-21T01:39:20Z",
       "updated_at": "2026-07-21T01:44:19Z",
-      "age_days": 32.0,
+      "age_days": 33.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -1335,7 +1335,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 32 d for us (waited 32d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 33 d for us (waited 33d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 265,
@@ -1348,7 +1348,7 @@
       "comments": 1,
       "created_at": "2026-06-11T00:15:22Z",
       "updated_at": "2026-07-23T00:56:50Z",
-      "age_days": 30.0,
+      "age_days": 31.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -1357,7 +1357,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 30 d for us (waited 30d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 31 d for us (waited 31d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 490,
@@ -1679,7 +1679,7 @@
       "created_at": "2026-07-28T01:59:08Z",
       "updated_at": "2026-08-19T08:37:50Z",
       "age_days": 3.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1822,6 +1822,28 @@
       "baseline_reason": "PR (waited 1d) — review it."
     },
     {
+      "number": 650,
+      "title": "Skip already-current CLIs when Settings installs agent hooks",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/650",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-08-21T15:57:56Z",
+      "updated_at": "2026-08-22T02:01:24Z",
+      "age_days": 1.0,
+      "triaged": true,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (waited 1d) — review it."
+    },
+    {
       "number": 651,
       "title": "Name the agent's execution source in session management",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/651",
@@ -1842,28 +1864,6 @@
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
       "baseline_reason": "PR (waited 1d) — review it."
-    },
-    {
-      "number": 650,
-      "title": "Skip already-current CLIs when Settings installs agent hooks",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/650",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-08-21T15:57:56Z",
-      "updated_at": "2026-08-22T02:01:24Z",
-      "age_days": 0.0,
-      "triaged": true,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (new) — review it."
     },
     {
       "number": 150,
@@ -1963,29 +1963,7 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-08-21T11:00:17Z",
-      "updated_at": "2026-08-22T02:44:25Z",
-      "age_days": 0.0,
-      "triaged": true,
-      "awaiting": false,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "APPROVED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (new) — review it."
-    },
-    {
-      "number": 652,
-      "title": "Remove wtcli publish command-line limit",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/652",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-08-21T16:39:51Z",
-      "updated_at": "2026-08-22T03:02:34Z",
+      "updated_at": "2026-08-22T05:59:49Z",
       "age_days": 0.0,
       "triaged": true,
       "awaiting": false,
