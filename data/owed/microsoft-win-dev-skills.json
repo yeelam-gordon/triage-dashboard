@@ -1,12 +1,12 @@
 {
   "repo": "microsoft/win-dev-skills",
-  "generated_at": "2026-08-25T08:58:02Z",
+  "generated_at": "2026-08-25T12:29:21Z",
   "awaiting_label": null,
   "awaiting_issues": 0,
   "awaiting_prs": 18,
-  "backlog_issues": 29,
+  "backlog_issues": 30,
   "backlog_prs": 20,
-  "issues_total": 29,
+  "issues_total": 30,
   "prs_total": 20,
   "issues": [
     {
@@ -655,6 +655,29 @@
       "baseline_glyph": "💬",
       "baseline_text": "Decide on this feature request",
       "baseline_reason": "Feature/idea (waited 12d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+    },
+    {
+      "number": 156,
+      "title": "[Feature]: `winapp ui` needs scoped/typed queries, text attributes and a batch mode to back a real UI suite",
+      "url": "https://github.com/microsoft/win-dev-skills/issues/156",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "enhancement"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-08-25T10:38:53Z",
+      "updated_at": "2026-08-25T10:38:53Z",
+      "age_days": 0.0,
+      "triaged": true,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "reply",
+      "baseline_glyph": "💬",
+      "baseline_text": "Decide on this feature request",
+      "baseline_reason": "Feature/idea (new). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     }
   ],
   "prs": [
@@ -669,7 +692,7 @@
       "comments": 1,
       "created_at": "2026-05-20T08:07:05Z",
       "updated_at": "2026-05-23T06:43:10Z",
-      "age_days": 94.0,
+      "age_days": 95.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -678,7 +701,7 @@
       "baseline_action": "review",
       "baseline_glyph": "🕰️",
       "baseline_text": "Stale PR — status or close",
-      "baseline_reason": "PR has sat 94 d (waited 94d) — ping for status/rebase or close if abandoned."
+      "baseline_reason": "PR has sat 95 d (waited 95d) — ping for status/rebase or close if abandoned."
     },
     {
       "number": 95,
@@ -692,7 +715,7 @@
       "created_at": "2026-05-26T03:40:18Z",
       "updated_at": "2026-07-06T22:06:46Z",
       "age_days": 50.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -736,7 +759,7 @@
       "created_at": "2026-07-20T22:05:40Z",
       "updated_at": "2026-07-20T22:05:41Z",
       "age_days": 36.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -779,7 +802,7 @@
       "comments": 1,
       "created_at": "2026-07-30T08:14:09Z",
       "updated_at": "2026-08-03T07:12:18Z",
-      "age_days": 22.0,
+      "age_days": 23.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -788,7 +811,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 22d) — review it."
+      "baseline_reason": "PR (waited 23d) — review it."
     },
     {
       "number": 141,
@@ -1022,7 +1045,7 @@
       "created_at": "2026-08-17T22:11:24Z",
       "updated_at": "2026-08-17T22:11:25Z",
       "age_days": 8.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1043,7 +1066,7 @@
       "comments": 1,
       "created_at": "2026-08-25T03:42:50Z",
       "updated_at": "2026-08-25T05:13:06Z",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -1052,7 +1075,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (new) — review it."
+      "baseline_reason": "PR (waited 1d) — review it."
     },
     {
       "number": 108,
@@ -1065,8 +1088,8 @@
       "comments": 1,
       "created_at": "2026-06-12T08:45:02Z",
       "updated_at": "2026-06-16T06:29:44Z",
-      "age_days": 70.0,
-      "triaged": true,
+      "age_days": 71.0,
+      "triaged": false,
       "awaiting": false,
       "is_draft": true,
       "merge_state": "",
@@ -1074,7 +1097,7 @@
       "baseline_action": "wait_author",
       "baseline_glyph": "🚧",
       "baseline_text": "Wait — PR is a draft/WIP",
-      "baseline_reason": "Draft/WIP PR (waited 70d) — don't review yet; nudge the author to mark it ready."
+      "baseline_reason": "Draft/WIP PR (waited 71d) — don't review yet; nudge the author to mark it ready."
     },
     {
       "number": 145,
@@ -1088,7 +1111,7 @@
       "created_at": "2026-08-13T04:25:33Z",
       "updated_at": "2026-08-13T04:44:11Z",
       "age_days": 13.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": false,
       "is_draft": true,
       "merge_state": "",
