@@ -1,13 +1,13 @@
 {
   "repo": "microsoft/win-dev-skills",
-  "generated_at": "2026-08-25T03:02:34Z",
+  "generated_at": "2026-08-25T06:25:08Z",
   "awaiting_label": null,
   "awaiting_issues": 0,
-  "awaiting_prs": 17,
+  "awaiting_prs": 18,
   "backlog_issues": 29,
-  "backlog_prs": 19,
+  "backlog_prs": 20,
   "issues_total": 29,
-  "prs_total": 19,
+  "prs_total": 20,
   "issues": [
     {
       "number": 15,
@@ -110,7 +110,7 @@
       "comments": 1,
       "created_at": "2026-08-13T01:47:13Z",
       "updated_at": "2026-08-13T01:47:37Z",
-      "age_days": 12.0,
+      "age_days": 13.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -118,7 +118,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm type (bug/feature) & route",
-      "baseline_reason": "Untyped report (waited 12d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+      "baseline_reason": "Untyped report (waited 13d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
     },
     {
       "number": 18,
@@ -646,7 +646,7 @@
       "comments": 1,
       "created_at": "2026-08-13T23:28:29Z",
       "updated_at": "2026-08-13T23:28:29Z",
-      "age_days": 11.0,
+      "age_days": 12.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -654,7 +654,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 11d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_reason": "Feature/idea (waited 12d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     }
   ],
   "prs": [
@@ -714,7 +714,7 @@
       "created_at": "2026-05-19T16:27:28Z",
       "updated_at": "2026-07-16T21:00:42Z",
       "age_days": 40.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -758,7 +758,7 @@
       "created_at": "2026-07-17T06:37:21Z",
       "updated_at": "2026-07-21T21:07:31Z",
       "age_days": 35.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -780,7 +780,7 @@
       "created_at": "2026-07-30T08:14:09Z",
       "updated_at": "2026-08-03T07:12:18Z",
       "age_days": 22.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -846,7 +846,7 @@
       "created_at": "2026-08-12T18:01:51Z",
       "updated_at": "2026-08-12T18:01:51Z",
       "age_days": 13.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -867,7 +867,7 @@
       "comments": 1,
       "created_at": "2026-08-13T21:16:49Z",
       "updated_at": "2026-08-13T23:30:04Z",
-      "age_days": 11.0,
+      "age_days": 12.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -876,7 +876,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 11d) — review it."
+      "baseline_reason": "PR (waited 12d) — review it."
     },
     {
       "number": 147,
@@ -889,7 +889,7 @@
       "comments": 1,
       "created_at": "2026-08-13T22:16:41Z",
       "updated_at": "2026-08-13T23:30:04Z",
-      "age_days": 11.0,
+      "age_days": 12.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -898,7 +898,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 11d) — review it."
+      "baseline_reason": "PR (waited 12d) — review it."
     },
     {
       "number": 148,
@@ -911,7 +911,7 @@
       "comments": 1,
       "created_at": "2026-08-13T23:08:14Z",
       "updated_at": "2026-08-13T23:30:04Z",
-      "age_days": 11.0,
+      "age_days": 12.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -920,7 +920,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 11d) — review it."
+      "baseline_reason": "PR (waited 12d) — review it."
     },
     {
       "number": 150,
@@ -1033,6 +1033,28 @@
       "baseline_reason": "Dependency bump (waited 8d) — verify CI + changelog risk, then merge or close."
     },
     {
+      "number": 155,
+      "title": "Stage the AppX layout under a short path when the output folder is deep",
+      "url": "https://github.com/microsoft/win-dev-skills/pull/155",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-08-25T03:42:50Z",
+      "updated_at": "2026-08-25T05:13:06Z",
+      "age_days": 0.0,
+      "triaged": true,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (new) — review it."
+    },
+    {
       "number": 108,
       "title": "Copilot cost calculation module",
       "url": "https://github.com/microsoft/win-dev-skills/pull/108",
@@ -1044,7 +1066,7 @@
       "created_at": "2026-06-12T08:45:02Z",
       "updated_at": "2026-06-16T06:29:44Z",
       "age_days": 70.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": false,
       "is_draft": true,
       "merge_state": "",
@@ -1066,7 +1088,7 @@
       "created_at": "2026-08-13T04:25:33Z",
       "updated_at": "2026-08-13T04:44:11Z",
       "age_days": 12.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": false,
       "is_draft": true,
       "merge_state": "",
