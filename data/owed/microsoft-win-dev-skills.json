@@ -1,12 +1,12 @@
 {
   "repo": "microsoft/win-dev-skills",
-  "generated_at": "2026-08-27T12:23:38Z",
+  "generated_at": "2026-08-27T15:16:39Z",
   "awaiting_label": null,
   "awaiting_issues": 0,
   "awaiting_prs": 11,
-  "backlog_issues": 30,
+  "backlog_issues": 31,
   "backlog_prs": 12,
-  "issues_total": 30,
+  "issues_total": 31,
   "prs_total": 12,
   "issues": [
     {
@@ -648,7 +648,7 @@
       "comments": 1,
       "created_at": "2026-08-25T10:38:53Z",
       "updated_at": "2026-08-25T10:38:53Z",
-      "age_days": 2.0,
+      "age_days": 3.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -656,7 +656,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 2d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_reason": "Feature/idea (waited 3d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     },
     {
       "number": 158,
@@ -669,7 +669,7 @@
       "comments": 1,
       "created_at": "2026-08-25T18:33:39Z",
       "updated_at": "2026-08-26T09:40:49Z",
-      "age_days": 1.0,
+      "age_days": 2.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -677,7 +677,30 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm type (bug/feature) & route",
-      "baseline_reason": "Untyped report (waited 1d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+      "baseline_reason": "Untyped report (waited 2d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+    },
+    {
+      "number": 170,
+      "title": "[Bug]: `.claude-plugin` / `.codex-plugin` manifest version has been `0.3.0` since v0.3.1, so plugin updates are not working",
+      "url": "https://github.com/microsoft/win-dev-skills/issues/170",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "bug"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-08-27T15:12:22Z",
+      "updated_at": "2026-08-27T15:13:20Z",
+      "age_days": 0.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "request_info",
+      "baseline_glyph": "❓",
+      "baseline_text": "Request exact repro, version & logs",
+      "baseline_reason": "Bug (new) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     }
   ],
   "prs": [
@@ -880,6 +903,28 @@
       "baseline_reason": "Dependency bump (waited 2d) — verify CI + changelog risk, then merge or close."
     },
     {
+      "number": 167,
+      "title": "Document marketplace distribution and Copilot Customize path",
+      "url": "https://github.com/microsoft/win-dev-skills/pull/167",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-08-26T09:40:27Z",
+      "updated_at": "2026-08-26T09:57:23Z",
+      "age_days": 2.0,
+      "triaged": true,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (waited 2d) — review it."
+    },
+    {
       "number": 95,
       "title": "deps: Bump Microsoft.CodeAnalysis.CSharp from 4.12.0 to 5.3.0",
       "url": "https://github.com/microsoft/win-dev-skills/pull/95",
@@ -900,28 +945,6 @@
       "baseline_glyph": "📦",
       "baseline_text": "Dependency PR — check CI & merge/close",
       "baseline_reason": "Dependency bump (waited 1d) — verify CI + changelog risk, then merge or close."
-    },
-    {
-      "number": 167,
-      "title": "Document marketplace distribution and Copilot Customize path",
-      "url": "https://github.com/microsoft/win-dev-skills/pull/167",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-08-26T09:40:27Z",
-      "updated_at": "2026-08-26T09:57:23Z",
-      "age_days": 1.0,
-      "triaged": true,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 1d) — review it."
     },
     {
       "number": 108,
