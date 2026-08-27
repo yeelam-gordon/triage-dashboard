@@ -1,13 +1,13 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-08-27T06:20:38Z",
+  "generated_at": "2026-08-27T09:08:11Z",
   "awaiting_label": "Needs-Triage",
   "awaiting_issues": 1,
-  "awaiting_prs": 43,
+  "awaiting_prs": 42,
   "backlog_issues": 38,
-  "backlog_prs": 47,
+  "backlog_prs": 46,
   "issues_total": 1,
-  "prs_total": 39,
+  "prs_total": 38,
   "issues": [
     {
       "number": 668,
@@ -22,8 +22,8 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-08-25T21:38:27Z",
-      "updated_at": "2026-08-25T21:39:46Z",
-      "age_days": 2.0,
+      "updated_at": "2026-08-27T08:14:13Z",
+      "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -31,7 +31,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 2d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (new) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 228,
@@ -47,7 +47,7 @@
       "comments": 1,
       "created_at": "2026-06-04T11:19:15Z",
       "updated_at": "2026-08-21T03:32:05Z",
-      "age_days": 6.0,
+      "age_days": 7.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -55,7 +55,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 6d, 5 👍) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 7d, 5 👍) — correct them, then route."
     },
     {
       "number": 192,
@@ -1218,7 +1218,7 @@
       "comments": 1,
       "created_at": "2026-07-17T13:39:55Z",
       "updated_at": "2026-07-18T02:27:14Z",
-      "age_days": 40.0,
+      "age_days": 41.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -1227,7 +1227,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 40 d for us (waited 40d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 41 d for us (waited 41d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 437,
@@ -1416,7 +1416,7 @@
       "comments": 1,
       "created_at": "2026-08-06T02:59:01Z",
       "updated_at": "2026-08-06T04:38:44Z",
-      "age_days": 21.0,
+      "age_days": 22.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -1425,7 +1425,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 21d) — review it."
+      "baseline_reason": "PR (waited 22d) — review it."
     },
     {
       "number": 549,
@@ -1438,7 +1438,7 @@
       "comments": 1,
       "created_at": "2026-08-06T04:21:48Z",
       "updated_at": "2026-08-06T04:26:56Z",
-      "age_days": 21.0,
+      "age_days": 22.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -1447,7 +1447,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 21d) — review it."
+      "baseline_reason": "PR (waited 22d) — review it."
     },
     {
       "number": 552,
@@ -1736,50 +1736,6 @@
       "baseline_reason": "PR (waited 3d) — review it."
     },
     {
-      "number": 505,
-      "title": "Add yolo mode: auto-approve tool-call permission requests",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/505",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-07-28T01:59:08Z",
-      "updated_at": "2026-08-26T06:13:26Z",
-      "age_days": 1.0,
-      "triaged": true,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "🔐",
-      "baseline_text": "Permission-sensitive review",
-      "baseline_reason": "PR changes file modes/permissions (waited 1d) — review the security impact carefully + owner sign-off."
-    },
-    {
-      "number": 607,
-      "title": "Add deterministic source-pane slash commands",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/607",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-08-12T10:17:20Z",
-      "updated_at": "2026-08-26T03:57:01Z",
-      "age_days": 1.0,
-      "triaged": true,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 1d) — review it."
-    },
-    {
       "number": 662,
       "title": "Re-arm PowerShell shell integration when the prompt is replaced",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/662",
@@ -1812,7 +1768,7 @@
       "comments": 1,
       "created_at": "2026-08-25T09:29:31Z",
       "updated_at": "2026-08-27T03:56:41Z",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -1821,19 +1777,41 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (new) — review it."
+      "baseline_reason": "PR (waited 1d) — review it."
     },
     {
-      "number": 672,
-      "title": "Improve tool call presentation",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/672",
+      "number": 505,
+      "title": "Add yolo mode: auto-approve tool-call permission requests",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/505",
       "kind": "pr",
       "is_community": null,
       "labels": [],
       "up": 0,
       "comments": 1,
-      "created_at": "2026-08-26T12:21:05Z",
-      "updated_at": "2026-08-27T04:46:55Z",
+      "created_at": "2026-07-28T01:59:08Z",
+      "updated_at": "2026-08-27T08:33:56Z",
+      "age_days": 0.0,
+      "triaged": true,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "🔐",
+      "baseline_text": "Permission-sensitive review",
+      "baseline_reason": "PR changes file modes/permissions (new) — review the security impact carefully + owner sign-off."
+    },
+    {
+      "number": 607,
+      "title": "Add deterministic source-pane slash commands",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/607",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-08-12T10:17:20Z",
+      "updated_at": "2026-08-27T08:37:33Z",
       "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
