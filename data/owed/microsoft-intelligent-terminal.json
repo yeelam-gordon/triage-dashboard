@@ -1,13 +1,13 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-08-28T09:30:59Z",
+  "generated_at": "2026-08-28T12:09:17Z",
   "awaiting_label": "Needs-Triage",
   "awaiting_issues": 5,
-  "awaiting_prs": 44,
+  "awaiting_prs": 45,
   "backlog_issues": 42,
-  "backlog_prs": 48,
+  "backlog_prs": 49,
   "issues_total": 5,
-  "prs_total": 40,
+  "prs_total": 41,
   "issues": [
     {
       "number": 668,
@@ -84,6 +84,30 @@
       "baseline_reason": "New untriaged idea (AgentPane) (waited 1d) — classify it and either ask for scope or make an early accept/park call."
     },
     {
+      "number": 682,
+      "title": "Switching from Copilot to Claude can corrupt the shared npx ACP adapter cache during concurrent helper initialization",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/682",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "Issue-Bug",
+        "Needs-Triage"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-08-28T06:45:16Z",
+      "updated_at": "2026-08-28T06:45:41Z",
+      "age_days": 1.0,
+      "triaged": true,
+      "awaiting": true,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "request_info",
+      "baseline_glyph": "🩺",
+      "baseline_text": "Confirm crash — get repro/logs & route",
+      "baseline_reason": "Crash report (waited 1d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
+    },
+    {
       "number": 677,
       "title": "opacity and useAcrylic have no effect: terminal content composites against black instead of the desktop",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/677",
@@ -106,30 +130,6 @@
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
       "baseline_reason": "Bug (new) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
-    },
-    {
-      "number": 682,
-      "title": "Switching from Copilot to Claude can corrupt the shared npx ACP adapter cache during concurrent helper initialization",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/682",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "Issue-Bug",
-        "Needs-Triage"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-08-28T06:45:16Z",
-      "updated_at": "2026-08-28T06:45:41Z",
-      "age_days": 0.0,
-      "triaged": true,
-      "awaiting": true,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "🩺",
-      "baseline_text": "Confirm crash — get repro/logs & route",
-      "baseline_reason": "Crash report (new) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
     },
     {
       "number": 228,
@@ -498,6 +498,30 @@
       "comments": 1,
       "created_at": "2026-06-03T12:49:59Z",
       "updated_at": "2026-08-24T23:55:12Z",
+      "age_days": 4.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "label_only",
+      "baseline_glyph": "🏷️",
+      "baseline_text": "Fix the labels / tags",
+      "baseline_reason": "Wrong/missing tags (waited 4d) — correct them, then route."
+    },
+    {
+      "number": 259,
+      "title": "Agent not detecting error in Oh My Posh",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/259",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "Issue-Bug",
+        "Needs-Tag-Fix"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-06-09T11:21:44Z",
+      "updated_at": "2026-08-25T05:40:41Z",
       "age_days": 4.0,
       "triaged": false,
       "awaiting": false,
@@ -922,30 +946,6 @@
       "baseline_reason": "Wrong/missing tags (waited 4d) — correct them, then route."
     },
     {
-      "number": 259,
-      "title": "Agent not detecting error in Oh My Posh",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/259",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "Issue-Bug",
-        "Needs-Tag-Fix"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-06-09T11:21:44Z",
-      "updated_at": "2026-08-25T05:40:41Z",
-      "age_days": 3.0,
-      "triaged": false,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "label_only",
-      "baseline_glyph": "🏷️",
-      "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 3d) — correct them, then route."
-    },
-    {
       "number": 263,
       "title": "Terminal Hang",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/263",
@@ -1250,7 +1250,7 @@
       "comments": 1,
       "created_at": "2026-07-03T05:26:14Z",
       "updated_at": "2026-07-03T05:31:53Z",
-      "age_days": 56.0,
+      "age_days": 57.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -1259,7 +1259,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 56 d for us (waited 56d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 57 d for us (waited 57d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 373,
@@ -1294,7 +1294,7 @@
       "comments": 1,
       "created_at": "2026-07-09T08:20:31Z",
       "updated_at": "2026-07-15T06:17:58Z",
-      "age_days": 44.0,
+      "age_days": 45.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -1303,7 +1303,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 44 d for us (waited 44d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 45 d for us (waited 45d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 441,
@@ -1449,7 +1449,7 @@
       "created_at": "2026-07-24T09:56:06Z",
       "updated_at": "2026-07-27T10:40:46Z",
       "age_days": 32.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1470,7 +1470,7 @@
       "comments": 1,
       "created_at": "2026-07-18T07:49:56Z",
       "updated_at": "2026-08-05T06:57:09Z",
-      "age_days": 23.0,
+      "age_days": 24.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -1479,7 +1479,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 23d) — review it."
+      "baseline_reason": "PR (waited 24d) — review it."
     },
     {
       "number": 544,
@@ -1515,7 +1515,7 @@
       "created_at": "2026-08-06T02:59:01Z",
       "updated_at": "2026-08-06T04:38:44Z",
       "age_days": 23.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1537,7 +1537,7 @@
       "created_at": "2026-08-06T04:21:48Z",
       "updated_at": "2026-08-06T04:26:56Z",
       "age_days": 23.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1558,7 +1558,7 @@
       "comments": 1,
       "created_at": "2026-08-06T06:06:40Z",
       "updated_at": "2026-08-06T06:10:46Z",
-      "age_days": 22.0,
+      "age_days": 23.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -1567,7 +1567,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 22d) — review it."
+      "baseline_reason": "PR (waited 23d) — review it."
     },
     {
       "number": 553,
@@ -1580,7 +1580,7 @@
       "comments": 1,
       "created_at": "2026-08-06T06:08:05Z",
       "updated_at": "2026-08-06T06:13:56Z",
-      "age_days": 22.0,
+      "age_days": 23.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -1589,7 +1589,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 22d) — review it."
+      "baseline_reason": "PR (waited 23d) — review it."
     },
     {
       "number": 563,
@@ -1602,8 +1602,8 @@
       "comments": 1,
       "created_at": "2026-08-07T07:52:00Z",
       "updated_at": "2026-08-07T07:58:14Z",
-      "age_days": 21.0,
-      "triaged": true,
+      "age_days": 22.0,
+      "triaged": false,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1611,7 +1611,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 21d) — review it."
+      "baseline_reason": "PR (waited 22d) — review it."
     },
     {
       "number": 596,
@@ -1624,7 +1624,7 @@
       "comments": 1,
       "created_at": "2026-08-11T05:58:31Z",
       "updated_at": "2026-08-11T06:01:06Z",
-      "age_days": 17.0,
+      "age_days": 18.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -1633,7 +1633,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 17d) — review it."
+      "baseline_reason": "PR (waited 18d) — review it."
     },
     {
       "number": 597,
@@ -1647,7 +1647,7 @@
       "created_at": "2026-08-11T08:59:38Z",
       "updated_at": "2026-08-14T02:16:44Z",
       "age_days": 15.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1668,7 +1668,7 @@
       "comments": 1,
       "created_at": "2026-08-17T05:37:54Z",
       "updated_at": "2026-08-17T05:43:13Z",
-      "age_days": 11.0,
+      "age_days": 12.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -1677,7 +1677,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 11d) — review it."
+      "baseline_reason": "PR (waited 12d) — review it."
     },
     {
       "number": 626,
@@ -1844,6 +1844,28 @@
       "comments": 1,
       "created_at": "2026-08-25T06:15:33Z",
       "updated_at": "2026-08-26T05:33:32Z",
+      "age_days": 3.0,
+      "triaged": false,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (waited 3d) — review it."
+    },
+    {
+      "number": 673,
+      "title": "Make Enter the only session-picker activation gesture",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/673",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-08-27T04:02:58Z",
+      "updated_at": "2026-08-27T05:31:57Z",
       "age_days": 2.0,
       "triaged": false,
       "awaiting": true,
@@ -1878,28 +1900,6 @@
       "baseline_reason": "PR (waited 1d) — review it."
     },
     {
-      "number": 673,
-      "title": "Make Enter the only session-picker activation gesture",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/673",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-08-27T04:02:58Z",
-      "updated_at": "2026-08-27T05:31:57Z",
-      "age_days": 1.0,
-      "triaged": false,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 1d) — review it."
-    },
-    {
       "number": 679,
       "title": "Fix pseudo-locale app names",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/679",
@@ -1911,7 +1911,7 @@
       "created_at": "2026-08-28T03:38:13Z",
       "updated_at": "2026-08-28T03:39:55Z",
       "age_days": 1.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1931,9 +1931,9 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-07-28T01:59:08Z",
-      "updated_at": "2026-08-28T09:29:50Z",
+      "updated_at": "2026-08-28T10:51:36Z",
       "age_days": 0.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1953,7 +1953,7 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-08-25T09:29:31Z",
-      "updated_at": "2026-08-28T08:16:37Z",
+      "updated_at": "2026-08-28T10:40:53Z",
       "age_days": 0.0,
       "triaged": false,
       "awaiting": true,
@@ -1975,9 +1975,31 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-08-28T08:45:06Z",
-      "updated_at": "2026-08-28T09:21:41Z",
+      "updated_at": "2026-08-28T11:21:23Z",
       "age_days": 0.0,
-      "triaged": false,
+      "triaged": true,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (new) — review it."
+    },
+    {
+      "number": 684,
+      "title": "Keep agent thinking visible throughout in-flight turns",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/684",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-08-28T09:58:45Z",
+      "updated_at": "2026-08-28T11:09:21Z",
+      "age_days": 0.0,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -1998,7 +2020,7 @@
       "comments": 1,
       "created_at": "2026-05-31T07:48:32Z",
       "updated_at": "2026-05-31T07:57:16Z",
-      "age_days": 89.0,
+      "age_days": 90.0,
       "triaged": false,
       "awaiting": false,
       "is_draft": true,
@@ -2007,7 +2029,7 @@
       "baseline_action": "wait_author",
       "baseline_glyph": "🚧",
       "baseline_text": "Wait — PR is a draft/WIP",
-      "baseline_reason": "Draft/WIP PR (waited 89d) — don't review yet; nudge the author to mark it ready."
+      "baseline_reason": "Draft/WIP PR (waited 90d) — don't review yet; nudge the author to mark it ready."
     },
     {
       "number": 541,
@@ -2064,7 +2086,7 @@
       "comments": 1,
       "created_at": "2026-08-07T07:54:12Z",
       "updated_at": "2026-08-24T07:13:23Z",
-      "age_days": 4.0,
+      "age_days": 5.0,
       "triaged": false,
       "awaiting": false,
       "is_draft": true,
@@ -2073,7 +2095,7 @@
       "baseline_action": "wait_author",
       "baseline_glyph": "🚧",
       "baseline_text": "Wait — PR is a draft/WIP",
-      "baseline_reason": "Draft/WIP PR (waited 4d) — don't review yet; nudge the author to mark it ready."
+      "baseline_reason": "Draft/WIP PR (waited 5d) — don't review yet; nudge the author to mark it ready."
     }
   ]
 }
