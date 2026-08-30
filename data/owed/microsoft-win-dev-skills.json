@@ -1,13 +1,13 @@
 {
   "repo": "microsoft/win-dev-skills",
-  "generated_at": "2026-08-30T12:15:14Z",
+  "generated_at": "2026-08-30T15:18:55Z",
   "awaiting_label": null,
   "awaiting_issues": 0,
-  "awaiting_prs": 12,
+  "awaiting_prs": 13,
   "backlog_issues": 31,
-  "backlog_prs": 13,
+  "backlog_prs": 14,
   "issues_total": 31,
-  "prs_total": 13,
+  "prs_total": 14,
   "issues": [
     {
       "number": 15,
@@ -648,7 +648,7 @@
       "comments": 1,
       "created_at": "2026-08-25T10:38:53Z",
       "updated_at": "2026-08-25T10:38:53Z",
-      "age_days": 5.0,
+      "age_days": 6.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -656,7 +656,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 5d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_reason": "Feature/idea (waited 6d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     },
     {
       "number": 158,
@@ -669,7 +669,7 @@
       "comments": 1,
       "created_at": "2026-08-25T18:33:39Z",
       "updated_at": "2026-08-26T09:40:49Z",
-      "age_days": 4.0,
+      "age_days": 5.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -677,7 +677,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm type (bug/feature) & route",
-      "baseline_reason": "Untyped report (waited 4d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+      "baseline_reason": "Untyped report (waited 5d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
     },
     {
       "number": 170,
@@ -691,8 +691,8 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-08-27T15:12:22Z",
-      "updated_at": "2026-08-27T20:07:11Z",
-      "age_days": 3.0,
+      "updated_at": "2026-08-30T15:11:05Z",
+      "age_days": 0.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -700,7 +700,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 3d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (new) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     }
   ],
   "prs": [
@@ -881,6 +881,28 @@
       "baseline_reason": "Dependency bump (waited 5d) — verify CI + changelog risk, then merge or close."
     },
     {
+      "number": 167,
+      "title": "Document marketplace distribution and Copilot Customize path",
+      "url": "https://github.com/microsoft/win-dev-skills/pull/167",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-08-26T09:40:27Z",
+      "updated_at": "2026-08-26T09:57:23Z",
+      "age_days": 5.0,
+      "triaged": true,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (waited 5d) — review it."
+    },
+    {
       "number": 95,
       "title": "deps: Bump Microsoft.CodeAnalysis.CSharp from 4.12.0 to 5.3.0",
       "url": "https://github.com/microsoft/win-dev-skills/pull/95",
@@ -901,28 +923,6 @@
       "baseline_glyph": "📦",
       "baseline_text": "Dependency PR — check CI & merge/close",
       "baseline_reason": "Dependency bump (waited 4d) — verify CI + changelog risk, then merge or close."
-    },
-    {
-      "number": 167,
-      "title": "Document marketplace distribution and Copilot Customize path",
-      "url": "https://github.com/microsoft/win-dev-skills/pull/167",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-08-26T09:40:27Z",
-      "updated_at": "2026-08-26T09:57:23Z",
-      "age_days": 4.0,
-      "triaged": true,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 4d) — review it."
     },
     {
       "number": 171,
@@ -967,6 +967,28 @@
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
       "baseline_reason": "PR (waited 1d) — review it."
+    },
+    {
+      "number": 172,
+      "title": "fix(release): sync client manifest versions",
+      "url": "https://github.com/microsoft/win-dev-skills/pull/172",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-08-30T15:20:00Z",
+      "updated_at": "2026-08-30T15:20:25Z",
+      "age_days": 0.0,
+      "triaged": false,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (new) — review it."
     },
     {
       "number": 108,
