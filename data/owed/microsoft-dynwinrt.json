@@ -1,13 +1,13 @@
 {
   "repo": "microsoft/dynwinrt",
-  "generated_at": "2026-08-31T12:09:30Z",
+  "generated_at": "2026-08-31T15:28:13Z",
   "awaiting_label": null,
   "awaiting_issues": 0,
-  "awaiting_prs": 6,
+  "awaiting_prs": 7,
   "backlog_issues": 0,
-  "backlog_prs": 6,
+  "backlog_prs": 7,
   "issues_total": null,
-  "prs_total": 6,
+  "prs_total": 7,
   "issues": [],
   "prs": [
     {
@@ -21,7 +21,7 @@
       "comments": 1,
       "created_at": "2026-07-22T14:04:00Z",
       "updated_at": "2026-07-23T09:48:29Z",
-      "age_days": 39.0,
+      "age_days": 40.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -30,7 +30,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 39 d for us (waited 39d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 40 d for us (waited 40d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 70,
@@ -87,7 +87,7 @@
       "comments": 1,
       "created_at": "2026-08-18T03:05:30Z",
       "updated_at": "2026-08-19T08:40:23Z",
-      "age_days": 12.0,
+      "age_days": 13.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -96,7 +96,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 12d) — review it."
+      "baseline_reason": "PR (waited 13d) — review it."
     },
     {
       "number": 108,
@@ -130,7 +130,29 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-08-31T01:15:45Z",
-      "updated_at": "2026-08-31T09:07:07Z",
+      "updated_at": "2026-08-31T14:46:54Z",
+      "age_days": 0.0,
+      "triaged": true,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (new) — review it."
+    },
+    {
+      "number": 110,
+      "title": "Support struct-valued WinRT progress callbacks",
+      "url": "https://github.com/microsoft/dynwinrt/pull/110",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-08-31T14:51:48Z",
+      "updated_at": "2026-08-31T15:06:20Z",
       "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
