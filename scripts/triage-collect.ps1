@@ -24,6 +24,10 @@ param(
         'microsoft/intelligent-terminal',
         'yeelam-gordon/awesome-copilot'
     ),
+    # Pin a CHEAP model for this batch job. Do NOT use 'auto' here: auto can fall
+    # back to your (expensive) personal default. Triage is read+classify+draft,
+    # which a small model handles fine. Override with -Model or $env:TRIAGE_MODEL.
+    [string] $Model = ($env:TRIAGE_MODEL ? $env:TRIAGE_MODEL : 'gpt-5-mini'),
     [string] $RepoRoot = (Split-Path -Parent $PSScriptRoot)
 )
 
@@ -66,8 +70,12 @@ Preserve the 'config' and 'skills' fields from the existing data/latest.json if 
 After writing the JSON, validate it parses as JSON, then exit.
 "@
 
-Write-Host "Running Copilot triage analyst..." -ForegroundColor Cyan
-& copilot -p $prompt --allow-tool 'shell(gh)' --allow-tool 'write'
+Write-Host "Running Copilot triage analyst (model: $Model)..." -ForegroundColor Cyan
+& copilot -p $prompt --model $Model --allow-tool 'shell(gh)' --allow-tool 'write'
+if ($LASTEXITCODE -ne 0 -and $Model -ne 'auto') {
+    Write-Host "Model '$Model' failed (exit $LASTEXITCODE); retrying once with 'auto'..." -ForegroundColor Yellow
+    & copilot -p $prompt --model auto --allow-tool 'shell(gh)' --allow-tool 'write'
+}
 
 if (-not (Test-Path $daily)) {
     throw "Copilot did not produce $daily"
