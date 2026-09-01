@@ -102,6 +102,6 @@ if (git diff --cached --quiet) {
     Write-Host "No data changes; skipping commit." -ForegroundColor Yellow
     exit 0
 }
-git -c user.name='triage-bot' -c user.email='triage-bot@localhost' commit -m "triage: $today"
+git -c user.name='triage-bot' -c user.email='triage-bot@localhost' commit -m "triage: $today [model=$Model]"
 git push origin main
 Write-Host "Done." -ForegroundColor Green
