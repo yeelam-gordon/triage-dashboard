@@ -24,10 +24,11 @@ param(
         'microsoft/intelligent-terminal',
         'yeelam-gordon/awesome-copilot'
     ),
-    # Pin a CHEAP model for this batch job. Do NOT use 'auto' here: auto can fall
-    # back to your (expensive) personal default. Triage is read+classify+draft,
-    # which a small model handles fine. Override with -Model or $env:TRIAGE_MODEL.
-    [string] $Model = ($env:TRIAGE_MODEL ? $env:TRIAGE_MODEL : 'gpt-5-mini'),
+    # Pass an EXPLICIT model so the batch job does NOT inherit your (expensive)
+    # personal default that applies when --model is omitted. Default 'auto' lets
+    # Copilot pick automatically without hardcoding a model ID that may be retired.
+    # Override with -Model or $env:TRIAGE_MODEL to pin a specific cheap model.
+    [string] $Model = ($env:TRIAGE_MODEL ? $env:TRIAGE_MODEL : 'auto'),
     [string] $RepoRoot = (Split-Path -Parent $PSScriptRoot)
 )
 
