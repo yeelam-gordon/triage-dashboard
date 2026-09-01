@@ -1,85 +1,14 @@
 {
   "repo": "microsoft/WSL",
-  "generated_at": "2026-09-01T09:01:03Z",
-  "awaiting_label": "needs-attention",
-  "awaiting_issues": 3,
+  "generated_at": "2026-09-01T11:38:12Z",
+  "awaiting_label": null,
+  "awaiting_issues": 0,
   "awaiting_prs": 44,
   "backlog_issues": 922,
   "backlog_prs": 68,
-  "issues_total": 3,
-  "prs_total": 61,
+  "issues_total": 922,
+  "prs_total": 68,
   "issues": [
-    {
-      "number": 12508,
-      "title": "WSL 2 mirrored networking breaks NFS mounts (“Connection timed out”)",
-      "url": "https://github.com/microsoft/WSL/issues/12508",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "network",
-        "needs-attention"
-      ],
-      "up": 9,
-      "comments": 1,
-      "created_at": "2025-01-27T19:48:51Z",
-      "updated_at": "2025-11-09T22:39:03Z",
-      "age_days": 296.0,
-      "triaged": true,
-      "awaiting": true,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm type (bug/feature) & route",
-      "baseline_reason": "Untyped report (waited 296d, 9 👍) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
-    },
-    {
-      "number": 10022,
-      "title": "Auto write wslhost ip into /etc/hosts file",
-      "url": "https://github.com/microsoft/WSL/issues/10022",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "feature",
-        "needs-attention"
-      ],
-      "up": 2,
-      "comments": 1,
-      "created_at": "2023-04-25T08:46:25Z",
-      "updated_at": "2024-07-29T03:39:49Z",
-      "age_days": 765.0,
-      "triaged": true,
-      "awaiting": true,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "reassess_stale",
-      "baseline_glyph": "🗓️",
-      "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 765d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
-    },
-    {
-      "number": 12702,
-      "title": "2.5.1 breaks /dev/dri detection - Hardware acceleration is dead",
-      "url": "https://github.com/microsoft/WSL/issues/12702",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "needs-attention"
-      ],
-      "up": 2,
-      "comments": 1,
-      "created_at": "2025-03-16T05:59:33Z",
-      "updated_at": "2026-03-13T14:02:14Z",
-      "age_days": 172.0,
-      "triaged": true,
-      "awaiting": true,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm type (bug/feature) & route",
-      "baseline_reason": "Untyped report (waited 172d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
-    },
     {
       "number": 4699,
       "title": "WSL 2 should automatically release disk space back to the host OS",
@@ -117,7 +46,7 @@
       "comments": 1,
       "created_at": "2019-06-19T22:29:56Z",
       "updated_at": "2026-07-02T06:51:23Z",
-      "age_days": 61.0,
+      "age_days": 62.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -125,7 +54,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm type (bug/feature) & route",
-      "baseline_reason": "Untyped report (waited 61d, 651 👍 high demand) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+      "baseline_reason": "Untyped report (waited 62d, 651 👍 high demand) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
     },
     {
       "number": 4150,
@@ -141,7 +70,7 @@
       "comments": 1,
       "created_at": "2019-06-16T01:35:15Z",
       "updated_at": "2026-07-18T07:15:29Z",
-      "age_days": 45.0,
+      "age_days": 46.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -149,7 +78,7 @@
       "baseline_action": "promote",
       "baseline_glyph": "⭐",
       "baseline_text": "High-demand feature — roadmap decision",
-      "baseline_reason": "Popular feature ask (waited 45d, 539 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+      "baseline_reason": "Popular feature ask (waited 46d, 539 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
     },
     {
       "number": 4739,
@@ -492,7 +421,7 @@
       "comments": 1,
       "created_at": "2019-11-18T12:34:31Z",
       "updated_at": "2026-02-27T07:16:47Z",
-      "age_days": 186.0,
+      "age_days": 187.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -500,7 +429,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 186d, 107 👍 high demand) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_reason": "Bug (waited 187d, 107 👍 high demand) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 8995,
@@ -535,8 +464,8 @@
       "up": 102,
       "comments": 1,
       "created_at": "2020-04-15T16:16:12Z",
-      "updated_at": "2026-08-06T13:06:55Z",
-      "age_days": 26.0,
+      "updated_at": "2026-09-01T09:57:32Z",
+      "age_days": 0.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -544,7 +473,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm type (bug/feature) & route",
-      "baseline_reason": "Untyped report (waited 26d, 102 👍 high demand) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+      "baseline_reason": "Untyped report (new, 102 👍 high demand) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
     },
     {
       "number": 5151,
@@ -696,7 +625,7 @@
       "comments": 1,
       "created_at": "2016-04-21T21:11:25Z",
       "updated_at": "2023-11-22T07:19:18Z",
-      "age_days": 1014.0,
+      "age_days": 1015.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -704,7 +633,7 @@
       "baseline_action": "promote",
       "baseline_glyph": "⭐",
       "baseline_text": "High-demand feature — roadmap decision",
-      "baseline_reason": "Popular feature ask (waited 1014d, 64 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+      "baseline_reason": "Popular feature ask (waited 1015d, 64 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
     },
     {
       "number": 9932,
@@ -1519,7 +1448,7 @@
       "comments": 1,
       "created_at": "2024-12-07T10:07:13Z",
       "updated_at": "2026-08-05T05:04:53Z",
-      "age_days": 27.0,
+      "age_days": 28.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -1527,7 +1456,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 27d, 27 👍 high demand) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_reason": "Bug (waited 28d, 27 👍 high demand) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 10254,
@@ -1611,7 +1540,7 @@
       "comments": 1,
       "created_at": "2020-02-20T00:28:19Z",
       "updated_at": "2025-10-01T06:27:52Z",
-      "age_days": 335.0,
+      "age_days": 336.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -1619,7 +1548,7 @@
       "baseline_action": "promote",
       "baseline_glyph": "⭐",
       "baseline_text": "High-demand feature — roadmap decision",
-      "baseline_reason": "Popular feature ask (waited 335d, 25 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+      "baseline_reason": "Popular feature ask (waited 336d, 25 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
     },
     {
       "number": 8570,
@@ -2131,7 +2060,7 @@
       "comments": 1,
       "created_at": "2023-02-06T00:21:23Z",
       "updated_at": "2026-03-20T07:27:11Z",
-      "age_days": 165.0,
+      "age_days": 166.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -2139,7 +2068,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm type (bug/feature) & route",
-      "baseline_reason": "Untyped report (waited 165d, 19 👍) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+      "baseline_reason": "Untyped report (waited 166d, 19 👍) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
     },
     {
       "number": 7790,
@@ -2177,7 +2106,7 @@
       "comments": 1,
       "created_at": "2022-03-19T01:53:32Z",
       "updated_at": "2026-06-12T06:28:21Z",
-      "age_days": 81.0,
+      "age_days": 82.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -2185,7 +2114,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm type (bug/feature) & route",
-      "baseline_reason": "Untyped report (waited 81d, 19 👍) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+      "baseline_reason": "Untyped report (waited 82d, 19 👍) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
     },
     {
       "number": 6448,
@@ -2385,7 +2314,7 @@
       "comments": 1,
       "created_at": "2023-08-24T07:16:15Z",
       "updated_at": "2025-07-27T07:28:09Z",
-      "age_days": 401.0,
+      "age_days": 402.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -2393,7 +2322,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 401d, 17 👍). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_reason": "Feature/idea (waited 402d, 17 👍). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     },
     {
       "number": 7183,
@@ -3239,7 +3168,7 @@
       "comments": 1,
       "created_at": "2019-12-04T12:52:27Z",
       "updated_at": "2025-02-12T06:40:26Z",
-      "age_days": 566.0,
+      "age_days": 567.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -3247,7 +3176,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 566d, 10 👍). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_reason": "Feature/idea (waited 567d, 10 👍). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     },
     {
       "number": 9695,
@@ -3354,7 +3283,7 @@
       "comments": 1,
       "created_at": "2020-10-18T07:17:41Z",
       "updated_at": "2020-10-26T06:00:41Z",
-      "age_days": 2136.0,
+      "age_days": 2137.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -3362,7 +3291,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 2136d, 9 👍) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_reason": "Old feature ask (waited 2137d, 9 👍) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 8530,
@@ -3455,6 +3384,30 @@
       "baseline_glyph": "💬",
       "baseline_text": "Decide on this feature request",
       "baseline_reason": "Feature/idea (waited 341d, 9 👍). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+    },
+    {
+      "number": 12508,
+      "title": "WSL 2 mirrored networking breaks NFS mounts (“Connection timed out”)",
+      "url": "https://github.com/microsoft/WSL/issues/12508",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "network",
+        "needs-attention"
+      ],
+      "up": 9,
+      "comments": 1,
+      "created_at": "2025-01-27T19:48:51Z",
+      "updated_at": "2025-11-09T22:39:03Z",
+      "age_days": 296.0,
+      "triaged": true,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "reply",
+      "baseline_glyph": "💬",
+      "baseline_text": "Confirm type (bug/feature) & route",
+      "baseline_reason": "Untyped report (waited 296d, 9 👍) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
     },
     {
       "number": 8677,
@@ -3955,7 +3908,7 @@
       "comments": 1,
       "created_at": "2024-02-14T09:24:12Z",
       "updated_at": "2026-08-06T06:44:41Z",
-      "age_days": 26.0,
+      "age_days": 27.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -3963,7 +3916,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 26d, 8 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_reason": "Bug (waited 27d, 8 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 12634,
@@ -4551,7 +4504,7 @@
       "comments": 1,
       "created_at": "2024-03-22T16:06:06Z",
       "updated_at": "2025-01-22T07:04:56Z",
-      "age_days": 587.0,
+      "age_days": 588.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -4559,7 +4512,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Answer the question / close as support",
-      "baseline_reason": "Looks like a question/support request (waited 587d, 6 👍) — answer it (or link docs) and close; convert to a bug/feature only if it turns out to be one."
+      "baseline_reason": "Looks like a question/support request (waited 588d, 6 👍) — answer it (or link docs) and close; convert to a bug/feature only if it turns out to be one."
     },
     {
       "number": 7686,
@@ -4621,7 +4574,7 @@
       "comments": 1,
       "created_at": "2023-11-21T06:05:35Z",
       "updated_at": "2025-07-14T06:24:28Z",
-      "age_days": 414.0,
+      "age_days": 415.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -4629,7 +4582,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 414d, 6 👍). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_reason": "Feature/idea (waited 415d, 6 👍). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     },
     {
       "number": 5999,
@@ -4737,7 +4690,7 @@
       "comments": 1,
       "created_at": "2022-10-28T04:45:52Z",
       "updated_at": "2026-03-17T07:06:45Z",
-      "age_days": 168.0,
+      "age_days": 169.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -4745,7 +4698,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 168d, 6 👍). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_reason": "Feature/idea (waited 169d, 6 👍). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     },
     {
       "number": 8709,
@@ -5152,7 +5105,7 @@
       "comments": 1,
       "created_at": "2017-01-06T20:40:39Z",
       "updated_at": "2025-11-15T05:55:13Z",
-      "age_days": 290.0,
+      "age_days": 291.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -5160,7 +5113,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 290d, 5 👍). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_reason": "Feature/idea (waited 291d, 5 👍). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     },
     {
       "number": 12583,
@@ -5541,7 +5494,7 @@
       "comments": 1,
       "created_at": "2023-02-16T21:20:56Z",
       "updated_at": "2025-07-19T07:30:39Z",
-      "age_days": 409.0,
+      "age_days": 410.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -5549,7 +5502,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 409d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_reason": "Feature/idea (waited 410d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     },
     {
       "number": 13421,
@@ -6161,7 +6114,7 @@
       "comments": 1,
       "created_at": "2021-08-09T07:16:25Z",
       "updated_at": "2021-08-10T05:15:15Z",
-      "age_days": 1848.0,
+      "age_days": 1849.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -6169,7 +6122,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 1848d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_reason": "Old feature ask (waited 1849d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 7337,
@@ -6809,7 +6762,7 @@
       "comments": 1,
       "created_at": "2019-11-07T09:03:26Z",
       "updated_at": "2025-05-04T06:00:42Z",
-      "age_days": 485.0,
+      "age_days": 486.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -6817,7 +6770,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 485d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_reason": "Feature/idea (waited 486d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     },
     {
       "number": 13460,
@@ -7105,7 +7058,7 @@
       "comments": 1,
       "created_at": "2025-11-27T13:43:45Z",
       "updated_at": "2026-06-11T06:38:14Z",
-      "age_days": 82.0,
+      "age_days": 83.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -7113,7 +7066,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 82d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_reason": "Bug (waited 83d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 13132,
@@ -7339,7 +7292,7 @@
       "comments": 1,
       "created_at": "2026-08-28T10:33:58Z",
       "updated_at": "2026-08-31T05:44:09Z",
-      "age_days": 1.0,
+      "age_days": 2.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -7347,7 +7300,7 @@
       "baseline_action": "no_action",
       "baseline_glyph": "🚧",
       "baseline_text": "In progress — track the fix",
-      "baseline_reason": "Already being worked (waited 1d) — a fix/PR is in flight; track it to completion, don't re-triage or close."
+      "baseline_reason": "Already being worked (waited 2d) — a fix/PR is in flight; track it to completion, don't re-triage or close."
     },
     {
       "number": 1732,
@@ -7776,7 +7729,7 @@
       "comments": 1,
       "created_at": "2022-06-17T13:52:06Z",
       "updated_at": "2022-12-09T06:47:03Z",
-      "age_days": 1362.0,
+      "age_days": 1363.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -7784,7 +7737,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 1362d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_reason": "Old feature ask (waited 1363d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 3174,
@@ -7822,7 +7775,7 @@
       "comments": 1,
       "created_at": "2020-12-17T09:31:43Z",
       "updated_at": "2023-03-27T07:18:15Z",
-      "age_days": 1254.0,
+      "age_days": 1255.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -7830,7 +7783,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 1254d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_reason": "Old feature ask (waited 1255d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 8185,
@@ -7915,7 +7868,7 @@
       "comments": 1,
       "created_at": "2021-04-23T13:25:32Z",
       "updated_at": "2023-06-03T06:27:40Z",
-      "age_days": 1186.0,
+      "age_days": 1187.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -7923,7 +7876,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 1186d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_reason": "Old feature ask (waited 1187d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 10644,
@@ -8016,6 +7969,30 @@
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
       "baseline_reason": "Old feature ask (waited 868d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+    },
+    {
+      "number": 10022,
+      "title": "Auto write wslhost ip into /etc/hosts file",
+      "url": "https://github.com/microsoft/WSL/issues/10022",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "feature",
+        "needs-attention"
+      ],
+      "up": 2,
+      "comments": 1,
+      "created_at": "2023-04-25T08:46:25Z",
+      "updated_at": "2024-07-29T03:39:49Z",
+      "age_days": 765.0,
+      "triaged": true,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Stale idea — decline or close for low demand",
+      "baseline_reason": "Old feature ask (waited 765d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 9121,
@@ -8360,6 +8337,29 @@
       "baseline_glyph": "💬",
       "baseline_text": "Confirm on current build & route",
       "baseline_reason": "Bug (waited 204d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+    },
+    {
+      "number": 12702,
+      "title": "2.5.1 breaks /dev/dri detection - Hardware acceleration is dead",
+      "url": "https://github.com/microsoft/WSL/issues/12702",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "needs-attention"
+      ],
+      "up": 2,
+      "comments": 1,
+      "created_at": "2025-03-16T05:59:33Z",
+      "updated_at": "2026-03-13T14:02:14Z",
+      "age_days": 172.0,
+      "triaged": true,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "reply",
+      "baseline_glyph": "💬",
+      "baseline_text": "Confirm type (bug/feature) & route",
+      "baseline_reason": "Untyped report (waited 172d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
     },
     {
       "number": 13777,
@@ -8726,7 +8726,7 @@
       "comments": 1,
       "created_at": "2026-01-12T22:23:15Z",
       "updated_at": "2026-08-19T05:51:57Z",
-      "age_days": 13.0,
+      "age_days": 14.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -8734,7 +8734,7 @@
       "baseline_action": "escalate",
       "baseline_glyph": "🚨",
       "baseline_text": "Escalate — crash/reliability",
-      "baseline_reason": "Crash/reliability issue (waited 13d) — get repro+logs if missing, confirm severity, and route to the area owner urgently."
+      "baseline_reason": "Crash/reliability issue (waited 14d) — get repro+logs if missing, confirm severity, and route to the area owner urgently."
     },
     {
       "number": 13415,
@@ -8782,6 +8782,29 @@
       "baseline_glyph": "💬",
       "baseline_text": "Answer the question / close as support",
       "baseline_reason": "Looks like a question/support request (waited 9d) — answer it (or link docs) and close; convert to a bug/feature only if it turns out to be one."
+    },
+    {
+      "number": 13096,
+      "title": "Allow multiple instances of the utility VM to run simultaneously (WSL2)",
+      "url": "https://github.com/microsoft/WSL/issues/13096",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "feature"
+      ],
+      "up": 2,
+      "comments": 1,
+      "created_at": "2025-06-12T00:49:10Z",
+      "updated_at": "2026-09-01T11:49:35Z",
+      "age_days": 0.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "reply",
+      "baseline_glyph": "💬",
+      "baseline_text": "Decide on this feature request",
+      "baseline_reason": "Feature/idea (new). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     },
     {
       "number": 606,
@@ -8842,7 +8865,7 @@
       "comments": 1,
       "created_at": "2019-07-27T10:01:26Z",
       "updated_at": "2019-07-28T06:43:25Z",
-      "age_days": 2592.0,
+      "age_days": 2593.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -8850,7 +8873,30 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 2592d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_reason": "Old feature ask (waited 2593d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+    },
+    {
+      "number": 5341,
+      "title": "Extend WSLENV flags to support translating variable name between environments",
+      "url": "https://github.com/microsoft/WSL/issues/5341",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "feature"
+      ],
+      "up": 1,
+      "comments": 1,
+      "created_at": "2020-06-05T01:47:53Z",
+      "updated_at": "2020-08-26T06:13:11Z",
+      "age_days": 2198.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Stale idea — decline or close for low demand",
+      "baseline_reason": "Old feature ask (waited 2198d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 5814,
@@ -8874,29 +8920,6 @@
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
       "baseline_reason": "Old feature ask (waited 2198d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
-    },
-    {
-      "number": 5341,
-      "title": "Extend WSLENV flags to support translating variable name between environments",
-      "url": "https://github.com/microsoft/WSL/issues/5341",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "feature"
-      ],
-      "up": 1,
-      "comments": 1,
-      "created_at": "2020-06-05T01:47:53Z",
-      "updated_at": "2020-08-26T06:13:11Z",
-      "age_days": 2197.0,
-      "triaged": false,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "reassess_stale",
-      "baseline_glyph": "🗓️",
-      "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 2197d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 5739,
@@ -9028,7 +9051,7 @@
       "comments": 1,
       "created_at": "2017-07-02T15:20:41Z",
       "updated_at": "2022-02-02T05:26:18Z",
-      "age_days": 1672.0,
+      "age_days": 1673.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -9036,7 +9059,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 1672d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_reason": "Old feature ask (waited 1673d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 5766,
@@ -9304,7 +9327,7 @@
       "comments": 1,
       "created_at": "2023-07-05T01:53:37Z",
       "updated_at": "2023-08-02T06:28:10Z",
-      "age_days": 1126.0,
+      "age_days": 1127.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -9312,7 +9335,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 1126d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_reason": "Old feature ask (waited 1127d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 10387,
@@ -9360,6 +9383,29 @@
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
       "baseline_reason": "Old feature ask (waited 1110d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+    },
+    {
+      "number": 10154,
+      "title": "Feature req: Separate network subsystem per-distribution",
+      "url": "https://github.com/microsoft/WSL/issues/10154",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "feature"
+      ],
+      "up": 1,
+      "comments": 1,
+      "created_at": "2023-05-31T15:28:53Z",
+      "updated_at": "2023-09-29T17:50:51Z",
+      "age_days": 1068.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Stale idea — decline or close for low demand",
+      "baseline_reason": "Old feature ask (waited 1068d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 11164,
@@ -9803,29 +9849,6 @@
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
       "baseline_reason": "Old feature ask (waited 499d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
-    },
-    {
-      "number": 13096,
-      "title": "Allow multiple instances of the utility VM to run simultaneously (WSL2)",
-      "url": "https://github.com/microsoft/WSL/issues/13096",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "feature"
-      ],
-      "up": 1,
-      "comments": 1,
-      "created_at": "2025-06-12T00:49:10Z",
-      "updated_at": "2025-06-12T00:54:24Z",
-      "age_days": 447.0,
-      "triaged": false,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "reassess_stale",
-      "baseline_glyph": "🗓️",
-      "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 447d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 13136,
@@ -10343,7 +10366,7 @@
       "comments": 1,
       "created_at": "2024-07-25T21:51:13Z",
       "updated_at": "2026-03-24T05:20:12Z",
-      "age_days": 161.0,
+      "age_days": 162.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -10351,7 +10374,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 161d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_reason": "Feature/idea (waited 162d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     },
     {
       "number": 12693,
@@ -11302,7 +11325,7 @@
       "comments": 1,
       "created_at": "2016-09-06T07:00:50Z",
       "updated_at": "2018-07-13T05:08:40Z",
-      "age_days": 2972.0,
+      "age_days": 2973.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -11310,7 +11333,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 2972d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_reason": "Old feature ask (waited 2973d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 1823,
@@ -11603,7 +11626,7 @@
       "comments": 1,
       "created_at": "2020-08-27T23:46:20Z",
       "updated_at": "2020-09-11T06:08:13Z",
-      "age_days": 2181.0,
+      "age_days": 2182.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -11611,7 +11634,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 2181d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_reason": "Old feature ask (waited 2182d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 5866,
@@ -11626,7 +11649,7 @@
       "comments": 1,
       "created_at": "2020-09-07T01:41:42Z",
       "updated_at": "2020-09-23T07:20:26Z",
-      "age_days": 2169.0,
+      "age_days": 2170.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -11634,7 +11657,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 2169d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_reason": "Old feature ask (waited 2170d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 5985,
@@ -11879,7 +11902,7 @@
       "comments": 1,
       "created_at": "2021-04-01T16:45:45Z",
       "updated_at": "2021-04-02T06:23:37Z",
-      "age_days": 1978.0,
+      "age_days": 1979.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -11887,7 +11910,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 1978d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_reason": "Old feature ask (waited 1979d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 6872,
@@ -12365,7 +12388,7 @@
       "comments": 1,
       "created_at": "2021-07-07T13:40:32Z",
       "updated_at": "2021-10-07T07:25:17Z",
-      "age_days": 1790.0,
+      "age_days": 1791.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -12373,7 +12396,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 1790d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_reason": "Old feature ask (waited 1791d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 7532,
@@ -12503,7 +12526,7 @@
       "comments": 1,
       "created_at": "2017-04-12T23:06:55Z",
       "updated_at": "2021-11-01T07:32:30Z",
-      "age_days": 1765.0,
+      "age_days": 1766.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -12511,7 +12534,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 1765d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_reason": "Old feature ask (waited 1766d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 6587,
@@ -12527,7 +12550,7 @@
       "comments": 1,
       "created_at": "2021-02-24T23:24:05Z",
       "updated_at": "2021-12-15T07:09:43Z",
-      "age_days": 1721.0,
+      "age_days": 1722.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -12535,7 +12558,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Answer the question / close as support",
-      "baseline_reason": "Looks like a question/support request (waited 1721d) — answer it (or link docs) and close; convert to a bug/feature only if it turns out to be one."
+      "baseline_reason": "Looks like a question/support request (waited 1722d) — answer it (or link docs) and close; convert to a bug/feature only if it turns out to be one."
     },
     {
       "number": 7873,
@@ -13125,7 +13148,7 @@
       "comments": 1,
       "created_at": "2023-03-26T10:03:16Z",
       "updated_at": "2023-03-27T07:20:00Z",
-      "age_days": 1254.0,
+      "age_days": 1255.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -13133,7 +13156,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 1254d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_reason": "Old feature ask (waited 1255d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 10065,
@@ -13311,7 +13334,7 @@
       "comments": 1,
       "created_at": "2023-06-15T05:59:01Z",
       "updated_at": "2023-06-15T07:27:28Z",
-      "age_days": 1174.0,
+      "age_days": 1175.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -13319,7 +13342,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 1174d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_reason": "Old feature ask (waited 1175d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 10235,
@@ -13496,7 +13519,7 @@
       "comments": 1,
       "created_at": "2023-09-04T05:24:36Z",
       "updated_at": "2023-09-04T05:27:53Z",
-      "age_days": 1093.0,
+      "age_days": 1094.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -13504,7 +13527,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 1093d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_reason": "Old feature ask (waited 1094d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 10448,
@@ -13542,29 +13565,6 @@
       "comments": 1,
       "created_at": "2022-09-13T03:32:35Z",
       "updated_at": "2023-09-30T00:32:42Z",
-      "age_days": 1068.0,
-      "triaged": false,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "reassess_stale",
-      "baseline_glyph": "🗓️",
-      "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 1068d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
-    },
-    {
-      "number": 10154,
-      "title": "Feature req: Separate network subsystem per-distribution",
-      "url": "https://github.com/microsoft/WSL/issues/10154",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "feature"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2023-05-31T15:28:53Z",
-      "updated_at": "2023-09-29T17:50:51Z",
       "age_days": 1068.0,
       "triaged": false,
       "awaiting": false,
@@ -13634,7 +13634,7 @@
       "comments": 1,
       "created_at": "2023-07-26T04:37:31Z",
       "updated_at": "2023-11-09T05:36:41Z",
-      "age_days": 1027.0,
+      "age_days": 1028.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -13642,7 +13642,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 1027d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_reason": "Old feature ask (waited 1028d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 10902,
@@ -13657,7 +13657,7 @@
       "comments": 1,
       "created_at": "2023-12-11T06:11:18Z",
       "updated_at": "2023-12-11T06:11:18Z",
-      "age_days": 995.0,
+      "age_days": 996.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -13665,7 +13665,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 995d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_reason": "Old feature ask (waited 996d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 10450,
@@ -14212,7 +14212,7 @@
       "comments": 1,
       "created_at": "2024-07-04T01:24:59Z",
       "updated_at": "2024-07-10T05:23:14Z",
-      "age_days": 783.0,
+      "age_days": 784.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -14220,7 +14220,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 783d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_reason": "Old feature ask (waited 784d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 10241,
@@ -14353,7 +14353,7 @@
       "comments": 1,
       "created_at": "2024-08-16T06:27:51Z",
       "updated_at": "2024-08-16T06:31:07Z",
-      "age_days": 746.0,
+      "age_days": 747.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -14361,7 +14361,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 746d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_reason": "Old feature ask (waited 747d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 11935,
@@ -14468,7 +14468,7 @@
       "comments": 1,
       "created_at": "2024-10-04T21:45:47Z",
       "updated_at": "2024-10-05T07:25:34Z",
-      "age_days": 696.0,
+      "age_days": 697.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -14476,7 +14476,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 696d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_reason": "Old feature ask (waited 697d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 8203,
@@ -14701,7 +14701,7 @@
       "comments": 1,
       "created_at": "2021-12-06T18:16:14Z",
       "updated_at": "2024-12-09T05:12:32Z",
-      "age_days": 631.0,
+      "age_days": 632.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -14709,7 +14709,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 631d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_reason": "Old feature ask (waited 632d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 12358,
@@ -15145,7 +15145,7 @@
       "comments": 1,
       "created_at": "2025-04-23T09:56:21Z",
       "updated_at": "2025-04-27T06:21:07Z",
-      "age_days": 492.0,
+      "age_days": 493.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -15153,7 +15153,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 492d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_reason": "Old feature ask (waited 493d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 12941,
@@ -15402,7 +15402,7 @@
       "comments": 1,
       "created_at": "2025-08-01T16:59:59Z",
       "updated_at": "2025-08-05T07:34:47Z",
-      "age_days": 392.0,
+      "age_days": 393.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -15410,7 +15410,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 392d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_reason": "Old feature ask (waited 393d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 13397,
@@ -15491,7 +15491,7 @@
       "comments": 1,
       "created_at": "2023-12-23T10:17:44Z",
       "updated_at": "2025-09-09T05:41:21Z",
-      "age_days": 357.0,
+      "age_days": 358.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -15499,7 +15499,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Ageing, unconfirmed bug — revalidate",
-      "baseline_reason": "Bug (waited 357d) sat 180+ days with no traction — re-test on a current build; request repro/logs or close stale if it no longer repros."
+      "baseline_reason": "Bug (waited 358d) sat 180+ days with no traction — re-test on a current build; request repro/logs or close stale if it no longer repros."
     },
     {
       "number": 13472,
@@ -15617,6 +15617,29 @@
       "baseline_reason": "Bug (waited 340d) sat 180+ days with no traction — re-test on a current build; request repro/logs or close stale if it no longer repros."
     },
     {
+      "number": 13511,
+      "title": "WSL kernel does not build with gcc 15",
+      "url": "https://github.com/microsoft/WSL/issues/13511",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "kernel"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2025-09-23T23:22:44Z",
+      "updated_at": "2025-09-28T05:32:30Z",
+      "age_days": 339.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Ageing, unconfirmed bug — revalidate",
+      "baseline_reason": "Bug (waited 339d) sat 180+ days with no traction — re-test on a current build; request repro/logs or close stale if it no longer repros."
+    },
+    {
       "number": 13529,
       "title": "Suggestion: Use `defaultVhdSize` and add `defaultVhdType` to `.wslconfig`",
       "url": "https://github.com/microsoft/WSL/issues/13529",
@@ -15661,29 +15684,6 @@
       "baseline_glyph": "🗂️",
       "baseline_text": "Low-traction idea — park or decline",
       "baseline_reason": "Feature ask (waited 339d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
-    },
-    {
-      "number": 13511,
-      "title": "WSL kernel does not build with gcc 15",
-      "url": "https://github.com/microsoft/WSL/issues/13511",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "kernel"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2025-09-23T23:22:44Z",
-      "updated_at": "2025-09-28T05:32:30Z",
-      "age_days": 338.0,
-      "triaged": false,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "reassess_stale",
-      "baseline_glyph": "🗓️",
-      "baseline_text": "Ageing, unconfirmed bug — revalidate",
-      "baseline_reason": "Bug (waited 338d) sat 180+ days with no traction — re-test on a current build; request repro/logs or close stale if it no longer repros."
     },
     {
       "number": 13059,
@@ -16312,7 +16312,7 @@
       "comments": 1,
       "created_at": "2023-11-09T21:43:31Z",
       "updated_at": "2025-12-08T05:27:35Z",
-      "age_days": 267.0,
+      "age_days": 268.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -16320,7 +16320,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Ageing, unconfirmed bug — revalidate",
-      "baseline_reason": "Bug (waited 267d) sat 180+ days with no traction — re-test on a current build; request repro/logs or close stale if it no longer repros."
+      "baseline_reason": "Bug (waited 268d) sat 180+ days with no traction — re-test on a current build; request repro/logs or close stale if it no longer repros."
     },
     {
       "number": 12751,
@@ -16414,6 +16414,27 @@
       "baseline_reason": "Untyped report (waited 258d) with no traction after 90+ days — if a feature, decline/park with rationale; if a bug, revalidate on a current build first. Don't leave it open indefinitely."
     },
     {
+      "number": 12308,
+      "title": "WSL crashes shortly after starting up",
+      "url": "https://github.com/microsoft/WSL/issues/12308",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2024-11-21T11:41:57Z",
+      "updated_at": "2025-12-27T05:54:49Z",
+      "age_days": 249.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "request_info",
+      "baseline_glyph": "🩺",
+      "baseline_text": "Revalidate crash — get fresh repro/logs",
+      "baseline_reason": "Old crash report (waited 249d) with no priority signal — re-test on a current build and request fresh repro/logs/dumps before escalating."
+    },
+    {
       "number": 13989,
       "title": "Improve Microsoft/scripts/gen_modules_vhdx.sh to run without root or sudo",
       "url": "https://github.com/microsoft/WSL/issues/13989",
@@ -16435,27 +16456,6 @@
       "baseline_glyph": "🗂️",
       "baseline_text": "Low-traction idea — park or decline",
       "baseline_reason": "Feature ask (waited 249d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
-    },
-    {
-      "number": 12308,
-      "title": "WSL crashes shortly after starting up",
-      "url": "https://github.com/microsoft/WSL/issues/12308",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2024-11-21T11:41:57Z",
-      "updated_at": "2025-12-27T05:54:49Z",
-      "age_days": 248.0,
-      "triaged": false,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "🩺",
-      "baseline_text": "Revalidate crash — get fresh repro/logs",
-      "baseline_reason": "Old crash report (waited 248d) with no priority signal — re-test on a current build and request fresh repro/logs/dumps before escalating."
     },
     {
       "number": 14004,
@@ -16626,7 +16626,7 @@
       "comments": 1,
       "created_at": "2025-03-14T05:39:14Z",
       "updated_at": "2026-01-13T07:34:18Z",
-      "age_days": 231.0,
+      "age_days": 232.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -16634,7 +16634,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "🩺",
       "baseline_text": "Revalidate crash — get fresh repro/logs",
-      "baseline_reason": "Old crash report (waited 231d) with no priority signal — re-test on a current build and request fresh repro/logs/dumps before escalating."
+      "baseline_reason": "Old crash report (waited 232d) with no priority signal — re-test on a current build and request fresh repro/logs/dumps before escalating."
     },
     {
       "number": 14045,
@@ -16804,7 +16804,7 @@
       "comments": 1,
       "created_at": "2026-02-07T05:59:49Z",
       "updated_at": "2026-02-09T06:43:13Z",
-      "age_days": 204.0,
+      "age_days": 205.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -16812,7 +16812,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "🗂️",
       "baseline_text": "Low-traction untyped item — park or decline",
-      "baseline_reason": "Untyped report (waited 204d) with no traction after 90+ days — if a feature, decline/park with rationale; if a bug, revalidate on a current build first. Don't leave it open indefinitely."
+      "baseline_reason": "Untyped report (waited 205d) with no traction after 90+ days — if a feature, decline/park with rationale; if a bug, revalidate on a current build first. Don't leave it open indefinitely."
     },
     {
       "number": 13695,
@@ -17384,30 +17384,6 @@
       "baseline_reason": "Looks like a question/support request (waited 157d) — answer it (or link docs) and close; convert to a bug/feature only if it turns out to be one."
     },
     {
-      "number": 11148,
-      "title": "NatNetwork NatGatewayIpAddress do not work - Element not found",
-      "url": "https://github.com/microsoft/WSL/issues/11148",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "feature",
-        "bydesign"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2024-02-10T20:18:41Z",
-      "updated_at": "2026-04-03T08:02:01Z",
-      "age_days": 151.0,
-      "triaged": false,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "🗂️",
-      "baseline_text": "Low-traction idea — park or decline",
-      "baseline_reason": "Feature ask (waited 151d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
-    },
-    {
       "number": 14170,
       "title": "Allow WSL DNS Proxy when using NetworkMode=VirtioProxy",
       "url": "https://github.com/microsoft/WSL/issues/14170",
@@ -17421,6 +17397,30 @@
       "comments": 1,
       "created_at": "2026-02-06T02:36:15Z",
       "updated_at": "2026-04-03T05:53:18Z",
+      "age_days": 152.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "reply",
+      "baseline_glyph": "🗂️",
+      "baseline_text": "Low-traction idea — park or decline",
+      "baseline_reason": "Feature ask (waited 152d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
+    },
+    {
+      "number": 11148,
+      "title": "NatNetwork NatGatewayIpAddress do not work - Element not found",
+      "url": "https://github.com/microsoft/WSL/issues/11148",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "feature",
+        "bydesign"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2024-02-10T20:18:41Z",
+      "updated_at": "2026-04-03T08:02:01Z",
       "age_days": 151.0,
       "triaged": false,
       "awaiting": false,
@@ -17615,6 +17615,29 @@
       "baseline_reason": "Crash report (waited 133d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
     },
     {
+      "number": 40296,
+      "title": "[mirrored/NAT] Networking fully breaks into ARP/HNS blackhole after residual HKCU proxy settings (ProxyEnable=0 with   non-empty ProxyServer) — not recoverable by wsl --shutdown / service restart / full reboot",
+      "url": "https://github.com/microsoft/WSL/issues/40296",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "network"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-04-23T23:32:44Z",
+      "updated_at": "2026-04-27T05:37:04Z",
+      "age_days": 128.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "request_info",
+      "baseline_glyph": "❓",
+      "baseline_text": "Request exact repro, version & logs",
+      "baseline_reason": "Bug (waited 128d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+    },
+    {
       "number": 14063,
       "title": "Mirrored mode: 127.0.0.1 policy-routing breaks DNS services and nftables compatibility",
       "url": "https://github.com/microsoft/WSL/issues/14063",
@@ -17637,29 +17660,6 @@
       "baseline_glyph": "🗂️",
       "baseline_text": "Low-traction idea — park or decline",
       "baseline_reason": "Feature ask (waited 127d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
-    },
-    {
-      "number": 40296,
-      "title": "[mirrored/NAT] Networking fully breaks into ARP/HNS blackhole after residual HKCU proxy settings (ProxyEnable=0 with   non-empty ProxyServer) — not recoverable by wsl --shutdown / service restart / full reboot",
-      "url": "https://github.com/microsoft/WSL/issues/40296",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "network"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-04-23T23:32:44Z",
-      "updated_at": "2026-04-27T05:37:04Z",
-      "age_days": 127.0,
-      "triaged": false,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "❓",
-      "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 127d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 40342,
@@ -18539,6 +18539,30 @@
       "baseline_reason": "Bug (waited 92d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
+      "number": 40507,
+      "title": "Can not access container ports through VirtuioProxy",
+      "url": "https://github.com/microsoft/WSL/issues/40507",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "network",
+        "wsl2"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-05-12T09:54:44Z",
+      "updated_at": "2026-06-02T05:25:02Z",
+      "age_days": 92.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "reply",
+      "baseline_glyph": "🗂️",
+      "baseline_text": "Low-traction untyped item — park or decline",
+      "baseline_reason": "Untyped report (waited 92d) with no traction after 90+ days — if a feature, decline/park with rationale; if a bug, revalidate on a current build first. Don't leave it open indefinitely."
+    },
+    {
       "number": 40573,
       "title": "Custom kernel from linux-msft-wsl-6.18.y branch silently breaks Docker Desktop — no documentation or warning",
       "url": "https://github.com/microsoft/WSL/issues/40573",
@@ -18583,30 +18607,6 @@
       "baseline_glyph": "🗂️",
       "baseline_text": "Low-traction untyped item — park or decline",
       "baseline_reason": "Untyped report (waited 92d) with no traction after 90+ days — if a feature, decline/park with rationale; if a bug, revalidate on a current build first. Don't leave it open indefinitely."
-    },
-    {
-      "number": 40507,
-      "title": "Can not access container ports through VirtuioProxy",
-      "url": "https://github.com/microsoft/WSL/issues/40507",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "network",
-        "wsl2"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-05-12T09:54:44Z",
-      "updated_at": "2026-06-02T05:25:02Z",
-      "age_days": 91.0,
-      "triaged": false,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "🗂️",
-      "baseline_text": "Low-traction untyped item — park or decline",
-      "baseline_reason": "Untyped report (waited 91d) with no traction after 90+ days — if a feature, decline/park with rationale; if a bug, revalidate on a current build first. Don't leave it open indefinitely."
     },
     {
       "number": 40678,
@@ -18668,7 +18668,7 @@
       "comments": 1,
       "created_at": "2026-06-04T05:40:50Z",
       "updated_at": "2026-06-05T06:10:35Z",
-      "age_days": 88.0,
+      "age_days": 89.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -18676,7 +18676,7 @@
       "baseline_action": "no_action",
       "baseline_glyph": "🚧",
       "baseline_text": "In progress — track the fix",
-      "baseline_reason": "Already being worked (waited 88d) — a fix/PR is in flight; track it to completion, don't re-triage or close."
+      "baseline_reason": "Already being worked (waited 89d) — a fix/PR is in flight; track it to completion, don't re-triage or close."
     },
     {
       "number": 12229,
@@ -18714,7 +18714,7 @@
       "comments": 1,
       "created_at": "2026-05-06T12:29:21Z",
       "updated_at": "2026-06-09T05:49:46Z",
-      "age_days": 84.0,
+      "age_days": 85.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -18722,7 +18722,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 84d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (waited 85d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 40684,
@@ -18737,7 +18737,7 @@
       "comments": 1,
       "created_at": "2026-06-01T15:04:17Z",
       "updated_at": "2026-06-09T06:36:29Z",
-      "age_days": 84.0,
+      "age_days": 85.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -18745,7 +18745,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 84d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_reason": "Feature/idea (waited 85d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     },
     {
       "number": 40740,
@@ -18828,7 +18828,7 @@
       "comments": 1,
       "created_at": "2024-09-13T12:11:13Z",
       "updated_at": "2026-06-15T05:47:48Z",
-      "age_days": 78.0,
+      "age_days": 79.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -18836,7 +18836,30 @@
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 78d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (waited 79d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+    },
+    {
+      "number": 5851,
+      "title": "Persist /mnt/wsl mountpoints",
+      "url": "https://github.com/microsoft/WSL/issues/5851",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "feature"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2020-09-03T01:36:58Z",
+      "updated_at": "2026-06-22T05:09:30Z",
+      "age_days": 72.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "reply",
+      "baseline_glyph": "💬",
+      "baseline_text": "Decide on this feature request",
+      "baseline_reason": "Feature/idea (waited 72d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     },
     {
       "number": 40591,
@@ -18861,29 +18884,6 @@
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
       "baseline_reason": "Bug (waited 72d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
-    },
-    {
-      "number": 5851,
-      "title": "Persist /mnt/wsl mountpoints",
-      "url": "https://github.com/microsoft/WSL/issues/5851",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "feature"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2020-09-03T01:36:58Z",
-      "updated_at": "2026-06-22T05:09:30Z",
-      "age_days": 71.0,
-      "triaged": false,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 71d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     },
     {
       "number": 40705,
@@ -19657,7 +19657,7 @@
       "comments": 1,
       "created_at": "2026-07-13T14:32:35Z",
       "updated_at": "2026-07-28T07:03:43Z",
-      "age_days": 35.0,
+      "age_days": 36.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -19665,7 +19665,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 35d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (waited 36d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 41185,
@@ -19854,6 +19854,32 @@
       "baseline_reason": "Looks like a question/support request (waited 30d) — answer it (or link docs) and close; convert to a bug/feature only if it turns out to be one."
     },
     {
+      "number": 41135,
+      "title": "Mirrored networking: port 5004 loopback TCP connections never complete (adjacent ports work)",
+      "url": "https://github.com/microsoft/WSL/issues/41135",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "bug",
+        "network",
+        "wsl2",
+        "needs-investigation"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-07-22T04:09:42Z",
+      "updated_at": "2026-08-03T07:36:50Z",
+      "age_days": 30.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "request_info",
+      "baseline_glyph": "❓",
+      "baseline_text": "Request exact repro, version & logs",
+      "baseline_reason": "Bug (waited 30d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+    },
+    {
       "number": 40990,
       "title": "WSL.Container API for existing containers and sessions",
       "url": "https://github.com/microsoft/WSL/issues/40990",
@@ -19902,30 +19928,29 @@
       "baseline_reason": "Bug (waited 29d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
-      "number": 41135,
-      "title": "Mirrored networking: port 5004 loopback TCP connections never complete (adjacent ports work)",
-      "url": "https://github.com/microsoft/WSL/issues/41135",
+      "number": 41107,
+      "title": "config-wsl: enable CMAC, ZSTD firmware, and MediaTek USB Bluetooth",
+      "url": "https://github.com/microsoft/WSL/issues/41107",
       "kind": "issue",
       "is_community": null,
       "labels": [
-        "bug",
-        "network",
+        "feature",
         "wsl2",
-        "needs-investigation"
+        "kernel"
       ],
       "up": 0,
       "comments": 1,
-      "created_at": "2026-07-22T04:09:42Z",
-      "updated_at": "2026-08-03T07:36:50Z",
+      "created_at": "2026-07-17T18:22:15Z",
+      "updated_at": "2026-08-04T07:23:04Z",
       "age_days": 29.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "❓",
-      "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 29d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_action": "reply",
+      "baseline_glyph": "💬",
+      "baseline_text": "Decide on this feature request",
+      "baseline_reason": "Feature/idea (waited 29d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     },
     {
       "number": 41162,
@@ -19976,6 +20001,31 @@
       "baseline_reason": "Feature/idea (waited 29d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     },
     {
+      "number": 41227,
+      "title": "Increasing net.ipv4.ip_local_port_range beyond the default WSL range causes localhost TCP connections to hang",
+      "url": "https://github.com/microsoft/WSL/issues/41227",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "feature",
+        "network",
+        "wsl2"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-08-01T22:34:58Z",
+      "updated_at": "2026-08-04T05:37:30Z",
+      "age_days": 29.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "request_info",
+      "baseline_glyph": "🩺",
+      "baseline_text": "Confirm crash — get repro/logs & route",
+      "baseline_reason": "Crash report (waited 29d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
+    },
+    {
       "number": 8527,
       "title": "Request to add Azure Linux in list of WSL available distributions",
       "url": "https://github.com/microsoft/WSL/issues/8527",
@@ -19988,31 +20038,6 @@
       "comments": 1,
       "created_at": "2022-06-19T11:04:28Z",
       "updated_at": "2026-08-04T18:45:48Z",
-      "age_days": 28.0,
-      "triaged": false,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 28d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
-    },
-    {
-      "number": 41107,
-      "title": "config-wsl: enable CMAC, ZSTD firmware, and MediaTek USB Bluetooth",
-      "url": "https://github.com/microsoft/WSL/issues/41107",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "feature",
-        "wsl2",
-        "kernel"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-07-17T18:22:15Z",
-      "updated_at": "2026-08-04T07:23:04Z",
       "age_days": 28.0,
       "triaged": false,
       "awaiting": false,
@@ -20069,31 +20094,6 @@
       "baseline_glyph": "💬",
       "baseline_text": "Decide on this feature request",
       "baseline_reason": "Feature/idea (waited 28d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
-    },
-    {
-      "number": 41227,
-      "title": "Increasing net.ipv4.ip_local_port_range beyond the default WSL range causes localhost TCP connections to hang",
-      "url": "https://github.com/microsoft/WSL/issues/41227",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "feature",
-        "network",
-        "wsl2"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-08-01T22:34:58Z",
-      "updated_at": "2026-08-04T05:37:30Z",
-      "age_days": 28.0,
-      "triaged": false,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "🩺",
-      "baseline_text": "Confirm crash — get repro/logs & route",
-      "baseline_reason": "Crash report (waited 28d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
     },
     {
       "number": 40458,
@@ -20355,6 +20355,30 @@
       "baseline_reason": "Bug (waited 20d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
+      "number": 41224,
+      "title": "[BUG] WSL2 CUDA sequence preceded by dxgkio make_resident -12 ends in host NVIDIA PCIe SRAM ECC/TDR and display loss",
+      "url": "https://github.com/microsoft/WSL/issues/41224",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "GPU",
+        "emailed-logs"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-08-01T08:44:00Z",
+      "updated_at": "2026-08-14T06:40:04Z",
+      "age_days": 19.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "reply",
+      "baseline_glyph": "💬",
+      "baseline_text": "Confirm type (bug/feature) & route",
+      "baseline_reason": "Untyped report (waited 19d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+    },
+    {
       "number": 41345,
       "title": "Microsoft Azure VFP Switch Filter Extension dropping packets from the external device (not the host)",
       "url": "https://github.com/microsoft/WSL/issues/41345",
@@ -20377,30 +20401,6 @@
       "baseline_glyph": "💬",
       "baseline_text": "Decide on this feature request",
       "baseline_reason": "Feature/idea (waited 19d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
-    },
-    {
-      "number": 41224,
-      "title": "[BUG] WSL2 CUDA sequence preceded by dxgkio make_resident -12 ends in host NVIDIA PCIe SRAM ECC/TDR and display loss",
-      "url": "https://github.com/microsoft/WSL/issues/41224",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "GPU",
-        "emailed-logs"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-08-01T08:44:00Z",
-      "updated_at": "2026-08-14T06:40:04Z",
-      "age_days": 18.0,
-      "triaged": false,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm type (bug/feature) & route",
-      "baseline_reason": "Untyped report (waited 18d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
     },
     {
       "number": 14544,
@@ -20614,7 +20614,7 @@
       "comments": 1,
       "created_at": "2026-07-28T03:50:10Z",
       "updated_at": "2026-08-24T05:59:12Z",
-      "age_days": 8.0,
+      "age_days": 9.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -20622,7 +20622,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "🩺",
       "baseline_text": "Confirm crash — get repro/logs & route",
-      "baseline_reason": "Crash report (waited 8d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
+      "baseline_reason": "Crash report (waited 9d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
     },
     {
       "number": 41296,
@@ -20771,6 +20771,30 @@
       "baseline_reason": "Feature/idea (waited 7d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     },
     {
+      "number": 41449,
+      "title": "wslservice stuck in stopping state & wsl --shutdown shows the error as OOM",
+      "url": "https://github.com/microsoft/WSL/issues/41449",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "emailed-logs",
+        "wslc"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-08-26T07:17:49Z",
+      "updated_at": "2026-08-26T07:24:43Z",
+      "age_days": 7.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "request_info",
+      "baseline_glyph": "❓",
+      "baseline_text": "Request exact repro, version & logs",
+      "baseline_reason": "Bug (waited 7d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+    },
+    {
       "number": 41113,
       "title": "WSL 2.7.10 / kernel 6.18.33.2: Codex CLI triggers unrecoverable VMA lock stall; ps hangs and threads enter D state",
       "url": "https://github.com/microsoft/WSL/issues/41113",
@@ -20843,30 +20867,6 @@
       "baseline_glyph": "🩺",
       "baseline_text": "Confirm crash — get repro/logs & route",
       "baseline_reason": "Crash report (waited 6d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
-    },
-    {
-      "number": 41449,
-      "title": "wslservice stuck in stopping state & wsl --shutdown shows the error as OOM",
-      "url": "https://github.com/microsoft/WSL/issues/41449",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "emailed-logs",
-        "wslc"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-08-26T07:17:49Z",
-      "updated_at": "2026-08-26T07:24:43Z",
-      "age_days": 6.0,
-      "triaged": false,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "❓",
-      "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 6d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 41194,
@@ -20994,6 +20994,100 @@
       "baseline_reason": "Blocked on an external/upstream dependency (waited 3d) — record the blocker + upstream link and track it; don't treat as a normal roadmap/repro item."
     },
     {
+      "number": 41434,
+      "title": "No module found after update to 2.9.8.0",
+      "url": "https://github.com/microsoft/WSL/issues/41434",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "kconfig",
+        "kernel"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-08-25T10:20:33Z",
+      "updated_at": "2026-08-31T07:36:07Z",
+      "age_days": 2.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "reply",
+      "baseline_glyph": "💬",
+      "baseline_text": "Confirm type (bug/feature) & route",
+      "baseline_reason": "Untyped report (waited 2d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+    },
+    {
+      "number": 41481,
+      "title": "[Bug]: WSL2 NAT localhost forwarding stopped; Windows loopback fails while WSL virtual IP works (2.6.3.0)",
+      "url": "https://github.com/microsoft/WSL/issues/41481",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "network",
+        "needs-author-feedback"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-08-30T00:03:44Z",
+      "updated_at": "2026-08-31T06:50:44Z",
+      "age_days": 2.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "await_author",
+      "baseline_glyph": "⏳",
+      "baseline_text": "Waiting on the author",
+      "baseline_reason": "We recently asked the reporter (waited 2d) — give them time to respond; no action needed yet."
+    },
+    {
+      "number": 41484,
+      "title": "p9io.cpp:258 (AcceptAsync) + docker veth teardown + journal corruption, reproduced across 3 WSL/kernel builds (contradicts #41191's version boundary)",
+      "url": "https://github.com/microsoft/WSL/issues/41484",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "needs-author-feedback"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-08-30T15:08:47Z",
+      "updated_at": "2026-08-31T06:25:55Z",
+      "age_days": 2.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "request_info",
+      "baseline_glyph": "🩺",
+      "baseline_text": "Confirm crash — get repro/logs & route",
+      "baseline_reason": "Crash report (waited 2d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
+    },
+    {
+      "number": 41485,
+      "title": "wslc stats E_UNEXPECTED",
+      "url": "https://github.com/microsoft/WSL/issues/41485",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "wslc"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-08-31T01:45:48Z",
+      "updated_at": "2026-08-31T06:26:01Z",
+      "age_days": 2.0,
+      "triaged": true,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "request_info",
+      "baseline_glyph": "❓",
+      "baseline_text": "Request exact repro, version & logs",
+      "baseline_reason": "Bug (waited 2d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+    },
+    {
       "number": 40732,
       "title": "⚠️ WSL2 GPU OOM leads to Hyper-V kernel panic and Windows BLUE SCREEN OF DEATH — total system crash, not a recoverable error",
       "url": "https://github.com/microsoft/WSL/issues/40732",
@@ -21089,30 +21183,6 @@
       "baseline_reason": "Feature/idea (waited 1d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     },
     {
-      "number": 41434,
-      "title": "No module found after update to 2.9.8.0",
-      "url": "https://github.com/microsoft/WSL/issues/41434",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "kconfig",
-        "kernel"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-08-25T10:20:33Z",
-      "updated_at": "2026-08-31T07:36:07Z",
-      "age_days": 1.0,
-      "triaged": false,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm type (bug/feature) & route",
-      "baseline_reason": "Untyped report (waited 1d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
-    },
-    {
       "number": 41443,
       "title": "Mirrored networking: reply from TUN-based VPN adapter dropped before reaching WSL vNIC",
       "url": "https://github.com/microsoft/WSL/issues/41443",
@@ -21182,30 +21252,6 @@
       "baseline_reason": "Untyped report (waited 1d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
     },
     {
-      "number": 41481,
-      "title": "[Bug]: WSL2 NAT localhost forwarding stopped; Windows loopback fails while WSL virtual IP works (2.6.3.0)",
-      "url": "https://github.com/microsoft/WSL/issues/41481",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "network",
-        "needs-author-feedback"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-08-30T00:03:44Z",
-      "updated_at": "2026-08-31T06:50:44Z",
-      "age_days": 1.0,
-      "triaged": false,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "await_author",
-      "baseline_glyph": "⏳",
-      "baseline_text": "Waiting on the author",
-      "baseline_reason": "We recently asked the reporter (waited 1d) — give them time to respond; no action needed yet."
-    },
-    {
       "number": 41483,
       "title": "[BUG] CUDA Unified Memory (nvbuf-memory-type=3) CPU-mapping segfaults in libpixman under GPU-PV on Blackwell (RTX 5070) -- reproduces on driver 596.49 AND 595.97",
       "url": "https://github.com/microsoft/WSL/issues/41483",
@@ -21228,52 +21274,6 @@
       "baseline_glyph": "💬",
       "baseline_text": "Confirm type (bug/feature) & route",
       "baseline_reason": "Untyped report (waited 1d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
-    },
-    {
-      "number": 41484,
-      "title": "p9io.cpp:258 (AcceptAsync) + docker veth teardown + journal corruption, reproduced across 3 WSL/kernel builds (contradicts #41191's version boundary)",
-      "url": "https://github.com/microsoft/WSL/issues/41484",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "needs-author-feedback"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-08-30T15:08:47Z",
-      "updated_at": "2026-08-31T06:25:55Z",
-      "age_days": 1.0,
-      "triaged": false,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "🩺",
-      "baseline_text": "Confirm crash — get repro/logs & route",
-      "baseline_reason": "Crash report (waited 1d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
-    },
-    {
-      "number": 41485,
-      "title": "wslc stats E_UNEXPECTED",
-      "url": "https://github.com/microsoft/WSL/issues/41485",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "wslc"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-08-31T01:45:48Z",
-      "updated_at": "2026-08-31T06:26:01Z",
-      "age_days": 1.0,
-      "triaged": true,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "❓",
-      "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 1d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 41488,
@@ -21300,6 +21300,30 @@
       "baseline_reason": "Already being worked (waited 1d) — a fix/PR is in flight; track it to completion, don't re-triage or close."
     },
     {
+      "number": 41492,
+      "title": "[WSL 2.9 regression] Rootless Docker/Podman cannot start any container — standard /sys/fs/cgroup/user.slice path missing after cgroup hierarchy moved under /wsl-user/distro-N/",
+      "url": "https://github.com/microsoft/WSL/issues/41492",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "external",
+        "emailed-logs"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-09-01T04:32:23Z",
+      "updated_at": "2026-09-01T07:34:37Z",
+      "age_days": 1.0,
+      "triaged": true,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "label_only",
+      "baseline_glyph": "🔗",
+      "baseline_text": "Track the external dependency / blocker",
+      "baseline_reason": "Blocked on an external/upstream dependency (waited 1d) — record the blocker + upstream link and track it; don't treat as a normal roadmap/repro item."
+    },
+    {
       "number": 41486,
       "title": "WSL should store the downloaded image locally",
       "url": "https://github.com/microsoft/WSL/issues/41486",
@@ -21321,30 +21345,6 @@
       "baseline_glyph": "💬",
       "baseline_text": "Decide on this feature request",
       "baseline_reason": "Feature/idea (new). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
-    },
-    {
-      "number": 41492,
-      "title": "[WSL 2.9 regression] Rootless Docker/Podman cannot start any container — standard /sys/fs/cgroup/user.slice path missing after cgroup hierarchy moved under /wsl-user/distro-N/",
-      "url": "https://github.com/microsoft/WSL/issues/41492",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "external",
-        "emailed-logs"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-09-01T04:32:23Z",
-      "updated_at": "2026-09-01T07:34:37Z",
-      "age_days": 0.0,
-      "triaged": true,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "label_only",
-      "baseline_glyph": "🔗",
-      "baseline_text": "Track the external dependency / blocker",
-      "baseline_reason": "Blocked on an external/upstream dependency (new) — record the blocker + upstream link and track it; don't treat as a normal roadmap/repro item."
     }
   ],
   "prs": [
@@ -21532,50 +21532,6 @@
       "baseline_reason": "PR has waited 39 d for us (waited 39d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
-      "number": 41165,
-      "title": "Mitigate and instrument the utility-VM boot-connect timeout",
-      "url": "https://github.com/microsoft/WSL/pull/41165",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-07-24T15:08:02Z",
-      "updated_at": "2026-07-27T19:26:50Z",
-      "age_days": 36.0,
-      "triaged": false,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "assign_reviewer",
-      "baseline_glyph": "👤",
-      "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 36 d for us (waited 36d) — assign the area owner as reviewer and get a decision, don't leave it generic."
-    },
-    {
-      "number": 41164,
-      "title": "Bound relay drains so a wedged guest socket cannot hang wsl.exe",
-      "url": "https://github.com/microsoft/WSL/pull/41164",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-07-24T15:07:59Z",
-      "updated_at": "2026-07-29T02:09:26Z",
-      "age_days": 35.0,
-      "triaged": false,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "CHANGES_REQUESTED",
-      "baseline_action": "await_author_changes",
-      "baseline_glyph": "✍️",
-      "baseline_text": "Await author's changes",
-      "baseline_reason": "Changes were requested (waited 35d) — ball is with the author; nudge if quiet."
-    },
-    {
       "number": 41120,
       "title": "Add AzureLinux official WSL image to the distribution manifest",
       "url": "https://github.com/microsoft/WSL/pull/41120",
@@ -21586,7 +21542,7 @@
       "comments": 1,
       "created_at": "2026-07-20T15:50:28Z",
       "updated_at": "2026-08-04T05:39:05Z",
-      "age_days": 28.0,
+      "age_days": 29.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -21595,7 +21551,7 @@
       "baseline_action": "await_author_changes",
       "baseline_glyph": "✍️",
       "baseline_text": "Await author's changes",
-      "baseline_reason": "Changes were requested (waited 28d) — ball is with the author; nudge if quiet."
+      "baseline_reason": "Changes were requested (waited 29d) — ball is with the author; nudge if quiet."
     },
     {
       "number": 41323,
@@ -21721,7 +21677,7 @@
       "comments": 1,
       "created_at": "2026-08-19T13:46:35Z",
       "updated_at": "2026-08-20T06:41:10Z",
-      "age_days": 12.0,
+      "age_days": 13.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -21730,7 +21686,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 12d) — review it."
+      "baseline_reason": "PR (waited 13d) — review it."
     },
     {
       "number": 41387,
@@ -22087,6 +22043,28 @@
       "baseline_reason": "PR (waited 2d) — review it."
     },
     {
+      "number": 41487,
+      "title": "Fix p9 drvfs read only mount regression",
+      "url": "https://github.com/microsoft/WSL/pull/41487",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-08-31T05:39:50Z",
+      "updated_at": "2026-08-31T05:56:03Z",
+      "age_days": 2.0,
+      "triaged": true,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (waited 2d) — review it."
+    },
+    {
       "number": 40971,
       "title": "Wslc events",
       "url": "https://github.com/microsoft/WSL/pull/40971",
@@ -22263,28 +22241,6 @@
       "baseline_reason": "PR (waited 1d) — review it."
     },
     {
-      "number": 41487,
-      "title": "Fix p9 drvfs read only mount regression",
-      "url": "https://github.com/microsoft/WSL/pull/41487",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-08-31T05:39:50Z",
-      "updated_at": "2026-08-31T05:56:03Z",
-      "age_days": 1.0,
-      "triaged": true,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 1d) — review it."
-    },
-    {
       "number": 41490,
       "title": "Fix intermittent ImportDistroInvalidTar test failures",
       "url": "https://github.com/microsoft/WSL/pull/41490",
@@ -22317,8 +22273,52 @@
       "comments": 1,
       "created_at": "2026-09-01T03:42:48Z",
       "updated_at": "2026-09-01T05:12:55Z",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "triaged": true,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (waited 1d) — review it."
+    },
+    {
+      "number": 41164,
+      "title": "Bound relay drains so a wedged guest socket cannot hang wsl.exe",
+      "url": "https://github.com/microsoft/WSL/pull/41164",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-07-24T15:07:59Z",
+      "updated_at": "2026-09-01T10:32:23Z",
+      "age_days": 0.0,
+      "triaged": false,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "CHANGES_REQUESTED",
+      "baseline_action": "await_author_changes",
+      "baseline_glyph": "✍️",
+      "baseline_text": "Await author's changes",
+      "baseline_reason": "Changes were requested (new) — ball is with the author; nudge if quiet."
+    },
+    {
+      "number": 41165,
+      "title": "Mitigate and instrument the utility-VM boot-connect timeout",
+      "url": "https://github.com/microsoft/WSL/pull/41165",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-07-24T15:08:02Z",
+      "updated_at": "2026-09-01T10:32:01Z",
+      "age_days": 0.0,
+      "triaged": false,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",

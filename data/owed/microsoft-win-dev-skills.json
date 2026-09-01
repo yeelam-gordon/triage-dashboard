@@ -1,13 +1,13 @@
 {
   "repo": "microsoft/win-dev-skills",
-  "generated_at": "2026-09-01T09:01:03Z",
+  "generated_at": "2026-09-01T11:38:12Z",
   "awaiting_label": null,
   "awaiting_issues": 0,
   "awaiting_prs": 14,
   "backlog_issues": 30,
   "backlog_prs": 15,
   "issues_total": 30,
-  "prs_total": 15,
+  "prs_total": 13,
   "issues": [
     {
       "number": 15,
@@ -692,7 +692,7 @@
       "comments": 1,
       "created_at": "2026-05-20T08:07:05Z",
       "updated_at": "2026-05-23T06:43:10Z",
-      "age_days": 101.0,
+      "age_days": 102.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -701,7 +701,7 @@
       "baseline_action": "review",
       "baseline_glyph": "🕰️",
       "baseline_text": "Stale PR — status or close",
-      "baseline_reason": "PR has sat 101 d (waited 101d) — ping for status/rebase or close if abandoned."
+      "baseline_reason": "PR has sat 102 d (waited 102d) — ping for status/rebase or close if abandoned."
     },
     {
       "number": 88,
@@ -736,16 +736,16 @@
       "comments": 1,
       "created_at": "2026-07-30T08:14:09Z",
       "updated_at": "2026-08-03T07:12:18Z",
-      "age_days": 29.0,
+      "age_days": 30.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
       "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 29d) — review it."
+      "baseline_action": "assign_reviewer",
+      "baseline_glyph": "👤",
+      "baseline_text": "Assign a domain reviewer",
+      "baseline_reason": "PR has waited 30 d for us (waited 30d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 134,
@@ -902,6 +902,28 @@
       "baseline_reason": "PR (waited 1d) — review it."
     },
     {
+      "number": 172,
+      "title": "fix(release): sync client manifest versions",
+      "url": "https://github.com/microsoft/win-dev-skills/pull/172",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-08-30T15:20:00Z",
+      "updated_at": "2026-09-01T05:03:37Z",
+      "age_days": 1.0,
+      "triaged": false,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "CHANGES_REQUESTED",
+      "baseline_action": "await_author_changes",
+      "baseline_glyph": "✍️",
+      "baseline_text": "Await author's changes",
+      "baseline_reason": "Changes were requested (waited 1d) — ball is with the author; nudge if quiet."
+    },
+    {
       "number": 173,
       "title": "ci(deps): bump github/codeql-action/analyze from 4.37.6 to 4.37.8",
       "url": "https://github.com/microsoft/win-dev-skills/pull/173",
@@ -968,28 +990,6 @@
       "baseline_reason": "PR (waited 1d) — review it."
     },
     {
-      "number": 172,
-      "title": "fix(release): sync client manifest versions",
-      "url": "https://github.com/microsoft/win-dev-skills/pull/172",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-08-30T15:20:00Z",
-      "updated_at": "2026-09-01T05:03:37Z",
-      "age_days": 0.0,
-      "triaged": false,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "CHANGES_REQUESTED",
-      "baseline_action": "await_author_changes",
-      "baseline_glyph": "✍️",
-      "baseline_text": "Await author's changes",
-      "baseline_reason": "Changes were requested (new) — ball is with the author; nudge if quiet."
-    },
-    {
       "number": 108,
       "title": "Copilot cost calculation module",
       "url": "https://github.com/microsoft/win-dev-skills/pull/108",
@@ -1000,7 +1000,7 @@
       "comments": 1,
       "created_at": "2026-06-12T08:45:02Z",
       "updated_at": "2026-06-16T06:29:44Z",
-      "age_days": 77.0,
+      "age_days": 78.0,
       "triaged": true,
       "awaiting": false,
       "is_draft": true,
@@ -1009,7 +1009,7 @@
       "baseline_action": "wait_author",
       "baseline_glyph": "🚧",
       "baseline_text": "Wait — PR is a draft/WIP",
-      "baseline_reason": "Draft/WIP PR (waited 77d) — don't review yet; nudge the author to mark it ready."
+      "baseline_reason": "Draft/WIP PR (waited 78d) — don't review yet; nudge the author to mark it ready."
     }
   ]
 }
