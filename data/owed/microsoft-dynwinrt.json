@@ -1,12 +1,12 @@
 {
   "repo": "microsoft/dynwinrt",
-  "generated_at": "2026-09-02T11:58:29Z",
+  "generated_at": "2026-09-02T15:21:18Z",
   "awaiting_label": null,
   "awaiting_issues": 0,
   "awaiting_prs": 5,
-  "backlog_issues": 1,
+  "backlog_issues": 4,
   "backlog_prs": 5,
-  "issues_total": 1,
+  "issues_total": 4,
   "prs_total": 5,
   "issues": [
     {
@@ -31,6 +31,75 @@
       "baseline_glyph": "🩺",
       "baseline_text": "Confirm crash — get repro/logs & route",
       "baseline_reason": "Crash report (waited 1d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
+    },
+    {
+      "number": 123,
+      "title": "Add safe copied byte conversion for WinRT IBuffer values",
+      "url": "https://github.com/microsoft/dynwinrt/issues/123",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "enhancement"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-09-02T14:56:31Z",
+      "updated_at": "2026-09-02T14:56:31Z",
+      "age_days": 0.0,
+      "triaged": true,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "reply",
+      "baseline_glyph": "💬",
+      "baseline_text": "Decide on this feature request",
+      "baseline_reason": "Feature/idea (new). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+    },
+    {
+      "number": 126,
+      "title": "Make Python WinRT async operations compatible with asyncio.create_task",
+      "url": "https://github.com/microsoft/dynwinrt/issues/126",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "enhancement"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-09-02T14:57:02Z",
+      "updated_at": "2026-09-02T14:57:02Z",
+      "age_days": 0.0,
+      "triaged": true,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "reply",
+      "baseline_glyph": "💬",
+      "baseline_text": "Decide on this feature request",
+      "baseline_reason": "Feature/idea (new). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+    },
+    {
+      "number": 127,
+      "title": "Add explicit helpers for unboxing WinRT IPropertyValue objects",
+      "url": "https://github.com/microsoft/dynwinrt/issues/127",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "enhancement"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-09-02T14:57:02Z",
+      "updated_at": "2026-09-02T15:13:37Z",
+      "age_days": 0.0,
+      "triaged": true,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "reply",
+      "baseline_glyph": "💬",
+      "baseline_text": "Decide on this feature request",
+      "baseline_reason": "Feature/idea (new). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     }
   ],
   "prs": [
@@ -45,7 +114,7 @@
       "comments": 1,
       "created_at": "2026-07-22T14:04:00Z",
       "updated_at": "2026-07-23T09:48:29Z",
-      "age_days": 41.0,
+      "age_days": 42.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -54,7 +123,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 41 d for us (waited 41d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 42 d for us (waited 42d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 70,
@@ -89,7 +158,7 @@
       "comments": 1,
       "created_at": "2026-07-22T14:08:05Z",
       "updated_at": "2026-07-31T08:01:39Z",
-      "age_days": 33.0,
+      "age_days": 34.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -98,7 +167,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 33 d for us (waited 33d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 34 d for us (waited 34d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 102,
@@ -111,7 +180,7 @@
       "comments": 1,
       "created_at": "2026-08-18T03:05:30Z",
       "updated_at": "2026-08-19T08:40:23Z",
-      "age_days": 14.0,
+      "age_days": 15.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -120,32 +189,29 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 14d) — review it."
+      "baseline_reason": "PR (waited 15d) — review it."
     },
     {
-      "number": 121,
-      "title": "Bump browserslist from 4.28.1 to 4.28.8 in /benchmarks/electron",
-      "url": "https://github.com/microsoft/dynwinrt/pull/121",
+      "number": 122,
+      "title": "Refresh project documentation for current releases",
+      "url": "https://github.com/microsoft/dynwinrt/pull/122",
       "kind": "pr",
       "is_community": null,
-      "labels": [
-        "dependencies",
-        "javascript"
-      ],
+      "labels": [],
       "up": 0,
       "comments": 1,
-      "created_at": "2026-09-02T10:36:48Z",
-      "updated_at": "2026-09-02T10:36:49Z",
+      "created_at": "2026-09-02T14:08:38Z",
+      "updated_at": "2026-09-02T14:54:03Z",
       "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
       "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "📦",
-      "baseline_text": "Dependency PR — check CI & merge/close",
-      "baseline_reason": "Dependency bump (new) — verify CI + changelog risk, then merge or close."
+      "baseline_action": "assign_reviewer",
+      "baseline_glyph": "🌐",
+      "baseline_text": "Route to docs/localization owner",
+      "baseline_reason": "Docs/localization PR (new) — route to the docs/localization owner for a domain review, not a generic pass."
     }
   ]
 }

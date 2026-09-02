@@ -1,13 +1,13 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-09-02T11:58:29Z",
+  "generated_at": "2026-09-02T15:21:18Z",
   "awaiting_label": "Needs-Triage",
   "awaiting_issues": 21,
-  "awaiting_prs": 42,
+  "awaiting_prs": 43,
   "backlog_issues": 58,
-  "backlog_prs": 46,
+  "backlog_prs": 47,
   "issues_total": 21,
-  "prs_total": 38,
+  "prs_total": 39,
   "issues": [
     {
       "number": 668,
@@ -23,7 +23,7 @@
       "comments": 1,
       "created_at": "2026-08-25T21:38:27Z",
       "updated_at": "2026-08-31T08:07:04Z",
-      "age_days": 2.0,
+      "age_days": 3.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -31,7 +31,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 2d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (waited 3d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 674,
@@ -147,7 +147,7 @@
       "comments": 1,
       "created_at": "2026-09-02T08:45:01Z",
       "updated_at": "2026-09-02T09:27:13Z",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -155,7 +155,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm on current build & route (AgentPane)",
-      "baseline_reason": "Bug (AgentPane) (new) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_reason": "Bug (AgentPane) (waited 1d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 780,
@@ -173,15 +173,15 @@
       "comments": 1,
       "created_at": "2026-09-02T08:45:01Z",
       "updated_at": "2026-09-02T08:45:27Z",
-      "age_days": 0.0,
-      "triaged": false,
+      "age_days": 1.0,
+      "triaged": true,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm on current build & route (Settings)",
-      "baseline_reason": "Bug (Settings) (new) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_reason": "Bug (Settings) (waited 1d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 781,
@@ -198,7 +198,7 @@
       "comments": 1,
       "created_at": "2026-09-02T08:45:01Z",
       "updated_at": "2026-09-02T09:26:19Z",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "triaged": false,
       "awaiting": true,
       "fix_ready": false,
@@ -206,7 +206,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs (FirstRun)",
-      "baseline_reason": "Bug (FirstRun) (new) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (FirstRun) (waited 1d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 782,
@@ -224,7 +224,7 @@
       "comments": 1,
       "created_at": "2026-09-02T08:45:01Z",
       "updated_at": "2026-09-02T09:25:47Z",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -232,7 +232,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Triage idea — scope then decide (FirstRun)",
-      "baseline_reason": "New untriaged idea (FirstRun) (new) — classify it and either ask for scope or make an early accept/park call."
+      "baseline_reason": "New untriaged idea (FirstRun) (waited 1d) — classify it and either ask for scope or make an early accept/park call."
     },
     {
       "number": 783,
@@ -251,7 +251,7 @@
       "comments": 1,
       "created_at": "2026-09-02T08:45:01Z",
       "updated_at": "2026-09-02T08:45:27Z",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -259,7 +259,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm on current build & route (AutoFix)",
-      "baseline_reason": "Bug (AutoFix) (new) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_reason": "Bug (AutoFix) (waited 1d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 784,
@@ -276,7 +276,7 @@
       "comments": 1,
       "created_at": "2026-09-02T08:45:01Z",
       "updated_at": "2026-09-02T09:22:44Z",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "triaged": false,
       "awaiting": true,
       "fix_ready": false,
@@ -284,7 +284,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Triage idea — scope then decide (FirstRun)",
-      "baseline_reason": "New untriaged idea (FirstRun) (new) — classify it and either ask for scope or make an early accept/park call."
+      "baseline_reason": "New untriaged idea (FirstRun) (waited 1d) — classify it and either ask for scope or make an early accept/park call."
     },
     {
       "number": 785,
@@ -301,7 +301,7 @@
       "comments": 1,
       "created_at": "2026-09-02T08:45:01Z",
       "updated_at": "2026-09-02T08:45:28Z",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "triaged": false,
       "awaiting": true,
       "fix_ready": false,
@@ -309,7 +309,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm on current build & route (Settings)",
-      "baseline_reason": "Bug (Settings) (new) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_reason": "Bug (Settings) (waited 1d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 786,
@@ -326,7 +326,7 @@
       "comments": 1,
       "created_at": "2026-09-02T08:45:01Z",
       "updated_at": "2026-09-02T08:45:27Z",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -334,7 +334,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Triage idea — scope then decide (Terminal)",
-      "baseline_reason": "New untriaged idea (Terminal) (new) — classify it and either ask for scope or make an early accept/park call."
+      "baseline_reason": "New untriaged idea (Terminal) (waited 1d) — classify it and either ask for scope or make an early accept/park call."
     },
     {
       "number": 787,
@@ -351,7 +351,7 @@
       "comments": 1,
       "created_at": "2026-09-02T08:45:45Z",
       "updated_at": "2026-09-02T08:46:10Z",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -359,7 +359,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm on current build & route (AutoFix)",
-      "baseline_reason": "Bug (AutoFix) (new) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_reason": "Bug (AutoFix) (waited 1d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 788,
@@ -376,15 +376,15 @@
       "comments": 1,
       "created_at": "2026-09-02T08:45:45Z",
       "updated_at": "2026-09-02T08:46:11Z",
-      "age_days": 0.0,
-      "triaged": false,
+      "age_days": 1.0,
+      "triaged": true,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm on current build & route (AgentPane)",
-      "baseline_reason": "Bug (AgentPane) (new) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_reason": "Bug (AgentPane) (waited 1d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 789,
@@ -401,7 +401,7 @@
       "comments": 1,
       "created_at": "2026-09-02T08:45:45Z",
       "updated_at": "2026-09-02T09:24:21Z",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -409,7 +409,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Triage idea — scope then decide (Settings)",
-      "baseline_reason": "New untriaged idea (Settings) (new) — classify it and either ask for scope or make an early accept/park call."
+      "baseline_reason": "New untriaged idea (Settings) (waited 1d) — classify it and either ask for scope or make an early accept/park call."
     },
     {
       "number": 790,
@@ -427,7 +427,7 @@
       "comments": 1,
       "created_at": "2026-09-02T08:45:45Z",
       "updated_at": "2026-09-02T09:24:51Z",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -435,7 +435,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm on current build & route (Terminal)",
-      "baseline_reason": "Bug (Terminal) (new) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_reason": "Bug (Terminal) (waited 1d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 791,
@@ -452,7 +452,7 @@
       "comments": 1,
       "created_at": "2026-09-02T08:45:45Z",
       "updated_at": "2026-09-02T08:46:11Z",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -460,7 +460,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs (AutoFix)",
-      "baseline_reason": "Bug (AutoFix) (new) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (AutoFix) (waited 1d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 792,
@@ -477,7 +477,7 @@
       "comments": 1,
       "created_at": "2026-09-02T08:45:45Z",
       "updated_at": "2026-09-02T08:46:41Z",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -485,7 +485,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm on current build & route (Settings)",
-      "baseline_reason": "Bug (Settings) (new) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_reason": "Bug (Settings) (waited 1d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 793,
@@ -502,7 +502,7 @@
       "comments": 1,
       "created_at": "2026-09-02T08:45:45Z",
       "updated_at": "2026-09-02T09:23:37Z",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "triaged": false,
       "awaiting": true,
       "fix_ready": false,
@@ -510,7 +510,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm on current build & route (AgentPane)",
-      "baseline_reason": "Bug (AgentPane) (new) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_reason": "Bug (AgentPane) (waited 1d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 794,
@@ -527,7 +527,7 @@
       "comments": 1,
       "created_at": "2026-09-02T08:45:45Z",
       "updated_at": "2026-09-02T08:46:09Z",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -535,7 +535,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs (AutoFix)",
-      "baseline_reason": "Bug (AutoFix) (new) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (AutoFix) (waited 1d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 228,
@@ -551,7 +551,7 @@
       "comments": 1,
       "created_at": "2026-06-04T11:19:15Z",
       "updated_at": "2026-09-02T07:59:15Z",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -559,7 +559,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (new, 5 👍) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 1d, 5 👍) — correct them, then route."
     },
     {
       "number": 192,
@@ -670,7 +670,7 @@
       "comments": 1,
       "created_at": "2026-06-12T01:46:06Z",
       "updated_at": "2026-08-20T08:23:50Z",
-      "age_days": 13.0,
+      "age_days": 14.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -678,7 +678,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 13d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 14d) — correct them, then route."
     },
     {
       "number": 248,
@@ -1854,7 +1854,7 @@
       "comments": 1,
       "created_at": "2026-07-24T09:56:06Z",
       "updated_at": "2026-07-27T10:40:46Z",
-      "age_days": 37.0,
+      "age_days": 38.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -1863,7 +1863,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 37 d for us (waited 37d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 38 d for us (waited 38d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 448,
@@ -2064,6 +2064,28 @@
       "baseline_reason": "PR (waited 17d) — review it."
     },
     {
+      "number": 520,
+      "title": "Configure Dependabot for WTA Rust dependencies",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/520",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-07-30T03:19:23Z",
+      "updated_at": "2026-08-19T10:34:19Z",
+      "age_days": 15.0,
+      "triaged": false,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "📦",
+      "baseline_text": "Dependency PR — check CI & merge/close",
+      "baseline_reason": "Dependency bump (waited 15d) — verify CI + changelog risk, then merge or close."
+    },
+    {
       "number": 626,
       "title": "Pin GitHub Actions to full-length commit SHAs",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/626",
@@ -2086,28 +2108,6 @@
       "baseline_reason": "PR (waited 15d) — review it."
     },
     {
-      "number": 520,
-      "title": "Configure Dependabot for WTA Rust dependencies",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/520",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-07-30T03:19:23Z",
-      "updated_at": "2026-08-19T10:34:19Z",
-      "age_days": 14.0,
-      "triaged": false,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "📦",
-      "baseline_text": "Dependency PR — check CI & merge/close",
-      "baseline_reason": "Dependency bump (waited 14d) — verify CI + changelog risk, then merge or close."
-    },
-    {
       "number": 442,
       "title": "Durable sessions: save & restore shell sessions via /shell-sessions ",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/442",
@@ -2119,7 +2119,7 @@
       "created_at": "2026-07-18T00:59:36Z",
       "updated_at": "2026-08-21T02:09:09Z",
       "age_days": 13.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -2140,7 +2140,7 @@
       "comments": 1,
       "created_at": "2026-08-20T08:31:13Z",
       "updated_at": "2026-08-21T09:12:56Z",
-      "age_days": 12.0,
+      "age_days": 13.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -2149,7 +2149,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 12d) — review it."
+      "baseline_reason": "PR (waited 13d) — review it."
     },
     {
       "number": 628,
@@ -2206,7 +2206,7 @@
       "comments": 1,
       "created_at": "2026-08-12T10:17:20Z",
       "updated_at": "2026-08-27T09:54:26Z",
-      "age_days": 6.0,
+      "age_days": 7.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -2215,7 +2215,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 6d) — review it."
+      "baseline_reason": "PR (waited 7d) — review it."
     },
     {
       "number": 679,
@@ -2250,8 +2250,30 @@
       "comments": 1,
       "created_at": "2026-09-01T10:57:36Z",
       "updated_at": "2026-09-01T11:03:12Z",
-      "age_days": 1.0,
+      "age_days": 2.0,
       "triaged": false,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (waited 2d) — review it."
+    },
+    {
+      "number": 740,
+      "title": "Unify Auto error handling settings",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/740",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-09-01T04:10:18Z",
+      "updated_at": "2026-09-02T08:57:57Z",
+      "age_days": 1.0,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -2293,29 +2315,7 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-07-28T01:59:08Z",
-      "updated_at": "2026-09-02T11:41:21Z",
-      "age_days": 0.0,
-      "triaged": false,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (new) — review it."
-    },
-    {
-      "number": 740,
-      "title": "Unify Auto error handling settings",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/740",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-09-01T04:10:18Z",
-      "updated_at": "2026-09-02T08:57:57Z",
+      "updated_at": "2026-09-02T14:12:44Z",
       "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
@@ -2338,6 +2338,28 @@
       "comments": 1,
       "created_at": "2026-09-02T05:39:20Z",
       "updated_at": "2026-09-02T11:31:41Z",
+      "age_days": 0.0,
+      "triaged": false,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (new) — review it."
+    },
+    {
+      "number": 795,
+      "title": "Add hint text to agent settings where the label isn't self-explanatory",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/795",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-09-02T12:01:26Z",
+      "updated_at": "2026-09-02T12:04:41Z",
       "age_days": 0.0,
       "triaged": false,
       "awaiting": true,
@@ -2404,7 +2426,7 @@
       "comments": 1,
       "created_at": "2026-08-11T09:05:15Z",
       "updated_at": "2026-08-11T09:06:05Z",
-      "age_days": 22.0,
+      "age_days": 23.0,
       "triaged": false,
       "awaiting": false,
       "is_draft": true,
@@ -2413,7 +2435,7 @@
       "baseline_action": "wait_author",
       "baseline_glyph": "🚧",
       "baseline_text": "Wait — PR is a draft/WIP",
-      "baseline_reason": "Draft/WIP PR (waited 22d) — don't review yet; nudge the author to mark it ready."
+      "baseline_reason": "Draft/WIP PR (waited 23d) — don't review yet; nudge the author to mark it ready."
     },
     {
       "number": 564,
