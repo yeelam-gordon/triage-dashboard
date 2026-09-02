@@ -1,6 +1,6 @@
 {
   "repo": "microsoft/dynwinrt",
-  "generated_at": "2026-09-02T08:42:57Z",
+  "generated_at": "2026-09-02T11:58:29Z",
   "awaiting_label": null,
   "awaiting_issues": 0,
   "awaiting_prs": 5,
@@ -123,26 +123,29 @@
       "baseline_reason": "PR (waited 14d) — review it."
     },
     {
-      "number": 119,
-      "title": "Clarify GitHub-only Python wheel installation",
-      "url": "https://github.com/microsoft/dynwinrt/pull/119",
+      "number": 121,
+      "title": "Bump browserslist from 4.28.1 to 4.28.8 in /benchmarks/electron",
+      "url": "https://github.com/microsoft/dynwinrt/pull/121",
       "kind": "pr",
       "is_community": null,
-      "labels": [],
+      "labels": [
+        "dependencies",
+        "javascript"
+      ],
       "up": 0,
       "comments": 1,
-      "created_at": "2026-09-01T14:37:49Z",
-      "updated_at": "2026-09-01T14:37:49Z",
-      "age_days": 1.0,
+      "created_at": "2026-09-02T10:36:48Z",
+      "updated_at": "2026-09-02T10:36:49Z",
+      "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
       "review_decision": "REVIEW_REQUIRED",
       "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 1d) — review it."
+      "baseline_glyph": "📦",
+      "baseline_text": "Dependency PR — check CI & merge/close",
+      "baseline_reason": "Dependency bump (new) — verify CI + changelog risk, then merge or close."
     }
   ]
 }
