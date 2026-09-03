@@ -1,13 +1,13 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-09-03T17:55:02Z",
+  "generated_at": "2026-09-03T20:48:37Z",
   "awaiting_label": "Needs-Triage",
   "awaiting_issues": 19,
-  "awaiting_prs": 43,
+  "awaiting_prs": 44,
   "backlog_issues": 55,
-  "backlog_prs": 48,
+  "backlog_prs": 49,
   "issues_total": 19,
-  "prs_total": 39,
+  "prs_total": 40,
   "issues": [
     {
       "number": 674,
@@ -339,6 +339,31 @@
       "baseline_reason": "Bug (AutoFix) (waited 1d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
+      "number": 785,
+      "title": "New agent buttons are left-aligned with odd spacing and don't fill the width",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/785",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "Issue-Bug",
+        "Needs-Triage",
+        "Area-Settings"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-09-02T08:45:01Z",
+      "updated_at": "2026-09-03T15:40:02Z",
+      "age_days": 1.0,
+      "triaged": false,
+      "awaiting": true,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "reply",
+      "baseline_glyph": "💬",
+      "baseline_text": "Confirm on current build & route (Settings)",
+      "baseline_reason": "Bug (Settings) (waited 1d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+    },
+    {
       "number": 789,
       "title": "Settings pages need more hint text",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/789",
@@ -462,31 +487,6 @@
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
       "baseline_reason": "Wrong/missing tags (waited 1d) — correct them, then route."
-    },
-    {
-      "number": 785,
-      "title": "New agent buttons are left-aligned with odd spacing and don't fill the width",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/785",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "Issue-Bug",
-        "Needs-Triage",
-        "Area-Settings"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-09-02T08:45:01Z",
-      "updated_at": "2026-09-03T15:40:02Z",
-      "age_days": 0.0,
-      "triaged": false,
-      "awaiting": true,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route (Settings)",
-      "baseline_reason": "Bug (Settings) (new) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 228,
@@ -1385,7 +1385,7 @@
       "comments": 1,
       "created_at": "2026-05-19T18:03:05Z",
       "updated_at": "2026-05-21T16:11:54Z",
-      "age_days": 105.0,
+      "age_days": 106.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -1394,7 +1394,7 @@
       "baseline_action": "review",
       "baseline_glyph": "🕰️",
       "baseline_text": "Stale PR — status or close",
-      "baseline_reason": "PR has sat 105 d (waited 105d) — ping for status/rebase or close if abandoned."
+      "baseline_reason": "PR has sat 106 d (waited 106d) — ping for status/rebase or close if abandoned."
     },
     {
       "number": 38,
@@ -2299,6 +2299,28 @@
       "baseline_reason": "PR (waited 1d) — review it."
     },
     {
+      "number": 828,
+      "title": "Scope Yolo mode to the default agent provider",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/828",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-09-03T20:11:07Z",
+      "updated_at": "2026-09-03T20:45:38Z",
+      "age_days": 0.0,
+      "triaged": false,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (new) — review it."
+    },
+    {
       "number": 150,
       "title": "[WIP] Add read-only Codex CLI history support",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/150",
@@ -2397,7 +2419,7 @@
       "comments": 1,
       "created_at": "2026-09-02T12:01:26Z",
       "updated_at": "2026-09-03T15:40:31Z",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "triaged": false,
       "awaiting": false,
       "is_draft": false,
@@ -2406,7 +2428,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (new) — review it."
+      "baseline_reason": "PR (waited 1d) — review it."
     }
   ]
 }
