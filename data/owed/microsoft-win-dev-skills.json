@@ -1,13 +1,13 @@
 {
   "repo": "microsoft/win-dev-skills",
-  "generated_at": "2026-09-03T02:46:32Z",
+  "generated_at": "2026-09-03T05:42:18Z",
   "awaiting_label": null,
   "awaiting_issues": 0,
   "awaiting_prs": 12,
-  "backlog_issues": 30,
+  "backlog_issues": 31,
   "backlog_prs": 14,
-  "issues_total": 30,
-  "prs_total": 11,
+  "issues_total": 31,
+  "prs_total": 14,
   "issues": [
     {
       "number": 15,
@@ -625,7 +625,7 @@
       "comments": 1,
       "created_at": "2026-08-13T23:28:29Z",
       "updated_at": "2026-08-13T23:28:29Z",
-      "age_days": 20.0,
+      "age_days": 21.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -633,7 +633,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 20d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_reason": "Feature/idea (waited 21d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     },
     {
       "number": 158,
@@ -678,6 +678,27 @@
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
       "baseline_reason": "Bug (waited 4d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+    },
+    {
+      "number": 176,
+      "title": "Track WinUI workshop failures across skills, templates, analyzers, docs, and CLI",
+      "url": "https://github.com/microsoft/win-dev-skills/issues/176",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-09-03T04:48:10Z",
+      "updated_at": "2026-09-03T04:51:09Z",
+      "age_days": 0.0,
+      "triaged": true,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "reply",
+      "baseline_glyph": "💬",
+      "baseline_text": "Confirm type (bug/feature) & route",
+      "baseline_reason": "Untyped report (new) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
     }
   ],
   "prs": [
@@ -933,8 +954,8 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-08-30T15:20:00Z",
-      "updated_at": "2026-09-01T05:03:37Z",
-      "age_days": 2.0,
+      "updated_at": "2026-09-03T04:32:33Z",
+      "age_days": 0.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -943,7 +964,7 @@
       "baseline_action": "await_author_changes",
       "baseline_glyph": "✍️",
       "baseline_text": "Await author's changes",
-      "baseline_reason": "Changes were requested (waited 2d) — ball is with the author; nudge if quiet."
+      "baseline_reason": "Changes were requested (new) — ball is with the author; nudge if quiet."
     },
     {
       "number": 108,
