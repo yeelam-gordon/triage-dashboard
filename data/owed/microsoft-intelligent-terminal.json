@@ -1,6 +1,6 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-09-04T15:05:19Z",
+  "generated_at": "2026-09-04T17:45:44Z",
   "awaiting_label": "Needs-Triage",
   "awaiting_issues": 24,
   "awaiting_prs": 48,
@@ -74,7 +74,7 @@
       "created_at": "2026-08-28T06:45:16Z",
       "updated_at": "2026-09-01T06:14:45Z",
       "age_days": 4.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -607,7 +607,7 @@
       "created_at": "2026-09-04T07:20:06Z",
       "updated_at": "2026-09-04T14:58:09Z",
       "age_days": 0.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -1494,7 +1494,7 @@
       "comments": 1,
       "created_at": "2026-09-04T09:36:27Z",
       "updated_at": "2026-09-04T13:42:04Z",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -1502,7 +1502,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags (AgentPane)",
-      "baseline_reason": "Wrong/missing tags (AgentPane) (new) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (AgentPane) (waited 1d) — correct them, then route."
     }
   ],
   "prs": [
@@ -1517,7 +1517,7 @@
       "comments": 1,
       "created_at": "2026-05-19T18:04:27Z",
       "updated_at": "2026-05-20T13:16:24Z",
-      "age_days": 107.0,
+      "age_days": 108.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -1526,7 +1526,7 @@
       "baseline_action": "review",
       "baseline_glyph": "🕰️",
       "baseline_text": "Stale PR — status or close",
-      "baseline_reason": "PR has sat 107 d (waited 107d) — ping for status/rebase or close if abandoned."
+      "baseline_reason": "PR has sat 108 d (waited 108d) — ping for status/rebase or close if abandoned."
     },
     {
       "number": 17,
@@ -1583,7 +1583,7 @@
       "comments": 1,
       "created_at": "2026-06-17T05:34:22Z",
       "updated_at": "2026-06-17T13:02:17Z",
-      "age_days": 79.0,
+      "age_days": 80.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -1592,7 +1592,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 79 d for us (waited 79d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 80 d for us (waited 80d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 312,
@@ -1605,7 +1605,7 @@
       "comments": 1,
       "created_at": "2026-06-17T06:21:39Z",
       "updated_at": "2026-06-17T13:01:59Z",
-      "age_days": 79.0,
+      "age_days": 80.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -1614,7 +1614,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 79 d for us (waited 79d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 80 d for us (waited 80d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 313,
@@ -1627,7 +1627,7 @@
       "comments": 1,
       "created_at": "2026-06-17T06:26:59Z",
       "updated_at": "2026-06-17T13:01:36Z",
-      "age_days": 79.0,
+      "age_days": 80.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -1636,7 +1636,7 @@
       "baseline_action": "review",
       "baseline_glyph": "🛡️",
       "baseline_text": "Security-sensitive review",
-      "baseline_reason": "Security-sensitive PR (waited 79d) — prioritise a careful review + owner sign-off."
+      "baseline_reason": "Security-sensitive PR (waited 80d) — prioritise a careful review + owner sign-off."
     },
     {
       "number": 314,
@@ -1649,7 +1649,7 @@
       "comments": 1,
       "created_at": "2026-06-17T06:30:38Z",
       "updated_at": "2026-06-17T13:01:15Z",
-      "age_days": 79.0,
+      "age_days": 80.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -1658,7 +1658,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 79 d for us (waited 79d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 80 d for us (waited 80d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 315,
@@ -1671,7 +1671,7 @@
       "comments": 1,
       "created_at": "2026-06-17T06:51:25Z",
       "updated_at": "2026-06-17T13:00:59Z",
-      "age_days": 79.0,
+      "age_days": 80.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -1680,7 +1680,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 79 d for us (waited 79d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 80 d for us (waited 80d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 371,
@@ -1815,6 +1815,28 @@
       "baseline_reason": "PR has waited 47 d for us (waited 47d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
+      "number": 457,
+      "title": "Add transparent ACP tracing proxy",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/457",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-07-20T13:21:33Z",
+      "updated_at": "2026-07-20T13:27:27Z",
+      "age_days": 47.0,
+      "triaged": false,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "",
+      "baseline_action": "assign_reviewer",
+      "baseline_glyph": "👤",
+      "baseline_text": "Assign a domain reviewer",
+      "baseline_reason": "PR has waited 47 d for us (waited 47d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+    },
+    {
       "number": 453,
       "title": "Extract ACP session routing control plane and proxy conductor",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/453",
@@ -1831,28 +1853,6 @@
       "is_draft": false,
       "merge_state": "",
       "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "assign_reviewer",
-      "baseline_glyph": "👤",
-      "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 46 d for us (waited 46d) — assign the area owner as reviewer and get a decision, don't leave it generic."
-    },
-    {
-      "number": 457,
-      "title": "Add transparent ACP tracing proxy",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/457",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-07-20T13:21:33Z",
-      "updated_at": "2026-07-20T13:27:27Z",
-      "age_days": 46.0,
-      "triaged": false,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "",
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
@@ -1936,7 +1936,7 @@
       "created_at": "2026-08-06T02:59:01Z",
       "updated_at": "2026-08-06T04:38:44Z",
       "age_days": 30.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -2178,7 +2178,7 @@
       "created_at": "2026-08-19T07:40:02Z",
       "updated_at": "2026-08-25T01:05:47Z",
       "age_days": 11.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -2506,7 +2506,7 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-09-04T10:23:59Z",
-      "updated_at": "2026-09-04T14:55:56Z",
+      "updated_at": "2026-09-04T15:52:16Z",
       "age_days": 0.0,
       "triaged": false,
       "awaiting": true,
@@ -2597,7 +2597,7 @@
       "comments": 1,
       "created_at": "2026-08-05T13:12:38Z",
       "updated_at": "2026-08-05T13:18:20Z",
-      "age_days": 30.0,
+      "age_days": 31.0,
       "triaged": true,
       "awaiting": false,
       "is_draft": true,
@@ -2606,7 +2606,7 @@
       "baseline_action": "wait_author",
       "baseline_glyph": "🚧",
       "baseline_text": "Wait — PR is a draft/WIP",
-      "baseline_reason": "Draft/WIP PR (waited 30d) — don't review yet; nudge the author to mark it ready."
+      "baseline_reason": "Draft/WIP PR (waited 31d) — don't review yet; nudge the author to mark it ready."
     },
     {
       "number": 598,
