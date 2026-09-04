@@ -1,13 +1,13 @@
 {
   "repo": "microsoft/dynwinrt",
-  "generated_at": "2026-09-03T23:48:23Z",
+  "generated_at": "2026-09-04T02:51:51Z",
   "awaiting_label": null,
   "awaiting_issues": 0,
-  "awaiting_prs": 5,
+  "awaiting_prs": 6,
   "backlog_issues": 1,
-  "backlog_prs": 5,
+  "backlog_prs": 6,
   "issues_total": 1,
-  "prs_total": 5,
+  "prs_total": 6,
   "issues": [
     {
       "number": 116,
@@ -123,17 +123,17 @@
       "baseline_reason": "PR (waited 16d) — review it."
     },
     {
-      "number": 133,
-      "title": "Adopt canonical Classic COM module layout",
-      "url": "https://github.com/microsoft/dynwinrt/pull/133",
+      "number": 134,
+      "title": "Fix Python lifetime scope thread affinity",
+      "url": "https://github.com/microsoft/dynwinrt/pull/134",
       "kind": "pr",
       "is_community": null,
       "labels": [],
       "up": 0,
       "comments": 1,
-      "created_at": "2026-09-03T13:04:55Z",
-      "updated_at": "2026-09-03T14:10:25Z",
-      "age_days": 1.0,
+      "created_at": "2026-09-04T01:44:33Z",
+      "updated_at": "2026-09-04T02:48:41Z",
+      "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -142,7 +142,29 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 1d) — review it."
+      "baseline_reason": "PR (new) — review it."
+    },
+    {
+      "number": 136,
+      "title": "Promote additional Classic COM interfaces to safe generation",
+      "url": "https://github.com/microsoft/dynwinrt/pull/136",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-09-04T02:41:09Z",
+      "updated_at": "2026-09-04T02:55:29Z",
+      "age_days": 0.0,
+      "triaged": true,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (new) — review it."
     }
   ]
 }
