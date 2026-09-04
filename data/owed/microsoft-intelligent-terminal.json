@@ -1,6 +1,6 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-09-04T17:45:44Z",
+  "generated_at": "2026-09-04T20:45:37Z",
   "awaiting_label": "Needs-Triage",
   "awaiting_issues": 24,
   "awaiting_prs": 48,
@@ -463,6 +463,32 @@
       "baseline_reason": "New untriaged idea (Terminal) (waited 1d) — classify it and either ask for scope or make an early accept/park call."
     },
     {
+      "number": 840,
+      "title": "[Performance] Move the FRE agent availability probe off the UI thread",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/840",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "Issue-Feature",
+        "Needs-Triage",
+        "Area-AgentPane",
+        "Area-Settings"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-09-04T07:20:06Z",
+      "updated_at": "2026-09-04T14:58:09Z",
+      "age_days": 1.0,
+      "triaged": true,
+      "awaiting": true,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "reply",
+      "baseline_glyph": "💬",
+      "baseline_text": "Triage idea — scope then decide (AgentPane)",
+      "baseline_reason": "New untriaged idea (AgentPane) (waited 1d) — classify it and either ask for scope or make an early accept/park call."
+    },
+    {
       "number": 841,
       "title": "[Performance] Introduce transferable SharedWta lease and pane ownership tokens",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/841",
@@ -530,7 +556,7 @@
       "created_at": "2026-09-04T07:20:13Z",
       "updated_at": "2026-09-04T07:20:59Z",
       "age_days": 1.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -589,32 +615,6 @@
       "baseline_glyph": "💬",
       "baseline_text": "Triage idea — scope then decide (AgentPane)",
       "baseline_reason": "New untriaged idea (AgentPane) (waited 1d) — classify it and either ask for scope or make an early accept/park call."
-    },
-    {
-      "number": 840,
-      "title": "[Performance] Move the FRE agent availability probe off the UI thread",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/840",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "Issue-Feature",
-        "Needs-Triage",
-        "Area-AgentPane",
-        "Area-Settings"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-09-04T07:20:06Z",
-      "updated_at": "2026-09-04T14:58:09Z",
-      "age_days": 0.0,
-      "triaged": true,
-      "awaiting": true,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Triage idea — scope then decide (AgentPane)",
-      "baseline_reason": "New untriaged idea (AgentPane) (new) — classify it and either ask for scope or make an early accept/park call."
     },
     {
       "number": 228,
@@ -1539,7 +1539,7 @@
       "comments": 1,
       "created_at": "2026-05-19T18:03:05Z",
       "updated_at": "2026-05-21T16:11:54Z",
-      "age_days": 106.0,
+      "age_days": 107.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -1548,7 +1548,7 @@
       "baseline_action": "review",
       "baseline_glyph": "🕰️",
       "baseline_text": "Stale PR — status or close",
-      "baseline_reason": "PR has sat 106 d (waited 106d) — ping for status/rebase or close if abandoned."
+      "baseline_reason": "PR has sat 107 d (waited 107d) — ping for status/rebase or close if abandoned."
     },
     {
       "number": 38,
@@ -1815,6 +1815,28 @@
       "baseline_reason": "PR has waited 47 d for us (waited 47d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
+      "number": 453,
+      "title": "Extract ACP session routing control plane and proxy conductor",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/453",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-07-20T09:44:47Z",
+      "updated_at": "2026-07-20T13:47:42Z",
+      "age_days": 47.0,
+      "triaged": true,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "assign_reviewer",
+      "baseline_glyph": "👤",
+      "baseline_text": "Assign a domain reviewer",
+      "baseline_reason": "PR has waited 47 d for us (waited 47d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+    },
+    {
       "number": 457,
       "title": "Add transparent ACP tracing proxy",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/457",
@@ -1835,28 +1857,6 @@
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
       "baseline_reason": "PR has waited 47 d for us (waited 47d) — assign the area owner as reviewer and get a decision, don't leave it generic."
-    },
-    {
-      "number": 453,
-      "title": "Extract ACP session routing control plane and proxy conductor",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/453",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-07-20T09:44:47Z",
-      "updated_at": "2026-07-20T13:47:42Z",
-      "age_days": 46.0,
-      "triaged": true,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "assign_reviewer",
-      "baseline_glyph": "👤",
-      "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 46 d for us (waited 46d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 461,
@@ -2507,7 +2507,7 @@
       "comments": 1,
       "created_at": "2026-09-04T10:23:59Z",
       "updated_at": "2026-09-04T15:52:16Z",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -2516,7 +2516,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (new) — review it."
+      "baseline_reason": "PR (waited 1d) — review it."
     },
     {
       "number": 849,
@@ -2531,7 +2531,7 @@
       "comments": 1,
       "created_at": "2026-09-04T10:42:41Z",
       "updated_at": "2026-09-04T13:53:34Z",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -2540,7 +2540,7 @@
       "baseline_action": "await_author_changes",
       "baseline_glyph": "✍️",
       "baseline_text": "Await author's changes",
-      "baseline_reason": "Changes were requested (new) — ball is with the author; nudge if quiet."
+      "baseline_reason": "Changes were requested (waited 1d) — ball is with the author; nudge if quiet."
     },
     {
       "number": 850,
@@ -2553,7 +2553,7 @@
       "comments": 1,
       "created_at": "2026-09-04T14:03:48Z",
       "updated_at": "2026-09-04T14:05:21Z",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -2562,7 +2562,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (new) — review it."
+      "baseline_reason": "PR (waited 1d) — review it."
     },
     {
       "number": 150,
