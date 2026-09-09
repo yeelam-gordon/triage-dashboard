@@ -1,9 +1,9 @@
 {
   "repo": "microsoft/win-dev-skills",
-  "generated_at": "2026-09-09T02:48:24Z",
+  "generated_at": "2026-09-09T05:47:15Z",
   "awaiting_label": null,
   "awaiting_issues": 0,
-  "awaiting_prs": 12,
+  "awaiting_prs": 11,
   "backlog_issues": 21,
   "backlog_prs": 14,
   "issues_total": 21,
@@ -397,7 +397,7 @@
       "comments": 1,
       "created_at": "2026-08-13T23:28:29Z",
       "updated_at": "2026-08-13T23:28:29Z",
-      "age_days": 26.0,
+      "age_days": 27.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -405,7 +405,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 26d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_reason": "Feature/idea (waited 27d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     },
     {
       "number": 158,
@@ -695,28 +695,6 @@
       "baseline_reason": "PR (waited 1d) — review it."
     },
     {
-      "number": 171,
-      "title": "Skill for using ETW events for performance and lifecycle diagnostics",
-      "url": "https://github.com/microsoft/win-dev-skills/pull/171",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-08-27T16:39:38Z",
-      "updated_at": "2026-09-08T19:30:47Z",
-      "age_days": 1.0,
-      "triaged": true,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 1d) — review it."
-    },
-    {
       "number": 172,
       "title": "fix(release): sync client manifest versions",
       "url": "https://github.com/microsoft/win-dev-skills/pull/172",
@@ -781,6 +759,28 @@
       "baseline_glyph": "📦",
       "baseline_text": "Dependency PR — check CI & merge/close",
       "baseline_reason": "Dependency bump (waited 8d) — verify CI + changelog risk, then merge or close."
+    },
+    {
+      "number": 171,
+      "title": "Skill for using ETW events for performance and lifecycle diagnostics",
+      "url": "https://github.com/microsoft/win-dev-skills/pull/171",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-08-27T16:39:38Z",
+      "updated_at": "2026-09-09T05:04:25Z",
+      "age_days": 0.0,
+      "triaged": true,
+      "awaiting": false,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "APPROVED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (new) — review it."
     }
   ]
 }
