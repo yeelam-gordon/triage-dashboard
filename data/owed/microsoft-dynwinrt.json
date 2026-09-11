@@ -1,9 +1,9 @@
 {
   "repo": "microsoft/dynwinrt",
-  "generated_at": "2026-09-11T11:51:03Z",
+  "generated_at": "2026-09-11T14:44:30Z",
   "awaiting_label": null,
   "awaiting_issues": 0,
-  "awaiting_prs": 3,
+  "awaiting_prs": 4,
   "backlog_issues": 1,
   "backlog_prs": 4,
   "issues_total": 1,
@@ -88,7 +88,7 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-08-18T03:05:30Z",
-      "updated_at": "2026-09-11T08:20:29Z",
+      "updated_at": "2026-09-11T12:45:28Z",
       "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
@@ -102,7 +102,7 @@
     },
     {
       "number": 152,
-      "title": "Migrate full flat Win32 support to contract-driven generation",
+      "title": "Add contract-driven flat Win32 bindings",
       "url": "https://github.com/microsoft/dynwinrt/pull/152",
       "kind": "pr",
       "is_community": null,
@@ -110,17 +110,17 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-09-11T07:44:19Z",
-      "updated_at": "2026-09-11T08:21:58Z",
+      "updated_at": "2026-09-11T13:28:45Z",
       "age_days": 0.0,
       "triaged": true,
-      "awaiting": false,
-      "is_draft": true,
+      "awaiting": true,
+      "is_draft": false,
       "merge_state": "",
       "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "wait_author",
-      "baseline_glyph": "🚧",
-      "baseline_text": "Wait — PR is a draft/WIP",
-      "baseline_reason": "Draft/WIP PR (new) — don't review yet; nudge the author to mark it ready."
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (new) — review it."
     }
   ]
 }
