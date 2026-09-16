@@ -1,13 +1,13 @@
 {
   "repo": "microsoft/dynwinrt",
-  "generated_at": "2026-09-16T05:32:23Z",
+  "generated_at": "2026-09-16T08:39:13Z",
   "awaiting_label": null,
   "awaiting_issues": 0,
   "awaiting_prs": 2,
   "backlog_issues": 1,
-  "backlog_prs": 2,
+  "backlog_prs": 4,
   "issues_total": 1,
-  "prs_total": 2,
+  "prs_total": 4,
   "issues": [
     {
       "number": 116,
@@ -23,7 +23,7 @@
       "created_at": "2026-09-01T12:41:45Z",
       "updated_at": "2026-09-01T12:41:45Z",
       "age_days": 15.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
@@ -45,7 +45,7 @@
       "comments": 1,
       "created_at": "2026-07-24T04:09:48Z",
       "updated_at": "2026-07-28T04:17:01Z",
-      "age_days": 50.0,
+      "age_days": 51.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -54,7 +54,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "🌐",
       "baseline_text": "Route to docs/localization owner",
-      "baseline_reason": "Docs/localization PR (waited 50d) — route to the docs/localization owner for a domain review, not a generic pass."
+      "baseline_reason": "Docs/localization PR (waited 51d) — route to the docs/localization owner for a domain review, not a generic pass."
     },
     {
       "number": 138,
@@ -77,6 +77,50 @@
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
       "baseline_reason": "PR (waited 6d) — review it."
+    },
+    {
+      "number": 156,
+      "title": "Fix Python WinUI teardown with explicit process module ownership",
+      "url": "https://github.com/microsoft/dynwinrt/pull/156",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-09-16T07:22:05Z",
+      "updated_at": "2026-09-16T08:32:21Z",
+      "age_days": 0.0,
+      "triaged": true,
+      "awaiting": false,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "APPROVED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (new) — review it."
+    },
+    {
+      "number": 157,
+      "title": "Fix JavaScript OCR and organize low-level WinRT samples",
+      "url": "https://github.com/microsoft/dynwinrt/pull/157",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-09-16T08:05:28Z",
+      "updated_at": "2026-09-16T08:31:13Z",
+      "age_days": 0.0,
+      "triaged": true,
+      "awaiting": false,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "APPROVED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (new) — review it."
     }
   ]
 }
