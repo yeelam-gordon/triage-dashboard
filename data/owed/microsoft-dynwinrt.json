@@ -1,13 +1,13 @@
 {
   "repo": "microsoft/dynwinrt",
-  "generated_at": "2026-09-19T11:32:21Z",
+  "generated_at": "2026-09-19T14:25:54Z",
   "awaiting_label": null,
   "awaiting_issues": 0,
-  "awaiting_prs": 2,
+  "awaiting_prs": 4,
   "backlog_issues": 1,
-  "backlog_prs": 2,
+  "backlog_prs": 4,
   "issues_total": 1,
-  "prs_total": 2,
+  "prs_total": 4,
   "issues": [
     {
       "number": 161,
@@ -22,7 +22,7 @@
       "comments": 1,
       "created_at": "2026-09-18T07:56:32Z",
       "updated_at": "2026-09-18T07:56:32Z",
-      "age_days": 1.0,
+      "age_days": 2.0,
       "triaged": true,
       "awaiting": false,
       "fix_ready": false,
@@ -30,7 +30,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 1d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_reason": "Feature/idea (waited 2d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     }
   ],
   "prs": [
@@ -46,7 +46,7 @@
       "created_at": "2026-07-24T04:09:48Z",
       "updated_at": "2026-07-28T04:17:01Z",
       "age_days": 54.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -77,6 +77,50 @@
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
       "baseline_reason": "PR (waited 1d) — review it."
+    },
+    {
+      "number": 166,
+      "title": "Fix JavaScript collection factory value projection",
+      "url": "https://github.com/microsoft/dynwinrt/pull/166",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-09-19T14:22:56Z",
+      "updated_at": "2026-09-19T14:22:56Z",
+      "age_days": 0.0,
+      "triaged": false,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (new) — review it."
+    },
+    {
+      "number": 167,
+      "title": "Fix Python closed generic interface identity markers",
+      "url": "https://github.com/microsoft/dynwinrt/pull/167",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-09-19T14:22:57Z",
+      "updated_at": "2026-09-19T14:22:57Z",
+      "age_days": 0.0,
+      "triaged": false,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (new) — review it."
     }
   ]
 }
