@@ -1,6 +1,6 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-09-19T14:25:54Z",
+  "generated_at": "2026-09-19T17:31:13Z",
   "awaiting_label": "Needs-Triage",
   "awaiting_issues": 21,
   "awaiting_prs": 54,
@@ -498,7 +498,7 @@
       "created_at": "2026-09-11T03:12:03Z",
       "updated_at": "2026-09-14T13:52:59Z",
       "age_days": 5.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -522,7 +522,7 @@
       "comments": 1,
       "created_at": "2026-09-11T01:46:56Z",
       "updated_at": "2026-09-18T13:18:55Z",
-      "age_days": 1.0,
+      "age_days": 2.0,
       "triaged": false,
       "awaiting": true,
       "fix_ready": false,
@@ -530,7 +530,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 1d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 2d) — correct them, then route."
     },
     {
       "number": 228,
@@ -1407,7 +1407,7 @@
       "comments": 1,
       "created_at": "2026-05-19T18:04:27Z",
       "updated_at": "2026-05-20T13:16:24Z",
-      "age_days": 122.0,
+      "age_days": 123.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -1416,7 +1416,7 @@
       "baseline_action": "review",
       "baseline_glyph": "🕰️",
       "baseline_text": "Stale PR — status or close",
-      "baseline_reason": "PR has sat 122 d (waited 122d) — ping for status/rebase or close if abandoned."
+      "baseline_reason": "PR has sat 123 d (waited 123d) — ping for status/rebase or close if abandoned."
     },
     {
       "number": 17,
@@ -1473,7 +1473,7 @@
       "comments": 1,
       "created_at": "2026-06-17T05:34:22Z",
       "updated_at": "2026-06-17T13:02:17Z",
-      "age_days": 94.0,
+      "age_days": 95.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -1482,7 +1482,7 @@
       "baseline_action": "review",
       "baseline_glyph": "🕰️",
       "baseline_text": "Stale PR — status or close",
-      "baseline_reason": "PR has sat 94 d (waited 94d) — ping for status/rebase or close if abandoned."
+      "baseline_reason": "PR has sat 95 d (waited 95d) — ping for status/rebase or close if abandoned."
     },
     {
       "number": 312,
@@ -1495,7 +1495,7 @@
       "comments": 1,
       "created_at": "2026-06-17T06:21:39Z",
       "updated_at": "2026-06-17T13:01:59Z",
-      "age_days": 94.0,
+      "age_days": 95.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -1504,7 +1504,7 @@
       "baseline_action": "review",
       "baseline_glyph": "🕰️",
       "baseline_text": "Stale PR — status or close",
-      "baseline_reason": "PR has sat 94 d (waited 94d) — ping for status/rebase or close if abandoned."
+      "baseline_reason": "PR has sat 95 d (waited 95d) — ping for status/rebase or close if abandoned."
     },
     {
       "number": 313,
@@ -1517,7 +1517,7 @@
       "comments": 1,
       "created_at": "2026-06-17T06:26:59Z",
       "updated_at": "2026-06-17T13:01:36Z",
-      "age_days": 94.0,
+      "age_days": 95.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -1526,7 +1526,7 @@
       "baseline_action": "review",
       "baseline_glyph": "🛡️",
       "baseline_text": "Security-sensitive review",
-      "baseline_reason": "Security-sensitive PR (waited 94d) — prioritise a careful review + owner sign-off."
+      "baseline_reason": "Security-sensitive PR (waited 95d) — prioritise a careful review + owner sign-off."
     },
     {
       "number": 314,
@@ -1539,7 +1539,7 @@
       "comments": 1,
       "created_at": "2026-06-17T06:30:38Z",
       "updated_at": "2026-06-17T13:01:15Z",
-      "age_days": 94.0,
+      "age_days": 95.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -1548,7 +1548,7 @@
       "baseline_action": "review",
       "baseline_glyph": "🕰️",
       "baseline_text": "Stale PR — status or close",
-      "baseline_reason": "PR has sat 94 d (waited 94d) — ping for status/rebase or close if abandoned."
+      "baseline_reason": "PR has sat 95 d (waited 95d) — ping for status/rebase or close if abandoned."
     },
     {
       "number": 315,
@@ -1561,7 +1561,7 @@
       "comments": 1,
       "created_at": "2026-06-17T06:51:25Z",
       "updated_at": "2026-06-17T13:00:59Z",
-      "age_days": 94.0,
+      "age_days": 95.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -1570,7 +1570,7 @@
       "baseline_action": "review",
       "baseline_glyph": "🕰️",
       "baseline_text": "Stale PR — status or close",
-      "baseline_reason": "PR has sat 94 d (waited 94d) — ping for status/rebase or close if abandoned."
+      "baseline_reason": "PR has sat 95 d (waited 95d) — ping for status/rebase or close if abandoned."
     },
     {
       "number": 371,
@@ -1705,6 +1705,28 @@
       "baseline_reason": "PR has waited 62 d for us (waited 62d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
+      "number": 457,
+      "title": "Add transparent ACP tracing proxy",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/457",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-07-20T13:21:33Z",
+      "updated_at": "2026-07-20T13:27:27Z",
+      "age_days": 62.0,
+      "triaged": false,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "",
+      "baseline_action": "assign_reviewer",
+      "baseline_glyph": "👤",
+      "baseline_text": "Assign a domain reviewer",
+      "baseline_reason": "PR has waited 62 d for us (waited 62d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+    },
+    {
       "number": 453,
       "title": "Extract ACP session routing control plane and proxy conductor",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/453",
@@ -1721,28 +1743,6 @@
       "is_draft": false,
       "merge_state": "",
       "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "assign_reviewer",
-      "baseline_glyph": "👤",
-      "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 61 d for us (waited 61d) — assign the area owner as reviewer and get a decision, don't leave it generic."
-    },
-    {
-      "number": 457,
-      "title": "Add transparent ACP tracing proxy",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/457",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-07-20T13:21:33Z",
-      "updated_at": "2026-07-20T13:27:27Z",
-      "age_days": 61.0,
-      "triaged": false,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "",
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
@@ -1781,7 +1781,7 @@
       "comments": 1,
       "created_at": "2026-07-24T09:56:06Z",
       "updated_at": "2026-07-27T10:40:46Z",
-      "age_days": 54.0,
+      "age_days": 55.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -1790,7 +1790,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 54 d for us (waited 54d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 55 d for us (waited 55d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 448,
@@ -1969,6 +1969,28 @@
       "baseline_reason": "PR has waited 34 d for us (waited 34d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
+      "number": 520,
+      "title": "Configure Dependabot for WTA Rust dependencies",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/520",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-07-30T03:19:23Z",
+      "updated_at": "2026-08-19T10:34:19Z",
+      "age_days": 32.0,
+      "triaged": false,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "📦",
+      "baseline_text": "Dependency PR — check CI & merge/close",
+      "baseline_reason": "Dependency bump (waited 32d) — verify CI + changelog risk, then merge or close."
+    },
+    {
       "number": 626,
       "title": "Pin GitHub Actions to full-length commit SHAs",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/626",
@@ -1991,28 +2013,6 @@
       "baseline_reason": "PR has waited 32 d for us (waited 32d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
-      "number": 520,
-      "title": "Configure Dependabot for WTA Rust dependencies",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/520",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-07-30T03:19:23Z",
-      "updated_at": "2026-08-19T10:34:19Z",
-      "age_days": 31.0,
-      "triaged": false,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "📦",
-      "baseline_text": "Dependency PR — check CI & merge/close",
-      "baseline_reason": "Dependency bump (waited 31d) — verify CI + changelog risk, then merge or close."
-    },
-    {
       "number": 442,
       "title": "Durable sessions: save & restore shell sessions via /shell-sessions ",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/442",
@@ -2024,7 +2024,7 @@
       "created_at": "2026-07-18T00:59:36Z",
       "updated_at": "2026-08-21T02:09:09Z",
       "age_days": 30.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -2145,6 +2145,28 @@
       "baseline_reason": "PR (waited 18d) — review it."
     },
     {
+      "number": 278,
+      "title": "wta(tui): queue prompts while busy, Esc to dequeue LIFO",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/278",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-06-12T02:00:08Z",
+      "updated_at": "2026-09-03T10:29:34Z",
+      "age_days": 17.0,
+      "triaged": true,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (waited 17d) — review it."
+    },
+    {
       "number": 821,
       "title": "Replace AutoFix toggles with an Auto error handling dropdown",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/821",
@@ -2165,28 +2187,6 @@
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
       "baseline_reason": "PR (waited 17d) — review it."
-    },
-    {
-      "number": 278,
-      "title": "wta(tui): queue prompts while busy, Esc to dequeue LIFO",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/278",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-06-12T02:00:08Z",
-      "updated_at": "2026-09-03T10:29:34Z",
-      "age_days": 16.0,
-      "triaged": false,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 16d) — review it."
     },
     {
       "number": 830,
@@ -2243,7 +2243,7 @@
       "comments": 1,
       "created_at": "2026-09-07T12:58:55Z",
       "updated_at": "2026-09-07T13:11:17Z",
-      "age_days": 12.0,
+      "age_days": 13.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -2252,7 +2252,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 12d) — review it."
+      "baseline_reason": "PR (waited 13d) — review it."
     },
     {
       "number": 897,
@@ -2409,28 +2409,6 @@
       "baseline_reason": "PR (waited 6d) — review it."
     },
     {
-      "number": 892,
-      "title": "wta(tui): buffer ACP input while busy",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/892",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-09-08T03:35:51Z",
-      "updated_at": "2026-09-15T03:46:43Z",
-      "age_days": 5.0,
-      "triaged": false,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 5d) — review it."
-    },
-    {
       "number": 956,
       "title": "Fix ConPTY close hang on pending output read",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/956",
@@ -2441,7 +2419,7 @@
       "comments": 1,
       "created_at": "2026-09-14T08:21:54Z",
       "updated_at": "2026-09-14T10:38:07Z",
-      "age_days": 5.0,
+      "age_days": 6.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -2450,7 +2428,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 5d) — review it."
+      "baseline_reason": "PR (waited 6d) — review it."
     },
     {
       "number": 961,
@@ -2463,6 +2441,28 @@
       "comments": 1,
       "created_at": "2026-09-14T10:08:16Z",
       "updated_at": "2026-09-14T10:46:37Z",
+      "age_days": 6.0,
+      "triaged": false,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (waited 6d) — review it."
+    },
+    {
+      "number": 892,
+      "title": "wta(tui): buffer ACP input while busy",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/892",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-09-08T03:35:51Z",
+      "updated_at": "2026-09-15T03:46:43Z",
       "age_days": 5.0,
       "triaged": false,
       "awaiting": true,
@@ -2529,7 +2529,7 @@
       "comments": 1,
       "created_at": "2026-09-15T23:31:20Z",
       "updated_at": "2026-09-18T13:21:02Z",
-      "age_days": 1.0,
+      "age_days": 2.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -2538,7 +2538,29 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 1d) — review it."
+      "baseline_reason": "PR (waited 2d) — review it."
+    },
+    {
+      "number": 971,
+      "title": "Stabilize mouse interaction E2E coverage",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/971",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-09-18T06:15:07Z",
+      "updated_at": "2026-09-18T11:33:20Z",
+      "age_days": 2.0,
+      "triaged": true,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (waited 2d) — review it."
     },
     {
       "number": 969,
@@ -2557,28 +2579,6 @@
       "is_draft": false,
       "merge_state": "",
       "review_decision": "",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 1d) — review it."
-    },
-    {
-      "number": 971,
-      "title": "Stabilize mouse interaction E2E coverage",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/971",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-09-18T06:15:07Z",
-      "updated_at": "2026-09-18T11:33:20Z",
-      "age_days": 1.0,
-      "triaged": true,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
@@ -2617,7 +2617,7 @@
       "comments": 1,
       "created_at": "2026-08-05T13:12:38Z",
       "updated_at": "2026-08-05T13:18:20Z",
-      "age_days": 45.0,
+      "age_days": 46.0,
       "triaged": true,
       "awaiting": false,
       "is_draft": true,
@@ -2626,7 +2626,7 @@
       "baseline_action": "wait_author",
       "baseline_glyph": "🚧",
       "baseline_text": "Wait — PR is a draft/WIP",
-      "baseline_reason": "Draft/WIP PR (waited 45d) — don't review yet; nudge the author to mark it ready."
+      "baseline_reason": "Draft/WIP PR (waited 46d) — don't review yet; nudge the author to mark it ready."
     },
     {
       "number": 598,
