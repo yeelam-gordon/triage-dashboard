@@ -1,6 +1,6 @@
 {
   "repo": "microsoft/win-dev-skills",
-  "generated_at": "2026-09-20T23:37:51Z",
+  "generated_at": "2026-09-21T02:43:45Z",
   "awaiting_label": null,
   "awaiting_issues": 0,
   "awaiting_prs": 15,
@@ -41,7 +41,7 @@
       "comments": 1,
       "created_at": "2026-04-29T15:08:31Z",
       "updated_at": "2026-04-29T19:57:06Z",
-      "age_days": 144.0,
+      "age_days": 145.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -49,7 +49,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "🗂️",
       "baseline_text": "Low-traction untyped item — park or decline",
-      "baseline_reason": "Untyped report (waited 144d) with no traction after 90+ days — if a feature, decline/park with rationale; if a bug, revalidate on a current build first. Don't leave it open indefinitely."
+      "baseline_reason": "Untyped report (waited 145d) with no traction after 90+ days — if a feature, decline/park with rationale; if a bug, revalidate on a current build first. Don't leave it open indefinitely."
     },
     {
       "number": 68,
@@ -290,7 +290,7 @@
       "comments": 1,
       "created_at": "2026-07-13T21:08:35Z",
       "updated_at": "2026-07-13T21:14:34Z",
-      "age_days": 69.0,
+      "age_days": 70.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -298,7 +298,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm type (bug/feature) & route",
-      "baseline_reason": "Untyped report (waited 69d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+      "baseline_reason": "Untyped report (waited 70d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
     },
     {
       "number": 126,
@@ -528,7 +528,7 @@
       "comments": 1,
       "created_at": "2026-05-19T16:27:28Z",
       "updated_at": "2026-07-16T21:00:42Z",
-      "age_days": 66.0,
+      "age_days": 67.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -537,7 +537,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 66 d for us (waited 66d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 67 d for us (waited 67d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 140,
@@ -562,6 +562,28 @@
       "baseline_reason": "PR has waited 49 d for us (waited 49d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
+      "number": 147,
+      "title": "Add OpenCode support to winui-session-report",
+      "url": "https://github.com/microsoft/win-dev-skills/pull/147",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-08-13T22:16:41Z",
+      "updated_at": "2026-08-25T22:15:05Z",
+      "age_days": 27.0,
+      "triaged": false,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "CHANGES_REQUESTED",
+      "baseline_action": "await_author_changes",
+      "baseline_glyph": "✍️",
+      "baseline_text": "Await author's changes",
+      "baseline_reason": "Changes were requested (waited 27d) — ball is with the author; nudge if quiet."
+    },
+    {
       "number": 95,
       "title": "deps: Bump Microsoft.CodeAnalysis.CSharp from 4.12.0 to 5.3.0",
       "url": "https://github.com/microsoft/win-dev-skills/pull/95",
@@ -582,28 +604,6 @@
       "baseline_glyph": "📦",
       "baseline_text": "Dependency PR — check CI & merge/close",
       "baseline_reason": "Dependency bump (waited 26d) — verify CI + changelog risk, then merge or close."
-    },
-    {
-      "number": 147,
-      "title": "Add OpenCode support to winui-session-report",
-      "url": "https://github.com/microsoft/win-dev-skills/pull/147",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-08-13T22:16:41Z",
-      "updated_at": "2026-08-25T22:15:05Z",
-      "age_days": 26.0,
-      "triaged": false,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "CHANGES_REQUESTED",
-      "baseline_action": "await_author_changes",
-      "baseline_glyph": "✍️",
-      "baseline_text": "Await author's changes",
-      "baseline_reason": "Changes were requested (waited 26d) — ball is with the author; nudge if quiet."
     },
     {
       "number": 148,
@@ -628,6 +628,50 @@
       "baseline_reason": "PR (waited 22d) — review it."
     },
     {
+      "number": 177,
+      "title": "ci(deps): bump github/codeql-action/init from 4.37.6 to 4.37.9",
+      "url": "https://github.com/microsoft/win-dev-skills/pull/177",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-09-07T22:06:19Z",
+      "updated_at": "2026-09-07T22:06:20Z",
+      "age_days": 14.0,
+      "triaged": true,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "📦",
+      "baseline_text": "Dependency PR — check CI & merge/close",
+      "baseline_reason": "Dependency bump (waited 14d) — verify CI + changelog risk, then merge or close."
+    },
+    {
+      "number": 178,
+      "title": "ci(deps): bump github/codeql-action/analyze from 4.37.6 to 4.37.9",
+      "url": "https://github.com/microsoft/win-dev-skills/pull/178",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-09-07T22:07:22Z",
+      "updated_at": "2026-09-07T22:07:23Z",
+      "age_days": 14.0,
+      "triaged": true,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "📦",
+      "baseline_text": "Dependency PR — check CI & merge/close",
+      "baseline_reason": "Dependency bump (waited 14d) — verify CI + changelog risk, then merge or close."
+    },
+    {
       "number": 167,
       "title": "Document marketplace distribution and Copilot Customize path",
       "url": "https://github.com/microsoft/win-dev-skills/pull/167",
@@ -650,50 +694,6 @@
       "baseline_reason": "PR (waited 13d) — review it."
     },
     {
-      "number": 177,
-      "title": "ci(deps): bump github/codeql-action/init from 4.37.6 to 4.37.9",
-      "url": "https://github.com/microsoft/win-dev-skills/pull/177",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-09-07T22:06:19Z",
-      "updated_at": "2026-09-07T22:06:20Z",
-      "age_days": 13.0,
-      "triaged": true,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "📦",
-      "baseline_text": "Dependency PR — check CI & merge/close",
-      "baseline_reason": "Dependency bump (waited 13d) — verify CI + changelog risk, then merge or close."
-    },
-    {
-      "number": 178,
-      "title": "ci(deps): bump github/codeql-action/analyze from 4.37.6 to 4.37.9",
-      "url": "https://github.com/microsoft/win-dev-skills/pull/178",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-09-07T22:07:22Z",
-      "updated_at": "2026-09-07T22:07:23Z",
-      "age_days": 13.0,
-      "triaged": true,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "📦",
-      "baseline_text": "Dependency PR — check CI & merge/close",
-      "baseline_reason": "Dependency bump (waited 13d) — verify CI + changelog risk, then merge or close."
-    },
-    {
       "number": 172,
       "title": "fix(release): sync client manifest versions",
       "url": "https://github.com/microsoft/win-dev-skills/pull/172",
@@ -704,7 +704,7 @@
       "comments": 1,
       "created_at": "2026-08-30T15:20:00Z",
       "updated_at": "2026-09-08T21:36:24Z",
-      "age_days": 12.0,
+      "age_days": 13.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -713,7 +713,7 @@
       "baseline_action": "await_author_changes",
       "baseline_glyph": "✍️",
       "baseline_text": "Await author's changes",
-      "baseline_reason": "Changes were requested (waited 12d) — ball is with the author; nudge if quiet."
+      "baseline_reason": "Changes were requested (waited 13d) — ball is with the author; nudge if quiet."
     },
     {
       "number": 183,
@@ -726,7 +726,7 @@
       "comments": 1,
       "created_at": "2026-09-14T22:08:32Z",
       "updated_at": "2026-09-14T22:08:33Z",
-      "age_days": 6.0,
+      "age_days": 7.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -735,7 +735,7 @@
       "baseline_action": "review",
       "baseline_glyph": "📦",
       "baseline_text": "Dependency PR — check CI & merge/close",
-      "baseline_reason": "Dependency bump (waited 6d) — verify CI + changelog risk, then merge or close."
+      "baseline_reason": "Dependency bump (waited 7d) — verify CI + changelog risk, then merge or close."
     },
     {
       "number": 184,
@@ -748,7 +748,7 @@
       "comments": 1,
       "created_at": "2026-09-14T22:09:00Z",
       "updated_at": "2026-09-14T22:09:01Z",
-      "age_days": 6.0,
+      "age_days": 7.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -757,7 +757,7 @@
       "baseline_action": "review",
       "baseline_glyph": "📦",
       "baseline_text": "Dependency PR — check CI & merge/close",
-      "baseline_reason": "Dependency bump (waited 6d) — verify CI + changelog risk, then merge or close."
+      "baseline_reason": "Dependency bump (waited 7d) — verify CI + changelog risk, then merge or close."
     },
     {
       "number": 185,
