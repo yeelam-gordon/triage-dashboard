@@ -1,13 +1,13 @@
 {
   "repo": "microsoft/dynwinrt",
-  "generated_at": "2026-09-22T08:32:39Z",
+  "generated_at": "2026-09-22T12:06:33Z",
   "awaiting_label": null,
   "awaiting_issues": 0,
-  "awaiting_prs": 2,
+  "awaiting_prs": 3,
   "backlog_issues": 1,
-  "backlog_prs": 2,
+  "backlog_prs": 3,
   "issues_total": 1,
-  "prs_total": 2,
+  "prs_total": 3,
   "issues": [
     {
       "number": 161,
@@ -22,7 +22,7 @@
       "comments": 1,
       "created_at": "2026-09-18T07:56:32Z",
       "updated_at": "2026-09-18T07:56:32Z",
-      "age_days": 4.0,
+      "age_days": 5.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -30,7 +30,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 4d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_reason": "Feature/idea (waited 5d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     }
   ],
   "prs": [
@@ -77,6 +77,28 @@
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
       "baseline_reason": "PR (waited 1d) — review it."
+    },
+    {
+      "number": 181,
+      "title": "Preserve signed and unsigned WinRT enum backing types",
+      "url": "https://github.com/microsoft/dynwinrt/pull/181",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-09-22T09:17:40Z",
+      "updated_at": "2026-09-22T11:55:20Z",
+      "age_days": 0.0,
+      "triaged": true,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (new) — review it."
     }
   ]
 }
