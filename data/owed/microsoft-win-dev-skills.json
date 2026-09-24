@@ -1,6 +1,6 @@
 {
   "repo": "microsoft/win-dev-skills",
-  "generated_at": "2026-09-24T17:38:16Z",
+  "generated_at": "2026-09-24T20:28:39Z",
   "awaiting_label": null,
   "awaiting_issues": 0,
   "awaiting_prs": 16,
@@ -87,7 +87,7 @@
       "comments": 1,
       "created_at": "2026-05-21T14:16:27Z",
       "updated_at": "2026-05-21T14:16:27Z",
-      "age_days": 126.0,
+      "age_days": 127.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -95,7 +95,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 126d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (waited 127d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 97,
@@ -301,6 +301,27 @@
       "baseline_reason": "Untyped report (waited 73d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
     },
     {
+      "number": 126,
+      "title": "Transform win-dev-skills into a true skills marketplace",
+      "url": "https://github.com/microsoft/win-dev-skills/issues/126",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-07-15T11:27:09Z",
+      "updated_at": "2026-07-15T15:27:49Z",
+      "age_days": 72.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "reply",
+      "baseline_glyph": "💬",
+      "baseline_text": "Confirm type (bug/feature) & route",
+      "baseline_reason": "Untyped report (waited 72d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+    },
+    {
       "number": 127,
       "title": "[Skill] WinUI runtime error diagnostics",
       "url": "https://github.com/microsoft/win-dev-skills/issues/127",
@@ -341,27 +362,6 @@
       "baseline_glyph": "💬",
       "baseline_text": "Confirm type (bug/feature) & route",
       "baseline_reason": "Untyped report (waited 72d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
-    },
-    {
-      "number": 126,
-      "title": "Transform win-dev-skills into a true skills marketplace",
-      "url": "https://github.com/microsoft/win-dev-skills/issues/126",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-07-15T11:27:09Z",
-      "updated_at": "2026-07-15T15:27:49Z",
-      "age_days": 71.0,
-      "triaged": false,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm type (bug/feature) & route",
-      "baseline_reason": "Untyped report (waited 71d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
     },
     {
       "number": 139,
@@ -420,7 +420,7 @@
       "comments": 1,
       "created_at": "2026-08-27T15:12:22Z",
       "updated_at": "2026-08-30T15:11:05Z",
-      "age_days": 25.0,
+      "age_days": 26.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -428,7 +428,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 25d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (waited 26d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 176,
@@ -462,7 +462,7 @@
       "comments": 1,
       "created_at": "2026-08-25T18:33:39Z",
       "updated_at": "2026-09-09T14:11:28Z",
-      "age_days": 15.0,
+      "age_days": 16.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -470,7 +470,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm type (bug/feature) & route",
-      "baseline_reason": "Untyped report (waited 15d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+      "baseline_reason": "Untyped report (waited 16d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
     },
     {
       "number": 181,
@@ -483,7 +483,7 @@
       "comments": 1,
       "created_at": "2026-09-09T13:51:35Z",
       "updated_at": "2026-09-09T13:51:35Z",
-      "age_days": 15.0,
+      "age_days": 16.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -491,7 +491,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 15d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_reason": "Feature/idea (waited 16d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     }
   ],
   "prs": [
@@ -923,7 +923,7 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-09-22T20:37:14Z",
-      "updated_at": "2026-09-24T17:38:30Z",
+      "updated_at": "2026-09-24T18:42:56Z",
       "age_days": 0.0,
       "triaged": true,
       "awaiting": false,
