@@ -1,6 +1,6 @@
 {
   "repo": "microsoft/win-dev-skills",
-  "generated_at": "2026-09-25T21:21:35Z",
+  "generated_at": "2026-09-26T00:17:16Z",
   "awaiting_label": null,
   "awaiting_issues": 0,
   "awaiting_prs": 16,
@@ -41,7 +41,7 @@
       "comments": 1,
       "created_at": "2026-04-29T15:08:31Z",
       "updated_at": "2026-04-29T19:57:06Z",
-      "age_days": 149.0,
+      "age_days": 150.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -49,7 +49,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "🗂️",
       "baseline_text": "Low-traction untyped item — park or decline",
-      "baseline_reason": "Untyped report (waited 149d) with no traction after 90+ days — if a feature, decline/park with rationale; if a bug, revalidate on a current build first. Don't leave it open indefinitely."
+      "baseline_reason": "Untyped report (waited 150d) with no traction after 90+ days — if a feature, decline/park with rationale; if a bug, revalidate on a current build first. Don't leave it open indefinitely."
     },
     {
       "number": 68,
@@ -64,7 +64,7 @@
       "comments": 1,
       "created_at": "2026-05-05T17:42:00Z",
       "updated_at": "2026-05-05T17:42:00Z",
-      "age_days": 143.0,
+      "age_days": 144.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -72,7 +72,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "🗂️",
       "baseline_text": "Low-traction idea — park or decline",
-      "baseline_reason": "Feature ask (waited 143d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
+      "baseline_reason": "Feature ask (waited 144d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
     },
     {
       "number": 94,
@@ -269,7 +269,7 @@
       "comments": 1,
       "created_at": "2026-07-09T06:27:31Z",
       "updated_at": "2026-07-09T19:32:59Z",
-      "age_days": 78.0,
+      "age_days": 79.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -277,7 +277,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 78d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_reason": "Feature/idea (waited 79d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     },
     {
       "number": 122,
@@ -539,6 +539,28 @@
       "baseline_reason": "PR has waited 54 d for us (waited 54d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
+      "number": 95,
+      "title": "deps: Bump Microsoft.CodeAnalysis.CSharp from 4.12.0 to 5.3.0",
+      "url": "https://github.com/microsoft/win-dev-skills/pull/95",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-05-26T03:40:18Z",
+      "updated_at": "2026-08-26T17:49:27Z",
+      "age_days": 31.0,
+      "triaged": true,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "📦",
+      "baseline_text": "Dependency PR — check CI & merge/close",
+      "baseline_reason": "Dependency bump (waited 31d) — verify CI + changelog risk, then merge or close."
+    },
+    {
       "number": 147,
       "title": "Add OpenCode support to winui-session-report",
       "url": "https://github.com/microsoft/win-dev-skills/pull/147",
@@ -559,28 +581,6 @@
       "baseline_glyph": "✍️",
       "baseline_text": "Await author's changes",
       "baseline_reason": "Changes were requested (waited 31d) — ball is with the author; nudge if quiet."
-    },
-    {
-      "number": 95,
-      "title": "deps: Bump Microsoft.CodeAnalysis.CSharp from 4.12.0 to 5.3.0",
-      "url": "https://github.com/microsoft/win-dev-skills/pull/95",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-05-26T03:40:18Z",
-      "updated_at": "2026-08-26T17:49:27Z",
-      "age_days": 30.0,
-      "triaged": true,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "📦",
-      "baseline_text": "Dependency PR — check CI & merge/close",
-      "baseline_reason": "Dependency bump (waited 30d) — verify CI + changelog risk, then merge or close."
     },
     {
       "number": 148,
@@ -615,7 +615,7 @@
       "comments": 1,
       "created_at": "2026-08-26T09:40:27Z",
       "updated_at": "2026-09-08T18:24:55Z",
-      "age_days": 17.0,
+      "age_days": 18.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -624,7 +624,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 17d) — review it."
+      "baseline_reason": "PR (waited 18d) — review it."
     },
     {
       "number": 172,
@@ -857,7 +857,7 @@
       "comments": 1,
       "created_at": "2026-08-25T21:06:18Z",
       "updated_at": "2026-09-01T18:33:11Z",
-      "age_days": 24.0,
+      "age_days": 25.0,
       "triaged": false,
       "awaiting": false,
       "is_draft": false,
@@ -866,7 +866,7 @@
       "baseline_action": "review",
       "baseline_glyph": "📦",
       "baseline_text": "Dependency PR — check CI & merge/close",
-      "baseline_reason": "Dependency bump (waited 24d) — verify CI + changelog risk, then merge or close."
+      "baseline_reason": "Dependency bump (waited 25d) — verify CI + changelog risk, then merge or close."
     },
     {
       "number": 171,
