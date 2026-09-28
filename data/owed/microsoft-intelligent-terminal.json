@@ -1,13 +1,13 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-09-27T21:07:15Z",
+  "generated_at": "2026-09-28T00:18:10Z",
   "awaiting_label": "Needs-Triage",
   "awaiting_issues": 25,
-  "awaiting_prs": 59,
+  "awaiting_prs": 60,
   "backlog_issues": 61,
-  "backlog_prs": 64,
+  "backlog_prs": 65,
   "issues_total": 25,
-  "prs_total": 51,
+  "prs_total": 52,
   "issues": [
     {
       "number": 674,
@@ -274,7 +274,7 @@
       "comments": 1,
       "created_at": "2026-09-05T00:28:06Z",
       "updated_at": "2026-09-05T20:01:15Z",
-      "age_days": 22.0,
+      "age_days": 23.0,
       "triaged": false,
       "awaiting": true,
       "fix_ready": false,
@@ -282,7 +282,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 22d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 23d) — correct them, then route."
     },
     {
       "number": 874,
@@ -2067,6 +2067,28 @@
       "baseline_reason": "PR has waited 42 d for us (waited 42d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
+      "number": 626,
+      "title": "Pin GitHub Actions to full-length commit SHAs",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/626",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-08-18T17:36:27Z",
+      "updated_at": "2026-08-18T17:45:25Z",
+      "age_days": 41.0,
+      "triaged": false,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "assign_reviewer",
+      "baseline_glyph": "👤",
+      "baseline_text": "Assign a domain reviewer",
+      "baseline_reason": "PR has waited 41 d for us (waited 41d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+    },
+    {
       "number": 520,
       "title": "Configure Dependabot for WTA Rust dependencies",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/520",
@@ -2087,28 +2109,6 @@
       "baseline_glyph": "📦",
       "baseline_text": "Dependency PR — check CI & merge/close",
       "baseline_reason": "Dependency bump (waited 40d) — verify CI + changelog risk, then merge or close."
-    },
-    {
-      "number": 626,
-      "title": "Pin GitHub Actions to full-length commit SHAs",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/626",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-08-18T17:36:27Z",
-      "updated_at": "2026-08-18T17:45:25Z",
-      "age_days": 40.0,
-      "triaged": false,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "assign_reviewer",
-      "baseline_glyph": "👤",
-      "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 40 d for us (waited 40d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 442,
@@ -2758,8 +2758,8 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-09-26T12:20:34Z",
-      "updated_at": "2026-09-27T12:00:43Z",
-      "age_days": 1.0,
+      "updated_at": "2026-09-28T00:11:56Z",
+      "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -2768,7 +2768,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 1d) — review it."
+      "baseline_reason": "PR (new) — review it."
     },
     {
       "number": 1006,
@@ -2780,8 +2780,8 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-09-27T04:22:11Z",
-      "updated_at": "2026-09-27T11:32:18Z",
-      "age_days": 1.0,
+      "updated_at": "2026-09-27T23:17:24Z",
+      "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -2790,7 +2790,29 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 1d) — review it."
+      "baseline_reason": "PR (new) — review it."
+    },
+    {
+      "number": 1007,
+      "title": "Add split pane groups to the vertical tab sidebar",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/1007",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-09-28T00:04:07Z",
+      "updated_at": "2026-09-28T00:17:40Z",
+      "age_days": 0.0,
+      "triaged": false,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (new) — review it."
     },
     {
       "number": 150,
