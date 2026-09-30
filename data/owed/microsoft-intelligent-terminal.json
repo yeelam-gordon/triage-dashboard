@@ -1,13 +1,13 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-09-30T03:04:58Z",
+  "generated_at": "2026-09-30T05:54:39Z",
   "awaiting_label": "Needs-Triage",
   "awaiting_issues": 31,
-  "awaiting_prs": 61,
+  "awaiting_prs": 63,
   "backlog_issues": 67,
   "backlog_prs": 67,
   "issues_total": 31,
-  "prs_total": 53,
+  "prs_total": 54,
   "issues": [
     {
       "number": 674,
@@ -347,7 +347,7 @@
       "comments": 1,
       "created_at": "2026-09-04T07:20:13Z",
       "updated_at": "2026-09-10T01:38:40Z",
-      "age_days": 20.0,
+      "age_days": 21.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -355,7 +355,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Triage idea — scope then decide (AgentPane)",
-      "baseline_reason": "New untriaged idea (AgentPane) (waited 20d) — classify it and either ask for scope or make an early accept/park call."
+      "baseline_reason": "New untriaged idea (AgentPane) (waited 21d) — classify it and either ask for scope or make an early accept/park call."
     },
     {
       "number": 926,
@@ -620,7 +620,7 @@
       "comments": 1,
       "created_at": "2026-09-28T01:43:47Z",
       "updated_at": "2026-09-28T01:44:17Z",
-      "age_days": 2.0,
+      "age_days": 3.0,
       "triaged": false,
       "awaiting": true,
       "fix_ready": false,
@@ -628,7 +628,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 2d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 3d) — correct them, then route."
     },
     {
       "number": 1009,
@@ -706,31 +706,6 @@
       "baseline_reason": "Wrong/missing tags (waited 1d) — correct them, then route."
     },
     {
-      "number": 930,
-      "title": "[aw] Detection Runs",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/930",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "Needs-Triage",
-        "Needs-Tag-Fix",
-        "agentic-workflows"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-09-11T01:46:56Z",
-      "updated_at": "2026-09-30T02:55:30Z",
-      "age_days": 0.0,
-      "triaged": true,
-      "awaiting": true,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "label_only",
-      "baseline_glyph": "🏷️",
-      "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (new) — correct them, then route."
-    },
-    {
       "number": 1045,
       "title": "Sidebar tab search transfers Tab focus into the first result's terminal",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/1045",
@@ -744,7 +719,7 @@
       "comments": 1,
       "created_at": "2026-09-30T00:32:03Z",
       "updated_at": "2026-09-30T00:32:30Z",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -752,7 +727,32 @@
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (new) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (waited 1d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+    },
+    {
+      "number": 930,
+      "title": "[aw] Detection Runs",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/930",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "Needs-Triage",
+        "Needs-Tag-Fix",
+        "agentic-workflows"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-09-11T01:46:56Z",
+      "updated_at": "2026-09-30T03:21:16Z",
+      "age_days": 0.0,
+      "triaged": true,
+      "awaiting": true,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "label_only",
+      "baseline_glyph": "🏷️",
+      "baseline_text": "Fix the labels / tags",
+      "baseline_reason": "Wrong/missing tags (new) — correct them, then route."
     },
     {
       "number": 1050,
@@ -815,7 +815,7 @@
       "comments": 1,
       "created_at": "2026-06-02T18:31:10Z",
       "updated_at": "2026-08-24T23:55:41Z",
-      "age_days": 36.0,
+      "age_days": 37.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -823,7 +823,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 36d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 37d) — correct them, then route."
     },
     {
       "number": 231,
@@ -839,7 +839,7 @@
       "comments": 1,
       "created_at": "2026-06-04T15:31:43Z",
       "updated_at": "2026-08-24T23:54:49Z",
-      "age_days": 36.0,
+      "age_days": 37.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -847,7 +847,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 36d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 37d) — correct them, then route."
     },
     {
       "number": 333,
@@ -863,7 +863,7 @@
       "comments": 1,
       "created_at": "2026-06-20T12:24:47Z",
       "updated_at": "2026-08-24T23:55:07Z",
-      "age_days": 36.0,
+      "age_days": 37.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -871,7 +871,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 36d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 37d) — correct them, then route."
     },
     {
       "number": 233,
@@ -911,7 +911,7 @@
       "comments": 1,
       "created_at": "2026-06-05T14:23:16Z",
       "updated_at": "2026-08-24T23:54:51Z",
-      "age_days": 36.0,
+      "age_days": 37.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -919,7 +919,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 36d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 37d) — correct them, then route."
     },
     {
       "number": 525,
@@ -935,7 +935,7 @@
       "comments": 1,
       "created_at": "2026-07-30T05:37:29Z",
       "updated_at": "2026-08-24T23:55:29Z",
-      "age_days": 36.0,
+      "age_days": 37.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -943,7 +943,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 36d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 37d) — correct them, then route."
     },
     {
       "number": 581,
@@ -959,7 +959,7 @@
       "comments": 1,
       "created_at": "2026-08-10T05:23:24Z",
       "updated_at": "2026-08-24T23:56:39Z",
-      "age_days": 36.0,
+      "age_days": 37.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -967,7 +967,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 36d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 37d) — correct them, then route."
     },
     {
       "number": 330,
@@ -1006,7 +1006,7 @@
       "comments": 1,
       "created_at": "2026-06-03T01:21:45Z",
       "updated_at": "2026-08-24T23:55:03Z",
-      "age_days": 36.0,
+      "age_days": 37.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -1014,7 +1014,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 36d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 37d) — correct them, then route."
     },
     {
       "number": 194,
@@ -1029,7 +1029,7 @@
       "comments": 1,
       "created_at": "2026-06-03T01:29:02Z",
       "updated_at": "2026-08-24T23:55:04Z",
-      "age_days": 36.0,
+      "age_days": 37.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -1037,7 +1037,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 36d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 37d) — correct them, then route."
     },
     {
       "number": 195,
@@ -1052,7 +1052,7 @@
       "comments": 1,
       "created_at": "2026-06-03T01:30:33Z",
       "updated_at": "2026-08-24T23:55:06Z",
-      "age_days": 36.0,
+      "age_days": 37.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -1060,7 +1060,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 36d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 37d) — correct them, then route."
     },
     {
       "number": 196,
@@ -1075,7 +1075,7 @@
       "comments": 1,
       "created_at": "2026-06-03T01:38:29Z",
       "updated_at": "2026-08-24T23:55:08Z",
-      "age_days": 36.0,
+      "age_days": 37.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -1083,7 +1083,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 36d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 37d) — correct them, then route."
     },
     {
       "number": 203,
@@ -1098,7 +1098,7 @@
       "comments": 1,
       "created_at": "2026-06-03T08:42:40Z",
       "updated_at": "2026-08-24T23:55:11Z",
-      "age_days": 36.0,
+      "age_days": 37.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -1106,7 +1106,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 36d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 37d) — correct them, then route."
     },
     {
       "number": 207,
@@ -1121,7 +1121,7 @@
       "comments": 1,
       "created_at": "2026-06-03T12:49:59Z",
       "updated_at": "2026-08-24T23:55:12Z",
-      "age_days": 36.0,
+      "age_days": 37.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -1129,31 +1129,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 36d) — correct them, then route."
-    },
-    {
-      "number": 259,
-      "title": "Agent not detecting error in Oh My Posh",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/259",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "Issue-Bug",
-        "Needs-Tag-Fix"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-06-09T11:21:44Z",
-      "updated_at": "2026-08-25T05:40:41Z",
-      "age_days": 36.0,
-      "triaged": false,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "label_only",
-      "baseline_glyph": "🏷️",
-      "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 36d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 37d) — correct them, then route."
     },
     {
       "number": 270,
@@ -1169,7 +1145,7 @@
       "comments": 1,
       "created_at": "2026-06-11T07:45:42Z",
       "updated_at": "2026-08-24T23:54:54Z",
-      "age_days": 36.0,
+      "age_days": 37.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -1177,7 +1153,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 36d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 37d) — correct them, then route."
     },
     {
       "number": 276,
@@ -1194,7 +1170,7 @@
       "comments": 1,
       "created_at": "2026-06-11T22:48:48Z",
       "updated_at": "2026-08-24T23:54:56Z",
-      "age_days": 36.0,
+      "age_days": 37.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -1202,7 +1178,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags (Settings)",
-      "baseline_reason": "Wrong/missing tags (Settings) (waited 36d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (Settings) (waited 37d) — correct them, then route."
     },
     {
       "number": 282,
@@ -1218,7 +1194,7 @@
       "comments": 1,
       "created_at": "2026-06-12T07:59:39Z",
       "updated_at": "2026-08-24T23:54:58Z",
-      "age_days": 36.0,
+      "age_days": 37.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -1226,7 +1202,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 36d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 37d) — correct them, then route."
     },
     {
       "number": 285,
@@ -1242,7 +1218,7 @@
       "comments": 1,
       "created_at": "2026-06-12T14:52:42Z",
       "updated_at": "2026-08-24T23:55:00Z",
-      "age_days": 36.0,
+      "age_days": 37.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -1250,7 +1226,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 36d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 37d) — correct them, then route."
     },
     {
       "number": 291,
@@ -1266,7 +1242,7 @@
       "comments": 1,
       "created_at": "2026-06-14T09:17:07Z",
       "updated_at": "2026-08-24T23:55:50Z",
-      "age_days": 36.0,
+      "age_days": 37.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -1274,7 +1250,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 36d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 37d) — correct them, then route."
     },
     {
       "number": 325,
@@ -1290,7 +1266,7 @@
       "comments": 1,
       "created_at": "2026-06-17T19:14:31Z",
       "updated_at": "2026-08-24T23:55:03Z",
-      "age_days": 36.0,
+      "age_days": 37.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -1298,7 +1274,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 36d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 37d) — correct them, then route."
     },
     {
       "number": 332,
@@ -1314,7 +1290,7 @@
       "comments": 1,
       "created_at": "2026-06-19T15:55:20Z",
       "updated_at": "2026-08-24T23:55:05Z",
-      "age_days": 36.0,
+      "age_days": 37.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -1322,7 +1298,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 36d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 37d) — correct them, then route."
     },
     {
       "number": 334,
@@ -1338,7 +1314,7 @@
       "comments": 1,
       "created_at": "2026-06-21T08:46:07Z",
       "updated_at": "2026-08-24T23:55:10Z",
-      "age_days": 36.0,
+      "age_days": 37.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -1346,7 +1322,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 36d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 37d) — correct them, then route."
     },
     {
       "number": 346,
@@ -1364,7 +1340,7 @@
       "comments": 1,
       "created_at": "2026-06-24T00:03:58Z",
       "updated_at": "2026-08-24T23:55:11Z",
-      "age_days": 36.0,
+      "age_days": 37.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -1372,7 +1348,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags (AgentPane)",
-      "baseline_reason": "Wrong/missing tags (AgentPane) (waited 36d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (AgentPane) (waited 37d) — correct them, then route."
     },
     {
       "number": 494,
@@ -1389,7 +1365,7 @@
       "comments": 1,
       "created_at": "2026-07-27T01:20:14Z",
       "updated_at": "2026-08-24T23:55:41Z",
-      "age_days": 36.0,
+      "age_days": 37.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -1397,7 +1373,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags (AgentPane)",
-      "baseline_reason": "Wrong/missing tags (AgentPane) (waited 36d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (AgentPane) (waited 37d) — correct them, then route."
     },
     {
       "number": 495,
@@ -1413,7 +1389,7 @@
       "comments": 1,
       "created_at": "2026-07-27T01:20:14Z",
       "updated_at": "2026-08-24T23:55:17Z",
-      "age_days": 36.0,
+      "age_days": 37.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -1421,7 +1397,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm on current build & route (SessionManagement)",
-      "baseline_reason": "Bug (SessionManagement) (waited 36d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_reason": "Bug (SessionManagement) (waited 37d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 498,
@@ -1436,7 +1412,7 @@
       "comments": 1,
       "created_at": "2026-07-27T01:57:31Z",
       "updated_at": "2026-08-24T23:55:21Z",
-      "age_days": 36.0,
+      "age_days": 37.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -1444,7 +1420,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 36d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 37d) — correct them, then route."
     },
     {
       "number": 515,
@@ -1459,7 +1435,7 @@
       "comments": 1,
       "created_at": "2026-07-30T01:30:01Z",
       "updated_at": "2026-08-24T23:55:23Z",
-      "age_days": 36.0,
+      "age_days": 37.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -1467,7 +1443,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 36d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 37d) — correct them, then route."
     },
     {
       "number": 518,
@@ -1485,7 +1461,7 @@
       "comments": 1,
       "created_at": "2026-07-30T02:40:16Z",
       "updated_at": "2026-08-24T23:55:25Z",
-      "age_days": 36.0,
+      "age_days": 37.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -1493,7 +1469,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags (AgentPane)",
-      "baseline_reason": "Wrong/missing tags (AgentPane) (waited 36d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (AgentPane) (waited 37d) — correct them, then route."
     },
     {
       "number": 521,
@@ -1510,7 +1486,7 @@
       "comments": 1,
       "created_at": "2026-07-30T03:33:14Z",
       "updated_at": "2026-08-24T23:55:27Z",
-      "age_days": 36.0,
+      "age_days": 37.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -1518,7 +1494,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags (CLI)",
-      "baseline_reason": "Wrong/missing tags (CLI) (waited 36d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (CLI) (waited 37d) — correct them, then route."
     },
     {
       "number": 591,
@@ -1534,6 +1510,30 @@
       "comments": 1,
       "created_at": "2026-08-11T01:16:16Z",
       "updated_at": "2026-08-24T23:55:33Z",
+      "age_days": 37.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "label_only",
+      "baseline_glyph": "🏷️",
+      "baseline_text": "Fix the labels / tags",
+      "baseline_reason": "Wrong/missing tags (waited 37d) — correct them, then route."
+    },
+    {
+      "number": 259,
+      "title": "Agent not detecting error in Oh My Posh",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/259",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "Issue-Bug",
+        "Needs-Tag-Fix"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-06-09T11:21:44Z",
+      "updated_at": "2026-08-25T05:40:41Z",
       "age_days": 36.0,
       "triaged": false,
       "awaiting": false,
@@ -1697,7 +1697,7 @@
       "comments": 1,
       "created_at": "2026-05-21T15:14:26Z",
       "updated_at": "2026-05-21T23:48:24Z",
-      "age_days": 131.0,
+      "age_days": 132.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -1706,7 +1706,7 @@
       "baseline_action": "review",
       "baseline_glyph": "🕰️",
       "baseline_text": "Stale PR — status or close",
-      "baseline_reason": "PR has sat 131 d (waited 131d) — ping for status/rebase or close if abandoned."
+      "baseline_reason": "PR has sat 132 d (waited 132d) — ping for status/rebase or close if abandoned."
     },
     {
       "number": 310,
@@ -1873,7 +1873,7 @@
       "comments": 1,
       "created_at": "2026-07-02T11:35:34Z",
       "updated_at": "2026-07-13T01:45:03Z",
-      "age_days": 79.0,
+      "age_days": 80.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -1882,7 +1882,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 79 d for us (waited 79d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 80 d for us (waited 80d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 397,
@@ -2005,7 +2005,7 @@
       "comments": 1,
       "created_at": "2026-07-21T01:39:20Z",
       "updated_at": "2026-07-21T01:44:19Z",
-      "age_days": 71.0,
+      "age_days": 72.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -2014,7 +2014,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 71 d for us (waited 71d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 72 d for us (waited 72d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 490,
@@ -2281,6 +2281,28 @@
       "baseline_reason": "PR has waited 40 d for us (waited 40d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
+      "number": 628,
+      "title": "Durable sessions: save & restore shell sessions across close and crash",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/628",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-08-19T07:40:02Z",
+      "updated_at": "2026-08-25T01:05:47Z",
+      "age_days": 37.0,
+      "triaged": false,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "assign_reviewer",
+      "baseline_glyph": "👤",
+      "baseline_text": "Assign a domain reviewer",
+      "baseline_reason": "PR has waited 37 d for us (waited 37d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+    },
+    {
       "number": 660,
       "title": "Auto-name durable tab sessions from shell-integration context",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/660",
@@ -2301,28 +2323,6 @@
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
       "baseline_reason": "PR has waited 37 d for us (waited 37d) — assign the area owner as reviewer and get a decision, don't leave it generic."
-    },
-    {
-      "number": 628,
-      "title": "Durable sessions: save & restore shell sessions across close and crash",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/628",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-08-19T07:40:02Z",
-      "updated_at": "2026-08-25T01:05:47Z",
-      "age_days": 36.0,
-      "triaged": false,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "assign_reviewer",
-      "baseline_glyph": "👤",
-      "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 36 d for us (waited 36d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 607,
@@ -2445,7 +2445,7 @@
       "comments": 1,
       "created_at": "2026-09-04T00:59:29Z",
       "updated_at": "2026-09-04T01:06:39Z",
-      "age_days": 26.0,
+      "age_days": 27.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -2454,7 +2454,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 26d) — review it."
+      "baseline_reason": "PR (waited 27d) — review it."
     },
     {
       "number": 836,
@@ -2533,7 +2533,7 @@
       "comments": 1,
       "created_at": "2026-09-11T00:48:28Z",
       "updated_at": "2026-09-11T00:57:50Z",
-      "age_days": 19.0,
+      "age_days": 20.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -2542,7 +2542,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "🌐",
       "baseline_text": "Route to docs/localization owner",
-      "baseline_reason": "Docs/localization PR (waited 19d) — route to the docs/localization owner for a domain review, not a generic pass."
+      "baseline_reason": "Docs/localization PR (waited 20d) — route to the docs/localization owner for a domain review, not a generic pass."
     },
     {
       "number": 943,
@@ -2677,28 +2677,6 @@
       "baseline_reason": "PR (waited 16d) — review it."
     },
     {
-      "number": 892,
-      "title": "wta(tui): buffer ACP input while busy",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/892",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-09-08T03:35:51Z",
-      "updated_at": "2026-09-15T03:46:43Z",
-      "age_days": 15.0,
-      "triaged": false,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 15d) — review it."
-    },
-    {
       "number": 963,
       "title": "Fix model list recovery after local model removal",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/963",
@@ -2709,6 +2687,28 @@
       "comments": 1,
       "created_at": "2026-09-14T23:37:53Z",
       "updated_at": "2026-09-14T23:44:26Z",
+      "age_days": 16.0,
+      "triaged": false,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (waited 16d) — review it."
+    },
+    {
+      "number": 892,
+      "title": "wta(tui): buffer ACP input while busy",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/892",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-09-08T03:35:51Z",
+      "updated_at": "2026-09-15T03:46:43Z",
       "age_days": 15.0,
       "triaged": false,
       "awaiting": true,
@@ -2775,7 +2775,7 @@
       "comments": 1,
       "created_at": "2026-09-20T22:39:01Z",
       "updated_at": "2026-09-21T00:17:30Z",
-      "age_days": 9.0,
+      "age_days": 10.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -2784,7 +2784,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 9d) — review it."
+      "baseline_reason": "PR (waited 10d) — review it."
     },
     {
       "number": 982,
@@ -2841,7 +2841,7 @@
       "comments": 1,
       "created_at": "2026-09-16T23:45:14Z",
       "updated_at": "2026-09-23T01:50:46Z",
-      "age_days": 7.0,
+      "age_days": 8.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -2850,7 +2850,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 7d) — review it."
+      "baseline_reason": "PR (waited 8d) — review it."
     },
     {
       "number": 995,
@@ -2863,7 +2863,7 @@
       "comments": 1,
       "created_at": "2026-09-24T06:53:23Z",
       "updated_at": "2026-09-29T01:39:56Z",
-      "age_days": 1.0,
+      "age_days": 2.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -2872,7 +2872,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 1d) — review it."
+      "baseline_reason": "PR (waited 2d) — review it."
     },
     {
       "number": 1043,
@@ -2884,7 +2884,7 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-09-29T17:41:13Z",
-      "updated_at": "2026-09-30T02:59:23Z",
+      "updated_at": "2026-09-30T04:51:20Z",
       "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
@@ -2906,7 +2906,7 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-09-30T00:35:54Z",
-      "updated_at": "2026-09-30T01:44:08Z",
+      "updated_at": "2026-09-30T04:40:09Z",
       "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
@@ -2928,7 +2928,7 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-09-30T01:26:16Z",
-      "updated_at": "2026-09-30T01:28:27Z",
+      "updated_at": "2026-09-30T05:54:03Z",
       "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
@@ -2941,16 +2941,16 @@
       "baseline_reason": "PR (new) — review it."
     },
     {
-      "number": 1053,
-      "title": "Use Agents icon and title in the session sidebar",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/1053",
+      "number": 1056,
+      "title": "Show unread waiting indicator on Agents sidebar icon",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/1056",
       "kind": "pr",
       "is_community": null,
       "labels": [],
       "up": 0,
       "comments": 1,
-      "created_at": "2026-09-30T02:44:56Z",
-      "updated_at": "2026-09-30T02:56:28Z",
+      "created_at": "2026-09-30T04:49:19Z",
+      "updated_at": "2026-09-30T04:53:12Z",
       "age_days": 0.0,
       "triaged": false,
       "awaiting": true,
@@ -2963,16 +2963,60 @@
       "baseline_reason": "PR (new) — review it."
     },
     {
-      "number": 1054,
-      "title": "Update vertical tab switch wording to sidebar",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/1054",
+      "number": 1057,
+      "title": "Centralize agent session history refresh in WTA master",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/1057",
       "kind": "pr",
       "is_community": null,
       "labels": [],
       "up": 0,
       "comments": 1,
-      "created_at": "2026-09-30T03:03:40Z",
-      "updated_at": "2026-09-30T03:04:52Z",
+      "created_at": "2026-09-30T04:54:21Z",
+      "updated_at": "2026-09-30T04:59:01Z",
+      "age_days": 0.0,
+      "triaged": false,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (new) — review it."
+    },
+    {
+      "number": 1058,
+      "title": "Show live agent icons per pane and focused tab",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/1058",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-09-30T05:22:02Z",
+      "updated_at": "2026-09-30T05:25:40Z",
+      "age_days": 0.0,
+      "triaged": false,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (new) — review it."
+    },
+    {
+      "number": 1059,
+      "title": "Localize rich tab metadata and accessibility labels",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/1059",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-09-30T05:28:53Z",
+      "updated_at": "2026-09-30T05:44:35Z",
       "age_days": 0.0,
       "triaged": false,
       "awaiting": true,
@@ -3071,50 +3115,6 @@
       "baseline_glyph": "🚧",
       "baseline_text": "Wait — PR is a draft/WIP",
       "baseline_reason": "Draft/WIP PR (waited 27d) — don't review yet; nudge the author to mark it ready."
-    },
-    {
-      "number": 1051,
-      "title": "Align Settings Tab Mode label with FRE",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/1051",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-09-30T02:24:43Z",
-      "updated_at": "2026-09-30T02:25:15Z",
-      "age_days": 0.0,
-      "triaged": false,
-      "awaiting": false,
-      "is_draft": true,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "wait_author",
-      "baseline_glyph": "🚧",
-      "baseline_text": "Wait — PR is a draft/WIP",
-      "baseline_reason": "Draft/WIP PR (new) — don't review yet; nudge the author to mark it ready."
-    },
-    {
-      "number": 1052,
-      "title": "Add runtime tab pinning and localize Pin Tab UI",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/1052",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-09-30T02:44:21Z",
-      "updated_at": "2026-09-30T03:04:19Z",
-      "age_days": 0.0,
-      "triaged": false,
-      "awaiting": false,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "APPROVED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (new) — review it."
     }
   ]
 }
