@@ -1,6 +1,6 @@
 {
   "repo": "microsoft/win-dev-skills",
-  "generated_at": "2026-10-03T15:15:10Z",
+  "generated_at": "2026-10-03T18:28:57Z",
   "awaiting_label": null,
   "awaiting_issues": 0,
   "awaiting_prs": 18,
@@ -20,7 +20,7 @@
       "comments": 1,
       "created_at": "2026-07-15T11:29:00Z",
       "updated_at": "2026-07-15T11:29:00Z",
-      "age_days": 80.0,
+      "age_days": 81.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -28,7 +28,7 @@
       "baseline_action": "escalate",
       "baseline_glyph": "🚨",
       "baseline_text": "Escalate — crash/reliability",
-      "baseline_reason": "Crash/reliability issue (waited 80d) — get repro+logs if missing, confirm severity, and route to the area owner urgently."
+      "baseline_reason": "Crash/reliability issue (waited 81d) — get repro+logs if missing, confirm severity, and route to the area owner urgently."
     },
     {
       "number": 53,
@@ -87,7 +87,7 @@
       "comments": 1,
       "created_at": "2026-05-21T14:16:27Z",
       "updated_at": "2026-05-21T14:16:27Z",
-      "age_days": 135.0,
+      "age_days": 136.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -95,7 +95,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 135d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (waited 136d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 97,
@@ -301,27 +301,6 @@
       "baseline_reason": "Untyped report (waited 82d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
     },
     {
-      "number": 126,
-      "title": "Transform win-dev-skills into a true skills marketplace",
-      "url": "https://github.com/microsoft/win-dev-skills/issues/126",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-07-15T11:27:09Z",
-      "updated_at": "2026-07-15T15:27:49Z",
-      "age_days": 80.0,
-      "triaged": false,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm type (bug/feature) & route",
-      "baseline_reason": "Untyped report (waited 80d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
-    },
-    {
       "number": 127,
       "title": "[Skill] WinUI runtime error diagnostics",
       "url": "https://github.com/microsoft/win-dev-skills/issues/127",
@@ -332,7 +311,7 @@
       "comments": 1,
       "created_at": "2026-07-15T11:28:59Z",
       "updated_at": "2026-07-15T11:28:59Z",
-      "age_days": 80.0,
+      "age_days": 81.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -340,7 +319,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 80d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (waited 81d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 129,
@@ -353,6 +332,27 @@
       "comments": 1,
       "created_at": "2026-07-15T11:29:00Z",
       "updated_at": "2026-07-15T11:29:00Z",
+      "age_days": 81.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "reply",
+      "baseline_glyph": "💬",
+      "baseline_text": "Confirm type (bug/feature) & route",
+      "baseline_reason": "Untyped report (waited 81d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+    },
+    {
+      "number": 126,
+      "title": "Transform win-dev-skills into a true skills marketplace",
+      "url": "https://github.com/microsoft/win-dev-skills/issues/126",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-07-15T11:27:09Z",
+      "updated_at": "2026-07-15T15:27:49Z",
       "age_days": 80.0,
       "triaged": false,
       "awaiting": false,
@@ -439,7 +439,7 @@
       "comments": 1,
       "created_at": "2026-08-25T18:33:39Z",
       "updated_at": "2026-09-09T14:11:28Z",
-      "age_days": 24.0,
+      "age_days": 25.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -447,7 +447,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm type (bug/feature) & route",
-      "baseline_reason": "Untyped report (waited 24d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+      "baseline_reason": "Untyped report (waited 25d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
     },
     {
       "number": 181,
@@ -460,7 +460,7 @@
       "comments": 1,
       "created_at": "2026-09-09T13:51:35Z",
       "updated_at": "2026-09-09T13:51:35Z",
-      "age_days": 24.0,
+      "age_days": 25.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -468,7 +468,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 24d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_reason": "Feature/idea (waited 25d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     }
   ],
   "prs": [
