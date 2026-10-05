@@ -1,6 +1,6 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-10-04T21:04:53Z",
+  "generated_at": "2026-10-05T00:02:11Z",
   "awaiting_label": "Needs-Triage",
   "awaiting_issues": 33,
   "awaiting_prs": 60,
@@ -274,7 +274,7 @@
       "comments": 1,
       "created_at": "2026-09-05T00:28:06Z",
       "updated_at": "2026-09-05T20:01:15Z",
-      "age_days": 29.0,
+      "age_days": 30.0,
       "triaged": false,
       "awaiting": true,
       "fix_ready": false,
@@ -282,7 +282,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 29d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 30d) — correct them, then route."
     },
     {
       "number": 874,
@@ -744,7 +744,7 @@
       "comments": 1,
       "created_at": "2026-10-01T11:05:31Z",
       "updated_at": "2026-10-01T18:09:00Z",
-      "age_days": 3.0,
+      "age_days": 4.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -752,7 +752,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 3d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 4d) — correct them, then route."
     },
     {
       "number": 1071,
@@ -2266,6 +2266,28 @@
       "baseline_reason": "PR has waited 49 d for us (waited 49d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
+      "number": 626,
+      "title": "Pin GitHub Actions to full-length commit SHAs",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/626",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-08-18T17:36:27Z",
+      "updated_at": "2026-08-18T17:45:25Z",
+      "age_days": 48.0,
+      "triaged": false,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "assign_reviewer",
+      "baseline_glyph": "👤",
+      "baseline_text": "Assign a domain reviewer",
+      "baseline_reason": "PR has waited 48 d for us (waited 48d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+    },
+    {
       "number": 520,
       "title": "Configure Dependabot for WTA Rust dependencies",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/520",
@@ -2286,28 +2308,6 @@
       "baseline_glyph": "📦",
       "baseline_text": "Dependency PR — check CI & merge/close",
       "baseline_reason": "Dependency bump (waited 47d) — verify CI + changelog risk, then merge or close."
-    },
-    {
-      "number": 626,
-      "title": "Pin GitHub Actions to full-length commit SHAs",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/626",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-08-18T17:36:27Z",
-      "updated_at": "2026-08-18T17:45:25Z",
-      "age_days": 47.0,
-      "triaged": false,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "assign_reviewer",
-      "baseline_glyph": "👤",
-      "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 47 d for us (waited 47d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 442,
