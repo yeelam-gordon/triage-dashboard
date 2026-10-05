@@ -1,12 +1,12 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-10-05T18:13:04Z",
+  "generated_at": "2026-10-05T21:22:49Z",
   "awaiting_label": "Needs-Triage",
-  "awaiting_issues": 33,
+  "awaiting_issues": 34,
   "awaiting_prs": 60,
-  "backlog_issues": 69,
+  "backlog_issues": 70,
   "backlog_prs": 67,
-  "issues_total": 33,
+  "issues_total": 34,
   "prs_total": 54,
   "issues": [
     {
@@ -546,7 +546,7 @@
       "comments": 1,
       "created_at": "2026-09-21T15:46:26Z",
       "updated_at": "2026-09-21T15:47:08Z",
-      "age_days": 14.0,
+      "age_days": 15.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -554,7 +554,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "🩺",
       "baseline_text": "Confirm crash — get repro/logs & route",
-      "baseline_reason": "Crash report (waited 14d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
+      "baseline_reason": "Crash report (waited 15d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
     },
     {
       "number": 991,
@@ -670,7 +670,7 @@
       "comments": 1,
       "created_at": "2026-09-28T15:51:39Z",
       "updated_at": "2026-09-28T15:52:37Z",
-      "age_days": 7.0,
+      "age_days": 8.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -678,7 +678,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 7d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 8d) — correct them, then route."
     },
     {
       "number": 1024,
@@ -828,6 +828,31 @@
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
       "baseline_reason": "Wrong/missing tags (waited 3d) — correct them, then route."
+    },
+    {
+      "number": 1078,
+      "title": "[aw] Ensure Localizationguide Forkedrepo failed",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/1078",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "Needs-Triage",
+        "Needs-Tag-Fix",
+        "agentic-workflows"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-10-05T19:56:28Z",
+      "updated_at": "2026-10-05T19:56:57Z",
+      "age_days": 0.0,
+      "triaged": true,
+      "awaiting": true,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "label_only",
+      "baseline_glyph": "🏷️",
+      "baseline_text": "Fix the labels / tags",
+      "baseline_reason": "Wrong/missing tags (new) — correct them, then route."
     },
     {
       "number": 228,
@@ -1726,7 +1751,7 @@
       "comments": 1,
       "created_at": "2026-05-19T18:03:05Z",
       "updated_at": "2026-05-21T16:11:54Z",
-      "age_days": 137.0,
+      "age_days": 138.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -1735,7 +1760,7 @@
       "baseline_action": "review",
       "baseline_glyph": "🕰️",
       "baseline_text": "Stale PR — status or close",
-      "baseline_reason": "PR has sat 137 d (waited 137d) — ping for status/rebase or close if abandoned."
+      "baseline_reason": "PR has sat 138 d (waited 138d) — ping for status/rebase or close if abandoned."
     },
     {
       "number": 38,
@@ -3124,28 +3149,6 @@
       "baseline_reason": "Draft/WIP PR (waited 6d) — don't review yet; nudge the author to mark it ready."
     },
     {
-      "number": 1070,
-      "title": "Unify agent tabs, history, and other sessions in the sidebar",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/1070",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-10-01T12:33:35Z",
-      "updated_at": "2026-10-05T13:24:35Z",
-      "age_days": 1.0,
-      "triaged": false,
-      "awaiting": false,
-      "is_draft": true,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "wait_author",
-      "baseline_glyph": "🚧",
-      "baseline_text": "Wait — PR is a draft/WIP",
-      "baseline_reason": "Draft/WIP PR (waited 1d) — don't review yet; nudge the author to mark it ready."
-    },
-    {
       "number": 1077,
       "title": "Add correlated telemetry funnels without changing command execution",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/1077",
@@ -3166,6 +3169,28 @@
       "baseline_glyph": "🚧",
       "baseline_text": "Wait — PR is a draft/WIP",
       "baseline_reason": "Draft/WIP PR (waited 1d) — don't review yet; nudge the author to mark it ready."
+    },
+    {
+      "number": 1070,
+      "title": "Unify agent tabs, history, and other sessions in the sidebar",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/1070",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-10-01T12:33:35Z",
+      "updated_at": "2026-10-05T19:26:48Z",
+      "age_days": 0.0,
+      "triaged": false,
+      "awaiting": false,
+      "is_draft": true,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "wait_author",
+      "baseline_glyph": "🚧",
+      "baseline_text": "Wait — PR is a draft/WIP",
+      "baseline_reason": "Draft/WIP PR (new) — don't review yet; nudge the author to mark it ready."
     }
   ]
 }
