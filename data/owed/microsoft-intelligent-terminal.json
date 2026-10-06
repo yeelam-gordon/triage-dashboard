@@ -1,6 +1,6 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-10-06T17:48:09Z",
+  "generated_at": "2026-10-06T21:19:50Z",
   "awaiting_label": "Needs-Triage",
   "awaiting_issues": 34,
   "awaiting_prs": 59,
@@ -408,6 +408,30 @@
       "baseline_reason": "Wrong/missing tags (waited 26d) — correct them, then route."
     },
     {
+      "number": 936,
+      "title": "Sessions button does not respond and Sessions panel is empty when running as administrator",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/936",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "Needs-Triage",
+        "Needs-Tag-Fix"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-09-11T03:12:03Z",
+      "updated_at": "2026-09-14T13:52:59Z",
+      "age_days": 23.0,
+      "triaged": true,
+      "awaiting": true,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "label_only",
+      "baseline_glyph": "🏷️",
+      "baseline_text": "Fix the labels / tags",
+      "baseline_reason": "Wrong/missing tags (waited 23d) — correct them, then route."
+    },
+    {
       "number": 954,
       "title": "[aw] Ensure Localization reported incomplete result",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/954",
@@ -456,30 +480,6 @@
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
       "baseline_reason": "Wrong/missing tags (waited 23d) — correct them, then route."
-    },
-    {
-      "number": 936,
-      "title": "Sessions button does not respond and Sessions panel is empty when running as administrator",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/936",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "Needs-Triage",
-        "Needs-Tag-Fix"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-09-11T03:12:03Z",
-      "updated_at": "2026-09-14T13:52:59Z",
-      "age_days": 22.0,
-      "triaged": true,
-      "awaiting": true,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "label_only",
-      "baseline_glyph": "🏷️",
-      "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 22d) — correct them, then route."
     },
     {
       "number": 842,
@@ -546,7 +546,7 @@
       "comments": 1,
       "created_at": "2026-09-21T15:46:26Z",
       "updated_at": "2026-09-21T15:47:08Z",
-      "age_days": 15.0,
+      "age_days": 16.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -554,7 +554,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "🩺",
       "baseline_text": "Confirm crash — get repro/logs & route",
-      "baseline_reason": "Crash report (waited 15d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
+      "baseline_reason": "Crash report (waited 16d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
     },
     {
       "number": 991,
@@ -670,7 +670,7 @@
       "comments": 1,
       "created_at": "2026-09-28T15:51:39Z",
       "updated_at": "2026-09-28T15:52:37Z",
-      "age_days": 8.0,
+      "age_days": 9.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -678,7 +678,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 8d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 9d) — correct them, then route."
     },
     {
       "number": 1024,
@@ -1751,7 +1751,7 @@
       "comments": 1,
       "created_at": "2026-05-19T18:03:05Z",
       "updated_at": "2026-05-21T16:11:54Z",
-      "age_days": 138.0,
+      "age_days": 139.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -1760,7 +1760,7 @@
       "baseline_action": "review",
       "baseline_glyph": "🕰️",
       "baseline_text": "Stale PR — status or close",
-      "baseline_reason": "PR has sat 138 d (waited 138d) — ping for status/rebase or close if abandoned."
+      "baseline_reason": "PR has sat 139 d (waited 139d) — ping for status/rebase or close if abandoned."
     },
     {
       "number": 38,
