@@ -1,12 +1,12 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-10-07T18:18:43Z",
+  "generated_at": "2026-10-07T21:05:07Z",
   "awaiting_label": "Needs-Triage",
-  "awaiting_issues": 39,
+  "awaiting_issues": 40,
   "awaiting_prs": 59,
-  "backlog_issues": 75,
+  "backlog_issues": 76,
   "backlog_prs": 67,
-  "issues_total": 39,
+  "issues_total": 40,
   "prs_total": 54,
   "issues": [
     {
@@ -546,7 +546,7 @@
       "comments": 1,
       "created_at": "2026-09-21T15:46:26Z",
       "updated_at": "2026-09-21T15:47:08Z",
-      "age_days": 16.0,
+      "age_days": 17.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -554,7 +554,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "🩺",
       "baseline_text": "Confirm crash — get repro/logs & route",
-      "baseline_reason": "Crash report (waited 16d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
+      "baseline_reason": "Crash report (waited 17d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
     },
     {
       "number": 991,
@@ -670,7 +670,7 @@
       "comments": 1,
       "created_at": "2026-09-28T15:51:39Z",
       "updated_at": "2026-09-28T15:52:37Z",
-      "age_days": 9.0,
+      "age_days": 10.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -678,7 +678,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 9d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 10d) — correct them, then route."
     },
     {
       "number": 1024,
@@ -905,6 +905,31 @@
       "baseline_reason": "Security-class issue (waited 1d) — confirm, escalate to the security owner, and route urgently."
     },
     {
+      "number": 1087,
+      "title": "[aw] Failed jobs: Official security E2E acceptance",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/1087",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "Needs-Triage",
+        "Needs-Tag-Fix",
+        "agentic-workflows"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-10-07T15:26:31Z",
+      "updated_at": "2026-10-07T15:26:59Z",
+      "age_days": 1.0,
+      "triaged": true,
+      "awaiting": true,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "escalate",
+      "baseline_glyph": "🛡️",
+      "baseline_text": "Escalate — security",
+      "baseline_reason": "Security-class issue (waited 1d) — confirm, escalate to the security owner, and route urgently."
+    },
+    {
       "number": 930,
       "title": "[aw] Detection Runs",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/930",
@@ -918,7 +943,7 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-09-11T01:46:56Z",
-      "updated_at": "2026-10-07T14:51:37Z",
+      "updated_at": "2026-10-07T19:35:50Z",
       "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
@@ -943,7 +968,7 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-10-07T14:51:40Z",
-      "updated_at": "2026-10-07T14:52:18Z",
+      "updated_at": "2026-10-07T19:11:31Z",
       "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
@@ -955,9 +980,9 @@
       "baseline_reason": "Wrong/missing tags (new) — correct them, then route."
     },
     {
-      "number": 1087,
+      "number": 1088,
       "title": "[aw] Failed jobs: Official security E2E acceptance",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/1087",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/1088",
       "kind": "issue",
       "is_community": null,
       "labels": [
@@ -967,10 +992,10 @@
       ],
       "up": 0,
       "comments": 1,
-      "created_at": "2026-10-07T15:26:31Z",
-      "updated_at": "2026-10-07T15:26:59Z",
+      "created_at": "2026-10-07T20:31:54Z",
+      "updated_at": "2026-10-07T20:32:41Z",
       "age_days": 0.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -1876,7 +1901,7 @@
       "comments": 1,
       "created_at": "2026-05-19T18:03:05Z",
       "updated_at": "2026-05-21T16:11:54Z",
-      "age_days": 139.0,
+      "age_days": 140.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -1885,7 +1910,7 @@
       "baseline_action": "review",
       "baseline_glyph": "🕰️",
       "baseline_text": "Stale PR — status or close",
-      "baseline_reason": "PR has sat 139 d (waited 139d) — ping for status/rebase or close if abandoned."
+      "baseline_reason": "PR has sat 140 d (waited 140d) — ping for status/rebase or close if abandoned."
     },
     {
       "number": 38,
@@ -3274,28 +3299,6 @@
       "baseline_reason": "Draft/WIP PR (waited 3d) — don't review yet; nudge the author to mark it ready."
     },
     {
-      "number": 1070,
-      "title": "Unify agent tabs, history, and other sessions in the sidebar",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/1070",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-10-01T12:33:35Z",
-      "updated_at": "2026-10-07T18:14:52Z",
-      "age_days": 0.0,
-      "triaged": false,
-      "awaiting": false,
-      "is_draft": true,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "wait_author",
-      "baseline_glyph": "🚧",
-      "baseline_text": "Wait — PR is a draft/WIP",
-      "baseline_reason": "Draft/WIP PR (new) — don't review yet; nudge the author to mark it ready."
-    },
-    {
       "number": 1082,
       "title": "Add evidence-based performance PR review and validated WTA repair",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/1082",
@@ -3306,8 +3309,30 @@
       "comments": 1,
       "created_at": "2026-10-07T05:35:45Z",
       "updated_at": "2026-10-07T15:28:37Z",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "triaged": true,
+      "awaiting": false,
+      "is_draft": true,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "wait_author",
+      "baseline_glyph": "🚧",
+      "baseline_text": "Wait — PR is a draft/WIP",
+      "baseline_reason": "Draft/WIP PR (waited 1d) — don't review yet; nudge the author to mark it ready."
+    },
+    {
+      "number": 1070,
+      "title": "Unify agent tabs, history, and other sessions in the sidebar",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/1070",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-10-01T12:33:35Z",
+      "updated_at": "2026-10-07T20:48:27Z",
+      "age_days": 0.0,
+      "triaged": false,
       "awaiting": false,
       "is_draft": true,
       "merge_state": "",
