@@ -1,6 +1,6 @@
 {
   "repo": "microsoft/win-dev-skills",
-  "generated_at": "2026-10-07T12:11:26Z",
+  "generated_at": "2026-10-07T15:45:29Z",
   "awaiting_label": null,
   "awaiting_issues": 0,
   "awaiting_prs": 12,
@@ -20,7 +20,7 @@
       "comments": 1,
       "created_at": "2026-07-15T11:29:00Z",
       "updated_at": "2026-07-15T11:29:00Z",
-      "age_days": 84.0,
+      "age_days": 85.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -28,7 +28,7 @@
       "baseline_action": "escalate",
       "baseline_glyph": "🚨",
       "baseline_text": "Escalate — crash/reliability",
-      "baseline_reason": "Crash/reliability issue (waited 84d) — get repro+logs if missing, confirm severity, and route to the area owner urgently."
+      "baseline_reason": "Crash/reliability issue (waited 85d) — get repro+logs if missing, confirm severity, and route to the area owner urgently."
     },
     {
       "number": 53,
@@ -223,7 +223,7 @@
       "comments": 1,
       "created_at": "2026-07-15T11:28:59Z",
       "updated_at": "2026-07-15T11:28:59Z",
-      "age_days": 84.0,
+      "age_days": 85.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -231,7 +231,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 84d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (waited 85d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 129,
@@ -244,7 +244,7 @@
       "comments": 1,
       "created_at": "2026-07-15T11:29:00Z",
       "updated_at": "2026-07-15T11:29:00Z",
-      "age_days": 84.0,
+      "age_days": 85.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -252,7 +252,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm type (bug/feature) & route",
-      "baseline_reason": "Untyped report (waited 84d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+      "baseline_reason": "Untyped report (waited 85d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
     },
     {
       "number": 139,
@@ -484,7 +484,7 @@
       "comments": 1,
       "created_at": "2026-07-17T06:37:21Z",
       "updated_at": "2026-09-20T09:19:02Z",
-      "age_days": 17.0,
+      "age_days": 18.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -493,7 +493,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 17d) — review it."
+      "baseline_reason": "PR (waited 18d) — review it."
     },
     {
       "number": 186,
@@ -506,7 +506,7 @@
       "comments": 1,
       "created_at": "2026-09-20T08:55:43Z",
       "updated_at": "2026-09-20T08:55:43Z",
-      "age_days": 17.0,
+      "age_days": 18.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -515,7 +515,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "🌐",
       "baseline_text": "Route to docs/localization owner",
-      "baseline_reason": "Docs/localization PR (waited 17d) — route to the docs/localization owner for a domain review, not a generic pass."
+      "baseline_reason": "Docs/localization PR (waited 18d) — route to the docs/localization owner for a domain review, not a generic pass."
     },
     {
       "number": 188,
@@ -550,7 +550,7 @@
       "comments": 1,
       "created_at": "2026-09-24T10:38:48Z",
       "updated_at": "2026-09-24T11:11:21Z",
-      "age_days": 13.0,
+      "age_days": 14.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -559,7 +559,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 13d) — review it."
+      "baseline_reason": "PR (waited 14d) — review it."
     },
     {
       "number": 161,
@@ -660,7 +660,7 @@
       "comments": 1,
       "created_at": "2026-10-07T06:56:56Z",
       "updated_at": "2026-10-07T09:41:17Z",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "triaged": true,
       "awaiting": false,
       "is_draft": true,
@@ -669,7 +669,7 @@
       "baseline_action": "wait_author",
       "baseline_glyph": "🚧",
       "baseline_text": "Wait — PR is a draft/WIP",
-      "baseline_reason": "Draft/WIP PR (new) — don't review yet; nudge the author to mark it ready."
+      "baseline_reason": "Draft/WIP PR (waited 1d) — don't review yet; nudge the author to mark it ready."
     }
   ]
 }
