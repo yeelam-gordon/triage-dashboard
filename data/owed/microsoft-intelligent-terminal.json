@@ -1,6 +1,6 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-10-07T15:45:29Z",
+  "generated_at": "2026-10-07T18:18:43Z",
   "awaiting_label": "Needs-Triage",
   "awaiting_issues": 39,
   "awaiting_prs": 59,
@@ -50,7 +50,7 @@
       "created_at": "2026-08-27T10:01:07Z",
       "updated_at": "2026-09-01T03:43:26Z",
       "age_days": 37.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -100,7 +100,7 @@
       "created_at": "2026-09-02T08:45:01Z",
       "updated_at": "2026-09-02T09:25:47Z",
       "age_days": 36.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -125,7 +125,7 @@
       "created_at": "2026-09-02T08:45:01Z",
       "updated_at": "2026-09-02T09:22:44Z",
       "age_days": 36.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -150,7 +150,7 @@
       "created_at": "2026-09-02T08:45:01Z",
       "updated_at": "2026-09-02T08:45:27Z",
       "age_days": 36.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -175,7 +175,7 @@
       "created_at": "2026-09-02T08:45:45Z",
       "updated_at": "2026-09-02T08:46:11Z",
       "age_days": 36.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -323,7 +323,7 @@
       "created_at": "2026-09-08T08:40:59Z",
       "updated_at": "2026-09-08T08:41:25Z",
       "age_days": 30.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -373,7 +373,7 @@
       "created_at": "2026-09-10T23:41:59Z",
       "updated_at": "2026-09-11T07:32:38Z",
       "age_days": 27.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -398,7 +398,7 @@
       "created_at": "2026-09-11T02:18:55Z",
       "updated_at": "2026-09-11T02:19:20Z",
       "age_days": 27.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -406,6 +406,30 @@
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
       "baseline_reason": "Wrong/missing tags (waited 27d) — correct them, then route."
+    },
+    {
+      "number": 936,
+      "title": "Sessions button does not respond and Sessions panel is empty when running as administrator",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/936",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "Needs-Triage",
+        "Needs-Tag-Fix"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-09-11T03:12:03Z",
+      "updated_at": "2026-09-14T13:52:59Z",
+      "age_days": 24.0,
+      "triaged": true,
+      "awaiting": true,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "label_only",
+      "baseline_glyph": "🏷️",
+      "baseline_text": "Fix the labels / tags",
+      "baseline_reason": "Wrong/missing tags (waited 24d) — correct them, then route."
     },
     {
       "number": 954,
@@ -448,30 +472,6 @@
       "created_at": "2026-09-14T08:56:49Z",
       "updated_at": "2026-09-14T08:57:20Z",
       "age_days": 24.0,
-      "triaged": false,
-      "awaiting": true,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "label_only",
-      "baseline_glyph": "🏷️",
-      "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 24d) — correct them, then route."
-    },
-    {
-      "number": 936,
-      "title": "Sessions button does not respond and Sessions panel is empty when running as administrator",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/936",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "Needs-Triage",
-        "Needs-Tag-Fix"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-09-11T03:12:03Z",
-      "updated_at": "2026-09-14T13:52:59Z",
-      "age_days": 23.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -479,7 +479,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 23d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 24d) — correct them, then route."
     },
     {
       "number": 842,
@@ -498,7 +498,7 @@
       "created_at": "2026-09-04T07:20:11Z",
       "updated_at": "2026-09-21T03:19:19Z",
       "age_days": 17.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -570,7 +570,7 @@
       "comments": 1,
       "created_at": "2026-09-23T09:37:13Z",
       "updated_at": "2026-09-23T12:51:42Z",
-      "age_days": 14.0,
+      "age_days": 15.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -578,7 +578,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 14d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 15d) — correct them, then route."
     },
     {
       "number": 994,
@@ -596,7 +596,7 @@
       "created_at": "2026-09-24T06:29:04Z",
       "updated_at": "2026-09-24T06:29:30Z",
       "age_days": 14.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -621,7 +621,7 @@
       "created_at": "2026-09-28T01:43:47Z",
       "updated_at": "2026-09-28T01:44:17Z",
       "age_days": 10.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -646,7 +646,7 @@
       "created_at": "2026-09-28T02:27:29Z",
       "updated_at": "2026-09-28T02:28:24Z",
       "age_days": 10.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -696,7 +696,7 @@
       "created_at": "2026-09-29T02:22:36Z",
       "updated_at": "2026-09-29T02:23:01Z",
       "age_days": 9.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -745,7 +745,7 @@
       "created_at": "2026-10-01T11:05:31Z",
       "updated_at": "2026-10-01T18:09:00Z",
       "age_days": 6.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -770,7 +770,7 @@
       "created_at": "2026-10-02T03:19:06Z",
       "updated_at": "2026-10-02T03:19:37Z",
       "age_days": 6.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -795,7 +795,7 @@
       "created_at": "2026-10-02T17:05:06Z",
       "updated_at": "2026-10-03T03:16:43Z",
       "age_days": 5.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -820,7 +820,7 @@
       "created_at": "2026-10-05T19:56:28Z",
       "updated_at": "2026-10-06T01:54:41Z",
       "age_days": 2.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -945,7 +945,7 @@
       "created_at": "2026-10-07T14:51:40Z",
       "updated_at": "2026-10-07T14:52:18Z",
       "age_days": 0.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -970,7 +970,7 @@
       "created_at": "2026-10-07T15:26:31Z",
       "updated_at": "2026-10-07T15:26:59Z",
       "age_days": 0.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -1854,7 +1854,7 @@
       "comments": 1,
       "created_at": "2026-05-19T18:04:27Z",
       "updated_at": "2026-05-20T13:16:24Z",
-      "age_days": 140.0,
+      "age_days": 141.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -1863,7 +1863,7 @@
       "baseline_action": "review",
       "baseline_glyph": "🕰️",
       "baseline_text": "Stale PR — status or close",
-      "baseline_reason": "PR has sat 140 d (waited 140d) — ping for status/rebase or close if abandoned."
+      "baseline_reason": "PR has sat 141 d (waited 141d) — ping for status/rebase or close if abandoned."
     },
     {
       "number": 17,
@@ -1920,7 +1920,7 @@
       "comments": 1,
       "created_at": "2026-06-17T05:34:22Z",
       "updated_at": "2026-06-17T13:02:17Z",
-      "age_days": 112.0,
+      "age_days": 113.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -1929,7 +1929,7 @@
       "baseline_action": "review",
       "baseline_glyph": "🕰️",
       "baseline_text": "Stale PR — status or close",
-      "baseline_reason": "PR has sat 112 d (waited 112d) — ping for status/rebase or close if abandoned."
+      "baseline_reason": "PR has sat 113 d (waited 113d) — ping for status/rebase or close if abandoned."
     },
     {
       "number": 312,
@@ -1942,7 +1942,7 @@
       "comments": 1,
       "created_at": "2026-06-17T06:21:39Z",
       "updated_at": "2026-06-17T13:01:59Z",
-      "age_days": 112.0,
+      "age_days": 113.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -1951,7 +1951,7 @@
       "baseline_action": "review",
       "baseline_glyph": "🕰️",
       "baseline_text": "Stale PR — status or close",
-      "baseline_reason": "PR has sat 112 d (waited 112d) — ping for status/rebase or close if abandoned."
+      "baseline_reason": "PR has sat 113 d (waited 113d) — ping for status/rebase or close if abandoned."
     },
     {
       "number": 313,
@@ -1964,7 +1964,7 @@
       "comments": 1,
       "created_at": "2026-06-17T06:26:59Z",
       "updated_at": "2026-06-17T13:01:36Z",
-      "age_days": 112.0,
+      "age_days": 113.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -1973,7 +1973,7 @@
       "baseline_action": "review",
       "baseline_glyph": "🛡️",
       "baseline_text": "Security-sensitive review",
-      "baseline_reason": "Security-sensitive PR (waited 112d) — prioritise a careful review + owner sign-off."
+      "baseline_reason": "Security-sensitive PR (waited 113d) — prioritise a careful review + owner sign-off."
     },
     {
       "number": 314,
@@ -1986,7 +1986,7 @@
       "comments": 1,
       "created_at": "2026-06-17T06:30:38Z",
       "updated_at": "2026-06-17T13:01:15Z",
-      "age_days": 112.0,
+      "age_days": 113.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -1995,7 +1995,7 @@
       "baseline_action": "review",
       "baseline_glyph": "🕰️",
       "baseline_text": "Stale PR — status or close",
-      "baseline_reason": "PR has sat 112 d (waited 112d) — ping for status/rebase or close if abandoned."
+      "baseline_reason": "PR has sat 113 d (waited 113d) — ping for status/rebase or close if abandoned."
     },
     {
       "number": 315,
@@ -2008,7 +2008,7 @@
       "comments": 1,
       "created_at": "2026-06-17T06:51:25Z",
       "updated_at": "2026-06-17T13:00:59Z",
-      "age_days": 112.0,
+      "age_days": 113.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -2017,7 +2017,7 @@
       "baseline_action": "review",
       "baseline_glyph": "🕰️",
       "baseline_text": "Stale PR — status or close",
-      "baseline_reason": "PR has sat 112 d (waited 112d) — ping for status/rebase or close if abandoned."
+      "baseline_reason": "PR has sat 113 d (waited 113d) — ping for status/rebase or close if abandoned."
     },
     {
       "number": 371,
@@ -2162,7 +2162,7 @@
       "comments": 1,
       "created_at": "2026-07-20T09:44:47Z",
       "updated_at": "2026-07-20T13:47:42Z",
-      "age_days": 79.0,
+      "age_days": 80.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -2171,7 +2171,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 79 d for us (waited 79d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 80 d for us (waited 80d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 457,
@@ -2184,7 +2184,7 @@
       "comments": 1,
       "created_at": "2026-07-20T13:21:33Z",
       "updated_at": "2026-07-20T13:27:27Z",
-      "age_days": 79.0,
+      "age_days": 80.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -2193,7 +2193,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 79 d for us (waited 79d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 80 d for us (waited 80d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 461,
@@ -2690,7 +2690,7 @@
       "comments": 1,
       "created_at": "2026-09-07T12:58:55Z",
       "updated_at": "2026-09-07T13:11:17Z",
-      "age_days": 30.0,
+      "age_days": 31.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -2699,7 +2699,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 30 d for us (waited 30d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 31 d for us (waited 31d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 897,
@@ -2954,7 +2954,7 @@
       "comments": 1,
       "created_at": "2026-09-15T23:31:20Z",
       "updated_at": "2026-09-18T13:21:02Z",
-      "age_days": 19.0,
+      "age_days": 20.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -2963,7 +2963,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 19d) — review it."
+      "baseline_reason": "PR (waited 20d) — review it."
     },
     {
       "number": 981,
@@ -3174,7 +3174,7 @@
       "comments": 1,
       "created_at": "2026-08-05T13:12:38Z",
       "updated_at": "2026-08-05T13:18:20Z",
-      "age_days": 63.0,
+      "age_days": 64.0,
       "triaged": false,
       "awaiting": false,
       "is_draft": true,
@@ -3183,7 +3183,7 @@
       "baseline_action": "wait_author",
       "baseline_glyph": "🚧",
       "baseline_text": "Wait — PR is a draft/WIP",
-      "baseline_reason": "Draft/WIP PR (waited 63d) — don't review yet; nudge the author to mark it ready."
+      "baseline_reason": "Draft/WIP PR (waited 64d) — don't review yet; nudge the author to mark it ready."
     },
     {
       "number": 564,
@@ -3240,7 +3240,7 @@
       "comments": 1,
       "created_at": "2026-09-30T13:35:53Z",
       "updated_at": "2026-09-30T13:36:33Z",
-      "age_days": 7.0,
+      "age_days": 8.0,
       "triaged": false,
       "awaiting": false,
       "is_draft": true,
@@ -3249,7 +3249,7 @@
       "baseline_action": "wait_author",
       "baseline_glyph": "🚧",
       "baseline_text": "Wait — PR is a draft/WIP",
-      "baseline_reason": "Draft/WIP PR (waited 7d) — don't review yet; nudge the author to mark it ready."
+      "baseline_reason": "Draft/WIP PR (waited 8d) — don't review yet; nudge the author to mark it ready."
     },
     {
       "number": 1077,
@@ -3283,7 +3283,7 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-10-01T12:33:35Z",
-      "updated_at": "2026-10-07T14:38:24Z",
+      "updated_at": "2026-10-07T18:14:52Z",
       "age_days": 0.0,
       "triaged": false,
       "awaiting": false,

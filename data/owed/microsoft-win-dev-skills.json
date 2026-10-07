@@ -1,13 +1,13 @@
 {
   "repo": "microsoft/win-dev-skills",
-  "generated_at": "2026-10-07T15:45:29Z",
+  "generated_at": "2026-10-07T18:18:43Z",
   "awaiting_label": null,
   "awaiting_issues": 0,
-  "awaiting_prs": 12,
+  "awaiting_prs": 11,
   "backlog_issues": 16,
-  "backlog_prs": 14,
+  "backlog_prs": 13,
   "issues_total": 16,
-  "prs_total": 14,
+  "prs_total": 13,
   "issues": [
     {
       "number": 128,
@@ -64,7 +64,7 @@
       "comments": 1,
       "created_at": "2026-05-21T14:16:27Z",
       "updated_at": "2026-05-21T14:16:27Z",
-      "age_days": 139.0,
+      "age_days": 140.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -72,7 +72,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 139d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (waited 140d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 97,
@@ -330,7 +330,7 @@
       "comments": 1,
       "created_at": "2026-08-25T18:33:39Z",
       "updated_at": "2026-09-09T14:11:28Z",
-      "age_days": 28.0,
+      "age_days": 29.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -338,7 +338,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm type (bug/feature) & route",
-      "baseline_reason": "Untyped report (waited 28d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+      "baseline_reason": "Untyped report (waited 29d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
     },
     {
       "number": 181,
@@ -351,7 +351,7 @@
       "comments": 1,
       "created_at": "2026-09-09T13:51:35Z",
       "updated_at": "2026-09-09T13:51:35Z",
-      "age_days": 28.0,
+      "age_days": 29.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -359,7 +359,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 28d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_reason": "Feature/idea (waited 29d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     }
   ],
   "prs": [
@@ -606,28 +606,6 @@
       "baseline_reason": "Dependency bump (waited 1d) — verify CI + changelog risk, then merge or close."
     },
     {
-      "number": 208,
-      "title": "docs: broaden scope to Windows development and debugging",
-      "url": "https://github.com/microsoft/win-dev-skills/pull/208",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-10-07T05:23:36Z",
-      "updated_at": "2026-10-07T05:28:23Z",
-      "age_days": 1.0,
-      "triaged": true,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "assign_reviewer",
-      "baseline_glyph": "🌐",
-      "baseline_text": "Route to docs/localization owner",
-      "baseline_reason": "Docs/localization PR (waited 1d) — route to the docs/localization owner for a domain review, not a generic pass."
-    },
-    {
       "number": 171,
       "title": "Skill for using ETW events for performance and lifecycle diagnostics",
       "url": "https://github.com/microsoft/win-dev-skills/pull/171",
@@ -651,7 +629,7 @@
     },
     {
       "number": 209,
-      "title": "Add debugging diagnostician plugin",
+      "title": "Add WinDbg diagnosis plugin",
       "url": "https://github.com/microsoft/win-dev-skills/pull/209",
       "kind": "pr",
       "is_community": null,
@@ -659,8 +637,8 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-10-07T06:56:56Z",
-      "updated_at": "2026-10-07T09:41:17Z",
-      "age_days": 1.0,
+      "updated_at": "2026-10-07T18:21:15Z",
+      "age_days": 0.0,
       "triaged": true,
       "awaiting": false,
       "is_draft": true,
@@ -669,7 +647,7 @@
       "baseline_action": "wait_author",
       "baseline_glyph": "🚧",
       "baseline_text": "Wait — PR is a draft/WIP",
-      "baseline_reason": "Draft/WIP PR (waited 1d) — don't review yet; nudge the author to mark it ready."
+      "baseline_reason": "Draft/WIP PR (new) — don't review yet; nudge the author to mark it ready."
     }
   ]
 }
