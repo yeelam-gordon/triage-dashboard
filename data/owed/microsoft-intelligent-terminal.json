@@ -1,6 +1,6 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-10-08T15:25:25Z",
+  "generated_at": "2026-10-08T18:04:53Z",
   "awaiting_label": "Needs-Triage",
   "awaiting_issues": 42,
   "awaiting_prs": 59,
@@ -408,6 +408,30 @@
       "baseline_reason": "Wrong/missing tags (waited 28d) — correct them, then route."
     },
     {
+      "number": 936,
+      "title": "Sessions button does not respond and Sessions panel is empty when running as administrator",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/936",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "Needs-Triage",
+        "Needs-Tag-Fix"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-09-11T03:12:03Z",
+      "updated_at": "2026-09-14T13:52:59Z",
+      "age_days": 25.0,
+      "triaged": true,
+      "awaiting": true,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "label_only",
+      "baseline_glyph": "🏷️",
+      "baseline_text": "Fix the labels / tags",
+      "baseline_reason": "Wrong/missing tags (waited 25d) — correct them, then route."
+    },
+    {
       "number": 954,
       "title": "[aw] Ensure Localization reported incomplete result",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/954",
@@ -456,30 +480,6 @@
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
       "baseline_reason": "Wrong/missing tags (waited 25d) — correct them, then route."
-    },
-    {
-      "number": 936,
-      "title": "Sessions button does not respond and Sessions panel is empty when running as administrator",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/936",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "Needs-Triage",
-        "Needs-Tag-Fix"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-09-11T03:12:03Z",
-      "updated_at": "2026-09-14T13:52:59Z",
-      "age_days": 24.0,
-      "triaged": true,
-      "awaiting": true,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "label_only",
-      "baseline_glyph": "🏷️",
-      "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 24d) — correct them, then route."
     },
     {
       "number": 842,
@@ -570,7 +570,7 @@
       "comments": 1,
       "created_at": "2026-09-23T09:37:13Z",
       "updated_at": "2026-09-23T12:51:42Z",
-      "age_days": 15.0,
+      "age_days": 16.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -578,7 +578,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 15d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 16d) — correct them, then route."
     },
     {
       "number": 994,
@@ -1929,7 +1929,7 @@
       "comments": 1,
       "created_at": "2026-05-19T18:04:27Z",
       "updated_at": "2026-05-20T13:16:24Z",
-      "age_days": 141.0,
+      "age_days": 142.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -1938,7 +1938,7 @@
       "baseline_action": "review",
       "baseline_glyph": "🕰️",
       "baseline_text": "Stale PR — status or close",
-      "baseline_reason": "PR has sat 141 d (waited 141d) — ping for status/rebase or close if abandoned."
+      "baseline_reason": "PR has sat 142 d (waited 142d) — ping for status/rebase or close if abandoned."
     },
     {
       "number": 17,
@@ -1995,7 +1995,7 @@
       "comments": 1,
       "created_at": "2026-06-17T05:34:22Z",
       "updated_at": "2026-06-17T13:02:17Z",
-      "age_days": 113.0,
+      "age_days": 114.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -2004,7 +2004,7 @@
       "baseline_action": "review",
       "baseline_glyph": "🕰️",
       "baseline_text": "Stale PR — status or close",
-      "baseline_reason": "PR has sat 113 d (waited 113d) — ping for status/rebase or close if abandoned."
+      "baseline_reason": "PR has sat 114 d (waited 114d) — ping for status/rebase or close if abandoned."
     },
     {
       "number": 312,
@@ -2017,7 +2017,7 @@
       "comments": 1,
       "created_at": "2026-06-17T06:21:39Z",
       "updated_at": "2026-06-17T13:01:59Z",
-      "age_days": 113.0,
+      "age_days": 114.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -2026,7 +2026,7 @@
       "baseline_action": "review",
       "baseline_glyph": "🕰️",
       "baseline_text": "Stale PR — status or close",
-      "baseline_reason": "PR has sat 113 d (waited 113d) — ping for status/rebase or close if abandoned."
+      "baseline_reason": "PR has sat 114 d (waited 114d) — ping for status/rebase or close if abandoned."
     },
     {
       "number": 313,
@@ -2039,7 +2039,7 @@
       "comments": 1,
       "created_at": "2026-06-17T06:26:59Z",
       "updated_at": "2026-06-17T13:01:36Z",
-      "age_days": 113.0,
+      "age_days": 114.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -2048,7 +2048,7 @@
       "baseline_action": "review",
       "baseline_glyph": "🛡️",
       "baseline_text": "Security-sensitive review",
-      "baseline_reason": "Security-sensitive PR (waited 113d) — prioritise a careful review + owner sign-off."
+      "baseline_reason": "Security-sensitive PR (waited 114d) — prioritise a careful review + owner sign-off."
     },
     {
       "number": 314,
@@ -2061,7 +2061,7 @@
       "comments": 1,
       "created_at": "2026-06-17T06:30:38Z",
       "updated_at": "2026-06-17T13:01:15Z",
-      "age_days": 113.0,
+      "age_days": 114.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -2070,7 +2070,7 @@
       "baseline_action": "review",
       "baseline_glyph": "🕰️",
       "baseline_text": "Stale PR — status or close",
-      "baseline_reason": "PR has sat 113 d (waited 113d) — ping for status/rebase or close if abandoned."
+      "baseline_reason": "PR has sat 114 d (waited 114d) — ping for status/rebase or close if abandoned."
     },
     {
       "number": 315,
@@ -2083,7 +2083,7 @@
       "comments": 1,
       "created_at": "2026-06-17T06:51:25Z",
       "updated_at": "2026-06-17T13:00:59Z",
-      "age_days": 113.0,
+      "age_days": 114.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -2092,7 +2092,7 @@
       "baseline_action": "review",
       "baseline_glyph": "🕰️",
       "baseline_text": "Stale PR — status or close",
-      "baseline_reason": "PR has sat 113 d (waited 113d) — ping for status/rebase or close if abandoned."
+      "baseline_reason": "PR has sat 114 d (waited 114d) — ping for status/rebase or close if abandoned."
     },
     {
       "number": 371,
@@ -2237,7 +2237,7 @@
       "comments": 1,
       "created_at": "2026-07-20T09:44:47Z",
       "updated_at": "2026-07-20T13:47:42Z",
-      "age_days": 80.0,
+      "age_days": 81.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -2246,7 +2246,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 80 d for us (waited 80d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 81 d for us (waited 81d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 457,
@@ -2259,7 +2259,7 @@
       "comments": 1,
       "created_at": "2026-07-20T13:21:33Z",
       "updated_at": "2026-07-20T13:27:27Z",
-      "age_days": 80.0,
+      "age_days": 81.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -2268,7 +2268,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 80 d for us (waited 80d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 81 d for us (waited 81d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 461,
@@ -2765,7 +2765,7 @@
       "comments": 1,
       "created_at": "2026-09-07T12:58:55Z",
       "updated_at": "2026-09-07T13:11:17Z",
-      "age_days": 31.0,
+      "age_days": 32.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -2774,7 +2774,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 31 d for us (waited 31d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 32 d for us (waited 32d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 928,
@@ -2985,7 +2985,7 @@
       "comments": 1,
       "created_at": "2026-09-15T23:31:20Z",
       "updated_at": "2026-09-18T13:21:02Z",
-      "age_days": 20.0,
+      "age_days": 21.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -2994,7 +2994,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 20d) — review it."
+      "baseline_reason": "PR (waited 21d) — review it."
     },
     {
       "number": 981,
@@ -3129,6 +3129,28 @@
       "baseline_reason": "PR (waited 1d) — review it."
     },
     {
+      "number": 1094,
+      "title": "Fix RTL agent-pane layout and locale currency display",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/1094",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-10-08T09:42:20Z",
+      "updated_at": "2026-10-08T11:58:27Z",
+      "age_days": 1.0,
+      "triaged": false,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (waited 1d) — review it."
+    },
+    {
       "number": 1095,
       "title": "Fix source-aware pane splitting in Agents view",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/1095",
@@ -3160,7 +3182,7 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-09-24T06:53:23Z",
-      "updated_at": "2026-10-08T15:23:26Z",
+      "updated_at": "2026-10-08T17:11:08Z",
       "age_days": 0.0,
       "triaged": false,
       "awaiting": true,
@@ -3183,28 +3205,6 @@
       "comments": 1,
       "created_at": "2026-10-08T05:44:24Z",
       "updated_at": "2026-10-08T14:27:00Z",
-      "age_days": 0.0,
-      "triaged": false,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (new) — review it."
-    },
-    {
-      "number": 1094,
-      "title": "Fix RTL agent-pane layout and locale currency display",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/1094",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-10-08T09:42:20Z",
-      "updated_at": "2026-10-08T11:58:27Z",
       "age_days": 0.0,
       "triaged": false,
       "awaiting": true,
@@ -3249,7 +3249,7 @@
       "comments": 1,
       "created_at": "2026-08-05T13:12:38Z",
       "updated_at": "2026-08-05T13:18:20Z",
-      "age_days": 64.0,
+      "age_days": 65.0,
       "triaged": false,
       "awaiting": false,
       "is_draft": true,
@@ -3258,7 +3258,7 @@
       "baseline_action": "wait_author",
       "baseline_glyph": "🚧",
       "baseline_text": "Wait — PR is a draft/WIP",
-      "baseline_reason": "Draft/WIP PR (waited 64d) — don't review yet; nudge the author to mark it ready."
+      "baseline_reason": "Draft/WIP PR (waited 65d) — don't review yet; nudge the author to mark it ready."
     },
     {
       "number": 564,
@@ -3327,6 +3327,28 @@
       "baseline_reason": "Draft/WIP PR (waited 1d) — don't review yet; nudge the author to mark it ready."
     },
     {
+      "number": 1092,
+      "title": "Preserve window layouts and all background tabs across restart",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/1092",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-10-08T03:48:10Z",
+      "updated_at": "2026-10-08T13:17:14Z",
+      "age_days": 1.0,
+      "triaged": false,
+      "awaiting": false,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "APPROVED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (waited 1d) — review it."
+    },
+    {
       "number": 1082,
       "title": "Add incremental performance checks and validated WTA repair",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/1082",
@@ -3347,28 +3369,6 @@
       "baseline_glyph": "🚧",
       "baseline_text": "Wait — PR is a draft/WIP",
       "baseline_reason": "Draft/WIP PR (new) — don't review yet; nudge the author to mark it ready."
-    },
-    {
-      "number": 1092,
-      "title": "Preserve window layouts and all background tabs across restart",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/1092",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-10-08T03:48:10Z",
-      "updated_at": "2026-10-08T13:17:14Z",
-      "age_days": 0.0,
-      "triaged": false,
-      "awaiting": false,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "APPROVED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (new) — review it."
     }
   ]
 }
