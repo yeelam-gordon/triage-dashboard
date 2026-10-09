@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T15:24:56Z",
+  "generated_at": "2026-10-09T18:04:42Z",
   "config": {
     "review_workflow": "agent-review.yml",
     "default_ref": "main"
@@ -38,32 +38,32 @@
     }
   },
   "counts": {
-    "triaged_issues": 50,
-    "triaged_prs": 85,
+    "triaged_issues": 52,
+    "triaged_prs": 87,
     "window_active_issues": null,
     "window_active_prs": null,
     "backlog_open_issues": null,
     "backlog_open_prs": null,
     "awaiting_reply_issues": 509,
-    "awaiting_reply_prs": 253,
+    "awaiting_reply_prs": 252,
     "awaiting_label": null,
     "window_label": "Daily (24h)"
   },
   "owed_list": {
-    "issues_total": 9343,
-    "prs_total": 317,
-    "listed_issues": 9343,
-    "listed_prs": 317,
+    "issues_total": 9347,
+    "prs_total": 318,
+    "listed_issues": 9347,
+    "listed_prs": 318,
     "capped_issues": false,
     "capped_prs": false
   },
   "totals": {
-    "open_issues": 50,
-    "open_prs": 85
+    "open_issues": 52,
+    "open_prs": 87
   },
   "category_counts": {
     "auto-fix": 1,
-    "bug": 24,
+    "bug": 26,
     "enhancement": 10,
     "feature": 3,
     "first-run": 1,
@@ -77,8 +77,8 @@
     "dependencies": 2,
     "javascript": 2,
     "Needs-Review": 3,
-    "Issue-Bug": 15,
-    "Needs-Triage": 35,
+    "Issue-Bug": 16,
+    "Needs-Triage": 36,
     "Area-AgentPane": 3,
     "Issue-Feature": 4,
     "Area-AutoFix": 1,
@@ -87,7 +87,7 @@
     "Needs-Tag-Fix": 15,
     "agentic-workflows": 7,
     "Product-FancyZones": 3,
-    "Needs-Team-Response": 14,
+    "Needs-Team-Response": 15,
     "Product-Keyboard Shortcut Manager": 1,
     "Idea-New PowerToy": 4,
     "Area-Setup/Install": 3,
@@ -106,17 +106,18 @@
     "CmdPal - Performance monitor": 1,
     "Ready for review": 6,
     "Product-Advanced Paste": 1,
+    "Product-Settings": 1,
     "Product-General": 1,
     "enhancement": 4,
     "feature": 3,
-    "needs-attention": 3,
+    "needs-attention": 4,
     "network": 3,
     "file system": 1,
     "distro-mgmt": 1,
     "localization": 1,
     "needs-author-feedback": 1,
-    "needs-investigation": 3,
-    "bug": 6,
+    "needs-investigation": 4,
+    "bug": 7,
     "wslc": 1,
     "emailed-logs": 2,
     "kernel": 1,
@@ -126,30 +127,30 @@
     "GPU": 1
   },
   "aging_buckets": {
-    "0-1d": 49,
+    "0-1d": 53,
     "2-7d": 8,
-    "8-30d": 13,
-    ">30d": 65
+    "8-30d": 14,
+    ">30d": 64
   },
   "situation": {
     "mode": "at_risk",
     "is_internal": false,
     "signals": {
-      "total": 135,
-      "issues": 50,
-      "prs": 85,
-      "community": 70,
-      "frustrated_blocked": 17,
-      "frustrated_only": 5,
-      "missed_reply": 43,
+      "total": 139,
+      "issues": 52,
+      "prs": 87,
+      "community": 72,
+      "frustrated_blocked": 18,
+      "frustrated_only": 6,
+      "missed_reply": 46,
       "missed_reply_basis": "source missed_reply.qualifies; days_no_reply>=7 proxy",
-      "hi_score": 42,
+      "hi_score": 44,
       "hi_score_threshold": 6,
-      "bugs": 31,
-      "actionable": 124,
+      "bugs": 33,
+      "actionable": 127,
       "stale7d": 78
     },
-    "headline": "⚠ Respond now — 17 frustrated/blocked; 42 high-priority (score ≥ 6; may overlap).",
+    "headline": "⚠ Respond now — 18 frustrated/blocked; 44 high-priority (score ≥ 6; may overlap).",
     "recommendation": "Do these first."
   },
   "per_repo": {
@@ -354,7 +355,7 @@
             "comments": 1,
             "created_at": "2026-10-09T12:35:41Z",
             "updated_at": "2026-10-09T12:35:41Z",
-            "age_days": 0.0,
+            "age_days": 1.0,
             "triaged": true,
             "awaiting": true,
             "is_draft": false,
@@ -363,7 +364,7 @@
             "baseline_action": "review",
             "baseline_glyph": "👀",
             "baseline_text": "Review this PR",
-            "baseline_reason": "PR (new) — review it."
+            "baseline_reason": "PR (waited 1d) — review it."
           },
           {
             "number": 218,
@@ -375,7 +376,7 @@
             "up": 0,
             "comments": 1,
             "created_at": "2026-10-09T14:42:10Z",
-            "updated_at": "2026-10-09T15:20:00Z",
+            "updated_at": "2026-10-09T17:13:33Z",
             "age_days": 0.0,
             "triaged": true,
             "awaiting": true,
@@ -397,7 +398,7 @@
             "up": 0,
             "comments": 1,
             "created_at": "2026-10-09T14:53:32Z",
-            "updated_at": "2026-10-09T15:08:02Z",
+            "updated_at": "2026-10-09T16:30:31Z",
             "age_days": 0.0,
             "triaged": true,
             "awaiting": true,
@@ -486,13 +487,13 @@
           "frustrated_only": 0,
           "missed_reply": 6,
           "missed_reply_basis": "source missed_reply.qualifies; days_no_reply>=7 proxy",
-          "hi_score": 1,
+          "hi_score": 2,
           "hi_score_threshold": 6,
           "bugs": 15,
           "actionable": 45,
           "stale7d": 15
         },
-        "headline": "⚠ Respond now — 5 frustrated/blocked; 1 high-priority (score ≥ 6; may overlap).",
+        "headline": "⚠ Respond now — 5 frustrated/blocked; 2 high-priority (score ≥ 6; may overlap).",
         "recommendation": "Do these first."
       },
       "counts": {
@@ -933,6 +934,30 @@
             "baseline_reason": "Wrong/missing tags (waited 29d) — correct them, then route."
           },
           {
+            "number": 936,
+            "title": "Sessions button does not respond and Sessions panel is empty when running as administrator",
+            "url": "https://github.com/microsoft/intelligent-terminal/issues/936",
+            "kind": "issue",
+            "is_community": null,
+            "labels": [
+              "Needs-Triage",
+              "Needs-Tag-Fix"
+            ],
+            "up": 0,
+            "comments": 1,
+            "created_at": "2026-09-11T03:12:03Z",
+            "updated_at": "2026-09-14T13:52:59Z",
+            "age_days": 26.0,
+            "triaged": true,
+            "awaiting": true,
+            "fix_ready": false,
+            "build_candidate": false,
+            "baseline_action": "label_only",
+            "baseline_glyph": "🏷️",
+            "baseline_text": "Fix the labels / tags",
+            "baseline_reason": "Wrong/missing tags (waited 26d) — correct them, then route."
+          },
+          {
             "number": 954,
             "title": "[aw] Ensure Localization reported incomplete result",
             "url": "https://github.com/microsoft/intelligent-terminal/issues/954",
@@ -981,30 +1006,6 @@
             "baseline_glyph": "🏷️",
             "baseline_text": "Fix the labels / tags",
             "baseline_reason": "Wrong/missing tags (waited 26d) — correct them, then route."
-          },
-          {
-            "number": 936,
-            "title": "Sessions button does not respond and Sessions panel is empty when running as administrator",
-            "url": "https://github.com/microsoft/intelligent-terminal/issues/936",
-            "kind": "issue",
-            "is_community": null,
-            "labels": [
-              "Needs-Triage",
-              "Needs-Tag-Fix"
-            ],
-            "up": 0,
-            "comments": 1,
-            "created_at": "2026-09-11T03:12:03Z",
-            "updated_at": "2026-09-14T13:52:59Z",
-            "age_days": 25.0,
-            "triaged": true,
-            "awaiting": true,
-            "fix_ready": false,
-            "build_candidate": false,
-            "baseline_action": "label_only",
-            "baseline_glyph": "🏷️",
-            "baseline_text": "Fix the labels / tags",
-            "baseline_reason": "Wrong/missing tags (waited 25d) — correct them, then route."
           },
           {
             "number": 842,
@@ -1095,7 +1096,7 @@
             "comments": 1,
             "created_at": "2026-09-23T09:37:13Z",
             "updated_at": "2026-09-23T12:51:42Z",
-            "age_days": 16.0,
+            "age_days": 17.0,
             "triaged": true,
             "awaiting": true,
             "fix_ready": false,
@@ -1103,7 +1104,7 @@
             "baseline_action": "label_only",
             "baseline_glyph": "🏷️",
             "baseline_text": "Fix the labels / tags",
-            "baseline_reason": "Wrong/missing tags (waited 16d) — correct them, then route."
+            "baseline_reason": "Wrong/missing tags (waited 17d) — correct them, then route."
           },
           {
             "number": 994,
@@ -1517,7 +1518,7 @@
             "comments": 1,
             "created_at": "2026-05-19T18:04:27Z",
             "updated_at": "2026-05-20T13:16:24Z",
-            "age_days": 142.0,
+            "age_days": 143.0,
             "triaged": true,
             "awaiting": true,
             "is_draft": false,
@@ -1526,7 +1527,7 @@
             "baseline_action": "review",
             "baseline_glyph": "🕰️",
             "baseline_text": "Stale PR — status or close",
-            "baseline_reason": "PR has sat 142 d (waited 142d) — ping for status/rebase or close if abandoned."
+            "baseline_reason": "PR has sat 143 d (waited 143d) — ping for status/rebase or close if abandoned."
           },
           {
             "number": 17,
@@ -1583,7 +1584,7 @@
             "comments": 1,
             "created_at": "2026-06-17T05:34:22Z",
             "updated_at": "2026-06-17T13:02:17Z",
-            "age_days": 114.0,
+            "age_days": 115.0,
             "triaged": true,
             "awaiting": true,
             "is_draft": false,
@@ -1592,7 +1593,7 @@
             "baseline_action": "review",
             "baseline_glyph": "🕰️",
             "baseline_text": "Stale PR — status or close",
-            "baseline_reason": "PR has sat 114 d (waited 114d) — ping for status/rebase or close if abandoned."
+            "baseline_reason": "PR has sat 115 d (waited 115d) — ping for status/rebase or close if abandoned."
           },
           {
             "number": 312,
@@ -1605,7 +1606,7 @@
             "comments": 1,
             "created_at": "2026-06-17T06:21:39Z",
             "updated_at": "2026-06-17T13:01:59Z",
-            "age_days": 114.0,
+            "age_days": 115.0,
             "triaged": true,
             "awaiting": true,
             "is_draft": false,
@@ -1614,7 +1615,7 @@
             "baseline_action": "review",
             "baseline_glyph": "🕰️",
             "baseline_text": "Stale PR — status or close",
-            "baseline_reason": "PR has sat 114 d (waited 114d) — ping for status/rebase or close if abandoned."
+            "baseline_reason": "PR has sat 115 d (waited 115d) — ping for status/rebase or close if abandoned."
           },
           {
             "number": 313,
@@ -1627,7 +1628,7 @@
             "comments": 1,
             "created_at": "2026-06-17T06:26:59Z",
             "updated_at": "2026-06-17T13:01:36Z",
-            "age_days": 114.0,
+            "age_days": 115.0,
             "triaged": true,
             "awaiting": true,
             "is_draft": false,
@@ -1636,7 +1637,7 @@
             "baseline_action": "review",
             "baseline_glyph": "🛡️",
             "baseline_text": "Security-sensitive review",
-            "baseline_reason": "Security-sensitive PR (waited 114d) — prioritise a careful review + owner sign-off."
+            "baseline_reason": "Security-sensitive PR (waited 115d) — prioritise a careful review + owner sign-off."
           },
           {
             "number": 314,
@@ -1649,7 +1650,7 @@
             "comments": 1,
             "created_at": "2026-06-17T06:30:38Z",
             "updated_at": "2026-06-17T13:01:15Z",
-            "age_days": 114.0,
+            "age_days": 115.0,
             "triaged": true,
             "awaiting": true,
             "is_draft": false,
@@ -1658,7 +1659,7 @@
             "baseline_action": "review",
             "baseline_glyph": "🕰️",
             "baseline_text": "Stale PR — status or close",
-            "baseline_reason": "PR has sat 114 d (waited 114d) — ping for status/rebase or close if abandoned."
+            "baseline_reason": "PR has sat 115 d (waited 115d) — ping for status/rebase or close if abandoned."
           },
           {
             "number": 315,
@@ -1671,7 +1672,7 @@
             "comments": 1,
             "created_at": "2026-06-17T06:51:25Z",
             "updated_at": "2026-06-17T13:00:59Z",
-            "age_days": 114.0,
+            "age_days": 115.0,
             "triaged": true,
             "awaiting": true,
             "is_draft": false,
@@ -1680,7 +1681,7 @@
             "baseline_action": "review",
             "baseline_glyph": "🕰️",
             "baseline_text": "Stale PR — status or close",
-            "baseline_reason": "PR has sat 114 d (waited 114d) — ping for status/rebase or close if abandoned."
+            "baseline_reason": "PR has sat 115 d (waited 115d) — ping for status/rebase or close if abandoned."
           },
           {
             "number": 371,
@@ -1825,7 +1826,7 @@
             "comments": 1,
             "created_at": "2026-07-20T09:44:47Z",
             "updated_at": "2026-07-20T13:47:42Z",
-            "age_days": 81.0,
+            "age_days": 82.0,
             "triaged": true,
             "awaiting": true,
             "is_draft": false,
@@ -1834,7 +1835,7 @@
             "baseline_action": "assign_reviewer",
             "baseline_glyph": "👤",
             "baseline_text": "Assign a domain reviewer",
-            "baseline_reason": "PR has waited 81 d for us (waited 81d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+            "baseline_reason": "PR has waited 82 d for us (waited 82d) — assign the area owner as reviewer and get a decision, don't leave it generic."
           },
           {
             "number": 457,
@@ -1847,7 +1848,7 @@
             "comments": 1,
             "created_at": "2026-07-20T13:21:33Z",
             "updated_at": "2026-07-20T13:27:27Z",
-            "age_days": 81.0,
+            "age_days": 82.0,
             "triaged": false,
             "awaiting": true,
             "is_draft": false,
@@ -1856,7 +1857,7 @@
             "baseline_action": "assign_reviewer",
             "baseline_glyph": "👤",
             "baseline_text": "Assign a domain reviewer",
-            "baseline_reason": "PR has waited 81 d for us (waited 81d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+            "baseline_reason": "PR has waited 82 d for us (waited 82d) — assign the area owner as reviewer and get a decision, don't leave it generic."
           },
           {
             "number": 461,
@@ -2353,7 +2354,7 @@
             "comments": 1,
             "created_at": "2026-09-07T12:58:55Z",
             "updated_at": "2026-09-07T13:11:17Z",
-            "age_days": 32.0,
+            "age_days": 33.0,
             "triaged": false,
             "awaiting": true,
             "is_draft": false,
@@ -2362,7 +2363,7 @@
             "baseline_action": "assign_reviewer",
             "baseline_glyph": "👤",
             "baseline_text": "Assign a domain reviewer",
-            "baseline_reason": "PR has waited 32 d for us (waited 32d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+            "baseline_reason": "PR has waited 33 d for us (waited 33d) — assign the area owner as reviewer and get a decision, don't leave it generic."
           },
           {
             "number": 928,
@@ -2430,19 +2431,19 @@
     },
     "microsoft/PowerToys": {
       "totals": {
-        "open_issues": 15,
+        "open_issues": 16,
         "open_prs": 11
       },
       "category_counts": {
-        "bug": 7,
+        "bug": 8,
         "enhancement": 8
       },
       "label_counts": {
-        "Issue-Bug": 7,
+        "Issue-Bug": 8,
         "Product-FancyZones": 3,
-        "Needs-Team-Response": 14,
+        "Needs-Team-Response": 15,
         "Product-Keyboard Shortcut Manager": 1,
-        "Needs-Triage": 12,
+        "Needs-Triage": 13,
         "Idea-New PowerToy": 4,
         "Area-Setup/Install": 3,
         "Product-PowerToys Run": 1,
@@ -2460,41 +2461,42 @@
         "CmdPal - Performance monitor": 1,
         "Ready for review": 6,
         "Product-Advanced Paste": 1,
+        "Product-Settings": 1,
         "Product-General": 1
       },
       "aging_buckets": {
         "0-1d": 2,
         "2-7d": 1,
-        "8-30d": 1,
+        "8-30d": 2,
         ">30d": 22
       },
       "situation": {
         "mode": "at_risk",
         "is_internal": false,
         "signals": {
-          "total": 26,
-          "issues": 15,
+          "total": 27,
+          "issues": 16,
           "prs": 11,
-          "community": 26,
-          "frustrated_blocked": 7,
-          "frustrated_only": 4,
-          "missed_reply": 18,
+          "community": 27,
+          "frustrated_blocked": 8,
+          "frustrated_only": 5,
+          "missed_reply": 19,
           "missed_reply_basis": "source missed_reply.qualifies; days_no_reply>=7 proxy",
-          "hi_score": 18,
+          "hi_score": 19,
           "hi_score_threshold": 6,
-          "bugs": 7,
-          "actionable": 26,
-          "stale7d": 23
+          "bugs": 8,
+          "actionable": 27,
+          "stale7d": 24
         },
-        "headline": "⚠ Respond now — 7 frustrated/blocked; 18 high-priority (score ≥ 6; may overlap).",
+        "headline": "⚠ Respond now — 8 frustrated/blocked; 19 high-priority (score ≥ 6; may overlap).",
         "recommendation": "Do these first."
       },
       "counts": {
-        "triaged_issues": 15,
+        "triaged_issues": 16,
         "triaged_prs": 11,
-        "window_active_issues": 45,
+        "window_active_issues": 49,
         "window_active_prs": 53,
-        "backlog_open_issues": 7577,
+        "backlog_open_issues": 7581,
         "backlog_open_prs": 160,
         "awaiting_reply_issues": 461,
         "awaiting_reply_prs": 135,
@@ -2645,7 +2647,7 @@
             "comments": 1,
             "created_at": "2023-03-12T00:50:34Z",
             "updated_at": "2026-04-18T13:56:43Z",
-            "age_days": 174.0,
+            "age_days": 175.0,
             "triaged": true,
             "awaiting": true,
             "fix_ready": false,
@@ -2653,7 +2655,7 @@
             "baseline_action": "promote",
             "baseline_glyph": "⭐",
             "baseline_text": "High-demand feature — roadmap decision (Setup/Install)",
-            "baseline_reason": "Popular feature ask (Setup/Install) (waited 174d, 13 👍) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+            "baseline_reason": "Popular feature ask (Setup/Install) (waited 175d, 13 👍) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
           },
           {
             "number": 22059,
@@ -2670,7 +2672,7 @@
             "comments": 1,
             "created_at": "2022-11-13T21:37:34Z",
             "updated_at": "2026-04-18T14:00:34Z",
-            "age_days": 174.0,
+            "age_days": 175.0,
             "triaged": true,
             "awaiting": true,
             "fix_ready": false,
@@ -2678,7 +2680,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "📣",
             "baseline_text": "We owe a team response — confirm type & route to the Keyboard Shortcut Manager owner (Keyboard Shortcut Manager)",
-            "baseline_reason": "Untyped report flagged Needs-Team-Response and routed to Keyboard Shortcut Manager (waited 174d, 11 👍) — confirm whether it's a bug or a feature, then post the Keyboard Shortcut Manager owner's response."
+            "baseline_reason": "Untyped report flagged Needs-Team-Response and routed to Keyboard Shortcut Manager (waited 175d, 11 👍) — confirm whether it's a bug or a feature, then post the Keyboard Shortcut Manager owner's response."
           },
           {
             "number": 46216,
@@ -2697,7 +2699,7 @@
             "comments": 1,
             "created_at": "2026-03-18T09:39:05Z",
             "updated_at": "2026-09-16T12:06:50Z",
-            "age_days": 23.0,
+            "age_days": 24.0,
             "triaged": true,
             "awaiting": true,
             "fix_ready": false,
@@ -2705,7 +2707,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "📣",
             "baseline_text": "We owe a team response — confirm & route to the Command Palette owner (Command Palette)",
-            "baseline_reason": "Bug flagged Needs-Team-Response and routed to Command Palette (waited 23d, 9 👍) — confirm it still repros on a current build and post the Command Palette owner's response the reporter is waiting on."
+            "baseline_reason": "Bug flagged Needs-Team-Response and routed to Command Palette (waited 24d, 9 👍) — confirm it still repros on a current build and post the Command Palette owner's response the reporter is waiting on."
           },
           {
             "number": 24734,
@@ -2798,7 +2800,7 @@
             "comments": 1,
             "created_at": "2021-09-20T06:35:51Z",
             "updated_at": "2024-01-23T11:55:36Z",
-            "age_days": 990.0,
+            "age_days": 991.0,
             "triaged": false,
             "awaiting": true,
             "fix_ready": false,
@@ -2806,7 +2808,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "📣",
             "baseline_text": "We owe a team response — confirm & route to the PowerToys Run owner (PowerToys Run)",
-            "baseline_reason": "Bug flagged Needs-Team-Response and routed to PowerToys Run (waited 990d, 5 👍) — confirm it still repros on a current build and post the PowerToys Run owner's response the reporter is waiting on."
+            "baseline_reason": "Bug flagged Needs-Team-Response and routed to PowerToys Run (waited 991d, 5 👍) — confirm it still repros on a current build and post the PowerToys Run owner's response the reporter is waiting on."
           },
           {
             "number": 28981,
@@ -2874,7 +2876,7 @@
             "comments": 1,
             "created_at": "2023-01-07T19:19:19Z",
             "updated_at": "2026-09-23T11:29:05Z",
-            "age_days": 16.0,
+            "age_days": 17.0,
             "triaged": false,
             "awaiting": true,
             "fix_ready": false,
@@ -2882,7 +2884,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Confirm on current build & route (General)",
-            "baseline_reason": "Bug (General) (waited 16d, 5 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+            "baseline_reason": "Bug (General) (waited 17d, 5 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
           },
           {
             "number": 37143,
@@ -2952,7 +2954,7 @@
             "comments": 1,
             "created_at": "2022-03-14T10:56:07Z",
             "updated_at": "2024-10-13T12:16:54Z",
-            "age_days": 726.0,
+            "age_days": 727.0,
             "triaged": false,
             "awaiting": true,
             "fix_ready": false,
@@ -2960,7 +2962,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Decide on this feature request (Color Picker)",
-            "baseline_reason": "Feature/idea (Color Picker) (waited 726d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+            "baseline_reason": "Feature/idea (Color Picker) (waited 727d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
           },
           {
             "number": 40355,
@@ -3004,7 +3006,7 @@
             "comments": 1,
             "created_at": "2025-11-06T14:39:14Z",
             "updated_at": "2026-04-26T13:14:57Z",
-            "age_days": 166.0,
+            "age_days": 167.0,
             "triaged": false,
             "awaiting": true,
             "fix_ready": false,
@@ -3012,7 +3014,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Decide on this feature request (General)",
-            "baseline_reason": "Feature/idea (General) (waited 166d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+            "baseline_reason": "Feature/idea (General) (waited 167d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
           },
           {
             "number": 29027,
@@ -3058,7 +3060,7 @@
             "comments": 1,
             "created_at": "2023-01-29T03:27:36Z",
             "updated_at": "2024-03-30T13:46:11Z",
-            "age_days": 923.0,
+            "age_days": 924.0,
             "triaged": false,
             "awaiting": true,
             "fix_ready": false,
@@ -3066,7 +3068,7 @@
             "baseline_action": "reassess_stale",
             "baseline_glyph": "🗓️",
             "baseline_text": "No repro provided — close stale (Settings)",
-            "baseline_reason": "Marked needs-repro (Settings) (waited 923d) with no repro forthcoming — close as stale (reopen if a fresh repro arrives)."
+            "baseline_reason": "Marked needs-repro (Settings) (waited 924d) with no repro forthcoming — close as stale (reopen if a fresh repro arrives)."
           },
           {
             "number": 16945,
@@ -3084,7 +3086,7 @@
             "comments": 1,
             "created_at": "2022-03-09T21:30:05Z",
             "updated_at": "2025-08-25T12:36:14Z",
-            "age_days": 410.0,
+            "age_days": 411.0,
             "triaged": false,
             "awaiting": true,
             "fix_ready": false,
@@ -3092,7 +3094,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Decide on this feature request (Mouse Utilities)",
-            "baseline_reason": "Feature/idea (Mouse Utilities) (waited 410d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+            "baseline_reason": "Feature/idea (Mouse Utilities) (waited 411d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
           },
           {
             "number": 29559,
@@ -3109,7 +3111,7 @@
             "comments": 1,
             "created_at": "2023-10-31T18:40:59Z",
             "updated_at": "2026-04-18T13:56:51Z",
-            "age_days": 174.0,
+            "age_days": 175.0,
             "triaged": false,
             "awaiting": true,
             "fix_ready": false,
@@ -3117,7 +3119,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "📣",
             "baseline_text": "We owe a team response — confirm type & route to the Setup/Install owner (Setup/Install)",
-            "baseline_reason": "Untyped report flagged Needs-Team-Response and routed to Setup/Install (waited 174d) — confirm whether it's a bug or a feature, then post the Setup/Install owner's response."
+            "baseline_reason": "Untyped report flagged Needs-Team-Response and routed to Setup/Install (waited 175d) — confirm whether it's a bug or a feature, then post the Setup/Install owner's response."
           },
           {
             "number": 45615,
@@ -3134,7 +3136,7 @@
             "comments": 1,
             "created_at": "2026-02-14T21:22:23Z",
             "updated_at": "2026-04-18T13:51:23Z",
-            "age_days": 174.0,
+            "age_days": 175.0,
             "triaged": false,
             "awaiting": true,
             "fix_ready": false,
@@ -3142,7 +3144,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Decide on this feature request (Settings)",
-            "baseline_reason": "Feature/idea (Settings) (waited 174d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+            "baseline_reason": "Feature/idea (Settings) (waited 175d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
           },
           {
             "number": 48076,
@@ -3186,7 +3188,7 @@
             "created_at": "2026-09-17T09:28:34Z",
             "updated_at": "2026-09-29T03:27:37Z",
             "age_days": 11.0,
-            "triaged": false,
+            "triaged": true,
             "awaiting": true,
             "fix_ready": false,
             "build_candidate": false,
@@ -3237,7 +3239,7 @@
             "comments": 1,
             "created_at": "2022-06-08T02:14:29Z",
             "updated_at": "2024-10-13T12:15:01Z",
-            "age_days": 726.0,
+            "age_days": 727.0,
             "triaged": false,
             "awaiting": true,
             "fix_ready": false,
@@ -3245,7 +3247,7 @@
             "baseline_action": "reassess_stale",
             "baseline_glyph": "🗓️",
             "baseline_text": "Stale idea — decline or close for low demand (PowerRename)",
-            "baseline_reason": "Old feature ask (PowerRename) (waited 726d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+            "baseline_reason": "Old feature ask (PowerRename) (waited 727d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
           },
           {
             "number": 31992,
@@ -3288,7 +3290,7 @@
             "comments": 1,
             "created_at": "2024-07-31T05:59:56Z",
             "updated_at": "2026-04-18T13:54:27Z",
-            "age_days": 174.0,
+            "age_days": 175.0,
             "triaged": false,
             "awaiting": true,
             "fix_ready": false,
@@ -3296,7 +3298,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "📣",
             "baseline_text": "We owe a team response — confirm type & route to the Color Picker owner (Color Picker)",
-            "baseline_reason": "Untyped report flagged Needs-Team-Response and routed to Color Picker (waited 174d) — confirm whether it's a bug or a feature, then post the Color Picker owner's response."
+            "baseline_reason": "Untyped report flagged Needs-Team-Response and routed to Color Picker (waited 175d) — confirm whether it's a bug or a feature, then post the Color Picker owner's response."
           },
           {
             "number": 20980,
@@ -3417,7 +3419,7 @@
             "comments": 1,
             "created_at": "2023-01-23T10:54:28Z",
             "updated_at": "2026-07-03T12:37:00Z",
-            "age_days": 98.0,
+            "age_days": 99.0,
             "triaged": false,
             "awaiting": true,
             "fix_ready": false,
@@ -3425,7 +3427,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "📣",
             "baseline_text": "We owe a team response — confirm & route to the PowerToys Run owner (PowerToys Run)",
-            "baseline_reason": "Bug flagged Needs-Team-Response and routed to PowerToys Run (waited 98d) — confirm it still repros on a current build and post the PowerToys Run owner's response the reporter is waiting on."
+            "baseline_reason": "Bug flagged Needs-Team-Response and routed to PowerToys Run (waited 99d) — confirm it still repros on a current build and post the PowerToys Run owner's response the reporter is waiting on."
           },
           {
             "number": 45913,
@@ -3545,7 +3547,7 @@
             "comments": 1,
             "created_at": "2026-03-07T12:19:01Z",
             "updated_at": "2026-04-29T13:28:35Z",
-            "age_days": 163.0,
+            "age_days": 164.0,
             "triaged": true,
             "awaiting": true,
             "is_draft": false,
@@ -3554,7 +3556,7 @@
             "baseline_action": "review",
             "baseline_glyph": "🕰️",
             "baseline_text": "Stale PR — status or close (FancyZones)",
-            "baseline_reason": "PR (FancyZones) has sat 163 d (waited 163d) — ping for status/rebase or close if abandoned."
+            "baseline_reason": "PR (FancyZones) has sat 164 d (waited 164d) — ping for status/rebase or close if abandoned."
           },
           {
             "number": 41003,
@@ -4058,7 +4060,7 @@
             "comments": 1,
             "created_at": "2026-09-02T13:51:25Z",
             "updated_at": "2026-09-02T13:51:47Z",
-            "age_days": 37.0,
+            "age_days": 38.0,
             "triaged": true,
             "awaiting": true,
             "is_draft": false,
@@ -4067,7 +4069,7 @@
             "baseline_action": "assign_reviewer",
             "baseline_glyph": "👤",
             "baseline_text": "Assign a domain reviewer (Advanced Paste)",
-            "baseline_reason": "PR (Advanced Paste) has waited 37 d for us (waited 37d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+            "baseline_reason": "PR (Advanced Paste) has waited 38 d for us (waited 38d) — assign the area owner as reviewer and get a decision, don't leave it generic."
           },
           {
             "number": 49226,
@@ -4529,11 +4531,11 @@
         ],
         "awaiting_issues": 461,
         "awaiting_prs": 93,
-        "backlog_issues": 7578,
+        "backlog_issues": 7582,
         "backlog_prs": 160,
         "issues_total": 461,
         "prs_total": 135,
-        "listed_issues": 7578,
+        "listed_issues": 7582,
         "listed_prs": 160,
         "preview_count": 40,
         "has_more_issues": true,
@@ -4548,15 +4550,15 @@
       "trends": [
         {
           "topic": "Needs-Team-Response",
-          "count": 14
+          "count": 15
         },
         {
           "topic": "Needs-Triage",
-          "count": 12
+          "count": 13
         },
         {
           "topic": "Issue-Bug",
-          "count": 7
+          "count": 8
         },
         {
           "topic": "Ready for review",
@@ -4629,7 +4631,7 @@
             "comments": 1,
             "created_at": "2026-07-15T11:29:00Z",
             "updated_at": "2026-07-15T11:29:00Z",
-            "age_days": 86.0,
+            "age_days": 87.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -4637,7 +4639,7 @@
             "baseline_action": "escalate",
             "baseline_glyph": "🚨",
             "baseline_text": "Escalate — crash/reliability",
-            "baseline_reason": "Crash/reliability issue (waited 86d) — get repro+logs if missing, confirm severity, and route to the area owner urgently."
+            "baseline_reason": "Crash/reliability issue (waited 87d) — get repro+logs if missing, confirm severity, and route to the area owner urgently."
           },
           {
             "number": 53,
@@ -4832,7 +4834,7 @@
             "comments": 1,
             "created_at": "2026-07-15T11:28:59Z",
             "updated_at": "2026-07-15T11:28:59Z",
-            "age_days": 86.0,
+            "age_days": 87.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -4840,7 +4842,7 @@
             "baseline_action": "request_info",
             "baseline_glyph": "❓",
             "baseline_text": "Request exact repro, version & logs",
-            "baseline_reason": "Bug (waited 86d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+            "baseline_reason": "Bug (waited 87d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
           },
           {
             "number": 129,
@@ -4853,7 +4855,7 @@
             "comments": 1,
             "created_at": "2026-07-15T11:29:00Z",
             "updated_at": "2026-07-15T11:29:00Z",
-            "age_days": 86.0,
+            "age_days": 87.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -4861,7 +4863,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Confirm type (bug/feature) & route",
-            "baseline_reason": "Untyped report (waited 86d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+            "baseline_reason": "Untyped report (waited 87d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
           },
           {
             "number": 139,
@@ -4929,6 +4931,27 @@
             "baseline_reason": "Untyped report (waited 37d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
           },
           {
+            "number": 181,
+            "title": "Cursor: resolve binary-policy blocker and submit WinUI plugin",
+            "url": "https://github.com/microsoft/win-dev-skills/issues/181",
+            "kind": "issue",
+            "is_community": null,
+            "labels": [],
+            "up": 0,
+            "comments": 1,
+            "created_at": "2026-09-09T13:51:35Z",
+            "updated_at": "2026-09-09T13:51:35Z",
+            "age_days": 31.0,
+            "triaged": false,
+            "awaiting": false,
+            "fix_ready": false,
+            "build_candidate": false,
+            "baseline_action": "reply",
+            "baseline_glyph": "💬",
+            "baseline_text": "Decide on this feature request",
+            "baseline_reason": "Feature/idea (waited 31d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+          },
+          {
             "number": 158,
             "title": "Track Agent Plugins 1.0 packaging and marketplace distribution",
             "url": "https://github.com/microsoft/win-dev-skills/issues/158",
@@ -4948,27 +4971,6 @@
             "baseline_glyph": "💬",
             "baseline_text": "Confirm type (bug/feature) & route",
             "baseline_reason": "Untyped report (waited 30d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
-          },
-          {
-            "number": 181,
-            "title": "Cursor: resolve binary-policy blocker and submit WinUI plugin",
-            "url": "https://github.com/microsoft/win-dev-skills/issues/181",
-            "kind": "issue",
-            "is_community": null,
-            "labels": [],
-            "up": 0,
-            "comments": 1,
-            "created_at": "2026-09-09T13:51:35Z",
-            "updated_at": "2026-09-09T13:51:35Z",
-            "age_days": 30.0,
-            "triaged": false,
-            "awaiting": false,
-            "fix_ready": false,
-            "build_candidate": false,
-            "baseline_action": "reply",
-            "baseline_glyph": "💬",
-            "baseline_text": "Decide on this feature request",
-            "baseline_reason": "Feature/idea (waited 30d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
           }
         ],
         "prs": [
@@ -5264,30 +5266,30 @@
     },
     "microsoft/WSL": {
       "totals": {
-        "open_issues": 11,
-        "open_prs": 16
+        "open_issues": 12,
+        "open_prs": 18
       },
       "category_counts": {
-        "bug": 8,
+        "bug": 9,
         "enhancement": 1,
         "feature": 2
       },
       "label_counts": {
         "feature": 3,
-        "needs-attention": 3,
+        "needs-attention": 4,
         "network": 3,
         "file system": 1,
         "distro-mgmt": 1,
         "localization": 1,
         "needs-author-feedback": 1,
-        "needs-investigation": 3,
-        "bug": 1,
+        "needs-investigation": 4,
+        "bug": 2,
         "wslc": 1,
         "emailed-logs": 2,
         "kernel": 1
       },
       "aging_buckets": {
-        "0-1d": 12,
+        "0-1d": 15,
         "2-7d": 1,
         "8-30d": 6,
         ">30d": 8
@@ -5296,32 +5298,32 @@
         "mode": "at_risk",
         "is_internal": false,
         "signals": {
-          "total": 27,
-          "issues": 11,
-          "prs": 16,
-          "community": 24,
+          "total": 30,
+          "issues": 12,
+          "prs": 18,
+          "community": 25,
           "frustrated_blocked": 5,
           "frustrated_only": 1,
           "missed_reply": 14,
           "missed_reply_basis": "source missed_reply.qualifies; days_no_reply>=7 proxy",
           "hi_score": 16,
           "hi_score_threshold": 6,
-          "bugs": 8,
-          "actionable": 24,
+          "bugs": 9,
+          "actionable": 27,
           "stale7d": 14
         },
         "headline": "⚠ Respond now — 5 frustrated/blocked; 16 high-priority (score ≥ 6; may overlap).",
         "recommendation": "Do these first."
       },
       "counts": {
-        "triaged_issues": 11,
-        "triaged_prs": 16,
+        "triaged_issues": 12,
+        "triaged_prs": 18,
         "window_active_issues": 21,
-        "window_active_prs": 10,
+        "window_active_prs": 11,
         "backlog_open_issues": 959,
-        "backlog_open_prs": 56,
+        "backlog_open_prs": 57,
         "awaiting_reply_issues": 3,
-        "awaiting_reply_prs": 49,
+        "awaiting_reply_prs": 48,
         "awaiting_label": "needs-attention",
         "window_label": "Daily (24h)"
       },
@@ -5341,7 +5343,7 @@
             "comments": 1,
             "created_at": "2025-01-27T19:48:51Z",
             "updated_at": "2026-09-29T13:57:09Z",
-            "age_days": 10.0,
+            "age_days": 11.0,
             "triaged": true,
             "awaiting": true,
             "fix_ready": false,
@@ -5349,7 +5351,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Confirm type (bug/feature) & route",
-            "baseline_reason": "Untyped report (waited 10d, 10 👍) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+            "baseline_reason": "Untyped report (waited 11d, 10 👍) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
           },
           {
             "number": 10022,
@@ -5388,7 +5390,7 @@
             "comments": 1,
             "created_at": "2025-03-16T05:59:33Z",
             "updated_at": "2026-03-13T14:02:14Z",
-            "age_days": 210.0,
+            "age_days": 211.0,
             "triaged": true,
             "awaiting": true,
             "fix_ready": false,
@@ -5396,7 +5398,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Confirm type (bug/feature) & route",
-            "baseline_reason": "Untyped report (waited 210d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+            "baseline_reason": "Untyped report (waited 211d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
           },
           {
             "number": 4699,
@@ -5412,7 +5414,7 @@
             "comments": 1,
             "created_at": "2019-11-20T14:00:45Z",
             "updated_at": "2026-10-07T12:56:51Z",
-            "age_days": 2.0,
+            "age_days": 3.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -5420,7 +5422,7 @@
             "baseline_action": "promote",
             "baseline_glyph": "⭐",
             "baseline_text": "High-demand feature — roadmap decision",
-            "baseline_reason": "Popular feature ask (waited 2d, 1191 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+            "baseline_reason": "Popular feature ask (waited 3d, 1191 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
           },
           {
             "number": 4197,
@@ -5506,7 +5508,7 @@
             "comments": 1,
             "created_at": "2019-06-17T14:44:01Z",
             "updated_at": "2026-10-07T12:56:49Z",
-            "age_days": 2.0,
+            "age_days": 3.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -5514,7 +5516,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Confirm on current build & route",
-            "baseline_reason": "Bug (waited 2d, 436 👍 high demand) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+            "baseline_reason": "Bug (waited 3d, 436 👍 high demand) — acknowledge, confirm it still repros on a current build, and route to the area owner."
           },
           {
             "number": 7456,
@@ -5551,7 +5553,7 @@
             "comments": 1,
             "created_at": "2017-06-07T14:11:29Z",
             "updated_at": "2024-11-29T12:33:28Z",
-            "age_days": 679.0,
+            "age_days": 680.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -5559,7 +5561,7 @@
             "baseline_action": "promote",
             "baseline_glyph": "⭐",
             "baseline_text": "High-demand feature — roadmap decision",
-            "baseline_reason": "Popular feature ask (waited 679d, 370 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+            "baseline_reason": "Popular feature ask (waited 680d, 370 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
           },
           {
             "number": 5118,
@@ -5735,7 +5737,7 @@
             "up": 160,
             "comments": 1,
             "created_at": "2026-06-29T23:24:23Z",
-            "updated_at": "2026-10-09T15:16:44Z",
+            "updated_at": "2026-10-09T15:45:27Z",
             "age_days": 0.0,
             "triaged": false,
             "awaiting": false,
@@ -5761,7 +5763,7 @@
             "comments": 1,
             "created_at": "2019-10-21T05:43:54Z",
             "updated_at": "2026-07-02T11:52:02Z",
-            "age_days": 99.0,
+            "age_days": 100.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -5769,7 +5771,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Confirm on current build & route",
-            "baseline_reason": "Bug (waited 99d, 157 👍 high demand) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+            "baseline_reason": "Bug (waited 100d, 157 👍 high demand) — acknowledge, confirm it still repros on a current build, and route to the area owner."
           },
           {
             "number": 4103,
@@ -5854,7 +5856,7 @@
             "comments": 1,
             "created_at": "2020-04-15T16:16:12Z",
             "updated_at": "2026-09-30T13:38:59Z",
-            "age_days": 9.0,
+            "age_days": 10.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -5862,7 +5864,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Confirm type (bug/feature) & route",
-            "baseline_reason": "Untyped report (waited 9d, 102 👍 high demand) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+            "baseline_reason": "Untyped report (waited 10d, 102 👍 high demand) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
           },
           {
             "number": 5151,
@@ -6128,7 +6130,7 @@
             "comments": 1,
             "created_at": "2024-02-21T08:52:41Z",
             "updated_at": "2026-07-28T11:32:42Z",
-            "age_days": 73.0,
+            "age_days": 74.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -6136,7 +6138,7 @@
             "baseline_action": "promote",
             "baseline_glyph": "⭐",
             "baseline_text": "High-demand feature — roadmap decision",
-            "baseline_reason": "Popular feature ask (waited 73d, 47 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+            "baseline_reason": "Popular feature ask (waited 74d, 47 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
           },
           {
             "number": 8655,
@@ -6172,7 +6174,7 @@
             "comments": 1,
             "created_at": "2023-08-10T11:50:00Z",
             "updated_at": "2026-08-21T12:14:50Z",
-            "age_days": 49.0,
+            "age_days": 50.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -6180,7 +6182,7 @@
             "baseline_action": "reply",
             "baseline_glyph": "💬",
             "baseline_text": "Confirm on current build & route",
-            "baseline_reason": "Bug (waited 49d, 44 👍 high demand) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+            "baseline_reason": "Bug (waited 50d, 44 👍 high demand) — acknowledge, confirm it still repros on a current build, and route to the area owner."
           },
           {
             "number": 11207,
@@ -6195,7 +6197,7 @@
             "comments": 1,
             "created_at": "2024-02-24T19:37:29Z",
             "updated_at": "2026-08-14T11:40:40Z",
-            "age_days": 56.0,
+            "age_days": 57.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -6203,7 +6205,7 @@
             "baseline_action": "promote",
             "baseline_glyph": "⭐",
             "baseline_text": "High-demand feature — roadmap decision",
-            "baseline_reason": "Popular feature ask (waited 56d, 43 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+            "baseline_reason": "Popular feature ask (waited 57d, 43 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
           },
           {
             "number": 6460,
@@ -7059,39 +7061,17 @@
             "baseline_reason": "PR (waited 1d) — review it."
           },
           {
-            "number": 41840,
-            "title": "Update GitPython to resolve Dependabot alerts",
-            "url": "https://github.com/microsoft/WSL/pull/41840",
+            "number": 41850,
+            "title": "Fix race condition causing potential use-after-free in NatNetworking",
+            "url": "https://github.com/microsoft/WSL/pull/41850",
             "kind": "pr",
             "is_community": null,
             "labels": [],
             "up": 0,
             "comments": 1,
-            "created_at": "2026-10-08T16:21:31Z",
-            "updated_at": "2026-10-08T21:36:33Z",
-            "age_days": 1.0,
-            "triaged": true,
-            "awaiting": true,
-            "is_draft": false,
-            "merge_state": "",
-            "review_decision": "REVIEW_REQUIRED",
-            "baseline_action": "review",
-            "baseline_glyph": "📦",
-            "baseline_text": "Dependency PR — check CI & merge/close",
-            "baseline_reason": "Dependency bump (waited 1d) — verify CI + changelog risk, then merge or close."
-          },
-          {
-            "number": 41843,
-            "title": "Clarify architecture and development commands in Copilot instructions",
-            "url": "https://github.com/microsoft/WSL/pull/41843",
-            "kind": "pr",
-            "is_community": null,
-            "labels": [],
-            "up": 0,
-            "comments": 1,
-            "created_at": "2026-10-08T20:31:11Z",
-            "updated_at": "2026-10-08T20:33:58Z",
-            "age_days": 1.0,
+            "created_at": "2026-10-09T17:29:38Z",
+            "updated_at": "2026-10-09T17:31:53Z",
+            "age_days": 0.0,
             "triaged": true,
             "awaiting": true,
             "is_draft": false,
@@ -7100,7 +7080,7 @@
             "baseline_action": "review",
             "baseline_glyph": "👀",
             "baseline_text": "Review this PR",
-            "baseline_reason": "PR (waited 1d) — review it."
+            "baseline_reason": "PR (new) — review it."
           },
           {
             "number": 40675,
@@ -7145,16 +7125,38 @@
             "baseline_glyph": "🚧",
             "baseline_text": "Wait — PR is a draft/WIP",
             "baseline_reason": "Draft/WIP PR (waited 43d) — don't review yet; nudge the author to mark it ready."
+          },
+          {
+            "number": 41502,
+            "title": "Test job refactor prototyping",
+            "url": "https://github.com/microsoft/WSL/pull/41502",
+            "kind": "pr",
+            "is_community": null,
+            "labels": [],
+            "up": 0,
+            "comments": 1,
+            "created_at": "2026-09-02T00:04:29Z",
+            "updated_at": "2026-09-02T18:06:19Z",
+            "age_days": 37.0,
+            "triaged": false,
+            "awaiting": false,
+            "is_draft": true,
+            "merge_state": "",
+            "review_decision": "REVIEW_REQUIRED",
+            "baseline_action": "wait_author",
+            "baseline_glyph": "🚧",
+            "baseline_text": "Wait — PR is a draft/WIP",
+            "baseline_reason": "Draft/WIP PR (waited 37d) — don't review yet; nudge the author to mark it ready."
           }
         ],
         "awaiting_issues": 3,
-        "awaiting_prs": 38,
+        "awaiting_prs": 37,
         "backlog_issues": 959,
-        "backlog_prs": 56,
+        "backlog_prs": 57,
         "issues_total": 3,
-        "prs_total": 49,
+        "prs_total": 48,
         "listed_issues": 959,
-        "listed_prs": 56,
+        "listed_prs": 57,
         "preview_count": 40,
         "has_more_issues": true,
         "has_more_prs": true,
@@ -7167,15 +7169,15 @@
       },
       "trends": [
         {
-          "topic": "feature",
-          "count": 3
-        },
-        {
           "topic": "needs-attention",
-          "count": 3
+          "count": 4
         },
         {
           "topic": "needs-investigation",
+          "count": 4
+        },
+        {
+          "topic": "feature",
           "count": 3
         },
         {
@@ -7183,7 +7185,7 @@
           "count": 3
         },
         {
-          "topic": "emailed-logs",
+          "topic": "bug",
           "count": 2
         }
       ]
@@ -7205,10 +7207,10 @@
         "GPU": 1
       },
       "aging_buckets": {
-        "0-1d": 1,
+        "0-1d": 2,
         "2-7d": 0,
         "8-30d": 0,
-        ">30d": 17
+        ">30d": 16
       },
       "situation": {
         "mode": "at_risk",
@@ -7220,13 +7222,13 @@
           "community": 9,
           "frustrated_blocked": 0,
           "frustrated_only": 0,
-          "missed_reply": 4,
+          "missed_reply": 6,
           "missed_reply_basis": "source missed_reply.qualifies; days_no_reply>=7 proxy",
           "hi_score": 6,
           "hi_score_threshold": 6,
           "bugs": 1,
-          "actionable": 13,
-          "stale7d": 17
+          "actionable": 12,
+          "stale7d": 16
         },
         "headline": "⚠ Respond now — 0 frustrated/blocked; 6 high-priority (score ≥ 6; may overlap).",
         "recommendation": "Do these first."
@@ -7371,7 +7373,7 @@
               "fixinbound",
               "rdp-client-connection"
             ],
-            "up": 51,
+            "up": 52,
             "comments": 1,
             "created_at": "2022-11-17T11:38:04Z",
             "updated_at": "2026-10-09T02:38:16Z",
@@ -7383,7 +7385,7 @@
             "baseline_action": "no_action",
             "baseline_glyph": "🚧",
             "baseline_text": "In progress — track the fix",
-            "baseline_reason": "Already being worked (waited 1d, 51 👍 high demand) — a fix/PR is in flight; track it to completion, don't re-triage or close."
+            "baseline_reason": "Already being worked (waited 1d, 52 👍 high demand) — a fix/PR is in flight; track it to completion, don't re-triage or close."
           },
           {
             "number": 1148,
@@ -7683,7 +7685,7 @@
             "comments": 1,
             "created_at": "2021-06-15T07:57:05Z",
             "updated_at": "2025-10-06T12:37:37Z",
-            "age_days": 368.0,
+            "age_days": 369.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -7691,7 +7693,7 @@
             "baseline_action": "await_author",
             "baseline_glyph": "⏳",
             "baseline_text": "Waiting on user info — nudge or close",
-            "baseline_reason": "Waiting on the reporter's info (waited 368d, 24 👍 high demand) — ball is with them; nudge once, or close as stale if no response."
+            "baseline_reason": "Waiting on the reporter's info (waited 369d, 24 👍 high demand) — ball is with them; nudge once, or close as stale if no response."
           },
           {
             "number": 1250,
@@ -7798,7 +7800,7 @@
             "comments": 1,
             "created_at": "2021-08-27T14:03:06Z",
             "updated_at": "2026-07-29T13:16:37Z",
-            "age_days": 72.0,
+            "age_days": 73.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -7806,7 +7808,7 @@
             "baseline_action": "promote",
             "baseline_glyph": "⭐",
             "baseline_text": "High-demand feature — roadmap decision",
-            "baseline_reason": "Popular feature ask (waited 72d, 21 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+            "baseline_reason": "Popular feature ask (waited 73d, 21 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
           },
           {
             "number": 908,
@@ -8081,7 +8083,7 @@
             "comments": 1,
             "created_at": "2022-04-29T15:15:25Z",
             "updated_at": "2026-10-05T11:57:06Z",
-            "age_days": 4.0,
+            "age_days": 5.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -8089,7 +8091,7 @@
             "baseline_action": "no_action",
             "baseline_glyph": "🚧",
             "baseline_text": "In progress — track the fix",
-            "baseline_reason": "Already being worked (waited 4d, 16 👍) — a fix/PR is in flight; track it to completion, don't re-triage or close."
+            "baseline_reason": "Already being worked (waited 5d, 16 👍) — a fix/PR is in flight; track it to completion, don't re-triage or close."
           },
           {
             "number": 166,
@@ -8151,7 +8153,7 @@
             "comments": 1,
             "created_at": "2024-05-13T23:42:12Z",
             "updated_at": "2025-07-13T13:29:06Z",
-            "age_days": 453.0,
+            "age_days": 454.0,
             "triaged": false,
             "awaiting": false,
             "fix_ready": false,
@@ -8159,7 +8161,7 @@
             "baseline_action": "reassess_stale",
             "baseline_glyph": "🗓️",
             "baseline_text": "Old unconfirmed bug — revalidate or close stale",
-            "baseline_reason": "Old bug (waited 453d, 15 👍) with little activity — re-test on a current build; route only if it still repros, else close as stale."
+            "baseline_reason": "Old bug (waited 454d, 15 👍) with little activity — re-test on a current build; route only if it still repros, else close as stale."
           },
           {
             "number": 173,
@@ -8631,11 +8633,11 @@
   "trends": [
     {
       "topic": "Needs-Triage",
-      "count": 35
+      "count": 36
     },
     {
       "topic": "Issue-Bug",
-      "count": 15
+      "count": 16
     },
     {
       "topic": "Needs-Tag-Fix",
@@ -8643,7 +8645,7 @@
     },
     {
       "topic": "Needs-Team-Response",
-      "count": 14
+      "count": 15
     },
     {
       "topic": "agentic-workflows",
@@ -8920,7 +8922,7 @@
       "owner_kind": "reviewer",
       "current_labels": [],
       "updated_at": "2026-10-09T12:35:41Z",
-      "priority_age_days": 0.0,
+      "priority_age_days": 1.0,
       "days_awaiting": 0.0,
       "aging_basis": "PR days_since_update",
       "pr_merge_state": "MERGEABLE",
@@ -8945,21 +8947,21 @@
       "classification_type": "bug-fix",
       "next_action_glyph": "👀",
       "next_action": "needs_review",
-      "next_action_reason": "The collection comparison fix is open with review required; CI is still running and no review is recorded.",
+      "next_action_reason": "Open and mergeable with all reported checks successful, but reviewDecision is REVIEW_REQUIRED and no reviewer is requested.",
       "suggested_labels": [],
       "suggested_reply": "",
       "suggested_owner": "",
-      "owner_evidence": "skipped: author is MEMBER-associated or automated; community-only reviewer suggestion is not applicable; skipped: no dynwinrt-specific CODEOWNERS or reviewer ownership evidence is available",
-      "owner_fallback_reason": "skipped: author is MEMBER-associated or automated; community-only reviewer suggestion is not applicable; skipped: no dynwinrt-specific CODEOWNERS or reviewer ownership evidence is available",
+      "owner_evidence": "skipped: no CODEOWNERS found at .github/CODEOWNERS, CODEOWNERS, or docs/CODEOWNERS; skipped: shared ownership table has no dynwinrt-specific path owner; skipped: target repository was not cloned as required by the pro...",
+      "owner_fallback_reason": "skipped: no CODEOWNERS found at .github/CODEOWNERS, CODEOWNERS, or docs/CODEOWNERS; skipped: shared ownership table has no dynwinrt-specific path owner; skipped: target repository was not cloned as required by the pro...",
       "owner_kind": "reviewer",
       "current_labels": [],
-      "updated_at": "2026-10-09T15:01:52Z",
+      "updated_at": "2026-10-09T17:13:33Z",
       "priority_age_days": 0.0,
       "days_awaiting": 0.0,
       "aging_basis": "PR days_since_update",
       "pr_merge_state": "MERGEABLE",
       "pr_review_decision": "REVIEW_REQUIRED",
-      "pr_ci_rollup": "PENDING",
+      "pr_ci_rollup": "SUCCESS",
       "pr_failing_jobs": [],
       "pr_latest_human_review": ""
     },
@@ -8977,26 +8979,24 @@
       "severity": "bug",
       "sentiment": "",
       "classification_type": "bug-fix",
-      "next_action_glyph": "🔴",
-      "next_action": "fix_ci",
-      "next_action_reason": "The coverage check failed after the latest author commit; remaining checks are still running, so the author should inspect the failure before review.",
+      "next_action_glyph": "👀",
+      "next_action": "needs_review",
+      "next_action_reason": "Open and mergeable with all reported checks successful, but reviewDecision is REVIEW_REQUIRED and no reviewer is requested.",
       "suggested_labels": [],
-      "suggested_reply": "Hi @lei9444, the `coverage` check is failing on this PR: https://github.com/microsoft/dynwinrt/actions/runs/37947579150/job/113877752635. Could you review the failed coverage check and push a fix, or let us know if the failure is unrelated? The remaining checks are still running.",
+      "suggested_reply": "",
       "suggested_owner": "",
-      "owner_evidence": "skipped: author is MEMBER-associated or automated; community-only reviewer suggestion is not applicable; skipped: no dynwinrt-specific CODEOWNERS or reviewer ownership evidence is available",
-      "owner_fallback_reason": "skipped: author is MEMBER-associated or automated; community-only reviewer suggestion is not applicable; skipped: no dynwinrt-specific CODEOWNERS or reviewer ownership evidence is available",
+      "owner_evidence": "skipped: no CODEOWNERS found at .github/CODEOWNERS, CODEOWNERS, or docs/CODEOWNERS; skipped: shared ownership table has no dynwinrt-specific path owner; skipped: target repository was not cloned as required by the pro...",
+      "owner_fallback_reason": "skipped: no CODEOWNERS found at .github/CODEOWNERS, CODEOWNERS, or docs/CODEOWNERS; skipped: shared ownership table has no dynwinrt-specific path owner; skipped: target repository was not cloned as required by the pro...",
       "owner_kind": "reviewer",
       "current_labels": [],
-      "updated_at": "2026-10-09T15:08:02Z",
+      "updated_at": "2026-10-09T16:30:31Z",
       "priority_age_days": 0.0,
       "days_awaiting": 0.0,
       "aging_basis": "PR days_since_update",
       "pr_merge_state": "MERGEABLE",
       "pr_review_decision": "REVIEW_REQUIRED",
-      "pr_ci_rollup": "FAILURE",
-      "pr_failing_jobs": [
-        "coverage"
-      ],
+      "pr_ci_rollup": "SUCCESS",
+      "pr_failing_jobs": [],
       "pr_latest_human_review": ""
     },
     {
@@ -9060,7 +9060,7 @@
       "owner_kind": "reviewer",
       "current_labels": [],
       "updated_at": "2026-05-20T13:16:24Z",
-      "priority_age_days": 142.0,
+      "priority_age_days": 143.0,
       "days_awaiting": 0.0,
       "aging_basis": "PR days_since_update",
       "pr_merge_state": "MERGEABLE",
@@ -9408,7 +9408,7 @@
       "owner_kind": "reviewer",
       "current_labels": [],
       "updated_at": "2026-07-20T13:47:42Z",
-      "priority_age_days": 81.0,
+      "priority_age_days": 82.0,
       "days_awaiting": 0.0,
       "aging_basis": "PR days_since_update",
       "pr_merge_state": "UNKNOWN",
@@ -10195,7 +10195,7 @@
       ],
       "updated_at": "2026-09-28T15:52:37Z",
       "priority_age_days": 0.0,
-      "days_awaiting": 10.0,
+      "days_awaiting": 0.0,
       "aging_basis": "issue days_no_reply",
       "pr_merge_state": "",
       "pr_review_decision": "",
@@ -10232,7 +10232,7 @@
       ],
       "updated_at": "2026-09-30T06:04:27Z",
       "priority_age_days": 0.0,
-      "days_awaiting": 9.0,
+      "days_awaiting": 0.0,
       "aging_basis": "issue days_no_reply",
       "pr_merge_state": "",
       "pr_review_decision": "",
@@ -10288,23 +10288,23 @@
       "days_no_reply": 0,
       "missed_reply": false,
       "is_community": true,
-      "score": 5.0,
-      "severity": "none",
+      "score": 6.0,
+      "severity": "risk",
       "sentiment": "",
       "classification_type": "feature",
       "next_action_glyph": "👀",
       "next_action": "needs_review",
-      "next_action_reason": "All required checks and CLA pass, but reviewDecision is REVIEW_REQUIRED and mergeStateStatus is BLOCKED. The automated review asks for human validation of lifecycle behavior and live Terminal delivery.",
+      "next_action_reason": "All required checks and the CLA pass, but reviewDecision is REVIEW_REQUIRED and mergeStateStatus is BLOCKED. The automated review flags a possible lifecycle race and live Terminal UI delivery is unverified; human review is still required.",
       "suggested_labels": [],
-      "suggested_reply": "Hi @DDKinger, could you take a first review of #1076? It adds OpenCode V2 support in the bundled hook plugin; the author reports V1 compatibility checks, while live delivery through the Terminal UI and shared V2 server still needs validation.",
+      "suggested_reply": "Hi @DDKinger, could you take a first human review of #1076? It touches the OpenCode hook bridge; the latest change to this exact file is yours in #571, following the OpenCode hook work in #476. Copilot's review flags a possible pending-session lookup race that could resurrect a deleted session; please verify this against the teardown lifecycle and the live Terminal UI delivery gap called out in the PR before approval.",
       "suggested_owner": "DDKinger",
-      "owner_evidence": "No CODEOWNERS file exists.; Latest history for tools/wta/wt-agent-hooks/opencode/wt-agent-hooks.js is DDKinger in #571 (2026-08-20); earlier OpenCode hook work is vanzue in #476 (2026-07-23).",
-      "owner_fallback_reason": "No CODEOWNERS file exists.; Latest history for tools/wta/wt-agent-hooks/opencode/wt-agent-hooks.js is DDKinger in #571 (2026-08-20); earlier OpenCode hook work is vanzue in #476 (2026-07-23).",
+      "owner_evidence": "No CODEOWNERS file exists at the checked repository paths.; Latest commit touching tools/wta/wt-agent-hooks/opencode/wt-agent-hooks.js is by DDKinger in #571 (2026-08-20); earlier OpenCode hook support touching the sa...",
+      "owner_fallback_reason": "No CODEOWNERS file exists at the checked repository paths.; Latest commit touching tools/wta/wt-agent-hooks/opencode/wt-agent-hooks.js is by DDKinger in #571 (2026-08-20); earlier OpenCode hook support touching the sa...",
       "owner_kind": "reviewer",
       "current_labels": [],
       "updated_at": "2026-10-04T06:16:45Z",
       "priority_age_days": 6.0,
-      "days_awaiting": 0.0,
+      "days_awaiting": 4.0,
       "aging_basis": "PR days_since_update",
       "pr_merge_state": "BLOCKED",
       "pr_review_decision": "REVIEW_REQUIRED",
@@ -10669,7 +10669,7 @@
       "owner_kind": "reviewer",
       "current_labels": [],
       "updated_at": "2026-10-09T11:25:23Z",
-      "priority_age_days": 0.0,
+      "priority_age_days": 1.0,
       "days_awaiting": 0.0,
       "aging_basis": "PR days_since_update",
       "pr_merge_state": "UNKNOWN",
@@ -11575,12 +11575,51 @@
         "Ready for review"
       ],
       "updated_at": "2026-09-02T13:51:47Z",
-      "priority_age_days": 37.0,
+      "priority_age_days": 38.0,
       "days_awaiting": 0.0,
       "aging_basis": "PR days_since_update",
       "pr_merge_state": "MERGEABLE",
       "pr_review_decision": "REVIEW_REQUIRED",
       "pr_ci_rollup": "SUCCESS",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": ""
+    },
+    {
+      "repo": "microsoft/PowerToys",
+      "number": 50616,
+      "title": "PowerToys general settings lost on every restart unless manually exited from tray",
+      "url": "https://github.com/microsoft/PowerToys/issues/50616",
+      "kind": "issue",
+      "category": "bug",
+      "days_no_reply": 17,
+      "missed_reply": true,
+      "is_community": true,
+      "score": 10.0,
+      "severity": "crash",
+      "sentiment": "frustrated",
+      "classification_type": "bug",
+      "next_action_glyph": "💬",
+      "next_action": "reply",
+      "next_action_reason": "Repeated settings loss after restart is data loss; bug-report ZIP and 3 thumbs-up; team response overdue 17 days.",
+      "suggested_labels": [],
+      "suggested_reply": "Thanks for the workaround and bug-report ZIP. The fact that settings persist only while settings.json is read-only is useful evidence for the settings-reset failure; please keep the ZIP with the report. No additional logs or reproduction steps are needed.",
+      "suggested_owner": "",
+      "owner_evidence": "No PowerToys product-area CODEOWNERS or verified closing-PR/git-log ownership chain was available; no owner guessed.",
+      "owner_fallback_reason": "No PowerToys product-area CODEOWNERS or verified closing-PR/git-log ownership chain was available; no owner guessed.",
+      "owner_kind": "assignee",
+      "current_labels": [
+        "Issue-Bug",
+        "Product-Settings",
+        "Needs-Triage",
+        "Needs-Team-Response"
+      ],
+      "updated_at": "2026-09-29T03:27:37Z",
+      "priority_age_days": 17.0,
+      "days_awaiting": 17.0,
+      "aging_basis": "issue days_no_reply",
+      "pr_merge_state": "",
+      "pr_review_decision": "",
+      "pr_ci_rollup": "",
       "pr_failing_jobs": [],
       "pr_latest_human_review": ""
     },
@@ -11711,21 +11750,21 @@
       "classification_type": "feature",
       "next_action_glyph": "🔄",
       "next_action": "needs_rebase",
-      "next_action_reason": "Community PR conflicts with staging; the latest author comment offers a way to remove duplicated agent guidance, and the contributor has waited 40d for team follow-up.",
+      "next_action_reason": "The PR targets staging but GitHub reports DIRTY merge state. The community author has also waited 40d for a response to the proposed shared-skill design.",
       "suggested_labels": [
         "enhancement"
       ],
-      "suggested_reply": "Hi @Zhanyuanium, thanks for the follow-up. This PR targets `staging` and GitHub reports conflicts; could you rebase against `origin/staging`? Your suggestion to move the shared Process and Best Practices into a skill would also avoid duplicating the agent prompts. Once updated, we can take another look.",
+      "suggested_reply": "Hi @Zhanyuanium, thanks for the follow-up, and sorry we left this waiting. Extracting the shared Process and Best Practices into a skill sounds like a good way to avoid prompt drift. GitHub currently reports conflicts against `staging`; could you update the branch and, if that approach is still your intent, include the extraction? Once updated, @nmetulev can re-review.",
       "suggested_owner": "nmetulev",
-      "owner_evidence": "CODEOWNERS: wildcard ownership assigns @nmetulev, @azchohfi, and @niels9001 to all changed files.; GitHub commit history: nmetulev authored 5 of the 9 most recent README.md commits; README.md is part of this PR.",
-      "owner_fallback_reason": "CODEOWNERS: wildcard ownership assigns @nmetulev, @azchohfi, and @niels9001 to all changed files.; GitHub commit history: nmetulev authored 5 of the 9 most recent README.md commits; README.md is part of this PR.",
+      "owner_evidence": "CODEOWNERS: wildcard ownership assigns @nmetulev, @azchohfi, and @niels9001 to all changed files.; GitHub commit history: nmetulev authored 5 of the 9 most recent README.md commits; README.md is part of this PR.; nmet...",
+      "owner_fallback_reason": "CODEOWNERS: wildcard ownership assigns @nmetulev, @azchohfi, and @niels9001 to all changed files.; GitHub commit history: nmetulev authored 5 of the 9 most recent README.md commits; README.md is part of this PR.; nmet...",
       "owner_kind": "reviewer",
       "current_labels": [],
       "updated_at": "2026-08-30T04:49:41Z",
       "priority_age_days": 40.0,
       "days_awaiting": 40.0,
       "aging_basis": "PR waiting age",
-      "pr_merge_state": "CONFLICTING",
+      "pr_merge_state": "DIRTY",
       "pr_review_decision": "REVIEW_REQUIRED",
       "pr_ci_rollup": "SUCCESS",
       "pr_failing_jobs": [],
@@ -12949,6 +12988,112 @@
       "pr_latest_human_review": ""
     },
     {
+      "repo": "microsoft/WSL",
+      "number": 41848,
+      "title": "wslc commands fail with ERROR_NO_SYSTEM_RESOURCES (list, container stats, network list)",
+      "url": "https://github.com/microsoft/WSL/issues/41848",
+      "kind": "issue",
+      "category": "bug",
+      "days_no_reply": 0,
+      "missed_reply": false,
+      "is_community": true,
+      "score": 4.0,
+      "severity": "bug",
+      "sentiment": "confused",
+      "classification_type": "bug",
+      "next_action_glyph": "💬",
+      "next_action": "reply",
+      "next_action_reason": "The reporter has supplied version, a multi-command repro, and a Feedback Hub submission, then asked a direct question about obtaining sanitized logs without running PowerShell; reply with the currently documented diagnostic route rather than requesting already-provided repro/version details.",
+      "suggested_labels": [
+        "bug",
+        "needs-attention",
+        "needs-investigation"
+      ],
+      "suggested_reply": "Thanks for the detailed repro, including WSL 3.0.1.0, Windows 10.0.19045.7663, and the three failing wslc commands. The documented WSL diagnostic collection method is the `collect-wsl-logs.ps1` script linked in the automated comment; we do not have a documented manual, no-script procedure that produces the same sanitized bundle. Since you have already submitted Feedback Hub feedback, please share its Feedback Hub link if one becomes available. If you cannot run the script, let us know what prevents it and we can advise on the safest supported option.",
+      "suggested_owner": "",
+      "owner_evidence": "skipped: no confirmed WSL area owner could be established from candidate paths and repository ownership evidence.; skipped: no similar closed issue and closing-PR trail verified.; skipped: no closing PR changed files ...",
+      "owner_fallback_reason": "skipped: no confirmed WSL area owner could be established from candidate paths and repository ownership evidence.; skipped: no similar closed issue and closing-PR trail verified.; skipped: no closing PR changed files ...",
+      "owner_kind": "assignee",
+      "current_labels": [],
+      "updated_at": "2026-10-09T16:03:10Z",
+      "priority_age_days": 0.0,
+      "days_awaiting": 0.0,
+      "aging_basis": "issue days_no_reply",
+      "pr_merge_state": "",
+      "pr_review_decision": "",
+      "pr_ci_rollup": "",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": ""
+    },
+    {
+      "repo": "microsoft/WSL",
+      "number": 41849,
+      "title": "Fix CaseSensitivityDeepNesting test build failure",
+      "url": "https://github.com/microsoft/WSL/pull/41849",
+      "kind": "pr",
+      "category": "bug-fix",
+      "days_no_reply": 0,
+      "missed_reply": false,
+      "is_community": false,
+      "score": 1.0,
+      "severity": "bug",
+      "sentiment": "",
+      "classification_type": "bug-fix",
+      "next_action_glyph": "👀",
+      "next_action": "needs_review",
+      "next_action_reason": "Three maintainer approvals are recorded; wait for the in-progress `wsl-github-pr (test wsl2 tests - rs_prerelease)` check before considering merge. No failing check is reported.",
+      "suggested_labels": [],
+      "suggested_reply": "",
+      "suggested_owner": "",
+      "owner_evidence": "skipped: internal PR; reviewer suggestion is not applicable.",
+      "owner_fallback_reason": "skipped: internal PR; reviewer suggestion is not applicable.",
+      "owner_kind": "reviewer",
+      "current_labels": [],
+      "updated_at": "2026-10-09T17:12:01Z",
+      "priority_age_days": 0.0,
+      "days_awaiting": 0.0,
+      "aging_basis": "PR days_since_update",
+      "pr_merge_state": "UNKNOWN",
+      "pr_review_decision": "APPROVED",
+      "pr_ci_rollup": "PENDING",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": "beena352"
+    },
+    {
+      "repo": "microsoft/WSL",
+      "number": 41850,
+      "title": "Fix race condition causing potential use-after-free in NatNetworking",
+      "url": "https://github.com/microsoft/WSL/pull/41850",
+      "kind": "pr",
+      "category": "bug-fix",
+      "days_no_reply": 0,
+      "missed_reply": false,
+      "is_community": false,
+      "score": 3.0,
+      "severity": "risk",
+      "sentiment": "",
+      "classification_type": "bug-fix",
+      "next_action_glyph": "👀",
+      "next_action": "needs_review",
+      "next_action_reason": "Potential use-after-free fix has a Copilot approval recommendation and the WSL review team is requested, but no human maintainer review is recorded yet; build checks are still running.",
+      "suggested_labels": [],
+      "suggested_reply": "",
+      "suggested_owner": "",
+      "owner_evidence": "skipped: internal PR; reviewer suggestion is not applicable.",
+      "owner_fallback_reason": "skipped: internal PR; reviewer suggestion is not applicable.",
+      "owner_kind": "reviewer",
+      "current_labels": [],
+      "updated_at": "2026-10-09T17:31:53Z",
+      "priority_age_days": 0.0,
+      "days_awaiting": 0.0,
+      "aging_basis": "PR days_since_update",
+      "pr_merge_state": "UNKNOWN",
+      "pr_review_decision": "REVIEW_REQUIRED",
+      "pr_ci_rollup": "PENDING",
+      "pr_failing_jobs": [],
+      "pr_latest_human_review": ""
+    },
+    {
       "repo": "microsoft/wslg",
       "number": 1046,
       "title": "WSLGd: load keymap settings from .wslgconfig into weston.ini",
@@ -12962,14 +13107,14 @@
       "severity": "none",
       "sentiment": "",
       "classification_type": "feature",
-      "next_action_glyph": "👀",
-      "next_action": "needs_review",
-      "next_action_reason": "Resolve the outstanding configuration-design question before asking the contributor to rebase; the merge state is conflicting.",
+      "next_action_glyph": "🔄",
+      "next_action": "needs_rebase",
+      "next_action_reason": "GitHub reports DIRTY; the maintainer also needs to decide the configuration direction and the Weston mirror dependency before requesting rework.",
       "suggested_labels": [],
-      "suggested_reply": "Hi @fargiolas, thanks for clarifying. You are right that the configuration-design decision is on us. Your latest note says you remain interested and shared a working workaround; we should settle whether this supported configuration surface is still planned before asking you to rebase. We will update this PR with that decision and a concrete next step.",
+      "suggested_reply": "Hi @fargiolas, thanks for clarifying. You are right that the configuration-design decision is on us. The branch also conflicts with main and depends on the Weston mirror; we will confirm whether the .wslgconfig approach is still the direction before asking you to rebase or refresh WSLGd/main.cpp.",
       "suggested_owner": "",
-      "owner_evidence": "skipped: no CODEOWNERS file exists.; skipped: repository path history was not verified.",
-      "owner_fallback_reason": "skipped: no CODEOWNERS file exists.; skipped: repository path history was not verified.",
+      "owner_evidence": "skipped: no WSLg CODEOWNERS ownership mapping was found.; skipped: the prior reviewer evidence identifies only a community-associated account, not an internal reviewer.; skipped: no verified internal git-history signa...",
+      "owner_fallback_reason": "skipped: no WSLg CODEOWNERS ownership mapping was found.; skipped: the prior reviewer evidence identifies only a community-associated account, not an internal reviewer.; skipped: no verified internal git-history signa...",
       "owner_kind": "reviewer",
       "current_labels": [
         "enhancement",
@@ -12979,7 +13124,7 @@
       "priority_age_days": 138.0,
       "days_awaiting": 138.0,
       "aging_basis": "PR waiting age",
-      "pr_merge_state": "CONFLICTING",
+      "pr_merge_state": "DIRTY",
       "pr_review_decision": "REVIEW_REQUIRED",
       "pr_ci_rollup": "SUCCESS",
       "pr_failing_jobs": [],
@@ -13064,8 +13209,8 @@
       "url": "https://github.com/microsoft/wslg/pull/1413",
       "kind": "pr",
       "category": "build",
-      "days_no_reply": 0,
-      "missed_reply": false,
+      "days_no_reply": 136,
+      "missed_reply": true,
       "is_community": true,
       "score": 6.0,
       "severity": "none",
@@ -13073,12 +13218,12 @@
       "classification_type": "build",
       "next_action_glyph": "👀",
       "next_action": "needs_review",
-      "next_action_reason": "The prior internal hold is over four months old; verify the Weston-version dependency and resume or explain the review hold.",
+      "next_action_reason": "Confirm whether the Weston 14.x vendor bump is now queued before reviewing the debuginfo paths; the latest maintainer note explicitly held the change on that dependency.",
       "suggested_labels": [],
-      "suggested_reply": "Hi @linghengqian, our last update said this is held until the Weston 14.x vendor bump is queued. We have not posted a current status here; a maintainer needs to confirm the dependency status before asking for any changes.",
+      "suggested_reply": "Hi @linghengqian, this is still held on confirming the Weston 14.x vendor bump in the WSLg build. We will check that dependency and then resume review or explain the remaining blocker; the hold is not a rejection of the change.",
       "suggested_owner": "",
-      "owner_evidence": "skipped: no CODEOWNERS file exists.; skipped: repository path history was not verified.",
-      "owner_fallback_reason": "skipped: no CODEOWNERS file exists.; skipped: repository path history was not verified.",
+      "owner_evidence": "No CODEOWNERS file was found at the checked repository paths.",
+      "owner_fallback_reason": "No CODEOWNERS file was found at the checked repository paths.",
       "owner_kind": "reviewer",
       "current_labels": [
         "documentation"
@@ -13086,8 +13231,8 @@
       "updated_at": "2026-05-26T14:12:18Z",
       "priority_age_days": 136.0,
       "days_awaiting": 136.0,
-      "aging_basis": "PR days_since_update",
-      "pr_merge_state": "MERGEABLE",
+      "aging_basis": "PR waiting age",
+      "pr_merge_state": "BLOCKED",
       "pr_review_decision": "REVIEW_REQUIRED",
       "pr_ci_rollup": "SUCCESS",
       "pr_failing_jobs": [],
@@ -13100,8 +13245,8 @@
       "url": "https://github.com/microsoft/wslg/pull/1418",
       "kind": "pr",
       "category": "feature",
-      "days_no_reply": 83,
-      "missed_reply": true,
+      "days_no_reply": 0,
+      "missed_reply": false,
       "is_community": true,
       "score": 8.0,
       "severity": "risk",
@@ -13109,9 +13254,9 @@
       "classification_type": "feature",
       "next_action_glyph": "👀",
       "next_action": "needs_review",
-      "next_action_reason": "High-impact audio-stack PR has no internal reviewer, three unresolved automated review threads, and needs a human validation plan.",
+      "next_action_reason": "The author tested the branch and replied after the latest automated review; no author rework is currently requested. A human maintainer review remains required (reviewDecision=REVIEW_REQUIRED, mergeStateStatus=BLOCKED).",
       "suggested_labels": [],
-      "suggested_reply": "Thanks for clarifying the earlier review note. This change still needs an internal pass on end-to-end audio behavior, Component Governance, and the full build flow; the latest automated review also raised runtime-safety, latency, and sample-alignment issues. We'll follow up with concrete next steps after a human review.",
+      "suggested_reply": "Thanks for testing this locally and sharing your review. The latest automated review shows zero open findings, but it is not a maintainer approval; we still owe a human review of the audio/RDP changes and the merge blocker. Please hold off on additional changes for now—we will review the current branch and follow up with concrete findings.",
       "suggested_owner": "",
       "owner_evidence": "skipped: no CODEOWNERS file exists.; skipped: no verified path-owner history was gathered for this multi-area change.",
       "owner_fallback_reason": "skipped: no CODEOWNERS file exists.; skipped: no verified path-owner history was gathered for this multi-area change.",
@@ -13120,11 +13265,11 @@
         "enhancement",
         "audio-redirection"
       ],
-      "updated_at": "2026-10-09T14:03:08Z",
-      "priority_age_days": 83.0,
-      "days_awaiting": 83.0,
-      "aging_basis": "PR waiting age",
-      "pr_merge_state": "MERGEABLE",
+      "updated_at": "2026-10-09T15:14:43Z",
+      "priority_age_days": 0.0,
+      "days_awaiting": 0.0,
+      "aging_basis": "PR days_since_update",
+      "pr_merge_state": "BLOCKED",
       "pr_review_decision": "REVIEW_REQUIRED",
       "pr_ci_rollup": "SUCCESS",
       "pr_failing_jobs": [],
@@ -13137,21 +13282,21 @@
       "url": "https://github.com/microsoft/wslg/pull/1419",
       "kind": "pr",
       "category": "build",
-      "days_no_reply": 0,
-      "missed_reply": false,
+      "days_no_reply": 136,
+      "missed_reply": true,
       "is_community": true,
       "score": 8.0,
       "severity": "risk",
       "sentiment": "",
       "classification_type": "build",
-      "next_action_glyph": "👀",
-      "next_action": "needs_review",
-      "next_action_reason": "Resolve the internal Mesa version and source-mirror decisions before asking the contributor to rebase; the branch currently conflicts.",
+      "next_action_glyph": "🔄",
+      "next_action": "needs_rebase",
+      "next_action_reason": "GitHub reports DIRTY, but the team should settle the Mesa target and source-mirror decision and complete the buddy build before asking for a rebase.",
       "suggested_labels": [],
-      "suggested_reply": "Hi @linghengqian, we owe an update on the Mesa target and source-mirror checks noted in our last review. Please do not rebase based only on the current conflict status; a maintainer needs to confirm the version, source policy, and internal build validation first.",
-      "suggested_owner": "",
-      "owner_evidence": "skipped: no CODEOWNERS file exists.; skipped: repository path history was not verified.",
-      "owner_fallback_reason": "skipped: no CODEOWNERS file exists.; skipped: repository path history was not verified.",
+      "suggested_reply": "Hi @linghengqian, we still owe you the Mesa target-version and source-mirror decision plus the internal full-stack buddy build. Please do not rebase yet; we will confirm the target and follow up with any required changes.",
+      "suggested_owner": "benhillis",
+      "owner_evidence": "No CODEOWNERS file was found at the checked repository paths.; GitHub history shows benhillis updating azure-pipelines.yml on 2026-05-15.; GitHub history shows benhillis updating config/BUILD.md on 2026-01-09; both fi...",
+      "owner_fallback_reason": "No CODEOWNERS file was found at the checked repository paths.; GitHub history shows benhillis updating azure-pipelines.yml on 2026-05-15.; GitHub history shows benhillis updating config/BUILD.md on 2026-01-09; both fi...",
       "owner_kind": "reviewer",
       "current_labels": [
         "GPU"
@@ -13159,8 +13304,8 @@
       "updated_at": "2026-05-26T14:12:35Z",
       "priority_age_days": 136.0,
       "days_awaiting": 136.0,
-      "aging_basis": "PR days_since_update",
-      "pr_merge_state": "CONFLICTING",
+      "aging_basis": "PR waiting age",
+      "pr_merge_state": "DIRTY",
       "pr_review_decision": "REVIEW_REQUIRED",
       "pr_ci_rollup": "SUCCESS",
       "pr_failing_jobs": [],
@@ -13173,21 +13318,21 @@
       "url": "https://github.com/microsoft/wslg/pull/1422",
       "kind": "pr",
       "category": "bug-fix",
-      "days_no_reply": 0,
-      "missed_reply": false,
+      "days_no_reply": 136,
+      "missed_reply": true,
       "is_community": true,
-      "score": 6.0,
+      "score": 7.0,
       "severity": "bug",
       "sentiment": "",
       "classification_type": "bug-fix",
       "next_action_glyph": "👀",
       "next_action": "needs_review",
-      "next_action_reason": "The contributor updated after the internal review note; complete the promised review and buddy-build validation.",
+      "next_action_reason": "The team promised a review and a Wayland-only buddy build; validate the chmod logging consistency and the absent-/tmp/.X11-unix path.",
       "suggested_labels": [],
-      "suggested_reply": "Hi @linghengqian, thanks for waiting. Our last update said the next step is an internal buddy build for the Wayland-only setup and a maintainer review of the error handling. No additional information is needed from you; we need to post the test/review result or a concrete follow-up.",
-      "suggested_owner": "",
-      "owner_evidence": "skipped: no CODEOWNERS file exists.; skipped: repository path history was not verified.",
-      "owner_fallback_reason": "skipped: no CODEOWNERS file exists.; skipped: repository path history was not verified.",
+      "suggested_reply": "Hi @linghengqian, thanks for waiting. This is still pending our internal Wayland-only buddy build and maintainer review of the chmod-error wording. No additional information is needed from you; we will update with the test result and any specific follow-up.",
+      "suggested_owner": "benhillis",
+      "owner_evidence": "No CODEOWNERS file was found at the checked repository paths.; GitHub history for WSLGd/main.cpp includes benhillis changes to runtime-directory permissions; this PR also changes X11 socket permissions in that file.",
+      "owner_fallback_reason": "No CODEOWNERS file was found at the checked repository paths.; GitHub history for WSLGd/main.cpp includes benhillis changes to runtime-directory permissions; this PR also changes X11 socket permissions in that file.",
       "owner_kind": "reviewer",
       "current_labels": [
         "bug"
@@ -13195,8 +13340,8 @@
       "updated_at": "2026-05-26T14:11:41Z",
       "priority_age_days": 136.0,
       "days_awaiting": 136.0,
-      "aging_basis": "PR days_since_update",
-      "pr_merge_state": "MERGEABLE",
+      "aging_basis": "PR waiting age",
+      "pr_merge_state": "BLOCKED",
       "pr_review_decision": "REVIEW_REQUIRED",
       "pr_ci_rollup": "SUCCESS",
       "pr_failing_jobs": [],
@@ -13212,18 +13357,18 @@
       "days_no_reply": 0,
       "missed_reply": false,
       "is_community": true,
-      "score": 0.0,
+      "score": 4.0,
       "severity": "none",
       "sentiment": "",
       "classification_type": "feature",
-      "next_action_glyph": "⏸",
-      "next_action": "wait_on_author",
-      "next_action_reason": "The last team comment asks for the use case and there has been no contributor reply; do not send another review request yet.",
+      "next_action_glyph": "✅",
+      "next_action": "no_action",
+      "next_action_reason": "The latest team comment asks the author to confirm the container-volume use case and update the PR description; no further team reply is owed until then.",
       "suggested_labels": [],
       "suggested_reply": "",
       "suggested_owner": "",
-      "owner_evidence": "skipped: no CODEOWNERS file exists.; skipped: contributor use-case clarification is still outstanding.",
-      "owner_fallback_reason": "skipped: no CODEOWNERS file exists.; skipped: contributor use-case clarification is still outstanding.",
+      "owner_evidence": "No CODEOWNERS file was found at the checked repository paths.",
+      "owner_fallback_reason": "No CODEOWNERS file was found at the checked repository paths.",
       "owner_kind": "reviewer",
       "current_labels": [
         "enhancement"
@@ -13232,7 +13377,7 @@
       "priority_age_days": 145.0,
       "days_awaiting": 0.0,
       "aging_basis": "PR days_since_update",
-      "pr_merge_state": "MERGEABLE",
+      "pr_merge_state": "BLOCKED",
       "pr_review_decision": "REVIEW_REQUIRED",
       "pr_ci_rollup": "SUCCESS",
       "pr_failing_jobs": [],
@@ -13494,29 +13639,29 @@
       "days_no_reply": 105,
       "missed_reply": true,
       "is_community": true,
-      "score": 6.0,
+      "score": 7.0,
       "severity": "bug",
       "sentiment": "",
       "classification_type": "bug-fix",
       "next_action_glyph": "👀",
       "next_action": "needs_review",
-      "next_action_reason": "The contributor confirmed the fix and test result; no internal review has followed for over three months.",
+      "next_action_reason": "Human review is outstanding after the author pushed follow-up fixes and confirmed the disk-root case works; CI shows no failing checks.",
       "suggested_labels": [],
-      "suggested_reply": "Hi @LeviPesin, thanks for testing and confirming the drive-root case. The remaining action is a human review of the path-conversion change; no additional test details are needed unless the reviewer asks for them.",
+      "suggested_reply": "Hi @LeviPesin, thanks for testing and confirming the disk-root case. We owe this a human review of the WSLG path-conversion change; no further test data is needed while that review is pending.",
       "suggested_owner": "",
-      "owner_evidence": "skipped: no CODEOWNERS file exists.; skipped: repository path history was not verified.",
-      "owner_fallback_reason": "skipped: no CODEOWNERS file exists.; skipped: repository path history was not verified.",
+      "owner_evidence": "skipped: no WSLg CODEOWNERS ownership mapping was found.; skipped: the prior reviewer evidence identifies only a community-associated account, not an internal reviewer.; skipped: no verified internal git-history signa...",
+      "owner_fallback_reason": "skipped: no WSLg CODEOWNERS ownership mapping was found.; skipped: the prior reviewer evidence identifies only a community-associated account, not an internal reviewer.; skipped: no verified internal git-history signa...",
       "owner_kind": "reviewer",
       "current_labels": [],
       "updated_at": "2026-06-26T00:12:38Z",
       "priority_age_days": 105.0,
       "days_awaiting": 105.0,
       "aging_basis": "PR waiting age",
-      "pr_merge_state": "MERGEABLE",
+      "pr_merge_state": "BLOCKED",
       "pr_review_decision": "REVIEW_REQUIRED",
       "pr_ci_rollup": "SUCCESS",
       "pr_failing_jobs": [],
-      "pr_latest_human_review": "LeviPesin"
+      "pr_latest_human_review": ""
     },
     {
       "repo": "microsoft/wslg",
@@ -13534,19 +13679,19 @@
       "classification_type": "feature",
       "next_action_glyph": "👀",
       "next_action": "needs_review",
-      "next_action_reason": "Draft contains a trust-boundary change and requests human security review; do not treat bot review or green checks as approval.",
+      "next_action_reason": "Although still a draft, the author explicitly calls out the privileged-protocol trust boundary and requests maintainer review before the policy is ready; automated review is not a human security review.",
       "suggested_labels": [],
       "suggested_reply": "",
       "suggested_owner": "",
-      "owner_evidence": "skipped: no CODEOWNERS file exists.; skipped: no verified internal security reviewer was identified.",
-      "owner_fallback_reason": "skipped: no CODEOWNERS file exists.; skipped: no verified internal security reviewer was identified.",
+      "owner_evidence": "No CODEOWNERS file was found at the checked repository paths.",
+      "owner_fallback_reason": "No CODEOWNERS file was found at the checked repository paths.",
       "owner_kind": "reviewer",
       "current_labels": [],
       "updated_at": "2026-07-18T01:29:36Z",
       "priority_age_days": 84.0,
-      "days_awaiting": 83.0,
+      "days_awaiting": 84.0,
       "aging_basis": "PR days_since_update",
-      "pr_merge_state": "MERGEABLE",
+      "pr_merge_state": "BLOCKED",
       "pr_review_decision": "REVIEW_REQUIRED",
       "pr_ci_rollup": "SUCCESS",
       "pr_failing_jobs": [],
@@ -13568,14 +13713,14 @@
       "classification_type": "bug",
       "next_action_glyph": "💬",
       "next_action": "reply",
-      "next_action_reason": "Acknowledge the strong reproduction and route the native-Wayland input/focus issue; no additional information is needed now.",
+      "next_action_reason": "Acknowledge the controlled reproduction and request only the missing WSLg logs and dump; version and reproduction details are already present.",
       "suggested_labels": [
         "window-management"
       ],
-      "suggested_reply": "Thanks for the detailed, controlled comparison, @fkcp11. You already supplied the WSL and WSLg versions and a reproducible Wayland-versus-XWayland test, so there is no need to repeat those. Could you attach the WSLg logs and a WSL dump captured after reproducing the misdirected click? The issue currently has no diagnostic attachments, and those should help distinguish the compositor hit-testing path.",
+      "suggested_reply": "Thanks for the detailed, controlled comparison, @fkcp11. You already supplied the WSL/WSLg versions and a reproducible Wayland-versus-XWayland test, so there is no need to repeat those. Could you attach the WSLg logs and a WSL dump captured after reproducing the misdirected click? Those diagnostics may help distinguish the compositor hit-testing path.",
       "suggested_owner": "",
-      "owner_evidence": "skipped: CODEOWNERS files are absent from the repository tree.; skipped: no repository-specific area ownership evidence available for WSLg.; skipped: no similar-issue closing PR or path history was verified.",
-      "owner_fallback_reason": "skipped: CODEOWNERS files are absent from the repository tree.; skipped: no repository-specific area ownership evidence available for WSLg.; skipped: no similar-issue closing PR or path history was verified.",
+      "owner_evidence": "Checked .github/CODEOWNERS, CODEOWNERS, and docs/CODEOWNERS; none exists.; No verified similar closing PR or path-history owner evidence was established.",
+      "owner_fallback_reason": "Checked .github/CODEOWNERS, CODEOWNERS, and docs/CODEOWNERS; none exists.; No verified similar closing PR or path-history owner evidence was established.",
       "owner_kind": "assignee",
       "current_labels": [
         "bug"
