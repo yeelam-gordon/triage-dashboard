@@ -1,13 +1,13 @@
 {
   "repo": "microsoft/dynwinrt",
-  "generated_at": "2026-10-10T06:03:45Z",
+  "generated_at": "2026-10-10T09:13:56Z",
   "awaiting_label": null,
   "awaiting_issues": 0,
-  "awaiting_prs": 4,
+  "awaiting_prs": 3,
   "backlog_issues": 2,
-  "backlog_prs": 4,
+  "backlog_prs": 3,
   "issues_total": 2,
-  "prs_total": 4,
+  "prs_total": 3,
   "issues": [
     {
       "number": 161,
@@ -68,7 +68,7 @@
       "comments": 1,
       "created_at": "2026-07-24T04:09:48Z",
       "updated_at": "2026-07-28T04:17:01Z",
-      "age_days": 74.0,
+      "age_days": 75.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -77,7 +77,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "🌐",
       "baseline_text": "Route to docs/localization owner",
-      "baseline_reason": "Docs/localization PR (waited 74d) — route to the docs/localization owner for a domain review, not a generic pass."
+      "baseline_reason": "Docs/localization PR (waited 75d) — route to the docs/localization owner for a domain review, not a generic pass."
     },
     {
       "number": 179,
@@ -90,7 +90,7 @@
       "comments": 1,
       "created_at": "2026-09-21T14:44:21Z",
       "updated_at": "2026-09-22T02:32:44Z",
-      "age_days": 18.0,
+      "age_days": 19.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -99,7 +99,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 18d) — review it."
+      "baseline_reason": "PR (waited 19d) — review it."
     },
     {
       "number": 212,
@@ -125,28 +125,6 @@
       "baseline_glyph": "📦",
       "baseline_text": "Dependency PR — check CI & merge/close",
       "baseline_reason": "Dependency bump (waited 2d) — verify CI + changelog risk, then merge or close."
-    },
-    {
-      "number": 215,
-      "title": "Prepare v0.1.0-preview.23 release notes",
-      "url": "https://github.com/microsoft/dynwinrt/pull/215",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-10-09T02:27:48Z",
-      "updated_at": "2026-10-10T03:29:47Z",
-      "age_days": 0.0,
-      "triaged": true,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (new) — review it."
     }
   ]
 }
