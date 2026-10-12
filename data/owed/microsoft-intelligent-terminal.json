@@ -1,6 +1,6 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-10-12T18:38:09Z",
+  "generated_at": "2026-10-12T21:43:02Z",
   "awaiting_label": "Needs-Triage",
   "awaiting_issues": 46,
   "awaiting_prs": 61,
@@ -571,7 +571,7 @@
       "comments": 1,
       "created_at": "2026-09-21T15:46:26Z",
       "updated_at": "2026-09-21T15:47:08Z",
-      "age_days": 21.0,
+      "age_days": 22.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -579,7 +579,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "🩺",
       "baseline_text": "Confirm crash — get repro/logs & route",
-      "baseline_reason": "Crash report (waited 21d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
+      "baseline_reason": "Crash report (waited 22d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
     },
     {
       "number": 991,
@@ -695,7 +695,7 @@
       "comments": 1,
       "created_at": "2026-09-28T15:51:39Z",
       "updated_at": "2026-09-28T15:52:37Z",
-      "age_days": 14.0,
+      "age_days": 15.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -703,7 +703,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 14d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 15d) — correct them, then route."
     },
     {
       "number": 1024,
@@ -930,6 +930,31 @@
       "baseline_reason": "Security-class issue (waited 6d) — confirm, escalate to the security owner, and route urgently."
     },
     {
+      "number": 1087,
+      "title": "[aw] Failed jobs: Official security E2E acceptance",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/1087",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "Needs-Triage",
+        "Needs-Tag-Fix",
+        "agentic-workflows"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-10-07T15:26:31Z",
+      "updated_at": "2026-10-07T15:26:59Z",
+      "age_days": 6.0,
+      "triaged": true,
+      "awaiting": true,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "escalate",
+      "baseline_glyph": "🛡️",
+      "baseline_text": "Escalate — security",
+      "baseline_reason": "Security-class issue (waited 6d) — confirm, escalate to the security owner, and route urgently."
+    },
+    {
       "number": 1086,
       "title": "[aw] Ensure Localizationguide Forkedrepo timed out",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/1086",
@@ -953,31 +978,6 @@
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
       "baseline_reason": "Wrong/missing tags (waited 5d) — correct them, then route."
-    },
-    {
-      "number": 1087,
-      "title": "[aw] Failed jobs: Official security E2E acceptance",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/1087",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "Needs-Triage",
-        "Needs-Tag-Fix",
-        "agentic-workflows"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-10-07T15:26:31Z",
-      "updated_at": "2026-10-07T15:26:59Z",
-      "age_days": 5.0,
-      "triaged": true,
-      "awaiting": true,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "escalate",
-      "baseline_glyph": "🛡️",
-      "baseline_text": "Escalate — security",
-      "baseline_reason": "Security-class issue (waited 5d) — confirm, escalate to the security owner, and route urgently."
     },
     {
       "number": 1088,
@@ -2051,7 +2051,7 @@
       "comments": 1,
       "created_at": "2026-05-19T18:03:05Z",
       "updated_at": "2026-05-21T16:11:54Z",
-      "age_days": 144.0,
+      "age_days": 145.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -2060,7 +2060,7 @@
       "baseline_action": "review",
       "baseline_glyph": "🕰️",
       "baseline_text": "Stale PR — status or close",
-      "baseline_reason": "PR has sat 144 d (waited 144d) — ping for status/rebase or close if abandoned."
+      "baseline_reason": "PR has sat 145 d (waited 145d) — ping for status/rebase or close if abandoned."
     },
     {
       "number": 38,
@@ -3239,7 +3239,7 @@
       "comments": 1,
       "created_at": "2026-10-10T14:10:23Z",
       "updated_at": "2026-10-10T16:46:00Z",
-      "age_days": 2.0,
+      "age_days": 3.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -3248,7 +3248,29 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 2d) — review it."
+      "baseline_reason": "PR (waited 3d) — review it."
+    },
+    {
+      "number": 1076,
+      "title": "Support OpenCode V2 in wt-agent-hooks",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/1076",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-10-04T06:06:10Z",
+      "updated_at": "2026-10-12T15:43:57Z",
+      "age_days": 1.0,
+      "triaged": true,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (waited 1d) — review it."
     },
     {
       "number": 1122,
@@ -3317,28 +3339,6 @@
       "baseline_reason": "PR (waited 1d) — review it."
     },
     {
-      "number": 1076,
-      "title": "Support OpenCode V2 in wt-agent-hooks",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/1076",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-10-04T06:06:10Z",
-      "updated_at": "2026-10-12T15:43:57Z",
-      "age_days": 0.0,
-      "triaged": true,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (new) — review it."
-    },
-    {
       "number": 1129,
       "title": "Share authentication guidance across providers",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/1129",
@@ -3348,7 +3348,7 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-10-12T16:03:04Z",
-      "updated_at": "2026-10-12T18:36:48Z",
+      "updated_at": "2026-10-12T21:12:29Z",
       "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
@@ -3459,7 +3459,7 @@
       "comments": 1,
       "created_at": "2026-10-12T14:37:03Z",
       "updated_at": "2026-10-12T14:50:07Z",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "triaged": true,
       "awaiting": false,
       "is_draft": true,
@@ -3468,7 +3468,7 @@
       "baseline_action": "wait_author",
       "baseline_glyph": "🚧",
       "baseline_text": "Wait — PR is a draft/WIP",
-      "baseline_reason": "Draft/WIP PR (new) — don't review yet; nudge the author to mark it ready."
+      "baseline_reason": "Draft/WIP PR (waited 1d) — don't review yet; nudge the author to mark it ready."
     },
     {
       "number": 1128,
@@ -3481,7 +3481,7 @@
       "comments": 1,
       "created_at": "2026-10-12T14:57:36Z",
       "updated_at": "2026-10-12T16:12:20Z",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "triaged": true,
       "awaiting": false,
       "is_draft": true,
@@ -3490,7 +3490,7 @@
       "baseline_action": "wait_author",
       "baseline_glyph": "🚧",
       "baseline_text": "Wait — PR is a draft/WIP",
-      "baseline_reason": "Draft/WIP PR (new) — don't review yet; nudge the author to mark it ready."
+      "baseline_reason": "Draft/WIP PR (waited 1d) — don't review yet; nudge the author to mark it ready."
     }
   ]
 }
