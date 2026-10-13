@@ -1,6 +1,6 @@
 {
   "repo": "microsoft/wslg",
-  "generated_at": "2026-10-13T09:39:06Z",
+  "generated_at": "2026-10-13T12:42:46Z",
   "awaiting_label": null,
   "awaiting_issues": 0,
   "awaiting_prs": 15,
@@ -115,7 +115,7 @@
       "comments": 1,
       "created_at": "2021-03-09T00:12:56Z",
       "updated_at": "2026-10-08T08:12:25Z",
-      "age_days": 5.0,
+      "age_days": 6.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -123,7 +123,7 @@
       "baseline_action": "promote",
       "baseline_glyph": "⭐",
       "baseline_text": "High-demand feature — roadmap decision",
-      "baseline_reason": "Popular feature ask (waited 5d, 61 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
+      "baseline_reason": "Popular feature ask (waited 6d, 61 👍 high demand) — make a roadmap/milestone call (promote or explicitly decline); the community is waiting."
     },
     {
       "number": 894,
@@ -301,7 +301,7 @@
       "comments": 1,
       "created_at": "2021-09-10T07:20:06Z",
       "updated_at": "2022-11-22T08:37:24Z",
-      "age_days": 1421.0,
+      "age_days": 1422.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -309,7 +309,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Answer the question / close as support",
-      "baseline_reason": "Looks like a question/support request (waited 1421d, 34 👍 high demand) — answer it (or link docs) and close; convert to a bug/feature only if it turns out to be one."
+      "baseline_reason": "Looks like a question/support request (waited 1422d, 34 👍 high demand) — answer it (or link docs) and close; convert to a bug/feature only if it turns out to be one."
     },
     {
       "number": 84,
@@ -470,7 +470,7 @@
       "comments": 1,
       "created_at": "2024-05-30T22:19:58Z",
       "updated_at": "2026-01-03T05:51:20Z",
-      "age_days": 283.0,
+      "age_days": 284.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -478,7 +478,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 283d, 23 👍 high demand) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_reason": "Bug (waited 284d, 23 👍 high demand) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 1092,
@@ -516,7 +516,7 @@
       "comments": 1,
       "created_at": "2023-03-24T11:17:34Z",
       "updated_at": "2026-08-20T06:48:48Z",
-      "age_days": 54.0,
+      "age_days": 55.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -524,7 +524,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 54d, 22 👍 high demand) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_reason": "Bug (waited 55d, 22 👍 high demand) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 864,
@@ -1403,7 +1403,7 @@
       "comments": 1,
       "created_at": "2021-04-01T03:44:01Z",
       "updated_at": "2025-01-23T06:28:44Z",
-      "age_days": 628.0,
+      "age_days": 629.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -1411,7 +1411,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 628d, 10 👍). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_reason": "Feature/idea (waited 629d, 10 👍). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     },
     {
       "number": 61,
@@ -1520,7 +1520,7 @@
       "comments": 1,
       "created_at": "2024-07-09T09:42:05Z",
       "updated_at": "2026-07-21T08:41:53Z",
-      "age_days": 84.0,
+      "age_days": 85.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -1528,7 +1528,7 @@
       "baseline_action": "escalate",
       "baseline_glyph": "🚨",
       "baseline_text": "Escalate — crash/reliability",
-      "baseline_reason": "Crash/reliability issue (waited 84d, 9 👍) — get repro+logs if missing, confirm severity, and route to the area owner urgently."
+      "baseline_reason": "Crash/reliability issue (waited 85d, 9 👍) — get repro+logs if missing, confirm severity, and route to the area owner urgently."
     },
     {
       "number": 1299,
@@ -2034,7 +2034,7 @@
       "comments": 1,
       "created_at": "2024-03-03T06:52:57Z",
       "updated_at": "2024-03-03T06:53:39Z",
-      "age_days": 954.0,
+      "age_days": 955.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -2042,7 +2042,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Old unconfirmed bug — revalidate or close stale",
-      "baseline_reason": "Old bug (waited 954d, 7 👍) with little activity — re-test on a current build; route only if it still repros, else close as stale."
+      "baseline_reason": "Old bug (waited 955d, 7 👍) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 405,
@@ -2104,7 +2104,7 @@
       "comments": 1,
       "created_at": "2023-01-15T08:34:04Z",
       "updated_at": "2025-11-21T08:18:19Z",
-      "age_days": 326.0,
+      "age_days": 327.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -2112,7 +2112,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 326d, 7 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_reason": "Bug (waited 327d, 7 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 1439,
@@ -2360,7 +2360,7 @@
       "comments": 1,
       "created_at": "2023-11-28T02:01:51Z",
       "updated_at": "2025-12-01T06:50:15Z",
-      "age_days": 316.0,
+      "age_days": 317.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -2368,7 +2368,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 316d, 6 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_reason": "Bug (waited 317d, 6 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 1140,
@@ -2406,7 +2406,7 @@
       "comments": 1,
       "created_at": "2026-07-28T12:55:53Z",
       "updated_at": "2026-10-05T08:41:18Z",
-      "age_days": 8.0,
+      "age_days": 9.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -2414,7 +2414,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 8d, 6 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_reason": "Bug (waited 9d, 6 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 39,
@@ -2522,7 +2522,7 @@
       "comments": 1,
       "created_at": "2023-01-23T07:30:58Z",
       "updated_at": "2023-01-23T07:30:58Z",
-      "age_days": 1359.0,
+      "age_days": 1360.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -2530,7 +2530,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 1359d, 5 👍) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_reason": "Old feature ask (waited 1360d, 5 👍) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 334,
@@ -2641,7 +2641,7 @@
       "comments": 1,
       "created_at": "2022-02-24T19:41:48Z",
       "updated_at": "2025-12-04T07:33:16Z",
-      "age_days": 313.0,
+      "age_days": 314.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -2649,7 +2649,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 313d, 5 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_reason": "Bug (waited 314d, 5 👍) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 923,
@@ -2852,7 +2852,7 @@
       "comments": 1,
       "created_at": "2024-06-24T18:47:37Z",
       "updated_at": "2024-08-20T07:36:21Z",
-      "age_days": 784.0,
+      "age_days": 785.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -2860,7 +2860,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Old unconfirmed bug — revalidate or close stale",
-      "baseline_reason": "Old bug (waited 784d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
+      "baseline_reason": "Old bug (waited 785d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 974,
@@ -2899,7 +2899,7 @@
       "comments": 1,
       "created_at": "2021-10-12T15:32:37Z",
       "updated_at": "2025-04-01T07:40:13Z",
-      "age_days": 560.0,
+      "age_days": 561.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -2907,7 +2907,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Old unconfirmed bug — revalidate or close stale",
-      "baseline_reason": "Old bug (waited 560d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
+      "baseline_reason": "Old bug (waited 561d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1242,
@@ -2991,7 +2991,7 @@
       "comments": 1,
       "created_at": "2025-11-30T13:54:39Z",
       "updated_at": "2025-12-05T07:13:10Z",
-      "age_days": 312.0,
+      "age_days": 313.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -2999,7 +2999,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 312d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_reason": "Bug (waited 313d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 1251,
@@ -3106,7 +3106,7 @@
       "comments": 1,
       "created_at": "2023-03-19T11:46:57Z",
       "updated_at": "2026-09-17T06:26:02Z",
-      "age_days": 26.0,
+      "age_days": 27.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -3114,7 +3114,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 26d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_reason": "Bug (waited 27d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 170,
@@ -3281,6 +3281,30 @@
       "baseline_reason": "Old bug (waited 1279d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
+      "number": 619,
+      "title": "Window decorations broken for maximized applications",
+      "url": "https://github.com/microsoft/wslg/issues/619",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "bug",
+        "window-management"
+      ],
+      "up": 3,
+      "comments": 1,
+      "created_at": "2021-12-30T19:37:22Z",
+      "updated_at": "2023-07-31T06:11:17Z",
+      "age_days": 1171.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1171d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
+    },
+    {
       "number": 329,
       "title": "Maximized window of X11 app can not be restored by dragging title bar",
       "url": "https://github.com/microsoft/wslg/issues/329",
@@ -3304,30 +3328,6 @@
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
       "baseline_reason": "Old feature ask (waited 1170d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
-    },
-    {
-      "number": 619,
-      "title": "Window decorations broken for maximized applications",
-      "url": "https://github.com/microsoft/wslg/issues/619",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "bug",
-        "window-management"
-      ],
-      "up": 3,
-      "comments": 1,
-      "created_at": "2021-12-30T19:37:22Z",
-      "updated_at": "2023-07-31T06:11:17Z",
-      "age_days": 1170.0,
-      "triaged": false,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "reassess_stale",
-      "baseline_glyph": "🗓️",
-      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
-      "baseline_reason": "Old bug (waited 1170d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1183,
@@ -3881,7 +3881,7 @@
       "comments": 1,
       "created_at": "2021-11-26T03:26:12Z",
       "updated_at": "2022-01-14T08:32:00Z",
-      "age_days": 1733.0,
+      "age_days": 1734.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -3889,7 +3889,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Old unconfirmed bug — revalidate or close stale",
-      "baseline_reason": "Old bug (waited 1733d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
+      "baseline_reason": "Old bug (waited 1734d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 192,
@@ -3976,7 +3976,7 @@
       "comments": 1,
       "created_at": "2022-11-18T03:29:41Z",
       "updated_at": "2022-11-19T05:46:59Z",
-      "age_days": 1424.0,
+      "age_days": 1425.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -3984,7 +3984,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Old unconfirmed bug — revalidate or close stale",
-      "baseline_reason": "Old bug (waited 1424d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
+      "baseline_reason": "Old bug (waited 1425d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 904,
@@ -4091,7 +4091,7 @@
       "comments": 1,
       "created_at": "2023-06-04T18:53:37Z",
       "updated_at": "2023-11-19T08:30:41Z",
-      "age_days": 1059.0,
+      "age_days": 1060.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -4099,7 +4099,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Old unconfirmed bug — revalidate or close stale",
-      "baseline_reason": "Old bug (waited 1059d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
+      "baseline_reason": "Old bug (waited 1060d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 744,
@@ -4163,7 +4163,7 @@
       "comments": 1,
       "created_at": "2021-11-19T03:21:32Z",
       "updated_at": "2024-01-08T05:48:17Z",
-      "age_days": 1009.0,
+      "age_days": 1010.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -4171,7 +4171,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Old unconfirmed bug — revalidate or close stale",
-      "baseline_reason": "Old bug (waited 1009d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
+      "baseline_reason": "Old bug (waited 1010d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1192,
@@ -4233,7 +4233,7 @@
       "comments": 1,
       "created_at": "2022-03-20T18:10:43Z",
       "updated_at": "2024-09-15T07:52:17Z",
-      "age_days": 758.0,
+      "age_days": 759.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -4241,7 +4241,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Old unconfirmed bug — revalidate or close stale",
-      "baseline_reason": "Old bug (waited 758d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
+      "baseline_reason": "Old bug (waited 759d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1287,
@@ -4592,6 +4592,29 @@
       "baseline_reason": "Bug (waited 149d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
+      "number": 1155,
+      "title": "WSLg GUI app disappeared from the Start Menu after reboot.",
+      "url": "https://github.com/microsoft/wslg/issues/1155",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "bug"
+      ],
+      "up": 2,
+      "comments": 1,
+      "created_at": "2023-11-29T06:54:37Z",
+      "updated_at": "2026-05-18T06:19:57Z",
+      "age_days": 149.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "reply",
+      "baseline_glyph": "💬",
+      "baseline_text": "Confirm on current build & route",
+      "baseline_reason": "Bug (waited 149d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+    },
+    {
       "number": 1203,
       "title": "firefox and google-chrome strange behaviour",
       "url": "https://github.com/microsoft/wslg/issues/1203",
@@ -4637,29 +4660,6 @@
       "baseline_glyph": "💬",
       "baseline_text": "Confirm on current build & route",
       "baseline_reason": "Bug (waited 149d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
-    },
-    {
-      "number": 1155,
-      "title": "WSLg GUI app disappeared from the Start Menu after reboot.",
-      "url": "https://github.com/microsoft/wslg/issues/1155",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "bug"
-      ],
-      "up": 2,
-      "comments": 1,
-      "created_at": "2023-11-29T06:54:37Z",
-      "updated_at": "2026-05-18T06:19:57Z",
-      "age_days": 148.0,
-      "triaged": false,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 148d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 1496,
@@ -4928,7 +4928,7 @@
       "comments": 1,
       "created_at": "2021-05-27T05:04:20Z",
       "updated_at": "2021-12-18T06:15:40Z",
-      "age_days": 1760.0,
+      "age_days": 1761.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -4936,7 +4936,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Old unconfirmed bug — revalidate or close stale",
-      "baseline_reason": "Old bug (waited 1760d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
+      "baseline_reason": "Old bug (waited 1761d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 579,
@@ -5079,6 +5079,29 @@
       "baseline_reason": "Looks like a question/support request (waited 1424d) — answer it (or link docs) and close; convert to a bug/feature only if it turns out to be one."
     },
     {
+      "number": 303,
+      "title": "RDP refresh rate very low on arm64",
+      "url": "https://github.com/microsoft/wslg/issues/303",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "bug"
+      ],
+      "up": 1,
+      "comments": 1,
+      "created_at": "2021-06-16T20:58:17Z",
+      "updated_at": "2022-12-07T06:18:07Z",
+      "age_days": 1407.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1407d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
+    },
+    {
       "number": 519,
       "title": "GUI Apps freeze when setting their window transparency.",
       "url": "https://github.com/microsoft/wslg/issues/519",
@@ -5100,29 +5123,6 @@
       "baseline_glyph": "🩺",
       "baseline_text": "Very old crash — revalidate before escalating",
       "baseline_reason": "Crash report (waited 1407d) is years old with no priority signal — re-test on a current build and get fresh logs; only escalate if it still reproduces."
-    },
-    {
-      "number": 303,
-      "title": "RDP refresh rate very low on arm64",
-      "url": "https://github.com/microsoft/wslg/issues/303",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "bug"
-      ],
-      "up": 1,
-      "comments": 1,
-      "created_at": "2021-06-16T20:58:17Z",
-      "updated_at": "2022-12-07T06:18:07Z",
-      "age_days": 1406.0,
-      "triaged": false,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "reassess_stale",
-      "baseline_glyph": "🗓️",
-      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
-      "baseline_reason": "Old bug (waited 1406d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 287,
@@ -5300,15 +5300,15 @@
       "comments": 1,
       "created_at": "2022-11-28T11:58:40Z",
       "updated_at": "2023-05-03T08:25:02Z",
-      "age_days": 1259.0,
+      "age_days": 1260.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
       "baseline_action": "label_only",
       "baseline_glyph": "🚧",
-      "baseline_text": "In progress 1259 d — audit the linked work",
-      "baseline_reason": "Marked in-progress but 1259 d old (waited 1259d) — verify the linked PR/owner is still active; if it stalled, reassign or drop the in-progress status."
+      "baseline_text": "In progress 1260 d — audit the linked work",
+      "baseline_reason": "Marked in-progress but 1260 d old (waited 1260d) — verify the linked PR/owner is still active; if it stalled, reassign or drop the in-progress status."
     },
     {
       "number": 1075,
@@ -6069,7 +6069,7 @@
       "comments": 1,
       "created_at": "2025-03-17T23:21:10Z",
       "updated_at": "2025-09-19T06:25:35Z",
-      "age_days": 389.0,
+      "age_days": 390.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -6077,7 +6077,7 @@
       "baseline_action": "escalate",
       "baseline_glyph": "🚨",
       "baseline_text": "Escalate — crash/reliability",
-      "baseline_reason": "Crash/reliability issue (waited 389d) — get repro+logs if missing, confirm severity, and route to the area owner urgently."
+      "baseline_reason": "Crash/reliability issue (waited 390d) — get repro+logs if missing, confirm severity, and route to the area owner urgently."
     },
     {
       "number": 1330,
@@ -6092,7 +6092,7 @@
       "comments": 1,
       "created_at": "2025-05-10T00:44:58Z",
       "updated_at": "2025-12-28T06:16:35Z",
-      "age_days": 289.0,
+      "age_days": 290.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -6100,7 +6100,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 289d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_reason": "Bug (waited 290d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 1222,
@@ -6558,7 +6558,7 @@
       "comments": 1,
       "created_at": "2025-11-23T12:50:59Z",
       "updated_at": "2026-07-15T06:30:35Z",
-      "age_days": 90.0,
+      "age_days": 91.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -6566,7 +6566,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 90d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_reason": "Bug (waited 91d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 1407,
@@ -6652,7 +6652,7 @@
       "comments": 1,
       "created_at": "2022-11-15T09:41:05Z",
       "updated_at": "2026-08-28T07:54:04Z",
-      "age_days": 46.0,
+      "age_days": 47.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -6660,7 +6660,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm on current build & route",
-      "baseline_reason": "Bug (waited 46d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_reason": "Bug (waited 47d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 1470,
@@ -7667,7 +7667,7 @@
       "comments": 1,
       "created_at": "2021-09-28T09:38:36Z",
       "updated_at": "2021-10-12T08:03:14Z",
-      "age_days": 1827.0,
+      "age_days": 1828.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -7675,7 +7675,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Old unconfirmed bug — revalidate or close stale",
-      "baseline_reason": "Old bug (waited 1827d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
+      "baseline_reason": "Old bug (waited 1828d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 232,
@@ -7737,7 +7737,7 @@
       "comments": 1,
       "created_at": "2021-09-11T10:40:09Z",
       "updated_at": "2021-10-16T08:31:18Z",
-      "age_days": 1823.0,
+      "age_days": 1824.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -7745,7 +7745,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Old unconfirmed bug — revalidate or close stale",
-      "baseline_reason": "Old bug (waited 1823d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
+      "baseline_reason": "Old bug (waited 1824d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 460,
@@ -7853,7 +7853,7 @@
       "comments": 1,
       "created_at": "2021-10-29T08:11:31Z",
       "updated_at": "2021-10-29T08:11:31Z",
-      "age_days": 1810.0,
+      "age_days": 1811.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -7861,7 +7861,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Old unconfirmed bug — revalidate or close stale",
-      "baseline_reason": "Old bug (waited 1810d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
+      "baseline_reason": "Old bug (waited 1811d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 545,
@@ -7922,7 +7922,7 @@
       "comments": 1,
       "created_at": "2021-10-15T15:01:56Z",
       "updated_at": "2021-11-06T06:03:40Z",
-      "age_days": 1802.0,
+      "age_days": 1803.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -7930,7 +7930,30 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Old unconfirmed bug — revalidate or close stale",
-      "baseline_reason": "Old bug (waited 1802d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
+      "baseline_reason": "Old bug (waited 1803d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
+    },
+    {
+      "number": 555,
+      "title": "Is it possible to bring WSLg to RemoteApp?",
+      "url": "https://github.com/microsoft/wslg/issues/555",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "enhancement"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2021-11-04T02:17:52Z",
+      "updated_at": "2021-11-09T07:31:52Z",
+      "age_days": 1800.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "reply",
+      "baseline_glyph": "💬",
+      "baseline_text": "Answer the question / close as support",
+      "baseline_reason": "Looks like a question/support request (waited 1800d) — answer it (or link docs) and close; convert to a bug/feature only if it turns out to be one."
     },
     {
       "number": 561,
@@ -7954,29 +7977,6 @@
       "baseline_glyph": "💬",
       "baseline_text": "Answer the question / close as support",
       "baseline_reason": "Looks like a question/support request (waited 1800d) — answer it (or link docs) and close; convert to a bug/feature only if it turns out to be one."
-    },
-    {
-      "number": 555,
-      "title": "Is it possible to bring WSLg to RemoteApp?",
-      "url": "https://github.com/microsoft/wslg/issues/555",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "enhancement"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2021-11-04T02:17:52Z",
-      "updated_at": "2021-11-09T07:31:52Z",
-      "age_days": 1799.0,
-      "triaged": false,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Answer the question / close as support",
-      "baseline_reason": "Looks like a question/support request (waited 1799d) — answer it (or link docs) and close; convert to a bug/feature only if it turns out to be one."
     },
     {
       "number": 321,
@@ -8129,7 +8129,7 @@
       "comments": 1,
       "created_at": "2021-12-26T08:11:36Z",
       "updated_at": "2021-12-26T08:27:19Z",
-      "age_days": 1752.0,
+      "age_days": 1753.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -8137,7 +8137,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Old unconfirmed bug — revalidate or close stale",
-      "baseline_reason": "Old bug (waited 1752d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
+      "baseline_reason": "Old bug (waited 1753d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 468,
@@ -8592,7 +8592,7 @@
       "comments": 1,
       "created_at": "2021-11-13T10:38:51Z",
       "updated_at": "2022-04-28T07:08:44Z",
-      "age_days": 1629.0,
+      "age_days": 1630.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -8600,7 +8600,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Old unconfirmed bug — revalidate or close stale",
-      "baseline_reason": "Old bug (waited 1629d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
+      "baseline_reason": "Old bug (waited 1630d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 705,
@@ -8709,7 +8709,7 @@
       "comments": 1,
       "created_at": "2022-06-13T22:16:38Z",
       "updated_at": "2022-06-22T06:15:29Z",
-      "age_days": 1574.0,
+      "age_days": 1575.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -8717,7 +8717,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 1574d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_reason": "Old feature ask (waited 1575d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 604,
@@ -8876,7 +8876,7 @@
       "comments": 1,
       "created_at": "2021-06-04T23:37:18Z",
       "updated_at": "2022-08-30T08:41:44Z",
-      "age_days": 1505.0,
+      "age_days": 1506.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -8884,7 +8884,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "🩺",
       "baseline_text": "Very old crash — revalidate before escalating",
-      "baseline_reason": "Crash report (waited 1505d) is years old with no priority signal — re-test on a current build and get fresh logs; only escalate if it still reproduces."
+      "baseline_reason": "Crash report (waited 1506d) is years old with no priority signal — re-test on a current build and get fresh logs; only escalate if it still reproduces."
     },
     {
       "number": 822,
@@ -8970,7 +8970,7 @@
       "comments": 1,
       "created_at": "2021-08-08T18:29:57Z",
       "updated_at": "2022-09-22T06:44:56Z",
-      "age_days": 1482.0,
+      "age_days": 1483.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -8978,7 +8978,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Old unconfirmed bug — revalidate or close stale",
-      "baseline_reason": "Old bug (waited 1482d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
+      "baseline_reason": "Old bug (waited 1483d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 835,
@@ -9067,7 +9067,7 @@
       "comments": 1,
       "created_at": "2022-01-10T07:05:33Z",
       "updated_at": "2022-10-16T06:54:18Z",
-      "age_days": 1458.0,
+      "age_days": 1459.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -9075,7 +9075,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🔁",
       "baseline_text": "Verify duplicate & close/link",
-      "baseline_reason": "Marked duplicate (waited 1458d) — confirm the canonical issue, link it, and close this as a duplicate."
+      "baseline_reason": "Marked duplicate (waited 1459d) — confirm the canonical issue, link it, and close this as a duplicate."
     },
     {
       "number": 817,
@@ -9415,7 +9415,7 @@
       "comments": 1,
       "created_at": "2021-04-28T12:08:19Z",
       "updated_at": "2022-12-16T08:31:55Z",
-      "age_days": 1397.0,
+      "age_days": 1398.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -9423,7 +9423,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Old unconfirmed bug — revalidate or close stale",
-      "baseline_reason": "Old bug (waited 1397d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
+      "baseline_reason": "Old bug (waited 1398d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 919,
@@ -9438,7 +9438,7 @@
       "comments": 1,
       "created_at": "2022-12-10T13:02:13Z",
       "updated_at": "2022-12-16T08:08:33Z",
-      "age_days": 1397.0,
+      "age_days": 1398.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -9446,7 +9446,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 1397d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_reason": "Old feature ask (waited 1398d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 927,
@@ -9919,6 +9919,29 @@
       "baseline_reason": "Old bug (waited 1309d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
+      "number": 922,
+      "title": "Gtk4 applications display nothing",
+      "url": "https://github.com/microsoft/wslg/issues/922",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "bug"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2022-12-12T07:03:29Z",
+      "updated_at": "2023-03-20T07:23:33Z",
+      "age_days": 1304.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1304d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
+    },
+    {
       "number": 1009,
       "title": "Looks like WSLg doesn't create a start menu shortcut if : or :: is in the Name field of .desktop file",
       "url": "https://github.com/microsoft/wslg/issues/1009",
@@ -9954,29 +9977,6 @@
       "comments": 1,
       "created_at": "2022-02-08T07:08:11Z",
       "updated_at": "2023-03-20T09:22:27Z",
-      "age_days": 1303.0,
-      "triaged": false,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "reassess_stale",
-      "baseline_glyph": "🗓️",
-      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
-      "baseline_reason": "Old bug (waited 1303d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
-    },
-    {
-      "number": 922,
-      "title": "Gtk4 applications display nothing",
-      "url": "https://github.com/microsoft/wslg/issues/922",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "bug"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2022-12-12T07:03:29Z",
-      "updated_at": "2023-03-20T07:23:33Z",
       "age_days": 1303.0,
       "triaged": false,
       "awaiting": false,
@@ -10117,7 +10117,7 @@
       "comments": 1,
       "created_at": "2022-08-22T19:11:08Z",
       "updated_at": "2023-03-30T08:30:40Z",
-      "age_days": 1293.0,
+      "age_days": 1294.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -10125,7 +10125,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Old unconfirmed bug — revalidate or close stale",
-      "baseline_reason": "Old bug (waited 1293d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
+      "baseline_reason": "Old bug (waited 1294d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1028,
@@ -10465,7 +10465,7 @@
       "comments": 1,
       "created_at": "2022-01-19T04:47:51Z",
       "updated_at": "2023-05-12T08:24:51Z",
-      "age_days": 1250.0,
+      "age_days": 1251.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -10473,7 +10473,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Old unconfirmed bug — revalidate or close stale",
-      "baseline_reason": "Old bug (waited 1250d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
+      "baseline_reason": "Old bug (waited 1251d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 663,
@@ -10582,7 +10582,7 @@
       "comments": 1,
       "created_at": "2023-06-15T07:15:41Z",
       "updated_at": "2023-06-15T07:15:41Z",
-      "age_days": 1216.0,
+      "age_days": 1217.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -10590,7 +10590,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Old unconfirmed bug — revalidate or close stale",
-      "baseline_reason": "Old bug (waited 1216d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
+      "baseline_reason": "Old bug (waited 1217d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1010,
@@ -10628,7 +10628,7 @@
       "comments": 1,
       "created_at": "2023-04-24T06:10:40Z",
       "updated_at": "2023-07-04T06:05:47Z",
-      "age_days": 1197.0,
+      "age_days": 1198.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -10636,7 +10636,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "🩺",
       "baseline_text": "Very old crash — revalidate before escalating",
-      "baseline_reason": "Crash report (waited 1197d) is years old with no priority signal — re-test on a current build and get fresh logs; only escalate if it still reproduces."
+      "baseline_reason": "Crash report (waited 1198d) is years old with no priority signal — re-test on a current build and get fresh logs; only escalate if it still reproduces."
     },
     {
       "number": 1081,
@@ -10734,6 +10734,29 @@
       "baseline_reason": "Old bug (waited 1156d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
+      "number": 1016,
+      "title": "The config WESTON_RDP_MONITOR_REFRESH_RATE not limiting framerate",
+      "url": "https://github.com/microsoft/wslg/issues/1016",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "bug"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2023-03-24T12:36:33Z",
+      "updated_at": "2023-08-23T06:59:24Z",
+      "age_days": 1148.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1148d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
+    },
+    {
       "number": 1097,
       "title": "Key stuck on alt+tab from Windows",
       "url": "https://github.com/microsoft/wslg/issues/1097",
@@ -10755,29 +10778,6 @@
       "baseline_glyph": "🗓️",
       "baseline_text": "Old unconfirmed bug — revalidate or close stale",
       "baseline_reason": "Old bug (waited 1148d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
-    },
-    {
-      "number": 1016,
-      "title": "The config WESTON_RDP_MONITOR_REFRESH_RATE not limiting framerate",
-      "url": "https://github.com/microsoft/wslg/issues/1016",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "bug"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2023-03-24T12:36:33Z",
-      "updated_at": "2023-08-23T06:59:24Z",
-      "age_days": 1147.0,
-      "triaged": false,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "reassess_stale",
-      "baseline_glyph": "🗓️",
-      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
-      "baseline_reason": "Old bug (waited 1147d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1099,
@@ -10896,6 +10896,29 @@
       "baseline_reason": "Marked in-progress but 1119 d old (waited 1119d) — verify the linked PR/owner is still active; if it stalled, reassign or drop the in-progress status."
     },
     {
+      "number": 1120,
+      "title": "SIGSEGV when calling  vkCmdBindVertexBuffers2",
+      "url": "https://github.com/microsoft/wslg/issues/1120",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "bug"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2023-09-28T07:54:10Z",
+      "updated_at": "2023-09-28T08:00:38Z",
+      "age_days": 1112.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 1112d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
+    },
+    {
       "number": 1113,
       "title": "VLC audio latency",
       "url": "https://github.com/microsoft/wslg/issues/1113",
@@ -10917,29 +10940,6 @@
       "baseline_glyph": "🗂️",
       "baseline_text": "Low-traction untyped item — park or decline",
       "baseline_reason": "Untyped report (waited 1111d) with no traction after 90+ days — if a feature, decline/park with rationale; if a bug, revalidate on a current build first. Don't leave it open indefinitely."
-    },
-    {
-      "number": 1120,
-      "title": "SIGSEGV when calling  vkCmdBindVertexBuffers2",
-      "url": "https://github.com/microsoft/wslg/issues/1120",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "bug"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2023-09-28T07:54:10Z",
-      "updated_at": "2023-09-28T08:00:38Z",
-      "age_days": 1111.0,
-      "triaged": false,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "reassess_stale",
-      "baseline_glyph": "🗓️",
-      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
-      "baseline_reason": "Old bug (waited 1111d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1126,
@@ -11277,7 +11277,7 @@
       "comments": 1,
       "created_at": "2024-01-10T06:07:20Z",
       "updated_at": "2024-01-10T06:07:47Z",
-      "age_days": 1007.0,
+      "age_days": 1008.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -11285,7 +11285,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Old unconfirmed bug — revalidate or close stale",
-      "baseline_reason": "Old bug (waited 1007d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
+      "baseline_reason": "Old bug (waited 1008d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 432,
@@ -11403,6 +11403,52 @@
       "baseline_reason": "Old bug (waited 981d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
+      "number": 1196,
+      "title": "intel hd 620 performance is stuck",
+      "url": "https://github.com/microsoft/wslg/issues/1196",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "bug"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2024-02-13T06:14:46Z",
+      "updated_at": "2024-02-13T06:14:46Z",
+      "age_days": 974.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 974d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
+    },
+    {
+      "number": 1197,
+      "title": "Crash when snipping tool used to copy an area of the screen",
+      "url": "https://github.com/microsoft/wslg/issues/1197",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "bug"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2024-02-13T07:31:20Z",
+      "updated_at": "2024-02-13T07:58:48Z",
+      "age_days": 974.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "request_info",
+      "baseline_glyph": "🩺",
+      "baseline_text": "Very old crash — revalidate before escalating",
+      "baseline_reason": "Crash report (waited 974d) is years old with no priority signal — re-test on a current build and get fresh logs; only escalate if it still reproduces."
+    },
+    {
       "number": 1027,
       "title": "Running 'Install RELEASE (Ubuntu)' shows no response.",
       "url": "https://github.com/microsoft/wslg/issues/1027",
@@ -11424,52 +11470,6 @@
       "baseline_glyph": "🗓️",
       "baseline_text": "Old unconfirmed bug — revalidate or close stale",
       "baseline_reason": "Old bug (waited 973d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
-    },
-    {
-      "number": 1196,
-      "title": "intel hd 620 performance is stuck",
-      "url": "https://github.com/microsoft/wslg/issues/1196",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "bug"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2024-02-13T06:14:46Z",
-      "updated_at": "2024-02-13T06:14:46Z",
-      "age_days": 973.0,
-      "triaged": false,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "reassess_stale",
-      "baseline_glyph": "🗓️",
-      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
-      "baseline_reason": "Old bug (waited 973d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
-    },
-    {
-      "number": 1197,
-      "title": "Crash when snipping tool used to copy an area of the screen",
-      "url": "https://github.com/microsoft/wslg/issues/1197",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "bug"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2024-02-13T07:31:20Z",
-      "updated_at": "2024-02-13T07:58:48Z",
-      "age_days": 973.0,
-      "triaged": false,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "🩺",
-      "baseline_text": "Very old crash — revalidate before escalating",
-      "baseline_reason": "Crash report (waited 973d) is years old with no priority signal — re-test on a current build and get fresh logs; only escalate if it still reproduces."
     },
     {
       "number": 1201,
@@ -11902,7 +11902,7 @@
       "comments": 1,
       "created_at": "2024-05-28T08:33:30Z",
       "updated_at": "2024-05-28T08:33:30Z",
-      "age_days": 868.0,
+      "age_days": 869.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -11910,7 +11910,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Old unconfirmed bug — revalidate or close stale",
-      "baseline_reason": "Old bug (waited 868d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
+      "baseline_reason": "Old bug (waited 869d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1253,
@@ -11925,7 +11925,7 @@
       "comments": 1,
       "created_at": "2024-06-03T05:15:01Z",
       "updated_at": "2024-06-03T06:13:38Z",
-      "age_days": 862.0,
+      "age_days": 863.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -11933,7 +11933,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Old unconfirmed bug — revalidate or close stale",
-      "baseline_reason": "Old bug (waited 862d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
+      "baseline_reason": "Old bug (waited 863d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1258,
@@ -12065,7 +12065,7 @@
       "comments": 1,
       "created_at": "2021-10-15T15:29:05Z",
       "updated_at": "2024-07-08T06:31:31Z",
-      "age_days": 827.0,
+      "age_days": 828.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -12073,7 +12073,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 827d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_reason": "Old feature ask (waited 828d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 973,
@@ -12089,7 +12089,7 @@
       "comments": 1,
       "created_at": "2023-02-01T13:07:10Z",
       "updated_at": "2024-07-21T06:55:25Z",
-      "age_days": 814.0,
+      "age_days": 815.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -12097,7 +12097,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Old unconfirmed bug — revalidate or close stale",
-      "baseline_reason": "Old bug (waited 814d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
+      "baseline_reason": "Old bug (waited 815d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1276,
@@ -12490,7 +12490,7 @@
       "comments": 1,
       "created_at": "2021-04-28T09:50:38Z",
       "updated_at": "2024-12-22T05:56:32Z",
-      "age_days": 660.0,
+      "age_days": 661.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -12498,7 +12498,30 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Old unconfirmed bug — revalidate or close stale",
-      "baseline_reason": "Old bug (waited 660d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
+      "baseline_reason": "Old bug (waited 661d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
+    },
+    {
+      "number": 384,
+      "title": "jet brains rider doesn't save files to disk until build",
+      "url": "https://github.com/microsoft/wslg/issues/384",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "bug"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2021-07-26T14:46:11Z",
+      "updated_at": "2025-01-30T08:35:04Z",
+      "age_days": 622.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
+      "baseline_reason": "Old bug (waited 622d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 961,
@@ -12523,29 +12546,6 @@
       "baseline_glyph": "🗓️",
       "baseline_text": "Old unconfirmed bug — revalidate or close stale",
       "baseline_reason": "Old bug (waited 622d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
-    },
-    {
-      "number": 384,
-      "title": "jet brains rider doesn't save files to disk until build",
-      "url": "https://github.com/microsoft/wslg/issues/384",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "bug"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2021-07-26T14:46:11Z",
-      "updated_at": "2025-01-30T08:35:04Z",
-      "age_days": 621.0,
-      "triaged": false,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "reassess_stale",
-      "baseline_glyph": "🗓️",
-      "baseline_text": "Old unconfirmed bug — revalidate or close stale",
-      "baseline_reason": "Old bug (waited 621d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 675,
@@ -12584,7 +12584,7 @@
       "comments": 1,
       "created_at": "2023-06-03T12:58:03Z",
       "updated_at": "2025-03-05T07:52:49Z",
-      "age_days": 587.0,
+      "age_days": 588.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -12592,7 +12592,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Old unconfirmed bug — revalidate or close stale",
-      "baseline_reason": "Old bug (waited 587d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
+      "baseline_reason": "Old bug (waited 588d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1310,
@@ -13183,7 +13183,7 @@
       "comments": 1,
       "created_at": "2025-08-04T11:59:04Z",
       "updated_at": "2025-08-18T06:07:55Z",
-      "age_days": 421.0,
+      "age_days": 422.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -13191,7 +13191,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Stale idea — decline or close for low demand",
-      "baseline_reason": "Old feature ask (waited 421d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
+      "baseline_reason": "Old feature ask (waited 422d) with little/no demand — decline with rationale or close as stale; reopen if demand returns."
     },
     {
       "number": 1369,
@@ -13298,7 +13298,7 @@
       "comments": 1,
       "created_at": "2025-09-24T07:09:13Z",
       "updated_at": "2025-09-24T07:09:13Z",
-      "age_days": 384.0,
+      "age_days": 385.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -13306,7 +13306,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Old unconfirmed bug — revalidate or close stale",
-      "baseline_reason": "Old bug (waited 384d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
+      "baseline_reason": "Old bug (waited 385d) with little activity — re-test on a current build; route only if it still repros, else close as stale."
     },
     {
       "number": 1374,
@@ -13390,7 +13390,7 @@
       "comments": 1,
       "created_at": "2025-11-05T08:25:40Z",
       "updated_at": "2025-11-05T08:26:38Z",
-      "age_days": 342.0,
+      "age_days": 343.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -13398,7 +13398,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Ageing, unconfirmed bug — revalidate",
-      "baseline_reason": "Bug (waited 342d) sat 180+ days with no traction — re-test on a current build; request repro/logs or close stale if it no longer repros."
+      "baseline_reason": "Bug (waited 343d) sat 180+ days with no traction — re-test on a current build; request repro/logs or close stale if it no longer repros."
     },
     {
       "number": 1326,
@@ -13911,6 +13911,29 @@
       "baseline_reason": "Bug (waited 183d) sat 180+ days with no traction — re-test on a current build; request repro/logs or close stale if it no longer repros."
     },
     {
+      "number": 660,
+      "title": "Qt5 Window Issues",
+      "url": "https://github.com/microsoft/wslg/issues/660",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "bug"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2022-02-11T05:04:32Z",
+      "updated_at": "2026-04-30T05:57:13Z",
+      "age_days": 167.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "request_info",
+      "baseline_glyph": "❓",
+      "baseline_text": "Request exact repro, version & logs",
+      "baseline_reason": "Bug (waited 167d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+    },
+    {
       "number": 1386,
       "title": "weston crashes when running winit apps",
       "url": "https://github.com/microsoft/wslg/issues/1386",
@@ -13932,29 +13955,6 @@
       "baseline_glyph": "🩺",
       "baseline_text": "Confirm crash — get repro/logs & route",
       "baseline_reason": "Crash report (waited 167d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
-    },
-    {
-      "number": 660,
-      "title": "Qt5 Window Issues",
-      "url": "https://github.com/microsoft/wslg/issues/660",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "bug"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2022-02-11T05:04:32Z",
-      "updated_at": "2026-04-30T05:57:13Z",
-      "age_days": 166.0,
-      "triaged": false,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "❓",
-      "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 166d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 1445,
@@ -15176,7 +15176,7 @@
       "comments": 1,
       "created_at": "2021-04-29T00:20:13Z",
       "updated_at": "2026-05-27T06:57:13Z",
-      "age_days": 139.0,
+      "age_days": 140.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -15184,7 +15184,7 @@
       "baseline_action": "no_action",
       "baseline_glyph": "🚧",
       "baseline_text": "In progress — track the fix",
-      "baseline_reason": "Already being worked (waited 139d) — a fix/PR is in flight; track it to completion, don't re-triage or close."
+      "baseline_reason": "Already being worked (waited 140d) — a fix/PR is in flight; track it to completion, don't re-triage or close."
     },
     {
       "number": 1354,
@@ -15461,29 +15461,6 @@
       "baseline_reason": "Bug (waited 110d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
-      "number": 1467,
-      "title": "[Regression] kernel oops on 6.18.33.1-microsoft-standard-WSL2 (was okay on 6.6.114.1-1)",
-      "url": "https://github.com/microsoft/wslg/issues/1467",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "bug"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-06-10T22:51:43Z",
-      "updated_at": "2026-06-26T23:11:05Z",
-      "age_days": 109.0,
-      "triaged": false,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "❓",
-      "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 109d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
-    },
-    {
       "number": 1477,
       "title": "Monitor layout change blocks WSLg",
       "url": "https://github.com/microsoft/wslg/issues/1477",
@@ -15496,6 +15473,29 @@
       "comments": 1,
       "created_at": "2026-06-26T07:26:27Z",
       "updated_at": "2026-06-26T07:28:56Z",
+      "age_days": 110.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "request_info",
+      "baseline_glyph": "❓",
+      "baseline_text": "Request exact repro, version & logs",
+      "baseline_reason": "Bug (waited 110d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+    },
+    {
+      "number": 1467,
+      "title": "[Regression] kernel oops on 6.18.33.1-microsoft-standard-WSL2 (was okay on 6.6.114.1-1)",
+      "url": "https://github.com/microsoft/wslg/issues/1467",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "bug"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-06-10T22:51:43Z",
+      "updated_at": "2026-06-26T23:11:05Z",
       "age_days": 109.0,
       "triaged": false,
       "awaiting": false,
@@ -15681,7 +15681,7 @@
       "comments": 1,
       "created_at": "2025-03-15T00:48:20Z",
       "updated_at": "2026-07-17T08:26:45Z",
-      "age_days": 88.0,
+      "age_days": 89.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -15689,7 +15689,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 88d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (waited 89d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 1485,
@@ -15736,6 +15736,29 @@
       "baseline_reason": "Feature/idea (waited 85d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     },
     {
+      "number": 1490,
+      "title": "Epiphany not showing any texts or icons.",
+      "url": "https://github.com/microsoft/wslg/issues/1490",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "bug"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-08-05T08:14:52Z",
+      "updated_at": "2026-08-05T08:30:14Z",
+      "age_days": 70.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "request_info",
+      "baseline_glyph": "❓",
+      "baseline_text": "Request exact repro, version & logs",
+      "baseline_reason": "Bug (waited 70d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+    },
+    {
       "number": 1420,
       "title": "librecalc crash on copy/paste",
       "url": "https://github.com/microsoft/wslg/issues/1420",
@@ -15757,29 +15780,6 @@
       "baseline_glyph": "🩺",
       "baseline_text": "Confirm crash — get repro/logs & route",
       "baseline_reason": "Crash report (waited 69d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
-    },
-    {
-      "number": 1490,
-      "title": "Epiphany not showing any texts or icons.",
-      "url": "https://github.com/microsoft/wslg/issues/1490",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "bug"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-08-05T08:14:52Z",
-      "updated_at": "2026-08-05T08:30:14Z",
-      "age_days": 69.0,
-      "triaged": false,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "❓",
-      "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 69d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 1417,
@@ -15838,7 +15838,7 @@
       "comments": 1,
       "created_at": "2023-11-11T10:17:49Z",
       "updated_at": "2026-08-10T08:20:31Z",
-      "age_days": 64.0,
+      "age_days": 65.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -15846,7 +15846,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 64d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (waited 65d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 1493,
@@ -15861,7 +15861,7 @@
       "comments": 1,
       "created_at": "2026-08-11T07:40:20Z",
       "updated_at": "2026-08-11T07:40:20Z",
-      "age_days": 63.0,
+      "age_days": 64.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -15869,7 +15869,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 63d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (waited 64d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 1494,
@@ -16191,7 +16191,7 @@
       "comments": 1,
       "created_at": "2026-07-11T02:03:37Z",
       "updated_at": "2026-09-16T06:31:54Z",
-      "age_days": 27.0,
+      "age_days": 28.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -16199,7 +16199,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 27d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (waited 28d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 1509,
@@ -16438,7 +16438,7 @@
       "comments": 1,
       "created_at": "2026-10-07T12:13:12Z",
       "updated_at": "2026-10-11T08:12:48Z",
-      "age_days": 2.0,
+      "age_days": 3.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -16446,7 +16446,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 2d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (waited 3d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     }
   ],
   "prs": [
@@ -16464,7 +16464,7 @@
       "created_at": "2023-11-08T18:35:27Z",
       "updated_at": "2026-05-17T14:34:38Z",
       "age_days": 149.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -16488,7 +16488,7 @@
       "created_at": "2025-05-12T15:27:35Z",
       "updated_at": "2026-05-17T14:34:40Z",
       "age_days": 149.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -16536,7 +16536,7 @@
       "created_at": "2026-04-10T23:07:57Z",
       "updated_at": "2026-05-18T18:38:26Z",
       "age_days": 148.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -16606,7 +16606,7 @@
       "created_at": "2026-05-18T21:02:01Z",
       "updated_at": "2026-05-18T21:06:00Z",
       "age_days": 148.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -16725,7 +16725,7 @@
       "created_at": "2026-05-19T15:27:47Z",
       "updated_at": "2026-06-08T15:47:15Z",
       "age_days": 127.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -16747,7 +16747,7 @@
       "created_at": "2026-06-22T07:20:31Z",
       "updated_at": "2026-06-23T02:18:10Z",
       "age_days": 113.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -16816,7 +16816,7 @@
       "created_at": "2026-05-19T18:19:06Z",
       "updated_at": "2026-05-19T23:10:31Z",
       "age_days": 147.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": false,
       "is_draft": true,
       "merge_state": "",
