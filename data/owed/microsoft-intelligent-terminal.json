@@ -1,6 +1,6 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-10-13T18:14:25Z",
+  "generated_at": "2026-10-13T21:44:54Z",
   "awaiting_label": "Needs-Triage",
   "awaiting_issues": 47,
   "awaiting_prs": 64,
@@ -24,7 +24,7 @@
       "comments": 1,
       "created_at": "2026-10-07T20:17:46Z",
       "updated_at": "2026-10-13T17:21:29Z",
-      "age_days": 0.0,
+      "age_days": 1.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -32,7 +32,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (new) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 1d) — correct them, then route."
     },
     {
       "number": 674,
@@ -571,7 +571,7 @@
       "comments": 1,
       "created_at": "2026-09-21T15:46:26Z",
       "updated_at": "2026-09-21T15:47:08Z",
-      "age_days": 22.0,
+      "age_days": 23.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -579,7 +579,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "🩺",
       "baseline_text": "Confirm crash — get repro/logs & route",
-      "baseline_reason": "Crash report (waited 22d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
+      "baseline_reason": "Crash report (waited 23d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
     },
     {
       "number": 991,
@@ -695,7 +695,7 @@
       "comments": 1,
       "created_at": "2026-09-28T15:51:39Z",
       "updated_at": "2026-09-28T15:52:37Z",
-      "age_days": 15.0,
+      "age_days": 16.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -703,7 +703,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 15d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 16d) — correct them, then route."
     },
     {
       "number": 1024,
@@ -930,6 +930,31 @@
       "baseline_reason": "Security-class issue (waited 7d) — confirm, escalate to the security owner, and route urgently."
     },
     {
+      "number": 1087,
+      "title": "[aw] Failed jobs: Official security E2E acceptance",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/1087",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "Needs-Triage",
+        "Needs-Tag-Fix",
+        "agentic-workflows"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-10-07T15:26:31Z",
+      "updated_at": "2026-10-07T15:26:59Z",
+      "age_days": 7.0,
+      "triaged": false,
+      "awaiting": true,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "escalate",
+      "baseline_glyph": "🛡️",
+      "baseline_text": "Escalate — security",
+      "baseline_reason": "Security-class issue (waited 7d) — confirm, escalate to the security owner, and route urgently."
+    },
+    {
       "number": 1086,
       "title": "[aw] Ensure Localizationguide Forkedrepo timed out",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/1086",
@@ -953,31 +978,6 @@
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
       "baseline_reason": "Wrong/missing tags (waited 6d) — correct them, then route."
-    },
-    {
-      "number": 1087,
-      "title": "[aw] Failed jobs: Official security E2E acceptance",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/1087",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "Needs-Triage",
-        "Needs-Tag-Fix",
-        "agentic-workflows"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-10-07T15:26:31Z",
-      "updated_at": "2026-10-07T15:26:59Z",
-      "age_days": 6.0,
-      "triaged": false,
-      "awaiting": true,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "escalate",
-      "baseline_glyph": "🛡️",
-      "baseline_text": "Escalate — security",
-      "baseline_reason": "Security-class issue (waited 6d) — confirm, escalate to the security owner, and route urgently."
     },
     {
       "number": 1088,
@@ -2075,7 +2075,7 @@
       "comments": 1,
       "created_at": "2026-05-19T18:03:05Z",
       "updated_at": "2026-05-21T16:11:54Z",
-      "age_days": 145.0,
+      "age_days": 146.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -2084,7 +2084,7 @@
       "baseline_action": "review",
       "baseline_glyph": "🕰️",
       "baseline_text": "Stale PR — status or close",
-      "baseline_reason": "PR has sat 145 d (waited 145d) — ping for status/rebase or close if abandoned."
+      "baseline_reason": "PR has sat 146 d (waited 146d) — ping for status/rebase or close if abandoned."
     },
     {
       "number": 38,
