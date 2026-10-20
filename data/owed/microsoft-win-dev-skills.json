@@ -1,13 +1,13 @@
 {
   "repo": "microsoft/win-dev-skills",
-  "generated_at": "2026-10-20T06:23:33Z",
+  "generated_at": "2026-10-20T10:02:01Z",
   "awaiting_label": null,
   "awaiting_issues": 0,
-  "awaiting_prs": 14,
+  "awaiting_prs": 15,
   "backlog_issues": 16,
-  "backlog_prs": 15,
+  "backlog_prs": 16,
   "issues_total": 16,
-  "prs_total": 15,
+  "prs_total": 16,
   "issues": [
     {
       "number": 128,
@@ -309,7 +309,7 @@
       "comments": 1,
       "created_at": "2026-09-03T04:48:10Z",
       "updated_at": "2026-09-03T04:51:09Z",
-      "age_days": 47.0,
+      "age_days": 48.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -317,7 +317,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm type (bug/feature) & route",
-      "baseline_reason": "Untyped report (waited 47d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+      "baseline_reason": "Untyped report (waited 48d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
     },
     {
       "number": 158,
@@ -396,7 +396,7 @@
       "comments": 1,
       "created_at": "2026-08-13T23:08:14Z",
       "updated_at": "2026-08-30T04:49:41Z",
-      "age_days": 51.0,
+      "age_days": 52.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -405,7 +405,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 51 d for us (waited 51d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 52 d for us (waited 52d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 167,
@@ -507,7 +507,7 @@
       "created_at": "2026-09-20T08:55:43Z",
       "updated_at": "2026-09-20T08:55:43Z",
       "age_days": 30.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -529,7 +529,7 @@
       "created_at": "2026-09-21T22:07:01Z",
       "updated_at": "2026-09-21T22:07:02Z",
       "age_days": 29.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -572,7 +572,7 @@
       "comments": 1,
       "created_at": "2026-08-25T21:06:18Z",
       "updated_at": "2026-10-07T03:14:38Z",
-      "age_days": 13.0,
+      "age_days": 14.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -581,7 +581,7 @@
       "baseline_action": "review",
       "baseline_glyph": "📦",
       "baseline_text": "Dependency PR — check CI & merge/close",
-      "baseline_reason": "Dependency bump (waited 13d) — verify CI + changelog risk, then merge or close."
+      "baseline_reason": "Dependency bump (waited 14d) — verify CI + changelog risk, then merge or close."
     },
     {
       "number": 203,
@@ -672,6 +672,28 @@
       "baseline_reason": "Dependency bump (waited 1d) — verify CI + changelog risk, then merge or close."
     },
     {
+      "number": 213,
+      "title": "List the UWP migration plugin",
+      "url": "https://github.com/microsoft/win-dev-skills/pull/213",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-10-20T09:52:24Z",
+      "updated_at": "2026-10-20T09:52:25Z",
+      "age_days": 0.0,
+      "triaged": true,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (new) — review it."
+    },
+    {
       "number": 171,
       "title": "Skill for using ETW events for performance and lifecycle diagnostics",
       "url": "https://github.com/microsoft/win-dev-skills/pull/171",
@@ -682,7 +704,7 @@
       "comments": 1,
       "created_at": "2026-08-27T16:39:38Z",
       "updated_at": "2026-09-09T05:04:25Z",
-      "age_days": 41.0,
+      "age_days": 42.0,
       "triaged": false,
       "awaiting": false,
       "is_draft": false,
@@ -691,7 +713,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 41 d for us (waited 41d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 42 d for us (waited 42d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     }
   ]
 }
