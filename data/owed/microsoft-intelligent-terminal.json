@@ -1,13 +1,13 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-10-20T20:43:42Z",
+  "generated_at": "2026-10-21T00:22:43Z",
   "awaiting_label": "Needs-Triage",
   "awaiting_issues": 61,
-  "awaiting_prs": 60,
+  "awaiting_prs": 61,
   "backlog_issues": 97,
-  "backlog_prs": 63,
+  "backlog_prs": 64,
   "issues_total": 61,
-  "prs_total": 52,
+  "prs_total": 53,
   "issues": [
     {
       "number": 1096,
@@ -24,7 +24,7 @@
       "comments": 1,
       "created_at": "2026-10-07T20:17:46Z",
       "updated_at": "2026-10-13T17:21:29Z",
-      "age_days": 7.0,
+      "age_days": 8.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -32,7 +32,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 7d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 8d) — correct them, then route."
     },
     {
       "number": 674,
@@ -75,7 +75,7 @@
       "created_at": "2026-08-27T10:01:07Z",
       "updated_at": "2026-09-01T03:43:26Z",
       "age_days": 50.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -299,7 +299,7 @@
       "comments": 1,
       "created_at": "2026-09-05T00:28:06Z",
       "updated_at": "2026-09-05T20:01:15Z",
-      "age_days": 45.0,
+      "age_days": 46.0,
       "triaged": false,
       "awaiting": true,
       "fix_ready": false,
@@ -307,7 +307,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 45d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 46d) — correct them, then route."
     },
     {
       "number": 874,
@@ -769,7 +769,7 @@
       "comments": 1,
       "created_at": "2026-10-01T11:05:31Z",
       "updated_at": "2026-10-01T18:09:00Z",
-      "age_days": 19.0,
+      "age_days": 20.0,
       "triaged": false,
       "awaiting": true,
       "fix_ready": false,
@@ -777,7 +777,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 19d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 20d) — correct them, then route."
     },
     {
       "number": 1071,
@@ -2944,6 +2944,28 @@
       "baseline_reason": "PR has waited 65 d for us (waited 65d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
+      "number": 626,
+      "title": "Pin GitHub Actions to full-length commit SHAs",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/626",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-08-18T17:36:27Z",
+      "updated_at": "2026-08-18T17:45:25Z",
+      "age_days": 64.0,
+      "triaged": false,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "assign_reviewer",
+      "baseline_glyph": "👤",
+      "baseline_text": "Assign a domain reviewer",
+      "baseline_reason": "PR has waited 64 d for us (waited 64d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+    },
+    {
       "number": 520,
       "title": "Configure Dependabot for WTA Rust dependencies",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/520",
@@ -2964,28 +2986,6 @@
       "baseline_glyph": "📦",
       "baseline_text": "Dependency PR — check CI & merge/close",
       "baseline_reason": "Dependency bump (waited 63d) — verify CI + changelog risk, then merge or close."
-    },
-    {
-      "number": 626,
-      "title": "Pin GitHub Actions to full-length commit SHAs",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/626",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-08-18T17:36:27Z",
-      "updated_at": "2026-08-18T17:45:25Z",
-      "age_days": 63.0,
-      "triaged": false,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "assign_reviewer",
-      "baseline_glyph": "👤",
-      "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 63 d for us (waited 63d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 442,
@@ -3560,6 +3560,28 @@
       "baseline_reason": "PR (waited 5d) — review it."
     },
     {
+      "number": 1180,
+      "title": "Unify ACP startup lifecycle, bounded retries and post-install verification",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/1180",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-10-19T18:16:07Z",
+      "updated_at": "2026-10-20T16:51:08Z",
+      "age_days": 1.0,
+      "triaged": true,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (waited 1d) — review it."
+    },
+    {
       "number": 1188,
       "title": "Ignore stale Copilot tool returns while waiting for input",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/1188",
@@ -3692,18 +3714,18 @@
       "baseline_reason": "PR (waited 1d) — review it."
     },
     {
-      "number": 1180,
-      "title": "Unify ACP startup lifecycle, bounded retries and post-install verification",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/1180",
+      "number": 1199,
+      "title": "Allow fixture startup headroom in the OpenCode probe cleanup test",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/1199",
       "kind": "pr",
       "is_community": null,
       "labels": [],
       "up": 0,
       "comments": 1,
-      "created_at": "2026-10-19T18:16:07Z",
-      "updated_at": "2026-10-20T16:51:08Z",
+      "created_at": "2026-10-21T00:20:11Z",
+      "updated_at": "2026-10-21T00:22:00Z",
       "age_days": 0.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
