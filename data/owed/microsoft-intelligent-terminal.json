@@ -1,12 +1,12 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-10-21T18:19:00Z",
+  "generated_at": "2026-10-21T21:49:34Z",
   "awaiting_label": "Needs-Triage",
-  "awaiting_issues": 64,
-  "awaiting_prs": 56,
-  "backlog_issues": 100,
+  "awaiting_issues": 65,
+  "awaiting_prs": 57,
+  "backlog_issues": 101,
   "backlog_prs": 61,
-  "issues_total": 64,
+  "issues_total": 65,
   "prs_total": 50,
   "issues": [
     {
@@ -24,7 +24,7 @@
       "comments": 1,
       "created_at": "2026-10-07T20:17:46Z",
       "updated_at": "2026-10-13T17:21:29Z",
-      "age_days": 8.0,
+      "age_days": 9.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -32,7 +32,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 8d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 9d) — correct them, then route."
     },
     {
       "number": 674,
@@ -571,7 +571,7 @@
       "comments": 1,
       "created_at": "2026-09-21T15:46:26Z",
       "updated_at": "2026-09-21T15:47:08Z",
-      "age_days": 30.0,
+      "age_days": 31.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -579,7 +579,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "🩺",
       "baseline_text": "Confirm crash — get repro/logs & route",
-      "baseline_reason": "Crash report (waited 30d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
+      "baseline_reason": "Crash report (waited 31d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
     },
     {
       "number": 991,
@@ -695,7 +695,7 @@
       "comments": 1,
       "created_at": "2026-09-28T15:51:39Z",
       "updated_at": "2026-09-28T15:52:37Z",
-      "age_days": 23.0,
+      "age_days": 24.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -703,7 +703,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 23d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 24d) — correct them, then route."
     },
     {
       "number": 1024,
@@ -930,6 +930,31 @@
       "baseline_reason": "Security-class issue (waited 15d) — confirm, escalate to the security owner, and route urgently."
     },
     {
+      "number": 1087,
+      "title": "[aw] Failed jobs: Official security E2E acceptance",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/1087",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "Needs-Triage",
+        "Needs-Tag-Fix",
+        "agentic-workflows"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-10-07T15:26:31Z",
+      "updated_at": "2026-10-07T15:26:59Z",
+      "age_days": 15.0,
+      "triaged": false,
+      "awaiting": true,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "escalate",
+      "baseline_glyph": "🛡️",
+      "baseline_text": "Escalate — security",
+      "baseline_reason": "Security-class issue (waited 15d) — confirm, escalate to the security owner, and route urgently."
+    },
+    {
       "number": 1086,
       "title": "[aw] Ensure Localizationguide Forkedrepo timed out",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/1086",
@@ -953,31 +978,6 @@
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
       "baseline_reason": "Wrong/missing tags (waited 14d) — correct them, then route."
-    },
-    {
-      "number": 1087,
-      "title": "[aw] Failed jobs: Official security E2E acceptance",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/1087",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "Needs-Triage",
-        "Needs-Tag-Fix",
-        "agentic-workflows"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-10-07T15:26:31Z",
-      "updated_at": "2026-10-07T15:26:59Z",
-      "age_days": 14.0,
-      "triaged": false,
-      "awaiting": true,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "escalate",
-      "baseline_glyph": "🛡️",
-      "baseline_text": "Escalate — security",
-      "baseline_reason": "Security-class issue (waited 14d) — confirm, escalate to the security owner, and route urgently."
     },
     {
       "number": 1088,
@@ -1380,6 +1380,31 @@
       "baseline_reason": "Wrong/missing tags (waited 2d) — correct them, then route."
     },
     {
+      "number": 1181,
+      "title": "[aw] Native WinUI Accessibility Review timed out",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/1181",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "Needs-Triage",
+        "Needs-Tag-Fix",
+        "agentic-workflows"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-10-19T19:44:50Z",
+      "updated_at": "2026-10-20T16:00:20Z",
+      "age_days": 2.0,
+      "triaged": false,
+      "awaiting": true,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "label_only",
+      "baseline_glyph": "🏷️",
+      "baseline_text": "Fix the labels / tags",
+      "baseline_reason": "Wrong/missing tags (waited 2d) — correct them, then route."
+    },
+    {
       "number": 1183,
       "title": "[aw] Failed jobs: Native WinUI Accessibility Review",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/1183",
@@ -1480,31 +1505,6 @@
       "baseline_reason": "Wrong/missing tags (waited 1d) — correct them, then route."
     },
     {
-      "number": 1181,
-      "title": "[aw] Native WinUI Accessibility Review timed out",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/1181",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "Needs-Triage",
-        "Needs-Tag-Fix",
-        "agentic-workflows"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-10-19T19:44:50Z",
-      "updated_at": "2026-10-20T16:00:20Z",
-      "age_days": 1.0,
-      "triaged": false,
-      "awaiting": true,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "label_only",
-      "baseline_glyph": "🏷️",
-      "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 1d) — correct them, then route."
-    },
-    {
       "number": 1186,
       "title": "[aw] Native WinUI Accessibility Review failed",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/1186",
@@ -1555,6 +1555,30 @@
       "baseline_reason": "Wrong/missing tags (waited 1d) — correct them, then route."
     },
     {
+      "number": 1207,
+      "title": "Intelligent Terminal: wt-agent-hooks OpenCode plugin fails to load on OpenCode V2 (V1 plugin API)",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/1207",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "Needs-Triage",
+        "Needs-Tag-Fix"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-10-21T14:48:46Z",
+      "updated_at": "2026-10-21T16:00:16Z",
+      "age_days": 1.0,
+      "triaged": true,
+      "awaiting": true,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "label_only",
+      "baseline_glyph": "🏷️",
+      "baseline_text": "Fix the labels / tags",
+      "baseline_reason": "Wrong/missing tags (waited 1d) — correct them, then route."
+    },
+    {
       "number": 1206,
       "title": "[aw] Ensure Localization reported incomplete result",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/1206",
@@ -1580,28 +1604,28 @@
       "baseline_reason": "Wrong/missing tags (new) — correct them, then route."
     },
     {
-      "number": 1207,
-      "title": "Intelligent Terminal: wt-agent-hooks OpenCode plugin fails to load on OpenCode V2 (V1 plugin API)",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/1207",
+      "number": 1209,
+      "title": "[infra] Accessibility source review omits mandatory per-dimension evidence",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/1209",
       "kind": "issue",
       "is_community": null,
       "labels": [
-        "Needs-Triage",
-        "Needs-Tag-Fix"
+        "Issue-Bug",
+        "Needs-Triage"
       ],
       "up": 0,
       "comments": 1,
-      "created_at": "2026-10-21T14:48:46Z",
-      "updated_at": "2026-10-21T16:00:16Z",
+      "created_at": "2026-10-21T20:40:03Z",
+      "updated_at": "2026-10-21T20:40:31Z",
       "age_days": 0.0,
-      "triaged": true,
+      "triaged": false,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "label_only",
-      "baseline_glyph": "🏷️",
-      "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (new) — correct them, then route."
+      "baseline_action": "request_info",
+      "baseline_glyph": "❓",
+      "baseline_text": "Request exact repro, version & logs",
+      "baseline_reason": "Bug (new) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 228,
@@ -2500,7 +2524,7 @@
       "comments": 1,
       "created_at": "2026-05-19T18:03:05Z",
       "updated_at": "2026-05-21T16:11:54Z",
-      "age_days": 153.0,
+      "age_days": 154.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -2509,7 +2533,7 @@
       "baseline_action": "review",
       "baseline_glyph": "🕰️",
       "baseline_text": "Stale PR — status or close",
-      "baseline_reason": "PR has sat 153 d (waited 153d) — ping for status/rebase or close if abandoned."
+      "baseline_reason": "PR has sat 154 d (waited 154d) — ping for status/rebase or close if abandoned."
     },
     {
       "number": 38,
@@ -3018,6 +3042,28 @@
       "baseline_reason": "PR has waited 66 d for us (waited 66d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
+      "number": 626,
+      "title": "Pin GitHub Actions to full-length commit SHAs",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/626",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-08-18T17:36:27Z",
+      "updated_at": "2026-08-18T17:45:25Z",
+      "age_days": 65.0,
+      "triaged": false,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "assign_reviewer",
+      "baseline_glyph": "👤",
+      "baseline_text": "Assign a domain reviewer",
+      "baseline_reason": "PR has waited 65 d for us (waited 65d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+    },
+    {
       "number": 520,
       "title": "Configure Dependabot for WTA Rust dependencies",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/520",
@@ -3038,28 +3084,6 @@
       "baseline_glyph": "📦",
       "baseline_text": "Dependency PR — check CI & merge/close",
       "baseline_reason": "Dependency bump (waited 64d) — verify CI + changelog risk, then merge or close."
-    },
-    {
-      "number": 626,
-      "title": "Pin GitHub Actions to full-length commit SHAs",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/626",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-08-18T17:36:27Z",
-      "updated_at": "2026-08-18T17:45:25Z",
-      "age_days": 64.0,
-      "triaged": false,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "assign_reviewer",
-      "baseline_glyph": "👤",
-      "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 64 d for us (waited 64d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 442,
@@ -3666,7 +3690,7 @@
       "comments": 1,
       "created_at": "2026-10-20T10:38:11Z",
       "updated_at": "2026-10-20T14:25:37Z",
-      "age_days": 1.0,
+      "age_days": 2.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -3675,7 +3699,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 1d) — review it."
+      "baseline_reason": "PR (waited 2d) — review it."
     },
     {
       "number": 1200,
@@ -3698,6 +3722,28 @@
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
       "baseline_reason": "PR (waited 1d) — review it."
+    },
+    {
+      "number": 1208,
+      "title": "Add visible sidebar tab navigation hotkeys",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/1208",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-10-21T18:04:02Z",
+      "updated_at": "2026-10-21T20:45:08Z",
+      "age_days": 0.0,
+      "triaged": false,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (new) — review it."
     },
     {
       "number": 541,
@@ -3786,28 +3832,6 @@
       "baseline_glyph": "🚧",
       "baseline_text": "Wait — PR is a draft/WIP",
       "baseline_reason": "Draft/WIP PR (waited 1d) — don't review yet; nudge the author to mark it ready."
-    },
-    {
-      "number": 1208,
-      "title": "Add visible sidebar tab navigation hotkeys",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/1208",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-10-21T18:04:02Z",
-      "updated_at": "2026-10-21T18:10:45Z",
-      "age_days": 0.0,
-      "triaged": false,
-      "awaiting": false,
-      "is_draft": true,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "wait_author",
-      "baseline_glyph": "🚧",
-      "baseline_text": "Wait — PR is a draft/WIP",
-      "baseline_reason": "Draft/WIP PR (new) — don't review yet; nudge the author to mark it ready."
     }
   ]
 }
