@@ -1,13 +1,13 @@
 {
   "repo": "microsoft/win-dev-skills",
-  "generated_at": "2026-10-22T13:21:44Z",
+  "generated_at": "2026-10-22T15:35:21Z",
   "awaiting_label": null,
   "awaiting_issues": 0,
   "awaiting_prs": 14,
   "backlog_issues": 16,
   "backlog_prs": 16,
   "issues_total": 16,
-  "prs_total": 13,
+  "prs_total": 16,
   "issues": [
     {
       "number": 128,
@@ -20,7 +20,7 @@
       "comments": 1,
       "created_at": "2026-07-15T11:29:00Z",
       "updated_at": "2026-07-15T11:29:00Z",
-      "age_days": 99.0,
+      "age_days": 100.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -28,7 +28,7 @@
       "baseline_action": "escalate",
       "baseline_glyph": "🚨",
       "baseline_text": "Escalate — crash/reliability",
-      "baseline_reason": "Crash/reliability issue (waited 99d) — get repro+logs if missing, confirm severity, and route to the area owner urgently."
+      "baseline_reason": "Crash/reliability issue (waited 100d) — get repro+logs if missing, confirm severity, and route to the area owner urgently."
     },
     {
       "number": 53,
@@ -223,7 +223,7 @@
       "comments": 1,
       "created_at": "2026-07-15T11:28:59Z",
       "updated_at": "2026-07-15T11:28:59Z",
-      "age_days": 99.0,
+      "age_days": 100.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -231,7 +231,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 99d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (waited 100d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 129,
@@ -244,7 +244,7 @@
       "comments": 1,
       "created_at": "2026-07-15T11:29:00Z",
       "updated_at": "2026-07-15T11:29:00Z",
-      "age_days": 99.0,
+      "age_days": 100.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -252,7 +252,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "🗂️",
       "baseline_text": "Low-traction untyped item — park or decline",
-      "baseline_reason": "Untyped report (waited 99d) with no traction after 90+ days — if a feature, decline/park with rationale; if a bug, revalidate on a current build first. Don't leave it open indefinitely."
+      "baseline_reason": "Untyped report (waited 100d) with no traction after 90+ days — if a feature, decline/park with rationale; if a bug, revalidate on a current build first. Don't leave it open indefinitely."
     },
     {
       "number": 139,
@@ -550,7 +550,7 @@
       "comments": 1,
       "created_at": "2026-09-24T10:38:48Z",
       "updated_at": "2026-09-24T11:11:21Z",
-      "age_days": 28.0,
+      "age_days": 29.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -559,7 +559,7 @@
       "baseline_action": "review",
       "baseline_glyph": "👀",
       "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 28d) — review it."
+      "baseline_reason": "PR (waited 29d) — review it."
     },
     {
       "number": 161,
