@@ -1,13 +1,13 @@
 {
   "repo": "microsoft/intelligent-terminal",
-  "generated_at": "2026-10-23T06:16:13Z",
+  "generated_at": "2026-10-23T09:29:39Z",
   "awaiting_label": "Needs-Triage",
-  "awaiting_issues": 68,
-  "awaiting_prs": 61,
-  "backlog_issues": 104,
-  "backlog_prs": 65,
-  "issues_total": 68,
-  "prs_total": 54,
+  "awaiting_issues": 70,
+  "awaiting_prs": 59,
+  "backlog_issues": 106,
+  "backlog_prs": 63,
+  "issues_total": 70,
+  "prs_total": 52,
   "issues": [
     {
       "number": 1096,
@@ -20,11 +20,11 @@
         "Needs-Triage",
         "Needs-Tag-Fix"
       ],
-      "up": 3,
+      "up": 4,
       "comments": 1,
       "created_at": "2026-10-07T20:17:46Z",
-      "updated_at": "2026-10-13T17:21:29Z",
-      "age_days": 10.0,
+      "updated_at": "2026-10-23T08:55:32Z",
+      "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -32,7 +32,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 10d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (new) — correct them, then route."
     },
     {
       "number": 674,
@@ -49,7 +49,7 @@
       "comments": 1,
       "created_at": "2026-08-27T09:22:51Z",
       "updated_at": "2026-09-01T03:43:26Z",
-      "age_days": 52.0,
+      "age_days": 53.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -57,7 +57,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm on current build & route (AgentPane)",
-      "baseline_reason": "Bug (AgentPane) (waited 52d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
+      "baseline_reason": "Bug (AgentPane) (waited 53d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 676,
@@ -74,7 +74,7 @@
       "comments": 1,
       "created_at": "2026-08-27T10:01:07Z",
       "updated_at": "2026-09-01T03:43:26Z",
-      "age_days": 52.0,
+      "age_days": 53.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -82,7 +82,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Triage idea — scope then decide (AgentPane)",
-      "baseline_reason": "New untriaged idea (AgentPane) (waited 52d) — classify it and either ask for scope or make an early accept/park call."
+      "baseline_reason": "New untriaged idea (AgentPane) (waited 53d) — classify it and either ask for scope or make an early accept/park call."
     },
     {
       "number": 682,
@@ -133,6 +133,33 @@
       "baseline_glyph": "💬",
       "baseline_text": "Triage idea — scope then decide (FirstRun)",
       "baseline_reason": "New untriaged idea (FirstRun) (waited 51d) — classify it and either ask for scope or make an early accept/park call."
+    },
+    {
+      "number": 783,
+      "title": "FRE dead-ends when PowerShell execution policy blocks shell integration",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/783",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "Issue-Bug",
+        "Needs-Triage",
+        "Area-AutoFix",
+        "Area-FirstRun",
+        "Status-In-Progress"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-09-02T08:45:01Z",
+      "updated_at": "2026-09-03T04:08:58Z",
+      "age_days": 51.0,
+      "triaged": false,
+      "awaiting": true,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "reply",
+      "baseline_glyph": "💬",
+      "baseline_text": "Confirm on current build & route (AutoFix)",
+      "baseline_reason": "Bug (AutoFix) (waited 51d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
     },
     {
       "number": 784,
@@ -234,33 +261,6 @@
       "baseline_reason": "Bug (waited 50d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
-      "number": 783,
-      "title": "FRE dead-ends when PowerShell execution policy blocks shell integration",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/783",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "Issue-Bug",
-        "Needs-Triage",
-        "Area-AutoFix",
-        "Area-FirstRun",
-        "Status-In-Progress"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-09-02T08:45:01Z",
-      "updated_at": "2026-09-03T04:08:58Z",
-      "age_days": 50.0,
-      "triaged": false,
-      "awaiting": true,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm on current build & route (AutoFix)",
-      "baseline_reason": "Bug (AutoFix) (waited 50d) — acknowledge, confirm it still repros on a current build, and route to the area owner."
-    },
-    {
       "number": 835,
       "title": "Require architecture- and profile-matched WTA during packaging",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/835",
@@ -274,7 +274,7 @@
       "comments": 1,
       "created_at": "2026-09-04T04:14:07Z",
       "updated_at": "2026-09-04T04:14:30Z",
-      "age_days": 49.0,
+      "age_days": 50.0,
       "triaged": false,
       "awaiting": true,
       "fix_ready": false,
@@ -282,7 +282,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 49d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 50d) — correct them, then route."
     },
     {
       "number": 854,
@@ -383,31 +383,6 @@
       "baseline_reason": "New untriaged idea (AgentPane) (waited 44d) — classify it and either ask for scope or make an early accept/park call."
     },
     {
-      "number": 926,
-      "title": "[aw] Ensure Localization failed",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/926",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "Needs-Triage",
-        "Needs-Tag-Fix",
-        "agentic-workflows"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-09-10T23:41:59Z",
-      "updated_at": "2026-09-11T07:32:38Z",
-      "age_days": 42.0,
-      "triaged": false,
-      "awaiting": true,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "label_only",
-      "baseline_glyph": "🏷️",
-      "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 42d) — correct them, then route."
-    },
-    {
       "number": 934,
       "title": "[aw] Ensure Localizationguide Forkedrepo failed",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/934",
@@ -422,6 +397,31 @@
       "comments": 1,
       "created_at": "2026-09-11T02:18:55Z",
       "updated_at": "2026-09-11T02:19:20Z",
+      "age_days": 43.0,
+      "triaged": false,
+      "awaiting": true,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "label_only",
+      "baseline_glyph": "🏷️",
+      "baseline_text": "Fix the labels / tags",
+      "baseline_reason": "Wrong/missing tags (waited 43d) — correct them, then route."
+    },
+    {
+      "number": 926,
+      "title": "[aw] Ensure Localization failed",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/926",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "Needs-Triage",
+        "Needs-Tag-Fix",
+        "agentic-workflows"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-09-10T23:41:59Z",
+      "updated_at": "2026-09-11T07:32:38Z",
       "age_days": 42.0,
       "triaged": false,
       "awaiting": true,
@@ -522,7 +522,7 @@
       "comments": 1,
       "created_at": "2026-09-04T07:20:11Z",
       "updated_at": "2026-09-21T03:19:19Z",
-      "age_days": 32.0,
+      "age_days": 33.0,
       "triaged": true,
       "awaiting": true,
       "fix_ready": false,
@@ -530,7 +530,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Triage idea — scope then decide (Terminal)",
-      "baseline_reason": "New untriaged idea (Terminal) (waited 32d) — classify it and either ask for scope or make an early accept/park call."
+      "baseline_reason": "New untriaged idea (Terminal) (waited 33d) — classify it and either ask for scope or make an early accept/park call."
     },
     {
       "number": 986,
@@ -670,7 +670,7 @@
       "comments": 1,
       "created_at": "2026-09-28T02:27:29Z",
       "updated_at": "2026-09-28T02:28:24Z",
-      "age_days": 25.0,
+      "age_days": 26.0,
       "triaged": false,
       "awaiting": true,
       "fix_ready": false,
@@ -678,7 +678,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 25d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 26d) — correct them, then route."
     },
     {
       "number": 1020,
@@ -720,7 +720,7 @@
       "comments": 1,
       "created_at": "2026-09-29T02:22:36Z",
       "updated_at": "2026-09-29T02:23:01Z",
-      "age_days": 24.0,
+      "age_days": 25.0,
       "triaged": false,
       "awaiting": true,
       "fix_ready": false,
@@ -728,7 +728,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 24d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 25d) — correct them, then route."
     },
     {
       "number": 1050,
@@ -794,7 +794,7 @@
       "comments": 1,
       "created_at": "2026-10-02T03:19:06Z",
       "updated_at": "2026-10-02T03:19:37Z",
-      "age_days": 21.0,
+      "age_days": 22.0,
       "triaged": false,
       "awaiting": true,
       "fix_ready": false,
@@ -802,7 +802,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 21d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 22d) — correct them, then route."
     },
     {
       "number": 1072,
@@ -819,7 +819,7 @@
       "comments": 1,
       "created_at": "2026-10-02T17:05:06Z",
       "updated_at": "2026-10-03T03:16:43Z",
-      "age_days": 20.0,
+      "age_days": 21.0,
       "triaged": false,
       "awaiting": true,
       "fix_ready": false,
@@ -827,7 +827,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 20d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 21d) — correct them, then route."
     },
     {
       "number": 1078,
@@ -930,6 +930,31 @@
       "baseline_reason": "Security-class issue (waited 16d) — confirm, escalate to the security owner, and route urgently."
     },
     {
+      "number": 1086,
+      "title": "[aw] Ensure Localizationguide Forkedrepo timed out",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/1086",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "Needs-Triage",
+        "Needs-Tag-Fix",
+        "agentic-workflows"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-10-07T14:51:40Z",
+      "updated_at": "2026-10-08T04:56:26Z",
+      "age_days": 16.0,
+      "triaged": false,
+      "awaiting": true,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "label_only",
+      "baseline_glyph": "🏷️",
+      "baseline_text": "Fix the labels / tags",
+      "baseline_reason": "Wrong/missing tags (waited 16d) — correct them, then route."
+    },
+    {
       "number": 1087,
       "title": "[aw] Failed jobs: Official security E2E acceptance",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/1087",
@@ -1030,31 +1055,6 @@
       "baseline_reason": "Security-class issue (waited 16d) — confirm, escalate to the security owner, and route urgently."
     },
     {
-      "number": 1086,
-      "title": "[aw] Ensure Localizationguide Forkedrepo timed out",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/1086",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "Needs-Triage",
-        "Needs-Tag-Fix",
-        "agentic-workflows"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-10-07T14:51:40Z",
-      "updated_at": "2026-10-08T04:56:26Z",
-      "age_days": 15.0,
-      "triaged": false,
-      "awaiting": true,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "label_only",
-      "baseline_glyph": "🏷️",
-      "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 15d) — correct them, then route."
-    },
-    {
       "number": 1098,
       "title": "[aw] Ensure Localizationguide Forkedrepo failed",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/1098",
@@ -1069,7 +1069,7 @@
       "comments": 1,
       "created_at": "2026-10-09T02:50:47Z",
       "updated_at": "2026-10-09T02:51:14Z",
-      "age_days": 14.0,
+      "age_days": 15.0,
       "triaged": false,
       "awaiting": true,
       "fix_ready": false,
@@ -1077,7 +1077,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 14d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 15d) — correct them, then route."
     },
     {
       "number": 1106,
@@ -1269,6 +1269,31 @@
       "comments": 1,
       "created_at": "2026-10-19T05:09:47Z",
       "updated_at": "2026-10-19T05:10:17Z",
+      "age_days": 5.0,
+      "triaged": false,
+      "awaiting": true,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "label_only",
+      "baseline_glyph": "🏷️",
+      "baseline_text": "Fix the labels / tags",
+      "baseline_reason": "Wrong/missing tags (waited 5d) — correct them, then route."
+    },
+    {
+      "number": 1171,
+      "title": "[aw] Native WinUI Accessibility Review failed",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/1171",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "Needs-Triage",
+        "Needs-Tag-Fix",
+        "agentic-workflows"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-10-19T05:09:46Z",
+      "updated_at": "2026-10-20T04:09:22Z",
       "age_days": 4.0,
       "triaged": false,
       "awaiting": true,
@@ -1355,9 +1380,9 @@
       "baseline_reason": "Wrong/missing tags (waited 4d) — correct them, then route."
     },
     {
-      "number": 1171,
-      "title": "[aw] Native WinUI Accessibility Review failed",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/1171",
+      "number": 1183,
+      "title": "[aw] Failed jobs: Native WinUI Accessibility Review",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/1183",
       "kind": "issue",
       "is_community": null,
       "labels": [
@@ -1367,9 +1392,9 @@
       ],
       "up": 0,
       "comments": 1,
-      "created_at": "2026-10-19T05:09:46Z",
-      "updated_at": "2026-10-20T04:09:22Z",
-      "age_days": 3.0,
+      "created_at": "2026-10-20T04:09:23Z",
+      "updated_at": "2026-10-20T04:09:49Z",
+      "age_days": 4.0,
       "triaged": false,
       "awaiting": true,
       "fix_ready": false,
@@ -1377,7 +1402,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 3d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 4d) — correct them, then route."
     },
     {
       "number": 1181,
@@ -1405,9 +1430,9 @@
       "baseline_reason": "Wrong/missing tags (waited 3d) — correct them, then route."
     },
     {
-      "number": 1183,
-      "title": "[aw] Failed jobs: Native WinUI Accessibility Review",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/1183",
+      "number": 1186,
+      "title": "[aw] Native WinUI Accessibility Review failed",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/1186",
       "kind": "issue",
       "is_community": null,
       "labels": [
@@ -1417,8 +1442,8 @@
       ],
       "up": 0,
       "comments": 1,
-      "created_at": "2026-10-20T04:09:23Z",
-      "updated_at": "2026-10-20T04:09:49Z",
+      "created_at": "2026-10-20T05:51:20Z",
+      "updated_at": "2026-10-21T05:10:08Z",
       "age_days": 3.0,
       "triaged": false,
       "awaiting": true,
@@ -1478,31 +1503,6 @@
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
       "baseline_reason": "Wrong/missing tags (waited 3d) — correct them, then route."
-    },
-    {
-      "number": 1186,
-      "title": "[aw] Native WinUI Accessibility Review failed",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/1186",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "Needs-Triage",
-        "Needs-Tag-Fix",
-        "agentic-workflows"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-10-20T05:51:20Z",
-      "updated_at": "2026-10-21T05:10:08Z",
-      "age_days": 2.0,
-      "triaged": false,
-      "awaiting": true,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "label_only",
-      "baseline_glyph": "🏷️",
-      "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 2d) — correct them, then route."
     },
     {
       "number": 1205,
@@ -1592,7 +1592,7 @@
       "comments": 1,
       "created_at": "2026-10-21T20:40:03Z",
       "updated_at": "2026-10-22T03:16:57Z",
-      "age_days": 1.0,
+      "age_days": 2.0,
       "triaged": false,
       "awaiting": true,
       "fix_ready": false,
@@ -1600,7 +1600,32 @@
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 1d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (waited 2d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+    },
+    {
+      "number": 930,
+      "title": "[aw] Detection Runs",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/930",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "Needs-Triage",
+        "Needs-Tag-Fix",
+        "agentic-workflows"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-09-11T01:46:56Z",
+      "updated_at": "2026-10-23T04:16:43Z",
+      "age_days": 1.0,
+      "triaged": false,
+      "awaiting": true,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "label_only",
+      "baseline_glyph": "🏷️",
+      "baseline_text": "Fix the labels / tags",
+      "baseline_reason": "Wrong/missing tags (waited 1d) — correct them, then route."
     },
     {
       "number": 1218,
@@ -1628,56 +1653,6 @@
       "baseline_reason": "Security-class issue (waited 1d) — confirm, escalate to the security owner, and route urgently."
     },
     {
-      "number": 1220,
-      "title": "[aw] Native WinUI Accessibility Review reported incomplete result",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/1220",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "Needs-Triage",
-        "Needs-Tag-Fix",
-        "agentic-workflows"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-10-23T01:06:06Z",
-      "updated_at": "2026-10-23T01:06:41Z",
-      "age_days": 1.0,
-      "triaged": true,
-      "awaiting": true,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "label_only",
-      "baseline_glyph": "🏷️",
-      "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 1d) — correct them, then route."
-    },
-    {
-      "number": 930,
-      "title": "[aw] Detection Runs",
-      "url": "https://github.com/microsoft/intelligent-terminal/issues/930",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [
-        "Needs-Triage",
-        "Needs-Tag-Fix",
-        "agentic-workflows"
-      ],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-09-11T01:46:56Z",
-      "updated_at": "2026-10-23T04:16:43Z",
-      "age_days": 0.0,
-      "triaged": false,
-      "awaiting": true,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "label_only",
-      "baseline_glyph": "🏷️",
-      "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (new) — correct them, then route."
-    },
-    {
       "number": 1224,
       "title": "[aw] Native WinUI Accessibility Review failed",
       "url": "https://github.com/microsoft/intelligent-terminal/issues/1224",
@@ -1692,8 +1667,83 @@
       "comments": 1,
       "created_at": "2026-10-23T04:16:45Z",
       "updated_at": "2026-10-23T04:17:17Z",
+      "age_days": 1.0,
+      "triaged": true,
+      "awaiting": true,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "label_only",
+      "baseline_glyph": "🏷️",
+      "baseline_text": "Fix the labels / tags",
+      "baseline_reason": "Wrong/missing tags (waited 1d) — correct them, then route."
+    },
+    {
+      "number": 1220,
+      "title": "[aw] Native WinUI Accessibility Review reported incomplete result",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/1220",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "Needs-Triage",
+        "Needs-Tag-Fix",
+        "agentic-workflows"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-10-23T01:06:06Z",
+      "updated_at": "2026-10-23T08:07:22Z",
       "age_days": 0.0,
       "triaged": true,
+      "awaiting": true,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "label_only",
+      "baseline_glyph": "🏷️",
+      "baseline_text": "Fix the labels / tags",
+      "baseline_reason": "Wrong/missing tags (new) — correct them, then route."
+    },
+    {
+      "number": 1227,
+      "title": "[aw] Ensure Localization is missing required tool",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/1227",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "Needs-Triage",
+        "Needs-Tag-Fix",
+        "agentic-workflows"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-10-23T08:28:42Z",
+      "updated_at": "2026-10-23T08:29:11Z",
+      "age_days": 0.0,
+      "triaged": false,
+      "awaiting": true,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "label_only",
+      "baseline_glyph": "🏷️",
+      "baseline_text": "Fix the labels / tags",
+      "baseline_reason": "Wrong/missing tags (new) — correct them, then route."
+    },
+    {
+      "number": 1228,
+      "title": "[aw] Ensure Localization reported incomplete result",
+      "url": "https://github.com/microsoft/intelligent-terminal/issues/1228",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [
+        "Needs-Triage",
+        "Needs-Tag-Fix",
+        "agentic-workflows"
+      ],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-10-23T08:55:59Z",
+      "updated_at": "2026-10-23T08:56:27Z",
+      "age_days": 0.0,
+      "triaged": false,
       "awaiting": true,
       "fix_ready": false,
       "build_candidate": false,
@@ -2482,7 +2532,7 @@
       "comments": 1,
       "created_at": "2026-06-10T06:56:53Z",
       "updated_at": "2026-08-28T04:17:50Z",
-      "age_days": 56.0,
+      "age_days": 57.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -2490,7 +2540,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "🩺",
       "baseline_text": "Confirm crash — get repro/logs & route",
-      "baseline_reason": "Crash report (waited 56d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
+      "baseline_reason": "Crash report (waited 57d) with no priority signal yet — get exact repro + logs/dumps, confirm severity, then route to the area owner."
     },
     {
       "number": 386,
@@ -2506,7 +2556,7 @@
       "comments": 1,
       "created_at": "2026-07-07T06:26:21Z",
       "updated_at": "2026-08-28T04:17:06Z",
-      "age_days": 56.0,
+      "age_days": 57.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -2514,7 +2564,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 56d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 57d) — correct them, then route."
     },
     {
       "number": 613,
@@ -2530,7 +2580,7 @@
       "comments": 1,
       "created_at": "2026-08-13T08:19:55Z",
       "updated_at": "2026-08-28T04:19:48Z",
-      "age_days": 56.0,
+      "age_days": 57.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -2538,7 +2588,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "🏷️",
       "baseline_text": "Fix the labels / tags",
-      "baseline_reason": "Wrong/missing tags (waited 56d) — correct them, then route."
+      "baseline_reason": "Wrong/missing tags (waited 57d) — correct them, then route."
     },
     {
       "number": 617,
@@ -2753,7 +2803,7 @@
       "comments": 1,
       "created_at": "2026-07-01T02:12:05Z",
       "updated_at": "2026-07-01T02:17:43Z",
-      "age_days": 114.0,
+      "age_days": 115.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -2762,7 +2812,7 @@
       "baseline_action": "review",
       "baseline_glyph": "🕰️",
       "baseline_text": "Stale PR — status or close",
-      "baseline_reason": "PR has sat 114 d (waited 114d) — ping for status/rebase or close if abandoned."
+      "baseline_reason": "PR has sat 115 d (waited 115d) — ping for status/rebase or close if abandoned."
     },
     {
       "number": 380,
@@ -2841,7 +2891,7 @@
       "comments": 1,
       "created_at": "2026-07-17T13:39:55Z",
       "updated_at": "2026-07-18T02:27:14Z",
-      "age_days": 97.0,
+      "age_days": 98.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -2850,7 +2900,7 @@
       "baseline_action": "review",
       "baseline_glyph": "🕰️",
       "baseline_text": "Stale PR — status or close",
-      "baseline_reason": "PR has sat 97 d (waited 97d) — ping for status/rebase or close if abandoned."
+      "baseline_reason": "PR has sat 98 d (waited 98d) — ping for status/rebase or close if abandoned."
     },
     {
       "number": 453,
@@ -2973,7 +3023,7 @@
       "comments": 1,
       "created_at": "2026-08-06T02:59:01Z",
       "updated_at": "2026-08-06T04:38:44Z",
-      "age_days": 78.0,
+      "age_days": 79.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -2982,7 +3032,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 78 d for us (waited 78d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 79 d for us (waited 79d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 549,
@@ -2995,7 +3045,7 @@
       "comments": 1,
       "created_at": "2026-08-06T04:21:48Z",
       "updated_at": "2026-08-06T04:26:56Z",
-      "age_days": 78.0,
+      "age_days": 79.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -3004,7 +3054,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 78 d for us (waited 78d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 79 d for us (waited 79d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 552,
@@ -3083,7 +3133,7 @@
       "comments": 1,
       "created_at": "2026-08-11T08:59:38Z",
       "updated_at": "2026-08-14T02:16:44Z",
-      "age_days": 70.0,
+      "age_days": 71.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -3092,7 +3142,7 @@
       "baseline_action": "review",
       "baseline_glyph": "🔐",
       "baseline_text": "Permission-sensitive review",
-      "baseline_reason": "PR changes file modes/permissions (waited 70d) — review the security impact carefully + owner sign-off."
+      "baseline_reason": "PR changes file modes/permissions (waited 71d) — review the security impact carefully + owner sign-off."
     },
     {
       "number": 623,
@@ -3259,7 +3309,7 @@
       "comments": 1,
       "created_at": "2026-08-28T03:38:13Z",
       "updated_at": "2026-08-28T03:39:55Z",
-      "age_days": 56.0,
+      "age_days": 57.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -3268,7 +3318,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 56 d for us (waited 56d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 57 d for us (waited 57d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 740,
@@ -3369,7 +3419,7 @@
       "comments": 1,
       "created_at": "2026-09-04T04:17:05Z",
       "updated_at": "2026-09-04T04:19:01Z",
-      "age_days": 49.0,
+      "age_days": 50.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -3378,7 +3428,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 49 d for us (waited 49d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 50 d for us (waited 50d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 885,
@@ -3435,6 +3485,28 @@
       "comments": 1,
       "created_at": "2026-06-11T00:15:22Z",
       "updated_at": "2026-09-14T10:24:17Z",
+      "age_days": 39.0,
+      "triaged": false,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "assign_reviewer",
+      "baseline_glyph": "👤",
+      "baseline_text": "Assign a domain reviewer",
+      "baseline_reason": "PR has waited 39 d for us (waited 39d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+    },
+    {
+      "number": 892,
+      "title": "wta(tui): buffer ACP input while busy",
+      "url": "https://github.com/microsoft/intelligent-terminal/pull/892",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-09-08T03:35:51Z",
+      "updated_at": "2026-09-15T03:46:43Z",
       "age_days": 39.0,
       "triaged": false,
       "awaiting": true,
@@ -3555,28 +3627,6 @@
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
       "baseline_reason": "PR has waited 39 d for us (waited 39d) — assign the area owner as reviewer and get a decision, don't leave it generic."
-    },
-    {
-      "number": 892,
-      "title": "wta(tui): buffer ACP input while busy",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/892",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-09-08T03:35:51Z",
-      "updated_at": "2026-09-15T03:46:43Z",
-      "age_days": 38.0,
-      "triaged": false,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "assign_reviewer",
-      "baseline_glyph": "👤",
-      "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 38 d for us (waited 38d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 888,
@@ -3821,28 +3871,6 @@
       "baseline_reason": "PR (waited 1d) — review it."
     },
     {
-      "number": 1215,
-      "title": "Fix vertical sidebar tab, pane, and New Tab visuals",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/1215",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-10-22T08:56:23Z",
-      "updated_at": "2026-10-23T06:14:45Z",
-      "age_days": 0.0,
-      "triaged": true,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (new) — review it."
-    },
-    {
       "number": 1223,
       "title": "Add custom agent profiles, discovery, and session resume",
       "url": "https://github.com/microsoft/intelligent-terminal/pull/1223",
@@ -3852,7 +3880,7 @@
       "up": 0,
       "comments": 1,
       "created_at": "2026-10-23T03:49:04Z",
-      "updated_at": "2026-10-23T06:03:21Z",
+      "updated_at": "2026-10-23T09:27:46Z",
       "age_days": 0.0,
       "triaged": true,
       "awaiting": true,
@@ -3877,28 +3905,6 @@
       "updated_at": "2026-10-23T05:59:20Z",
       "age_days": 0.0,
       "triaged": true,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (new) — review it."
-    },
-    {
-      "number": 1226,
-      "title": "Persist editable agent menu entries with one-time initialization",
-      "url": "https://github.com/microsoft/intelligent-terminal/pull/1226",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-10-23T05:27:36Z",
-      "updated_at": "2026-10-23T05:43:53Z",
-      "age_days": 0.0,
-      "triaged": false,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
