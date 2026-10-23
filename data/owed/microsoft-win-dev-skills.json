@@ -1,6 +1,6 @@
 {
   "repo": "microsoft/win-dev-skills",
-  "generated_at": "2026-10-23T12:39:22Z",
+  "generated_at": "2026-10-23T15:39:04Z",
   "awaiting_label": null,
   "awaiting_issues": 0,
   "awaiting_prs": 14,
@@ -20,7 +20,7 @@
       "comments": 1,
       "created_at": "2026-07-15T11:29:00Z",
       "updated_at": "2026-07-15T11:29:00Z",
-      "age_days": 100.0,
+      "age_days": 101.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -28,7 +28,7 @@
       "baseline_action": "escalate",
       "baseline_glyph": "🚨",
       "baseline_text": "Escalate — crash/reliability",
-      "baseline_reason": "Crash/reliability issue (waited 100d) — get repro+logs if missing, confirm severity, and route to the area owner urgently."
+      "baseline_reason": "Crash/reliability issue (waited 101d) — get repro+logs if missing, confirm severity, and route to the area owner urgently."
     },
     {
       "number": 53,
@@ -223,7 +223,7 @@
       "comments": 1,
       "created_at": "2026-07-15T11:28:59Z",
       "updated_at": "2026-07-15T11:28:59Z",
-      "age_days": 100.0,
+      "age_days": 101.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -231,7 +231,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 100d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (waited 101d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 129,
@@ -244,7 +244,7 @@
       "comments": 1,
       "created_at": "2026-07-15T11:29:00Z",
       "updated_at": "2026-07-15T11:29:00Z",
-      "age_days": 100.0,
+      "age_days": 101.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -252,7 +252,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "🗂️",
       "baseline_text": "Low-traction untyped item — park or decline",
-      "baseline_reason": "Untyped report (waited 100d) with no traction after 90+ days — if a feature, decline/park with rationale; if a bug, revalidate on a current build first. Don't leave it open indefinitely."
+      "baseline_reason": "Untyped report (waited 101d) with no traction after 90+ days — if a feature, decline/park with rationale; if a bug, revalidate on a current build first. Don't leave it open indefinitely."
     },
     {
       "number": 139,
@@ -484,7 +484,7 @@
       "comments": 1,
       "created_at": "2026-07-17T06:37:21Z",
       "updated_at": "2026-09-20T09:19:02Z",
-      "age_days": 33.0,
+      "age_days": 34.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -493,7 +493,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 33 d for us (waited 33d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 34 d for us (waited 34d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 186,
@@ -506,7 +506,7 @@
       "comments": 1,
       "created_at": "2026-09-20T08:55:43Z",
       "updated_at": "2026-09-20T08:55:43Z",
-      "age_days": 33.0,
+      "age_days": 34.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -515,7 +515,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "🌐",
       "baseline_text": "Route to docs/localization owner",
-      "baseline_reason": "Docs/localization PR (waited 33d) — route to the docs/localization owner for a domain review, not a generic pass."
+      "baseline_reason": "Docs/localization PR (waited 34d) — route to the docs/localization owner for a domain review, not a generic pass."
     },
     {
       "number": 188,
@@ -529,7 +529,7 @@
       "created_at": "2026-09-21T22:07:01Z",
       "updated_at": "2026-09-21T22:07:02Z",
       "age_days": 32.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -550,16 +550,16 @@
       "comments": 1,
       "created_at": "2026-09-24T10:38:48Z",
       "updated_at": "2026-09-24T11:11:21Z",
-      "age_days": 29.0,
+      "age_days": 30.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
       "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "👀",
-      "baseline_text": "Review this PR",
-      "baseline_reason": "PR (waited 29d) — review it."
+      "baseline_action": "assign_reviewer",
+      "baseline_glyph": "👤",
+      "baseline_text": "Assign a domain reviewer",
+      "baseline_reason": "PR has waited 30 d for us (waited 30d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 161,
@@ -573,7 +573,7 @@
       "created_at": "2026-08-25T21:06:18Z",
       "updated_at": "2026-10-07T03:14:38Z",
       "age_days": 17.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -595,7 +595,7 @@
       "created_at": "2026-09-30T23:41:12Z",
       "updated_at": "2026-10-14T06:46:53Z",
       "age_days": 10.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -617,7 +617,7 @@
       "created_at": "2026-10-14T06:40:08Z",
       "updated_at": "2026-10-14T06:40:12Z",
       "age_days": 10.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -639,7 +639,7 @@
       "created_at": "2026-10-19T22:06:07Z",
       "updated_at": "2026-10-19T22:06:11Z",
       "age_days": 4.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -661,7 +661,7 @@
       "created_at": "2026-10-19T22:07:07Z",
       "updated_at": "2026-10-19T22:07:10Z",
       "age_days": 4.0,
-      "triaged": false,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
