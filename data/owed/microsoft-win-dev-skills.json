@@ -1,13 +1,13 @@
 {
   "repo": "microsoft/win-dev-skills",
-  "generated_at": "2026-10-23T21:31:26Z",
+  "generated_at": "2026-11-26T02:43:42Z",
   "awaiting_label": null,
   "awaiting_issues": 0,
-  "awaiting_prs": 14,
+  "awaiting_prs": 16,
   "backlog_issues": 16,
-  "backlog_prs": 16,
+  "backlog_prs": 17,
   "issues_total": 16,
-  "prs_total": 16,
+  "prs_total": 17,
   "issues": [
     {
       "number": 128,
@@ -20,7 +20,7 @@
       "comments": 1,
       "created_at": "2026-07-15T11:29:00Z",
       "updated_at": "2026-07-15T11:29:00Z",
-      "age_days": 101.0,
+      "age_days": 134.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -28,7 +28,7 @@
       "baseline_action": "escalate",
       "baseline_glyph": "🚨",
       "baseline_text": "Escalate — crash/reliability",
-      "baseline_reason": "Crash/reliability issue (waited 101d) — get repro+logs if missing, confirm severity, and route to the area owner urgently."
+      "baseline_reason": "Crash/reliability issue (waited 134d) — get repro+logs if missing, confirm severity, and route to the area owner urgently."
     },
     {
       "number": 53,
@@ -41,7 +41,7 @@
       "comments": 1,
       "created_at": "2026-04-29T15:08:31Z",
       "updated_at": "2026-04-29T19:57:06Z",
-      "age_days": 177.0,
+      "age_days": 211.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -49,7 +49,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "🗂️",
       "baseline_text": "Low-traction untyped item — park or decline",
-      "baseline_reason": "Untyped report (waited 177d) with no traction after 90+ days — if a feature, decline/park with rationale; if a bug, revalidate on a current build first. Don't leave it open indefinitely."
+      "baseline_reason": "Untyped report (waited 211d) with no traction after 90+ days — if a feature, decline/park with rationale; if a bug, revalidate on a current build first. Don't leave it open indefinitely."
     },
     {
       "number": 94,
@@ -64,15 +64,15 @@
       "comments": 1,
       "created_at": "2026-05-21T14:16:27Z",
       "updated_at": "2026-05-21T14:16:27Z",
-      "age_days": 156.0,
+      "age_days": 189.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
-      "baseline_action": "request_info",
-      "baseline_glyph": "❓",
-      "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 156d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_action": "reassess_stale",
+      "baseline_glyph": "🗓️",
+      "baseline_text": "Ageing, unconfirmed bug — revalidate",
+      "baseline_reason": "Bug (waited 189d) sat 180+ days with no traction — re-test on a current build; request repro/logs or close stale if it no longer repros."
     },
     {
       "number": 97,
@@ -87,7 +87,7 @@
       "comments": 1,
       "created_at": "2026-05-27T17:02:17Z",
       "updated_at": "2026-05-27T17:04:50Z",
-      "age_days": 150.0,
+      "age_days": 183.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -95,7 +95,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "🗂️",
       "baseline_text": "Low-traction idea — park or decline",
-      "baseline_reason": "Feature ask (waited 150d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
+      "baseline_reason": "Feature ask (waited 183d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
     },
     {
       "number": 98,
@@ -110,7 +110,7 @@
       "comments": 1,
       "created_at": "2026-05-27T17:02:30Z",
       "updated_at": "2026-05-27T17:02:30Z",
-      "age_days": 150.0,
+      "age_days": 183.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -118,7 +118,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "🗂️",
       "baseline_text": "Low-traction idea — park or decline",
-      "baseline_reason": "Feature ask (waited 150d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
+      "baseline_reason": "Feature ask (waited 183d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
     },
     {
       "number": 99,
@@ -133,7 +133,7 @@
       "comments": 1,
       "created_at": "2026-05-27T17:02:32Z",
       "updated_at": "2026-05-27T17:02:32Z",
-      "age_days": 150.0,
+      "age_days": 183.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -141,7 +141,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "🗂️",
       "baseline_text": "Low-traction idea — park or decline",
-      "baseline_reason": "Feature ask (waited 150d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
+      "baseline_reason": "Feature ask (waited 183d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
     },
     {
       "number": 100,
@@ -156,7 +156,7 @@
       "comments": 1,
       "created_at": "2026-05-27T17:02:34Z",
       "updated_at": "2026-05-27T17:02:34Z",
-      "age_days": 150.0,
+      "age_days": 183.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -164,7 +164,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "🗂️",
       "baseline_text": "Low-traction idea — park or decline",
-      "baseline_reason": "Feature ask (waited 150d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
+      "baseline_reason": "Feature ask (waited 183d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
     },
     {
       "number": 102,
@@ -179,7 +179,7 @@
       "comments": 1,
       "created_at": "2026-05-27T17:02:38Z",
       "updated_at": "2026-05-27T17:02:38Z",
-      "age_days": 150.0,
+      "age_days": 183.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -187,7 +187,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "🗂️",
       "baseline_text": "Low-traction idea — park or decline",
-      "baseline_reason": "Feature ask (waited 150d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
+      "baseline_reason": "Feature ask (waited 183d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
     },
     {
       "number": 119,
@@ -202,7 +202,7 @@
       "comments": 1,
       "created_at": "2026-07-09T06:27:31Z",
       "updated_at": "2026-07-09T19:32:59Z",
-      "age_days": 106.0,
+      "age_days": 140.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -210,7 +210,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "🗂️",
       "baseline_text": "Low-traction idea — park or decline",
-      "baseline_reason": "Feature ask (waited 106d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
+      "baseline_reason": "Feature ask (waited 140d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
     },
     {
       "number": 127,
@@ -223,7 +223,7 @@
       "comments": 1,
       "created_at": "2026-07-15T11:28:59Z",
       "updated_at": "2026-07-15T11:28:59Z",
-      "age_days": 101.0,
+      "age_days": 134.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -231,7 +231,7 @@
       "baseline_action": "request_info",
       "baseline_glyph": "❓",
       "baseline_text": "Request exact repro, version & logs",
-      "baseline_reason": "Bug (waited 101d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
+      "baseline_reason": "Bug (waited 134d) is unrouted/vague with no engagement — ask for exact repro steps, app version and logs/dumps, then confirm + route."
     },
     {
       "number": 129,
@@ -244,7 +244,7 @@
       "comments": 1,
       "created_at": "2026-07-15T11:29:00Z",
       "updated_at": "2026-07-15T11:29:00Z",
-      "age_days": 101.0,
+      "age_days": 134.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -252,7 +252,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "🗂️",
       "baseline_text": "Low-traction untyped item — park or decline",
-      "baseline_reason": "Untyped report (waited 101d) with no traction after 90+ days — if a feature, decline/park with rationale; if a bug, revalidate on a current build first. Don't leave it open indefinitely."
+      "baseline_reason": "Untyped report (waited 134d) with no traction after 90+ days — if a feature, decline/park with rationale; if a bug, revalidate on a current build first. Don't leave it open indefinitely."
     },
     {
       "number": 139,
@@ -267,7 +267,7 @@
       "comments": 1,
       "created_at": "2026-07-28T17:20:33Z",
       "updated_at": "2026-07-28T17:20:33Z",
-      "age_days": 88.0,
+      "age_days": 121.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -275,7 +275,7 @@
       "baseline_action": "label_only",
       "baseline_glyph": "📄",
       "baseline_text": "Docs — verify & update / route to docs owner",
-      "baseline_reason": "Documentation issue (waited 88d) — confirm what's inaccurate/missing and update the docs (or route to the docs owner); a build re-test doesn't apply."
+      "baseline_reason": "Documentation issue (waited 121d) — confirm what's inaccurate/missing and update the docs (or route to the docs owner); a build re-test doesn't apply."
     },
     {
       "number": 149,
@@ -288,15 +288,15 @@
       "comments": 1,
       "created_at": "2026-08-13T23:28:29Z",
       "updated_at": "2026-08-13T23:28:29Z",
-      "age_days": 71.0,
+      "age_days": 104.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
       "build_candidate": false,
       "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 71d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_glyph": "🗂️",
+      "baseline_text": "Low-traction idea — park or decline",
+      "baseline_reason": "Feature ask (waited 104d) with no traction after 90+ days — decline/park with rationale unless it clearly aligns with the roadmap."
     },
     {
       "number": 176,
@@ -309,7 +309,7 @@
       "comments": 1,
       "created_at": "2026-09-03T04:48:10Z",
       "updated_at": "2026-09-03T04:51:09Z",
-      "age_days": 51.0,
+      "age_days": 84.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -317,7 +317,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm type (bug/feature) & route",
-      "baseline_reason": "Untyped report (waited 51d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+      "baseline_reason": "Untyped report (waited 84d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
     },
     {
       "number": 158,
@@ -330,7 +330,7 @@
       "comments": 1,
       "created_at": "2026-08-25T18:33:39Z",
       "updated_at": "2026-09-09T14:11:28Z",
-      "age_days": 45.0,
+      "age_days": 78.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -338,7 +338,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Confirm type (bug/feature) & route",
-      "baseline_reason": "Untyped report (waited 45d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+      "baseline_reason": "Untyped report (waited 78d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
     },
     {
       "number": 181,
@@ -351,7 +351,7 @@
       "comments": 1,
       "created_at": "2026-09-09T13:51:35Z",
       "updated_at": "2026-09-09T13:51:35Z",
-      "age_days": 45.0,
+      "age_days": 78.0,
       "triaged": false,
       "awaiting": false,
       "fix_ready": false,
@@ -359,7 +359,7 @@
       "baseline_action": "reply",
       "baseline_glyph": "💬",
       "baseline_text": "Decide on this feature request",
-      "baseline_reason": "Feature/idea (waited 45d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
+      "baseline_reason": "Feature/idea (waited 78d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
     }
   ],
   "prs": [
@@ -374,7 +374,7 @@
       "comments": 1,
       "created_at": "2026-08-13T22:16:41Z",
       "updated_at": "2026-08-25T22:15:05Z",
-      "age_days": 59.0,
+      "age_days": 93.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -383,7 +383,7 @@
       "baseline_action": "await_author_changes",
       "baseline_glyph": "✍️",
       "baseline_text": "Await author's changes",
-      "baseline_reason": "Changes were requested (waited 59d) — ball is with the author; nudge if quiet."
+      "baseline_reason": "Changes were requested (waited 93d) — ball is with the author; nudge if quiet."
     },
     {
       "number": 148,
@@ -396,7 +396,7 @@
       "comments": 1,
       "created_at": "2026-08-13T23:08:14Z",
       "updated_at": "2026-08-30T04:49:41Z",
-      "age_days": 55.0,
+      "age_days": 88.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -405,7 +405,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 55 d for us (waited 55d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 88 d for us (waited 88d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 167,
@@ -418,8 +418,8 @@
       "comments": 1,
       "created_at": "2026-08-26T09:40:27Z",
       "updated_at": "2026-09-08T18:24:55Z",
-      "age_days": 45.0,
-      "triaged": false,
+      "age_days": 79.0,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -427,7 +427,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 45 d for us (waited 45d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 79 d for us (waited 79d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 172,
@@ -440,7 +440,7 @@
       "comments": 1,
       "created_at": "2026-08-30T15:20:00Z",
       "updated_at": "2026-09-08T21:36:24Z",
-      "age_days": 45.0,
+      "age_days": 79.0,
       "triaged": false,
       "awaiting": true,
       "is_draft": false,
@@ -449,7 +449,7 @@
       "baseline_action": "await_author_changes",
       "baseline_glyph": "✍️",
       "baseline_text": "Await author's changes",
-      "baseline_reason": "Changes were requested (waited 45d) — ball is with the author; nudge if quiet."
+      "baseline_reason": "Changes were requested (waited 79d) — ball is with the author; nudge if quiet."
     },
     {
       "number": 185,
@@ -462,8 +462,8 @@
       "comments": 1,
       "created_at": "2026-09-19T00:49:07Z",
       "updated_at": "2026-09-19T00:49:35Z",
-      "age_days": 35.0,
-      "triaged": false,
+      "age_days": 68.0,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -471,7 +471,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "🌐",
       "baseline_text": "Route to docs/localization owner",
-      "baseline_reason": "Docs/localization PR (waited 35d) — route to the docs/localization owner for a domain review, not a generic pass."
+      "baseline_reason": "Docs/localization PR (waited 68d) — route to the docs/localization owner for a domain review, not a generic pass."
     },
     {
       "number": 134,
@@ -484,8 +484,8 @@
       "comments": 1,
       "created_at": "2026-07-17T06:37:21Z",
       "updated_at": "2026-09-20T09:19:02Z",
-      "age_days": 34.0,
-      "triaged": false,
+      "age_days": 67.0,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -493,7 +493,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 34 d for us (waited 34d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 67 d for us (waited 67d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 186,
@@ -506,8 +506,8 @@
       "comments": 1,
       "created_at": "2026-09-20T08:55:43Z",
       "updated_at": "2026-09-20T08:55:43Z",
-      "age_days": 34.0,
-      "triaged": false,
+      "age_days": 67.0,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -515,7 +515,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "🌐",
       "baseline_text": "Route to docs/localization owner",
-      "baseline_reason": "Docs/localization PR (waited 34d) — route to the docs/localization owner for a domain review, not a generic pass."
+      "baseline_reason": "Docs/localization PR (waited 67d) — route to the docs/localization owner for a domain review, not a generic pass."
     },
     {
       "number": 188,
@@ -528,7 +528,7 @@
       "comments": 1,
       "created_at": "2026-09-21T22:07:01Z",
       "updated_at": "2026-09-21T22:07:02Z",
-      "age_days": 32.0,
+      "age_days": 66.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -537,7 +537,7 @@
       "baseline_action": "review",
       "baseline_glyph": "📦",
       "baseline_text": "Dependency PR — check CI & merge/close",
-      "baseline_reason": "Dependency bump (waited 32d) — verify CI + changelog risk, then merge or close."
+      "baseline_reason": "Dependency bump (waited 66d) — verify CI + changelog risk, then merge or close."
     },
     {
       "number": 191,
@@ -550,8 +550,8 @@
       "comments": 1,
       "created_at": "2026-09-24T10:38:48Z",
       "updated_at": "2026-09-24T11:11:21Z",
-      "age_days": 30.0,
-      "triaged": false,
+      "age_days": 63.0,
+      "triaged": true,
       "awaiting": true,
       "is_draft": false,
       "merge_state": "",
@@ -559,7 +559,7 @@
       "baseline_action": "assign_reviewer",
       "baseline_glyph": "👤",
       "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 30 d for us (waited 30d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "PR has waited 63 d for us (waited 63d) — assign the area owner as reviewer and get a decision, don't leave it generic."
     },
     {
       "number": 161,
@@ -572,7 +572,7 @@
       "comments": 1,
       "created_at": "2026-08-25T21:06:18Z",
       "updated_at": "2026-10-07T03:14:38Z",
-      "age_days": 17.0,
+      "age_days": 50.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -581,7 +581,7 @@
       "baseline_action": "review",
       "baseline_glyph": "📦",
       "baseline_text": "Dependency PR — check CI & merge/close",
-      "baseline_reason": "Dependency bump (waited 17d) — verify CI + changelog risk, then merge or close."
+      "baseline_reason": "Dependency bump (waited 50d) — verify CI + changelog risk, then merge or close."
     },
     {
       "number": 203,
@@ -594,7 +594,7 @@
       "comments": 1,
       "created_at": "2026-09-30T23:41:12Z",
       "updated_at": "2026-10-14T06:46:53Z",
-      "age_days": 10.0,
+      "age_days": 43.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -603,7 +603,7 @@
       "baseline_action": "review",
       "baseline_glyph": "📦",
       "baseline_text": "Dependency PR — check CI & merge/close",
-      "baseline_reason": "Dependency bump (waited 10d) — verify CI + changelog risk, then merge or close."
+      "baseline_reason": "Dependency bump (waited 43d) — verify CI + changelog risk, then merge or close."
     },
     {
       "number": 210,
@@ -616,6 +616,72 @@
       "comments": 1,
       "created_at": "2026-10-14T06:40:08Z",
       "updated_at": "2026-10-14T06:40:12Z",
+      "age_days": 43.0,
+      "triaged": true,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "📦",
+      "baseline_text": "Dependency PR — check CI & merge/close",
+      "baseline_reason": "Dependency bump (waited 43d) — verify CI + changelog risk, then merge or close."
+    },
+    {
+      "number": 218,
+      "title": "ci(deps): bump zod from 4.4.3 to 4.6.7 in /scripts/vally",
+      "url": "https://github.com/microsoft/win-dev-skills/pull/218",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-11-03T05:43:24Z",
+      "updated_at": "2026-11-03T05:43:28Z",
+      "age_days": 23.0,
+      "triaged": true,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "📦",
+      "baseline_text": "Dependency PR — check CI & merge/close",
+      "baseline_reason": "Dependency bump (waited 23d) — verify CI + changelog risk, then merge or close."
+    },
+    {
+      "number": 219,
+      "title": "Pin winui and winappcli to microsoft/winappCli v0.8.0",
+      "url": "https://github.com/microsoft/win-dev-skills/pull/219",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-11-08T22:32:00Z",
+      "updated_at": "2026-11-11T04:38:05Z",
+      "age_days": 15.0,
+      "triaged": true,
+      "awaiting": true,
+      "is_draft": false,
+      "merge_state": "",
+      "review_decision": "REVIEW_REQUIRED",
+      "baseline_action": "review",
+      "baseline_glyph": "👀",
+      "baseline_text": "Review this PR",
+      "baseline_reason": "PR (waited 15d) — review it."
+    },
+    {
+      "number": 220,
+      "title": "ci(deps): bump github/codeql-action/init from 4.38.2 to 4.39.3",
+      "url": "https://github.com/microsoft/win-dev-skills/pull/220",
+      "kind": "pr",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-11-16T22:06:09Z",
+      "updated_at": "2026-11-16T22:06:13Z",
       "age_days": 10.0,
       "triaged": true,
       "awaiting": true,
@@ -628,17 +694,17 @@
       "baseline_reason": "Dependency bump (waited 10d) — verify CI + changelog risk, then merge or close."
     },
     {
-      "number": 211,
-      "title": "ci(deps): bump github/codeql-action/analyze from 4.38.2 to 4.38.3",
-      "url": "https://github.com/microsoft/win-dev-skills/pull/211",
+      "number": 221,
+      "title": "ci(deps): bump github/codeql-action/analyze from 4.38.2 to 4.39.3",
+      "url": "https://github.com/microsoft/win-dev-skills/pull/221",
       "kind": "pr",
       "is_community": null,
       "labels": [],
       "up": 0,
       "comments": 1,
-      "created_at": "2026-10-19T22:06:07Z",
-      "updated_at": "2026-10-19T22:06:11Z",
-      "age_days": 4.0,
+      "created_at": "2026-11-16T22:06:11Z",
+      "updated_at": "2026-11-16T22:06:15Z",
+      "age_days": 10.0,
       "triaged": true,
       "awaiting": true,
       "is_draft": false,
@@ -647,51 +713,7 @@
       "baseline_action": "review",
       "baseline_glyph": "📦",
       "baseline_text": "Dependency PR — check CI & merge/close",
-      "baseline_reason": "Dependency bump (waited 4d) — verify CI + changelog risk, then merge or close."
-    },
-    {
-      "number": 212,
-      "title": "ci(deps): bump github/codeql-action/init from 4.38.2 to 4.38.3",
-      "url": "https://github.com/microsoft/win-dev-skills/pull/212",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-10-19T22:07:07Z",
-      "updated_at": "2026-10-19T22:07:10Z",
-      "age_days": 4.0,
-      "triaged": true,
-      "awaiting": true,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "REVIEW_REQUIRED",
-      "baseline_action": "review",
-      "baseline_glyph": "📦",
-      "baseline_text": "Dependency PR — check CI & merge/close",
-      "baseline_reason": "Dependency bump (waited 4d) — verify CI + changelog risk, then merge or close."
-    },
-    {
-      "number": 171,
-      "title": "Skill for using ETW events for performance and lifecycle diagnostics",
-      "url": "https://github.com/microsoft/win-dev-skills/pull/171",
-      "kind": "pr",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-08-27T16:39:38Z",
-      "updated_at": "2026-09-09T05:04:25Z",
-      "age_days": 45.0,
-      "triaged": false,
-      "awaiting": false,
-      "is_draft": false,
-      "merge_state": "",
-      "review_decision": "APPROVED",
-      "baseline_action": "assign_reviewer",
-      "baseline_glyph": "👤",
-      "baseline_text": "Assign a domain reviewer",
-      "baseline_reason": "PR has waited 45 d for us (waited 45d) — assign the area owner as reviewer and get a decision, don't leave it generic."
+      "baseline_reason": "Dependency bump (waited 10d) — verify CI + changelog risk, then merge or close."
     },
     {
       "number": 213,
@@ -704,8 +726,8 @@
       "comments": 1,
       "created_at": "2026-10-20T09:52:24Z",
       "updated_at": "2026-10-21T01:48:47Z",
-      "age_days": 3.0,
-      "triaged": false,
+      "age_days": 36.0,
+      "triaged": true,
       "awaiting": false,
       "is_draft": true,
       "merge_state": "",
@@ -713,7 +735,7 @@
       "baseline_action": "wait_author",
       "baseline_glyph": "🚧",
       "baseline_text": "Wait — PR is a draft/WIP",
-      "baseline_reason": "Draft/WIP PR (waited 3d) — don't review yet; nudge the author to mark it ready."
+      "baseline_reason": "Draft/WIP PR (waited 36d) — don't review yet; nudge the author to mark it ready."
     }
   ]
 }
