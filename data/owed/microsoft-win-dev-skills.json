@@ -1,13 +1,13 @@
 {
   "repo": "microsoft/win-dev-skills",
-  "generated_at": "2026-11-26T17:53:51Z",
+  "generated_at": "2026-11-26T20:33:08Z",
   "awaiting_label": null,
   "awaiting_issues": 0,
   "awaiting_prs": 16,
   "backlog_issues": 16,
   "backlog_prs": 17,
   "issues_total": 16,
-  "prs_total": 15,
+  "prs_total": 17,
   "issues": [
     {
       "number": 128,
@@ -64,7 +64,7 @@
       "comments": 1,
       "created_at": "2026-05-21T14:16:27Z",
       "updated_at": "2026-05-21T14:16:27Z",
-      "age_days": 189.0,
+      "age_days": 190.0,
       "triaged": true,
       "awaiting": false,
       "fix_ready": false,
@@ -72,7 +72,7 @@
       "baseline_action": "reassess_stale",
       "baseline_glyph": "🗓️",
       "baseline_text": "Ageing, unconfirmed bug — revalidate",
-      "baseline_reason": "Bug (waited 189d) sat 180+ days with no traction — re-test on a current build; request repro/logs or close stale if it no longer repros."
+      "baseline_reason": "Bug (waited 190d) sat 180+ days with no traction — re-test on a current build; request repro/logs or close stale if it no longer repros."
     },
     {
       "number": 97,
@@ -320,6 +320,27 @@
       "baseline_reason": "Untyped report (waited 85d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
     },
     {
+      "number": 158,
+      "title": "Track Agent Plugins 1.0 packaging and marketplace distribution",
+      "url": "https://github.com/microsoft/win-dev-skills/issues/158",
+      "kind": "issue",
+      "is_community": null,
+      "labels": [],
+      "up": 0,
+      "comments": 1,
+      "created_at": "2026-08-25T18:33:39Z",
+      "updated_at": "2026-09-09T14:11:28Z",
+      "age_days": 79.0,
+      "triaged": false,
+      "awaiting": false,
+      "fix_ready": false,
+      "build_candidate": false,
+      "baseline_action": "reply",
+      "baseline_glyph": "💬",
+      "baseline_text": "Confirm type (bug/feature) & route",
+      "baseline_reason": "Untyped report (waited 79d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
+    },
+    {
       "number": 181,
       "title": "Cursor: resolve binary-policy blocker and submit WinUI plugin",
       "url": "https://github.com/microsoft/win-dev-skills/issues/181",
@@ -339,27 +360,6 @@
       "baseline_glyph": "💬",
       "baseline_text": "Decide on this feature request",
       "baseline_reason": "Feature/idea (waited 79d). Give a decision: accept & backlog to a milestone, decline with rationale, or ask for scope."
-    },
-    {
-      "number": 158,
-      "title": "Track Agent Plugins 1.0 packaging and marketplace distribution",
-      "url": "https://github.com/microsoft/win-dev-skills/issues/158",
-      "kind": "issue",
-      "is_community": null,
-      "labels": [],
-      "up": 0,
-      "comments": 1,
-      "created_at": "2026-08-25T18:33:39Z",
-      "updated_at": "2026-09-09T14:11:28Z",
-      "age_days": 78.0,
-      "triaged": false,
-      "awaiting": false,
-      "fix_ready": false,
-      "build_candidate": false,
-      "baseline_action": "reply",
-      "baseline_glyph": "💬",
-      "baseline_text": "Confirm type (bug/feature) & route",
-      "baseline_reason": "Untyped report (waited 78d) — determine whether it's a bug (repro on a current build) or a feature (scope + decide), set the type label, and route to the owner."
     }
   ],
   "prs": [
